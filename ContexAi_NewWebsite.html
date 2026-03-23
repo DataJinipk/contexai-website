@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ContexAi Group — Intelligence in Context. A premier boutique financial consulting firm specializing in dispute resolution, startup advisory, and strategic initiatives across water technologies, petrochemicals, oil & gas, power, banking, EPC contracting, agriculture, sustainability, and digital transformation.">
+<title>ContexAi Group — Premier Financial Consulting & Strategic Advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#0a0a0a;--ink2:#1a1a1a;--ink3:#444;--ink4:#777;--ink5:#aaa;--white:#fff;--cream:#FAFAF8;--cloud:#F0F0EE;--blue:#2563EB;--blue-l:#3B82F6;--blue-p:#EFF6FF;--green:#059669;--green-p:#ECFDF5;--amber:#D97706;--amber-p:#FFFBEB;--violet:#7C3AED;--violet-p:#F5F3FF;--coral:#DC2626;--sh1:0 2px 8px rgba(0,0,0,.04);--sh2:0 4px 20px rgba(0,0,0,.06);--sh3:0 12px 40px rgba(0,0,0,.08);--serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
+html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--white);color:var(--ink3);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6}a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);padding:14px 32px;border-bottom:1px solid rgba(0,0,0,.04);box-shadow:var(--sh1);transition:all .3s ease}
+.nav__in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.3rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}.logo span{color:var(--blue)}
+.navlinks{display:flex;gap:20px;align-items:center}
+.navlinks a{font-size:.75rem;font-weight:500;color:var(--ink4);transition:color .15s;position:relative}.navlinks a:hover{color:var(--ink)}
+.navlinks a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--blue);transform:scaleX(0);transition:transform .3s ease}
+.navlinks a:hover::after{transform:scaleX(1)}
+.btn{padding:10px 24px;border-radius:100px;font-size:.82rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.btn-b{background:var(--ink);color:var(--white)}.btn-b:hover{background:var(--ink2);transform:translateY(-1px);box-shadow:var(--sh2)}
+.btn-o{border:1.5px solid rgba(0,0,0,.1);color:var(--ink);background:transparent}.btn-o:hover{border-color:var(--ink)}
+.mob{display:none;font-size:1.4rem;padding:6px;cursor:pointer;background:transparent;color:var(--ink);transition:all .2s}
+.mob:hover{transform:scale(1.1)}
+.scrolled .nav{padding:10px 32px;background:rgba(255,255,255,.98);box-shadow:var(--sh2)}
+
+/* MOBILE MENU */
+.mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;background:var(--white);z-index:99;transform:translateX(-100%);transition:transform .3s ease;padding:80px 32px;display:flex;flex-direction:column}
+.mobile-menu.active{transform:translateX(0)}
+.mobile-menu a{display:block;font-size:1.2rem;padding:12px 0;border-bottom:1px solid rgba(0,0,0,.05);color:var(--ink3)}
+.mobile-menu .btn{margin-top:20px;display:block;width:fit-content}
+.close-menu{position:absolute;top:24px;right:24px;font-size:1.5rem;background:none;color:var(--ink);cursor:pointer}
+
+/* HERO */
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px 32px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 40% at 50% 35%,rgba(37,99,235,.06),transparent);z-index:-1}
+.hero::after{content:'';position:absolute;top:0;left:0;right:0;height:100px;background:linear-gradient(to bottom, rgba(255,255,255,1), transparent);z-index:1}
+.hero h1{font-family:var(--serif);font-size:clamp(3.2rem,8vw,6rem);line-height:1;color:var(--ink);margin-bottom:16px;max-width:800px;letter-spacing:-.04em}
+.hero h1 em{font-style:italic;color:var(--blue)}
+.hero__sub{font-size:1.1rem;color:var(--ink4);line-height:1.7;max-width:520px;margin:0 auto 36px;font-weight:300}
+.hero__btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:56px}
+.hero__stats{display:flex;gap:48px;justify-content:center;padding-top:40px;border-top:1px solid rgba(0,0,0,.04)}
+.hero__stat strong{font-family:var(--serif);font-size:2.2rem;color:var(--ink);display:block;line-height:1}.hero__stat span{font-size:.6rem;color:var(--ink5);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+
+/* SECTIONS */
+.sec{padding:72px 32px}.sec__in{max-width:1200px;margin:0 auto}
+.sec__lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:.15em;color:var(--blue);margin-bottom:6px;font-weight:600}
+.sec__t{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--ink);margin-bottom:8px;line-height:1.08}
+.sec__d{font-size:.95rem;color:var(--ink4);line-height:1.7;max-width:500px;margin-bottom:36px;font-weight:300}
+.bg-c{background:var(--cream)}
+
+/* TABS */
+.tabs-container{margin:40px 0}
+.tab-nav{display:flex;gap:2px;background:var(--cloud);border-radius:12px;padding:4px;margin-bottom:24px;overflow-x:auto}
+.tab-btn{padding:12px 24px;font-size:.85rem;font-weight:500;white-space:nowrap;cursor:pointer;border-radius:8px;transition:all .2s;background:transparent;color:var(--ink4)}
+.tab-btn.active{background:var(--white);color:var(--ink);box-shadow:var(--sh1)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* ECOSYSTEM GRID */
+.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.eco{border-radius:16px;background:var(--white);padding:24px;transition:all .25s;border:1px solid rgba(0,0,0,.05);cursor:pointer;position:relative;overflow:hidden;box-shadow:var(--sh1)}
+.eco:hover{box-shadow:var(--sh3);transform:translateY(-4px);border-color:rgba(37,99,235,.2)}
+.eco__img{width:44px;height:44px;border-radius:10px;overflow:hidden;margin-bottom:12px}.eco__img img{width:100%;height:100%;object-fit:cover}
+.eco__cat{font-size:.5rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.eco__cat--fin{color:var(--blue)}.eco__cat--com{color:var(--green)}.eco__cat--mob{color:var(--amber)}.eco__cat--ai{color:var(--violet)}.eco__cat--svc{color:var(--coral)}
+.eco__name{font-size:.92rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.eco__desc{font-size:.7rem;color:var(--ink4);line-height:1.5}
+.eco__link{font-size:.65rem;font-weight:600;color:var(--blue);margin-top:8px;display:inline-block}
+
+/* PILLARS */
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pillar{border-radius:16px;padding:32px;text-align:center;transition:all .25s;background:var(--white);box-shadow:var(--sh1);border:1px solid rgba(0,0,0,.03)}
+.pillar:hover{transform:translateY(-4px);box-shadow:var(--sh2);border-color:rgba(37,99,235,.1)}
+.pillar__name{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:6px}
+.pillar__desc{font-size:.78rem;color:var(--ink3);line-height:1.6}
+
+/* ACADEMY/Methodology */
+.academy{background:linear-gradient(135deg, var(--blue-p), #dbeafe);color:var(--ink);border-radius:24px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin:0 32px}
+.academy__t{font-family:var(--serif);font-size:1.8rem;margin-bottom:12px;line-height:1.08}.academy__t span{color:var(--blue)}
+.academy__d{font-size:.88rem;color:var(--ink3);line-height:1.7;margin-bottom:20px}
+.academy__tracks{display:grid;gap:8px}
+.academy__track{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--ink3);padding:6px 0}
+.academy__track::before{content:'\2713';color:var(--blue);margin-right:8px}
+.academy__img{border-radius:16px;height:300px;overflow:hidden}.academy__img img{width:100%;height:100%;object-fit:cover}
+
+/* PARTNERS */
+.partner-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.partner{padding:12px 28px;border-radius:100px;background:var(--cream);font-size:.72rem;font-weight:600;color:var(--ink4);border:1px solid rgba(0,0,0,.04);transition:all .2s;box-shadow:var(--sh1)}
+.partner:hover{background:var(--white);box-shadow:var(--sh2);color:var(--ink);transform:translateY(-2px)}
+
+/* INSIGHTS/RESEARCH */
+.insights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin:40px 0}
+.insight-card{background:var(--white);border-radius:16px;padding:24px;box-shadow:var(--sh1);border:1px solid rgba(0,0,0,.03);transition:all .25s}
+.insight-card:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+.insight-card h3{font-size:1.1rem;margin-bottom:8px;color:var(--ink);font-family:var(--serif)}
+.insight-card p{font-size:.85rem;color:var(--ink4);line-height:1.6;margin-bottom:12px}
+.insight-date{font-size:.7rem;color:var(--ink5);text-transform:uppercase;letter-spacing:.05em}
+
+/* ABOUT */
+.about{background:var(--cream);padding:72px 32px}
+.about__in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about__img{border-radius:24px;overflow:hidden;height:400px;box-shadow:var(--sh3)}.about__img img{width:100%;height:100%;object-fit:cover}
+
+/* CTA */
+.cta{text-align:center;padding:96px 32px;background:linear-gradient(135deg, var(--blue-p), #dbeafe)}
+.cta h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3.4rem);color:var(--ink);margin-bottom:8px;line-height:1.02}.cta h2 em{color:var(--blue);font-style:italic}
+.cta p{color:var(--ink4);margin-bottom:28px;font-size:.95rem;max-width:420px;margin-left:auto;margin-right:auto}
+
+/* FOOTER */
+.ft{padding:48px 32px 24px;background:var(--ink);color:rgba(255,255,255,.3)}
+.ft__in{max-width:1200px;margin:0 auto}
+.ft__grid{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr 1fr;gap:20px;margin-bottom:32px}
+.ft__brand p{font-size:.78rem;line-height:1.7;margin-top:10px;max-width:260px}
+.ft__col h4{font-size:.5rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.12);margin-bottom:12px}
+.ft__col a{display:block;font-size:.72rem;margin-bottom:7px;transition:all .15s}.ft__col a:hover{color:#fff;transform:translateX(3px)}
+.ft__bot{padding-top:16px;border-top:1px solid rgba(255,255,255,.04);font-size:.6rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* TEAM MEMBERS */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:40px 0}
+.team-member{background:var(--white);border-radius:16px;padding:24px;text-align:center;box-shadow:var(--sh1);border:1px solid rgba(0,0,0,.03);transition:all .25s}
+.team-member:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+.team-member__img{width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 16px;box-shadow:var(--sh2)}
+.team-member__img img{width:100%;height:100%;object-fit:cover}
+.team-member__name{font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.team-member__title{font-size:.8rem;color:var(--blue);margin-bottom:8px}
+.team-member__bio{font-size:.78rem;color:var(--ink3);line-height:1.6;margin-bottom:12px}
+
+/* BOARD MEMBERS */
+.board-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin:40px 0}
+.board-member{background:var(--white);border-radius:16px;padding:24px;text-align:center;box-shadow:var(--sh1);border:1px solid rgba(0,0,0,.03);transition:all .25s}
+.board-member:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+.board-member__img{width:140px;height:140px;border-radius:50%;overflow:hidden;margin:0 auto 16px;box-shadow:var(--sh2)}
+.board-member__img img{width:100%;height:100%;object-fit:cover}
+.board-member__name{font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.board-member__title{font-size:.85rem;color:var(--ink);margin-bottom:8px}
+.board-member__bio{font-size:.78rem;color:var(--ink3);line-height:1.6;margin-bottom:12px}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:40px 0}
+.service-card{background:var(--white);border-radius:16px;padding:32px;text-align:center;box-shadow:var(--sh1);border:1px solid rgba(0,0,0,.03);transition:all .25s;position:relative}
+.service-card:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+.service-card__icon{width:60px;height:60px;border-radius:50%;background:var(--blue-p);color:var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem}
+.service-card__name{font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:8px}
+.service-card__desc{font-size:.8rem;color:var(--ink3);line-height:1.6;margin-bottom:16px}
+
+.rv{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}.rv.vis{opacity:1;transform:none}
+.d1{transition-delay:60ms}.d2{transition-delay:120ms}.d3{transition-delay:180ms}
+
+@media(max-width:900px){.academy,.about__in{grid-template-columns:1fr}.academy{margin:0 16px;padding:32px}.academy__img,.about__img{height:240px}.eco-grid,.team-grid,.board-grid{grid-template-columns:1fr 1fr}.pillar-grid{grid-template-columns:1fr}.hero__stats{gap:24px;flex-wrap:wrap}.insights-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.navlinks a:not(.btn-b){display:none}.mob{display:block}.ft__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.eco-grid,.team-grid,.board-grid{grid-template-columns:1fr}.ft__grid{grid-template-columns:1fr}}
+</style></head><body>
+
+<nav class="nav"><div class="nav__in">
+<a href="#" class="logo">Contex<span>Ai</span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#team">Team</a><a href="#board">Board</a><a href="#approach">Our Approach</a><a href="#services">Services</a><a href="#sectors">Sectors</a><a href="#insights">Research & Insights</a><a href="#featured">Featured Insights</a><a href="#impact">Our Impact</a><a href="#testimonials">Testimonials</a><a href="#partners">Partners</a><a href="#" class="btn btn-b">Contact Us</a></div>
+<button class="mob" aria-label="Menu">&#9776;</button>
+</div></nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+<button class="close-menu" aria-label="Close menu">&times;</button>
+<a href="#about">About</a>
+<a href="#team">Team</a>
+<a href="#board">Board</a>
+<a href="#approach">Our Approach</a>
+<a href="#services">Services</a>
+<a href="#sectors">Sectors</a>
+<a href="#insights">Research & Insights</a>
+<a href="#featured">Featured Insights</a>
+<a href="#impact">Our Impact</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#partners">Partners</a>
+<a href="#" class="btn btn-b">Contact Us</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+<h1>Where <em>expertise</em><br>meets opportunity</h1>
+<p class="hero__sub">A premier boutique financial consulting firm delivering strategic advisory across water technologies, petrochemicals, oil & gas, power, banking, EPC contracting, agriculture, and sustainability initiatives.</p>
+<div class="hero__btns"><a href="#about" class="btn btn-b">Learn About Us &rarr;</a><a href="#services" class="btn btn-o">Our Services</a></div>
+<div class="hero__stats">
+<div class="hero__stat"><strong>80+</strong><span>Projects</span></div>
+<div class="hero__stat"><strong>15+</span><span>Sectors</span></div>
+<div class="hero__stat"><strong>95%</strong><span>Success Rate</span></div>
+<div class="hero__stat"><strong>24</strong><span>Years Exp</span></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about"><div class="about__in">
+<div class="rv">
+<div class="sec__lbl">About ContexAi</div>
+<h2 class="sec__t">A premier boutique financial consulting firm</h2>
+<p class="sec__d">ContexAi Group specializes in strategic advisory, dispute resolution, and project implementation across multiple sectors with particular focus on water technologies, petrochemicals, oil & gas, power, banking, EPC contracting, agriculture, sustainability, digital transformation, PPP (Public Private Partnerships), and start-up incubation and support initiatives.</p>
+<p style="font-size:.82rem;color:var(--ink4);line-height:1.7;margin-bottom:24px">Built by seasoned practitioners with decades of combined experience across diverse sectors. Our approach combines deep industry knowledge with strategic financial expertise to deliver exceptional results for complex business challenges.</p>
+<a href="#" class="btn btn-b">Learn More &rarr;</a>
+</div>
+<div class="about__img rv"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=450&fit=crop&q=80" alt="ContexAi consulting team" loading="lazy"></div>
+</div></section>
+
+<!-- BOARD MEMBERS -->
+<section class="sec bg-c" id="board"><div class="sec__in">
+<div class="sec__lbl">Board of Directors</div>
+<h2 class="sec__t rv">Leadership Excellence</h2>
+<p class="sec__d rv">Our board of directors brings extensive experience from leading financial institutions, regulatory bodies, and international development organizations.</p>
+<div class="board-grid">
+<div class="board-member rv">
+<div class="board-member__img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&q=80" alt="James Henderson"></div>
+<div class="board-member__name">James Henderson</div>
+<div class="board-member__title">Chairman</div>
+<div class="board-member__bio">Former CEO of International Financial Services Group. 25+ years in financial consulting and regulatory affairs across emerging markets.</div>
+</div>
+<div class="board-member rv d1">
+<div class="board-member__img"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&q=80" alt="Sarah Mitchell"></div>
+<div class="board-member__name">Sarah Mitchell</div>
+<div class="board-member__title">Vice Chairman</div>
+<div class="board-member__bio">Ex-Regional Director at World Bank Group. Specializes in infrastructure finance and public-private partnerships.</div>
+</div>
+<div class="board-member rv d2">
+<div class="board-member__img"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&q=80" alt="Robert Chen"></div>
+<div class="board-member__name">Robert Chen</div>
+<div class="board-member__title">Director</div>
+<div class="board-member__bio">Former Managing Director at Global Investment Bank. Expert in M&A and strategic financial planning.</div>
+</div>
+</div>
+</div></section>
+
+<!-- TEAM MEMBERS -->
+<section class="sec" id="team"><div class="sec__in">
+<div class="sec__lbl">Leadership Team</div>
+<h2 class="sec__t rv">Meet Our Experts</h2>
+<p class="sec__d rv">Our leadership team combines deep expertise with practical experience across multiple sectors and markets.</p>
+<div class="team-grid">
+<div class="team-member rv">
+<div class="team-member__img"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=80" alt="Amir Waheed Ahmed"></div>
+<div class="team-member__name">Amir Waheed Ahmed</div>
+<div class="team-member__title">Founder & CEO</div>
+<div class="team-member__bio">Founder of ContexAi Group with 20+ years of experience in financial consulting, PPP advisory, and strategic planning across emerging markets.</div>
+</div>
+<div class="team-member rv d1">
+<div class="team-member__img"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&q=80" alt="Dr. Ayesha Khan"></div>
+<div class="team-member__name">Dr. Ayesha Khan</div>
+<div class="team-member__title">CTO & Head of Analytics</div>
+<div class="team-member__bio">PhD in Financial Economics with expertise in data analytics, risk management, and financial modeling for complex projects.</div>
+</div>
+<div class="team-member rv d2">
+<div class="team-member__img"><img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200&h=200&fit=crop&q=80" alt="Michael Rodriguez"></div>
+<div class="team-member__name">Michael Rodriguez</div>
+<div class="team-member__title">Chief Dispute Resolution Officer</div>
+<div class="team-member__bio">Qualified barrister with 15+ years in commercial dispute resolution, arbitration, and mediation across multiple jurisdictions.</div>
+</div>
+<div class="team-member rv d1">
+<div class="team-member__img"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&q=80" alt="Fatima Al-Zahra"></div>
+<div class="team-member__name">Fatima Al-Zahra</div>
+<div class="team-member__title">Head of Sector Advisory</div>
+<div class="team-member__bio">Specialist in water technologies, infrastructure projects, and sustainable development initiatives across the MENA region.</div>
+</div>
+</div>
+</div></section>
+
+<!-- APPROACH -->
+<section class="sec bg-c" id="approach"><div class="sec__in">
+<div class="sec__lbl">Our Approach</div>
+<h2 class="sec__t rv" style="text-align:center">Proven Methodology</h2>
+<div class="pillar-grid" style="margin-top:32px">
+<div class="pillar rv"><div class="pillar__name">Strategic Advisory</div><div class="pillar__desc">Deep sector expertise combined with strategic financial consulting to deliver actionable insights and sustainable solutions for complex business challenges.</div></div>
+<div class="pillar rv d1"><div class="pillar__name">Dispute Resolution</div><div class="pillar__desc">Specialized desk for resolving complex commercial, financial, and contractual disputes with efficiency and legal expertise across multiple sectors.</div></div>
+<div class="pillar rv d2"><div class="pillar__name">Project Implementation</div><div class="pillar__desc">End-to-end project advisory from conception to completion, ensuring successful execution of initiatives across diverse industries.</div></div>
+</div></div></section>
+
+<!-- CONSULTING METHODOLOGY -->
+<div class="sec" id="methodology"><div class="academy rv">
+<div><h2 class="academy__t">ContexAi <span>Methodology</span></h2>
+<p class="academy__d">Proven frameworks and approaches for financial consulting, dispute resolution, and strategic advisory across diverse sectors. Experience-driven, solution-focused, results-oriented.</p>
+<div class="academy__tracks">
+<div class="academy__track">Financial Strategy & Analysis</div>
+<div class="academy__track">Dispute Resolution Framework</div>
+<div class="academy__track">Sector-Specific Advisory</div>
+<div class="academy__track">Project Management</div>
+<div class="academy__track">Sustainability & Compliance</div>
+<div class="academy__track">PPP Advisory</div>
+<div class="academy__track">Start-up Incubation & Support</div>
+</div>
+<a href="#" class="btn" style="margin-top:20px;background:var(--blue);color:#fff">Learn More &rarr;</a>
+</div>
+<div class="academy__img"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=350&fit=crop&q=80" alt="Consulting team meeting" loading="lazy"></div>
+</div></div>
+
+<!-- SERVICES -->
+<section class="sec bg-c" id="services"><div class="sec__in">
+<div class="sec__lbl">Consulting Services</div>
+<h2 class="sec__t rv">Comprehensive Financial & Strategic Advisory</h2>
+<p class="sec__d rv">Specialized consulting services across multiple sectors with focus on financial strategy, dispute resolution, and project implementation.</p>
+
+<div class="tabs-container">
+<div class="tab-nav">
+<button class="tab-btn active" data-tab="financial">Financial Consulting</button>
+<button class="tab-btn" data-tab="dispute">Dispute Resolution</button>
+<button class="tab-btn" data-tab="advisory">Advisory Services</button>
+<button class="tab-btn" data-tab="sector">Sector Expertise</button>
+</div>
+
+<div class="tab-content active" id="financial">
+<div class="eco-grid">
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=60&h=60&fit=crop&q=80" alt="Financial Consulting"></div>
+<div class="eco__cat eco__cat--fin">Financial</div>
+<div class="eco__name">Financial Consulting</div>
+<div class="eco__desc">Top-tier boutique financial consulting services with deep expertise in strategic financial planning, due diligence, and investment advisory.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=60&h=60&fit=crop&q=80" alt="Strategic Financial Planning"></div>
+<div class="eco__cat eco__cat--fin">Financial</div>
+<div class="eco__name">Strategic Financial Planning</div>
+<div class="eco__desc">Comprehensive financial strategies tailored to your organization's specific goals and market conditions.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=60&h=60&fit=crop&q=80" alt="Investment Advisory"></div>
+<div class="eco__cat eco__cat--fin">Financial</div>
+<div class="eco__name">Investment Advisory</div>
+<div class="eco__desc">Expert guidance on investment decisions with focus on risk assessment, portfolio optimization, and return maximization.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+</div>
+</div>
+
+<div class="tab-content" id="dispute">
+<div class="eco-grid">
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=60&h=60&fit=crop&q=80" alt="Dispute Resolution"></div>
+<div class="eco__cat eco__cat--svc">Legal</div>
+<div class="eco__name">Dispute Resolution Desk</div>
+<div class="eco__desc">Specialized dispute resolution services for complex commercial, financial, and contractual matters across sectors.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=60&h=60&fit=crop&q=80" alt="Arbitration Services"></div>
+<div class="eco__cat eco__cat--svc">Legal</div>
+<div class="eco__name">Arbitration Services</div>
+<div class="eco__desc">Efficient and binding resolution of commercial disputes with industry-specific expertise.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=60&h=60&fit=crop&q=80" alt="Mediation"></div>
+<div class="eco__cat eco__cat--svc">Legal</div>
+<div class="eco__name">Mediation</div>
+<div class="eco__desc">Facilitated negotiation processes to achieve mutually acceptable solutions to business disputes.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+</div>
+</div>
+
+<div class="tab-content" id="advisory">
+<div class="eco-grid">
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=60&h=60&fit=crop&q=80" alt="Start-up Advisory"></div>
+<div class="eco__cat eco__cat--com">Advisory</div>
+<div class="eco__name">Start-up & Project Advisory</div>
+<div class="eco__desc">Comprehensive advisory for start-ups and projects across water technologies, petrochemicals, oil & gas, and power sectors.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=60&h=60&fit=crop&q=80" alt="Mergers & Acquisitions"></div>
+<div class="eco__cat eco__cat--com">Advisory</div>
+<div class="eco__name">M&A Advisory</div>
+<div class="eco__desc">End-to-end advisory services for mergers, acquisitions, and corporate restructuring initiatives.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=60&h=60&fit=crop&q=80" alt="Business Strategy"></div>
+<div class="eco__name">Business Strategy</div>
+<div class="eco__desc">Strategic planning and execution guidance to achieve sustainable competitive advantage.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=60&h=60&fit=crop&q=80" alt="PPP Advisory"></div>
+<div class="eco__cat eco__cat--com">Advisory</div>
+<div class="eco__name">PPP (Public Private Partnership)</div>
+<div class="eco__desc">Strategic advisory for public-private partnership projects across infrastructure, utilities, and development sectors.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=60&h=60&fit=crop&q=80" alt="Start-up Incubation"></div>
+<div class="eco__cat eco__cat--com">Advisory</div>
+<div class="eco__name">Start-up Incubation & Support</div>
+<div class="eco__desc">Comprehensive incubation services including mentoring, funding support, market access, and growth acceleration.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+</div>
+</div>
+
+<div class="tab-content" id="sector">
+<div class="eco-grid">
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=60&h=60&fit=crop&q=80" alt="Energy & Utilities"></div>
+<div class="eco__cat eco__cat--com">Sector</div>
+<div class="eco__name">Energy & Utilities</div>
+<div class="eco__desc">Advisory services for power generation, transmission, and renewable energy projects across Pakistan.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=60&h=60&fit=crop&q=80" alt="Financial Services"></div>
+<div class="eco__cat eco__cat--com">Sector</div>
+<div class="eco__name">Digital Banking and Fintech</div>
+<div class="eco__desc">Strategic advisory for banks, microfinance institutions, and digital banking initiatives.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=60&h=60&fit=crop&q=80" alt="Agriculture & Food"></div>
+<div class="eco__cat eco__cat--com">Sector</div>
+<div class="eco__name">Agriculture & Food</div>
+<div class="eco__desc">Advisory for smart farming, organic agriculture, and food security initiatives.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+</div>
+</div>
+
+</div></section>
+
+<!-- INSIGHTS -->
+<section class="sec" id="insights"><div class="sec__in">
+<div class="sec__lbl">Research & Insights</div>
+<h2 class="sec__t rv">Latest Industry Insights</h2>
+<p class="sec__d rv">Cutting-edge research and analysis from our sector experts and thought leaders.</p>
+<div class="insights-grid">
+<div class="insight-card rv">
+<h3>Emerging Trends in Water Technology</h3>
+<p>Analyzing the next wave of innovation in water treatment, management, and infrastructure projects across Pakistan.</p>
+<div class="insight-date">January 2026</div>
+</div>
+<div class="insight-card rv d1">
+<h3>Energy Transition in Pakistan</h3>
+<p>Comprehensive analysis of renewable energy growth, regulatory changes, and investment opportunities in the power sector.</p>
+<div class="insight-date">December 2025</div>
+</div>
+<div class="insight-card rv d2">
+<h3>Banking Digitalization Impact</h3>
+<p>How digital banking initiatives are transforming financial access and service delivery in emerging markets.</p>
+<div class="insight-date">November 2025</div>
+</div>
+<div class="insight-card rv">
+<h3>Sustainable Finance Framework</h3>
+<p>Implementing green finance instruments and sustainability-linked lending structures for emerging markets.</p>
+<div class="insight-date">October 2025</div>
+</div>
+<div class="insight-card rv d1">
+<h3>Petrochemical Market Outlook</h3>
+<p>Assessing supply chain dynamics, pricing trends, and investment opportunities in the regional petrochemical market.</p>
+<div class="insight-date">September 2025</div>
+</div>
+<div class="insight-card rv d2">
+<h3>AgTech Investment Landscape</h3>
+<p>Exploring opportunities in smart farming, precision agriculture, and sustainable food production systems.</p>
+<div class="insight-date">August 2025</div>
+</div>
+</div>
+</div></section>
+
+<!-- FEATURED INSIGHTS -->
+<section class="sec bg-c" id="featured"><div class="sec__in" style="max-width:1000px">
+<div class="sec__lbl">Featured Insights</div>
+<h2 class="sec__t rv" style="text-align:center">Our Latest Research</h2>
+<p class="sec__d rv" style="text-align:center;margin:0 auto 36px">Industry analysis and strategic insights from our sector experts</p>
+<div class="insights-grid" style="grid-template-columns:repeat(auto-fit,minmax(350px,1fr))">
+<div class="insight-card rv">
+<h3>Green Finance in Emerging Markets</h3>
+<p>How sustainable finance instruments are reshaping investment landscapes across developing economies. Key trends, regulatory frameworks, and opportunity areas.</p>
+<div class="insight-date">January 2026</div>
+</div>
+<div class="insight-card rv d1">
+<h3>Energy Transition Impact on Petrochemicals</h3>
+<p>Comprehensive analysis on how evolving energy policies affect petrochemical supply chains and investment decisions in the region.</p>
+<div class="insight-date">December 2025</div>
+</div>
+</div>
+<div style="text-align:center;margin-top:30px">
+<a href="#insights" class="btn btn-b">View All Insights &rarr;</a>
+</div>
+</div></section>
+
+<!-- STATISTICS -->
+<section class="sec" id="impact">
+<div class="sec__in" style="text-align:center">
+<div class="sec__lbl">Our Impact</div>
+<h2 class="sec__t rv">Proven Track Record</h2>
+<div class="hero__stats" style="justify-content:center;gap:60px;padding:40px 0">
+<div class="hero__stat rv"><strong>24+</strong><span>Years Combined Experience</span></div>
+<div class="hero__stat rv d1"><strong>80+</strong><span>Successful Projects</span></div>
+<div class="hero__stat rv d2"><strong>15+</strong><span>Sectors Served</span></div>
+<div class="hero__stat rv d3"><strong>95%</strong><span>Client Retention</span></div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec bg-c" id="testimonials">
+<div class="sec__in" style="max-width:800px;text-align:center;margin:0 auto">
+<div class="sec__lbl">Client Testimonials</div>
+<h2 class="sec__t rv">Trusted by Industry Leaders</h2>
+<div class="pillar-grid" style="margin-top:32px">
+<div class="pillar rv"><div class="pillar__name">"Outstanding Strategic Guidance"</div><div class="pillar__desc">"ContexAI's deep sector expertise and strategic financial consulting helped us navigate a complex merger in the energy sector. Their methodology is exceptional."</div><div style="margin-top:12px;font-weight:500;color:var(--ink)">— Energy Company CEO</div></div>
+<div class="pillar rv d1"><div class="pillar__name">"Efficient Dispute Resolution"</div><div class="pillar__desc">"The dispute resolution desk provided exceptional service during our contractual disagreement. They resolved it efficiently while preserving our business relationship."</div><div style="margin-top:12px;font-weight:500;color:var(--ink)">— Manufacturing Director</div></div>
+<div class="pillar rv d2"><div class="pillar__name">"Project Success Guaranteed"</div><div class="pillar__desc">"From conception to completion, their end-to-end project advisory ensured our infrastructure project was delivered on time and within budget."</div><div style="margin-top:12px;font-weight:500;color:var(--ink)">— Infrastructure Project Manager</div></div>
+</div>
+</div>
+</section>
+
+<!-- SECTORS -->
+<section class="sec bg-c" id="sectors"><div class="sec__in">
+<div class="sec__lbl">Sectors of Expertise</div>
+<h2 class="sec__t rv">Deep Sector Knowledge</h2>
+<p class="sec__d rv">Proven track record across diverse sectors with specialized knowledge and strategic insights.</p>
+<div class="eco-grid">
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=60&h=60&fit=crop&q=80" alt="Water Technologies"></div>
+<div class="eco__cat eco__cat--com">Water</div>
+<div class="eco__name">Water Technologies</div>
+<div class="eco__desc">Strategic advisory for water treatment, management, and infrastructure projects with focus on sustainability.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=60&h=60&fit=crop&q=80" alt="Petrochemicals"></div>
+<div class="eco__cat eco__cat--com">Petrochemicals</div>
+<div class="eco__name">Petrochemicals</div>
+<div class="eco__desc">Comprehensive advisory services for petrochemical projects, refineries, and downstream operations.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=60&h=60&fit=crop&q=80" alt="Oil & Gas"></div>
+<div class="eco__cat eco__cat--com">Energy</div>
+<div class="eco__name">Oil & Gas</div>
+<div class="eco__desc">Strategic advisory for oil marketing, refining operations, and upstream/downstream integration.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=60&h=60&fit=crop&q=80" alt="Power Sector"></div>
+<div class="eco__cat eco__cat--com">Power</div>
+<div class="eco__name">Power Sector</div>
+<div class="eco__desc">Advisory services for power generation, transmission, and renewable energy projects across Pakistan.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1449965408869-ebd3fee56fd9?w=60&h=60&fit=crop&q=80" alt="EPC Contracting"></div>
+<div class="eco__cat eco__cat--mob">Construction</div>
+<div class="eco__name">EPC Contracting</div>
+<div class="eco__desc">Project management and oversight for Engineering, Procurement & Construction contracts and projects.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1449965408869-ebd3fee56fd9?w=60&h=60&fit=crop&q=80" alt="Banking"></div>
+<div class="eco__cat eco__cat--svc">Financial</div>
+<div class="eco__name">Digital Banking and Fintech</div>
+<div class="eco__desc">Advisory for digital transformation initiatives and fintech solutions.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=60&h=60&fit=crop&q=80" alt="Micro Finance"></div>
+<div class="eco__cat eco__cat--ai">Financial</div>
+<div class="eco__name">Micro Finance</div>
+<div class="eco__desc">Strategic advisory for microfinance institutions and inclusive finance initiatives.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=60&h=60&fit=crop&q=80" alt="Smart Farming"></div>
+<div class="eco__cat eco__cat--ai">Agriculture</div>
+<div class="eco__name">Smart & Organic Farming</div>
+<div class="eco__desc">Advisory for precision agriculture, organic farming, and agricultural technology initiatives.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=60&h=60&fit=crop&q=80" alt="Brand Management"></div>
+<div class="eco__cat eco__cat--svc">Marketing</div>
+<div class="eco__name">Brand Management & Launch</div>
+<div class="eco__desc">Complete brand development, positioning, and market launch strategies for diverse products and services.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=60&h=60&fit=crop&q=80" alt="Content Marketing"></div>
+<div class="eco__cat eco__cat--fin">Marketing</div>
+<div class="eco__name">Content Writing & Digital Marketing</div>
+<div class="eco__desc">Strategic content creation and digital marketing campaigns for business growth and engagement.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=60&h=60&fit=crop&q=80" alt="SDGs"></div>
+<div class="eco__cat eco__cat--fin">Sustainability</div>
+<div class="eco__name">SDGs & Sustainability</div>
+<div class="eco__desc">Sustainability goal setting, monitoring, and reporting aligned with UN Sustainable Development Goals.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d2">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=60&h=60&fit=crop&q=80" alt="Green Initiatives"></div>
+<div class="eco__cat eco__cat--fin">Environment</div>
+<div class="eco__name">Green Initiatives & Carbon Credits</div>
+<div class="eco__desc">Advisory on green projects, carbon credit generation, and environmental compliance initiatives.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+
+<div class="eco rv">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=60&h=60&fit=crop&q=80" alt="PPP Advisory"></div>
+<div class="eco__cat eco__cat--com">Infrastructure</div>
+<div class="eco__name">PPP (Public Private Partnership)</div>
+<div class="eco__desc">Advisory services for structuring, financing, and implementing public-private partnership projects.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+<div class="eco rv d1">
+<div class="eco__img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=60&h=60&fit=crop&q=80" alt="Start-up Incubation"></div>
+<div class="eco__cat eco__cat--com">Innovation</div>
+<div class="eco__name">Start-up Incubation & Support</div>
+<div class="eco__desc">Comprehensive support for start-ups including mentoring, funding guidance, market access, and scaling strategies.</div>
+<div class="eco__link">Learn more &rarr;</div>
+</div>
+</div>
+</div></section>
+
+<!-- PARTNERS -->
+<section class="sec" id="partners"><div class="sec__in" style="text-align:center">
+<div class="sec__lbl">Partners</div>
+<h2 class="sec__t rv">Trusted by industry leaders</h2>
+<p class="sec__d rv" style="margin-left:auto;margin-right:auto">Strategic partnerships with leading organizations across financial services, energy, technology, and government sectors.</p>
+<div class="partner-row rv">
+<span class="partner">World Bank</span><span class="partner">Asian Development Bank</span><span class="partner">International Finance Corporation</span><span class="partner">HBL</span><span class="partner">Meezan Bank</span><span class="partner">JS Bank</span><span class="partner">Engro Corporation</span><span class="partner">KESC</span>
+</div></div></section>
+
+<!-- CTA -->
+<section class="cta">
+<h2 class="rv">Ready to <em>advance</em> your project?</h2>
+<p class="rv">Whether you need financial consulting, dispute resolution, or strategic advisory — our expertise can accelerate your success.</p>
+<div class="rv" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+<a href="#" class="btn btn-b">Engage Our Services &rarr;</a>
+<a href="#" class="btn btn-o">Contact Experts</a>
+</div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="ft"><div class="ft__in"><div class="ft__grid">
+<div class="ft__brand"><a href="#" class="logo" style="color:rgba(255,255,255,.35)">Contex<span style="color:var(--blue-l)">Ai</span></a><p>Intelligence in Context. Premier boutique financial consulting firm.</p></div>
+<div class="ft__col"><h4>Consulting Services</h4><a href="#services">Financial Consulting</a><a href="#services">Dispute Resolution</a><a href="#services">Start-up Advisory</a><a href="#services">Project Advisory</a><a href="#services">Strategic Planning</a></div>
+<div class="ft__col"><h4>Sectors</h4><a href="#sectors">Water Technologies</a><a href="#sectors">Petrochemicals</a><a href="#sectors">Oil & Gas</a><a href="#sectors">Power Sector</a><a href="#sectors">EPC Contracting</a></div>
+<div class="ft__col"><h4>Solutions</h4><a href="#sectors">Banking Advisory</a><a href="#sectors">Micro Finance</a><a href="#sectors">Agribusiness</a><a href="#sectors">Sustainability</a><a href="#sectors">Brand Management</a></div>
+<div class="ft__col"><h4>Company</h4><a href="#about">About Us</a><a href="#team">Team</a><a href="#board">Board</a><a href="#partners">Partners</a><a href="#">Contact</a></div>
+</div><div class="ft__bot"><p>&copy; 2026 ContexAi Group. All rights reserved.</p><p>SECP Registered | Certified Consultants | Regulatory Compliant</p></div></div></footer>
+
+<script>
+(function(){"use strict";
+
+// Scroll animations
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target)}})},{threshold:.05,rootMargin:"0px 0px -30px 0px"});document.querySelectorAll(".rv").forEach(function(el){io.observe(el)})}else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("vis")})}
+
+// Smooth scrolling
+document.addEventListener("click",function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var el=document.querySelector(a.getAttribute("href"));if(el){e.preventDefault();el.scrollIntoView({behavior:"smooth"});}});
+
+// Tab functionality
+document.querySelectorAll('.tab-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active class from all buttons and content
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+    // Add active class to clicked button
+    button.classList.add('active');
+
+    // Show corresponding content
+    const tabId = button.getAttribute('data-tab');
+    document.getElementById(tabId).classList.add('active');
+  });
+});
+
+// Mobile menu functionality
+const mobBtn = document.querySelector('.mob');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeMenu = document.querySelector('.close-menu');
+
+mobBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+  document.body.style.overflow = 'hidden';
+});
+
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  document.body.style.overflow = '';
+});
+
+// Close mobile menu when clicking on links
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+});
+
+// Navbar scroll effect
+let lastScrollTop = 0;
+const nav = document.querySelector('.nav');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > 100) {
+    document.body.classList.add('scrolled');
+  } else {
+    document.body.classList.remove('scrolled');
+  }
+
+  lastScrollTop = scrollTop;
+});
+
+// Auto-advancing insights (optional)
+let currentSlide = 0;
+const slides = document.querySelectorAll('.insight-card');
+if (slides.length > 0) {
+  setInterval(() => {
+    if (currentSlide < slides.length) {
+      slides[currentSlide].classList.add('rv', 'vis');
+      currentSlide++;
+    }
+  }, 1000);
+}
+
+})();
+</script></body></html>
