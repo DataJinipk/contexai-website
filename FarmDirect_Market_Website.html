@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FarmDirect Market — Farm to table, verified & direct. Blockchain-verified fresh produce by ContexAi Group.">
+<title>FarmDirect Market — Farm to Table, Verified & Direct | ContexAi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#1a2e1a;--ink2:#2d4a2d;--ink3:#557755;--ink4:#88a088;--white:#fff;--cream:#F8F6F0;--sand:#F0EDE4;--green:#2D7A3A;--green-l:#3A9E4C;--green-p:#E6F4EB;--amber:#D4940A;--terra:#B85C2A;--sh1:0 2px 8px rgba(0,0,0,.05);--sh2:0 4px 20px rgba(0,0,0,.07);--sh3:0 12px 40px rgba(0,0,0,.09);--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
+html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--cream);color:var(--ink3);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6}a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(248,246,240,.92);backdrop-filter:blur(20px);padding:14px 32px;border-bottom:1px solid rgba(0,0,0,.03)}
+.nav__in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.3rem;color:var(--ink)}.logo span{color:var(--green)}
+.logo small{font-family:var(--sans);font-size:.5rem;color:var(--ink4);margin-left:4px;text-transform:uppercase;letter-spacing:.1em}
+.navlinks{display:flex;gap:20px;align-items:center}
+.navlinks a{font-size:.75rem;font-weight:500;color:var(--ink4);transition:color .15s}.navlinks a:hover{color:var(--ink)}
+.btn{padding:10px 24px;border-radius:100px;font-size:.82rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.btn-g{background:var(--green);color:var(--white)}.btn-g:hover{background:var(--green-l);transform:translateY(-1px);box-shadow:var(--sh2)}
+.btn-o{border:1.5px solid rgba(0,0,0,.1);color:var(--ink);background:transparent}.btn-o:hover{border-color:var(--ink)}
+.mob{display:none;font-size:1.4rem;padding:6px}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 32px 80px;max-width:1200px;margin:0 auto;gap:48px}
+.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.06;color:var(--ink);margin-bottom:16px}
+.hero h1 em{color:var(--green);font-style:italic}
+.hero__sub{font-size:1rem;color:var(--ink4);line-height:1.8;max-width:440px;margin-bottom:28px;font-weight:300}
+.hero__btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.hero__trust{display:flex;gap:16px;font-size:.72rem;color:var(--ink4)}.hero__trust span{display:flex;align-items:center;gap:4px}
+.hero__img{border-radius:24px;overflow:hidden;height:460px;box-shadow:var(--sh3)}.hero__img img{width:100%;height:100%;object-fit:cover}
+
+.sec{padding:64px 32px}.sec__in{max-width:1200px;margin:0 auto}
+.sec__lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:.15em;color:var(--ink4);margin-bottom:6px;font-weight:600}
+.sec__t{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--ink);margin-bottom:8px;line-height:1.1}
+.sec__d{font-size:.9rem;color:var(--ink4);line-height:1.7;max-width:480px;margin-bottom:32px;font-weight:300}
+.bg-s{background:var(--sand)}
+
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{border-radius:16px;overflow:hidden;background:var(--white);box-shadow:var(--sh1);transition:all .25s;cursor:pointer;border:1px solid rgba(0,0,0,.03)}
+.cat:hover{box-shadow:var(--sh3);transform:translateY(-4px)}
+.cat__img{height:140px;overflow:hidden}.cat__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.cat:hover .cat__img img{transform:scale(1.05)}
+.cat__body{padding:12px;text-align:center}
+.cat__name{font-family:var(--serif);font-size:.88rem;color:var(--ink);margin-bottom:2px}
+.cat__count{font-size:.62rem;color:var(--ink4)}
+
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.how{text-align:center;padding:24px 16px}
+.how__num{font-family:var(--serif);font-size:2rem;color:var(--green-p);margin-bottom:8px}
+.how__name{font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:6px}
+.how__desc{font-size:.75rem;color:var(--ink4);line-height:1.6}
+
+.trust{background:var(--ink);color:#fff;border-radius:24px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin:0 32px}
+.trust__t{font-family:var(--serif);font-size:1.6rem;margin-bottom:12px;line-height:1.1}.trust__t span{color:var(--green-l)}
+.trust__d{font-size:.88rem;opacity:.5;line-height:1.7;margin-bottom:16px}
+.trust__list{list-style:none;display:grid;gap:6px}
+.trust__list li{font-size:.78rem;opacity:.7;display:flex;align-items:center;gap:8px}
+.trust__list li::before{content:'\2713';color:var(--green-l)}
+.trust__img{border-radius:16px;height:260px;overflow:hidden}.trust__img img{width:100%;height:100%;object-fit:cover}
+
+.farmer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.farmer{border-radius:16px;overflow:hidden;background:var(--white);box-shadow:var(--sh1);transition:all .25s;border:1px solid rgba(0,0,0,.03)}
+.farmer:hover{box-shadow:var(--sh3);transform:translateY(-4px)}
+.farmer__img{height:180px;overflow:hidden}.farmer__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.farmer:hover .farmer__img img{transform:scale(1.05)}
+.farmer__body{padding:14px}
+.farmer__name{font-family:var(--serif);font-size:.92rem;color:var(--ink);margin-bottom:2px}
+.farmer__loc{font-size:.65rem;color:var(--ink4);margin-bottom:6px}
+.farmer__desc{font-size:.72rem;color:var(--ink3);line-height:1.5}
+
+.cta{text-align:center;padding:80px 32px}
+.cta h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--ink);margin-bottom:8px}.cta h2 em{color:var(--green);font-style:italic}
+.cta p{color:var(--ink4);margin-bottom:24px;font-size:.9rem}
+
+.ft{padding:48px 32px 24px;background:var(--ink);color:rgba(255,255,255,.35)}
+.ft__in{max-width:1200px;margin:0 auto}
+.ft__grid{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.ft__brand p{font-size:.78rem;line-height:1.7;margin-top:10px;max-width:260px}
+.ft__col h4{font-size:.55rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.15);margin-bottom:14px}
+.ft__col a{display:block;font-size:.75rem;margin-bottom:8px;transition:all .15s}.ft__col a:hover{color:#fff;transform:translateX(3px)}
+.ft__bot{padding-top:16px;border-top:1px solid rgba(255,255,255,.04);font-size:.62rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.rv{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}.rv.vis{opacity:1;transform:none}
+.d1{transition-delay:60ms}.d2{transition-delay:120ms}.d3{transition-delay:180ms}
+
+@media(max-width:900px){.hero,.trust{grid-template-columns:1fr}.hero{padding-top:100px}.hero__img,.trust__img{height:260px}.cat-grid{grid-template-columns:1fr 1fr}.how-grid,.farmer-grid{grid-template-columns:1fr}.navlinks a:not(.btn-g){display:none}.mob{display:block}.trust{margin:0 16px;padding:32px}.ft__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cat-grid{grid-template-columns:1fr}.ft__grid{grid-template-columns:1fr}}
+</style></head><body>
+
+<nav class="nav"><div class="nav__in">
+<a href="#" class="logo">Farm<span>Direct</span> <small>by ContexAi</small></a>
+<div class="navlinks"><a href="#categories">Shop</a><a href="#how">How it Works</a><a href="#farmers">Farmers</a><a href="#" class="btn btn-g">Shop Now</a></div>
+<button class="mob" aria-label="Menu">&#9776;</button>
+</div></nav>
+
+<main>
+<section class="hero">
+<div>
+<h1>Farm to table,<br><em>verified &amp; direct</em></h1>
+<p class="hero__sub">Blockchain-verified fresh produce directly from Pakistani farmers. No middlemen, no markups, just fresh food delivered to your door.</p>
+<div class="hero__btns"><a href="#" class="btn btn-g">Shop Now &rarr;</a><a href="#" class="btn btn-o">For Farmers</a></div>
+<div class="hero__trust"><span>&#x2713; Blockchain Verified</span><span>&#x2713; Same-Day Fresh</span><span>&#x2713; Direct from Farm</span></div>
+</div>
+<div class="hero__img"><img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=700&h=500&fit=crop&q=80" alt="Fresh farm produce" loading="eager"></div>
+</section>
+
+<section class="sec bg-s" id="categories"><div class="sec__in">
+<div class="sec__lbl">Shop</div>
+<h2 class="sec__t rv">Shop by category</h2>
+<p class="sec__d rv">Fresh, seasonal, blockchain-verified produce from local farms.</p>
+<div class="cat-grid">
+<div class="cat rv"><div class="cat__img"><img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&h=200&fit=crop&q=80" alt="Vegetables" loading="lazy"></div><div class="cat__body"><div class="cat__name">Fresh Vegetables</div><div class="cat__count">120+ products</div></div></div>
+<div class="cat rv d1"><div class="cat__img"><img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=300&h=200&fit=crop&q=80" alt="Fruits" loading="lazy"></div><div class="cat__body"><div class="cat__name">Fruits &amp; Berries</div><div class="cat__count">85+ products</div></div></div>
+<div class="cat rv d2"><div class="cat__img"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&h=200&fit=crop&q=80" alt="Grains" loading="lazy"></div><div class="cat__body"><div class="cat__name">Grains &amp; Pulses</div><div class="cat__count">60+ products</div></div></div>
+<div class="cat rv d3"><div class="cat__img"><img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=300&h=200&fit=crop&q=80" alt="Dairy" loading="lazy"></div><div class="cat__body"><div class="cat__name">Dairy &amp; Eggs</div><div class="cat__count">45+ products</div></div></div>
+<div class="cat rv"><div class="cat__img"><img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=300&h=200&fit=crop&q=80" alt="Meat" loading="lazy"></div><div class="cat__body"><div class="cat__name">Meat &amp; Poultry</div><div class="cat__count">55+ products</div></div></div>
+<div class="cat rv d1"><div class="cat__img"><img src="https://images.unsplash.com/photo-1534483509719-8127d8be8573?w=300&h=200&fit=crop&q=80" alt="Honey" loading="lazy"></div><div class="cat__body"><div class="cat__name">Honey &amp; Preserves</div><div class="cat__count">30+ products</div></div></div>
+<div class="cat rv d2"><div class="cat__img"><img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=300&h=200&fit=crop&q=80" alt="Herbs" loading="lazy"></div><div class="cat__body"><div class="cat__name">Herbs &amp; Spices</div><div class="cat__count">70+ products</div></div></div>
+<div class="cat rv d3"><div class="cat__img"><img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=300&h=200&fit=crop&q=80" alt="Seafood" loading="lazy"></div><div class="cat__body"><div class="cat__name">Seafood</div><div class="cat__count">25+ products</div></div></div>
+</div></div></section>
+
+<section class="sec" id="how"><div class="sec__in">
+<div class="sec__lbl">Process</div>
+<h2 class="sec__t rv">Direct, transparent, fresh</h2>
+<div class="how-grid" style="margin-top:24px">
+<div class="how rv"><div class="how__num">01</div><div class="how__name">Farmer Harvests</div><div class="how__desc">Produce is harvested fresh and logged on our blockchain with origin, date, and quality checks.</div></div>
+<div class="how rv d1"><div class="how__num">02</div><div class="how__name">Quality Verified</div><div class="how__desc">Every batch is tested for freshness, pesticides, and graded by certified inspectors.</div></div>
+<div class="how rv d2"><div class="how__num">03</div><div class="how__name">Delivered Same-Day</div><div class="how__desc">Cold-chain logistics from farm to your kitchen in under 12 hours.</div></div>
+</div></div></section>
+
+<div class="sec"><div class="trust rv">
+<div><h2 class="trust__t">Blockchain-verified <span>supply chain</span></h2>
+<p class="trust__d">Every product on FarmDirect has a verifiable chain of custody from seed to table.</p>
+<ul class="trust__list"><li>GPS-tagged farm origin</li><li>Harvest timestamp on blockchain</li><li>Cold-chain temperature monitoring</li><li>Pesticide-free certification</li><li>Real-time freshness tracking</li></ul></div>
+<div class="trust__img"><img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=500&h=300&fit=crop&q=80" alt="Farmer in field" loading="lazy"></div>
+</div></div>
+
+<section class="sec bg-s" id="farmers"><div class="sec__in">
+<div class="sec__lbl">Growers</div>
+<h2 class="sec__t rv">Meet the growers</h2>
+<p class="sec__d rv">Real farmers, real stories, verified produce.</p>
+<div class="farmer-grid">
+<div class="farmer rv"><div class="farmer__img"><img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&q=80" alt="Ahmad Farms" loading="lazy"></div><div class="farmer__body"><div class="farmer__name">Ahmad Farms</div><div class="farmer__loc">Sahiwal, Punjab</div><div class="farmer__desc">Organic vegetables and wheat for three generations.</div></div></div>
+<div class="farmer rv d1"><div class="farmer__img"><img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=250&fit=crop&q=80" alt="Hunza Orchards" loading="lazy"></div><div class="farmer__body"><div class="farmer__name">Hunza Orchards</div><div class="farmer__loc">Hunza, Gilgit-Baltistan</div><div class="farmer__desc">Mountain apricots, cherries, and walnuts at altitude.</div></div></div>
+<div class="farmer rv d2"><div class="farmer__img"><img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&h=250&fit=crop&q=80" alt="Sindh Basmati" loading="lazy"></div><div class="farmer__body"><div class="farmer__name">Sindh Basmati Co-op</div><div class="farmer__loc">Larkana, Sindh</div><div class="farmer__desc">Premium Basmati rice, direct from paddy to your plate.</div></div></div>
+</div></div></section>
+
+<section class="cta"><h2 class="rv">Fresher food. <em>Fairer prices.</em></h2><p class="rv">Join 5,000+ families buying direct from farmers.</p><div class="rv" style="display:flex;gap:10px;justify-content:center"><a href="#" class="btn btn-g">Shop Now &rarr;</a><a href="#" class="btn btn-o">Become a Seller</a></div></section>
+</main>
+
+<footer class="ft"><div class="ft__in"><div class="ft__grid">
+<div class="ft__brand"><a href="#" class="logo" style="color:rgba(255,255,255,.4)">Farm<span style="color:var(--green-l)">Direct</span></a><p>Pakistan's farm-to-table marketplace. A ContexAi Group company.</p></div>
+<div class="ft__col"><h4>Shop</h4><a href="#">Vegetables</a><a href="#">Fruits</a><a href="#">Grains</a><a href="#">Meat</a></div>
+<div class="ft__col"><h4>For Farmers</h4><a href="#">Sell on FarmDirect</a><a href="#">Pricing</a><a href="#">Resources</a></div>
+<div class="ft__col"><h4>Company</h4><a href="#">About</a><a href="#">Blog</a><a href="#">Careers</a><a href="#">Contact</a></div>
+</div><div class="ft__bot"><p>&copy; 2026 FarmDirect Market. A ContexAi Group company.</p><p>PSQCA Certified | PECA 2016</p></div></div></footer>
+
+<script>
+(function(){"use strict";
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target)}})},{threshold:.05,rootMargin:"0px 0px -30px 0px"});document.querySelectorAll(".rv").forEach(function(el){io.observe(el)})}else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("vis")})}
+document.addEventListener("click",function(e){var a=e.target.closest("a[href^=\"#\"]");if(!a)return;var el=document.querySelector(a.getAttribute("href"));if(el){e.preventDefault();el.scrollIntoView({behavior:"smooth"})}});
+})();
+</script></body></html>
