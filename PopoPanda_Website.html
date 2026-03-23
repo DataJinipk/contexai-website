@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="PopoPanda — Pakistan's premium pet food, accessories & vet care. Autoship & Save 25%, same-day delivery, vet-verified nutrition.">
+<meta name="theme-color" content="#1B2838">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<title>PopoPanda — Love Every Paw | Pet Food & Care</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#1B2838;--ink2:#2d3e50;--ink3:#5a6a7a;--ink4:#8a96a2;
+  --white:#fff;--cream:#FAFAF8;--cloud:#F2F1ED;--warm:#FFF8F0;
+  --brand:#2B6E3F;--brand-l:#3A8F52;--brand-p:#E6F4EB;
+  --coral:#E8534A;--coral-d:#D0403A;--coral-p:#FFF0EF;
+  --gold:#D4940A;--gold-p:#FFF8E6;
+  --blue:#1A73E8;--blue-p:#E8F0FE;
+  --navy:#0D2137;
+  --sh1:0 1px 2px rgba(0,0,0,.04);--sh2:0 2px 8px rgba(0,0,0,.06);--sh3:0 8px 24px rgba(0,0,0,.08);--sh4:0 16px 40px rgba(0,0,0,.1);
+  --r1:8px;--r2:12px;--r3:16px;--r4:24px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink2);-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ══ PROMO BAR (Chewy-style) ══ */
+.promo{background:var(--brand-p);text-align:center;padding:10px 16px;font-size:.8rem;font-weight:500;color:var(--brand);position:fixed;top:0;left:0;right:0;z-index:200}
+.promo b{font-weight:700}
+.promo a{color:var(--brand);font-weight:700;text-decoration:underline;margin-left:6px}
+
+/* ══ HEADER (Petco-inspired dark nav) ══ */
+.hdr{position:fixed;top:38px;left:0;right:0;z-index:150;background:var(--navy);transition:top .3s}
+.hdr.scrolled{top:0}
+.hdr__top{max-width:1340px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:20px}
+.logo{font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--white);white-space:nowrap}
+.logo span{color:var(--coral)}
+.logo small{font-family:'DM Sans',sans-serif;font-size:.5rem;color:var(--ink4);font-weight:400;margin-left:4px;text-transform:uppercase;letter-spacing:.1em}
+.srch{flex:1;max-width:520px;position:relative}
+.srch input{width:100%;padding:10px 16px 10px 42px;border-radius:var(--r4);border:none;background:var(--white);font-size:.85rem;font-family:inherit;color:var(--ink)}
+.srch input::placeholder{color:var(--ink4)}
+.srch svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink4)}
+.nav{display:flex;align-items:center;gap:6px}
+.nav__link{padding:8px 14px;border-radius:var(--r4);font-size:.78rem;font-weight:500;color:rgba(255,255,255,.7);transition:all .15s;white-space:nowrap}
+.nav__link:hover{background:rgba(255,255,255,.08);color:#fff}
+.nav__link--active{background:rgba(255,255,255,.1);color:#fff}
+.nav__cart{position:relative;padding:8px;color:#fff}.nav__cart svg{width:20px;height:20px}
+.nav__badge{position:absolute;top:2px;right:0;width:16px;height:16px;border-radius:50%;background:var(--coral);color:#fff;font-size:.5rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.nav__cta{padding:8px 20px;background:var(--coral);color:#fff;border-radius:var(--r4);font-size:.78rem;font-weight:600;transition:all .15s;white-space:nowrap}.nav__cta:hover{background:var(--coral-d)}
+.mob-btn{display:none;color:#fff;padding:8px}
+
+/* ══ VALUE STRIP (Petco-style) ══ */
+.vstrip{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding:0 24px}
+.vstrip__in{max-width:1340px;margin:0 auto;display:flex;justify-content:center;gap:0}
+.vstrip__item{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 12px;font-size:.68rem;color:rgba(255,255,255,.6);font-weight:500;border-right:1px solid rgba(255,255,255,.04);white-space:nowrap}
+.vstrip__item:last-child{border-right:none}
+.vstrip__item svg{width:16px;height:16px;color:var(--brand-l);flex-shrink:0}
+.vstrip__item b{color:#fff;font-weight:600}
+
+/* ══ HERO (Chewy/Petco full-bleed hero) ══ */
+.hero{margin-top:108px;position:relative;overflow:hidden;background:var(--cloud)}
+.hero__slide{display:grid;grid-template-columns:1fr 1fr;min-height:420px}
+.hero__content{padding:60px 40px 60px 0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;max-width:600px;margin-left:auto}
+.hero__tag{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:var(--r4);background:var(--coral-p);color:var(--coral);font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.1;color:var(--ink);margin-bottom:12px}
+.hero h1 em{font-style:italic;color:var(--coral)}
+.hero__desc{font-size:.95rem;color:var(--ink3);line-height:1.7;margin-bottom:24px;max-width:420px}
+.hero__actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.btn-primary{padding:12px 28px;background:var(--coral);color:#fff;border-radius:var(--r4);font-size:.88rem;font-weight:600;transition:all .2s}.btn-primary:hover{background:var(--coral-d);transform:translateY(-1px);box-shadow:0 4px 12px rgba(232,83,74,.2)}
+.btn-secondary{padding:12px 28px;background:var(--brand);color:#fff;border-radius:var(--r4);font-size:.88rem;font-weight:600;transition:all .2s}.btn-secondary:hover{background:var(--brand-l);transform:translateY(-1px)}
+.btn-outline{padding:12px 28px;border:1.5px solid var(--ink);color:var(--ink);border-radius:var(--r4);font-size:.88rem;font-weight:600;background:transparent;transition:all .2s}.btn-outline:hover{background:var(--ink);color:#fff}
+.hero__pills{display:flex;gap:16px;flex-wrap:wrap}
+.hero__pill{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--ink3);font-weight:500}
+.hero__pill svg{width:16px;height:16px;color:var(--brand)}
+.hero__img{position:relative;overflow:hidden}
+.hero__img img{width:100%;height:100%;object-fit:cover}
+.hero__img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--cloud) 0%,transparent 20%)}
+
+/* ══ CATEGORIES (Chewy circular icons) ══ */
+.cats{padding:40px 24px;background:var(--white)}
+.cats__in{max-width:1340px;margin:0 auto}
+.cats__row{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding:8px 0}.cats__row::-webkit-scrollbar{display:none}
+.cat{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:90px;cursor:pointer;transition:transform .2s;flex-shrink:0}
+.cat:hover{transform:translateY(-4px)}
+.cat__img{width:72px;height:72px;border-radius:50%;overflow:hidden;border:3px solid var(--cloud);transition:border-color .2s;box-shadow:var(--sh2)}
+.cat__img img{width:100%;height:100%;object-fit:cover}
+.cat:hover .cat__img,.cat.on .cat__img{border-color:var(--brand)}
+.cat__name{font-size:.65rem;font-weight:600;color:var(--ink3);text-align:center}.cat.on .cat__name{color:var(--brand);font-weight:700}
+
+/* ══ SECTION ══ */
+.sec{padding:56px 24px}.sec__in{max-width:1340px;margin:0 auto}
+.sec__hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.sec__t{font-family:'DM Serif Display',serif;font-size:clamp(1.4rem,2.2vw,1.8rem);color:var(--ink)}
+.sec__all{font-size:.78rem;font-weight:600;color:var(--coral);display:flex;align-items:center;gap:4px}.sec__all:hover{gap:8px;transition:gap .15s}
+
+/* ══ PRODUCTS (Zooplus-style cards with real photos) ══ */
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pc{border-radius:var(--r3);background:var(--white);box-shadow:var(--sh1);overflow:hidden;transition:all .25s;cursor:pointer;border:1px solid rgba(0,0,0,.04);position:relative}
+.pc:hover{box-shadow:var(--sh3);transform:translateY(-4px);border-color:rgba(0,0,0,.08)}
+.pc__img{height:200px;position:relative;overflow:hidden;background:var(--cloud)}
+.pc__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.pc:hover .pc__img img{transform:scale(1.05)}
+.pc__badges{position:absolute;top:10px;left:10px;display:flex;gap:4px;z-index:2}
+.badge{padding:3px 10px;border-radius:var(--r1);font-size:.55rem;font-weight:700;letter-spacing:.02em;display:inline-flex;align-items:center;gap:3px}
+.badge svg{width:10px;height:10px}
+.badge--vet{background:var(--brand);color:#fff}
+.badge--sale{background:var(--coral);color:#fff}
+.badge--new{background:var(--gold);color:var(--ink)}
+.badge--eco{background:var(--brand-p);color:var(--brand)}
+.badge--autoship{background:var(--blue-p);color:var(--blue)}
+.pc__wish{position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:var(--white);box-shadow:var(--sh2);display:flex;align-items:center;justify-content:center;opacity:0;transition:all .2s;z-index:2}
+.pc__wish svg{width:14px;height:14px;color:var(--ink4)}
+.pc:hover .pc__wish{opacity:1}.pc__wish:hover{transform:scale(1.1)}.pc__wish:hover svg{color:var(--coral)}
+.pc__body{padding:16px}
+.pc__brand{font-size:.6rem;color:var(--ink4);text-transform:uppercase;letter-spacing:.08em;font-weight:600;margin-bottom:4px}
+.pc__name{font-size:.82rem;font-weight:600;color:var(--ink);line-height:1.3;margin-bottom:6px;min-height:2.2em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pc__stars{display:flex;align-items:center;gap:4px;margin-bottom:8px}.pc__star{color:var(--gold);font-size:.7rem}.pc__count{font-size:.6rem;color:var(--ink4)}
+.pc__price{font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:2px}.pc__price del{font-size:.75rem;color:var(--ink4);font-weight:400;margin-left:6px}
+.pc__unit{font-size:.6rem;color:var(--ink4);margin-bottom:8px}
+.pc__autoship{font-size:.58rem;color:var(--brand);font-weight:600;background:var(--brand-p);padding:4px 10px;border-radius:var(--r1);display:inline-flex;align-items:center;gap:4px;margin-bottom:10px}
+.pc__autoship svg{width:10px;height:10px}
+.pc__btn{width:100%;padding:10px;border-radius:var(--r2);background:var(--coral);color:#fff;font-size:.78rem;font-weight:600;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:6px}
+.pc__btn svg{width:14px;height:14px}
+.pc__btn:hover{background:var(--coral-d)}
+
+/* ══ SERVICES (Petco-style grid) ══ */
+.services{padding:48px 24px;background:var(--navy);color:#fff}
+.services__in{max-width:1340px;margin:0 auto}
+.services__t{font-family:'DM Serif Display',serif;font-size:1.4rem;color:#fff;margin-bottom:24px;text-align:center}
+.services__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc{border-radius:var(--r3);overflow:hidden;position:relative;text-align:center;padding:32px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);transition:all .25s}
+.svc:hover{background:rgba(255,255,255,.08);transform:translateY(-4px)}
+.svc__img{width:56px;height:56px;border-radius:50%;margin:0 auto 12px;overflow:hidden;background:rgba(255,255,255,.08)}
+.svc__img img{width:100%;height:100%;object-fit:cover}
+.svc__name{font-size:.88rem;font-weight:600;margin-bottom:4px}
+.svc__desc{font-size:.68rem;color:rgba(255,255,255,.5);line-height:1.5}
+.svc__btn{margin-top:12px;padding:8px 20px;border-radius:var(--r4);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:.72rem;font-weight:600;display:inline-block;transition:all .15s}.svc__btn:hover{background:#fff;color:var(--navy)}
+
+/* ══ LOYALTY BANNER (Zooplus-style) ══ */
+.loyalty{padding:40px 24px}
+.loyalty__in{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+.loyalty__card{border-radius:var(--r4);padding:40px;overflow:hidden;position:relative}
+.loyalty__card--club{background:linear-gradient(135deg,var(--brand),#1a5c32);color:#fff}
+.loyalty__card--autoship{background:linear-gradient(135deg,var(--coral),#c43a30);color:#fff}
+.loyalty__tag{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin-bottom:8px}
+.loyalty__title{font-family:'DM Serif Display',serif;font-size:1.5rem;line-height:1.1;margin-bottom:8px}
+.loyalty__desc{font-size:.82rem;opacity:.7;line-height:1.6;margin-bottom:20px}
+.loyalty__btn{padding:10px 24px;border-radius:var(--r4);background:#fff;font-size:.78rem;font-weight:600;display:inline-block;transition:all .15s}
+.loyalty__card--club .loyalty__btn{color:var(--brand)}.loyalty__card--autoship .loyalty__btn{color:var(--coral)}
+.loyalty__btn:hover{transform:translateY(-1px);box-shadow:var(--sh3)}
+.loyalty__img{position:absolute;right:-10px;bottom:-10px;width:180px;height:180px;border-radius:50%;overflow:hidden;opacity:.15}
+
+/* ══ REVIEWS ══ */
+.revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev{border-radius:var(--r3);background:var(--white);box-shadow:var(--sh1);padding:24px;border:1px solid rgba(0,0,0,.04);transition:all .25s}
+.rev:hover{box-shadow:var(--sh3);transform:translateY(-3px)}
+.rev__top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.rev__photo{width:48px;height:48px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid var(--cloud)}
+.rev__photo img{width:100%;height:100%;object-fit:cover}
+.rev__info{flex:1}.rev__name{font-size:.78rem;font-weight:600;color:var(--ink)}.rev__loc{font-size:.62rem;color:var(--ink4)}
+.rev__stars{color:var(--gold);font-size:.7rem;margin-bottom:8px}
+.rev__text{font-size:.82rem;color:var(--ink2);line-height:1.6;font-style:italic}
+.rev__product{font-size:.6rem;color:var(--brand);font-weight:600;margin-top:10px;padding:3px 10px;background:var(--brand-p);border-radius:var(--r1);display:inline-block}
+
+/* ══ VET SECTION ══ */
+.vet{padding:56px 24px;background:var(--white)}
+.vet__in{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.vet__img{border-radius:var(--r4);overflow:hidden;height:360px}
+.vet__img img{width:100%;height:100%;object-fit:cover}
+.vet__badge{display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:var(--r4);background:var(--brand);color:#fff;font-size:.62rem;font-weight:600;margin-bottom:16px}
+.vet__badge svg{width:14px;height:14px}
+.vet__title{font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--ink);margin-bottom:12px;line-height:1.1}
+.vet__desc{font-size:.88rem;color:var(--ink3);line-height:1.7;margin-bottom:20px}
+.vet__list{list-style:none;display:grid;gap:8px}
+.vet__list li{display:flex;align-items:center;gap:10px;font-size:.78rem;color:var(--ink2);padding:6px 0}
+.vet__list li svg{width:18px;height:18px;color:var(--brand);flex-shrink:0}
+.vet__stats{display:flex;gap:24px;margin-top:20px;padding-top:20px;border-top:1px solid var(--cloud)}
+.vet__stat{text-align:center}.vet__stat strong{font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--ink);display:block}.vet__stat span{font-size:.58rem;color:var(--ink4);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+
+/* ══ CTA ══ */
+.cta{text-align:center;padding:80px 24px;background:var(--cloud)}
+.cta h2{font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);color:var(--ink);margin-bottom:8px}.cta h2 em{color:var(--coral);font-style:italic}
+.cta p{color:var(--ink3);max-width:400px;margin:0 auto 24px;font-size:.9rem}
+.cta__btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+/* ══ FOOTER ══ */
+.ft{padding:56px 24px 24px;background:var(--navy);color:rgba(255,255,255,.4)}
+.ft__in{max-width:1340px;margin:0 auto}
+.ft__grid{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr 1fr;gap:24px;margin-bottom:40px}
+.ft__brand{color:rgba(255,255,255,.6)}.ft__brand p{font-size:.78rem;line-height:1.7;margin-top:12px;max-width:260px}
+.ft__pay{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap}.ft__pay span{padding:3px 10px;border-radius:4px;background:rgba(255,255,255,.04);font-size:.52rem;font-weight:600;color:rgba(255,255,255,.3)}
+.ft__col h4{font-size:.55rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.2);margin-bottom:16px}
+.ft__col a{display:block;font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:8px;transition:all .15s}.ft__col a:hover{color:#fff;transform:translateX(3px)}
+.ft__bot{padding-top:20px;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:.62rem}
+
+/* ══ ANIM ══ */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}.rv.vis{opacity:1;transform:none}
+.d1{transition-delay:60ms}.d2{transition-delay:120ms}.d3{transition-delay:180ms}
+
+@media(max-width:1024px){.pgrid{grid-template-columns:repeat(3,1fr)}.services__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.hero__slide{grid-template-columns:1fr}.hero__img{height:280px}.hero__content{padding:32px 24px}.nav__link,.srch{display:none}.mob-btn{display:block}.pgrid{grid-template-columns:repeat(2,1fr)}.revgrid{grid-template-columns:1fr}.vet__in,.loyalty__in{grid-template-columns:1fr}.ft__grid{grid-template-columns:1fr 1fr}.vstrip__in{flex-wrap:wrap}}
+@media(max-width:480px){.pgrid{grid-template-columns:1fr}.services__grid{grid-template-columns:1fr}.ft__grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 0-8 0-5 5z"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+</svg>
+
+<!-- Promo Bar (Chewy-style) -->
+<div class="promo"><b>Free PKR 500 eGift Card</b> with your PKR 5,000+ order. <a href="#">Shop now &rarr;</a></div>
+
+<!-- Header (Petco-inspired) -->
+<header class="hdr" id="hdr" role="banner">
+<div class="hdr__top">
+<a href="#" class="logo">Popo<span>Panda</span> <small>by ContexAi</small></a>
+<div class="srch" role="search"><svg><use href="#i-search"/></svg><input type="search" placeholder="Search for food, toys, treats..." aria-label="Search"></div>
+<nav class="nav" aria-label="Main">
+<a href="#shop" class="nav__link nav__link--active">Shop</a>
+<a href="#deals" class="nav__link">Deals</a>
+<a href="#vets" class="nav__link">Vet Care</a>
+<a href="#reviews" class="nav__link">Reviews</a>
+<button class="nav__cart" aria-label="Cart, 3 items"><svg><use href="#i-cart"/></svg><span class="nav__badge">3</span></button>
+<a href="#subscribe" class="nav__cta">Autoship & Save</a>
+</nav>
+<button class="mob-btn" aria-label="Menu">&#9776;</button>
+</div>
+<!-- Value Strip (Petco-style) -->
+<div class="vstrip"><div class="vstrip__in">
+<div class="vstrip__item"><svg><use href="#i-truck"/></svg> <b>Free Same-Day</b> on PKR 2K+</div>
+<div class="vstrip__item"><svg><use href="#i-zap"/></svg> <b>10% Off</b> First Autoship</div>
+<div class="vstrip__item"><svg><use href="#i-refresh"/></svg> <b>25% Off</b> Repeat Delivery</div>
+<div class="vstrip__item"><svg><use href="#i-award"/></svg> <b>Panda Points</b> on Every Order</div>
+</div></div>
+</header>
+
+<main id="main">
+
+<!-- Hero (Chewy/Petco full-bleed) -->
+<section class="hero" aria-labelledby="hero-t">
+<div class="hero__slide">
+<div class="hero__content">
+<div class="hero__tag"><svg style="width:12px;height:12px"><use href="#i-zap"/></svg> Limited Time Offer</div>
+<h1 id="hero-t">Premium pet care, <em>naturally delivered</em></h1>
+<p class="hero__desc">Vet-verified nutrition, AI-powered recommendations, and Pakistan's only Subscribe &amp; Save autoship. Join 10,000+ happy pet parents.</p>
+<div class="hero__actions">
+<a href="#shop" class="btn-primary">Shop Now &rarr;</a>
+<a href="#subscribe" class="btn-secondary">Autoship & Save 25%</a>
+</div>
+<div class="hero__pills">
+<span class="hero__pill"><svg><use href="#i-shield"/></svg> Vet-Verified</span>
+<span class="hero__pill"><svg><use href="#i-truck"/></svg> Same-Day Delivery</span>
+<span class="hero__pill"><svg><use href="#i-star"/></svg> 4.9/5 Rating</span>
+</div>
+</div>
+<div class="hero__img"><img src="https://images.unsplash.com/photo-1450778869180-e77d951aabbf?w=800&h=500&fit=crop&q=80" alt="Happy dog and cat together" loading="eager"></div>
+</div>
+</section>
+
+<!-- Categories (Chewy circular) -->
+<section class="cats" aria-label="Categories"><div class="cats__in"><div class="cats__row">
+<div class="cat on"><div class="cat__img"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=100&h=100&fit=crop&q=80" alt="Dog"></div><span class="cat__name">Dog Food</span></div>
+<div class="cat"><div class="cat__img"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=100&h=100&fit=crop&q=80" alt="Cat"></div><span class="cat__name">Cat Food</span></div>
+<div class="cat"><div class="cat__img"><img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=100&h=100&fit=crop&q=80" alt="Bird"></div><span class="cat__name">Bird Care</span></div>
+<div class="cat"><div class="cat__img"><img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?w=100&h=100&fit=crop&q=80" alt="Fish"></div><span class="cat__name">Fish</span></div>
+<div class="cat"><div class="cat__img"><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=100&h=100&fit=crop&q=80" alt="Toys"></div><span class="cat__name">Toys</span></div>
+<div class="cat"><div class="cat__img"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=100&h=100&fit=crop&q=80" alt="Vet"></div><span class="cat__name">Health</span></div>
+<div class="cat"><div class="cat__img"><img src="https://images.unsplash.com/photo-1583337130417-13104dec14a6?w=100&h=100&fit=crop&q=80" alt="Grooming"></div><span class="cat__name">Grooming</span></div>
+<div class="cat"><div class="cat__img"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=100&h=100&fit=crop&q=80" alt="Treats"></div><span class="cat__name">Treats</span></div>
+</div></div></section>
+
+<!-- Products (Zooplus-style) -->
+<section class="sec" id="shop" aria-labelledby="shop-t"><div class="sec__in">
+<div class="sec__hd"><h2 id="shop-t" class="sec__t rv">Best sellers this week</h2><a href="#" class="sec__all rv">View all &rarr;</a></div>
+<div class="pgrid">
+
+<article class="pc rv"><div class="pc__img"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400&h=300&fit=crop&q=80" alt="Royal Canin Indoor Cat" loading="lazy"><div class="pc__badges"><span class="badge badge--vet"><svg><use href="#i-shield"/></svg> Verified</span><span class="badge badge--sale">-40%</span></div><button class="pc__wish" aria-label="Save"><svg><use href="#i-heart"/></svg></button></div><div class="pc__body"><div class="pc__brand">Royal Canin</div><h3 class="pc__name">Indoor Adult Cat Dry Food &mdash; 4kg</h3><div class="pc__stars"><span class="pc__star">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="pc__count">(320)</span></div><div class="pc__price">PKR 5,100 <del>PKR 8,500</del></div><div class="pc__unit">PKR 1,275/kg</div><div class="pc__autoship"><svg><use href="#i-refresh"/></svg> Save 10% with Autoship</div><button class="pc__btn"><svg><use href="#i-cart"/></svg> Add to Cart</button></div></article>
+
+<article class="pc rv d1"><div class="pc__img"><img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?w=400&h=300&fit=crop&q=80" alt="Pedigree Dog Food" loading="lazy"><div class="pc__badges"><span class="badge badge--vet"><svg><use href="#i-shield"/></svg> Verified</span><span class="badge badge--new">New</span></div><button class="pc__wish" aria-label="Save"><svg><use href="#i-heart"/></svg></button></div><div class="pc__body"><div class="pc__brand">Pedigree</div><h3 class="pc__name">Adult Dog Complete Nutrition &mdash; 10kg</h3><div class="pc__stars"><span class="pc__star">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span class="pc__count">(215)</span></div><div class="pc__price">PKR 4,200</div><div class="pc__unit">PKR 420/kg</div><div class="pc__autoship"><svg><use href="#i-refresh"/></svg> Save 10% with Autoship</div><button class="pc__btn"><svg><use href="#i-cart"/></svg> Add to Cart</button></div></article>
+
+<article class="pc rv d2"><div class="pc__img"><img src="https://images.unsplash.com/photo-1583337130417-13104dec14a6?w=400&h=300&fit=crop&q=80" alt="Flea Treatment" loading="lazy"><div class="pc__badges"><span class="badge badge--vet"><svg><use href="#i-shield"/></svg> Verified</span></div><button class="pc__wish" aria-label="Save"><svg><use href="#i-heart"/></svg></button></div><div class="pc__body"><div class="pc__brand">Frontline Plus</div><h3 class="pc__name">Flea &amp; Tick Treatment &mdash; Dogs</h3><div class="pc__stars"><span class="pc__star">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="pc__count">(180)</span></div><div class="pc__price">PKR 3,800</div><div class="pc__unit">1 month supply</div><div class="pc__autoship"><svg><use href="#i-refresh"/></svg> Save 10% with Autoship</div><button class="pc__btn"><svg><use href="#i-cart"/></svg> Add to Cart</button></div></article>
+
+<article class="pc rv d3"><div class="pc__img"><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=400&h=300&fit=crop&q=80" alt="Kong Dog Toy" loading="lazy"><div class="pc__badges"><span class="badge badge--eco"><svg><use href="#i-leaf"/></svg> Eco</span></div><button class="pc__wish" aria-label="Save"><svg><use href="#i-heart"/></svg></button></div><div class="pc__body"><div class="pc__brand">Kong</div><h3 class="pc__name">Classic Dog Toy &mdash; Large Red</h3><div class="pc__stars"><span class="pc__star">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="pc__count">(145)</span></div><div class="pc__price">PKR 2,200</div><div class="pc__unit">Natural rubber</div><button class="pc__btn"><svg><use href="#i-cart"/></svg> Add to Cart</button></div></article>
+
+</div></div></section>
+
+<!-- Services (Petco-style) -->
+<section class="services" aria-labelledby="svc-t"><div class="services__in">
+<h2 id="svc-t" class="services__t rv">Pet parenting made easy</h2>
+<div class="services__grid">
+<div class="svc rv"><div class="svc__img"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=80&h=80&fit=crop&q=80" alt="Vet"></div><div class="svc__name">Vet Directory</div><div class="svc__desc">50+ certified vets. Book online consultations 24/7.</div><a href="#" class="svc__btn">Book Now</a></div>
+<div class="svc rv d1"><div class="svc__img"><img src="https://images.unsplash.com/photo-1583337130417-13104dec14a6?w=80&h=80&fit=crop&q=80" alt="Grooming"></div><div class="svc__name">Grooming</div><div class="svc__desc">Professional grooming services at home or in-clinic.</div><a href="#" class="svc__btn">Book Now</a></div>
+<div class="svc rv d2"><div class="svc__img"><img src="https://images.unsplash.com/photo-1450778869180-e77d951aabbf?w=80&h=80&fit=crop&q=80" alt="Training"></div><div class="svc__name">Pet Training</div><div class="svc__desc">Expert trainers for puppies, adults, and behavioral issues.</div><a href="#" class="svc__btn">Learn More</a></div>
+<div class="svc rv d3"><div class="svc__img"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=80&h=80&fit=crop&q=80" alt="Adoption"></div><div class="svc__name">Pet Adoption</div><div class="svc__desc">Find your new best friend. 500+ pets waiting for homes.</div><a href="#" class="svc__btn">Browse Pets</a></div>
+</div></div></section>
+
+<!-- Loyalty (Zooplus-style) -->
+<section class="loyalty" id="subscribe" aria-label="Rewards"><div class="loyalty__in">
+<div class="loyalty__card loyalty__card--club rv">
+<div class="loyalty__tag">Rewards Program</div>
+<div class="loyalty__title">Welcome to<br>Panda Club</div>
+<div class="loyalty__desc">Free rewards. Extra savings. Earn points on every purchase and redeem for treats, discounts, and exclusive products.</div>
+<a href="#" class="loyalty__btn">Join Free &rarr;</a>
+</div>
+<div class="loyalty__card loyalty__card--autoship rv">
+<div class="loyalty__tag">Subscribe &amp; Save</div>
+<div class="loyalty__title">Autoship<br>Up to 25% off</div>
+<div class="loyalty__desc">Never run out. Auto-deliver every 2-8 weeks. Free shipping always. Cancel anytime.</div>
+<a href="#" class="loyalty__btn">Start Saving &rarr;</a>
+</div>
+</div></section>
+
+<!-- Reviews -->
+<section class="sec" id="reviews" aria-labelledby="rev-t"><div class="sec__in">
+<div class="sec__hd"><h2 id="rev-t" class="sec__t rv">What pet parents say</h2><a href="#" class="sec__all rv">All 2,340 reviews &rarr;</a></div>
+<div class="revgrid">
+<div class="rev rv"><div class="rev__top"><div class="rev__photo"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=80&h=80&fit=crop&q=80" alt="Dog"></div><div class="rev__info"><div class="rev__name">Ayesha K.</div><div class="rev__loc">Islamabad</div></div></div><div class="rev__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev__text">"Max loves the Royal Canin! His coat has never been shinier. Autoship means I never run out."</div><span class="rev__product">Royal Canin Indoor Cat</span></div>
+<div class="rev rv d1"><div class="rev__top"><div class="rev__photo"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=80&h=80&fit=crop&q=80" alt="Cat"></div><div class="rev__info"><div class="rev__name">Omar S.</div><div class="rev__loc">Lahore</div></div></div><div class="rev__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev__text">"Same-day delivery even during Eid! The vet consultation saved us a trip to the clinic."</div><span class="rev__product">Vet Connect</span></div>
+<div class="rev rv d2"><div class="rev__top"><div class="rev__photo"><img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=80&h=80&fit=crop&q=80" alt="Bird"></div><div class="rev__info"><div class="rev__name">Sara A.</div><div class="rev__loc">Karachi</div></div></div><div class="rev__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><div class="rev__text">"Found everything for my parakeet! The Panda Points system is addictive &mdash; almost at Gold!"</div><span class="rev__product">Bird Care Bundle</span></div>
+</div></div></section>
+
+<!-- Vet Section -->
+<section class="vet" id="vets" aria-labelledby="vet-t"><div class="vet__in">
+<div class="vet__img rv"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=600&h=400&fit=crop&q=80" alt="Veterinarian examining a dog" loading="lazy"></div>
+<div class="rv">
+<div class="vet__badge"><svg><use href="#i-shield"/></svg> Vet-Verified Nutrition</div>
+<h2 id="vet-t" class="vet__title">Every product reviewed by certified veterinarians</h2>
+<p class="vet__desc">PopoPanda's Nutritional Transparency program ensures complete ingredient analysis and vet-approval ratings on every food product.</p>
+<ul class="vet__list">
+<li><svg><use href="#i-check"/></svg> Complete ingredient sourcing transparency</li>
+<li><svg><use href="#i-check"/></svg> AAFCO nutritional adequacy verification</li>
+<li><svg><use href="#i-check"/></svg> Life stage suitability (puppy, adult, senior)</li>
+<li><svg><use href="#i-check"/></svg> Allergen warnings &amp; dietary flags</li>
+</ul>
+<div class="vet__stats">
+<div class="vet__stat"><strong>50+</strong><span>Vet Partners</span></div>
+<div class="vet__stat"><strong>100%</strong><span>Verified</span></div>
+<div class="vet__stat"><strong>4.9</strong><span>Avg Rating</span></div>
+<div class="vet__stat"><strong>24/7</strong><span>Helpline</span></div>
+</div></div></div></section>
+
+<!-- CTA -->
+<section class="cta" aria-labelledby="cta-t">
+<h2 id="cta-t" class="rv">Your pet deserves <em>the best</em></h2>
+<p class="rv">Join 10,000+ happy pet parents across Pakistan.</p>
+<div class="cta__btns rv"><a href="#shop" class="btn-primary">Shop Now &rarr;</a><a href="#subscribe" class="btn-secondary">Autoship & Save 25%</a></div>
+</section>
+</main>
+
+<footer class="ft" role="contentinfo"><div class="ft__in"><div class="ft__grid">
+<div class="ft__brand"><a href="#" class="logo" style="color:rgba(255,255,255,.6)">Popo<span style="color:var(--coral)">Panda</span></a><p>Pakistan's premium pet marketplace by ContexAi Group. Vet-verified, AI-powered, delivered with love.</p><div class="ft__pay"><span>JazzCash</span><span>EasyPaisa</span><span>Visa</span><span>MC</span><span>COD</span></div></div>
+<div class="ft__col"><h4>Shop</h4><a href="#">Dog Food</a><a href="#">Cat Food</a><a href="#">Toys</a><a href="#">Health</a></div>
+<div class="ft__col"><h4>Services</h4><a href="#">Vet Directory</a><a href="#">Autoship</a><a href="#">Adoption</a><a href="#">Grooming</a></div>
+<div class="ft__col"><h4>Support</h4><a href="#">Help Center</a><a href="#">Track Order</a><a href="#">Returns</a><a href="#">Contact</a></div>
+<div class="ft__col"><h4>ContexAi</h4><a href="#">ContexAi Home</a><a href="#">Zameen-o-Makan</a><a href="#">Apni Sawari</a><a href="#">FarmDirect</a></div>
+</div><div class="ft__bot"><p>&copy; 2026 PopoPanda. A ContexAi Group company.</p><p>PCI-DSS Compliant | PECA 2016</p></div></div></footer>
+
+<script>
+(function(){'use strict';
+/* Scroll header */
+var h=document.getElementById('hdr'),t=false;
+window.addEventListener('scroll',function(){if(!t){requestAnimationFrame(function(){h.classList.toggle('scrolled',window.scrollY>50);t=false});t=true}},{passive:true});
+
+/* Smooth scroll */
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute('href');if(!id||id==='#')return;var el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'})}});
+
+/* Category toggle */
+document.querySelectorAll('.cat').forEach(function(c){c.addEventListener('click',function(){document.querySelectorAll('.cat').forEach(function(x){x.classList.remove('on')});c.classList.add('on')})});
+
+/* Add to cart */
+document.querySelectorAll('.pc__btn').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var o=b.innerHTML;b.innerHTML='<svg style="width:14px;height:14px"><use href="#i-check"/></svg> Added!';b.style.background='var(--brand)';setTimeout(function(){b.innerHTML=o;b.style.background=''},2000)})});
+
+/* Wishlist */
+document.querySelectorAll('.pc__wish').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var on=b.classList.toggle('liked');b.querySelector('svg').style.fill=on?'var(--coral)':'none';b.querySelector('svg').style.color=on?'var(--coral)':'var(--ink4)';b.style.opacity='1'})});
+
+/* Reveals */
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('vis')})}
+
+/* Active nav */
+var secs=document.querySelectorAll('section[id]'),nls=document.querySelectorAll('.nav__link');
+if(secs.length&&'IntersectionObserver' in window){var no=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){nls.forEach(function(l){l.classList.remove('nav__link--active')});var a=document.querySelector('.nav__link[href="#'+e.target.id+'"]');if(a)a.classList.add('nav__link--active')}})},{rootMargin:'-20% 0px -60% 0px'});secs.forEach(function(s){no.observe(s)})}
+})();
+</script>
+</body>
+</html>

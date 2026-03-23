@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Zameen-o-Makan — AI-powered real estate platform by ContexAi Group. Smart listings, virtual tours, market analytics.">
+<meta name="theme-color" content="#5C3D2E">
+<title>Zameen-o-Makan — Smart Property, Smarter Living</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --earth:#5C3D2E;--earth-l:#7A5640;--terra:#C2703E;--terra-l:#D4894E;
+  --sand:#F5EDE3;--sand-w:#EDE1D1;--sand-d:#E0D0BC;
+  --forest:#2D5016;--sky:#1A6B8A;
+  --txt:#1A1A1A;--txt2:#3A352F;--txt3:#7A7068;--txt4:#A09890;
+  --white:#fff;
+  --sh1:0 2px 8px rgba(92,61,46,.06);--sh2:0 4px 20px rgba(92,61,46,.08);--sh3:0 12px 40px rgba(92,61,46,.1);
+  --serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--sand);color:var(--txt2);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* SVG Icons */
+svg{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,237,227,.92);backdrop-filter:blur(20px);padding:14px 32px;transition:all .3s}
+.nav.scrolled{box-shadow:var(--sh2);padding:10px 32px}
+.nav__in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:var(--earth)}.logo span{color:var(--terra)}
+.logo small{font-family:var(--sans);font-size:.5rem;color:var(--txt4);margin-left:4px;text-transform:uppercase;letter-spacing:.1em}
+.navlinks{display:flex;gap:24px;align-items:center}
+.navlinks a{font-size:.75rem;font-weight:500;color:var(--txt3);transition:color .15s}.navlinks a:hover{color:var(--earth)}
+.btn{padding:10px 24px;border-radius:100px;font-size:.82rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.btn-p{background:var(--earth);color:var(--sand)}.btn-p:hover{background:var(--earth-l);transform:translateY(-1px);box-shadow:var(--sh2)}
+.btn-o{border:1.5px solid rgba(92,61,46,.15);color:var(--earth);background:transparent}.btn-o:hover{border-color:var(--earth)}
+.mob{display:none;font-size:1.4rem;color:var(--earth);padding:6px}
+
+/* HERO */
+.hero{min-height:90vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 32px 80px;max-width:1200px;margin:0 auto;gap:48px}
+.hero__badge{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:100px;background:rgba(92,61,46,.06);font-size:.65rem;font-weight:600;color:var(--txt3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px}
+.hero__badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--terra)}
+.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:500;line-height:1.06;color:var(--earth);margin-bottom:16px}
+.hero h1 em{color:var(--terra);font-style:italic}
+.hero__sub{font-size:1rem;color:var(--txt3);line-height:1.8;max-width:480px;margin-bottom:28px;font-weight:300}
+.hero__btns{display:flex;gap:10px;margin-bottom:32px;flex-wrap:wrap}
+.hero__search{background:var(--white);border-radius:16px;padding:6px;box-shadow:var(--sh2);display:flex;gap:4px;max-width:480px}
+.hero__search input{flex:1;padding:10px 16px;border:none;font-size:.85rem;font-family:inherit;background:transparent;color:var(--txt)}.hero__search input::placeholder{color:var(--txt4)}
+.hero__search button{padding:10px 20px;border-radius:12px;background:var(--earth);color:var(--sand);font-size:.78rem;font-weight:600}
+.hero__img{border-radius:24px;overflow:hidden;height:480px;box-shadow:var(--sh3);position:relative}
+.hero__img img{width:100%;height:100%;object-fit:cover}
+.hero__img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.3))}
+.hero__stats{position:absolute;bottom:20px;left:20px;right:20px;display:flex;gap:12px;z-index:2}
+.hero__stat{flex:1;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:12px;padding:12px;text-align:center}
+.hero__stat strong{font-family:var(--serif);font-size:1.4rem;color:var(--earth);display:block}.hero__stat span{font-size:.55rem;color:var(--txt4);text-transform:uppercase;letter-spacing:.06em}
+
+/* SECTIONS */
+.sec{padding:64px 32px}.sec__in{max-width:1200px;margin:0 auto}
+.sec__lbl{font-size:.65rem;text-transform:uppercase;letter-spacing:.15em;color:var(--txt4);margin-bottom:8px;font-weight:500}
+.sec__t{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:500;color:var(--earth);margin-bottom:8px;line-height:1.1}
+.sec__d{font-size:.92rem;color:var(--txt3);line-height:1.7;max-width:500px;margin-bottom:32px;font-weight:300}
+.bg-w{background:var(--sand-w)}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{border-radius:20px;background:var(--sand);box-shadow:var(--sh1);padding:28px;transition:all .3s;border:1px solid rgba(0,0,0,.02)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh3)}
+.svc__img{width:48px;height:48px;border-radius:12px;overflow:hidden;margin-bottom:14px}.svc__img img{width:100%;height:100%;object-fit:cover}
+.svc__name{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--earth);margin-bottom:6px}
+.svc__desc{font-size:.78rem;color:var(--txt3);line-height:1.6}
+
+/* LISTINGS */
+.list-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.list{border-radius:16px;background:var(--white);box-shadow:var(--sh1);overflow:hidden;transition:all .25s;border:1px solid rgba(0,0,0,.03)}
+.list:hover{box-shadow:var(--sh3);transform:translateY(-4px)}
+.list__img{height:200px;overflow:hidden;position:relative}.list__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.list:hover .list__img img{transform:scale(1.05)}
+.list__badge{position:absolute;top:10px;left:10px;padding:3px 10px;border-radius:8px;font-size:.55rem;font-weight:700;text-transform:uppercase}
+.list__badge--sale{background:var(--terra);color:var(--white)}.list__badge--new{background:var(--forest);color:var(--white)}.list__badge--rent{background:var(--sky);color:var(--white)}
+.list__save{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s}.list:hover .list__save{opacity:1}
+.list__save svg{width:14px;height:14px;color:var(--txt3)}
+.list__body{padding:16px}
+.list__price{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--earth);margin-bottom:2px}
+.list__addr{font-size:.75rem;color:var(--txt3);margin-bottom:8px;display:flex;align-items:center;gap:4px}
+.list__addr svg{width:12px;height:12px;color:var(--terra);flex-shrink:0}
+.list__meta{display:flex;gap:12px}.list__m{font-size:.65rem;color:var(--txt4);display:flex;align-items:center;gap:3px}.list__m svg{width:12px;height:12px}
+
+/* FEATURES */
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.feat{text-align:center;padding:28px 16px;border-radius:16px;background:var(--white);box-shadow:var(--sh1);transition:all .25s;border:1px solid rgba(0,0,0,.02)}
+.feat:hover{transform:translateY(-4px);box-shadow:var(--sh3)}
+.feat svg{width:28px;height:28px;color:var(--terra);margin:0 auto 10px;display:block}
+.feat__name{font-size:.82rem;font-weight:600;color:var(--earth);margin-bottom:4px}
+.feat__desc{font-size:.68rem;color:var(--txt3);line-height:1.5}
+
+/* STAYS */
+.stays-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stay{border-radius:16px;overflow:hidden;background:var(--white);box-shadow:var(--sh1);transition:all .25s;border:1px solid rgba(0,0,0,.03)}
+.stay:hover{box-shadow:var(--sh3);transform:translateY(-4px)}
+.stay__img{height:180px;overflow:hidden}.stay__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.stay:hover .stay__img img{transform:scale(1.05)}
+.stay__body{padding:14px}
+.stay__name{font-family:var(--serif);font-size:.92rem;font-weight:600;color:var(--earth);margin-bottom:2px}
+.stay__loc{font-size:.68rem;color:var(--txt3);margin-bottom:6px;display:flex;align-items:center;gap:4px}.stay__loc svg{width:10px;height:10px}
+.stay__row{display:flex;justify-content:space-between;align-items:center}.stay__price{font-size:.88rem;font-weight:600;color:var(--terra)}.stay__rating{font-size:.65rem;color:var(--txt3);display:flex;align-items:center;gap:3px}
+
+/* HOST */
+.host{background:var(--earth);color:var(--sand);border-radius:24px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin:0 32px}
+.host__t{font-family:var(--serif);font-size:1.8rem;font-weight:500;margin-bottom:12px;line-height:1.1}
+.host__d{font-size:.88rem;opacity:.6;line-height:1.7;margin-bottom:24px}
+.host__img{border-radius:16px;height:280px;overflow:hidden}.host__img img{width:100%;height:100%;object-fit:cover}
+
+/* CTA */
+.cta{text-align:center;padding:80px 32px}
+.cta h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:500;color:var(--earth);margin-bottom:8px}.cta h2 em{color:var(--terra);font-style:italic}
+.cta p{color:var(--txt3);margin-bottom:24px;font-size:.9rem}
+.cta__btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+.ft{padding:48px 32px 24px;background:var(--earth);color:rgba(245,237,227,.4)}
+.ft__in{max-width:1200px;margin:0 auto}
+.ft__grid{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.ft__brand p{font-size:.78rem;line-height:1.7;margin-top:10px;max-width:260px}
+.ft__col h4{font-size:.55rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(245,237,227,.2);margin-bottom:14px}
+.ft__col a{display:block;font-size:.75rem;margin-bottom:8px;transition:all .15s}.ft__col a:hover{color:var(--sand);transform:translateX(3px)}
+.ft__bot{padding-top:16px;border-top:1px solid rgba(255,255,255,.04);font-size:.62rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* ANIM */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}.rv.vis{opacity:1;transform:none}
+.d1{transition-delay:60ms}.d2{transition-delay:120ms}.d3{transition-delay:180ms}
+
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:100px}.hero__img{height:300px}.svc-grid,.list-grid,.stays-grid{grid-template-columns:1fr 1fr}.feat-grid{grid-template-columns:1fr 1fr}.host{grid-template-columns:1fr;margin:0 16px;padding:32px}.navlinks a:not(.btn-p){display:none}.mob{display:block}.ft__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid,.list-grid,.stays-grid,.feat-grid{grid-template-columns:1fr}.ft__grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav"><div class="nav__in">
+<a href="#" class="logo">Zameen-o-<span>Makan</span> <small>by ContexAi</small></a>
+<div class="navlinks">
+<a href="#services">Services</a><a href="#listings">Listings</a><a href="#stays">Stays</a><a href="#host">Host</a>
+<a href="#" class="btn btn-p">List Property</a>
+</div>
+<button class="mob" aria-label="Menu">&#9776;</button>
+</div></nav>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+<div>
+<div class="hero__badge">A ContexAi Group Company</div>
+<h1 id="h1">Smart Property,<br><em>Smarter Living</em></h1>
+<p class="hero__sub">AI-powered property search, virtual tours, market analytics, and tenant management. Pakistan's most intelligent real estate platform.</p>
+<div class="hero__search"><input type="text" placeholder="Search city, area, or project..."><button>Search</button></div>
+</div>
+<div class="hero__img">
+<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&h=500&fit=crop&q=80" alt="Modern luxury home" loading="eager">
+<div class="hero__stats">
+<div class="hero__stat"><strong>15K+</strong><span>Listings</span></div>
+<div class="hero__stat"><strong>8K+</strong><span>Families</span></div>
+<div class="hero__stat"><strong>50+</strong><span>Cities</span></div>
+</div></div>
+</section>
+
+<section class="sec bg-w" id="services" aria-labelledby="svc-t"><div class="sec__in">
+<div class="sec__lbl">Services</div>
+<h2 id="svc-t" class="sec__t rv">A complete property ecosystem</h2>
+<p class="sec__d rv">From finding your dream home to managing your investment portfolio.</p>
+<div class="svc-grid">
+<div class="svc rv"><div class="svc__img"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=80&h=80&fit=crop&q=80" alt="Listings"></div><div class="svc__name">Smart Listings</div><div class="svc__desc">AI-matched property recommendations based on your preferences, budget, and lifestyle.</div></div>
+<div class="svc rv d1"><div class="svc__img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=80&h=80&fit=crop&q=80" alt="Analytics"></div><div class="svc__name">Market Analytics</div><div class="svc__desc">Real-time market data, price trends, and investment projections for every area.</div></div>
+<div class="svc rv d2"><div class="svc__img"><img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=80&h=80&fit=crop&q=80" alt="Tenant"></div><div class="svc__name">Tenant Management</div><div class="svc__desc">Digital rent collection, maintenance requests, and lease management in one platform.</div></div>
+<div class="svc rv"><div class="svc__img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=80&h=80&fit=crop&q=80" alt="Legal"></div><div class="svc__name">Legal & Documentation</div><div class="svc__desc">Verified title searches, contract generation, and legal advisory services.</div></div>
+<div class="svc rv d1"><div class="svc__img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=80&h=80&fit=crop&q=80" alt="Virtual Tour"></div><div class="svc__name">Virtual Tours</div><div class="svc__desc">360° immersive property walkthroughs from anywhere. Save time, explore more.</div></div>
+<div class="svc rv d2"><div class="svc__img"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=80&h=80&fit=crop&q=80" alt="Investment"></div><div class="svc__name">Investment Advisory</div><div class="svc__desc">Data-driven investment analysis and ROI projections for smart property decisions.</div></div>
+</div></div></section>
+
+<section class="sec" id="listings" aria-labelledby="list-t"><div class="sec__in">
+<div class="sec__lbl">Featured</div>
+<h2 id="list-t" class="sec__t rv">Featured listings</h2>
+<p class="sec__d rv">Hand-picked properties verified by our team.</p>
+<div class="list-grid">
+<article class="list rv"><div class="list__img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&h=300&fit=crop&q=80" alt="DHA Phase 6 Lahore" loading="lazy"><span class="list__badge list__badge--sale">For Sale</span><button class="list__save" aria-label="Save"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="list__body"><div class="list__price">PKR 4.2 Crore</div><div class="list__addr"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> DHA Phase 6, Lahore</div><div class="list__meta"><span class="list__m"><svg viewBox="0 0 24 24" width="12" height="12"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg> 10 Marla</span><span class="list__m">4 Bed</span><span class="list__m">3 Bath</span></div></div></article>
+<article class="list rv d1"><div class="list__img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=300&fit=crop&q=80" alt="F-7 Islamabad" loading="lazy"><span class="list__badge list__badge--new">New</span><button class="list__save" aria-label="Save"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="list__body"><div class="list__price">PKR 8.5 Crore</div><div class="list__addr"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> F-7, Islamabad</div><div class="list__meta"><span class="list__m">1 Kanal</span><span class="list__m">5 Bed</span><span class="list__m">4 Bath</span></div></div></article>
+<article class="list rv d2"><div class="list__img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=500&h=300&fit=crop&q=80" alt="Clifton Karachi" loading="lazy"><span class="list__badge list__badge--rent">For Rent</span><button class="list__save" aria-label="Save"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><div class="list__body"><div class="list__price">PKR 1.8 Lac/mo</div><div class="list__addr"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Clifton Block 5, Karachi</div><div class="list__meta"><span class="list__m">3 Bed</span><span class="list__m">2 Bath</span><span class="list__m">Furnished</span></div></div></article>
+</div></div></section>
+
+<section class="sec bg-w" id="features" aria-labelledby="feat-t"><div class="sec__in">
+<div class="sec__lbl">Why us</div>
+<h2 id="feat-t" class="sec__t rv">Why Zameen-o-Makan</h2>
+<div class="feat-grid" style="margin-top:24px">
+<div class="feat rv"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div class="feat__name">Verified Listings</div><div class="feat__desc">Every property physically inspected and documents verified.</div></div>
+<div class="feat rv d1"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div class="feat__name">AI-Powered</div><div class="feat__desc">Smart matching, price predictions, and instant valuations.</div></div>
+<div class="feat rv d2"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><div class="feat__name">Virtual Tours</div><div class="feat__desc">360° walkthroughs without leaving your home.</div></div>
+<div class="feat rv d3"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><div class="feat__name">Legal Support</div><div class="feat__desc">End-to-end documentation and legal advisory.</div></div>
+</div></div></section>
+
+<section class="sec" id="stays" aria-labelledby="stays-t"><div class="sec__in">
+<div class="sec__lbl">Experiences</div>
+<h2 id="stays-t" class="sec__t rv">Book unique stays across Pakistan</h2>
+<p class="sec__d rv">From mountain retreats to coastal getaways.</p>
+<div class="stays-grid">
+<div class="stay rv"><div class="stay__img"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=250&fit=crop&q=80" alt="Hunza Valley retreat" loading="lazy"></div><div class="stay__body"><div class="stay__name">Mountain Retreat, Hunza</div><div class="stay__loc"><svg viewBox="0 0 24 24" width="10" height="10"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hunza Valley, GB</div><div class="stay__row"><span class="stay__price">PKR 12,000/night</span><span class="stay__rating">&#9733; 4.9</span></div></div></div>
+<div class="stay rv d1"><div class="stay__img"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=250&fit=crop&q=80" alt="Beach villa Karachi" loading="lazy"></div><div class="stay__body"><div class="stay__name">Beach Villa, Karachi</div><div class="stay__loc"><svg viewBox="0 0 24 24" width="10" height="10"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> DHA Phase 8, Karachi</div><div class="stay__row"><span class="stay__price">PKR 18,000/night</span><span class="stay__rating">&#9733; 4.8</span></div></div></div>
+<div class="stay rv d2"><div class="stay__img"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=80" alt="Heritage House Lahore" loading="lazy"></div><div class="stay__body"><div class="stay__name">Heritage House, Lahore</div><div class="stay__loc"><svg viewBox="0 0 24 24" width="10" height="10"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Old City, Lahore</div><div class="stay__row"><span class="stay__price">PKR 8,500/night</span><span class="stay__rating">&#9733; 4.7</span></div></div></div>
+</div></div></section>
+
+<div class="sec" id="host"><div class="host rv">
+<div><h2 class="host__t">Earn from your property</h2>
+<p class="host__d">List your space on Zameen-o-Makan. From apartments to guest houses, start earning today with zero upfront costs.</p>
+<a href="#" class="btn btn-p" style="background:var(--terra);color:#fff">Start Hosting &rarr;</a></div>
+<div class="host__img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&h=300&fit=crop&q=80" alt="Beautiful rental property" loading="lazy"></div>
+</div></div>
+
+<section class="cta"><h2 class="rv">Ready to find your <em>perfect home?</em></h2><p class="rv">Join 8,000+ families who found their dream property.</p><div class="cta__btns rv"><a href="#" class="btn btn-p">Explore Listings &rarr;</a><a href="#" class="btn btn-o">List Your Property</a></div></section>
+</main>
+
+<footer class="ft"><div class="ft__in"><div class="ft__grid">
+<div class="ft__brand"><a href="#" class="logo" style="color:rgba(245,237,227,.5)">Zameen-o-<span style="color:var(--terra)">Makan</span></a><p>Pakistan's intelligent real estate platform. A ContexAi Group company.</p></div>
+<div class="ft__col"><h4>Buy</h4><a href="#">Houses</a><a href="#">Apartments</a><a href="#">Plots</a><a href="#">Commercial</a></div>
+<div class="ft__col"><h4>Rent</h4><a href="#">Houses</a><a href="#">Apartments</a><a href="#">Rooms</a><a href="#">Offices</a></div>
+<div class="ft__col"><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Contact</a></div>
+</div><div class="ft__bot"><p>&copy; 2026 Zameen-o-Makan. A ContexAi Group company.</p><p>SECP Registered | PECA 2016</p></div></div></footer>
+
+<script>
+(function(){'use strict';
+var n=document.getElementById('nav'),t=false;
+window.addEventListener('scroll',function(){if(!t){requestAnimationFrame(function(){n.classList.toggle('scrolled',window.scrollY>50);t=false});t=true}},{passive:true});
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'})}});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('vis')})}
+})();
+</script>
+</body>
+</html>

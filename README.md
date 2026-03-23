@@ -46,3 +46,9 @@ This website is designed for deployment at www.contexai.org and includes all nec
 - Industry insights and research
 - Client testimonials
 - Partnership information
+
+## Production Files
+
+- Production website: `ContexAi_ProductionWebsite.html`
+- Legacy enhanced version: `ContexAi_NewWebsite.html`
+- Original version: `ContexAi_Website.html`

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Apni Sawari — Pakistan's ride-hailing platform by ContexAi. Rides, rentals, sharing, and parcel delivery.">
+<meta name="theme-color" content="#0C0C0C">
+<title>Apni Sawari — Your Ride, Your Rules | by ContexAi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#0C0C0C;--ink2:#1a1a1a;--ink3:#333;--ink4:#666;--ink5:#999;--white:#fff;--cream:#FAFAFA;--cloud:#F0F0F0;--green:#00C853;--green-d:#00A844;--green-p:#E8F9EF;--blue:#2979FF;--blue-p:#E3F0FF;--amber:#FFB300;--sh1:0 2px 8px rgba(0,0,0,.06);--sh2:0 4px 20px rgba(0,0,0,.08);--sh3:0 12px 40px rgba(0,0,0,.12);--sans:'DM Sans',system-ui,sans-serif}
+html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--white);color:var(--ink3);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6}a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);padding:14px 32px;border-bottom:1px solid rgba(0,0,0,.04)}
+.nav__in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.3rem;font-weight:800;color:var(--ink)}.logo span{color:var(--green)}
+.logo small{font-size:.5rem;color:var(--ink5);margin-left:4px;font-weight:400;text-transform:uppercase;letter-spacing:.1em}
+.navlinks{display:flex;gap:20px;align-items:center}
+.navlinks a{font-size:.78rem;font-weight:500;color:var(--ink4);transition:color .15s}.navlinks a:hover{color:var(--ink)}
+.btn{padding:10px 24px;border-radius:100px;font-size:.82rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.btn-g{background:var(--ink);color:var(--white)}.btn-g:hover{background:var(--ink2);transform:translateY(-1px);box-shadow:var(--sh2)}
+.btn-o{border:1.5px solid var(--cloud);color:var(--ink);background:transparent}.btn-o:hover{border-color:var(--ink)}
+.mob{display:none;font-size:1.4rem;padding:6px}
+
+.hero{min-height:90vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 32px 80px;max-width:1200px;margin:0 auto;gap:48px}
+.hero h1{font-size:clamp(2.6rem,5vw,4rem);font-weight:800;line-height:1.05;color:var(--ink);margin-bottom:16px;letter-spacing:-.03em}
+.hero h1 span{color:var(--green)}
+.hero__sub{font-size:1rem;color:var(--ink4);line-height:1.7;max-width:440px;margin-bottom:28px}
+.hero__btns{display:flex;gap:10px;margin-bottom:32px;flex-wrap:wrap}
+.hero__loc{background:var(--cream);border-radius:16px;padding:6px;display:flex;gap:4px;max-width:440px}
+.hero__loc input{flex:1;padding:10px 16px;border:none;font-size:.85rem;font-family:inherit;background:transparent}.hero__loc input::placeholder{color:var(--ink5)}
+.hero__loc button{padding:10px 20px;border-radius:12px;background:var(--ink);color:#fff;font-size:.78rem;font-weight:600}
+.hero__img{border-radius:24px;overflow:hidden;height:460px;box-shadow:var(--sh3)}
+.hero__img img{width:100%;height:100%;object-fit:cover}
+
+.sec{padding:64px 32px}.sec__in{max-width:1200px;margin:0 auto}
+.sec__lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:.15em;color:var(--ink5);margin-bottom:6px;font-weight:600}
+.sec__t{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--ink);margin-bottom:8px;line-height:1.1;letter-spacing:-.02em}
+.sec__d{font-size:.9rem;color:var(--ink4);line-height:1.7;max-width:480px;margin-bottom:32px}
+.bg-c{background:var(--cream)}
+
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc{border-radius:16px;background:var(--white);box-shadow:var(--sh1);overflow:hidden;transition:all .25s;border:1px solid rgba(0,0,0,.04)}
+.svc:hover{box-shadow:var(--sh3);transform:translateY(-4px)}
+.svc__img{height:160px;overflow:hidden}.svc__img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.svc:hover .svc__img img{transform:scale(1.05)}
+.svc__body{padding:16px}
+.svc__name{font-size:.92rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.svc__desc{font-size:.72rem;color:var(--ink4);line-height:1.5}
+.svc__price{font-size:.65rem;color:var(--green);font-weight:600;margin-top:8px}
+
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{text-align:center;padding:28px 16px}
+.step__num{width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--white);font-size:.82rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.step__name{font-size:.88rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.step__desc{font-size:.72rem;color:var(--ink4);line-height:1.5}
+
+.safety{background:var(--ink);color:var(--white);border-radius:24px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin:0 32px}
+.safety__t{font-size:1.6rem;font-weight:800;margin-bottom:12px;line-height:1.1}.safety__t span{color:var(--green)}
+.safety__d{font-size:.88rem;opacity:.5;line-height:1.7;margin-bottom:20px}
+.safety__list{list-style:none;display:grid;gap:8px}
+.safety__list li{display:flex;align-items:center;gap:8px;font-size:.78rem;opacity:.7}
+.safety__list li::before{content:'\2713';width:20px;height:20px;border-radius:50%;background:var(--green);color:var(--ink);font-size:.6rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.safety__img{border-radius:16px;height:280px;overflow:hidden}.safety__img img{width:100%;height:100%;object-fit:cover}
+
+.drive{padding:64px 32px;background:var(--green-p)}
+.drive__in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.drive__img{border-radius:16px;height:300px;overflow:hidden;box-shadow:var(--sh2)}.drive__img img{width:100%;height:100%;object-fit:cover}
+
+.cta{text-align:center;padding:80px 32px}
+.cta h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--ink);margin-bottom:8px;letter-spacing:-.02em}.cta h2 span{color:var(--green)}
+.cta p{color:var(--ink4);margin-bottom:24px;font-size:.9rem}
+
+.ft{padding:48px 32px 24px;background:var(--ink);color:rgba(255,255,255,.35)}
+.ft__in{max-width:1200px;margin:0 auto}
+.ft__grid{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.ft__brand p{font-size:.78rem;line-height:1.7;margin-top:10px;max-width:260px}
+.ft__col h4{font-size:.55rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.15);margin-bottom:14px}
+.ft__col a{display:block;font-size:.75rem;margin-bottom:8px;transition:all .15s}.ft__col a:hover{color:#fff;transform:translateX(3px)}
+.ft__bot{padding-top:16px;border-top:1px solid rgba(255,255,255,.04);font-size:.62rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.rv{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}.rv.vis{opacity:1;transform:none}
+.d1{transition-delay:60ms}.d2{transition-delay:120ms}.d3{transition-delay:180ms}
+
+@media(max-width:900px){.hero,.drive__in,.safety{grid-template-columns:1fr}.hero{padding-top:100px;min-height:auto}.hero__img,.safety__img,.drive__img{height:260px}.svc-grid,.steps-grid{grid-template-columns:1fr 1fr}.navlinks a:not(.btn-g){display:none}.mob{display:block}.ft__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid,.steps-grid{grid-template-columns:1fr}.safety{padding:32px;margin:0 16px}.ft__grid{grid-template-columns:1fr}}
+</style></head><body>
+
+<nav class="nav"><div class="nav__in">
+<a href="#" class="logo">Apni<span>Sawari</span> <small>by ContexAi</small></a>
+<div class="navlinks"><a href="#rides">Rides</a><a href="#how">How it Works</a><a href="#safety">Safety</a><a href="#drive">Drive</a><a href="#" class="btn btn-g">Get a Ride</a></div>
+<button class="mob" aria-label="Menu">&#9776;</button>
+</div></nav>
+
+<main>
+<section class="hero">
+<div>
+<h1>Your ride,<br><span>your rules</span></h1>
+<p class="hero__sub">Apni Marzi, Apni Sawari. Pakistan's ride-hailing, car rental, ride sharing, and parcel delivery — all in one app.</p>
+<div class="hero__loc"><input placeholder="Where to?"><button>Find Ride</button></div>
+</div>
+<div class="hero__img"><img src="https://images.unsplash.com/photo-1449965408869-ebd3fee56fd9?w=700&h=500&fit=crop&q=80" alt="City driving at night" loading="eager"></div>
+</section>
+
+<section class="sec bg-c" id="rides"><div class="sec__in">
+<div class="sec__lbl">Services</div>
+<h2 class="sec__t rv">Four ways to move</h2>
+<p class="sec__d rv">Whatever you need, we've got a ride for it.</p>
+<div class="svc-grid">
+<div class="svc rv"><div class="svc__img"><img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afe?w=400&h=250&fit=crop&q=80" alt="Ride-Hailing" loading="lazy"></div><div class="svc__body"><div class="svc__name">Ride-Hailing</div><div class="svc__desc">On-demand rides anywhere in Pakistan. Economy to premium.</div><div class="svc__price">From PKR 150</div></div></div>
+<div class="svc rv d1"><div class="svc__img"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=400&h=250&fit=crop&q=80" alt="Car Rental" loading="lazy"></div><div class="svc__body"><div class="svc__name">Car Rental</div><div class="svc__desc">Self-drive rentals by the hour, day, or week. Premium fleet.</div><div class="svc__price">From PKR 3,000/day</div></div></div>
+<div class="svc rv d2"><div class="svc__img"><img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=400&h=250&fit=crop&q=80" alt="Ride Sharing" loading="lazy"></div><div class="svc__body"><div class="svc__name">Ride Sharing</div><div class="svc__desc">Share rides, split costs. Verified co-riders only.</div><div class="svc__price">Save up to 60%</div></div></div>
+<div class="svc rv d3"><div class="svc__img"><img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400&h=250&fit=crop&q=80" alt="Parcel Delivery" loading="lazy"></div><div class="svc__body"><div class="svc__name">Parcel Delivery</div><div class="svc__desc">Same-city parcel pickup and delivery within hours.</div><div class="svc__price">From PKR 200</div></div></div>
+</div></div></section>
+
+<section class="sec" id="how"><div class="sec__in">
+<div class="sec__lbl">How it works</div>
+<h2 class="sec__t rv">Ride in four easy steps</h2>
+<div class="steps-grid" style="margin-top:24px">
+<div class="step rv"><div class="step__num">1</div><div class="step__name">Set Location</div><div class="step__desc">Enter pickup and drop-off points in the app.</div></div>
+<div class="step rv d1"><div class="step__num">2</div><div class="step__name">Choose Ride</div><div class="step__desc">Pick from Economy, Comfort, Premium, or Sharing.</div></div>
+<div class="step rv d2"><div class="step__num">3</div><div class="step__name">Track & Ride</div><div class="step__desc">Watch your driver arrive in real-time. Hop in.</div></div>
+<div class="step rv d3"><div class="step__num">4</div><div class="step__name">Pay & Rate</div><div class="step__desc">Pay by card, JazzCash, or cash. Rate your ride.</div></div>
+</div></div></section>
+
+<div class="sec" id="safety"><div class="safety rv">
+<div><h2 class="safety__t">Your safety is <span>non-negotiable</span></h2>
+<p class="safety__d">Every ride monitored. Every driver verified. Real-time tracking shared with emergency contacts.</p>
+<ul class="safety__list"><li>Background-checked drivers</li><li>Real-time GPS tracking</li><li>In-app SOS emergency button</li><li>Ride insurance included</li><li>24/7 support team</li></ul></div>
+<div class="safety__img"><img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=500&h=300&fit=crop&q=80" alt="Safe ride at night" loading="lazy"></div>
+</div></div>
+
+<section class="drive" id="drive"><div class="drive__in">
+<div class="drive__img rv"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&h=350&fit=crop&q=80" alt="Become a driver" loading="lazy"></div>
+<div class="rv"><div class="sec__lbl">Earn</div><h2 class="sec__t">Your vehicle, your income</h2><p class="sec__d">Drive when you want. Earn what you need. Zero commission for the first 3 months.</p><a href="#" class="btn btn-g">Start Driving &rarr;</a></div>
+</div></section>
+
+<section class="cta"><h2 class="rv">Ready to <span>ride?</span></h2><p class="rv">Download the app and get PKR 500 off your first ride.</p><div class="rv" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><a href="#" class="btn btn-g">Download App &rarr;</a><a href="#" class="btn btn-o">Become a Driver</a></div></section>
+</main>
+
+<footer class="ft"><div class="ft__in"><div class="ft__grid">
+<div class="ft__brand"><a href="#" class="logo" style="color:rgba(255,255,255,.4)">Apni<span style="color:var(--green)">Sawari</span></a><p>Pakistan's ride platform. A ContexAi Group company.</p></div>
+<div class="ft__col"><h4>Ride</h4><a href="#">Book a Ride</a><a href="#">Car Rental</a><a href="#">Sharing</a><a href="#">Delivery</a></div>
+<div class="ft__col"><h4>Drive</h4><a href="#">Sign Up</a><a href="#">Requirements</a><a href="#">Fleet</a><a href="#">Support</a></div>
+<div class="ft__col"><h4>Company</h4><a href="#">About</a><a href="#">Safety</a><a href="#">Careers</a><a href="#">Blog</a></div>
+</div><div class="ft__bot"><p>&copy; 2026 Apni Sawari. A ContexAi Group company.</p><p>PTA Licensed | PECA 2016</p></div></div></footer>
+
+<script>
+(function(){'use strict';
+var n=document.querySelector('.nav'),t=false;
+window.addEventListener('scroll',function(){if(!t){requestAnimationFrame(function(){n.classList.toggle('scrolled',window.scrollY>50);t=false});t=true}},{passive:true});
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'})}});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('vis')})}
+})();
+</script></body></html>
