@@ -54,6 +54,8 @@ img{display:block;max-width:100%}
 .navlinks{display:flex;align-items:center;gap:4px}
 .navlinks a{font-size:.75rem;font-weight:500;color:var(--ink4);padding:6px 10px;border-radius:var(--radius-sm);transition:all .15s}
 .navlinks a:hover{color:var(--ink);background:var(--cream)}
+.navlinks a.btn-primary{color:#fff;padding:9px 22px}
+.navlinks a.btn-primary:hover{color:#fff;background:var(--blue-d)}
 .btn{padding:9px 22px;border-radius:100px;font-size:.78rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px;line-height:1}
 .btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:var(--blue-d);box-shadow:0 4px 14px rgba(29,95,255,.35);transform:translateY(-1px)}
 .btn-outline{border:1.5px solid rgba(0,0,0,.1);color:var(--ink)}.btn-outline:hover{border-color:rgba(0,0,0,.3);background:var(--cream)}
@@ -791,6 +793,32 @@ document.addEventListener('click', function(e){
 /* ─── REVEAL ANIMATION ─── */
 if('IntersectionObserver' in window){
   var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ entry.target.classList.add('vis'); io.unobserve(entry.target); }
+    });
+  },{threshold:.07, rootMargin:'0px 0px -32px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('vis'); });
+}
+
+/* ─── TABS ─── */
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var tabId = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
+    var pane = document.getElementById(tabId);
+    if(pane){ pane.classList.add('active'); }
+  });
+});
+
+})();
+</script>
+</body>
+</html>
+ries){
     entries.forEach(function(entry){
       if(entry.isIntersecting){ entry.target.classList.add('vis'); io.unobserve(entry.target); }
     });
