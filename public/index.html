@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- STAGING ENVIRONMENT — NOT FOR PRODUCTION USE -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<meta name="description" content="ContexAi Group — Intelligent commerce ecosystem and boutique strategic advisory. Financial consulting, dispute resolution, and digital ventures across Pakistan.">
+<meta name="description" content="ContexAi Group — Boutique financial consulting and strategic advisory. Dispute resolution, PPP advisory, and sector expertise across Pakistan and emerging markets.">
 <meta name="theme-color" content="#0B1120">
 <title>ContexAi Group — Intelligence in Context</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -152,6 +150,9 @@ img{display:block;max-width:100%}
 .people{padding:72px 32px}
 .people__in{max-width:1280px;margin:0 auto}
 .people-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+.people-grid--single{grid-template-columns:minmax(0,440px);justify-content:center}
+.people-grid--single .person{padding:36px 32px}
+.people-grid--single .person__img{width:160px;height:160px;margin-bottom:22px}
 .person{border-radius:var(--radius);background:var(--white);border:1px solid rgba(0,0,0,.05);padding:24px;text-align:center;transition:all .25s}
 .person:hover{box-shadow:var(--sh2);transform:translateY(-4px)}
 .person__img{width:90px;height:90px;border-radius:50%;overflow:hidden;margin:0 auto 14px;background:var(--cream)}
@@ -159,6 +160,28 @@ img{display:block;max-width:100%}
 .person__name{font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:3px}
 .person__role{font-size:.68rem;color:var(--blue);font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
 .person__bio{font-size:.72rem;color:var(--ink4);line-height:1.55}
+
+/* ─── EXPERTS BAND: full profile cards ─── */
+.experts-band{margin-top:64px;padding-top:48px;border-top:1px solid rgba(0,0,0,.06)}
+.experts__t{font-family:'Instrument Serif',serif;font-weight:400;font-size:1.6rem;color:var(--ink);margin-bottom:6px;text-align:center}
+.experts__d{font-size:.85rem;color:var(--ink4);text-align:center;max-width:680px;margin:0 auto 36px;line-height:1.65}
+.experts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.expert{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:28px;transition:all .25s;display:flex;flex-direction:column}
+.expert:hover{box-shadow:var(--sh1);border-color:rgba(29,95,255,.15)}
+.expert__head{display:flex;gap:18px;align-items:flex-start;margin-bottom:18px}
+.expert__avatar{width:72px;height:72px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--blue-l),var(--blue-d));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.05rem;font-weight:600;letter-spacing:.02em;box-shadow:0 4px 12px rgba(29,95,255,.18)}
+.expert__avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.expert__meta{flex:1;min-width:0;padding-top:4px}
+.expert__name{font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.25}
+.expert__title{font-size:.72rem;color:var(--blue);font-weight:600;margin-bottom:8px;line-height:1.45;text-transform:none;letter-spacing:0}
+.expert__loc{font-size:.7rem;color:var(--ink4);display:flex;align-items:center;gap:6px}
+.expert__loc::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ink5);flex-shrink:0}
+.expert__bio{font-size:.78rem;color:var(--ink4);line-height:1.65;margin-bottom:18px}
+.expert__areas-lbl{font-size:.55rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink5);margin-bottom:12px}
+.expert__areas ul{list-style:none;padding:0;margin:0;font-size:.74rem;color:var(--ink3);line-height:1.7}
+.expert__areas li{display:flex;align-items:flex-start;gap:10px;padding:3px 0}
+.expert__areas li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--blue);margin-top:9px;flex-shrink:0}
+@media(max-width:760px){.experts-grid{grid-template-columns:1fr}.expert{padding:22px}}
 
 .board{padding:72px 32px;background:var(--cream)}
 .board__in{max-width:1280px;margin:0 auto}
@@ -197,13 +220,6 @@ img{display:block;max-width:100%}
 .test:hover{box-shadow:var(--sh2)}
 .test__quote{font-family:var(--serif);font-size:1rem;color:var(--ink);line-height:1.5;margin-bottom:16px;font-style:italic}
 .test__attr{font-size:.72rem;font-weight:600;color:var(--ink4)}
-
-/* ─── PARTNERS ─── */
-.partners{padding:56px 32px;border-top:1px solid rgba(0,0,0,.04)}
-.partners__in{max-width:1280px;margin:0 auto;text-align:center}
-.partner-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:28px}
-.partner{padding:9px 22px;border-radius:100px;background:var(--cream);font-size:.7rem;font-weight:600;color:var(--ink4);border:1px solid rgba(0,0,0,.06);transition:all .2s}
-.partner:hover{background:var(--white);box-shadow:var(--sh2);color:var(--ink);transform:translateY(-1px)}
 
 /* ─── CTA ─── */
 .cta{padding:96px 32px;background:var(--blue);text-align:center;position:relative;overflow:hidden}
@@ -253,7 +269,7 @@ img{display:block;max-width:100%}
   .hero{padding:60px 20px 48px;min-height:auto}
   .hero__stats{flex-wrap:wrap}
   .eco-strip__in{padding:0 16px}
-  .nav__in,.ventures,.about,.method,.services,.people,.board,.insights,.testimonials,.partners,.cta,.ft{padding-left:20px;padding-right:20px}
+  .nav__in,.about,.method,.services,.people,.insights,.testimonials,.cta,.ft{padding-left:20px;padding-right:20px}
   .ft__grid{grid-template-columns:1fr 1fr}
   .stats__in{grid-template-columns:1fr 1fr}
 }
@@ -266,25 +282,6 @@ img{display:block;max-width:100%}
 </style>
 </head>
 <body>
-<!-- STAGING BANNER -->
-<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#F59E0B;color:#1C2A42;text-align:center;padding:6px 16px;font-size:12px;font-weight:700;letter-spacing:.08em;font-family:system-ui,sans-serif;">
-  ⚠ STAGING — This is a preview environment. Not for public use. <a href="#" style="color:#1C2A42;text-decoration:underline;margin-left:8px;">View Production →</a>
-</div>
-<div style="height:34px"></div>
-
-<!-- ─── ECOSYSTEM TOP STRIP ─── -->
-<div class="eco-strip">
-  <div class="eco-strip__in">
-    <span class="eco-strip__lbl">ContexAi Group</span>
-    <a href="/"><span class="dot" style="background:#1D5FFF"></span>ContexAi Group</a>
-    <a href="#ventures"><span class="dot" style="background:#00C853"></span>Apni Sawari</a>
-    <a href="#ventures"><span class="dot" style="background:#8B5E3C"></span>Zameen-o-Makan</a>
-    <a href="#ventures"><span class="dot" style="background:#2E7D32"></span>FarmDirect</a>
-    <a href="#ventures"><span class="dot" style="background:#E65100"></span>Food &amp; HomeChef</a>
-    <a href="#ventures"><span class="dot" style="background:#6A0DAD"></span>Events &amp; Brand Studio</a>
-    <a href="#ventures"><span class="dot" style="background:#FF6B6B"></span>PopoPanda</a>
-  </div>
-</div>
 
 <!-- ─── NAV ─── -->
 <nav class="nav" id="main-nav">
@@ -294,7 +291,6 @@ img{display:block;max-width:100%}
       <a href="#about">About</a>
       <a href="#approach">Approach</a>
       <a href="#services">Services</a>
-      <a href="#ventures">Ventures</a>
       <a href="#team">Team</a>
       <a href="#insights">Insights</a>
       <a href="#contact" class="btn btn-primary">Contact Us</a>
@@ -310,9 +306,7 @@ img{display:block;max-width:100%}
   <a href="#about" class="mob-link">About</a>
   <a href="#approach" class="mob-link">Our Approach</a>
   <a href="#services" class="mob-link">Services</a>
-  <a href="#ventures" class="mob-link">Ventures &amp; Ecosystem</a>
   <a href="#team" class="mob-link">Team</a>
-  <a href="#board" class="mob-link">Board</a>
   <a href="#insights" class="mob-link">Research &amp; Insights</a>
   <a href="#contact" class="btn btn-primary mob-link">Contact Us</a>
 </div>
@@ -329,13 +323,13 @@ img{display:block;max-width:100%}
   </div>
   <h1>
     Strategic Advisory.
-    <span class="divider">and</span>
-    <em>Intelligent Commerce.</em>
+    <span class="divider">&amp;</span>
+    <em>Intelligence in Context.</em>
   </h1>
-  <p class="hero__sub">Boutique financial consulting across 15+ sectors — and a growing ecosystem of AI-powered digital ventures serving Pakistan's new economy.</p>
+  <p class="hero__sub">Boutique financial consulting, dispute resolution, and PPP advisory across 15+ sectors in Pakistan and emerging markets.</p>
   <div class="hero__btns">
-    <a href="#about" class="btn btn-primary">Our Advisory Practice &rarr;</a>
-    <a href="#ventures" class="btn btn-ghost">Explore Ventures</a>
+    <a href="#services" class="btn btn-primary">Our Services &rarr;</a>
+    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
   </div>
   <div class="hero__stats">
     <div class="hero__stat"><strong>24+</strong><span>Years Experience</span></div>
@@ -350,11 +344,11 @@ img{display:block;max-width:100%}
   <div class="about__in">
     <div class="rv">
       <div class="sec__lbl">About ContexAi Group</div>
-      <h2 class="sec__t">A dual mandate: advisory excellence &amp; digital ventures</h2>
-      <p class="sec__d">Founded by Amir Waheed Ahmed with 20+ years in financial consulting, ContexAi Group operates two integrated pillars. The advisory practice delivers strategic consulting, dispute resolution, and PPP advisory across Pakistan's most complex sectors. The ventures arm builds and incubates AI-powered digital businesses — from ride-hailing to agri-commerce — that form the ContexAi intelligent commerce ecosystem.</p>
+      <h2 class="sec__t">Boutique consulting, sharpened by sector depth</h2>
+      <p class="sec__d">Founded by Amir Waheed Ahmed with 20+ years in financial consulting, ContexAi Group is a boutique advisory practice serving clients across Pakistan and emerging markets. We deliver strategic consulting, dispute resolution, and PPP advisory in some of the country's most complex sectors — water, energy, infrastructure, fintech, and beyond — with a small senior team and direct partner-led engagements on every mandate.</p>
       <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
-        <a href="#services" class="btn btn-primary">Advisory Services &rarr;</a>
-        <a href="#ventures" class="btn btn-outline">Ecosystem Ventures</a>
+        <a href="#services" class="btn btn-primary">Our Services &rarr;</a>
+        <a href="#approach" class="btn btn-outline">Our Approach</a>
       </div>
     </div>
     <div class="about__img rv d1">
@@ -363,73 +357,6 @@ img{display:block;max-width:100%}
   </div>
 </section>
 
-<!-- ─── ECOSYSTEM VENTURES ─── -->
-<section class="ventures" id="ventures">
-  <div class="ventures__in">
-    <div class="sec__lbl">Ecosystem Ventures</div>
-    <h2 class="sec__t rv">The ContexAi Group</h2>
-    <p class="sec__d rv">Seven digital businesses — each sector-specific, AI-augmented, and built for Pakistan's next decade.</p>
-    <div class="venture-grid">
-
-      <div class="venture rv" style="--vc:#1D5FFF">
-        <div class="venture__cat">Advisory / AI</div>
-        <div class="venture__name">ContexAi — Group HQ <span class="venture__status" style="background:#EBF0FF;color:#1D5FFF">Live</span></div>
-        <div class="venture__desc">Financial consulting, dispute resolution, PPP advisory, and strategic planning. The group's anchor entity.</div>
-        <div class="venture__link">contexai.org</div>
-      </div>
-
-      <div class="venture rv d1" style="--vc:#00C853">
-        <div class="venture__cat">Mobility</div>
-        <div class="venture__name">Apni Sawari <span class="venture__status" style="background:#E8F9EF;color:#00A844">Beta</span></div>
-        <div class="venture__desc">Pakistan's ride-hailing, car rental, ride-sharing, and parcel delivery — all in one app. Apni Marzi, Apni Sawari.</div>
-        <div class="venture__link">apnisawari.pk</div>
-      </div>
-
-      <div class="venture rv d2" style="--vc:#8B5E3C">
-        <div class="venture__cat">Real Estate</div>
-        <div class="venture__name">Zameen-o-Makan <span class="venture__status" style="background:#F5EFE9;color:#8B5E3C">Beta</span></div>
-        <div class="venture__desc">AI-powered property search, virtual tours, market analytics, and tenant management for Pakistan.</div>
-        <div class="venture__link">zameen-o-makan.pk</div>
-      </div>
-
-      <div class="venture rv" style="--vc:#2E7D32">
-        <div class="venture__cat">AgriCommerce</div>
-        <div class="venture__name">FarmDirect Market <span class="venture__status" style="background:#DCFCE7;color:#16A34A">Beta</span></div>
-        <div class="venture__desc">Blockchain-verified fresh produce direct from Pakistani farmers — no middlemen, no markups.</div>
-        <div class="venture__link">farmdirect.pk</div>
-      </div>
-
-      <div class="venture rv d1" style="--vc:#E65100">
-        <div class="venture__cat">FoodTech</div>
-        <div class="venture__name">Food &amp; HomeChef <span class="venture__status" style="background:#FFF3E0;color:#E65100">Beta</span></div>
-        <div class="venture__desc">AI-powered recipes, smart nutrition tracking, one-click grocery, and chef masterclasses.</div>
-        <div class="venture__link">foodandhomechef.pk</div>
-      </div>
-
-      <div class="venture rv d2" style="--vc:#6A0DAD">
-        <div class="venture__cat">Creative Services</div>
-        <div class="venture__name">Events &amp; Brand Studio <span class="venture__status" style="background:#F3EFFE;color:#6A0DAD">Active</span></div>
-        <div class="venture__desc">Event management, brand strategy, digital advertising, and content production.</div>
-        <div class="venture__link">events.contexai.org</div>
-      </div>
-
-      <div class="venture rv" style="--vc:#FF6B6B">
-        <div class="venture__cat">Pet Commerce</div>
-        <div class="venture__name">PopoPanda <span class="venture__status" style="background:#FFE4E9;color:#F43F5E">Beta</span></div>
-        <div class="venture__desc">Premium pet food, accessories, and veterinary care delivered — love every paw.</div>
-        <div class="venture__link">popopanda.pk</div>
-      </div>
-
-      <div class="venture rv d1" style="--vc:#9AAAC4;border-style:dashed">
-        <div class="venture__cat">Coming Soon</div>
-        <div class="venture__name">More Ventures</div>
-        <div class="venture__desc">The ContexAi ecosystem is actively growing. New sectors in fintech, edtech, and health are in planning.</div>
-        <div class="venture__link">Get in touch</div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <!-- ─── METHODOLOGY ─── -->
 <section class="method" id="approach">
@@ -519,60 +446,160 @@ img{display:block;max-width:100%}
 <!-- ─── TEAM ─── -->
 <section class="people" id="team">
   <div class="people__in">
-    <div class="sec__lbl">Leadership Team</div>
-    <h2 class="sec__t rv">Our experts</h2>
-    <p class="sec__d rv">Practitioners with decades of combined experience across emerging markets, financial institutions, and strategic consulting.</p>
-    <div class="people-grid">
+    <div class="sec__lbl">Leadership</div>
+    <h2 class="sec__t rv">Founder &amp; Principal</h2>
+    <p class="sec__d rv">Partner-led engagements. Every mandate runs through senior consulting hands.</p>
+    <div class="people-grid people-grid--single">
       <div class="person rv">
-        <div class="person__img"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&q=80" alt="Amir Waheed Ahmed"></div>
+        <div class="person__img"><img src="images/amir.jpg" alt="Amir Waheed Ahmed, Founder &amp; CEO of ContexAi Group"></div>
         <div class="person__name">Amir Waheed Ahmed</div>
         <div class="person__role">Founder &amp; CEO</div>
-        <div class="person__bio">20+ years in financial consulting, PPP advisory, and strategic planning across emerging markets.</div>
+        <div class="person__bio">20+ years in financial consulting, PPP advisory, dispute resolution, and strategic planning across Pakistan and emerging markets. Sector experience spans water, energy, infrastructure, fintech, and public-private partnerships.</div>
       </div>
-      <div class="person rv d1">
-        <div class="person__img"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&q=80" alt="Dr. Ayesha Khan"></div>
-        <div class="person__name">Dr. Ayesha Khan</div>
-        <div class="person__role">CTO &amp; Head of Analytics</div>
-        <div class="person__bio">PhD in Financial Economics. Expertise in data analytics, risk management, and financial modeling.</div>
-      </div>
-      <div class="person rv d2">
-        <div class="person__img"><img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200&h=200&fit=crop&q=80" alt="Michael Rodriguez"></div>
-        <div class="person__name">Michael Rodriguez</div>
-        <div class="person__role">Chief Dispute Resolution Officer</div>
-        <div class="person__bio">Qualified barrister with 15+ years in commercial dispute resolution and arbitration across multiple jurisdictions.</div>
-      </div>
-      <div class="person rv d3">
-        <div class="person__img"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&q=80" alt="Fatima Al-Zahra"></div>
-        <div class="person__name">Fatima Al-Zahra</div>
-        <div class="person__role">Head of Sector Advisory</div>
-        <div class="person__bio">Specialist in water technologies, infrastructure, and sustainable development across MENA.</div>
+    </div>
+
+    <div class="experts-band rv">
+      <h3 class="experts__t">Our Experts</h3>
+      <p class="experts__d">A network of senior advisors based across Sydney, the Gulf, North America, and Pakistan — partners on specific mandates and bringing deep sector and regional expertise to client engagements.</p>
+      <div class="experts-grid">
+
+        <div class="expert rv">
+          <div class="expert__head">
+            <div class="expert__avatar"><img src="images/expert-asif.jpg" alt="Asif Waheed Ahmed"></div>
+            <div class="expert__meta">
+              <div class="expert__name">Asif Waheed Ahmed</div>
+              <div class="expert__title">Principal — SAP &amp; Enterprise Systems</div>
+              <div class="expert__loc">Riyadh, Saudi Arabia</div>
+            </div>
+          </div>
+          <p class="expert__bio">SAP Certified Production Planning and Enterprise Asset Management consultant with 25+ years across Accenture, Siemens, Wipro, and Rizing. Has led seven full-lifecycle SAP implementations across utilities, mining, oil &amp; gas, automotive, and manufacturing in Saudi Arabia, Australia, and Pakistan.</p>
+          <div class="expert__areas">
+            <div class="expert__areas-lbl">Areas of expertise</div>
+            <ul>
+              <li>SAP S/4HANA implementation &amp; transformation</li>
+              <li>Production Planning (PP) &amp; Plant Maintenance (PM)</li>
+              <li>Enterprise Asset Management (EAM)</li>
+              <li>Materials &amp; Warehouse Management</li>
+              <li>Business process design &amp; automation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expert rv d1">
+          <div class="expert__head">
+            <div class="expert__avatar">SA</div>
+            <div class="expert__meta">
+              <div class="expert__name">Syed Asrar</div>
+              <div class="expert__title">Principal — Investment Advisory</div>
+              <div class="expert__loc">United Arab Emirates</div>
+            </div>
+          </div>
+          <p class="expert__bio">Investment specialist with extensive experience leading capital deployment and fund management across the GCC. Chartered accountant with institutional roots from ICAP.</p>
+          <div class="expert__areas">
+            <div class="expert__areas-lbl">Areas of expertise</div>
+            <ul>
+              <li>Investment advisory &amp; deal origination</li>
+              <li>GCC capital markets</li>
+              <li>Fund structuring &amp; management</li>
+              <li>Cross-border M&amp;A advisory</li>
+              <li>Investor relations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expert rv d2">
+          <div class="expert__head">
+            <div class="expert__avatar"><img src="images/expert-khalid.jpg" alt="Muhammed Khalid Shekhani"></div>
+            <div class="expert__meta">
+              <div class="expert__name">Muhammed Khalid Shekhani, CPA, CA</div>
+              <div class="expert__title">Principal — Corporate &amp; Financial Advisory</div>
+              <div class="expert__loc">Mississauga, Ontario, Canada</div>
+            </div>
+          </div>
+          <p class="expert__bio">Chartered accountant (ICAP, CPA Canada) with 30+ years across SGS Group (Director Finance — Canada and Pakistan), Canacre, and EY audit practice. Specialises in integrated finance leadership, multinational consolidation under IFRS and US GAAP, and finance-led business transformation.</p>
+          <div class="expert__areas">
+            <div class="expert__areas-lbl">Areas of expertise</div>
+            <ul>
+              <li>IFRS &amp; US GAAP financial reporting</li>
+              <li>FP&amp;A, budgeting &amp; forecasting</li>
+              <li>Multi-entity consolidation &amp; intercompany</li>
+              <li>SOX, internal controls &amp; audit readiness</li>
+              <li>ERP &amp; finance systems (Oracle, Hyperion, Deltek)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expert rv">
+          <div class="expert__head">
+            <div class="expert__avatar"><img src="images/expert-rashid.jpg" alt="Rashid Ahmed"></div>
+            <div class="expert__meta">
+              <div class="expert__name">Rashid Ahmed, P.Eng., PMP</div>
+              <div class="expert__title">Principal — Project Engineering &amp; Capital Projects</div>
+              <div class="expert__loc">Edmonton, Alberta, Canada</div>
+            </div>
+          </div>
+          <p class="expert__bio">Canadian Professional Engineer (P.Eng.) and Certified Project Management Professional (PMP) with 30+ years across Canadian Natural Resources, WorleyParsons, Qatar Petroleum, and Saudi Aramco. Specialises in oil &amp; gas FEED and EPC projects, sustaining capital programmes, and multi-million-dollar infrastructure delivery.</p>
+          <div class="expert__areas">
+            <div class="expert__areas-lbl">Areas of expertise</div>
+            <ul>
+              <li>Oil &amp; gas project &amp; facility management</li>
+              <li>FEED &amp; EPC capital project delivery</li>
+              <li>Long Range Planning &amp; capital budgeting</li>
+              <li>Risk management &amp; resource optimisation</li>
+              <li>Mechanical engineering (rotating &amp; static, piping)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expert rv d1">
+          <div class="expert__head">
+            <div class="expert__avatar"><img src="images/expert-tahir.jpg" alt="Tahir Razak"></div>
+            <div class="expert__meta">
+              <div class="expert__name">Tahir Razak</div>
+              <div class="expert__title">Principal — IT Strategy &amp; Digital Transformation</div>
+              <div class="expert__loc">Greater Toronto Area, Canada</div>
+            </div>
+          </div>
+          <p class="expert__bio">Senior IT business leader (PMP, ITIL, COBIT, Salesforce certified) with 30+ years leading enterprise technology functions at Hyundai Canada, Toys R Us Canada, Gulf Cryo (Dubai), Weir Engineering Services, and as founder of Gaboo Systems. Industries span retail, automotive, manufacturing, oil &amp; gas, and distribution across North America and the Arabian Gulf.</p>
+          <div class="expert__areas">
+            <div class="expert__areas-lbl">Areas of expertise</div>
+            <ul>
+              <li>ERP implementation (Oracle, SAP S/4HANA, D365)</li>
+              <li>Digital transformation strategy</li>
+              <li>Cloud architecture &amp; migration (Azure, OCI)</li>
+              <li>Cybersecurity &amp; IT governance (NIST, ITIL)</li>
+              <li>Business intelligence &amp; analytics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expert rv d2">
+          <div class="expert__head">
+            <div class="expert__avatar">NK</div>
+            <div class="expert__meta">
+              <div class="expert__name">Nafis Khan, CPA, CA</div>
+              <div class="expert__title">Principal — Global Real Estate Advisory</div>
+              <div class="expert__loc">New York, United States</div>
+            </div>
+          </div>
+          <p class="expert__bio">CPA, CA based in New York, leading global real estate advisory work for institutional and private clients. Practice spans cross-border investment, property finance, and asset management.</p>
+          <div class="expert__areas">
+            <div class="expert__areas-lbl">Areas of expertise</div>
+            <ul>
+              <li>Cross-border real estate advisory</li>
+              <li>US property investment &amp; acquisitions</li>
+              <li>Asset management &amp; repositioning</li>
+              <li>Real estate finance &amp; structuring</li>
+              <li>Institutional capital introductions</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── BOARD ─── -->
-<section class="board" id="board">
-  <div class="board__in">
-    <div class="sec__lbl">Board of Directors</div>
-    <h2 class="sec__t rv">Leadership excellence</h2>
-    <p class="sec__d rv">Our board brings extensive experience from leading financial institutions, regulatory bodies, and international development organisations.</p>
-    <div class="board-grid">
-      <div class="board-card rv">
-        <div class="board-card__img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=140&h=140&fit=crop&q=80" alt="James Henderson"></div>
-        <div><div class="board-card__name">James Henderson</div><div class="board-card__role">Chairman</div><div class="board-card__bio">Former CEO of International Financial Services Group. 25+ years in financial consulting and regulatory affairs across emerging markets.</div></div>
-      </div>
-      <div class="board-card rv d1">
-        <div class="board-card__img"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=140&h=140&fit=crop&q=80" alt="Sarah Mitchell"></div>
-        <div><div class="board-card__name">Sarah Mitchell</div><div class="board-card__role">Vice Chairman</div><div class="board-card__bio">Ex-Regional Director at World Bank Group. Specialises in infrastructure finance and public-private partnerships.</div></div>
-      </div>
-      <div class="board-card rv d2">
-        <div class="board-card__img"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=140&h=140&fit=crop&q=80" alt="Robert Chen"></div>
-        <div><div class="board-card__name">Robert Chen</div><div class="board-card__role">Director</div><div class="board-card__bio">Former Managing Director at Global Investment Bank. Expert in M&amp;A and strategic financial planning.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ─── INSIGHTS ─── -->
 <section class="insights" id="insights">
@@ -643,32 +670,13 @@ img{display:block;max-width:100%}
   </div>
 </section>
 
-<!-- ─── PARTNERS ─── -->
-<section class="partners" id="partners">
-  <div class="partners__in">
-    <div class="sec__lbl">Partnerships</div>
-    <h2 class="sec__t rv">Strategic partners</h2>
-    <div class="partner-row rv">
-      <span class="partner">Planet N</span>
-      <span class="partner">World Bank Group</span>
-      <span class="partner">IFC</span>
-      <span class="partner">ADB</span>
-      <span class="partner">SECP</span>
-      <span class="partner">SBP</span>
-      <span class="partner">NEPRA</span>
-      <span class="partner">OGRA</span>
-      <span class="partner">PPRA</span>
-      <span class="partner">SMEDA</span>
-    </div>
-  </div>
-</section>
 
 <!-- ─── CTA ─── -->
 <section class="cta" id="contact">
   <h2 class="rv">Ready to work<br><em>together?</em></h2>
-  <p class="rv">Whether you need strategic advisory, dispute resolution, or a partnership within the ContexAi ecosystem — let's talk.</p>
+  <p class="rv">Whether you need strategic advisory, dispute resolution, or sector-specific PPP support — let's talk.</p>
   <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap" class="rv">
-    <a href="/cdn-cgi/l/email-protection#523b3c343d12313d3c26372a333b7c3d2035" class="btn btn-white">Start a Conversation &rarr;</a>
+    <a href="mailto:amir.wahmed@contexai.org" class="btn btn-white">Start a Conversation &rarr;</a>
     <a href="#services" class="btn btn-ghost-w">View Services</a>
   </div>
 </section>
@@ -681,36 +689,27 @@ img{display:block;max-width:100%}
     <div class="ft__grid">
       <div class="ft__brand">
         <a href="#" class="logo">Contex<span>Ai</span></a>
-        <p>Intelligence in Context. Boutique financial consulting and intelligent commerce ecosystem serving Pakistan's new economy since 2001.</p>
+        <p>Intelligence in Context. Boutique financial consulting and strategic advisory serving Pakistan and emerging markets since 2001.</p>
       </div>
       <div class="ft__col">
-        <h4>Advisory</h4>
+        <h4>Services</h4>
         <a href="#services">Financial Consulting</a>
         <a href="#services">Dispute Resolution</a>
         <a href="#services">PPP Advisory</a>
         <a href="#services">M&amp;A Advisory</a>
-        <a href="#services">Start-up Incubation</a>
-      </div>
-      <div class="ft__col">
-        <h4>Ventures</h4>
-        <a href="#ventures">Apni Sawari</a>
-        <a href="#ventures">Zameen-o-Makan</a>
-        <a href="#ventures">FarmDirect</a>
-        <a href="#ventures">Food &amp; HomeChef</a>
-        <a href="#ventures">PopoPanda</a>
+        <a href="#services">Sector Expertise</a>
       </div>
       <div class="ft__col">
         <h4>Company</h4>
         <a href="#about">About</a>
-        <a href="#team">Team</a>
-        <a href="#board">Board</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#team">Leadership</a>
         <a href="#insights">Research</a>
-        <a href="#partners">Partners</a>
       </div>
       <div class="ft__col">
         <h4>Contact</h4>
-        <a href="/cdn-cgi/l/email-protection#cca5a2aaa38cafa3a2b8a9b4ada5e2a3beab"><span class="__cf_email__" data-cfemail="4c25222a230c2f23223829342d2562233e2b">[email&#160;protected]</span></a>
-        <a href="tel:+92">+92 (0) — —</a>
+        <a href="mailto:amir.wahmed@contexai.org">amir.wahmed@contexai.org</a>
+        <a href="tel:+923028222316">+92 (302) 8222316</a>
         <a href="#">Karachi, Pakistan</a>
         <a href="#">LinkedIn</a>
       </div>
@@ -720,7 +719,6 @@ img{display:block;max-width:100%}
       <div class="ft__bot-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
-        <a href="#">SECP Registered</a>
       </div>
     </div>
   </div>
@@ -784,3 +782,45 @@ document.querySelectorAll('.tab-btn').forEach(function(btn){
   btn.addEventListener('click', function(){
     var tabId = btn.dataset.tab;
     document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
+    var pane = document.getElementById(tabId);
+    if(pane){ pane.classList.add('active'); }
+  });
+});
+
+})();
+</script>
+</body>
+</html>
+.scrollIntoView({behavior:'smooth', block:'start'}); }
+});
+
+/* ─── REVEAL ANIMATION ─── */
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ entry.target.classList.add('vis'); io.unobserve(entry.target); }
+    });
+  },{threshold:.07, rootMargin:'0px 0px -32px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('vis'); });
+}
+
+/* ─── TABS ─── */
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var tabId = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
+    var pane = document.getElementById(tabId);
+    if(pane){ pane.classList.add('active'); }
+  });
+});
+
+})();
+</script>
+</body>
+</html>

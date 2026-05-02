@@ -38,17 +38,39 @@ Production-ready website for ContexAI Group, a premier boutique financial consul
 
 ## Deployment
 
-This website is designed for deployment at www.contexai.org and includes all necessary elements for a production environment including:
-- Professional team profiles with images
-- Board member information
-- Comprehensive service offerings
-- Sector expertise sections
-- Industry insights and research
-- Client testimonials
-- Partnership information
+The site is deployed to **contexai.org** via Netlify. Configuration lives in `netlify.toml`.
 
-## Production Files
+```powershell
+# One-time setup
+netlify link              # link this folder to the Netlify project
+netlify status            # confirm the link
 
-- Production website: `ContexAi_ProductionWebsite.html`
-- Legacy enhanced version: `ContexAi_NewWebsite.html`
-- Original version: `ContexAi_Website.html`
+# Each release
+netlify deploy --prod     # uploads contents of public/
+```
+
+## Folder Layout
+
+```
+public/                 ← deployed to contexai.org
+  index.html            ← live homepage
+
+_archive/               ← legacy/draft versions, NOT deployed
+  ContexAi_Website.html             (original version)
+  ContexAi_NewWebsite.html          (legacy enhanced version)
+  ContexAi_ProductionWebsite.html   (early stub)
+  ContexAi_ProductionWebsite_staging.html
+
+<root>/                 ← venture brand pages, NOT currently deployed
+  Apni_Sawari_Website.html
+  Events_Brand_Studio_Website.html
+  FarmDirect_Market_Website.html
+  Food_HomeChef_Website.html
+  PopoPanda_Website.html
+  Zameen-o-Makan_Website.html
+
+netlify.toml            ← Netlify build config (publish = "public")
+README.md               ← this file
+```
+
+To publish a venture page, move it (or copy it) into `public/` and redeploy.

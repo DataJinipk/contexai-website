@@ -1,0 +1,25 @@
+# Netlify configuration for contexai.org
+# Static HTML site — no build step required.
+#
+# Folder layout:
+#   public/      → deployed to contexai.org (only files here go live)
+#   _archive/    → legacy/draft versions, NOT deployed
+#   <root>/*.html → venture brand pages, NOT deployed (move into public/ to publish)
+
+[build]
+  publish = "public"
+  # No build command — files are served directly from public/.
+
+# Add redirects here as needed.
+# Example:
+# [[redirects]]
+#   from = "/old-page"
+#   to = "/new-page"
+#   status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
