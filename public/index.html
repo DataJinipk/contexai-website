@@ -460,7 +460,7 @@ img{display:block;max-width:100%}
 
     <div class="experts-band rv">
       <h3 class="experts__t">Our Experts</h3>
-      <p class="experts__d">A network of senior advisors based across Sydney, the Gulf, North America, and Pakistan — partners on specific mandates and bringing deep sector and regional expertise to client engagements.</p>
+      <p class="experts__d">A network of senior advisors and specialists based across Riyadh, the Gulf, North America, and Pakistan — partners on specific mandates and bringing deep sector, regional, and creative expertise to client engagements.</p>
       <div class="experts-grid">
 
         <div class="expert rv">
@@ -591,6 +591,28 @@ img{display:block;max-width:100%}
               <li>Tax planning (1031 like-kind exchange, recapitalisation)</li>
               <li>Funds structuring &amp; project financing</li>
               <li>Internal audit, SOX &amp; risk-based controls</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expert rv">
+          <div class="expert__head">
+            <div class="expert__avatar"><img src="images/expert-lamiya.jpg" alt="Lamiya Ahmed"></div>
+            <div class="expert__meta">
+              <div class="expert__name">Lamiya Ahmed</div>
+              <div class="expert__title">Brand Strategist &amp; Visual Designer</div>
+              <div class="expert__loc">Karachi, Pakistan</div>
+            </div>
+          </div>
+          <p class="expert__bio">Transaction advisory associate at IQ Capital Plus blending financial modeling and valuation work with brand strategy and visual design. IBA MBA with a BSc in Accounting and Finance from Lahore School of Economics, plus prior treasury experience at BankIslami. Specialises in turning analytical work into investor-ready communications and corporate brand systems.</p>
+          <div class="expert__areas">
+            <div class="expert__areas-lbl">Areas of expertise</div>
+            <ul>
+              <li>Pitch books &amp; Information Memorandums</li>
+              <li>Financial modeling &amp; valuation</li>
+              <li>Brand strategy &amp; visual design</li>
+              <li>Bid preparation &amp; transaction support</li>
+              <li>Digital strategy &amp; SEO</li>
             </ul>
           </div>
         </div>
@@ -825,6 +847,42 @@ document.querySelectorAll('.tab-btn').forEach(function(btn){
 </body>
 </html>
 rAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
+    var pane = document.getElementById(tabId);
+    if(pane){ pane.classList.add('active'); }
+  });
+});
+
+})();
+</script>
+</body>
+</html>
+ # links ─── */
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href^="#"]');
+  if(!a) return;
+  var target = document.querySelector(a.getAttribute('href'));
+  if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+});
+
+/* ─── REVEAL ANIMATION ─── */
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ entry.target.classList.add('vis'); io.unobserve(entry.target); }
+    });
+  },{threshold:.07, rootMargin:'0px 0px -32px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('vis'); });
+}
+
+/* ─── TABS ─── */
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var tabId = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
     btn.classList.add('active');
     document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
     var pane = document.getElementById(tabId);
