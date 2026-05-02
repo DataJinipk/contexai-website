@@ -575,22 +575,22 @@ img{display:block;max-width:100%}
 
         <div class="expert rv d2">
           <div class="expert__head">
-            <div class="expert__avatar">NK</div>
+            <div class="expert__avatar"><img src="images/expert-nafis.jpg" alt="Nafis Khan"></div>
             <div class="expert__meta">
-              <div class="expert__name">Nafis Khan, CPA, CA</div>
-              <div class="expert__title">Principal — Global Real Estate Advisory</div>
-              <div class="expert__loc">New York, United States</div>
+              <div class="expert__name">Nafis Khan, CPA, CA, FCIS</div>
+              <div class="expert__title">Principal — Real Estate Finance &amp; CFO Advisory</div>
+              <div class="expert__loc">New York, New York, United States</div>
             </div>
           </div>
-          <p class="expert__bio">CPA, CA based in New York, leading global real estate advisory work for institutional and private clients. Practice spans cross-border investment, property finance, and asset management.</p>
+          <p class="expert__bio">CPA (AICPA), CA (ICAP), FCIS, and 20-year Chief Financial Officer at AION Partners — a New York-based real estate investment firm covering commercial, residential multi-family, land development, and construction. Earlier roles in internal audit (407 ETR), financial analysis (Richmond Hill Hydro), and KPMG audit practice. Now Principal Consultant at The Pro Consultants, advising on US and cross-border real estate finance.</p>
           <div class="expert__areas">
             <div class="expert__areas-lbl">Areas of expertise</div>
             <ul>
-              <li>Cross-border real estate advisory</li>
-              <li>US property investment &amp; acquisitions</li>
-              <li>Asset management &amp; repositioning</li>
-              <li>Real estate finance &amp; structuring</li>
-              <li>Institutional capital introductions</li>
+              <li>Real estate CFO &amp; portfolio finance</li>
+              <li>Construction &amp; property accounting</li>
+              <li>Tax planning (1031 like-kind exchange, recapitalisation)</li>
+              <li>Funds structuring &amp; project financing</li>
+              <li>Internal audit, SOX &amp; risk-based controls</li>
             </ul>
           </div>
         </div>
@@ -813,6 +813,18 @@ document.querySelectorAll('.tab-btn').forEach(function(btn){
   btn.addEventListener('click', function(){
     var tabId = btn.dataset.tab;
     document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
+    var pane = document.getElementById(tabId);
+    if(pane){ pane.classList.add('active'); }
+  });
+});
+
+})();
+</script>
+</body>
+</html>
+rAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
     btn.classList.add('active');
     document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
     var pane = document.getElementById(tabId);
