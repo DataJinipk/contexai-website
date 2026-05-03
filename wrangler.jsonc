@@ -1,14 +1,20 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "contexai-website",
+  "main": "src/index.js",
   "compatibility_date": "2026-05-02",
+  "compatibility_flags": ["nodejs_compat"],
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": "public"
+    "directory": "public",
+    "binding": "ASSETS"
   },
-  "compatibility_flags": [
-    "nodejs_compat"
+  "r2_buckets": [
+    {
+      "binding": "APPLICATIONS",
+      "bucket_name": "contexai-applications"
+    }
   ]
 }
