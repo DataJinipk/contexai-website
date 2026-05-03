@@ -115,8 +115,7 @@ img{display:block;max-width:100%}
   <form class="form"
         id="apply-form"
         action="https://formspree.io/f/mvzlzrbg"
-        method="POST"
-        enctype="multipart/form-data">
+        method="POST">
 
     <input type="hidden" name="_subject" id="form-subject" value="ContexAi Application — Subject Matter Expert">
     <input type="hidden" name="application_type" id="form-type" value="Subject Matter Expert">
@@ -270,13 +269,14 @@ img{display:block;max-width:100%}
       </div>
     </div>
 
-    <!-- File upload (works on Formspree free; mailto fallback won't carry files) -->
-    <div class="section-h">Attachments</div>
+    <!-- Attachments — sent separately by email -->
+    <div class="section-h">Send Your CV / Product Deck Separately</div>
     <div class="row row--single">
       <div class="field">
-        <label>Profile / CV / product deck <span class="field--hint" style="display:inline">(PDF, max 10 MB)</span></label>
-        <input type="file" name="attachment" accept=".pdf,.doc,.docx">
-        <div class="field--hint">Optional. SMEs: send a CV. AI builders: send a product brief or technical doc.</div>
+        <div style="background:var(--blue-p);border:1px solid rgba(29,95,255,.2);border-radius:12px;padding:18px 22px;font-size:.92rem;color:var(--ink2);line-height:1.6">
+          After submitting this form, please email your <strong>CV (for SMEs)</strong> or <strong>product deck / technical brief (for AI Builders)</strong> as an attachment to <a href="mailto:amir.wahmed@contexai.org" style="color:var(--blue);font-weight:600">amir.wahmed@contexai.org</a>.<br><br>
+          Use the subject line: <strong>"Application materials — &lt;Your Name&gt;"</strong> so our Web Expert Agents can match it to your submission.
+        </div>
       </div>
     </div>
 
