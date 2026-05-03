@@ -64,6 +64,31 @@ img{display:block;max-width:100%}
 .foot{padding:32px;background:var(--ink);color:rgba(255,255,255,.55);font-size:.84rem;text-align:center}
 .foot a{color:rgba(255,255,255,.85);font-weight:500}
 .foot a:hover{color:#fff}
+
+/* Quota banner */
+.quota-banner{background:var(--blue-p);border:1px solid rgba(29,95,255,.18);border-radius:12px;padding:14px 18px;margin-bottom:24px;font-size:.92rem;color:var(--ink2);line-height:1.5;display:none}
+.quota-banner.warn{background:#FEF3C7;border-color:#F59E0B}
+.quota-banner.show{display:block}
+
+/* Payment modal */
+.modal-bg{position:fixed;inset:0;background:rgba(11,17,32,.6);backdrop-filter:blur(6px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-bg.open{display:flex}
+.modal{background:var(--white);border-radius:18px;max-width:560px;width:100%;padding:36px;box-shadow:var(--sh2);max-height:90vh;overflow-y:auto}
+.modal__t{font-family:var(--serif);font-size:1.6rem;color:var(--ink);margin-bottom:8px;line-height:1.25}
+.modal__d{font-size:.95rem;color:var(--ink4);line-height:1.6;margin-bottom:24px}
+.pkgs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+@media(max-width:520px){.pkgs{grid-template-columns:1fr}}
+.pkg{background:var(--cream);border:2px solid rgba(0,0,0,.06);border-radius:14px;padding:22px 22px 26px;cursor:pointer;text-align:left;transition:all .2s;font-family:inherit;display:flex;flex-direction:column;align-items:flex-start}
+.pkg:hover{border-color:var(--blue-l);transform:translateY(-2px);box-shadow:var(--sh1)}
+.pkg__tag{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);margin-bottom:8px}
+.pkg__price{font-family:var(--serif);font-size:2rem;color:var(--ink);line-height:1;margin-bottom:6px}
+.pkg__sub{font-size:.85rem;color:var(--ink4);margin-bottom:14px}
+.pkg__per{font-size:.78rem;color:var(--ink5)}
+.pkg--featured{border-color:var(--blue);background:linear-gradient(135deg,var(--blue-p),var(--white))}
+.modal__close{background:none;border:none;font-size:.88rem;color:var(--ink4);cursor:pointer;text-decoration:underline;font-family:inherit;margin-top:6px}
+.modal__close:hover{color:var(--ink)}
+.modal__secure{font-size:.78rem;color:var(--ink5);text-align:center;margin-top:18px;padding-top:18px;border-top:1px solid rgba(0,0,0,.06);line-height:1.5}
+.modal__secure strong{color:var(--ink3);font-weight:600}
 </style>
 </head>
 <body>
@@ -80,6 +105,8 @@ img{display:block;max-width:100%}
   <div class="lbl">For Employers</div>
   <h1 class="title">Post an Open Position</h1>
   <p class="intro">Reach our curated network of senior Subject Matter Experts and Agentic AI builders. Our <strong>Web Expert Agents</strong> review every posting and publish approved roles to the public Positions board within <strong>2 business days</strong>.</p>
+
+  <div id="quota-banner" class="quota-banner"></div>
 
   <form class="form"
         id="position-form"
@@ -249,11 +276,108 @@ img{display:block;max-width:100%}
   </form>
 </main>
 
+<!-- Payment modal -->
+<div id="pay-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="pay-title">
+  <div class="modal">
+    <h2 id="pay-title" class="modal__t">Choose a posting package</h2>
+    <p class="modal__d">You've used all 3 free posts on this email. Pick a package below to keep posting. Credits never expire and apply to any future positions.</p>
+    <div class="pkgs">
+      <button type="button" class="pkg" data-package="starter">
+        <span class="pkg__tag">Starter</span>
+        <span class="pkg__price">$10</span>
+        <span class="pkg__sub">5 position posts</span>
+        <span class="pkg__per">$2.00 per post</span>
+      </button>
+      <button type="button" class="pkg pkg--featured" data-package="pro">
+        <span class="pkg__tag">Pro · best value</span>
+        <span class="pkg__price">$25</span>
+        <span class="pkg__sub">20 position posts</span>
+        <span class="pkg__per">$1.25 per post</span>
+      </button>
+    </div>
+    <button type="button" class="modal__close" id="pay-cancel">Cancel — keep my form data</button>
+    <p class="modal__secure">Payments handled by <strong>Stripe</strong>. Card details never touch ContexAi servers. After payment, you'll be returned here automatically and your post will go through.</p>
+  </div>
+</div>
+
 <footer class="foot">
   &copy; 2026 ContexAi Group &middot; <a href="/">contexai.org</a> &middot; <a href="/positions">View Open Positions</a>
 </footer>
 
 <script>
+// Restore form data from localStorage if user came back from Stripe
+(function restoreAfterPayment(){
+  var p = new URLSearchParams(window.location.search);
+  if(p.get('payment') === 'success'){
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem('contexai_position_draft') || 'null'); } catch(e){}
+    if(saved){
+      var f = document.getElementById('position-form');
+      Object.keys(saved).forEach(function(k){
+        var el = f.querySelector('[name="' + k + '"]');
+        if(el && el.type !== 'file') el.value = saved[k];
+      });
+      var banner = document.getElementById('quota-banner');
+      banner.className = 'quota-banner show';
+      banner.innerHTML = '<strong>Payment received.</strong> Your form data has been restored. Click Submit to publish your position.';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  } else if(p.get('payment') === 'canceled'){
+    var banner = document.getElementById('quota-banner');
+    banner.className = 'quota-banner warn show';
+    banner.innerHTML = '<strong>Payment canceled.</strong> Your form data was preserved — feel free to try again or use the email fallback.';
+  }
+})();
+
+function saveFormDraft(form){
+  var data = {};
+  form.querySelectorAll('input,select,textarea').forEach(function(el){
+    if(el.type !== 'file' && el.name) data[el.name] = el.value;
+  });
+  localStorage.setItem('contexai_position_draft', JSON.stringify(data));
+}
+
+function clearFormDraft(){
+  localStorage.removeItem('contexai_position_draft');
+}
+
+function openPaymentModal(email){
+  var modal = document.getElementById('pay-modal');
+  modal.classList.add('open');
+  modal.dataset.email = email;
+}
+
+function closePaymentModal(){
+  document.getElementById('pay-modal').classList.remove('open');
+}
+
+document.getElementById('pay-cancel').addEventListener('click', closePaymentModal);
+
+document.querySelectorAll('.pkg').forEach(function(btn){
+  btn.addEventListener('click', async function(){
+    var pkg = btn.dataset.package;
+    var email = document.getElementById('pay-modal').dataset.email;
+    btn.disabled = true; btn.style.opacity = '0.6';
+    try {
+      var res = await fetch('/api/checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, package: pkg })
+      });
+      var data = await res.json();
+      if(data.ok && data.checkout_url){
+        window.location.href = data.checkout_url;
+      } else {
+        alert('Could not start checkout: ' + (data.error || 'Unknown error') + '\n\nIf this persists, please email amir.wahmed@contexai.org');
+        btn.disabled = false; btn.style.opacity = '1';
+      }
+    } catch(err){
+      alert('Network error: ' + err.message);
+      btn.disabled = false; btn.style.opacity = '1';
+    }
+  });
+});
+
 // Intercept submit, POST to /api/post-position, render success inline
 document.getElementById('position-form').addEventListener('submit', async function(e){
   e.preventDefault();
@@ -263,9 +387,17 @@ document.getElementById('position-form').addEventListener('submit', async functi
   btn.disabled = true;
   btn.textContent = 'Submitting...';
   try {
+    saveFormDraft(form);
     var res = await fetch('/api/post-position', { method: 'POST', body: new FormData(form) });
     var data = await res.json().catch(function(){ return { ok: false, error: 'Server returned non-JSON response' }; });
+    if (res.status === 402 && data.requires_payment) {
+      var email = String(form.querySelector('[name=contact_email]').value || '');
+      openPaymentModal(email);
+      btn.disabled = false; btn.textContent = origText;
+      return;
+    }
     if (res.ok && data.ok) {
+      clearFormDraft();
       var company = String(form.querySelector('[name=company_name]').value || 'there');
       var role = String(form.querySelector('[name=role_title]').value || 'the position');
       var success = document.createElement('div');
