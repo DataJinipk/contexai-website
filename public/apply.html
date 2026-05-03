@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Apply to join ContexAi — for senior consultants and Agentic AI builders. Share your profile or product and our Web Expert Agents will review and onboard you.">
+<meta name="theme-color" content="#0B1120">
+<title>Apply to Join — ContexAi Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0B1120;--ink2:#1C2A42;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --white:#fff;--cream:#F6F5F1;--blue:#1D5FFF;--blue-d:#1247CC;--blue-l:#4F83FF;--blue-p:#EBF0FF;
+  --serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+  --radius:14px;--sh1:0 1px 4px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.04);--sh2:0 4px 16px rgba(0,0,0,.07),0 12px 32px rgba(0,0,0,.06)
+}
+html{scroll-behavior:smooth;font-size:18px}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink3);line-height:1.65;-webkit-font-smoothing:antialiased}
+@media(max-width:768px){html{font-size:17px}}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(0,0,0,.05)}
+.nav__in{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;font-size:1.25rem;color:var(--ink);letter-spacing:-.03em;display:flex;align-items:center;gap:2px}
+.logo span{color:var(--blue)}
+.logo-badge{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink5);background:var(--cream);padding:2px 6px;border-radius:20px;margin-left:8px;align-self:center}
+.nav__back{font-size:.9rem;color:var(--ink4);font-weight:500}
+.nav__back:hover{color:var(--ink)}
+
+/* Page */
+.page{max-width:760px;margin:0 auto;padding:60px 32px 80px}
+.lbl{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--blue);margin-bottom:14px}
+.title{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);color:var(--ink);line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+.intro{font-size:1.05rem;color:var(--ink4);line-height:1.7;margin-bottom:36px;max-width:600px}
+.intro strong{color:var(--ink2);font-weight:600}
+
+/* Type picker */
+.types{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:32px}
+.type-btn{background:var(--white);border:2px solid rgba(0,0,0,.08);border-radius:14px;padding:22px 24px;cursor:pointer;text-align:left;transition:all .2s;font-family:inherit}
+.type-btn:hover{border-color:var(--blue-l);transform:translateY(-2px);box-shadow:var(--sh1)}
+.type-btn.active{border-color:var(--blue);background:var(--blue-p)}
+.type-btn__t{font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.type-btn__d{font-size:.85rem;color:var(--ink4);line-height:1.5}
+@media(max-width:560px){.types{grid-template-columns:1fr}}
+
+/* Form */
+.form{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:36px;box-shadow:var(--sh1)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.row--single{grid-template-columns:1fr}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column}
+.field label{font-size:.78rem;font-weight:600;color:var(--ink2);margin-bottom:6px;letter-spacing:.01em}
+.field label .req{color:var(--blue);margin-left:2px}
+.field input,.field select,.field textarea{font-family:inherit;font-size:.94rem;padding:11px 14px;border:1.5px solid rgba(0,0,0,.1);border-radius:10px;background:var(--white);color:var(--ink2);transition:border-color .15s,box-shadow .15s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,95,255,.12)}
+.field textarea{resize:vertical;min-height:90px;line-height:1.55}
+.field--hint{font-size:.74rem;color:var(--ink5);margin-top:5px;line-height:1.45}
+.section-h{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink5);margin:28px 0 14px;padding-top:22px;border-top:1px solid rgba(0,0,0,.06)}
+.section-h:first-child{padding-top:0;border-top:none;margin-top:0}
+
+/* Conditional sections */
+.path{display:none}
+.path.active{display:block}
+
+/* Submit */
+.submit-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.btn{padding:14px 28px;border-radius:100px;font-size:.95rem;font-weight:700;border:none;cursor:pointer;transition:all .2s;font-family:inherit;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d);box-shadow:0 4px 14px rgba(29,95,255,.35);transform:translateY(-1px)}
+.btn-link{font-size:.88rem;color:var(--ink4);text-decoration:underline;text-underline-offset:3px}
+.btn-link:hover{color:var(--ink)}
+.fineprint{font-size:.78rem;color:var(--ink5);margin-top:18px;line-height:1.55}
+.fineprint a{color:var(--blue);font-weight:600}
+
+/* Footer */
+.foot{padding:32px;background:var(--ink);color:rgba(255,255,255,.55);font-size:.84rem;text-align:center}
+.foot a{color:rgba(255,255,255,.85);font-weight:500}
+.foot a:hover{color:#fff}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__in">
+    <a href="/" class="logo">Contex<span>Ai</span><span class="logo-badge">Group</span></a>
+    <a href="/" class="nav__back">&larr; Back to home</a>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="lbl">Join the Network</div>
+  <h1 class="title">Apply to ContexAi</h1>
+  <p class="intro">Tell us who you are and what you'd bring to the network. Our <strong>Web Expert Agents</strong> review every submission and onboard approved members directly to the site — typically within 5 business days.</p>
+
+  <!-- Type picker -->
+  <div class="types">
+    <button type="button" class="type-btn active" id="btn-sme" onclick="setType('sme')">
+      <div class="type-btn__t">Subject Matter Expert</div>
+      <div class="type-btn__d">Senior consultant or specialist applying as a Featured Member.</div>
+    </button>
+    <button type="button" class="type-btn" id="btn-ai" onclick="setType('ai')">
+      <div class="type-btn__t">Agentic AI Builder</div>
+      <div class="type-btn__d">Independent developer showcasing an AI agent or product.</div>
+    </button>
+  </div>
+
+  <!-- The form -->
+  <form class="form"
+        id="apply-form"
+        action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID"
+        method="POST"
+        enctype="multipart/form-data">
+
+    <input type="hidden" name="_subject" id="form-subject" value="ContexAi Application — Subject Matter Expert">
+    <input type="hidden" name="application_type" id="form-type" value="Subject Matter Expert">
+
+    <!-- Common fields -->
+    <div class="section-h">About you</div>
+
+    <div class="row">
+      <div class="field">
+        <label>Full name <span class="req">*</span></label>
+        <input type="text" name="full_name" required>
+      </div>
+      <div class="field">
+        <label>Email <span class="req">*</span></label>
+        <input type="email" name="email" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Phone <span class="field--hint" style="display:inline">(with country code)</span></label>
+        <input type="tel" name="phone" placeholder="+1 555 123 4567">
+      </div>
+      <div class="field">
+        <label>City &amp; country <span class="req">*</span></label>
+        <input type="text" name="location" required placeholder="Karachi, Pakistan">
+      </div>
+    </div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>LinkedIn profile URL</label>
+        <input type="url" name="linkedin" placeholder="https://www.linkedin.com/in/...">
+      </div>
+    </div>
+
+    <!-- Subject Matter Expert path -->
+    <div class="path active" id="path-sme">
+      <div class="section-h">Your practice</div>
+
+      <div class="row">
+        <div class="field">
+          <label>Current role &amp; firm <span class="req">*</span></label>
+          <input type="text" name="sme_role" placeholder="Director Finance, SGS Group">
+        </div>
+        <div class="field">
+          <label>Years of experience <span class="req">*</span></label>
+          <select name="sme_experience">
+            <option value="">Select...</option>
+            <option>5–10 years</option>
+            <option>10–20 years</option>
+            <option>20–30 years</option>
+            <option>30+ years</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>Primary specialties <span class="req">*</span></label>
+          <input type="text" name="sme_specialties" placeholder="Financial reporting, IFRS consolidation, FP&amp;A">
+          <div class="field--hint">3–5 areas you want listed on your card.</div>
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>Sectors of expertise</label>
+          <input type="text" name="sme_sectors" placeholder="Energy, infrastructure, financial services">
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>Short bio <span class="req">*</span></label>
+          <textarea name="sme_bio" rows="4" placeholder="2–3 sentences for your card. Career highlights, certifications, what makes your practice distinctive."></textarea>
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>What would you bring to ContexAi?</label>
+          <textarea name="sme_value" rows="3" placeholder="Mandates you'd like to take on, clients you can introduce, ways you'd contribute to the network."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Builder path -->
+    <div class="path" id="path-ai">
+      <div class="section-h">Your product</div>
+
+      <div class="row">
+        <div class="field">
+          <label>Product / agent name <span class="req">*</span></label>
+          <input type="text" name="ai_product_name" placeholder="e.g. PPP Bid Strategist">
+        </div>
+        <div class="field">
+          <label>Production status <span class="req">*</span></label>
+          <select name="ai_status">
+            <option value="">Select...</option>
+            <option>In development</option>
+            <option>Beta / private preview</option>
+            <option>Live / public</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>Demo URL or video link <span class="req">*</span></label>
+          <input type="url" name="ai_demo_url" placeholder="https://...">
+          <div class="field--hint">Live demo, video walkthrough, or product page. Preferred over a deck for first review.</div>
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>One-line description <span class="req">*</span></label>
+          <input type="text" name="ai_oneliner" placeholder="What it does, in 15 words or less">
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>Target sectors / users <span class="req">*</span></label>
+          <input type="text" name="ai_target" placeholder="e.g. Legal &amp; advisory, Infrastructure finance">
+        </div>
+      </div>
+
+      <div class="row row--single">
+        <div class="field">
+          <label>Detailed description</label>
+          <textarea name="ai_description" rows="5" placeholder="What problem it solves, how it works, integration model, pricing approach, anything else useful for the showcase listing."></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Stack / model</label>
+          <input type="text" name="ai_stack" placeholder="GPT-4, Claude, custom RAG, etc.">
+        </div>
+        <div class="field">
+          <label>Open to revenue share?</label>
+          <select name="ai_revshare">
+            <option value="">Select...</option>
+            <option>Yes</option>
+            <option>Open to discuss</option>
+            <option>No, fixed pricing only</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- File upload (works on Formspree free; mailto fallback won't carry files) -->
+    <div class="section-h">Attachments</div>
+    <div class="row row--single">
+      <div class="field">
+        <label>Profile / CV / product deck <span class="field--hint" style="display:inline">(PDF, max 10 MB)</span></label>
+        <input type="file" name="attachment" accept=".pdf,.doc,.docx">
+        <div class="field--hint">Optional. SMEs: send a CV. AI builders: send a product brief or technical doc.</div>
+      </div>
+    </div>
+
+    <div class="submit-row">
+      <button type="submit" class="btn btn-primary">Submit Application &rarr;</button>
+      <a href="#" class="btn-link" id="mailto-fallback">Email it instead</a>
+    </div>
+
+    <p class="fineprint">By submitting, you agree that ContexAi may store and review the information for membership consideration. Approved profiles will be uploaded to the site by our Web Expert Agents. We will reach out within 5 business days. Questions? <a href="mailto:amir.wahmed@contexai.org">amir.wahmed@contexai.org</a></p>
+
+  </form>
+</main>
+
+<footer class="foot">
+  &copy; 2026 ContexAi Group &middot; <a href="/">contexai.org</a>
+</footer>
+
+<script>
+function setType(t){
+  var sme = document.getElementById('btn-sme'), ai = document.getElementById('btn-ai');
+  var pathSme = document.getElementById('path-sme'), pathAi = document.getElementById('path-ai');
+  var subj = document.getElementById('form-subject'), type = document.getElementById('form-type');
+  if(t === 'ai'){
+    sme.classList.remove('active'); ai.classList.add('active');
+    pathSme.classList.remove('active'); pathAi.classList.add('active');
+    subj.value = 'ContexAi Application — Agentic AI Builder';
+    type.value = 'Agentic AI Builder';
+  } else {
+    ai.classList.remove('active'); sme.classList.add('active');
+    pathAi.classList.remove('active'); pathSme.classList.add('active');
+    subj.value = 'ContexAi Application — Subject Matter Expert';
+    type.value = 'Subject Matter Expert';
+  }
+}
+
+// URL parameter support: apply.html?type=ai opens directly to AI builder path
+(function(){
+  var p = new URLSearchParams(window.location.search);
+  if(p.get('type') === 'ai') setType('ai');
+})();
+
+// Mailto fallback — generates a pre-filled email from the current form values
+document.getElementById('mailto-fallback').addEventListener('click', function(e){
+  e.preventDefault();
+  var f = document.getElementById('apply-form');
+  var lines = [];
+  var fields = f.querySelectorAll('input[type=text],input[type=email],input[type=tel],input[type=url],select,textarea');
+  fields.forEach(function(el){
+    if(el.value && el.value.trim()){
+      var label = el.previousElementSibling && el.previousElementSibling.tagName === 'LABEL'
+        ? el.previousElementSibling.innerText.replace('*','').trim()
+        : el.name;
+      lines.push(label + ': ' + el.value.trim());
+    }
+  });
+  var subj = encodeURIComponent(document.getElementById('form-subject').value);
+  var body = encodeURIComponent(lines.join('\n\n'));
+  window.location.href = 'mailto:amir.wahmed@contexai.org?subject=' + subj + '&body=' + body;
+});
+</script>
+
+</body>
+</html>
