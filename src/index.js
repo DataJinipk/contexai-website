@@ -47,6 +47,10 @@ export default {
       return handleSubmission(request, env, 'positions');
     }
 
+    if (url.pathname === '/api/apply-position' && request.method === 'POST') {
+      return handleSubmission(request, env, 'position-applications');
+    }
+
     if (url.pathname === '/api/checkout-session' && request.method === 'POST') {
       return handleCheckoutSession(request, env);
     }
@@ -94,40 +98,43 @@ function jsonResponse(data, status, origin) {
 
 // ─── Quota tracking (Cloudflare KV) ──────────────────────────────────────────
 
-async function getEmployerQuota(env, email) {
+// Quota is tracked per (role, email) where role is 'employer' or 'applicant'.
+// Both share the same FREE_POST_LIMIT and same paid packages, but counters are independent.
+
+function quotaKey(role, email) {
+  return `${role}:${email.toLowerCase().trim()}`;
+}
+
+async function getQuota(env, role, email) {
   if (!env.QUOTA_KV) {
-    // KV not yet bound — degrade gracefully: treat everyone as having free posts available
     return { free_used: 0, paid_credits: 0, total_posts: 0, kv_unavailable: true };
   }
-  const key = `employer:${email.toLowerCase().trim()}`;
-  const data = await env.QUOTA_KV.get(key, 'json');
+  const data = await env.QUOTA_KV.get(quotaKey(role, email), 'json');
   return data || { free_used: 0, paid_credits: 0, total_posts: 0 };
 }
 
-async function setEmployerQuota(env, email, quota) {
+async function setQuota(env, role, email, quota) {
   if (!env.QUOTA_KV) return;
-  const key = `employer:${email.toLowerCase().trim()}`;
-  await env.QUOTA_KV.put(key, JSON.stringify(quota));
+  await env.QUOTA_KV.put(quotaKey(role, email), JSON.stringify(quota));
 }
 
-async function consumePostQuota(env, email) {
-  const q = await getEmployerQuota(env, email);
+async function consumeQuota(env, role, email) {
+  const q = await getQuota(env, role, email);
   if (q.kv_unavailable) {
-    // KV not configured yet; allow post and skip tracking
     return { ok: true, used: 'free', remaining_free: FREE_POST_LIMIT, kv_unavailable: true };
   }
   if (q.free_used < FREE_POST_LIMIT) {
     q.free_used += 1;
     q.total_posts += 1;
     q.last_post_at = new Date().toISOString();
-    await setEmployerQuota(env, email, q);
+    await setQuota(env, role, email, q);
     return { ok: true, used: 'free', remaining_free: FREE_POST_LIMIT - q.free_used, paid_credits: q.paid_credits };
   }
   if (q.paid_credits > 0) {
     q.paid_credits -= 1;
     q.total_posts += 1;
     q.last_post_at = new Date().toISOString();
-    await setEmployerQuota(env, email, q);
+    await setQuota(env, role, email, q);
     return { ok: true, used: 'paid', remaining_credits: q.paid_credits };
   }
   return { ok: false, requires_payment: true, free_used: q.free_used, paid_credits: 0 };
@@ -136,17 +143,22 @@ async function consumePostQuota(env, email) {
 async function handleQuotaCheck(request, env) {
   const url = new URL(request.url);
   const email = url.searchParams.get('email');
+  const role = url.searchParams.get('role') || 'employer';
   const origin = request.headers.get('origin') || '';
   if (!email) return jsonResponse({ ok: false, error: 'email parameter required' }, 400, origin);
-  const q = await getEmployerQuota(env, email);
+  if (role !== 'employer' && role !== 'applicant') {
+    return jsonResponse({ ok: false, error: 'role must be employer or applicant' }, 400, origin);
+  }
+  const q = await getQuota(env, role, email);
   return jsonResponse({
     ok: true,
+    role,
     free_used: q.free_used,
     free_remaining: Math.max(0, FREE_POST_LIMIT - q.free_used),
     paid_credits: q.paid_credits,
     total_posts: q.total_posts,
-    can_post_free: q.free_used < FREE_POST_LIMIT,
-    can_post_paid: q.paid_credits > 0,
+    can_proceed_free: q.free_used < FREE_POST_LIMIT,
+    can_proceed_paid: q.paid_credits > 0,
   }, 200, origin);
 }
 
@@ -155,6 +167,10 @@ async function handleQuotaCheck(request, env) {
 async function handleSubmission(request, env, prefix) {
   const origin = request.headers.get('origin') || '';
   const isPosition = prefix === 'positions';
+  const isPositionApplication = prefix === 'position-applications';
+  // Roles that pay quota: employer (posting) and applicant (applying to a position)
+  const role = isPosition ? 'employer' : (isPositionApplication ? 'applicant' : null);
+  const meteredEmailField = isPosition ? 'contact_email' : 'email';
 
   try {
     const ct = request.headers.get('content-type') || '';
@@ -173,7 +189,6 @@ async function handleSubmission(request, env, prefix) {
     const files = [];
     const MAX_FILE_BYTES = 10 * 1024 * 1024;
 
-    // First pass: collect text fields so we can do quota check before storing files
     for (const [key, value] of formData.entries()) {
       if (typeof value === 'string') {
         fields[key] = value;
@@ -189,26 +204,37 @@ async function handleSubmission(request, env, prefix) {
           origin,
         );
       }
+    } else if (isPositionApplication) {
+      if (!fields.full_name || !fields.email || !fields.position_id) {
+        return jsonResponse(
+          { ok: false, error: 'Name, email, and position ID are required' },
+          400,
+          origin,
+        );
+      }
     } else {
       if (!fields.full_name || !fields.email) {
         return jsonResponse({ ok: false, error: 'Name and email are required' }, 400, origin);
       }
     }
 
-    // Quota check for positions only — applications are unmetered
+    // Quota check for metered submissions only (positions + position applications)
     let quotaResult = null;
-    if (isPosition) {
-      quotaResult = await consumePostQuota(env, fields.contact_email);
+    if (role) {
+      const meteredEmail = fields[meteredEmailField];
+      quotaResult = await consumeQuota(env, role, meteredEmail);
       if (!quotaResult.ok && quotaResult.requires_payment) {
+        const noun = role === 'employer' ? 'posts' : 'applications';
         return jsonResponse({
           ok: false,
           requires_payment: true,
+          role,
           free_used: quotaResult.free_used,
-          message: `You've used all ${FREE_POST_LIMIT} free posts. Choose a package to continue posting.`,
+          message: `You've used all ${FREE_POST_LIMIT} free ${noun}. Choose a package to continue.`,
           packages: Object.entries(PACKAGES).map(([key, p]) => ({
             key,
             credits: p.credits,
-            label: p.label,
+            label: role === 'employer' ? p.label : p.label.replace('posts', 'applications'),
             amountCents: p.amountCents,
           })),
         }, 402, origin);
@@ -273,15 +299,20 @@ async function handleSubmission(request, env, prefix) {
       },
     });
 
-    const message = isPosition
-      ? `Position received. Our Web Expert Agents will review and publish approved roles within 2 business days.`
-      : 'Application received. Our Web Expert Agents will review and respond within 5 business days.';
+    let message;
+    if (isPosition) {
+      message = 'Position received. Our Web Expert Agents will review and publish approved roles within 2 business days.';
+    } else if (isPositionApplication) {
+      message = 'Application sent. The hiring contact has been notified, and you should hear back within 5 business days.';
+    } else {
+      message = 'Application received. Our Web Expert Agents will review and respond within 5 business days.';
+    }
 
     return jsonResponse({
       ok: true,
       submissionId,
       message,
-      quota: isPosition ? {
+      quota: role ? {
         used: quotaResult.used,
         remaining_free: quotaResult.remaining_free,
         remaining_credits: quotaResult.remaining_credits,
@@ -315,7 +346,8 @@ async function handleCheckoutSession(request, env) {
 
   try {
     const body = await request.json();
-    const { email, package: pkg } = body;
+    const { email, package: pkg, role: roleRaw } = body;
+    const role = roleRaw === 'applicant' ? 'applicant' : 'employer'; // default to employer for backward compat
 
     if (!email || !email.includes('@')) {
       return jsonResponse({ ok: false, error: 'Valid email required' }, 400, origin);
@@ -338,16 +370,20 @@ async function handleCheckoutSession(request, env) {
       );
     }
 
+    // Return path differs by role: employer -> /post-position, applicant -> /apply-position
+    const returnPath = role === 'applicant' ? '/apply-position' : '/post-position';
     const params = new URLSearchParams();
     params.set('mode', 'payment');
-    params.set('success_url', 'https://contexai.org/post-position?session_id={CHECKOUT_SESSION_ID}&payment=success');
-    params.set('cancel_url', 'https://contexai.org/post-position?payment=canceled');
+    params.set('success_url', `https://contexai.org${returnPath}?session_id={CHECKOUT_SESSION_ID}&payment=success`);
+    params.set('cancel_url', `https://contexai.org${returnPath}?payment=canceled`);
     params.set('customer_email', email);
     params.set('line_items[0][price]', priceId);
     params.set('line_items[0][quantity]', '1');
-    params.set('metadata[employer_email]', email.toLowerCase().trim());
+    params.set('metadata[email]', email.toLowerCase().trim());
+    params.set('metadata[role]', role);
     params.set('metadata[package]', pkg);
-    params.set('payment_intent_data[metadata][employer_email]', email.toLowerCase().trim());
+    params.set('payment_intent_data[metadata][email]', email.toLowerCase().trim());
+    params.set('payment_intent_data[metadata][role]', role);
     params.set('payment_intent_data[metadata][package]', pkg);
 
     const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
@@ -401,31 +437,32 @@ async function handleStripeWebhook(request, env) {
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
-    const email = session.metadata?.employer_email || session.customer_email;
+    // Backward-compat: older sessions used "employer_email"; new ones use "email" + "role"
+    const email = session.metadata?.email || session.metadata?.employer_email || session.customer_email;
+    const role = session.metadata?.role === 'applicant' ? 'applicant' : 'employer';
     const pkg = session.metadata?.package;
 
     if (!email) {
       console.error('Webhook: no email in completed session');
-      return new Response('OK', { status: 200 }); // Stripe retries on non-2xx
+      return new Response('OK', { status: 200 });
     }
 
     let credits = 0;
     if (pkg && PACKAGES[pkg]) {
       credits = PACKAGES[pkg].credits;
     } else {
-      // Fallback: derive from amount_total
       const amount = session.amount_total;
       if (amount === PACKAGES.starter.amountCents) credits = PACKAGES.starter.credits;
       else if (amount === PACKAGES.pro.amountCents) credits = PACKAGES.pro.credits;
     }
 
     if (credits > 0) {
-      const q = await getEmployerQuota(env, email);
+      const q = await getQuota(env, role, email);
       q.paid_credits = (q.paid_credits || 0) + credits;
       q.last_purchase_at = new Date().toISOString();
       q.last_purchase_pkg = pkg || 'unknown';
-      await setEmployerQuota(env, email, q);
-      console.log(`Granted ${credits} credits to ${email} via package ${pkg}`);
+      await setQuota(env, role, email, q);
+      console.log(`Granted ${credits} ${role} credits to ${email} via package ${pkg}`);
 
       // Log purchase to R2 for audit trail
       const purchaseKey = `purchases/${new Date().toISOString().split('T')[0]}/${session.id}.json`;
@@ -434,6 +471,7 @@ async function handleStripeWebhook(request, env) {
         JSON.stringify({
           stripe_session_id: session.id,
           email,
+          role,
           package: pkg,
           credits_granted: credits,
           amount_total: session.amount_total,
