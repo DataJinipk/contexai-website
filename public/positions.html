@@ -99,7 +99,11 @@ img{display:block;max-width:100%}
       <a href="/post-position" class="btn btn-primary">Post the first role &rarr;</a>
     </div>
 
-    <!-- TEMPLATE: when a position is approved, paste a block like this here.
+    <!-- TEMPLATE: when a position is approved, paste one of these into the
+         positions list. Use whichever Apply button matches the employer's
+         chosen application method on the post-position form.
+
+    APPLY VIA CONTEXAI (recommended — uses our application form + quota):
     <div class="position">
       <div class="position__head">
         <div>
@@ -118,7 +122,25 @@ img{display:block;max-width:100%}
       </div>
       <div class="position__foot">
         <span class="position__deadline">Apply by 30 June 2026</span>
-        <a href="mailto:hiring@example.com?subject=ContexAi+%E2%80%94+Senior+Financial+Advisor" class="btn btn-primary">Apply &rarr;</a>
+        <a href="/apply-position?position_id=POS-001&position_title=Senior+Financial+Advisor+%E2%80%94+Power+Sector&company=Acme+Energy+Holdings&location=Karachi+(hybrid)" class="btn btn-primary">Apply via ContexAi &rarr;</a>
+      </div>
+    </div>
+
+    APPLY VIA EMAIL (when employer chose "Direct email"):
+    <div class="position">
+      ...same head + body as above...
+      <div class="position__foot">
+        <span class="position__deadline">Apply by 30 June 2026</span>
+        <a href="mailto:hiring@example.com?subject=ContexAi+%E2%80%94+Senior+Financial+Advisor" class="btn btn-primary">Apply by email &rarr;</a>
+      </div>
+    </div>
+
+    APPLY VIA EXTERNAL LINK (when employer chose "External link"):
+    <div class="position">
+      ...same head + body as above...
+      <div class="position__foot">
+        <span class="position__deadline">Apply by 30 June 2026</span>
+        <a href="https://example.com/careers/finance-advisor" target="_blank" rel="noopener" class="btn btn-primary">Apply on company site &rarr;</a>
       </div>
     </div>
     -->

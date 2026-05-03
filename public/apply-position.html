@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Apply to an open consulting position via ContexAi. Cover letter, CV, and contact details forwarded directly to the hiring employer.">
+<meta name="theme-color" content="#0B1120">
+<title>Apply to Position — ContexAi Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0B1120;--ink2:#1C2A42;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --white:#fff;--cream:#F6F5F1;--blue:#1D5FFF;--blue-d:#1247CC;--blue-l:#4F83FF;--blue-p:#EBF0FF;
+  --serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+  --radius:14px;--sh1:0 1px 4px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.04);--sh2:0 4px 16px rgba(0,0,0,.07),0 12px 32px rgba(0,0,0,.06)
+}
+html{scroll-behavior:smooth;font-size:18px}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink3);line-height:1.65;-webkit-font-smoothing:antialiased}
+@media(max-width:768px){html{font-size:17px}}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+
+.nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(0,0,0,.05)}
+.nav__in{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;font-size:1.25rem;color:var(--ink);letter-spacing:-.03em;display:flex;align-items:center;gap:2px}
+.logo span{color:var(--blue)}
+.logo-badge{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink5);background:var(--cream);padding:2px 6px;border-radius:20px;margin-left:8px;align-self:center}
+.nav__back{font-size:.9rem;color:var(--ink4);font-weight:500}
+.nav__back:hover{color:var(--ink)}
+
+.page{max-width:760px;margin:0 auto;padding:60px 32px 80px}
+.lbl{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--blue);margin-bottom:14px}
+.title{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);color:var(--ink);line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+.intro{font-size:1.05rem;color:var(--ink4);line-height:1.7;margin-bottom:30px;max-width:600px}
+.intro strong{color:var(--ink2);font-weight:600}
+
+.position-card{background:var(--white);border:1px solid rgba(29,95,255,.18);border-radius:14px;padding:22px 26px;margin-bottom:36px;box-shadow:var(--sh1)}
+.position-card__lbl{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);margin-bottom:10px}
+.position-card__t{font-family:var(--serif);font-size:1.4rem;color:var(--ink);line-height:1.25;margin-bottom:6px}
+.position-card__meta{font-size:.92rem;color:var(--ink4);line-height:1.5}
+
+.form{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:36px;box-shadow:var(--sh1)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.row--single{grid-template-columns:1fr}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column}
+.field label{font-size:.78rem;font-weight:600;color:var(--ink2);margin-bottom:6px;letter-spacing:.01em}
+.field label .req{color:var(--blue);margin-left:2px}
+.field input,.field select,.field textarea{font-family:inherit;font-size:.94rem;padding:11px 14px;border:1.5px solid rgba(0,0,0,.1);border-radius:10px;background:var(--white);color:var(--ink2);transition:border-color .15s,box-shadow .15s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,95,255,.12)}
+.field textarea{resize:vertical;min-height:90px;line-height:1.55}
+.field--hint{font-size:.74rem;color:var(--ink5);margin-top:5px;line-height:1.45}
+.section-h{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink5);margin:28px 0 14px;padding-top:22px;border-top:1px solid rgba(0,0,0,.06)}
+.section-h:first-child{padding-top:0;border-top:none;margin-top:0}
+
+.submit-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.btn{padding:14px 28px;border-radius:100px;font-size:.95rem;font-weight:700;border:none;cursor:pointer;transition:all .2s;font-family:inherit;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d);box-shadow:0 4px 14px rgba(29,95,255,.35);transform:translateY(-1px)}
+.btn-link{font-size:.88rem;color:var(--ink4);text-decoration:underline;text-underline-offset:3px}
+.btn-link:hover{color:var(--ink)}
+.fineprint{font-size:.78rem;color:var(--ink5);margin-top:18px;line-height:1.55}
+.fineprint a{color:var(--blue);font-weight:600}
+
+.foot{padding:32px;background:var(--ink);color:rgba(255,255,255,.55);font-size:.84rem;text-align:center}
+.foot a{color:rgba(255,255,255,.85);font-weight:500}
+.foot a:hover{color:#fff}
+
+.quota-banner{background:var(--blue-p);border:1px solid rgba(29,95,255,.18);border-radius:12px;padding:14px 18px;margin-bottom:24px;font-size:.92rem;color:var(--ink2);line-height:1.5;display:none}
+.quota-banner.warn{background:#FEF3C7;border-color:#F59E0B}
+.quota-banner.show{display:block}
+
+.modal-bg{position:fixed;inset:0;background:rgba(11,17,32,.6);backdrop-filter:blur(6px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-bg.open{display:flex}
+.modal{background:var(--white);border-radius:18px;max-width:560px;width:100%;padding:36px;box-shadow:var(--sh2);max-height:90vh;overflow-y:auto}
+.modal__t{font-family:var(--serif);font-size:1.6rem;color:var(--ink);margin-bottom:8px;line-height:1.25}
+.modal__d{font-size:.95rem;color:var(--ink4);line-height:1.6;margin-bottom:24px}
+.pkgs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+@media(max-width:520px){.pkgs{grid-template-columns:1fr}}
+.pkg{background:var(--cream);border:2px solid rgba(0,0,0,.06);border-radius:14px;padding:22px 22px 26px;cursor:pointer;text-align:left;transition:all .2s;font-family:inherit;display:flex;flex-direction:column;align-items:flex-start}
+.pkg:hover{border-color:var(--blue-l);transform:translateY(-2px);box-shadow:var(--sh1)}
+.pkg__tag{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);margin-bottom:8px}
+.pkg__price{font-family:var(--serif);font-size:2rem;color:var(--ink);line-height:1;margin-bottom:6px}
+.pkg__sub{font-size:.85rem;color:var(--ink4);margin-bottom:14px}
+.pkg__per{font-size:.78rem;color:var(--ink5)}
+.pkg--featured{border-color:var(--blue);background:linear-gradient(135deg,var(--blue-p),var(--white))}
+.modal__close{background:none;border:none;font-size:.88rem;color:var(--ink4);cursor:pointer;text-decoration:underline;font-family:inherit;margin-top:6px}
+.modal__close:hover{color:var(--ink)}
+.modal__secure{font-size:.78rem;color:var(--ink5);text-align:center;margin-top:18px;padding-top:18px;border-top:1px solid rgba(0,0,0,.06);line-height:1.5}
+.modal__secure strong{color:var(--ink3);font-weight:600}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__in">
+    <a href="/" class="logo">Contex<span>Ai</span><span class="logo-badge">Group</span></a>
+    <a href="/positions" class="nav__back">&larr; Back to positions</a>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="lbl">Apply via ContexAi</div>
+  <h1 class="title">Apply to this Position</h1>
+  <p class="intro">Submit your application via ContexAi. Your details and CV are forwarded directly to the hiring contact. <strong>The first 3 applications per email are free</strong> — additional applications use the same packages as employers ($10 / 5 or $25 / 20).</p>
+
+  <div id="position-card" class="position-card" style="display:none">
+    <div class="position-card__lbl">Applying to</div>
+    <div class="position-card__t" id="position-title">—</div>
+    <div class="position-card__meta" id="position-meta">—</div>
+  </div>
+
+  <div id="quota-banner" class="quota-banner"></div>
+
+  <form class="form"
+        id="apply-form"
+        action="/api/apply-position"
+        method="POST"
+        enctype="multipart/form-data">
+
+    <input type="hidden" name="application_type" value="Position Application">
+    <input type="hidden" name="position_id" id="position-id-field" value="">
+    <input type="hidden" name="position_title" id="position-title-field" value="">
+
+    <div class="section-h">About you</div>
+
+    <div class="row">
+      <div class="field">
+        <label>Full name <span class="req">*</span></label>
+        <input type="text" name="full_name" required>
+      </div>
+      <div class="field">
+        <label>Email <span class="req">*</span></label>
+        <input type="email" name="email" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Phone <span class="field--hint" style="display:inline">(with country code)</span></label>
+        <input type="tel" name="phone" placeholder="+1 555 123 4567">
+      </div>
+      <div class="field">
+        <label>Location <span class="req">*</span></label>
+        <input type="text" name="location" required placeholder="Karachi, Pakistan">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>LinkedIn URL</label>
+        <input type="url" name="linkedin" placeholder="https://www.linkedin.com/in/...">
+      </div>
+      <div class="field">
+        <label>Years of experience</label>
+        <select name="experience_years">
+          <option value="">Select...</option>
+          <option>0–2 years</option>
+          <option>3–5 years</option>
+          <option>6–10 years</option>
+          <option>11–20 years</option>
+          <option>20+ years</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section-h">Your fit for the role</div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Current role &amp; firm</label>
+        <input type="text" name="current_role" placeholder="e.g. Director Finance, SGS Group">
+      </div>
+    </div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Cover letter <span class="req">*</span></label>
+        <textarea name="cover_letter" rows="6" required placeholder="Why this role, why you, what makes the fit obvious. 3–5 short paragraphs."></textarea>
+      </div>
+    </div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Relevant experience &amp; achievements</label>
+        <textarea name="achievements" rows="4" placeholder="Specific projects, sectors, deal sizes, or measurable outcomes that map to the role."></textarea>
+      </div>
+    </div>
+
+    <div class="section-h">CV / Resume</div>
+    <div class="row row--single">
+      <div class="field">
+        <label>Upload CV <span class="field--hint" style="display:inline">(PDF or DOC, max 10 MB)</span></label>
+        <input type="file" name="attachment" accept=".pdf,.doc,.docx">
+        <div class="field--hint">Strongly recommended. Hiring contacts will review the CV alongside your cover letter.</div>
+      </div>
+    </div>
+
+    <div class="submit-row">
+      <button type="submit" class="btn btn-primary">Submit Application &rarr;</button>
+      <a href="#" class="btn-link" id="mailto-fallback">Email it instead</a>
+    </div>
+
+    <p class="fineprint">By submitting, you agree that ContexAi may forward this application and CV to the hiring contact for the position. The hiring contact will respond directly within 5 business days. Questions? <a href="mailto:amir.wahmed@contexai.org">amir.wahmed@contexai.org</a></p>
+
+  </form>
+</main>
+
+<!-- Payment modal (mirrors employer-side) -->
+<div id="pay-modal" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="pay-title">
+  <div class="modal">
+    <h2 id="pay-title" class="modal__t">Choose an application package</h2>
+    <p class="modal__d">You've used all 3 free applications on this email. Pick a package below to keep applying. Credits never expire and apply to any future position applications.</p>
+    <div class="pkgs">
+      <button type="button" class="pkg" data-package="starter">
+        <span class="pkg__tag">Starter</span>
+        <span class="pkg__price">$10</span>
+        <span class="pkg__sub">5 applications</span>
+        <span class="pkg__per">$2.00 per application</span>
+      </button>
+      <button type="button" class="pkg pkg--featured" data-package="pro">
+        <span class="pkg__tag">Pro · best value</span>
+        <span class="pkg__price">$25</span>
+        <span class="pkg__sub">20 applications</span>
+        <span class="pkg__per">$1.25 per application</span>
+      </button>
+    </div>
+    <button type="button" class="modal__close" id="pay-cancel">Cancel — keep my form data</button>
+    <p class="modal__secure">Payments handled by <strong>Stripe</strong>. Card details never touch ContexAi servers. After payment, you'll be returned here automatically and your application will go through.</p>
+  </div>
+</div>
+
+<footer class="foot">
+  &copy; 2026 ContexAi Group &middot; <a href="/">contexai.org</a> &middot; <a href="/positions">View Open Positions</a>
+</footer>
+
+<script>
+// Pre-fill position context from URL params: ?position_id=...&position_title=...&company=...&location=...
+(function loadPositionFromUrl(){
+  var p = new URLSearchParams(window.location.search);
+  var pid = p.get('position_id') || '';
+  var ptitle = p.get('position_title') || '';
+  var company = p.get('company') || '';
+  var location = p.get('location') || '';
+
+  if(pid || ptitle){
+    document.getElementById('position-id-field').value = pid;
+    document.getElementById('position-title-field').value = ptitle;
+    var card = document.getElementById('position-card');
+    card.style.display = 'block';
+    document.getElementById('position-title').textContent = ptitle || '(Position)';
+    var metaParts = [];
+    if(company) metaParts.push(company);
+    if(location) metaParts.push(location);
+    if(pid) metaParts.push('Ref: ' + pid);
+    document.getElementById('position-meta').textContent = metaParts.join(' · ');
+  }
+})();
+
+// Restore form on return from Stripe
+(function restoreAfterPayment(){
+  var p = new URLSearchParams(window.location.search);
+  if(p.get('payment') === 'success'){
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem('contexai_application_draft') || 'null'); } catch(e){}
+    if(saved){
+      var f = document.getElementById('apply-form');
+      Object.keys(saved).forEach(function(k){
+        var el = f.querySelector('[name="' + k + '"]');
+        if(el && el.type !== 'file') el.value = saved[k];
+      });
+      var banner = document.getElementById('quota-banner');
+      banner.className = 'quota-banner show';
+      banner.innerHTML = '<strong>Payment received.</strong> Your form data has been restored. Click Submit to send your application.';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  } else if(p.get('payment') === 'canceled'){
+    var banner = document.getElementById('quota-banner');
+    banner.className = 'quota-banner warn show';
+    banner.innerHTML = '<strong>Payment canceled.</strong> Your form data was preserved — feel free to try again or use the email fallback.';
+  }
+})();
+
+function saveFormDraft(form){
+  var data = {};
+  form.querySelectorAll('input,select,textarea').forEach(function(el){
+    if(el.type !== 'file' && el.name) data[el.name] = el.value;
+  });
+  localStorage.setItem('contexai_application_draft', JSON.stringify(data));
+}
+
+function clearFormDraft(){
+  localStorage.removeItem('contexai_application_draft');
+}
+
+function openPaymentModal(email){
+  var modal = document.getElementById('pay-modal');
+  modal.classList.add('open');
+  modal.dataset.email = email;
+}
+
+function closePaymentModal(){
+  document.getElementById('pay-modal').classList.remove('open');
+}
+
+document.getElementById('pay-cancel').addEventListener('click', closePaymentModal);
+
+document.querySelectorAll('.pkg').forEach(function(btn){
+  btn.addEventListener('click', async function(){
+    var pkg = btn.dataset.package;
+    var email = document.getElementById('pay-modal').dataset.email;
+    btn.disabled = true; btn.style.opacity = '0.6';
+    try {
+      var res = await fetch('/api/checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, package: pkg, role: 'applicant' })
+      });
+      var data = await res.json();
+      if(data.ok && data.checkout_url){
+        window.location.href = data.checkout_url;
+      } else {
+        alert('Could not start checkout: ' + (data.error || 'Unknown error') + '\n\nIf this persists, please email amir.wahmed@contexai.org');
+        btn.disabled = false; btn.style.opacity = '1';
+      }
+    } catch(err){
+      alert('Network error: ' + err.message);
+      btn.disabled = false; btn.style.opacity = '1';
+    }
+  });
+});
+
+// Submit handler
+document.getElementById('apply-form').addEventListener('submit', async function(e){
+  e.preventDefault();
+  var form = e.target;
+  var btn = form.querySelector('button[type=submit]');
+  var origText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  try {
+    saveFormDraft(form);
+    var res = await fetch('/api/apply-position', { method: 'POST', body: new FormData(form) });
+    var data = await res.json().catch(function(){ return { ok: false, error: 'Server returned non-JSON response' }; });
+    if (res.status === 402 && data.requires_payment) {
+      var email = String(form.querySelector('[name=email]').value || '');
+      openPaymentModal(email);
+      btn.disabled = false; btn.textContent = origText;
+      return;
+    }
+    if (res.ok && data.ok) {
+      clearFormDraft();
+      var name = String(form.querySelector('[name=full_name]').value || 'there').split(' ')[0];
+      var role = String(form.querySelector('[name=position_title]').value || 'the position');
+      var success = document.createElement('div');
+      success.style.cssText = 'background:#DCFCE7;border:1px solid #16A34A;color:#14532D;padding:28px 30px;border-radius:14px;line-height:1.6;font-size:1rem';
+      success.innerHTML =
+        '<div style="font-family:\'Instrument Serif\',serif;font-size:1.5rem;color:#14532D;margin-bottom:10px">Thank you, ' + name + '.</div>' +
+        '<p style="margin-bottom:14px">Your application for <strong>' + role + '</strong> has been forwarded to the hiring contact. You should hear back within 5 business days.</p>' +
+        '<p style="font-size:.85rem;color:#15803D;font-family:monospace;letter-spacing:.02em">Submission ID: ' + (data.submissionId || '—') + '</p>';
+      form.parentNode.insertBefore(success, form);
+      form.style.display = 'none';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      var errText = (data && data.error) ? data.error : ('HTTP ' + res.status);
+      alert('Submission failed: ' + errText + '\n\nIf this persists, please use the "Email it instead" link below.');
+      btn.disabled = false; btn.textContent = origText;
+    }
+  } catch (err) {
+    alert('Network error: ' + err.message + '\n\nIf this persists, please use the "Email it instead" link below.');
+    btn.disabled = false; btn.textContent = origText;
+  }
+});
+
+// Mailto fallback
+document.getElementById('mailto-fallback').addEventListener('click', function(e){
+  e.preventDefault();
+  var f = document.getElementById('apply-form');
+  var lines = [];
+  var fields = f.querySelectorAll('input[type=text],input[type=email],input[type=tel],input[type=url],select,textarea');
+  fields.forEach(function(el){
+    if(el.value && el.value.trim()){
+      var label = el.previousElementSibling && el.previousElementSibling.tagName === 'LABEL'
+        ? el.previousElementSibling.innerText.replace('*','').trim()
+        : el.name;
+      lines.push(label + ': ' + el.value.trim());
+    }
+  });
+  var pos = f.querySelector('[name=position_title]').value || 'a position';
+  var subj = encodeURIComponent('ContexAi Application — ' + pos);
+  var body = encodeURIComponent(lines.join('\n\n'));
+  window.location.href = 'mailto:amir.wahmed@contexai.org?subject=' + subj + '&body=' + body;
+});
+</script>
+
+</body>
+</html>
