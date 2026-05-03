@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Post an open consulting position on ContexAi. Reach a curated network of senior Subject Matter Experts and Agentic AI builders across global markets.">
+<meta name="theme-color" content="#0B1120">
+<title>Post a Position — ContexAi Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0B1120;--ink2:#1C2A42;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --white:#fff;--cream:#F6F5F1;--blue:#1D5FFF;--blue-d:#1247CC;--blue-l:#4F83FF;--blue-p:#EBF0FF;
+  --serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+  --radius:14px;--sh1:0 1px 4px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.04);--sh2:0 4px 16px rgba(0,0,0,.07),0 12px 32px rgba(0,0,0,.06)
+}
+html{scroll-behavior:smooth;font-size:18px}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink3);line-height:1.65;-webkit-font-smoothing:antialiased}
+@media(max-width:768px){html{font-size:17px}}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+
+.nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(0,0,0,.05)}
+.nav__in{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;font-size:1.25rem;color:var(--ink);letter-spacing:-.03em;display:flex;align-items:center;gap:2px}
+.logo span{color:var(--blue)}
+.logo-badge{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink5);background:var(--cream);padding:2px 6px;border-radius:20px;margin-left:8px;align-self:center}
+.nav__back{font-size:.9rem;color:var(--ink4);font-weight:500}
+.nav__back:hover{color:var(--ink)}
+
+.page{max-width:760px;margin:0 auto;padding:60px 32px 80px}
+.lbl{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--blue);margin-bottom:14px}
+.title{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);color:var(--ink);line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+.intro{font-size:1.05rem;color:var(--ink4);line-height:1.7;margin-bottom:36px;max-width:600px}
+.intro strong{color:var(--ink2);font-weight:600}
+
+.form{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:36px;box-shadow:var(--sh1)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.row--single{grid-template-columns:1fr}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column}
+.field label{font-size:.78rem;font-weight:600;color:var(--ink2);margin-bottom:6px;letter-spacing:.01em}
+.field label .req{color:var(--blue);margin-left:2px}
+.field input,.field select,.field textarea{font-family:inherit;font-size:.94rem;padding:11px 14px;border:1.5px solid rgba(0,0,0,.1);border-radius:10px;background:var(--white);color:var(--ink2);transition:border-color .15s,box-shadow .15s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,95,255,.12)}
+.field textarea{resize:vertical;min-height:90px;line-height:1.55}
+.field--hint{font-size:.74rem;color:var(--ink5);margin-top:5px;line-height:1.45}
+.section-h{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink5);margin:28px 0 14px;padding-top:22px;border-top:1px solid rgba(0,0,0,.06)}
+.section-h:first-child{padding-top:0;border-top:none;margin-top:0}
+
+.submit-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.btn{padding:14px 28px;border-radius:100px;font-size:.95rem;font-weight:700;border:none;cursor:pointer;transition:all .2s;font-family:inherit;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d);box-shadow:0 4px 14px rgba(29,95,255,.35);transform:translateY(-1px)}
+.btn-link{font-size:.88rem;color:var(--ink4);text-decoration:underline;text-underline-offset:3px}
+.btn-link:hover{color:var(--ink)}
+.fineprint{font-size:.78rem;color:var(--ink5);margin-top:18px;line-height:1.55}
+.fineprint a{color:var(--blue);font-weight:600}
+
+.foot{padding:32px;background:var(--ink);color:rgba(255,255,255,.55);font-size:.84rem;text-align:center}
+.foot a{color:rgba(255,255,255,.85);font-weight:500}
+.foot a:hover{color:#fff}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__in">
+    <a href="/" class="logo">Contex<span>Ai</span><span class="logo-badge">Group</span></a>
+    <a href="/" class="nav__back">&larr; Back to home</a>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="lbl">For Employers</div>
+  <h1 class="title">Post an Open Position</h1>
+  <p class="intro">Reach our curated network of senior Subject Matter Experts and Agentic AI builders. Our <strong>Web Expert Agents</strong> review every posting and publish approved roles to the public Positions board within <strong>2 business days</strong>.</p>
+
+  <form class="form"
+        id="position-form"
+        action="/api/post-position"
+        method="POST"
+        enctype="multipart/form-data">
+
+    <input type="hidden" name="application_type" value="Open Position">
+
+    <div class="section-h">Your company</div>
+
+    <div class="row">
+      <div class="field">
+        <label>Company name <span class="req">*</span></label>
+        <input type="text" name="company_name" required>
+      </div>
+      <div class="field">
+        <label>Industry / sector</label>
+        <input type="text" name="company_industry" placeholder="e.g. Energy, Real Estate, Fintech">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Company website</label>
+        <input type="url" name="company_url" placeholder="https://...">
+      </div>
+      <div class="field">
+        <label>Company size</label>
+        <select name="company_size">
+          <option value="">Select...</option>
+          <option>1–10 employees</option>
+          <option>11–50</option>
+          <option>51–200</option>
+          <option>201–1,000</option>
+          <option>1,000+</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section-h">Hiring contact</div>
+
+    <div class="row">
+      <div class="field">
+        <label>Contact name <span class="req">*</span></label>
+        <input type="text" name="contact_name" required>
+      </div>
+      <div class="field">
+        <label>Title / role</label>
+        <input type="text" name="contact_title" placeholder="e.g. Head of Talent">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Contact email <span class="req">*</span></label>
+        <input type="email" name="contact_email" required>
+      </div>
+      <div class="field">
+        <label>Phone <span class="field--hint" style="display:inline">(with country code)</span></label>
+        <input type="tel" name="contact_phone" placeholder="+1 555 123 4567">
+      </div>
+    </div>
+
+    <div class="section-h">The position</div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Role title <span class="req">*</span></label>
+        <input type="text" name="role_title" required placeholder="e.g. Senior Financial Advisor — Energy Sector">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Engagement type <span class="req">*</span></label>
+        <select name="engagement_type" required>
+          <option value="">Select...</option>
+          <option>Full-time employment</option>
+          <option>Part-time employment</option>
+          <option>Long-term contract (6+ months)</option>
+          <option>Short-term contract (under 6 months)</option>
+          <option>Project-based engagement</option>
+          <option>Advisory / retainer</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Location / remote <span class="req">*</span></label>
+        <input type="text" name="location" required placeholder="e.g. Karachi (hybrid), Dubai, Remote — global">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Compensation range</label>
+        <input type="text" name="compensation" placeholder="e.g. USD 8k–12k/month, or 'Competitive'">
+      </div>
+      <div class="field">
+        <label>Start date / urgency</label>
+        <input type="text" name="start_date" placeholder="e.g. ASAP, Q3 2026, Flexible">
+      </div>
+    </div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Required expertise <span class="req">*</span></label>
+        <input type="text" name="required_skills" required placeholder="e.g. IFRS, project finance, oil &amp; gas advisory, SAP S/4HANA">
+        <div class="field--hint">List the 3–6 specialties most critical to the role. Searchable on the Positions board.</div>
+      </div>
+    </div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Role description <span class="req">*</span></label>
+        <textarea name="role_description" rows="6" required placeholder="What the role does, what success looks like, the team, the engagement style."></textarea>
+      </div>
+    </div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Ideal candidate profile</label>
+        <textarea name="ideal_profile" rows="4" placeholder="Years of experience, sectors worked in, certifications, region preference, anything else that shapes a strong fit."></textarea>
+      </div>
+    </div>
+
+    <div class="section-h">How candidates apply</div>
+
+    <div class="row">
+      <div class="field">
+        <label>Application method <span class="req">*</span></label>
+        <select name="apply_method" required>
+          <option value="">Select...</option>
+          <option>Direct email to the contact above</option>
+          <option>Apply via ContexAi (we forward intros to you)</option>
+          <option>External link (your careers page)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Application URL <span class="field--hint" style="display:inline">(if external)</span></label>
+        <input type="url" name="apply_url" placeholder="https://...">
+      </div>
+    </div>
+
+    <div class="row row--single">
+      <div class="field">
+        <label>Application deadline</label>
+        <input type="text" name="apply_deadline" placeholder="e.g. 30 days, Open until filled, 30 June 2026">
+      </div>
+    </div>
+
+    <div class="section-h">Attachments</div>
+    <div class="row row--single">
+      <div class="field">
+        <label>Job description / company profile <span class="field--hint" style="display:inline">(PDF or DOC, max 10 MB)</span></label>
+        <input type="file" name="attachment" accept=".pdf,.doc,.docx">
+        <div class="field--hint">Optional. Send a detailed JD or company brochure to enrich the listing.</div>
+      </div>
+    </div>
+
+    <div class="submit-row">
+      <button type="submit" class="btn btn-primary">Submit Position &rarr;</button>
+      <a href="#" class="btn-link" id="mailto-fallback">Email it instead</a>
+    </div>
+
+    <p class="fineprint">By submitting, you agree that ContexAi may store, review, and (if approved) publish the position details on the public Positions board. Approved listings are typically published within 2 business days. Questions? <a href="mailto:amir.wahmed@contexai.org">amir.wahmed@contexai.org</a></p>
+
+  </form>
+</main>
+
+<footer class="foot">
+  &copy; 2026 ContexAi Group &middot; <a href="/">contexai.org</a> &middot; <a href="/positions">View Open Positions</a>
+</footer>
+
+<script>
+// Intercept submit, POST to /api/post-position, render success inline
+document.getElementById('position-form').addEventListener('submit', async function(e){
+  e.preventDefault();
+  var form = e.target;
+  var btn = form.querySelector('button[type=submit]');
+  var origText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  try {
+    var res = await fetch('/api/post-position', { method: 'POST', body: new FormData(form) });
+    var data = await res.json().catch(function(){ return { ok: false, error: 'Server returned non-JSON response' }; });
+    if (res.ok && data.ok) {
+      var company = String(form.querySelector('[name=company_name]').value || 'there');
+      var role = String(form.querySelector('[name=role_title]').value || 'the position');
+      var success = document.createElement('div');
+      success.style.cssText = 'background:#DCFCE7;border:1px solid #16A34A;color:#14532D;padding:28px 30px;border-radius:14px;line-height:1.6;font-size:1rem';
+      success.innerHTML =
+        '<div style="font-family:\'Instrument Serif\',serif;font-size:1.5rem;color:#14532D;margin-bottom:10px">Thank you, ' + company + '.</div>' +
+        '<p style="margin-bottom:14px">Your posting for <strong>' + role + '</strong> has been received. Our Web Expert Agents will review and publish approved roles to the public board within 2 business days.</p>' +
+        '<p style="font-size:.85rem;color:#15803D;font-family:monospace;letter-spacing:.02em">Submission ID: ' + (data.submissionId || '—') + '</p>';
+      form.parentNode.insertBefore(success, form);
+      form.style.display = 'none';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      var errText = (data && data.error) ? data.error : ('HTTP ' + res.status);
+      alert('Submission failed: ' + errText + '\n\nIf this persists, please use the "Email it instead" link below.');
+      btn.disabled = false; btn.textContent = origText;
+    }
+  } catch (err) {
+    alert('Network error: ' + err.message + '\n\nIf this persists, please use the "Email it instead" link below.');
+    btn.disabled = false; btn.textContent = origText;
+  }
+});
+
+// Mailto fallback — pre-fills email with all current form values
+document.getElementById('mailto-fallback').addEventListener('click', function(e){
+  e.preventDefault();
+  var f = document.getElementById('position-form');
+  var lines = [];
+  var fields = f.querySelectorAll('input[type=text],input[type=email],input[type=tel],input[type=url],select,textarea');
+  fields.forEach(function(el){
+    if(el.value && el.value.trim()){
+      var label = el.previousElementSibling && el.previousElementSibling.tagName === 'LABEL'
+        ? el.previousElementSibling.innerText.replace('*','').trim()
+        : el.name;
+      lines.push(label + ': ' + el.value.trim());
+    }
+  });
+  var subj = encodeURIComponent('ContexAi Position Posting — ' + (f.querySelector('[name=company_name]').value || 'New posting'));
+  var body = encodeURIComponent(lines.join('\n\n'));
+  window.location.href = 'mailto:amir.wahmed@contexai.org?subject=' + subj + '&body=' + body;
+});
+</script>
+
+</body>
+</html>
