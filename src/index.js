@@ -1,18 +1,25 @@
-// ContexAi Worker — serves static assets and handles application form POSTs.
-// Application submissions land in R2 bucket APPLICATIONS as JSON + uploaded files.
+// ContexAi Worker — serves static assets and handles form POSTs.
+// Submissions land in R2 bucket APPLICATIONS:
+//   - applications/YYYY-MM-DD/<uuid>/{submission.json, attachments...}
+//   - positions/YYYY-MM-DD/<uuid>/{submission.json, attachments...}
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    // CORS preflight for the application endpoint
-    if (url.pathname === '/api/apply' && request.method === 'OPTIONS') {
-      return corsPreflight();
+    // CORS preflight
+    if (request.method === 'OPTIONS' && url.pathname.startsWith('/api/')) {
+      return corsPreflight(request);
     }
 
-    // Application form POST handler
+    // Application form POST (Experts / AI Builders)
     if (url.pathname === '/api/apply' && request.method === 'POST') {
-      return handleApplication(request, env);
+      return handleSubmission(request, env, 'applications');
+    }
+
+    // Employer position POST
+    if (url.pathname === '/api/post-position' && request.method === 'POST') {
+      return handleSubmission(request, env, 'positions');
     }
 
     // Everything else: defer to the static assets binding
@@ -53,8 +60,10 @@ function jsonResponse(data, status, origin) {
   });
 }
 
-async function handleApplication(request, env) {
+async function handleSubmission(request, env, prefix) {
+  // prefix is 'applications' (Experts/AI Builders) or 'positions' (Employers)
   const origin = request.headers.get('origin') || '';
+  const isPosition = prefix === 'positions';
 
   try {
     const ct = request.headers.get('content-type') || '';
@@ -62,7 +71,6 @@ async function handleApplication(request, env) {
       return jsonResponse({ ok: false, error: 'Expected form data' }, 400, origin);
     }
 
-    // Cap total request body at 25 MB to keep R2 usage predictable
     const contentLength = parseInt(request.headers.get('content-length') || '0', 10);
     if (contentLength > 25 * 1024 * 1024) {
       return jsonResponse({ ok: false, error: 'Request too large (max 25 MB total)' }, 413, origin);
@@ -70,15 +78,13 @@ async function handleApplication(request, env) {
 
     const formData = await request.formData();
 
-    // Identifiers
     const submissionId = crypto.randomUUID();
     const timestamp = new Date().toISOString();
-    const dateFolder = timestamp.split('T')[0]; // YYYY-MM-DD
+    const dateFolder = timestamp.split('T')[0];
 
-    // Sort entries into text fields and files
     const fields = {};
     const files = [];
-    const MAX_FILE_BYTES = 10 * 1024 * 1024; // 10 MB per file
+    const MAX_FILE_BYTES = 10 * 1024 * 1024;
 
     for (const [key, value] of formData.entries()) {
       if (value instanceof File && value.size > 0) {
@@ -91,7 +97,7 @@ async function handleApplication(request, env) {
         }
 
         const safeName = value.name.replace(/[^a-zA-Z0-9._-]/g, '_').slice(0, 100);
-        const r2Key = `${dateFolder}/${submissionId}/${safeName}`;
+        const r2Key = `${prefix}/${dateFolder}/${submissionId}/${safeName}`;
 
         await env.APPLICATIONS.put(r2Key, value.stream(), {
           httpMetadata: {
@@ -101,7 +107,7 @@ async function handleApplication(request, env) {
             originalName: value.name,
             submissionId,
             uploadedAt: timestamp,
-            applicantName: String(formData.get('full_name') || ''),
+            submitterName: String(formData.get('full_name') || formData.get('contact_name') || ''),
           },
         });
 
@@ -116,16 +122,26 @@ async function handleApplication(request, env) {
       }
     }
 
-    // Quick required-field gate
-    if (!fields.full_name || !fields.email) {
-      return jsonResponse({ ok: false, error: 'Name and email are required' }, 400, origin);
+    // Required-field gates differ by submission type
+    if (isPosition) {
+      if (!fields.company_name || !fields.contact_email || !fields.role_title) {
+        return jsonResponse(
+          { ok: false, error: 'Company name, contact email, and role title are required' },
+          400,
+          origin,
+        );
+      }
+    } else {
+      if (!fields.full_name || !fields.email) {
+        return jsonResponse({ ok: false, error: 'Name and email are required' }, 400, origin);
+      }
     }
 
-    // Build submission record
     const submission = {
       id: submissionId,
       timestamp,
-      type: fields.application_type || 'unknown',
+      kind: isPosition ? 'position' : 'application',
+      type: fields.application_type || (isPosition ? 'open_position' : 'unknown'),
       fields,
       files,
       meta: {
@@ -135,8 +151,7 @@ async function handleApplication(request, env) {
       },
     };
 
-    // Save submission JSON
-    const submissionKey = `${dateFolder}/${submissionId}/submission.json`;
+    const submissionKey = `${prefix}/${dateFolder}/${submissionId}/submission.json`;
     await env.APPLICATIONS.put(
       submissionKey,
       JSON.stringify(submission, null, 2),
@@ -144,25 +159,20 @@ async function handleApplication(request, env) {
         httpMetadata: { contentType: 'application/json' },
         customMetadata: {
           submissionId,
-          applicantName: fields.full_name,
-          applicantEmail: fields.email,
-          applicationType: submission.type,
+          submissionKind: submission.kind,
+          submitterName: fields.full_name || fields.company_name || '',
+          submitterEmail: fields.email || fields.contact_email || '',
         },
       },
     );
 
-    return jsonResponse(
-      {
-        ok: true,
-        submissionId,
-        message:
-          "Application received. Our Web Expert Agents will review and respond within 5 business days.",
-      },
-      200,
-      origin,
-    );
+    const message = isPosition
+      ? 'Position received. Our Web Expert Agents will review and publish approved roles within 2 business days.'
+      : 'Application received. Our Web Expert Agents will review and respond within 5 business days.';
+
+    return jsonResponse({ ok: true, submissionId, message }, 200, origin);
   } catch (err) {
-    console.error('Application handler error:', err);
+    console.error('Submission handler error:', err);
     return jsonResponse(
       {
         ok: false,

@@ -281,7 +281,10 @@ img{display:block;max-width:100%}
 /* ─── JOIN THE NETWORK ─── */
 .join{padding:84px 32px;background:var(--white)}
 .join__in{max-width:1280px;margin:0 auto}
-.join-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.join-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.join__card--emp{background:linear-gradient(135deg,var(--blue-p),var(--white));border-color:rgba(29,95,255,.18)}
+.join__card--emp .join__icon{background:var(--blue-d);color:#fff}
+@media(max-width:1024px){.join-grid{grid-template-columns:1fr}}
 .join__card{background:var(--cream);border:1px solid rgba(0,0,0,.05);border-radius:18px;padding:36px;transition:all .25s;display:flex;flex-direction:column}
 .join__card:hover{box-shadow:var(--sh2)}
 .join__card--ai{background:linear-gradient(135deg,var(--ink),var(--ink2));color:#fff}
@@ -297,7 +300,7 @@ img{display:block;max-width:100%}
 .join__bullets li{display:flex;align-items:flex-start;gap:10px;font-size:.92rem;color:var(--ink3);line-height:1.55}
 .join__bullets li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue);margin-top:9px;flex-shrink:0}
 .join__card .btn{align-self:flex-start}
-@media(max-width:760px){.agentic-grid,.join-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.agentic-grid{grid-template-columns:1fr}}
 
 /* ─── RESPONSIVE ─── */
 @media(max-width:1024px){
@@ -342,6 +345,7 @@ img{display:block;max-width:100%}
       <a href="#agentic">Agentic AI</a>
       <a href="#services">Services</a>
       <a href="#team">Members</a>
+      <a href="/positions">Positions</a>
       <a href="#join">Join</a>
       <a href="#contact" class="btn btn-primary">Contact Us</a>
     </div>
@@ -357,6 +361,7 @@ img{display:block;max-width:100%}
   <a href="#agentic" class="mob-link">Agentic AI Showcase</a>
   <a href="#services" class="mob-link">Services</a>
   <a href="#team" class="mob-link">Featured Members</a>
+  <a href="/positions" class="mob-link">Open Positions</a>
   <a href="#join" class="mob-link">Join the Network</a>
   <a href="#insights" class="mob-link">Research &amp; Insights</a>
   <a href="#contact" class="btn btn-primary mob-link">Contact Us</a>
@@ -790,11 +795,24 @@ img{display:block;max-width:100%}
 <section class="join" id="join">
   <div class="join__in">
     <div class="sec__lbl">Join the Network</div>
-    <h2 class="sec__t rv">Two ways to build your practice on ContexAi</h2>
-    <p class="sec__d rv">Whether you advise clients or build agents that do, ContexAi is the platform for serious practitioners. Apply to join — we curate carefully so the network stays valuable for everyone in it.</p>
+    <h2 class="sec__t rv">Three ways to plug into ContexAi</h2>
+    <p class="sec__d rv">Whether you advise clients, build agents that do, or hire those who do — ContexAi is the curated platform connecting all three. We review every applicant and posting carefully so the network stays valuable for everyone in it.</p>
     <div class="join-grid">
 
-      <div class="join__card rv">
+      <div class="join__card join__card--emp rv">
+        <div class="join__icon">EMP</div>
+        <div class="join__name">For Employers</div>
+        <div class="join__desc">Hiring senior consultants, fractional CFOs, project specialists, or Agentic AI talent? Post your open positions and reach our curated network.</div>
+        <ul class="join__bullets">
+          <li>Reach vetted Subject Matter Experts and AI builders directly</li>
+          <li>Mix of full-time, contract, retainer, and project engagements</li>
+          <li>Postings reviewed and published within 2 business days</li>
+          <li>Optional ContexAi-managed shortlisting on retained roles</li>
+        </ul>
+        <a href="/post-position" class="btn btn-primary">Post a Position &rarr;</a>
+      </div>
+
+      <div class="join__card rv d1">
         <div class="join__icon">SME</div>
         <div class="join__name">For Subject Matter Experts</div>
         <div class="join__desc">Senior consultants and specialists who want a high-trust home for client mandates and a global referral network of peers.</div>
@@ -807,7 +825,7 @@ img{display:block;max-width:100%}
         <a href="/apply" class="btn btn-primary">Apply as Expert &rarr;</a>
       </div>
 
-      <div class="join__card join__card--ai rv d1">
+      <div class="join__card join__card--ai rv d2">
         <div class="join__icon">AI</div>
         <div class="join__name">For Agentic AI Builders</div>
         <div class="join__desc">Independent developers and small teams who have built production-ready Agentic AI products and want a credible distribution channel.</div>
@@ -883,6 +901,9 @@ img{display:block;max-width:100%}
         <a href="#about">About</a>
         <a href="#approach">Our Approach</a>
         <a href="#team">Leadership</a>
+        <a href="/positions">Open Positions</a>
+        <a href="/apply">Apply to Join</a>
+        <a href="/post-position">Post a Position</a>
         <a href="#insights">Research</a>
       </div>
       <div class="ft__col">
