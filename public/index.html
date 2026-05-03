@@ -265,6 +265,40 @@ img{display:block;max-width:100%}
 .rv.vis{opacity:1;transform:none}
 .d1{transition-delay:70ms}.d2{transition-delay:140ms}.d3{transition-delay:210ms}
 
+/* ─── AGENTIC AI SHOWCASE ─── */
+.agentic{padding:84px 32px;background:var(--cream)}
+.agentic__in{max-width:1280px;margin:0 auto}
+.agentic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:36px}
+.agentic__card{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:32px;transition:all .25s;display:flex;flex-direction:column}
+.agentic__card:hover{box-shadow:var(--sh2);transform:translateY(-3px)}
+.agentic__cat{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink5);margin-bottom:14px}
+.agentic__name{font-family:var(--serif);font-size:1.45rem;color:var(--ink);margin-bottom:10px;line-height:1.25}
+.agentic__desc{font-size:.95rem;color:var(--ink4);line-height:1.65;margin-bottom:18px;flex:1}
+.agentic__meta{font-size:.85rem;color:var(--ink5)}
+.agentic__meta span{font-weight:600;color:var(--ink3)}
+.agentic__card--apply{background:linear-gradient(135deg,var(--blue-p),var(--white));border-color:rgba(29,95,255,.15)}
+
+/* ─── JOIN THE NETWORK ─── */
+.join{padding:84px 32px;background:var(--white)}
+.join__in{max-width:1280px;margin:0 auto}
+.join-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.join__card{background:var(--cream);border:1px solid rgba(0,0,0,.05);border-radius:18px;padding:36px;transition:all .25s;display:flex;flex-direction:column}
+.join__card:hover{box-shadow:var(--sh2)}
+.join__card--ai{background:linear-gradient(135deg,var(--ink),var(--ink2));color:#fff}
+.join__card--ai .join__name{color:#fff}
+.join__card--ai .join__desc{color:rgba(255,255,255,.78)}
+.join__card--ai .join__bullets{color:rgba(255,255,255,.85)}
+.join__card--ai .join__bullets li::before{background:var(--blue-l)}
+.join__icon{display:inline-flex;width:48px;height:48px;border-radius:12px;background:var(--blue);color:#fff;font-weight:800;font-size:.9rem;align-items:center;justify-content:center;letter-spacing:.05em;margin-bottom:18px}
+.join__card--ai .join__icon{background:var(--blue-l);color:var(--ink)}
+.join__name{font-family:var(--serif);font-size:1.6rem;color:var(--ink);margin-bottom:10px;line-height:1.25}
+.join__desc{font-size:.98rem;color:var(--ink4);line-height:1.6;margin-bottom:20px}
+.join__bullets{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.join__bullets li{display:flex;align-items:flex-start;gap:10px;font-size:.92rem;color:var(--ink3);line-height:1.55}
+.join__bullets li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue);margin-top:9px;flex-shrink:0}
+.join__card .btn{align-self:flex-start}
+@media(max-width:760px){.agentic-grid,.join-grid{grid-template-columns:1fr}}
+
 /* ─── RESPONSIVE ─── */
 @media(max-width:1024px){
   .venture-grid{grid-template-columns:repeat(2,1fr)}
@@ -305,10 +339,10 @@ img{display:block;max-width:100%}
     <a href="#" class="logo">Contex<span>Ai</span><span class="logo-badge">Group</span></a>
     <div class="navlinks">
       <a href="#about">About</a>
-      <a href="#approach">Approach</a>
+      <a href="#agentic">Agentic AI</a>
       <a href="#services">Services</a>
-      <a href="#team">Team</a>
-      <a href="#insights">Insights</a>
+      <a href="#team">Members</a>
+      <a href="#join">Join</a>
       <a href="#contact" class="btn btn-primary">Contact Us</a>
     </div>
     <button class="mob-btn" id="mob-toggle" aria-label="Menu" aria-expanded="false">
@@ -320,9 +354,10 @@ img{display:block;max-width:100%}
 <!-- ─── MOBILE MENU ─── -->
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <a href="#about" class="mob-link">About</a>
-  <a href="#approach" class="mob-link">Our Approach</a>
+  <a href="#agentic" class="mob-link">Agentic AI Showcase</a>
   <a href="#services" class="mob-link">Services</a>
-  <a href="#team" class="mob-link">Team</a>
+  <a href="#team" class="mob-link">Featured Members</a>
+  <a href="#join" class="mob-link">Join the Network</a>
   <a href="#insights" class="mob-link">Research &amp; Insights</a>
   <a href="#contact" class="btn btn-primary mob-link">Contact Us</a>
 </div>
@@ -342,10 +377,10 @@ img{display:block;max-width:100%}
     <span class="divider">&amp;</span>
     <em>Intelligence in Context.</em>
   </h1>
-  <p class="hero__sub">Boutique financial consulting, dispute resolution, and PPP advisory across 15+ sectors in Pakistan and emerging markets.</p>
+  <p class="hero__sub">A curated marketplace for senior consultants and Agentic AI builders — bringing vetted human expertise and intelligent products to clients across Pakistan and emerging markets.</p>
   <div class="hero__btns">
-    <a href="#services" class="btn btn-primary">Our Services &rarr;</a>
-    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    <a href="#agentic" class="btn btn-primary">Explore Agentic AI &rarr;</a>
+    <a href="#join" class="btn btn-ghost">Join the Network</a>
   </div>
   <div class="hero__stats">
     <div class="hero__stat"><strong>24+</strong><span>Years Experience</span></div>
@@ -360,11 +395,11 @@ img{display:block;max-width:100%}
   <div class="about__in">
     <div class="rv">
       <div class="sec__lbl">About ContexAi Group</div>
-      <h2 class="sec__t">Boutique consulting, sharpened by sector depth</h2>
-      <p class="sec__d">Founded by Amir Waheed Ahmed with 20+ years in financial consulting, ContexAi Group is a boutique advisory practice serving clients across Pakistan and emerging markets. We deliver strategic consulting, dispute resolution, and PPP advisory in some of the country's most complex sectors — water, energy, infrastructure, fintech, and beyond — with a small senior team and direct partner-led engagements on every mandate.</p>
+      <h2 class="sec__t">A curated platform for senior expertise and AI innovation</h2>
+      <p class="sec__d">Founded by Amir Waheed Ahmed with 20+ years in financial consulting, ContexAi Group has evolved into a curated platform that connects senior consultants and Agentic AI builders with clients seeking world-class expertise. Our founding members are vetted practitioners across financial advisory, dispute resolution, project engineering, technology, and real estate. We are now actively inviting additional Subject Matter Experts and Agentic AI developers to join the network and build their practice on ContexAi.</p>
       <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
-        <a href="#services" class="btn btn-primary">Our Services &rarr;</a>
-        <a href="#approach" class="btn btn-outline">Our Approach</a>
+        <a href="#join" class="btn btn-primary">Join the Network &rarr;</a>
+        <a href="#agentic" class="btn btn-outline">Showcase an AI Product</a>
       </div>
     </div>
     <div class="about__img rv d1">
@@ -459,6 +494,47 @@ img{display:block;max-width:100%}
   </div>
 </section>
 
+<!-- ─── AGENTIC AI SHOWCASE ─── -->
+<section class="agentic" id="agentic">
+  <div class="agentic__in">
+    <div class="sec__lbl">Agentic AI Showcase</div>
+    <h2 class="sec__t rv">Production-ready AI agents from independent builders</h2>
+    <p class="sec__d rv">A curated catalogue of Agentic AI products from independent developers — vetted, demonstrable, and ready for client engagements. ContexAi connects builders with the consulting and enterprise mandates that need them most. <a href="#join" style="color:var(--blue);font-weight:600">Showcase your AI product &rarr;</a></p>
+    <div class="agentic-grid">
+
+      <div class="agentic__card rv">
+        <div class="agentic__cat">Coming soon</div>
+        <div class="agentic__name">Dispute Resolution Agent</div>
+        <div class="agentic__desc">Drafts, summarises, and reasons over arbitration filings, contracts, and case law for commercial disputes.</div>
+        <div class="agentic__meta"><span>Targeted at:</span> Legal &amp; Advisory</div>
+      </div>
+
+      <div class="agentic__card rv d1">
+        <div class="agentic__cat">Coming soon</div>
+        <div class="agentic__name">PPP Bid Strategist</div>
+        <div class="agentic__desc">Reviews tender documents, models risk-adjusted returns, and assembles bid response drafts for public-private partnership opportunities.</div>
+        <div class="agentic__meta"><span>Targeted at:</span> Infrastructure &amp; Finance</div>
+      </div>
+
+      <div class="agentic__card rv d2">
+        <div class="agentic__cat">Coming soon</div>
+        <div class="agentic__name">SAP Process Co-Pilot</div>
+        <div class="agentic__desc">Embedded inside SAP S/4HANA, this agent handles routine maintenance, compliance checks, and process exception triage.</div>
+        <div class="agentic__meta"><span>Targeted at:</span> Enterprise Operations</div>
+      </div>
+
+      <div class="agentic__card agentic__card--apply rv">
+        <div class="agentic__cat" style="color:var(--blue)">Your product here</div>
+        <div class="agentic__name">Showcase Your Agent</div>
+        <div class="agentic__desc">Built an Agentic AI product? List it on ContexAi to reach consulting firms, enterprises, and clients actively looking for vetted AI solutions.</div>
+        <a href="apply.html?type=ai" class="btn btn-primary" style="margin-top:14px">Apply to Showcase &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- ─── TEAM ─── -->
 <section class="people" id="team">
   <div class="people__in">
@@ -475,8 +551,8 @@ img{display:block;max-width:100%}
     </div>
 
     <div class="experts-band rv">
-      <h3 class="experts__t">Our Experts</h3>
-      <p class="experts__d">A network of senior advisors and specialists based across Riyadh, the Gulf, North America, and Pakistan — partners on specific mandates and bringing deep sector, regional, and creative expertise to client engagements.</p>
+      <h3 class="experts__t">Featured Members of the Network</h3>
+      <p class="experts__d">Founding members of the ContexAi network — senior advisors and specialists based across Riyadh, the Gulf, North America, and Pakistan, bringing deep sector, regional, and creative expertise. <a href="#join" style="color:var(--blue);font-weight:600">Apply to join the network &rarr;</a></p>
       <div class="experts-grid">
 
         <div class="expert rv">
@@ -705,6 +781,45 @@ img{display:block;max-width:100%}
         <div class="test__quote">"End-to-end project advisory ensured our infrastructure project was delivered on time and within budget. Highly recommended for complex project environments."</div>
         <div class="test__attr">— Project Manager, Infrastructure</div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── JOIN THE NETWORK ─── -->
+<section class="join" id="join">
+  <div class="join__in">
+    <div class="sec__lbl">Join the Network</div>
+    <h2 class="sec__t rv">Two ways to build your practice on ContexAi</h2>
+    <p class="sec__d rv">Whether you advise clients or build agents that do, ContexAi is the platform for serious practitioners. Apply to join — we curate carefully so the network stays valuable for everyone in it.</p>
+    <div class="join-grid">
+
+      <div class="join__card rv">
+        <div class="join__icon">SME</div>
+        <div class="join__name">For Subject Matter Experts</div>
+        <div class="join__desc">Senior consultants and specialists who want a high-trust home for client mandates and a global referral network of peers.</div>
+        <ul class="join__bullets">
+          <li>Curated profile on a destination consulting site</li>
+          <li>Inbound enquiries from real client mandates</li>
+          <li>Cross-referrals from other Featured Members</li>
+          <li>Light-touch — keep your existing practice and clients</li>
+        </ul>
+        <a href="apply.html" class="btn btn-primary">Apply as Expert &rarr;</a>
+      </div>
+
+      <div class="join__card join__card--ai rv d1">
+        <div class="join__icon">AI</div>
+        <div class="join__name">For Agentic AI Builders</div>
+        <div class="join__desc">Independent developers and small teams who have built production-ready Agentic AI products and want a credible distribution channel.</div>
+        <ul class="join__bullets">
+          <li>Featured listing in the Agentic AI Showcase</li>
+          <li>Direct introductions to consulting and enterprise clients</li>
+          <li>Co-positioning with vetted Subject Matter Experts</li>
+          <li>Optional revenue-share on engagements we source</li>
+        </ul>
+        <a href="apply.html?type=ai" class="btn btn-primary">Apply as Builder &rarr;</a>
+      </div>
+
     </div>
   </div>
 </section>
