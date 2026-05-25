@@ -31,11 +31,30 @@ const ALLOWED_ORIGINS = [
   'https://contexai-website.amir-wahmed.workers.dev',
 ];
 
+// Origins permitted to call /api/admin/*. Includes Cowork artifact iframe + the
+// Worker's own domains. Token auth (ADMIN_TOKEN) is the real gate; CORS is a defense-in-depth.
+const ADMIN_ALLOWED_ORIGINS_REGEX = [
+  /^https:\/\/contexai\.org$/,
+  /^https:\/\/www\.contexai\.org$/,
+  /^https:\/\/[a-z0-9-]+\.workers\.dev$/,
+  /^https:\/\/[a-z0-9-]+\.claude\.ai$/,
+  /^https:\/\/claude\.ai$/,
+  /^null$/, // sandboxed iframes ship Origin: null
+];
+
+const GITHUB_REPO = 'DataJinipk/contexai-website';
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     if (request.method === 'OPTIONS' && url.pathname.startsWith('/api/')) {
+      if (url.pathname.startsWith('/api/admin/')) {
+        return new Response(null, {
+          status: 204,
+          headers: adminCors(request.headers.get('origin') || ''),
+        });
+      }
       return corsPreflight(request);
     }
 
@@ -61,6 +80,11 @@ export default {
 
     if (url.pathname === '/api/quota' && request.method === 'GET') {
       return handleQuotaCheck(request, env);
+    }
+
+    // ─── Admin endpoints (dashboard) ──────────────────────────────────────
+    if (url.pathname.startsWith('/api/admin/') && request.method === 'GET') {
+      return handleAdminRoute(request, env, url);
     }
 
     return env.ASSETS.fetch(request);
@@ -524,4 +548,260 @@ function timingSafeEqual(a, b) {
     result |= a.charCodeAt(i) ^ b.charCodeAt(i);
   }
   return result === 0;
+}
+
+// ─── Admin / Dashboard endpoints ─────────────────────────────────────────────
+//
+// Read-only views over R2 (applications, positions, purchases, engagements registry),
+// KV (quota), and GitHub (commit history). Gated by Bearer ADMIN_TOKEN.
+
+function adminCors(origin) {
+  const allowed = ADMIN_ALLOWED_ORIGINS_REGEX.some((re) => re.test(origin || '')) ? origin : 'null';
+  return {
+    'Access-Control-Allow-Origin': allowed,
+    'Access-Control-Allow-Methods': 'GET, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Max-Age': '86400',
+  };
+}
+
+function adminJson(data, status, origin) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: { 'Content-Type': 'application/json', ...adminCors(origin) },
+  });
+}
+
+function isAdminAuthed(request, env) {
+  if (!env.ADMIN_TOKEN) return false;
+  const auth = request.headers.get('authorization') || '';
+  if (!auth.startsWith('Bearer ')) return false;
+  const supplied = auth.slice('Bearer '.length).trim();
+  if (supplied.length !== env.ADMIN_TOKEN.length) return false;
+  return timingSafeEqual(supplied, env.ADMIN_TOKEN);
+}
+
+async function handleAdminRoute(request, env, url) {
+  const origin = request.headers.get('origin') || '';
+
+  if (!isAdminAuthed(request, env)) {
+    return adminJson({ ok: false, error: 'Unauthorized' }, 401, origin);
+  }
+
+  try {
+    const path = url.pathname.replace(/^\/api\/admin\//, '');
+    switch (path) {
+      case 'applications': return await adminApplications(request, env, url, origin);
+      case 'quota':        return await adminQuota(request, env, url, origin);
+      case 'stripe-summary': return await adminStripeSummary(request, env, url, origin);
+      case 'engagements':  return await adminEngagements(request, env, url, origin);
+      case 'github-snapshot': return await adminGithubSnapshot(request, env, url, origin);
+      default:
+        return adminJson({ ok: false, error: 'Unknown admin route' }, 404, origin);
+    }
+  } catch (err) {
+    console.error('Admin route error:', err);
+    return adminJson({ ok: false, error: String(err?.message || err) }, 500, origin);
+  }
+}
+
+// ─── /api/admin/applications ────────────────────────────────────────────────
+
+async function adminApplications(request, env, url, origin) {
+  const kind = url.searchParams.get('kind') || 'all'; // applications | positions | position-applications | all
+  const since = url.searchParams.get('since'); // YYYY-MM-DD
+  const limit = Math.min(parseInt(url.searchParams.get('limit') || '200', 10), 500);
+
+  const prefixes = kind === 'all'
+    ? ['applications/', 'positions/', 'position-applications/']
+    : [`${kind}/`];
+
+  const items = [];
+  for (const prefix of prefixes) {
+    let cursor;
+    const pageMax = 1000;
+    let pagesScanned = 0;
+    while (pagesScanned < 3) { // hard ceiling for v1
+      const list = await env.APPLICATIONS.list({ prefix, cursor, limit: pageMax });
+      pagesScanned++;
+      for (const obj of list.objects) {
+        // Only the canonical submission.json carries the full record
+        if (!obj.key.endsWith('/submission.json')) continue;
+        if (since && obj.uploaded && obj.uploaded.toISOString().slice(0, 10) < since) continue;
+
+        const meta = obj.customMetadata || {};
+        items.push({
+          id: meta.submissionId || obj.key.split('/').slice(-2)[0],
+          kind: meta.submissionKind || prefix.replace('/', ''),
+          key: obj.key,
+          submitted_at: obj.uploaded ? obj.uploaded.toISOString() : null,
+          submitter_name: meta.submitterName || '',
+          submitter_email: meta.submitterEmail || '',
+          size: obj.size,
+        });
+        if (items.length >= limit) break;
+      }
+      if (items.length >= limit) break;
+      if (!list.truncated) break;
+      cursor = list.cursor;
+    }
+    if (items.length >= limit) break;
+  }
+
+  items.sort((a, b) => (b.submitted_at || '').localeCompare(a.submitted_at || ''));
+
+  return adminJson({ ok: true, count: items.length, items }, 200, origin);
+}
+
+// ─── /api/admin/quota ───────────────────────────────────────────────────────
+
+async function adminQuota(request, env, url, origin) {
+  if (!env.QUOTA_KV) {
+    return adminJson({ ok: false, error: 'QUOTA_KV binding not available' }, 503, origin);
+  }
+  const roleFilter = url.searchParams.get('role') || 'all'; // employer | applicant | all
+
+  const rows = [];
+  let cursor;
+  let pages = 0;
+  while (pages < 5) {
+    const list = await env.QUOTA_KV.list({ cursor, limit: 1000 });
+    pages++;
+    for (const k of list.keys) {
+      const [role, ...emailParts] = k.name.split(':');
+      if (role !== 'employer' && role !== 'applicant') continue;
+      if (roleFilter !== 'all' && roleFilter !== role) continue;
+      const data = await env.QUOTA_KV.get(k.name, 'json');
+      if (!data) continue;
+      rows.push({
+        role,
+        email: emailParts.join(':'),
+        free_used: data.free_used || 0,
+        paid_credits: data.paid_credits || 0,
+        total_posts: data.total_posts || 0,
+        last_post_at: data.last_post_at || null,
+        last_purchase_at: data.last_purchase_at || null,
+        last_purchase_pkg: data.last_purchase_pkg || null,
+      });
+    }
+    if (list.list_complete || !list.cursor) break;
+    cursor = list.cursor;
+  }
+
+  rows.sort((a, b) => (b.last_post_at || '').localeCompare(a.last_post_at || ''));
+
+  const totals = {
+    tracked_emails: rows.length,
+    free_exhausted: rows.filter((r) => r.free_used >= FREE_POST_LIMIT).length,
+    paid_active: rows.filter((r) => r.paid_credits > 0).length,
+    total_posts_all_time: rows.reduce((s, r) => s + r.total_posts, 0),
+  };
+
+  return adminJson({ ok: true, totals, rows }, 200, origin);
+}
+
+// ─── /api/admin/stripe-summary ──────────────────────────────────────────────
+
+async function adminStripeSummary(request, env, url, origin) {
+  const days = Math.min(parseInt(url.searchParams.get('days') || '30', 10), 365);
+  const cutoff = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
+
+  const recent = [];
+  let cursor;
+  let pages = 0;
+  while (pages < 3) {
+    const list = await env.APPLICATIONS.list({ prefix: 'purchases/', cursor, limit: 1000 });
+    pages++;
+    for (const obj of list.objects) {
+      if (obj.uploaded && obj.uploaded < cutoff) continue;
+      const text = await env.APPLICATIONS.get(obj.key);
+      if (!text) continue;
+      try {
+        const data = await text.json();
+        recent.push({
+          session_id: data.stripe_session_id,
+          email: data.email,
+          role: data.role,
+          package: data.package,
+          amount: data.amount_total,
+          currency: data.currency,
+          credits: data.credits_granted,
+          at: data.completed_at,
+        });
+      } catch (_) { /* ignore malformed entries */ }
+    }
+    if (!list.truncated) break;
+    cursor = list.cursor;
+  }
+
+  recent.sort((a, b) => (b.at || '').localeCompare(a.at || ''));
+
+  const totals = {
+    window_days: days,
+    total_revenue_cents: recent.reduce((s, r) => s + (r.amount || 0), 0),
+    successful_checkouts: recent.length,
+    currency: recent[0]?.currency || 'usd',
+    by_package: recent.reduce((acc, r) => { acc[r.package] = (acc[r.package] || 0) + 1; return acc; }, {}),
+  };
+
+  return adminJson({ ok: true, ...totals, recent }, 200, origin);
+}
+
+// ─── /api/admin/engagements ─────────────────────────────────────────────────
+
+async function adminEngagements(request, env, url, origin) {
+  const obj = await env.APPLICATIONS.get('engagements/registry.json');
+  if (!obj) {
+    return adminJson({
+      ok: true,
+      items: [],
+      note: "Registry not yet created. PUT engagements/registry.json to R2 with shape: { items: [...] }",
+    }, 200, origin);
+  }
+  try {
+    const data = await obj.json();
+    const items = Array.isArray(data) ? data : data.items || [];
+    return adminJson({ ok: true, items }, 200, origin);
+  } catch (err) {
+    return adminJson({ ok: false, error: 'engagements/registry.json is not valid JSON' }, 500, origin);
+  }
+}
+
+// ─── /api/admin/github-snapshot ─────────────────────────────────────────────
+
+async function adminGithubSnapshot(request, env, url, origin) {
+  const headers = { 'User-Agent': 'ContexAi-Dashboard/1.0', 'Accept': 'application/vnd.github+json' };
+  if (env.GITHUB_TOKEN) headers['Authorization'] = `Bearer ${env.GITHUB_TOKEN}`;
+
+  const [commitsRes, prsRes, issuesRes] = await Promise.all([
+    fetch(`https://api.github.com/repos/${GITHUB_REPO}/commits?per_page=15`, { headers }),
+    fetch(`https://api.github.com/repos/${GITHUB_REPO}/pulls?state=open`, { headers }),
+    fetch(`https://api.github.com/repos/${GITHUB_REPO}/issues?state=open`, { headers }),
+  ]);
+
+  if (!commitsRes.ok) {
+    return adminJson({ ok: false, error: `GitHub: ${commitsRes.status}` }, 502, origin);
+  }
+
+  const commits = await commitsRes.json();
+  const prs = prsRes.ok ? await prsRes.json() : [];
+  const issuesAll = issuesRes.ok ? await issuesRes.json() : [];
+  // GitHub returns PRs in the issues list too; filter them out
+  const issues = issuesAll.filter((i) => !i.pull_request);
+
+  return adminJson({
+    ok: true,
+    repo: GITHUB_REPO,
+    latest_commits: commits.map((c) => ({
+      sha: c.sha?.slice(0, 7),
+      message: c.commit?.message?.split('\n')[0] || '',
+      author: c.commit?.author?.name || c.author?.login || 'unknown',
+      at: c.commit?.author?.date,
+      url: c.html_url,
+    })),
+    open_prs: prs.length,
+    open_issues: issues.length,
+    pr_list: prs.map((p) => ({ number: p.number, title: p.title, author: p.user?.login, at: p.created_at, url: p.html_url })),
+    issue_list: issues.map((i) => ({ number: i.number, title: i.title, author: i.user?.login, at: i.created_at, url: i.html_url })),
+  }, 200, origin);
 }
