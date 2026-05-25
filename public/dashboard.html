@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>ContexAi Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #0B1120;
+    --ink-soft: #3F4756;
+    --line: #E2E5EB;
+    --bg: #F7F8FA;
+    --card: #FFFFFF;
+    --blue: #1D5FFF;
+    --blue-soft: #EEF2FF;
+    --green: #16A34A;
+    --amber: #D97706;
+    --red: #DC2626;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: "DM Sans", system-ui, sans-serif; color: var(--ink); background: var(--bg); font-size: 15px; line-height: 1.5; }
+  h1, h2, h3 { font-family: "Instrument Serif", serif; font-weight: 400; letter-spacing: -0.01em; margin: 0; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  button { font-family: inherit; cursor: pointer; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ─── Layout ─── */
+  .topbar { display: flex; align-items: center; justify-content: space-between; padding: 16px 28px; background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+  .brand { display: flex; align-items: baseline; gap: 12px; }
+  .brand-mark { font-family: "Instrument Serif", serif; font-size: 24px; font-style: italic; color: var(--ink); }
+  .brand-sub { font-size: 13px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.08em; }
+  .topbar-actions { display: flex; gap: 10px; align-items: center; }
+  .btn { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font-weight: 500; font-size: 14px; transition: all 0.15s; }
+  .btn:hover { background: var(--bg); border-color: var(--ink-soft); }
+  .btn-primary { background: var(--blue); color: white; border-color: var(--blue); }
+  .btn-primary:hover { background: #1648CC; border-color: #1648CC; }
+  .btn-ghost { border-color: transparent; background: transparent; }
+  .btn-ghost:hover { background: var(--bg); }
+  .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .tabs { display: flex; gap: 4px; padding: 0 28px; background: var(--card); border-bottom: 1px solid var(--line); }
+  .tab { padding: 14px 18px; background: transparent; border: none; border-bottom: 2px solid transparent; color: var(--ink-soft); font-weight: 500; font-size: 14px; }
+  .tab:hover { color: var(--ink); }
+  .tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+
+  .container { max-width: 1280px; margin: 0 auto; padding: 24px 28px; }
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 24px; }
+  .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .kpi-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); margin-bottom: 6px; }
+  .kpi-value { font-family: "Instrument Serif", serif; font-size: 32px; line-height: 1.1; }
+  .kpi-delta { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+  .kpi.good .kpi-value { color: var(--green); }
+  .kpi.warn .kpi-value { color: var(--amber); }
+  .kpi.bad .kpi-value { color: var(--red); }
+
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+  .panel-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .panel-title { font-size: 17px; font-weight: 600; }
+  .chart-wrap { position: relative; height: 220px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; padding: 10px 12px; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); border-bottom: 1px solid var(--line); cursor: pointer; user-select: none; }
+  th:hover { color: var(--ink); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  tr:hover td { background: var(--bg); }
+  .empty { padding: 40px 20px; text-align: center; color: var(--ink-soft); font-style: italic; }
+
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+  .badge.green { background: #DCFCE7; color: #14532D; }
+  .badge.amber { background: #FEF3C7; color: #92400E; }
+  .badge.red { background: #FEE2E2; color: #991B1B; }
+  .badge.blue { background: var(--blue-soft); color: var(--blue); }
+  .badge.gray { background: var(--bg); color: var(--ink-soft); }
+
+  /* ─── Token gate ─── */
+  .gate { min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+  .gate-card { width: 100%; max-width: 420px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 32px; }
+  .gate-card h1 { margin-bottom: 8px; }
+  .gate-card p { color: var(--ink-soft); margin: 0 0 24px 0; }
+  .gate-input { width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; font-family: var(--mono); font-size: 14px; margin-bottom: 12px; }
+  .gate-input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-soft); }
+  .gate-error { color: var(--red); font-size: 13px; margin-bottom: 12px; min-height: 18px; }
+
+  /* ─── Export menu ─── */
+  .menu-wrap { position: relative; }
+  .menu { position: absolute; right: 0; top: 100%; margin-top: 4px; min-width: 220px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 24px rgba(11,17,32,0.12); padding: 6px; display: none; z-index: 100; }
+  .menu.open { display: block; }
+  .menu button { display: block; width: 100%; text-align: left; padding: 9px 12px; border-radius: 6px; border: none; background: transparent; font-size: 14px; }
+  .menu button:hover { background: var(--bg); }
+  .menu hr { border: 0; border-top: 1px solid var(--line); margin: 4px 0; }
+
+  /* ─── Modal ─── */
+  .modal-back { position: fixed; inset: 0; background: rgba(11,17,32,0.5); display: none; align-items: center; justify-content: center; z-index: 200; padding: 20px; }
+  .modal-back.open { display: flex; }
+  .modal { background: var(--card); border-radius: 14px; padding: 24px; max-width: 720px; width: 100%; max-height: 80vh; overflow: auto; }
+  .modal pre { font-family: var(--mono); font-size: 12px; background: var(--bg); padding: 14px; border-radius: 8px; overflow: auto; }
+  .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+
+  /* ─── Loading state ─── */
+  .skeleton { background: linear-gradient(90deg, var(--bg) 0%, #EFF1F4 50%, var(--bg) 100%); background-size: 200% 100%; animation: shimmer 1.4s ease-in-out infinite; border-radius: 6px; height: 14px; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+  /* ─── Print (for PDF export) ─── */
+  @media print {
+    .topbar-actions, .tabs, .btn { display: none !important; }
+    .panel, .kpi { box-shadow: none; border: 1px solid var(--line) !important; }
+    body { background: white; }
+  }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .pill { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: var(--bg); color: var(--ink-soft); font-family: var(--mono); }
+  .num { font-variant-numeric: tabular-nums; }
+  .muted { color: var(--ink-soft); }
+  .right { text-align: right; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ TOKEN GATE ═══════════════════════════ -->
+<div id="gate" class="gate" style="display:none;">
+  <div class="gate-card">
+    <h1>ContexAi Dashboard</h1>
+    <p>Operational dashboard for contexai.org. Paste the admin token to continue.</p>
+    <input id="gate-input" class="gate-input" type="password" placeholder="ADMIN_TOKEN" autocomplete="off" />
+    <div id="gate-error" class="gate-error"></div>
+    <button class="btn btn-primary" style="width:100%" onclick="enterDashboard()">Open dashboard</button>
+    <p style="margin-top:20px; font-size:12px;">
+      The token is generated as a Wrangler secret. See <code>docs/dashboard-deploy.md</code> in the repo for setup.
+    </p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MAIN DASHBOARD ═══════════════════════════ -->
+<div id="app" style="display:none;">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">ContexAi</div>
+      <div class="brand-sub">Operations Dashboard</div>
+    </div>
+    <div class="topbar-actions">
+      <select id="window-select" class="btn" onchange="setWindow(this.value)">
+        <option value="7">Last 7 days</option>
+        <option value="30" selected>Last 30 days</option>
+        <option value="90">Last 90 days</option>
+        <option value="365">Last 12 months</option>
+      </select>
+      <button class="btn" onclick="loadAll()" title="Refetch all data">↻ Reload</button>
+      <div class="menu-wrap">
+        <button class="btn btn-primary" onclick="toggleMenu()">Export ▾</button>
+        <div id="export-menu" class="menu">
+          <button onclick="exportCsv()">Active table as CSV</button>
+          <button onclick="exportPdf()">Print / Save as PDF</button>
+          <button onclick="exportXlsx()">All data as XLSX</button>
+          <button onclick="exportMarkdown()">Markdown summary</button>
+          <hr/>
+          <button onclick="logout()" style="color:var(--red)">Sign out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="ops" onclick="setTab('ops')">Ops</button>
+    <button class="tab" data-tab="revenue" onclick="setTab('revenue')">Revenue</button>
+    <button class="tab" data-tab="engagements" onclick="setTab('engagements')">Engagements</button>
+    <button class="tab" data-tab="velocity" onclick="setTab('velocity')">Velocity</button>
+  </div>
+
+  <div class="container">
+
+    <!-- ─── Ops tab ─── -->
+    <div id="tab-ops" class="tab-content active">
+      <div class="kpi-row" id="ops-kpis"></div>
+      <div class="panel">
+        <div class="panel-head"><div class="panel-title">Submissions over time</div></div>
+        <div class="chart-wrap"><canvas id="ops-chart"></canvas></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title">Applications & positions</div>
+          <select id="ops-filter" class="btn" onchange="renderOpsTable()">
+            <option value="all">All kinds</option>
+            <option value="applications">SME / AI Builder</option>
+            <option value="positions">Open positions</option>
+            <option value="position-applications">Position applications</option>
+          </select>
+        </div>
+        <div id="ops-table"></div>
+      </div>
+    </div>
+
+    <!-- ─── Revenue tab ─── -->
+    <div id="tab-revenue" class="tab-content">
+      <div class="kpi-row" id="rev-kpis"></div>
+      <div class="panel">
+        <div class="panel-head"><div class="panel-title">Revenue by day</div></div>
+        <div class="chart-wrap"><canvas id="rev-chart"></canvas></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div class="panel-title">Recent purchases</div></div>
+        <div id="rev-table"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div class="panel-title">Quota usage</div></div>
+        <div id="quota-table"></div>
+      </div>
+    </div>
+
+    <!-- ─── Engagements tab ─── -->
+    <div id="tab-engagements" class="tab-content">
+      <div class="kpi-row" id="eng-kpis"></div>
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-title">Active engagements</div>
+          <span class="muted" style="font-size:13px">Edit <code>engagements/registry.json</code> in R2 to update</span>
+        </div>
+        <div id="eng-table"></div>
+      </div>
+    </div>
+
+    <!-- ─── Velocity tab ─── -->
+    <div id="tab-velocity" class="tab-content">
+      <div class="kpi-row" id="vel-kpis"></div>
+      <div class="panel">
+        <div class="panel-head"><div class="panel-title">Commits over time</div></div>
+        <div class="chart-wrap"><canvas id="vel-chart"></canvas></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div class="panel-title">Recent commits</div></div>
+        <div id="vel-table"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div class="panel-title">Open PRs & issues</div></div>
+        <div id="vel-issues"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── Modal for row drill-downs ─── -->
+<div id="modal-back" class="modal-back" onclick="closeModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-head">
+      <h2 id="modal-title">Detail</h2>
+      <button class="btn btn-ghost" onclick="closeModal()">✕</button>
+    </div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════ STATE ═══════════════════════════
+const API_BASE = window.location.origin; // contexai.org
+const STORAGE_TOKEN = 'contexai_admin_token';
+const STORAGE_TAB = 'contexai_dash_tab';
+const STORAGE_WINDOW = 'contexai_dash_window';
+
+const state = {
+  token: localStorage.getItem(STORAGE_TOKEN) || '',
+  windowDays: parseInt(localStorage.getItem(STORAGE_WINDOW) || '30', 10),
+  activeTab: localStorage.getItem(STORAGE_TAB) || 'ops',
+  data: { applications: null, quota: null, stripe: null, engagements: null, github: null },
+  charts: { ops: null, rev: null, vel: null },
+  sort: { ops: { col: 'submitted_at', dir: 'desc' } },
+};
+
+// ═══════════════════════════ AUTH GATE ═══════════════════════════
+window.addEventListener('DOMContentLoaded', () => {
+  if (state.token) {
+    showApp();
+    loadAll();
+  } else {
+    document.getElementById('gate').style.display = 'flex';
+  }
+  document.getElementById('window-select').value = String(state.windowDays);
+  setTab(state.activeTab);
+
+  document.getElementById('gate-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') enterDashboard();
+  });
+
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById('export-menu');
+    if (menu && !menu.parentElement.contains(e.target)) menu.classList.remove('open');
+  });
+});
+
+async function enterDashboard() {
+  const val = document.getElementById('gate-input').value.trim();
+  const errEl = document.getElementById('gate-error');
+  errEl.textContent = '';
+  if (!val) { errEl.textContent = 'Please paste a token'; return; }
+
+  // Verify token with a lightweight call
+  try {
+    const res = await fetch(`${API_BASE}/api/admin/github-snapshot`, {
+      headers: { 'Authorization': 'Bearer ' + val },
+    });
+    if (res.status === 401) { errEl.textContent = 'Invalid token'; return; }
+    if (!res.ok) { errEl.textContent = `Server returned ${res.status}`; return; }
+  } catch (err) {
+    errEl.textContent = 'Could not reach server';
+    return;
+  }
+
+  state.token = val;
+  localStorage.setItem(STORAGE_TOKEN, val);
+  showApp();
+  loadAll();
+}
+
+function showApp() {
+  document.getElementById('gate').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+}
+
+function logout() {
+  localStorage.removeItem(STORAGE_TOKEN);
+  state.token = '';
+  location.reload();
+}
+
+// ═══════════════════════════ DATA LOADING ═══════════════════════════
+async function adminFetch(path) {
+  const res = await fetch(`${API_BASE}${path}`, {
+    headers: { 'Authorization': 'Bearer ' + state.token },
+  });
+  if (res.status === 401) { logout(); throw new Error('Unauthorized'); }
+  if (!res.ok) throw new Error(`${path}: ${res.status}`);
+  return res.json();
+}
+
+async function loadAll() {
+  // Skeleton state
+  for (const id of ['ops-kpis','rev-kpis','eng-kpis','vel-kpis']) {
+    document.getElementById(id).innerHTML = Array.from({length:4}).map(() =>
+      `<div class="kpi"><div class="kpi-label">Loading</div><div class="skeleton" style="width:60%; height:24px;"></div></div>`
+    ).join('');
+  }
+
+  const days = state.windowDays;
+  const sinceDate = new Date(Date.now() - days * 86400 * 1000).toISOString().slice(0,10);
+
+  const results = await Promise.allSettled([
+    adminFetch(`/api/admin/applications?kind=all&since=${sinceDate}`),
+    adminFetch(`/api/admin/quota?role=all`),
+    adminFetch(`/api/admin/stripe-summary?days=${days}`),
+    adminFetch(`/api/admin/engagements`),
+    adminFetch(`/api/admin/github-snapshot`),
+  ]);
+
+  state.data.applications = results[0].status === 'fulfilled' ? results[0].value : { ok: false, error: results[0].reason?.message, items: [] };
+  state.data.quota        = results[1].status === 'fulfilled' ? results[1].value : { ok: false, error: results[1].reason?.message, rows: [] };
+  state.data.stripe       = results[2].status === 'fulfilled' ? results[2].value : { ok: false, error: results[2].reason?.message, recent: [] };
+  state.data.engagements  = results[3].status === 'fulfilled' ? results[3].value : { ok: false, error: results[3].reason?.message, items: [] };
+  state.data.github       = results[4].status === 'fulfilled' ? results[4].value : { ok: false, error: results[4].reason?.message };
+
+  renderAll();
+}
+
+// ═══════════════════════════ TAB SWITCHING ═══════════════════════════
+function setTab(name) {
+  state.activeTab = name;
+  localStorage.setItem(STORAGE_TAB, name);
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.toggle('active', c.id === `tab-${name}`));
+}
+
+function setWindow(v) {
+  state.windowDays = parseInt(v, 10);
+  localStorage.setItem(STORAGE_WINDOW, v);
+  loadAll();
+}
+
+function toggleMenu() { document.getElementById('export-menu').classList.toggle('open'); }
+
+// ═══════════════════════════ RENDER ═══════════════════════════
+function renderAll() {
+  renderOps();
+  renderRevenue();
+  renderEngagements();
+  renderVelocity();
+}
+
+function kpiCard(label, value, delta, tone) {
+  return `<div class="kpi ${tone || ''}">
+    <div class="kpi-label">${label}</div>
+    <div class="kpi-value num">${value}</div>
+    ${delta ? `<div class="kpi-delta">${delta}</div>` : ''}
+  </div>`;
+}
+
+function fmtDate(s) {
+  if (!s) return '—';
+  const d = new Date(s);
+  return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) + ' ' +
+         d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+}
+
+function fmtMoney(cents, ccy) {
+  return ((cents || 0) / 100).toLocaleString(undefined, { style: 'currency', currency: (ccy || 'USD').toUpperCase() });
+}
+
+// ─── Ops ─────────────────────────────────────────────────────────────
+function renderOps() {
+  const d = state.data.applications;
+  const items = d?.items || [];
+  const byKind = items.reduce((acc, it) => { acc[it.kind] = (acc[it.kind] || 0) + 1; return acc; }, {});
+  document.getElementById('ops-kpis').innerHTML = [
+    kpiCard('Total submissions', items.length, `Last ${state.windowDays}d`),
+    kpiCard('SME / AI Builder', byKind['application'] || 0),
+    kpiCard('Open positions', byKind['position'] || 0),
+    kpiCard('Position applicants', byKind['position-application'] || 0),
+  ].join('');
+
+  // Timeseries
+  const series = bucketByDay(items, state.windowDays, (i) => i.kind);
+  drawTimeseries('ops-chart', series, 'ops');
+
+  renderOpsTable();
+}
+
+function renderOpsTable() {
+  const filter = document.getElementById('ops-filter')?.value || 'all';
+  const all = state.data.applications?.items || [];
+  const rows = filter === 'all' ? all : all.filter(r => {
+    if (filter === 'applications') return r.kind === 'application';
+    if (filter === 'positions') return r.kind === 'position';
+    if (filter === 'position-applications') return r.kind === 'position-application';
+    return true;
+  });
+
+  const sortKey = state.sort.ops.col;
+  const sortDir = state.sort.ops.dir === 'asc' ? 1 : -1;
+  rows.sort((a, b) => ((a[sortKey] || '') > (b[sortKey] || '') ? 1 : -1) * sortDir);
+
+  const tbl = `
+    <table id="ops-tbl">
+      <thead>
+        <tr>
+          <th onclick="sortOps('submitted_at')">Submitted</th>
+          <th onclick="sortOps('kind')">Kind</th>
+          <th onclick="sortOps('submitter_name')">Name</th>
+          <th onclick="sortOps('submitter_email')">Email</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows.length === 0
+          ? `<tr><td colspan="5" class="empty">No submissions in this window.</td></tr>`
+          : rows.map(r => `
+            <tr style="cursor:pointer" onclick="showSubmission('${r.id}')">
+              <td>${fmtDate(r.submitted_at)}</td>
+              <td><span class="badge ${kindBadge(r.kind)}">${r.kind}</span></td>
+              <td>${escapeHtml(r.submitter_name) || '<span class="muted">—</span>'}</td>
+              <td>${escapeHtml(r.submitter_email) || '<span class="muted">—</span>'}</td>
+              <td><span class="pill">${(r.id || '').slice(0, 8)}</span></td>
+            </tr>`).join('')}
+      </tbody>
+    </table>`;
+  document.getElementById('ops-table').innerHTML = tbl;
+}
+
+function sortOps(col) {
+  if (state.sort.ops.col === col) state.sort.ops.dir = state.sort.ops.dir === 'asc' ? 'desc' : 'asc';
+  else { state.sort.ops.col = col; state.sort.ops.dir = 'desc'; }
+  renderOpsTable();
+}
+
+function kindBadge(kind) {
+  return { application: 'blue', position: 'green', 'position-application': 'amber' }[kind] || 'gray';
+}
+
+function showSubmission(id) {
+  const item = (state.data.applications?.items || []).find(i => i.id === id);
+  document.getElementById('modal-title').textContent = `Submission ${id.slice(0, 8)}`;
+  document.getElementById('modal-body').innerHTML = `<pre>${escapeHtml(JSON.stringify(item, null, 2))}</pre>`;
+  document.getElementById('modal-back').classList.add('open');
+}
+
+function closeModal(e) {
+  if (e && e.target.id !== 'modal-back' && !e.currentTarget.classList.contains('modal-back')) return;
+  document.getElementById('modal-back').classList.remove('open');
+}
+
+// ─── Revenue ─────────────────────────────────────────────────────────
+function renderRevenue() {
+  const d = state.data.stripe;
+  const recent = d?.recent || [];
+  const totalCents = d?.total_revenue_cents || 0;
+  const ccy = d?.currency || 'usd';
+  const checkouts = d?.successful_checkouts || 0;
+  const arpu = checkouts > 0 ? totalCents / checkouts : 0;
+  const byPkg = d?.by_package || {};
+  const topPkg = Object.entries(byPkg).sort((a, b) => b[1] - a[1])[0]?.[0] || '—';
+
+  document.getElementById('rev-kpis').innerHTML = [
+    kpiCard('Revenue', fmtMoney(totalCents, ccy), `Last ${state.windowDays}d`, totalCents > 0 ? 'good' : ''),
+    kpiCard('Checkouts', checkouts),
+    kpiCard('Avg. ticket', fmtMoney(arpu, ccy)),
+    kpiCard('Top package', topPkg),
+  ].join('');
+
+  const series = bucketByDay(recent.map(r => ({ submitted_at: r.at, amount: r.amount, kind: 'revenue' })), state.windowDays, () => 'revenue', (i) => (i.amount || 0) / 100);
+  drawTimeseries('rev-chart', series, 'rev', { stacked: false, type: 'bar', moneyAxis: true });
+
+  document.getElementById('rev-table').innerHTML = recent.length === 0 ? `<div class="empty">No purchases in this window.</div>` : `
+    <table>
+      <thead><tr><th>When</th><th>Email</th><th>Role</th><th>Package</th><th class="right">Amount</th></tr></thead>
+      <tbody>${recent.map(r => `
+        <tr>
+          <td>${fmtDate(r.at)}</td>
+          <td>${escapeHtml(r.email)}</td>
+          <td><span class="badge ${r.role === 'employer' ? 'blue' : 'amber'}">${r.role}</span></td>
+          <td>${escapeHtml(r.package || '—')}</td>
+          <td class="right num">${fmtMoney(r.amount, r.currency)}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
+
+  // Quota table
+  const q = state.data.quota;
+  const qrows = q?.rows || [];
+  document.getElementById('quota-table').innerHTML = qrows.length === 0 ? `<div class="empty">No quota entries yet.</div>` : `
+    <table>
+      <thead><tr><th>Role</th><th>Email</th><th class="right">Free used</th><th class="right">Paid credits</th><th class="right">Total posts</th><th>Last activity</th></tr></thead>
+      <tbody>${qrows.map(r => `
+        <tr>
+          <td><span class="badge ${r.role === 'employer' ? 'blue' : 'amber'}">${r.role}</span></td>
+          <td>${escapeHtml(r.email)}</td>
+          <td class="right num">${r.free_used} / 3</td>
+          <td class="right num">${r.paid_credits}</td>
+          <td class="right num">${r.total_posts}</td>
+          <td>${fmtDate(r.last_post_at)}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
+}
+
+// ─── Engagements ─────────────────────────────────────────────────────
+function renderEngagements() {
+  const items = state.data.engagements?.items || [];
+  const active = items.filter(i => (i.status || '').toLowerCase() === 'in_progress');
+  const dueThisWeek = items.filter(i => {
+    if (!i.next_milestone_at) return false;
+    const d = new Date(i.next_milestone_at) - Date.now();
+    return d >= 0 && d <= 7 * 86400 * 1000;
+  });
+  const experts = new Set(items.map(i => i.lead_expert).filter(Boolean));
+
+  document.getElementById('eng-kpis').innerHTML = [
+    kpiCard('Active mandates', active.length),
+    kpiCard('Total tracked', items.length),
+    kpiCard('Due ≤ 7 days', dueThisWeek.length, '', dueThisWeek.length > 0 ? 'warn' : ''),
+    kpiCard('Experts deployed', experts.size),
+  ].join('');
+
+  document.getElementById('eng-table').innerHTML = items.length === 0 ? `
+    <div class="empty">
+      No engagements tracked yet.<br>
+      <span style="font-size:13px">Upload <code>engagements/registry.json</code> to your R2 bucket. Schema: <code>{ items: [{ id, client, mandate, lead_expert, status, next_milestone, next_milestone_at }] }</code></span>
+    </div>` : `
+    <table>
+      <thead><tr><th>Client</th><th>Mandate</th><th>Lead expert</th><th>Status</th><th>Next milestone</th><th class="right">Days to go</th></tr></thead>
+      <tbody>${items.map(it => {
+        const daysToGo = it.next_milestone_at ? Math.ceil((new Date(it.next_milestone_at) - Date.now()) / 86400000) : null;
+        const statusBadge = { in_progress: 'green', planned: 'blue', blocked: 'red', complete: 'gray' }[it.status] || 'gray';
+        return `<tr>
+          <td><strong>${escapeHtml(it.client || '—')}</strong></td>
+          <td>${escapeHtml(it.mandate || '—')}</td>
+          <td>${escapeHtml(it.lead_expert || '—')}</td>
+          <td><span class="badge ${statusBadge}">${escapeHtml(it.status || '—')}</span></td>
+          <td>${escapeHtml(it.next_milestone || '—')}</td>
+          <td class="right num ${daysToGo !== null && daysToGo <= 7 ? '' : 'muted'}">${daysToGo !== null ? daysToGo : '—'}</td>
+        </tr>`;
+      }).join('')}
+      </tbody>
+    </table>`;
+}
+
+// ─── Velocity ────────────────────────────────────────────────────────
+function renderVelocity() {
+  const g = state.data.github;
+  const commits = g?.latest_commits || [];
+  const cutoff = Date.now() - state.windowDays * 86400 * 1000;
+  const inWindow = commits.filter(c => new Date(c.at).getTime() >= cutoff);
+  const lastDeploy = commits[0]?.at;
+  const sinceLast = lastDeploy ? Math.floor((Date.now() - new Date(lastDeploy).getTime()) / 3600000) : null;
+
+  document.getElementById('vel-kpis').innerHTML = [
+    kpiCard('Commits', inWindow.length, `Last ${state.windowDays}d`),
+    kpiCard('Open PRs', g?.open_prs ?? '—'),
+    kpiCard('Open issues', g?.open_issues ?? '—'),
+    kpiCard('Last commit', sinceLast !== null ? `${sinceLast}h ago` : '—'),
+  ].join('');
+
+  const seriesData = bucketByDay(commits.map(c => ({ submitted_at: c.at, kind: 'commits' })), state.windowDays, () => 'commits');
+  drawTimeseries('vel-chart', seriesData, 'vel', { type: 'bar' });
+
+  document.getElementById('vel-table').innerHTML = commits.length === 0 ? `<div class="empty">No commits found.</div>` : `
+    <table>
+      <thead><tr><th>When</th><th>SHA</th><th>Author</th><th>Message</th></tr></thead>
+      <tbody>${commits.map(c => `
+        <tr>
+          <td>${fmtDate(c.at)}</td>
+          <td><a href="${c.url}" target="_blank" rel="noopener"><span class="pill">${c.sha}</span></a></td>
+          <td>${escapeHtml(c.author)}</td>
+          <td>${escapeHtml(c.message)}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
+
+  const prs = g?.pr_list || [];
+  const issues = g?.issue_list || [];
+  document.getElementById('vel-issues').innerHTML = (prs.length === 0 && issues.length === 0)
+    ? `<div class="empty">No open PRs or issues. 🎉</div>`
+    : `<table><thead><tr><th>Type</th><th>#</th><th>Title</th><th>Opened by</th><th>When</th></tr></thead><tbody>
+        ${prs.map(p => `<tr><td><span class="badge blue">PR</span></td><td>#${p.number}</td><td><a href="${p.url}" target="_blank">${escapeHtml(p.title)}</a></td><td>${escapeHtml(p.author)}</td><td>${fmtDate(p.at)}</td></tr>`).join('')}
+        ${issues.map(i => `<tr><td><span class="badge amber">Issue</span></td><td>#${i.number}</td><td><a href="${i.url}" target="_blank">${escapeHtml(i.title)}</a></td><td>${escapeHtml(i.author)}</td><td>${fmtDate(i.at)}</td></tr>`).join('')}
+       </tbody></table>`;
+}
+
+// ─── Helpers ─────────────────────────────────────────────────────────
+function bucketByDay(items, days, groupBy, valueOf) {
+  const buckets = {};
+  const today = new Date(); today.setHours(0,0,0,0);
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(today.getTime() - i * 86400000).toISOString().slice(0,10);
+    buckets[d] = {};
+  }
+  for (const it of items) {
+    const day = (it.submitted_at || '').slice(0,10);
+    if (!day || !(day in buckets)) continue;
+    const grp = groupBy(it);
+    buckets[day][grp] = (buckets[day][grp] || 0) + (valueOf ? valueOf(it) : 1);
+  }
+  return buckets;
+}
+
+function drawTimeseries(canvasId, buckets, chartKey, opts = {}) {
+  const ctx = document.getElementById(canvasId);
+  if (!ctx) return;
+  if (state.charts[chartKey]) state.charts[chartKey].destroy();
+
+  const days = Object.keys(buckets).sort();
+  const groups = Array.from(new Set(days.flatMap(d => Object.keys(buckets[d]))));
+  const palette = ['#1D5FFF', '#16A34A', '#D97706', '#9333EA', '#DC2626'];
+
+  const datasets = groups.map((g, i) => ({
+    label: g,
+    data: days.map(d => buckets[d][g] || 0),
+    backgroundColor: palette[i % palette.length],
+    borderColor: palette[i % palette.length],
+    borderWidth: 1,
+    stack: opts.stacked === false ? undefined : 'a',
+    borderRadius: 4,
+  }));
+
+  state.charts[chartKey] = new Chart(ctx, {
+    type: opts.type || 'bar',
+    data: { labels: days.map(d => d.slice(5)), datasets },
+    options: {
+      maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { family: 'DM Sans' } } } },
+      scales: {
+        x: { stacked: opts.stacked !== false, grid: { display: false }, ticks: { font: { family: 'DM Sans' } } },
+        y: {
+          stacked: opts.stacked !== false,
+          beginAtZero: true,
+          grid: { color: '#EEF2F7' },
+          ticks: {
+            font: { family: 'DM Sans' },
+            callback: opts.moneyAxis ? (v) => '$' + v : undefined,
+          }
+        }
+      },
+    }
+  });
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+// ═══════════════════════════ EXPORT ═══════════════════════════
+function tableToCsv(tableEl) {
+  if (!tableEl) return '';
+  const lines = [];
+  for (const tr of tableEl.querySelectorAll('tr')) {
+    const cells = Array.from(tr.querySelectorAll('th,td')).map(td => {
+      const v = td.innerText.replace(/\s+/g, ' ').trim();
+      return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
+    });
+    lines.push(cells.join(','));
+  }
+  return lines.join('\n');
+}
+
+function downloadFile(filename, content, mime) {
+  const blob = new Blob([content], { type: mime });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function exportCsv() {
+  toggleMenu();
+  const tabId = state.activeTab;
+  const table = document.querySelector(`#tab-${tabId} table`);
+  if (!table) { alert('No table on this tab to export.'); return; }
+  const csv = tableToCsv(table);
+  const today = new Date().toISOString().slice(0,10);
+  downloadFile(`contexai-${tabId}-${today}.csv`, csv, 'text/csv');
+}
+
+function exportPdf() {
+  toggleMenu();
+  window.print();
+}
+
+function exportXlsx() {
+  toggleMenu();
+  const wb = XLSX.utils.book_new();
+
+  const apps = (state.data.applications?.items || []).map(r => ({
+    submitted_at: r.submitted_at, kind: r.kind, name: r.submitter_name, email: r.submitter_email, id: r.id,
+  }));
+  const quota = (state.data.quota?.rows || []).map(r => ({
+    role: r.role, email: r.email, free_used: r.free_used, paid_credits: r.paid_credits, total_posts: r.total_posts, last_post_at: r.last_post_at,
+  }));
+  const purchases = (state.data.stripe?.recent || []).map(r => ({
+    at: r.at, email: r.email, role: r.role, package: r.package, amount_usd: (r.amount || 0) / 100, credits: r.credits,
+  }));
+  const eng = state.data.engagements?.items || [];
+  const commits = state.data.github?.latest_commits || [];
+
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(apps), 'Applications');
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(quota), 'Quota');
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(purchases), 'Purchases');
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(eng), 'Engagements');
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(commits), 'Commits');
+
+  XLSX.writeFile(wb, `contexai-dashboard-${new Date().toISOString().slice(0,10)}.xlsx`);
+}
+
+function exportMarkdown() {
+  toggleMenu();
+  const apps = state.data.applications?.items || [];
+  const stripe = state.data.stripe || {};
+  const quota = state.data.quota?.totals || {};
+  const eng = state.data.engagements?.items || [];
+  const g = state.data.github || {};
+
+  const md = `# ContexAi Dashboard — Snapshot ${new Date().toISOString().slice(0,10)}
+
+Window: last ${state.windowDays} days
+
+## Ops
+- Total submissions: **${apps.length}**
+- SME / AI Builder applications: ${apps.filter(a => a.kind === 'application').length}
+- Open positions posted: ${apps.filter(a => a.kind === 'position').length}
+- Position applicants: ${apps.filter(a => a.kind === 'position-application').length}
+
+## Revenue
+- Total: **${fmtMoney(stripe.total_revenue_cents, stripe.currency)}**
+- Successful checkouts: ${stripe.successful_checkouts || 0}
+- Top package: ${Object.entries(stripe.by_package || {}).sort((a,b)=>b[1]-a[1])[0]?.[0] || '—'}
+
+## Quota
+- Tracked emails: ${quota.tracked_emails || 0}
+- Free quota exhausted: ${quota.free_exhausted || 0}
+- Paid credits outstanding: ${quota.paid_active || 0}
+
+## Engagements
+${eng.length === 0 ? '_No active engagements tracked._' : eng.map(e => `- **${e.client}** — ${e.mandate} (lead: ${e.lead_expert}, status: ${e.status})`).join('\n')}
+
+## Velocity
+- Commits this window: ${(g.latest_commits || []).filter(c => new Date(c.at).getTime() >= Date.now() - state.windowDays * 86400000).length}
+- Open PRs: ${g.open_prs ?? '—'}
+- Open issues: ${g.open_issues ?? '—'}
+- Last commit: ${g.latest_commits?.[0]?.message || '—'}
+
+_Generated by contexai.org/dashboard.html_
+`;
+
+  downloadFile(`contexai-snapshot-${new Date().toISOString().slice(0,10)}.md`, md, 'text/markdown');
+}
+</script>
+
+</body>
+</html>
