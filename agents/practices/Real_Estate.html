@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Real Estate & Infrastructure — ContexAi Practice</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#F7F8FA;
+    margin:0; padding:0; color:#0B1120; font-size:21px; line-height:1.7; }
+  header { background:linear-gradient(135deg,#1B5E20 0%,#00C853 100%);
+    color:white; padding:28px 40px; }
+  header .back { color:rgba(255,255,255,0.85); text-decoration:none; font-size:14px; }
+  header .back:hover { color:white; }
+  header h1 { margin:8px 0 4px 0; font-size:42px; font-weight:600; letter-spacing:-0.01em; }
+  header .sub { opacity:0.92; font-size:20px; }
+  header .folder { display:inline-block; margin-top:10px;
+    background:rgba(255,255,255,0.18); padding:4px 12px; border-radius:14px;
+    font-size:15px; font-family:Consolas,monospace; }
+  .container { max-width:1200px; margin:0 auto; padding:28px 40px; }
+  .progress-strip { background:white; padding:16px 20px; border-radius:8px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); margin-bottom:24px;
+    display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+    border-left:5px solid #00C853; }
+  .progress-strip .label { font-size:17px; color:#595959; font-weight:600; }
+  .progress-strip .bar { flex:1; min-width:200px; height:10px;
+    background:#E5E7EB; border-radius:5px; overflow:hidden; }
+  .progress-strip .fill { height:100%; background:#00C853; }
+  .progress-strip .pct { font-size:22px; font-weight:700; color:#1B5E20; }
+  .progress-strip .note { font-size:16px; color:#8A8FA3; }
+  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px; }
+  @media (max-width:900px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
+  .kpi-tile { background:white; padding:16px 18px; border-radius:8px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); border-left:4px solid #00C853; }
+  .kpi-tile .label { font-size:14px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#8A8FA3; font-weight:600; }
+  .kpi-tile .value { font-size:40px; font-weight:700; color:#0B1120; margin-top:6px; line-height:1.2; }
+  .kpi-tile .sub { font-size:17px; color:#595959; margin-top:6px; }
+  .section-title { font-size:32px; font-weight:600; margin:32px 0 16px 0; color:#1B5E20; }
+  .section-title .count { font-size:13px; color:#8A8FA3; font-weight:500; margin-left:8px; }
+  .card { background:white; border-radius:10px; padding:22px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:4px solid #00C853;
+    margin-bottom:20px; }
+  .card.client { border-top-color:#00C853; }
+  .card .tag { font-size:13px; text-transform:uppercase; letter-spacing:0.06em;
+    color:#8A8FA3; font-weight:600; }
+  .card h2 { margin:10px 0 14px 0; font-size:32px; font-weight:600; }
+  .card .lede { font-size:20px; color:#3F4756; margin:0 0 18px 0; line-height:1.65; }
+  .card ul { list-style:none; padding:0; margin:0; }
+  .card li { padding:14px 0; border-bottom:1px solid #F0F0F0; font-size:20px; }
+  .card li:last-child { border-bottom:none; }
+  .card a { color:#0B1120; text-decoration:none; display:flex;
+    justify-content:space-between; align-items:center; gap:8px; }
+  .card a:hover { color:#00C853; }
+  .badge { font-size:14px; padding:3px 9px; border-radius:11px;
+    background:#DCFCE7; color:#1B5E20; font-weight:600; white-space:nowrap; }
+  .badge.live   { background:#C8E6C9; color:#1B5E20; }
+  .badge.future { background:#F2F2F2; color:#8A8FA3; }
+  .badge.intake { background:#FFF3D6; color:#7F6000; }
+  .badge.skill  { background:#DCFCE7; color:#1B5E20; font-family:Consolas,monospace; }
+  .badge.plugin { background:#FBE5D6; color:#7F3B05; font-family:Consolas,monospace; }
+  pre.cmd { background:#0F1331; color:#A9D18E; padding:14px 18px;
+    border-radius:6px; font-family:Consolas,monospace; font-size:13px;
+    overflow-x:auto; white-space:pre-wrap; word-break:break-word; }
+  .btn-row { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+  .btn-copy { font-size:12px; padding:6px 12px; border-radius:5px;
+    border:1px solid #ddd; background:white; cursor:pointer;
+    font-family:inherit; font-weight:500; color:#0B1120; }
+  .btn-copy:hover { background:#DCFCE7; border-color:#00C853; color:#1B5E20; }
+  .tasks { background:#FAFBFC; border-radius:8px; padding:18px 20px;
+    border-left:3px solid #00C853; margin:24px 0; }
+  .tasks .head { display:flex; justify-content:space-between;
+    align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
+  .tasks .head h3 { margin:0; font-size:18px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#595959; font-weight:600; }
+  .tasks .head .summary { font-size:16px; color:#8A8FA3; }
+  .tasks .items { display:grid; grid-template-columns:repeat(2,1fr); gap:6px 24px; }
+  @media (max-width:800px) { .tasks .items { grid-template-columns:1fr; } }
+  .tasks .item { display:flex; align-items:flex-start; gap:12px;
+    padding:8px 0; font-size:17px; }
+  .tasks .check { width:22px; height:22px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:12px; flex-shrink:0; font-weight:700; margin-top:1px; }
+  .tasks .check.done { background:#00C853; color:white; }
+  .tasks .check.user { background:#FFC400; color:#5C4500; }
+  .tasks .check.pending { background:#F2F2F2; color:#8A8FA3; }
+  .tasks .label.done { text-decoration:line-through; color:#8A8FA3; }
+  .tasks .label .note { font-size:14px; color:#8A8FA3; display:block; margin-top:2px; }
+  .triggers { background:white; border-radius:8px; padding:18px 20px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); margin:24px 0; }
+  .triggers h3 { margin:0 0 12px 0; font-size:18px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#595959; }
+  .triggers p { font-size:19px; color:#3F4756; margin:10px 0; line-height:1.65; }
+  .triggers .chip { display:inline-block; background:#DCFCE7; color:#1B5E20;
+    padding:3px 10px; border-radius:12px; font-size:12px; margin:3px;
+    font-family:Consolas,monospace; }
+  footer { background:#1B5E20; color:#DCFCE7; padding:18px 40px;
+    text-align:center; font-size:16px; }
+  footer a { color:#DCFCE7; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="../ContexAi_Control_Center.html" class="back">&larr; ContexAi Control Center</a>
+  <h1>Real Estate &amp; Infrastructure</h1>
+  <div class="sub">REIT structuring &middot; Pakistani RE law &middot; TSH anchor &middot; Day-1 decision: Rental / Development / Hybrid REIT</div>
+  <span class="folder">G:\My Drive\ContexAi_Agents\Real_Estate\</span>
+</header>
+
+<div class="container">
+
+  <div class="progress-strip">
+    <span class="label">Practice buildout:</span>
+    <div class="bar"><div class="fill" style="width:70%;"></div></div>
+    <span class="pct">70%</span>
+    <span class="note">Lead built &middot; TSH client team future &middot; ENG-2026-001 in intake</span>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-tile">
+      <div class="label">Practice Lead</div>
+      <div class="value">1 LIVE</div>
+      <div class="sub">reit-practice-lead</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="label">SMEs</div>
+      <div class="value">2</div>
+      <div class="sub">reit-advisory-lead, legal-corporate-secretary</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="label">Client teams</div>
+      <div class="value">1 FUTURE</div>
+      <div class="sub">TSH Agents Team</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="label">Active engagements</div>
+      <div class="value">1</div>
+      <div class="sub">ENG-2026-001 (Intake)</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Practice Lead</h2>
+
+  <div class="card">
+    <span class="tag">PRACTICE LEAD &middot; LIVE</span>
+    <h2>reit-practice-lead</h2>
+    <p class="lede">Orchestrates 2 specialist SMEs.
+      Locks the Rental / Development / Hybrid REIT decision early &mdash; every
+      downstream choice (tax treatment, distribution policy, listing path) branches from there.</p>
+    <ul>
+      <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/reit-practice-lead/SKILL.md" target="_blank">
+          SKILL.md <span class="badge skill">skill</span></a></li>
+      <li>SMEs: <span class="badge skill">reit-advisory-lead</span> <span class="badge skill">legal-corporate-secretary</span></li>
+      <li>Day-1 decision: Rental REIT (ITO S99A pass-through) vs Development REIT vs Hybrid</li>
+    </ul>
+    <p style="font-size:13px; color:#595959; margin:14px 0 6px 0;">Invocation prompt:</p>
+    <pre class="cmd">reit-practice-lead, [your ask].
+Engagement: [client / mandate].
+Deliverable: [format].</pre>
+    <div class="btn-row">
+      <button class="btn-copy" onclick="navigator.clipboard.writeText(this.dataset.copy.replace(/&#10;/g,'\n')); this.textContent='Copied'; setTimeout(()=>this.textContent='Copy prompt',1500);" data-copy="reit-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
+    </div>
+  </div>
+
+  <h2 class="section-title">Client teams <span class="count">1 future</span></h2>
+
+  <div class="card client">
+    <span class="tag">CLIENT TEAM &middot; FUTURE</span>
+    <h2>TSH Agents Team &mdash; Three Stars Hosiery Group</h2>
+    <p class="lede">TSH Group is the practice's anchor real-estate client.
+      Currently handled by REIT + Banking Practice Leads (Banking pulled in for any Islamic structures).
+      Graduates to its own client team when engagement volume warrants.</p>
+    <ul>
+      <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/TSH_Control_Center.html" target="_blank">
+          &raquo; Open TSH Control Center <span class="badge future">FUTURE</span></a></li>
+      <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/" target="_blank">
+          TSH Agents Team folder <span class="badge">folder</span></a></li>
+      <li>Future Chief: <span class="badge future">tsh-chief-of-staff</span> &middot;
+          Plugin: <span class="badge future">tsh-agents-team</span></li>
+      <li>Anchor mandate: <a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">
+          ENG-2026-001 Islamic REIT structuring <span class="badge intake">INTAKE</span></a></li>
+    </ul>
+    <p style="font-size:13px; color:#595959; margin:14px 0 0 0;"><strong>Graduation trigger:</strong>
+      3+ active TSH mandates OR institutional-memory needs (trustee relationships, ongoing structures).</p>
+  </div>
+
+  <div class="tasks">
+    <div class="head">
+      <h3>Real Estate practice tasks</h3>
+      <span class="summary">5 done &middot; 4 awaiting you &middot; 9 total</span>
+    </div>
+    <div class="items">
+      <div class="item"><div class="check done">&check;</div><div class="label done">reit-practice-lead skill built</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">reit-advisory-lead + legal-corporate-secretary SMEs documented</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">TSH Agents Team Control Center (placeholder)</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">ENG-2026-001 engagement brief drafted</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">ENG-2026-001 intake agenda drafted</div></div>
+      <div class="item"><div class="check user">!</div><div class="label">Run setup-eng-2026-001.ps1<span class="note">Moves brief + agenda into OneDrive engagement folder</span></div></div>
+      <div class="item"><div class="check user">!</div><div class="label">TSH sponsor intake call<span class="note">30 min &middot; lock the 8 open questions</span></div></div>
+      <div class="item"><div class="check user">!</div><div class="label">Brief both Practice Leads after intake<span class="note">REIT stream + Banking (Islamic) stream</span></div></div>
+      <div class="item"><div class="check user">!</div><div class="label">Phase 1 deliverable: structuring memo<span class="note">5 pages, decision-grade, Day +14 of kick-off</span></div></div>
+    </div>
+  </div>
+
+  <div class="triggers">
+    <h3>When the Group Chief routes here</h3>
+    <p><strong>REIT structuring:</strong> SECP REIT Regulations 2015 (+ 2022 amendments), Rental vs Hybrid REIT choice, RMC formation, trustee appointment, scheme registration, PSX listing</p>
+    <p><strong>Pakistani tax:</strong> ITO 2001 S99 / S99A / S100, stamp duty (Punjab / Sindh), CVT, CGT exemptions, withholding on distributions</p>
+    <p><strong>Real-estate SPVs &amp; JVs:</strong> sponsor structure, fit-and-proper, ring-fencing, transfer-pricing, group reorganisation</p>
+    <p><strong>Land &amp; location:</strong> RUDA, DHA, Bahria, industrial estates, zoning, title diligence</p>
+    <div style="margin-top:12px;">
+      <span class="chip">REIT</span><span class="chip">stamp duty</span><span class="chip">ITO S99</span>
+      <span class="chip">SECP REIT Regs</span><span class="chip">RUDA</span><span class="chip">DHA</span>
+      <span class="chip">SPV</span><span class="chip">trust deed</span><span class="chip">CGT</span>
+      <span class="chip">CVT</span><span class="chip">PSX listing</span><span class="chip">TSH</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Real Estate &amp; Infrastructure &middot; ContexAi Practice &middot;
+  <a href="../ContexAi_Control_Center.html">&larr; back to Control Center</a> &middot;
+  <a href="https://c 

@@ -73,9 +73,9 @@ Two streams run in parallel; Group Chief synthesizes.
 - Workstream folder: `20_workstreams\banking-shariah-structure\`
 
 **Stream B — REIT structure & tax** (`reit-practice-lead` → `reit-advisory-lead` + `legal-corporate-secretary`)
-- **First decision (locked Day 1):** Rental REIT (passive, ITO § 99A pass-through, 90% distribution) vs Hybrid REIT (development + rental, ITO § 100 treatment).
+- **First decision (locked Day 1):** Rental REIT (passive, ITO S 99A pass-through, 90% distribution) vs Hybrid REIT (development + rental, ITO S 100 treatment).
 - SECP REIT Regulations 2015 (with 2022 amendments) compliance path: scheme registration, RMC fit-and-proper, trustee appointment.
-- Pakistani tax treatment: stamp duty on transfers, CVT, CGT exemptions under § 99A, withholding implications for distributions.
+- Pakistani tax treatment: stamp duty on transfers, CVT, CGT exemptions under S 99A, withholding implications for distributions.
 - PSX listing pathway (if in scope): scheme approval → IPO prospectus → listing.
 - Workstream folder: `20_workstreams\reit-tax-structure\`
 
@@ -151,8 +151,8 @@ $agendaContent = @'
 ### 0:13 — 0:18  ·  REIT type & capital target (5 min) — **Questions 3 & 4**
 - Capital target — indicative REIT size in PKR billions.
 - Preferred REIT type:
-  - **Rental REIT** — passive income, 90% distribution requirement, full ITO § 99A pass-through tax treatment.
-  - **Hybrid REIT** — allows development gains, broader scope, taxed under ITO § 100 on development components.
+  - **Rental REIT** — passive income, 90% distribution requirement, full ITO S 99A pass-through tax treatment.
+  - **Hybrid REIT** — allows development gains, broader scope, taxed under ITO S 100 on development components.
 - Group Chief flags trade-offs only; recommendation comes back in the structuring memo, not on the call.
 
 ### 0:18 — 0:22  ·  Shariah governance (4 min) — **Question 5**

@@ -96,7 +96,7 @@ The `description` field is what makes triggering work. Patterns we use:
 - **Start with the role:** "Practice Lead for X" or "Subject Matter Expert in Y"
 - **Then specifically when to trigger:** "Use whenever the user mentions ..." with concrete phrases
 - **Then the team relationship:** "Reports to ..." or "Routes between ..."
-- **Never be vague.** "Helps with consulting" → useless. "Helps with REIT structuring under SECP REIT Regulations 2015 and Pakistan Income Tax Ordinance § 99A" → useful.
+- **Never be vague.** "Helps with consulting" → useless. "Helps with REIT structuring under SECP REIT Regulations 2015 and Pakistan Income Tax Ordinance S 99A" → useful.
 
 Bad:
 
@@ -107,7 +107,7 @@ description: Real estate consulting agent.
 Good:
 
 ```yaml
-description: Practice Lead for the Real Estate & Infrastructure practice at ContexAi. Use whenever a request involves REIT structuring, SECP REIT Regulations 2015, Pakistani real estate tax (ITO § 99 / § 99A), TSH Group mandates, SPV / JV structuring, RUDA, stamp duty, CGT on RE, or any real estate advisory work. Routes between reit-advisory-lead and legal-corporate-secretary; reports to contexai-group-chief.
+description: Practice Lead for the Real Estate & Infrastructure practice at ContexAi. Use whenever a request involves REIT structuring, SECP REIT Regulations 2015, Pakistani real estate tax (ITO S 99 / S 99A), TSH Group mandates, SPV / JV structuring, RUDA, stamp duty, CGT on RE, or any real estate advisory work. Routes between reit-advisory-lead and legal-corporate-secretary; reports to contexai-group-chief.
 ```
 
 ## Versioning
