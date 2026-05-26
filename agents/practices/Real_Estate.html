@@ -7,52 +7,52 @@
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
   body { font-family: 'Segoe UI', Arial, sans-serif; background:#F7F8FA;
-    margin:0; padding:0; color:#0B1120; font-size:21px; line-height:1.7; }
+    margin:0; padding:0; color:#0B1120; font-size:24px; line-height:1.7; }
   header { background:linear-gradient(135deg,#1B5E20 0%,#00C853 100%);
     color:white; padding:28px 40px; }
-  header .back { color:rgba(255,255,255,0.85); text-decoration:none; font-size:14px; }
+  header .back { color:rgba(255,255,255,0.85); text-decoration:none; font-size:19px; }
   header .back:hover { color:white; }
   header h1 { margin:8px 0 4px 0; font-size:42px; font-weight:600; letter-spacing:-0.01em; }
-  header .sub { opacity:0.92; font-size:20px; }
+  header .sub { opacity:0.92; font-size:24px; }
   header .folder { display:inline-block; margin-top:10px;
     background:rgba(255,255,255,0.18); padding:4px 12px; border-radius:14px;
-    font-size:15px; font-family:Consolas,monospace; }
+    font-size:20px; font-family:Consolas,monospace; }
   .container { max-width:1200px; margin:0 auto; padding:28px 40px; }
   .progress-strip { background:white; padding:16px 20px; border-radius:8px;
     box-shadow:0 1px 3px rgba(0,0,0,0.06); margin-bottom:24px;
     display:flex; align-items:center; gap:18px; flex-wrap:wrap;
     border-left:5px solid #00C853; }
-  .progress-strip .label { font-size:17px; color:#595959; font-weight:600; }
+  .progress-strip .label { font-size:22px; color:#595959; font-weight:600; }
   .progress-strip .bar { flex:1; min-width:200px; height:10px;
     background:#E5E7EB; border-radius:5px; overflow:hidden; }
   .progress-strip .fill { height:100%; background:#00C853; }
-  .progress-strip .pct { font-size:22px; font-weight:700; color:#1B5E20; }
-  .progress-strip .note { font-size:16px; color:#8A8FA3; }
+  .progress-strip .pct { font-size:26px; font-weight:700; color:#1B5E20; }
+  .progress-strip .note { font-size:21px; color:#8A8FA3; }
   .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px; }
   @media (max-width:900px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
   .kpi-tile { background:white; padding:16px 18px; border-radius:8px;
     box-shadow:0 1px 3px rgba(0,0,0,0.06); border-left:4px solid #00C853; }
-  .kpi-tile .label { font-size:14px; text-transform:uppercase;
+  .kpi-tile .label { font-size:19px; text-transform:uppercase;
     letter-spacing:0.06em; color:#8A8FA3; font-weight:600; }
   .kpi-tile .value { font-size:40px; font-weight:700; color:#0B1120; margin-top:6px; line-height:1.2; }
-  .kpi-tile .sub { font-size:17px; color:#595959; margin-top:6px; }
+  .kpi-tile .sub { font-size:22px; color:#595959; margin-top:6px; }
   .section-title { font-size:32px; font-weight:600; margin:32px 0 16px 0; color:#1B5E20; }
-  .section-title .count { font-size:13px; color:#8A8FA3; font-weight:500; margin-left:8px; }
+  .section-title .count { font-size:22px; color:#8A8FA3; font-weight:500; margin-left:8px; }
   .card { background:white; border-radius:10px; padding:22px;
     box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:4px solid #00C853;
     margin-bottom:20px; }
   .card.client { border-top-color:#00C853; }
-  .card .tag { font-size:13px; text-transform:uppercase; letter-spacing:0.06em;
+  .card .tag { font-size:18px; text-transform:uppercase; letter-spacing:0.06em;
     color:#8A8FA3; font-weight:600; }
   .card h2 { margin:10px 0 14px 0; font-size:32px; font-weight:600; }
-  .card .lede { font-size:20px; color:#3F4756; margin:0 0 18px 0; line-height:1.65; }
+  .card .lede { font-size:24px; color:#3F4756; margin:0 0 18px 0; line-height:1.65; }
   .card ul { list-style:none; padding:0; margin:0; }
-  .card li { padding:14px 0; border-bottom:1px solid #F0F0F0; font-size:20px; }
+  .card li { padding:14px 0; border-bottom:1px solid #F0F0F0; font-size:24px; }
   .card li:last-child { border-bottom:none; }
   .card a { color:#0B1120; text-decoration:none; display:flex;
     justify-content:space-between; align-items:center; gap:8px; }
   .card a:hover { color:#00C853; }
-  .badge { font-size:14px; padding:3px 9px; border-radius:11px;
+  .badge { font-size:19px; padding:3px 9px; border-radius:11px;
     background:#DCFCE7; color:#1B5E20; font-weight:600; white-space:nowrap; }
   .badge.live   { background:#C8E6C9; color:#1B5E20; }
   .badge.future { background:#F2F2F2; color:#8A8FA3; }
@@ -60,10 +60,10 @@
   .badge.skill  { background:#DCFCE7; color:#1B5E20; font-family:Consolas,monospace; }
   .badge.plugin { background:#FBE5D6; color:#7F3B05; font-family:Consolas,monospace; }
   pre.cmd { background:#0F1331; color:#A9D18E; padding:14px 18px;
-    border-radius:6px; font-family:Consolas,monospace; font-size:13px;
+    border-radius:6px; font-family:Consolas,monospace; font-size:22px;
     overflow-x:auto; white-space:pre-wrap; word-break:break-word; }
   .btn-row { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
-  .btn-copy { font-size:12px; padding:6px 12px; border-radius:5px;
+  .btn-copy { font-size:21px; padding:6px 12px; border-radius:5px;
     border:1px solid #ddd; background:white; cursor:pointer;
     font-family:inherit; font-weight:500; color:#0B1120; }
   .btn-copy:hover { background:#DCFCE7; border-color:#00C853; color:#1B5E20; }
@@ -71,31 +71,31 @@
     border-left:3px solid #00C853; margin:24px 0; }
   .tasks .head { display:flex; justify-content:space-between;
     align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
-  .tasks .head h3 { margin:0; font-size:18px; text-transform:uppercase;
+  .tasks .head h3 { margin:0; font-size:22px; text-transform:uppercase;
     letter-spacing:0.06em; color:#595959; font-weight:600; }
-  .tasks .head .summary { font-size:16px; color:#8A8FA3; }
+  .tasks .head .summary { font-size:21px; color:#8A8FA3; }
   .tasks .items { display:grid; grid-template-columns:repeat(2,1fr); gap:6px 24px; }
   @media (max-width:800px) { .tasks .items { grid-template-columns:1fr; } }
   .tasks .item { display:flex; align-items:flex-start; gap:12px;
-    padding:8px 0; font-size:17px; }
+    padding:8px 0; font-size:22px; }
   .tasks .check { width:22px; height:22px; border-radius:50%;
     display:flex; align-items:center; justify-content:center;
-    font-size:12px; flex-shrink:0; font-weight:700; margin-top:1px; }
+    font-size:14px; flex-shrink:0; font-weight:700; margin-top:1px; }
   .tasks .check.done { background:#00C853; color:white; }
   .tasks .check.user { background:#FFC400; color:#5C4500; }
   .tasks .check.pending { background:#F2F2F2; color:#8A8FA3; }
   .tasks .label.done { text-decoration:line-through; color:#8A8FA3; }
-  .tasks .label .note { font-size:14px; color:#8A8FA3; display:block; margin-top:2px; }
+  .tasks .label .note { font-size:19px; color:#8A8FA3; display:block; margin-top:2px; }
   .triggers { background:white; border-radius:8px; padding:18px 20px;
     box-shadow:0 1px 3px rgba(0,0,0,0.06); margin:24px 0; }
-  .triggers h3 { margin:0 0 12px 0; font-size:18px; text-transform:uppercase;
+  .triggers h3 { margin:0 0 12px 0; font-size:22px; text-transform:uppercase;
     letter-spacing:0.06em; color:#595959; }
-  .triggers p { font-size:19px; color:#3F4756; margin:10px 0; line-height:1.65; }
+  .triggers p { font-size:23px; color:#3F4756; margin:10px 0; line-height:1.65; }
   .triggers .chip { display:inline-block; background:#DCFCE7; color:#1B5E20;
-    padding:3px 10px; border-radius:12px; font-size:12px; margin:3px;
+    padding:3px 10px; border-radius:12px; font-size:21px; margin:3px;
     font-family:Consolas,monospace; }
   footer { background:#1B5E20; color:#DCFCE7; padding:18px 40px;
-    text-align:center; font-size:16px; }
+    text-align:center; font-size:21px; }
   footer a { color:#DCFCE7; }
 </style>
 </head>
@@ -154,7 +154,7 @@
       <li>SMEs: <span class="badge skill">reit-advisory-lead</span> <span class="badge skill">legal-corporate-secretary</span></li>
       <li>Day-1 decision: Rental REIT (ITO S99A pass-through) vs Development REIT vs Hybrid</li>
     </ul>
-    <p style="font-size:13px; color:#595959; margin:14px 0 6px 0;">Invocation prompt:</p>
+    <p style="font-size:22px; color:#595959; margin:14px 0 6px 0;">Invocation prompt:</p>
     <pre class="cmd">reit-practice-lead, [your ask].
 Engagement: [client / mandate].
 Deliverable: [format].</pre>
@@ -181,7 +181,7 @@ Deliverable: [format].</pre>
       <li>Anchor mandate: <a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">
           ENG-2026-001 Islamic REIT structuring <span class="badge intake">INTAKE</span></a></li>
     </ul>
-    <p style="font-size:13px; color:#595959; margin:14px 0 0 0;"><strong>Graduation trigger:</strong>
+    <p style="font-size:22px; color:#595959; margin:14px 0 0 0;"><strong>Graduation trigger:</strong>
       3+ active TSH mandates OR institutional-memory needs (trustee relationships, ongoing structures).</p>
   </div>
 
