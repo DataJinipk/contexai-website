@@ -7,61 +7,61 @@
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
   body { font-family: 'Segoe UI', Arial, sans-serif; background:#F7F8FA;
-    margin:0; padding:0; color:#0B1120; font-size:21px; line-height:1.7; }
+    margin:0; padding:0; color:#0B1120; font-size:24px; line-height:1.7; }
   header { background:linear-gradient(135deg,#0D1B3F 0%,#F26122 100%);
     color:white; padding:28px 40px; }
-  header .back { color:rgba(255,255,255,0.85); text-decoration:none; font-size:14px; }
+  header .back { color:rgba(255,255,255,0.85); text-decoration:none; font-size:19px; }
   header .back:hover { color:white; }
   header h1 { margin:8px 0 4px 0; font-size:42px; font-weight:600; letter-spacing:-0.01em; }
-  header .sub { opacity:0.92; font-size:20px; }
+  header .sub { opacity:0.92; font-size:24px; }
   header .folder { display:inline-block; margin-top:10px;
     background:rgba(255,255,255,0.18); padding:4px 12px; border-radius:14px;
-    font-size:15px; font-family:Consolas,monospace; }
+    font-size:20px; font-family:Consolas,monospace; }
   .container { max-width:1200px; margin:0 auto; padding:28px 40px; }
   .progress-strip { background:white; padding:16px 20px; border-radius:8px;
     box-shadow:0 1px 3px rgba(0,0,0,0.06); margin-bottom:24px;
     display:flex; align-items:center; gap:18px; flex-wrap:wrap;
     border-left:5px solid #F26122; }
-  .progress-strip .label { font-size:17px; color:#595959; font-weight:600; }
+  .progress-strip .label { font-size:22px; color:#595959; font-weight:600; }
   .progress-strip .bar { flex:1; min-width:200px; height:10px;
     background:#E5E7EB; border-radius:5px; overflow:hidden; }
   .progress-strip .fill { height:100%; background:#F26122; }
-  .progress-strip .pct { font-size:22px; font-weight:700; color:#0D1B3F; }
-  .progress-strip .note { font-size:16px; color:#8A8FA3; }
+  .progress-strip .pct { font-size:26px; font-weight:700; color:#0D1B3F; }
+  .progress-strip .note { font-size:21px; color:#8A8FA3; }
   .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px; }
   @media (max-width:900px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
   .kpi-tile { background:white; padding:16px 18px; border-radius:8px;
     box-shadow:0 1px 3px rgba(0,0,0,0.06); border-left:4px solid #F26122; }
-  .kpi-tile .label { font-size:14px; text-transform:uppercase;
+  .kpi-tile .label { font-size:19px; text-transform:uppercase;
     letter-spacing:0.06em; color:#8A8FA3; font-weight:600; }
   .kpi-tile .value { font-size:40px; font-weight:700; color:#0D1B3F; margin-top:6px; line-height:1.2; }
-  .kpi-tile .sub { font-size:17px; color:#595959; margin-top:6px; }
+  .kpi-tile .sub { font-size:22px; color:#595959; margin-top:6px; }
   .section-title { font-size:32px; font-weight:600; margin:32px 0 16px 0; color:#0D1B3F; }
-  .section-title .count { font-size:13px; color:#8A8FA3; font-weight:500; margin-left:8px; }
+  .section-title .count { font-size:22px; color:#8A8FA3; font-weight:500; margin-left:8px; }
   .card { background:white; border-radius:10px; padding:22px;
     box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:4px solid #F26122;
     margin-bottom:20px; }
   .card.client { border-top:4px solid #F26122; border-left:4px solid #0D1B3F; }
-  .card .tag { font-size:13px; text-transform:uppercase; letter-spacing:0.06em;
+  .card .tag { font-size:18px; text-transform:uppercase; letter-spacing:0.06em;
     color:#F26122; font-weight:700; }
   .card h2 { margin:10px 0 14px 0; font-size:32px; font-weight:600; color:#0D1B3F; }
-  .card .lede { font-size:20px; color:#3F4756; margin:0 0 18px 0; line-height:1.65; }
+  .card .lede { font-size:24px; color:#3F4756; margin:0 0 18px 0; line-height:1.65; }
   .card ul { list-style:none; padding:0; margin:0; }
-  .card li { padding:14px 0; border-bottom:1px solid #F0F0F0; font-size:20px; }
+  .card li { padding:14px 0; border-bottom:1px solid #F0F0F0; font-size:24px; }
   .card li:last-child { border-bottom:none; }
   .card a { color:#0B1120; text-decoration:none; display:flex;
     justify-content:space-between; align-items:center; gap:8px; }
   .card a:hover { color:#F26122; }
-  .badge { font-size:14px; padding:3px 9px; border-radius:11px;
+  .badge { font-size:19px; padding:3px 9px; border-radius:11px;
     background:#FFE3D6; color:#F26122; font-weight:600; white-space:nowrap; }
   .badge.live   { background:#C8E6C9; color:#1B5E20; }
   .badge.future { background:#FFE3D6; color:#F26122; }
   .badge.skill  { background:#FFE3D6; color:#F26122; font-family:Consolas,monospace; }
   pre.cmd { background:#0F1331; color:#FF9966; padding:14px 18px;
-    border-radius:6px; font-family:Consolas,monospace; font-size:13px;
+    border-radius:6px; font-family:Consolas,monospace; font-size:22px;
     overflow-x:auto; white-space:pre-wrap; word-break:break-word; }
   .btn-row { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
-  .btn-copy { font-size:12px; padding:6px 12px; border-radius:5px;
+  .btn-copy { font-size:21px; padding:6px 12px; border-radius:5px;
     border:1px solid #ddd; background:white; cursor:pointer;
     font-family:inherit; font-weight:500; color:#0B1120; }
   .btn-copy:hover { background:#FFE3D6; border-color:#F26122; color:#F26122; }
@@ -69,37 +69,37 @@
   @media (max-width:1000px) { .sme-grid { grid-template-columns:repeat(2,1fr); } }
   .sme-tile { background:#FFFBF7; border-radius:6px; padding:10px 12px;
     border-left:3px solid #F26122; }
-  .sme-tile .name { font-size:16px; font-weight:700; color:#0D1B3F; font-family:Consolas,monospace; }
-  .sme-tile .desc { font-size:14px; color:#595959; margin-top:3px; }
+  .sme-tile .name { font-size:21px; font-weight:700; color:#0D1B3F; font-family:Consolas,monospace; }
+  .sme-tile .desc { font-size:19px; color:#595959; margin-top:3px; }
   .tasks { background:#FAFBFC; border-radius:8px; padding:18px 20px;
     border-left:3px solid #F26122; margin:24px 0; }
   .tasks .head { display:flex; justify-content:space-between;
     align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
-  .tasks .head h3 { margin:0; font-size:18px; text-transform:uppercase;
+  .tasks .head h3 { margin:0; font-size:22px; text-transform:uppercase;
     letter-spacing:0.06em; color:#595959; font-weight:600; }
-  .tasks .head .summary { font-size:16px; color:#8A8FA3; }
+  .tasks .head .summary { font-size:21px; color:#8A8FA3; }
   .tasks .items { display:grid; grid-template-columns:repeat(2,1fr); gap:6px 24px; }
   @media (max-width:800px) { .tasks .items { grid-template-columns:1fr; } }
   .tasks .item { display:flex; align-items:flex-start; gap:12px;
-    padding:8px 0; font-size:17px; }
+    padding:8px 0; font-size:22px; }
   .tasks .check { width:22px; height:22px; border-radius:50%;
     display:flex; align-items:center; justify-content:center;
-    font-size:12px; flex-shrink:0; font-weight:700; margin-top:1px; }
+    font-size:14px; flex-shrink:0; font-weight:700; margin-top:1px; }
   .tasks .check.done { background:#F26122; color:white; }
   .tasks .check.user { background:#FFC400; color:#5C4500; }
   .tasks .check.pending { background:#F2F2F2; color:#8A8FA3; }
   .tasks .label.done { text-decoration:line-through; color:#8A8FA3; }
-  .tasks .label .note { font-size:14px; color:#8A8FA3; display:block; margin-top:2px; }
+  .tasks .label .note { font-size:19px; color:#8A8FA3; display:block; margin-top:2px; }
   .triggers { background:white; border-radius:8px; padding:18px 20px;
     box-shadow:0 1px 3px rgba(0,0,0,0.06); margin:24px 0; }
-  .triggers h3 { margin:0 0 12px 0; font-size:18px; text-transform:uppercase;
+  .triggers h3 { margin:0 0 12px 0; font-size:22px; text-transform:uppercase;
     letter-spacing:0.06em; color:#595959; }
-  .triggers p { font-size:19px; color:#3F4756; margin:10px 0; line-height:1.65; }
+  .triggers p { font-size:23px; color:#3F4756; margin:10px 0; line-height:1.65; }
   .triggers .chip { display:inline-block; background:#FFE3D6; color:#F26122;
-    padding:3px 10px; border-radius:12px; font-size:12px; margin:3px;
+    padding:3px 10px; border-radius:12px; font-size:21px; margin:3px;
     font-family:Consolas,monospace; }
   footer { background:#0D1B3F; color:#FFE3D6; padding:18px 40px;
-    text-align:center; font-size:16px; }
+    text-align:center; font-size:21px; }
   footer a { color:#FFE3D6; }
 </style>
 </head>
@@ -157,7 +157,7 @@
           SKILL.md <span class="badge skill">skill</span></a></li>
     </ul>
 
-    <h3 style="margin:18px 0 8px 0; font-size:14px; color:#0D1B3F;">The 5-SME bench</h3>
+    <h3 style="margin:18px 0 8px 0; font-size:19px; color:#0D1B3F;">The 5-SME bench</h3>
     <div class="sme-grid">
       <div class="sme-tile">
         <div class="name">margin-architect</div>
@@ -181,7 +181,7 @@
       </div>
     </div>
 
-    <p style="font-size:13px; color:#595959; margin:14px 0 6px 0;">Invocation prompt:</p>
+    <p style="font-size:22px; color:#595959; margin:14px 0 6px 0;">Invocation prompt:</p>
     <pre class="cmd">energy-petrochem-lead, [your ask].
 Engagement: [client / mandate].
 Deliverable: [format].</pre>
@@ -206,7 +206,7 @@ Deliverable: [format].</pre>
       <li>Future Chief: <span class="badge future">cnergyico-chief-of-staff</span></li>
       <li>Future Plugin: <span class="badge future">cnergyico-agents-team</span></li>
     </ul>
-    <p style="font-size:13px; color:#595959; margin:14px 0 0 0;"><strong style="color:#0D1B3F;">Graduation trigger:</strong>
+    <p style="font-size:22px; color:#595959; margin:14px 0 0 0;"><strong style="color:#0D1B3F;">Graduation trigger:</strong>
       ongoing retainer or 3+ active Cnergyico mandates.</p>
   </div>
 
