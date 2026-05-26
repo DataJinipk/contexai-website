@@ -83,6 +83,18 @@
   .period-banner.flex-col { flex-direction:column; align-items:flex-start; }
 
   .section-title { font-size:22px; font-weight:600; margin:30px 0 16px 0; color:#0B1120; }
+
+  /* Practice-group sub-headers (reflect ContexAi_Agents\<Practice>\ folder structure) */
+  .practice-group { font-size:16px; font-weight:600; margin:20px 0 10px 0;
+    padding:8px 14px; border-radius:6px; display:inline-block;
+    background:white; box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  .practice-group .label { font-size:11px; text-transform:uppercase; letter-spacing:0.06em;
+    color:#8A8FA3; margin-right:8px; }
+  .practice-group.banking  { border-left:4px solid #1D5FFF; color:#1D5FFF; }
+  .practice-group.real-est { border-left:4px solid #70AD47; color:#385723; }
+  .practice-group.energy   { border-left:4px solid #F26122; color:#0D1B3F; }
+  .practice-group.accred   { border-left:4px solid #7030A0; color:#7030A0; }
+  .practice-group code { font-size:12px; color:#595959; background:transparent; }
   .info { background:#EEF2FF; border-left:4px solid #1D5FFF;
     padding:14px 18px; border-radius:4px; margin:20px 0; font-size:13px; }
   .info strong { color:#1D5FFF; }
@@ -391,15 +403,20 @@ Deadline: &lt;date&gt;</pre>
   <!-- =========================================================== -->
   <div id="clients" class="period-banner client flex-col">
     <div>
-      <div class="title">&#127970; Client-Specific Teams</div>
+      <div class="title">&#127970; Client-Specific Teams &mdash; grouped by practice</div>
       <div class="sub">Activated when a client has its own dedicated multi-agent plugin &middot; Holds institutional memory the Practice Leads don't have</div>
+      <div class="sub" style="margin-top:6px;">Mirrors folder structure: <code style="background:rgba(255,255,255,0.18);padding:2px 6px;border-radius:3px;color:white;">G:\My Drive\ContexAi_Agents\&lt;Practice&gt;\&lt;Team&gt;\</code></div>
     </div>
-    <span class="pill">1 LIVE &middot; 2 FUTURE</span>
+    <span class="pill">1 LIVE &middot; 3 FUTURE</span>
   </div>
 
-  <div class="grid3">
-
-    <div class="card client">
+  <!-- BANKING PRACTICE -->
+  <div class="practice-group banking">
+    <span class="label">Banking Practice</span>
+    <code>ContexAi_Agents\Banking\</code>
+  </div>
+  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
+    <div class="card client" style="grid-column:1 / -1; max-width:none;">
       <span class="tag">CLIENT TEAM &middot; LIVE</span>
       <h2>SMFB Agents Team</h2>
       <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
@@ -407,9 +424,9 @@ Deadline: &lt;date&gt;</pre>
         SBP-regulated MFB. PIBAS core banking, monthly close, quarterly reporting.
       </p>
       <ul>
-        <li><a href="file:///G:/My Drive/Banking_Agents/SMFB Agents Team/PIBAS/reporting_improvement_phase1/desktop/SMFB_Control_Center.html" target="_blank">
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/PIBAS/reporting_improvement_phase1/desktop/SMFB_Control_Center.html" target="_blank">
             &raquo; Open SMFB Control Center <span class="badge live">LIVE</span></a></li>
-        <li><a href="file:///G:/My Drive/Banking_Agents/SMFB Agents Team/" target="_blank">
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/" target="_blank">
             SMFB Agents Team folder <span class="badge">folder</span></a></li>
         <li>Chief: <span class="badge skill">smfb-chief-of-staff</span></li>
         <li>Plugin: <span class="badge plugin">smfb-agents-team</span></li>
@@ -418,8 +435,15 @@ Deadline: &lt;date&gt;</pre>
       </ul>
       <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong>When to route:</strong> any ask where the named client is SMFB / Sindh Microfinance Bank — always routes to SMFB Chief, never to a Practice Lead.</p>
     </div>
+  </div>
 
-    <div class="card client" style="border-top-color:#70AD47;">
+  <!-- REAL ESTATE PRACTICE -->
+  <div class="practice-group real-est">
+    <span class="label">Real Estate Practice</span>
+    <code>ContexAi_Agents\Real_Estate\</code>
+  </div>
+  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
+    <div class="card client" style="border-top-color:#70AD47; grid-column:1 / -1;">
       <span class="tag" style="color:#385723;">CLIENT TEAM &middot; FUTURE</span>
       <h2>TSH Agents Team</h2>
       <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
@@ -427,9 +451,9 @@ Deadline: &lt;date&gt;</pre>
         Will graduate to its own client team when engagement volume warrants.
       </p>
       <ul>
-        <li><a href="teams/TSH_Control_Center.html" target="_blank">
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/TSH_Control_Center.html" target="_blank">
             &raquo; Open TSH Control Center <span class="badge future">FUTURE</span></a></li>
-        <li><a href="file:///G:/My Drive/Banking_Agents/TSH Agents Team/" target="_blank">
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/" target="_blank">
             TSH Agents Team folder <span class="badge">folder</span></a></li>
         <li>Practice Leads: <span class="badge skill">reit-practice-lead</span> + <span class="badge skill">banking-practice-lead</span></li>
         <li>Future Chief: <span class="badge future">tsh-chief-of-staff</span></li>
@@ -438,8 +462,15 @@ Deadline: &lt;date&gt;</pre>
       </ul>
       <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong>When to route:</strong> any TSH ask currently goes through the Group Chief and is split across REIT and Banking Practice Leads (for Islamic structures). Graduation trigger: 3+ active TSH mandates.</p>
     </div>
+  </div>
 
-    <div class="card cnergyico-client">
+  <!-- ENERGY PRACTICE -->
+  <div class="practice-group energy">
+    <span class="label">Energy &amp; Petrochem Practice</span>
+    <code>ContexAi_Agents\Energy\</code>
+  </div>
+  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
+    <div class="card cnergyico-client" style="grid-column:1 / -1;">
       <span class="tag" style="color:#F26122;">CLIENT TEAM &middot; FUTURE</span>
       <h2 style="color:#0D1B3F;">Cnergyico Agents Team</h2>
       <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
@@ -447,9 +478,9 @@ Deadline: &lt;date&gt;</pre>
         own team for plant-specific institutional context (refinery configuration, supply contracts, terminal ops, OGRA filings).
       </p>
       <ul>
-        <li><a href="teams/Cnergyico_Control_Center.html" target="_blank">
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/Cnergyico_Control_Center.html" target="_blank">
             &raquo; Open Cnergyico Control Center <span class="badge future" style="background:#FFE3D6;color:#F26122;">FUTURE</span></a></li>
-        <li><a href="file:///G:/My Drive/Banking_Agents/Cnergyico Agents Team/" target="_blank">
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/" target="_blank">
             Cnergyico Agents Team folder <span class="badge">folder</span></a></li>
         <li>Practice Lead: <span class="badge skill" style="background:#FFE3D6;color:#F26122;">energy-petrochem-lead</span></li>
         <li>Future Chief: <span class="badge future" style="background:#FFE3D6;color:#F26122;">cnergyico-chief-of-staff</span></li>
@@ -458,7 +489,33 @@ Deadline: &lt;date&gt;</pre>
       </ul>
       <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong style="color:#0D1B3F;">Graduation trigger:</strong> ongoing retainer or 3+ active Cnergyico mandates.</p>
     </div>
+  </div>
 
+  <!-- ACCREDITATION PRACTICE -->
+  <div class="practice-group accred">
+    <span class="label">Accreditation Practice</span>
+    <code>ContexAi_Agents\Accreditation\</code>
+  </div>
+  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
+    <div class="card client" style="border-top-color:#7030A0; grid-column:1 / -1;">
+      <span class="tag" style="color:#7030A0;">CLIENT TEAM &middot; FUTURE</span>
+      <h2 style="color:#7030A0;">CIP Agents Team</h2>
+      <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
+        <strong style="color:#7030A0;">Credit Institute of Pakistan</strong> — flagship Phase-1 engagement of the Accreditation Practice.
+        Currently served by <code>accreditation-practice-lead</code> + four CIP SMEs.
+        Will graduate to its own client team once the Section 42 license is granted and the institute is live.
+      </p>
+      <ul>
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Accreditation/CIP Agents Team/" target="_blank">
+            CIP Agents Team folder <span class="badge">folder</span></a></li>
+        <li>Practice Lead: <span class="badge skill">accreditation-practice-lead</span></li>
+        <li>SMEs: <span class="badge skill">cip-master-plan</span> <span class="badge skill">cip-corporate-secp</span></li>
+        <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">cip-ip-academic</span> <span class="badge skill">cip-regulatory-strategy</span></li>
+        <li>Future Chief: <span class="badge future">cip-chief-of-staff</span></li>
+        <li>Future Plugin: <span class="badge future">cip-agents-team</span></li>
+      </ul>
+      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong style="color:#7030A0;">Critical path:</strong> SECP Section 42 license approval (6–9 months). Graduation trigger: license granted + first cohort of CCP candidates.</p>
+    </div>
   </div>
 
   <!-- =========================================================== -->
@@ -511,7 +568,7 @@ Deadline: &lt;date&gt;</pre>
       <h2>PIBAS &amp; banking systems</h2>
       <ul>
         <li><span class="badge skill">pibas-expert</span> &mdash; PIBAS reports, batch, regulatory returns</li>
-        <li><a href="file:///G:/My Drive/Banking_Agents/SMFB Agents Team/PIBAS/" target="_blank">
+        <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/PIBAS/" target="_blank">
             SMFB PIBAS workspace <span class="badge">folder</span></a></li>
       </ul>
       <p style="font-size:11px;color:#595959;margin:8px 0 0 0;">Most active for SMFB; reusable for any PIBAS-based MFB engagement.</p>
