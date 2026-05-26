@@ -6,664 +6,340 @@
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background:#f6f7fb;
-    margin:0; padding:0; color:#0B1120; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#F7F8FA;
+    margin:0; padding:0; color:#0B1120; font-size:21px; line-height:1.65; }
+
   header { background:linear-gradient(135deg,#6A1B9A 0%,#F26122 50%,#FFC400 100%);
-    color:white; padding:24px 40px; }
-  header h1 { margin:0; font-size:26px; font-weight:600; letter-spacing:-0.01em; }
-  header .sub { margin-top:4px; opacity:0.88; font-size:13px; }
-  header .quick { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; }
-  header .quick a { background:rgba(255,255,255,0.15); color:white;
-    padding:7px 14px; border-radius:4px; text-decoration:none; font-size:12px;
-    transition:background 0.15s; }
-  header .quick a:hover { background:rgba(255,255,255,0.28); }
+    color:white; padding:40px 48px; }
+  header h1 { margin:0; font-size:46px; font-weight:600; letter-spacing:-0.01em; }
+  header .sub { margin-top:12px; opacity:0.94; font-size:20px; }
+  header .quick { margin-top:22px; display:flex; gap:10px; flex-wrap:wrap; }
+  header .quick a { background:rgba(255,255,255,0.18); color:white;
+    padding:11px 22px; border-radius:5px; text-decoration:none; font-size:18px;
+    font-weight:500; transition:background 0.15s; }
+  header .quick a:hover { background:rgba(255,255,255,0.32); }
 
-  .container { max-width:1320px; margin:0 auto; padding:24px 40px; }
-  .grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:20px; }
-  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-  @media (max-width:1000px) { .grid2, .grid3 { grid-template-columns:1fr; } }
+  .container { max-width:1280px; margin:0 auto; padding:32px 48px; }
 
-  .card { background:white; border-radius:8px; padding:20px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:4px solid #00BCD4; }
-  .card.chief     { border-top-color:#00BCD4; }
-  .card.banking   { border-top-color:#00BCD4; }
-  .card.cnergyico { border-top-color:#F26122; }
-  .card.cnergyico-client { border-top:4px solid #F26122; border-left:4px solid #0D1B3F; }
-  .card.reit      { border-top-color:#00C853; }
-  .card.accred    { border-top-color:#9C27B0; }
-  .card.client    { border-top-color:#0D47A1; }
-  .card.shared    { border-top-color:#FFC400; }
-  .card h2 { margin:0 0 4px 0; font-size:17px; }
-  .card .tag { font-size:11px; text-transform:uppercase; letter-spacing:0.5px;
-    color:#8A8FA3; margin-bottom:10px; display:block; }
-  .card ul { list-style:none; padding:0; margin:0; }
-  .card li { padding:6px 0; border-bottom:1px solid #eee; font-size:13px; }
-  .card li:last-child { border-bottom:none; }
-  .card a { color:#0B1120; text-decoration:none; display:flex;
-    justify-content:space-between; align-items:center; gap:8px; }
-  .card a:hover { color:#00BCD4; }
+  /* KPI strip - bigger, crisper */
+  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:32px; }
+  @media (max-width:900px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
+  .kpi-tile { background:white; padding:22px 24px; border-radius:10px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-left:5px solid #00BCD4; }
+  .kpi-tile.parrot { border-left-color:#00C853; }
+  .kpi-tile.flame  { border-left-color:#F26122; }
+  .kpi-tile.purple { border-left-color:#9C27B0; }
+  .kpi-tile .label { font-size:16px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#595959; font-weight:600; }
+  .kpi-tile .value { font-size:42px; font-weight:700; color:#0B1120; margin-top:10px; line-height:1.2; }
+  .kpi-tile .sub { font-size:17px; color:#595959; margin-top:10px; }
 
-  .badge { font-size:10px; padding:2px 8px; border-radius:10px;
+  /* Group Chief - prominent, one card */
+  .chief-block { background:linear-gradient(135deg,#0D1B3F 0%,#00BCD4 100%);
+    color:white; padding:24px 28px; border-radius:12px; margin-bottom:32px;
+    display:flex; align-items:center; gap:24px; flex-wrap:wrap;
+    box-shadow:0 2px 6px rgba(13,27,63,0.18); }
+  .chief-block .left { flex:1; min-width:280px; }
+  .chief-block h2 { margin:0 0 10px 0; font-size:30px; font-weight:600; }
+  .chief-block .desc { font-size:19px; opacity:0.95; line-height:1.65; }
+  .chief-block .right { display:flex; gap:10px; flex-wrap:wrap; }
+  .chief-block a.btn { background:rgba(255,255,255,0.18); color:white;
+    padding:11px 20px; border-radius:6px; text-decoration:none;
+    font-size:15px; font-weight:500; }
+  .chief-block a.btn:hover { background:rgba(255,255,255,0.32); }
+  .chief-block a.btn.solid { background:white; color:#0D1B3F; }
+  .chief-block a.btn.solid:hover { background:#E0F7FA; }
+
+  /* 4 practice tiles - large, clickable, color-coded */
+  .section-title { font-size:32px; font-weight:600; margin:44px 0 22px 0;
+    color:#0B1120; }
+  .section-title .count { font-size:17px; color:#8A8FA3; font-weight:500; margin-left:10px; }
+
+  .practice-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  @media (max-width:900px) { .practice-grid { grid-template-columns:1fr; } }
+  .practice-tile { display:block; background:white; padding:24px 26px;
+    border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08);
+    border-top:5px solid #00BCD4; text-decoration:none; color:inherit;
+    transition:transform 0.15s, box-shadow 0.15s; }
+  .practice-tile:hover { transform:translateY(-3px); box-shadow:0 4px 14px rgba(0,0,0,0.12); }
+  .practice-tile.banking  { border-top-color:#00BCD4; }
+  .practice-tile.real-est { border-top-color:#00C853; }
+  .practice-tile.energy   { border-top-color:#F26122; }
+  .practice-tile.accred   { border-top-color:#9C27B0; }
+  .practice-tile h2 { margin:0 0 8px 0; font-size:30px; font-weight:600; }
+  .practice-tile.banking  h2 { color:#00838F; }
+  .practice-tile.real-est h2 { color:#1B5E20; }
+  .practice-tile.energy   h2 { color:#0D1B3F; }
+  .practice-tile.accred   h2 { color:#6A1B9A; }
+  .practice-tile .lede { font-size:19px; color:#3F4756; margin:10px 0 18px 0; line-height:1.65; }
+  .practice-tile .stats { display:flex; gap:22px; font-size:17px; color:#595959;
+    margin-bottom:18px; flex-wrap:wrap; }
+  .practice-tile .stats strong { color:#0B1120; font-size:20px; }
+  .practice-tile .prog { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+  .practice-tile .prog .bar { flex:1; height:10px; background:#E5E7EB;
+    border-radius:5px; overflow:hidden; }
+  .practice-tile .prog .fill { height:100%; }
+  .practice-tile.banking  .prog .fill { background:#00BCD4; }
+  .practice-tile.real-est .prog .fill { background:#00C853; }
+  .practice-tile.energy   .prog .fill { background:#F26122; }
+  .practice-tile.accred   .prog .fill { background:#9C27B0; }
+  .practice-tile .prog .pct { font-size:20px; font-weight:700; }
+  .practice-tile.banking  .prog .pct { color:#00838F; }
+  .practice-tile.real-est .prog .pct { color:#1B5E20; }
+  .practice-tile.energy   .prog .pct { color:#0D1B3F; }
+  .practice-tile.accred   .prog .pct { color:#6A1B9A; }
+  .practice-tile .cta { font-size:19px; font-weight:600; }
+  .practice-tile.banking  .cta { color:#00838F; }
+  .practice-tile.real-est .cta { color:#1B5E20; }
+  .practice-tile.energy   .cta { color:#F26122; }
+  .practice-tile.accred   .cta { color:#6A1B9A; }
+  .practice-tile .folder { font-size:14px; color:#8A8FA3;
+    font-family:Consolas,monospace; margin-top:10px; }
+
+  /* Active engagements */
+  table.engagements { width:100%; border-collapse:collapse; font-size:18px;
+    background:white; border-radius:10px; overflow:hidden;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+  table.engagements th { background:#0D1B3F; color:white; padding:16px;
+    text-align:left; font-size:14px; text-transform:uppercase;
+    letter-spacing:0.06em; font-weight:600; }
+  table.engagements td { padding:16px; border-top:1px solid #F0F0F0; }
+  .badge { font-size:14px; padding:4px 12px; border-radius:12px;
     background:#E0F7FA; color:#00838F; font-weight:600; white-space:nowrap; }
+  .badge.intake { background:#FFF3D6; color:#7F6000; }
   .badge.live   { background:#C8E6C9; color:#1B5E20; }
-  .badge.future { background:#F2F2F2; color:#8A8FA3; }
-  .badge.skill  { background:#E0F7FA; color:#00838F; font-family:Consolas,monospace; }
-  .badge.plugin { background:#FBE5D6; color:#7F3B05; font-family:Consolas,monospace; }
-  .badge.md     { background:#F2F2F2; color:#595959; }
-  .badge.pend   { background:#FFF3D6; color:#7F6000; }
-
-  pre.cmd { background:#0F1331; color:#A9D18E; padding:12px 16px;
-    border-radius:6px; font-family:Consolas,monospace; font-size:12px;
-    overflow-x:auto; margin:6px 0; white-space:pre-wrap; word-break:break-word; }
-
-  /* KPI strip */
-  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:16px 0 24px 0; }
-  @media (max-width:1000px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
-  .kpi-tile { background:white; padding:12px 14px; border-radius:6px;
-    box-shadow:0 1px 2px rgba(0,0,0,0.06); border-left:4px solid #00BCD4; }
-  .kpi-tile.cnergyico { border-left-color:#F26122; }
-  .kpi-tile.reit      { border-left-color:#00C853; }
-  .kpi-tile.accred    { border-left-color:#9C27B0; }
-  .kpi-tile.client    { border-left-color:#FFC400; }
-  .kpi-tile .label { font-size:10px; text-transform:uppercase;
-    letter-spacing:0.5px; color:#8A8FA3; }
-  .kpi-tile .value { font-size:22px; font-weight:700; color:#0B1120; margin-top:3px; }
-  .kpi-tile .sub { font-size:11px; color:#595959; margin-top:3px; }
-
-  /* Group Chief block (compact) */
-  .chief-banner { background:linear-gradient(135deg,#0D1B3F 0%,#00BCD4 100%);
-    color:white; padding:14px 20px; border-radius:8px; margin-bottom:14px;
-    display:flex; align-items:center; justify-content:space-between; gap:16px; }
-  .chief-banner .title { font-size:18px; font-weight:600; }
-  .chief-banner .sub { opacity:0.88; font-size:12px; margin-top:2px; }
-  .chief-banner .pill { background:rgba(255,255,255,0.25); padding:3px 10px;
-    border-radius:12px; font-size:11px; font-weight:600; white-space:nowrap; }
-
-  /* Practice section: a colored band that visually groups Lead + Client Team(s) */
-  .practice-section { margin:28px 0; padding:18px 20px 4px 20px;
-    background:white; border-radius:10px; border-left:5px solid #00BCD4;
-    box-shadow:0 1px 3px rgba(0,0,0,0.05); }
-  .practice-section.banking  { border-left-color:#00BCD4; }
-  .practice-section.real-est { border-left-color:#00C853; }
-  .practice-section.energy   { border-left-color:#F26122; }
-  .practice-section.accred   { border-left-color:#9C27B0; }
-  .practice-section .practice-head { display:flex; align-items:center;
-    justify-content:space-between; gap:14px; margin-bottom:14px; flex-wrap:wrap; }
-  .practice-section .practice-head .name { font-size:18px; font-weight:600; }
-  .practice-section.banking  .practice-head .name { color:#00838F; }
-  .practice-section.real-est .practice-head .name { color:#1B5E20; }
-  .practice-section.energy   .practice-head .name { color:#0D1B3F; }
-  .practice-section.accred   .practice-head .name { color:#6A1B9A; }
-  .practice-section .practice-head code { font-size:12px; color:#595959;
-    background:#F7F8FA; padding:3px 8px; border-radius:4px; }
-  .practice-section .practice-head .meta { font-size:11px; color:#8A8FA3; }
-  .practice-section .practice-body { display:grid; grid-template-columns:1.1fr 1fr; gap:16px;
-    margin-bottom:16px; }
-  @media (max-width:1000px) { .practice-section .practice-body { grid-template-columns:1fr; } }
 
   /* Routing widget */
-  .routing-box { background:white; padding:18px; border-radius:8px;
-    border-left:4px solid #C00000; box-shadow:0 1px 3px rgba(0,0,0,0.08);
-    margin:24px 0; }
-  .routing-box label { font-size:13px; font-weight:600; color:#0B1120;
-    display:block; margin-bottom:6px; }
-  .routing-box textarea { width:100%; padding:10px 12px; border:1px solid #ddd;
-    border-radius:6px; font-family:'Segoe UI',Arial,sans-serif; font-size:14px;
-    resize:vertical; min-height:54px; }
-  .routing-box textarea:focus { outline:none; border-color:#00BCD4;
-    box-shadow:0 0 0 3px #E0F7FA; }
-  .routing-result { margin-top:12px; padding:12px; background:#F7F8FA;
-    border-radius:6px; font-size:13px; display:none; }
+  .routing-box { background:white; padding:22px 24px; border-radius:10px;
+    border-left:5px solid #C00000; box-shadow:0 1px 3px rgba(0,0,0,0.06);
+    margin-top:18px; }
+  .routing-box label { font-size:16px; font-weight:600; color:#0B1120;
+    display:block; margin-bottom:10px; }
+  .routing-box textarea { width:100%; padding:12px 16px; border:1px solid #ddd;
+    border-radius:6px; font-family:'Segoe UI',Arial,sans-serif; font-size:16px;
+    resize:vertical; min-height:64px; }
+  .routing-box textarea:focus { outline:none; border-color:#C00000;
+    box-shadow:0 0 0 3px #FFEBEE; }
+  .routing-result { margin-top:14px; padding:16px 18px; background:#FAFBFC;
+    border-radius:6px; font-size:16px; display:none; }
   .routing-result.show { display:block; }
-  .routing-result .lead { font-weight:600; color:#00838F; }
-  .routing-result .reason { color:#595959; margin-top:4px; }
-  .routing-result code { background:white; padding:1px 6px; border-radius:4px;
-    font-family:Consolas,monospace; font-size:12px; }
+  .routing-result .lead { font-weight:600; color:#C00000; font-size:17px; }
+  .routing-result .reason { color:#3F4756; margin-top:8px; line-height:1.6; }
+  .routing-result code { background:white; padding:2px 8px; border-radius:4px;
+    font-family:Consolas,monospace; font-size:14px; }
+  .btn-launch { font-size:15px; padding:10px 20px; border-radius:6px;
+    border:none; background:#C00000; color:white; cursor:pointer;
+    font-family:inherit; font-weight:600; }
+  .btn-launch:hover { background:#A00000; }
+  .btn-secondary { font-size:15px; padding:10px 20px; border-radius:6px;
+    border:1px solid #ddd; background:white; color:#0B1120; cursor:pointer;
+    font-family:inherit; font-weight:500; }
+  .btn-secondary:hover { background:#F7F8FA; }
 
-  /* Engagements + Shared Services + Activity (compact sections) */
-  .section-title { font-size:18px; font-weight:600; margin:26px 0 12px 0; color:#0B1120; }
-  .section-title .meta { font-size:12px; color:#8A8FA3; font-weight:400; margin-left:8px; }
+  /* Shared services chips */
+  .shared-bar { background:white; padding:18px 22px; border-radius:10px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); margin-top:18px; }
+  .shared-bar .label { font-size:16px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#595959; font-weight:600; margin-bottom:14px; }
+  .shared-bar .chip { display:inline-block; background:#FFF8E1; color:#7F6000;
+    padding:7px 16px; border-radius:14px; font-size:16px; margin:4px;
+    font-family:Consolas,monospace; font-weight:500; }
 
-  /* Shared Services as inline chips */
-  .chip { display:inline-block; background:#FFF8E1; color:#7F6000;
-    padding:5px 10px; border-radius:14px; font-size:12px; margin:3px;
-    font-family:Consolas,monospace; }
-  .chip-group { margin-bottom:10px; }
-  .chip-group .group-label { font-size:11px; text-transform:uppercase;
-    letter-spacing:0.04em; color:#8A8FA3; margin-right:6px; font-weight:600; }
+  footer { background:#0B1120; color:#CADCFC; padding:24px 48px;
+    text-align:center; font-size:17px; margin-top:32px; }
+  footer a { color:#CADCFC; }
 
-  /* Activity log */
-  .activity-list { font-size:13px; }
-  .activity-list .item { padding:6px 0; border-bottom:1px solid #eee;
-    display:flex; justify-content:space-between; gap:12px; }
-  .activity-list .item:last-child { border-bottom:none; }
-  .activity-list .item .when { color:#8A8FA3; font-size:11px; white-space:nowrap; }
-  .activity-list .empty { color:#8A8FA3; font-style:italic; padding:10px 0; }
-
-  /* Per-practice task checklist (lives inside each practice section) */
-  .practice-tasks { margin:8px 0 16px 0; padding:14px 16px; background:#FAFBFC;
-    border-radius:8px; border-left:3px solid #00BCD4; }
-  .practice-section.banking  .practice-tasks { border-left-color:#00BCD4; }
-  .practice-section.real-est .practice-tasks { border-left-color:#00C853; }
-  .practice-section.energy   .practice-tasks { border-left-color:#F26122; }
-  .practice-section.accred   .practice-tasks { border-left-color:#9C27B0; }
-  .practice-tasks .head { display:flex; justify-content:space-between;
-    align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px; }
-  .practice-tasks .head h4 { margin:0; font-size:12px; text-transform:uppercase;
-    letter-spacing:0.05em; color:#595959; font-weight:600; }
-  .practice-tasks .head .summary { font-size:11px; color:#8A8FA3; font-weight:500; }
-  .practice-tasks .items { display:grid; grid-template-columns:repeat(2,1fr); gap:2px 18px; }
-  @media (max-width:900px) { .practice-tasks .items { grid-template-columns:1fr; } }
-  .practice-tasks .item { display:flex; align-items:flex-start; gap:8px;
-    padding:4px 0; font-size:12px; }
-  .practice-tasks .check { width:18px; height:18px; border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    font-size:10px; flex-shrink:0; font-weight:700; margin-top:1px; }
-  .practice-section.banking  .practice-tasks .check.done { background:#00BCD4; color:white; }
-  .practice-section.real-est .practice-tasks .check.done { background:#00C853; color:white; }
-  .practice-section.energy   .practice-tasks .check.done { background:#F26122; color:white; }
-  .practice-section.accred   .practice-tasks .check.done { background:#9C27B0; color:white; }
-  .practice-tasks .check.pending { background:#F2F2F2; color:#8A8FA3; font-size:10px; }
-  .practice-tasks .check.user { background:#FFC400; color:#5C4500; }
-  .practice-tasks .label { padding-top:1px; }
-  .practice-tasks .label.done { text-decoration:line-through; color:#8A8FA3; }
-  .practice-tasks .label .note { font-size:10px; color:#8A8FA3; display:block; margin-top:1px; }
-
-  /* Per-practice progress bar (inline in practice header) */
-  .practice-progress { display:flex; align-items:center; gap:8px;
-    margin-top:6px; font-size:11px; }
-  .practice-progress .bar { width:140px; height:6px; background:#E5E7EB;
-    border-radius:3px; overflow:hidden; }
-  .practice-progress .fill { height:100%; transition:width 0.3s; }
-  .practice-section.banking  .practice-progress .fill { background:#00BCD4; }
-  .practice-section.real-est .practice-progress .fill { background:#00C853; }
-  .practice-section.energy   .practice-progress .fill { background:#F26122; }
-  .practice-section.accred   .practice-progress .fill { background:#9C27B0; }
-  .practice-progress .pct { color:#595959; font-weight:600; }
-
-  /* Buttons */
-  .btn-row { display:flex; gap:6px; margin-top:8px; flex-wrap:wrap; }
-  .btn-copy, .btn-launch { font-size:11px; padding:4px 10px; border-radius:4px;
-    border:1px solid #ddd; background:white; cursor:pointer; font-family:inherit;
-    font-weight:500; color:#0B1120; }
-  .btn-copy:hover { background:#E0F7FA; border-color:#00BCD4; color:#00838F; }
-  .btn-launch:hover { background:#0B1120; color:white; border-color:#0B1120; }
-  .toast { position:fixed; bottom:20px; right:20px; background:#0B1120; color:white;
-    padding:10px 16px; border-radius:6px; font-size:13px; opacity:0;
+  .toast { position:fixed; bottom:24px; right:24px; background:#0B1120; color:white;
+    padding:12px 18px; border-radius:6px; font-size:14px; opacity:0;
     transition:opacity 0.3s; pointer-events:none; z-index:1000; }
   .toast.show { opacity:1; }
-
-  footer { background:#0B1120; color:#CADCFC; padding:16px 40px;
-    text-align:center; font-size:12px; }
-  footer a { color:#CADCFC; }
 </style>
 </head>
 <body>
 
 <header>
   <h1>ContexAi Agents Control Center</h1>
-  <div class="sub">Group Chief &middot; 4 Practices &middot; Client Teams &amp; SMEs by practice
-    &middot; Curated advisory marketplace at <a href="https://contexai.org" style="color:white;">contexai.org</a></div>
+  <div class="sub">Group Chief &middot; 4 Practices &middot; Curated AI consulting marketplace at
+    <a href="https://contexai.org" style="color:white;">contexai.org</a></div>
   <div class="quick">
-    <a href="#group-chief">&#127894; Group Chief</a>
-    <a href="#banking-practice">Banking</a>
-    <a href="#real-estate-practice">Real Estate</a>
-    <a href="#energy-practice">Energy</a>
-    <a href="#accred-practice">Accreditation</a>
-    <a href="#routing">&#128269; Routing</a>
-    <a href="#engagements">&#128221; Engagements</a>
-    <a href="https://contexai.org/dashboard.html" target="_blank">&#128202; Ops Dashboard</a>
-    <a href="https://github.com/DataJinipk/contexai-website" target="_blank">&#128190; GitHub</a>
+    <a href="practices/Banking.html">Banking</a>
+    <a href="practices/Real_Estate.html">Real Estate</a>
+    <a href="practices/Energy.html">Energy</a>
+    <a href="practices/Accreditation.html">Accreditation</a>
+    <a href="https://contexai.org/dashboard.html" target="_blank">Ops Dashboard</a>
+    <a href="https://github.com/DataJinipk/contexai-website" target="_blank">GitHub</a>
   </div>
 </header>
 
 <div class="container">
 
-  <!-- ─── KPI strip ─── -->
+  <!-- KPI strip -->
   <div class="kpi-row">
     <div class="kpi-tile">
       <div class="label">Agents in org</div>
       <div class="value">24+</div>
       <div class="sub">1 Chief + 4 Leads + 19 SMEs</div>
     </div>
-    <div class="kpi-tile">
+    <div class="kpi-tile parrot">
       <div class="label">Practices live</div>
       <div class="value">4 of 4</div>
       <div class="sub">Banking · Real Estate · Energy · Accreditation</div>
     </div>
-    <div class="kpi-tile client">
+    <div class="kpi-tile flame">
       <div class="label">Client teams</div>
       <div class="value">1 live, 3 future</div>
       <div class="sub">SMFB · TSH · Cnergyico · CIP</div>
     </div>
-    <div class="kpi-tile reit">
+    <div class="kpi-tile purple">
       <div class="label">Active engagements</div>
       <div class="value">1</div>
       <div class="sub">TSH Islamic REIT (intake)</div>
     </div>
   </div>
 
-  <!-- ─── Group Chief (compact) ─── -->
-  <div id="group-chief" class="chief-banner">
-    <div>
-      <div class="title">&#127894; Group Chief of Staff</div>
-      <div class="sub">Front door for any engagement &middot; Classifies &middot; Routes &middot; Synthesises</div>
+  <!-- Group Chief -->
+  <div class="chief-block">
+    <div class="left">
+      <h2>&#127894; Group Chief of Staff</h2>
+      <div class="desc">Front door for any ContexAi engagement. Classifies the ask, picks the right
+        Practice Lead or Client Chief, runs the 5-field intake, synthesises the output.</div>
     </div>
-    <span class="pill">v1.0 LIVE</span>
-  </div>
-
-  <div class="card chief" style="margin-bottom:24px;">
-    <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:24px; align-items:start;">
-      <div>
-        <p style="font-size:13px; color:#595959; margin:0 0 10px 0;">
-          Invoke for any ContexAi ask &mdash; cross-practice work, new mandates, when you're not sure which Lead to call.
-          Uses the five-field delegation contract (Engagement / Goal / Inputs / Deliverable / Deadline).
-        </p>
-        <pre class="cmd">Group Chief, [your ask here].
-Context: [client / mandate if known].
-Deadline: [if known].</pre>
-        <div class="btn-row">
-          <button class="btn-copy" data-copy="Group Chief, [your ask here].&#10;Context: [client / mandate if known].&#10;Deadline: [if known].">Copy prompt</button>
-          <button class="btn-launch" data-log="contexai-group-chief">Log invocation</button>
-        </div>
-      </div>
-      <div>
-        <span class="tag">CANONICAL DOCS</span>
-        <ul>
-          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/contexai-group-chief/SKILL.md" target="_blank">
-              contexai-group-chief SKILL.md <span class="badge skill">skill</span></a></li>
-          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-org-chart.md" target="_blank">
-              Org Chart <span class="badge md">md</span></a></li>
-          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-agents-team-spec.md" target="_blank">
-              Agents Team Spec <span class="badge md">md</span></a></li>
-        </ul>
-      </div>
+    <div class="right">
+      <a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/contexai-group-chief/SKILL.md" target="_blank" class="btn">SKILL.md</a>
+      <a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-org-chart.md" target="_blank" class="btn">Org Chart</a>
+      <button class="btn solid" style="border:none; cursor:pointer; font-family:inherit;"
+        onclick="copyPrompt(this, 'Group Chief, [your ask here].&#10;Context: [client / mandate if known].&#10;Deadline: [if known].')">Copy invocation</button>
     </div>
   </div>
 
-  <!-- ─── BANKING PRACTICE ─── -->
-  <div id="banking-practice" class="practice-section banking">
-    <div class="practice-head">
-      <div>
-        <span class="name">Banking &amp; Financial Services</span>
-        <span class="meta" style="margin-left:12px;">Anchor practice &middot; backed by full plugin</span>
-        <div class="practice-progress">
-          <span>Buildout:</span>
-          <div class="bar"><div class="fill" style="width:100%;"></div></div>
-          <span class="pct">100%</span>
-          <span style="color:#8A8FA3;">&middot; Lead + Plugin + Live client team</span>
-        </div>
-      </div>
-      <code>G:\My Drive\ContexAi_Agents\Banking\</code>
-    </div>
-    <div class="practice-body">
+  <!-- 4 Practice tiles -->
+  <h2 class="section-title">Practices <span class="count">click any tile to open its detail page</span></h2>
 
-      <div class="card banking">
-        <span class="tag">PRACTICE LEAD</span>
-        <h2>banking-practice-lead</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">Thin wrapper over the contexai-banking-advisory plugin (3 Domain Leads, 9 SMEs).</p>
-        <ul>
-          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/banking-practice-lead/SKILL.md" target="_blank">
-              SKILL.md <span class="badge skill">skill</span></a></li>
-          <li>Plugin: <span class="badge plugin">contexai-banking-advisory</span></li>
-          <li>Routes to: Conventional · Islamic · Microfinance · IB · PE · Blockchain · Fintech · Startups</li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> Murabaha, Sukuk, IPO, M&amp;A, RAAST, neobank, IFRS 9, ICAAP, SBP, SECP NBFC, fund formation</p>
-        <div class="btn-row">
-          <button class="btn-copy" data-copy="banking-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-          <button class="btn-launch" data-log="banking-practice-lead">Log invocation</button>
-        </div>
-      </div>
+  <div class="practice-grid">
 
-      <div class="card client">
-        <span class="tag">CLIENT TEAM &middot; LIVE</span>
-        <h2>SMFB Agents Team</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
-          Sindh Microfinance Bank &mdash; full multi-agent team. SBP-regulated MFB.
-          PIBAS core banking, monthly close, quarterly reporting.
-        </p>
-        <ul>
-          <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/PIBAS/reporting_improvement_phase1/desktop/SMFB_Control_Center.html" target="_blank">
-              &raquo; Open SMFB Control Center <span class="badge live">LIVE</span></a></li>
-          <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/" target="_blank">
-              SMFB Agents Team folder <span class="badge">folder</span></a></li>
-          <li>Chief: <span class="badge skill">smfb-chief-of-staff</span> &middot; Plugin: <span class="badge plugin">smfb-agents-team</span></li>
-          <li><a href="https://github.com/DataJinipk/smfb-reporting-improvement-phase1" target="_blank">
-              GitHub repo <span class="badge">github</span></a></li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>When to route:</strong> any ask where the named client is SMFB &mdash; always routes to SMFB Chief, never a Practice Lead.</p>
+    <a href="practices/Banking.html" class="practice-tile banking">
+      <h2>Banking &amp; Financial Services</h2>
+      <div class="lede">Anchor practice. Backed by the contexai-banking-advisory plugin (3 Domain Leads, 9 SMEs). SMFB live client.</div>
+      <div class="stats">
+        <div><strong>1</strong> Lead</div>
+        <div><strong>9</strong> SMEs (in plugin)</div>
+        <div><strong>1</strong> live client team</div>
+        <div><strong>0</strong> active mandates</div>
       </div>
+      <div class="prog">
+        <div class="bar"><div class="fill" style="width:100%;"></div></div>
+        <span class="pct">100%</span>
+      </div>
+      <div class="cta">Open Banking practice page &rarr;</div>
+      <div class="folder">G:\My Drive\ContexAi_Agents\Banking\</div>
+    </a>
 
-    </div>
+    <a href="practices/Real_Estate.html" class="practice-tile real-est">
+      <h2>Real Estate &amp; Infrastructure</h2>
+      <div class="lede">REIT structuring, Pakistani RE law, corporate secretarial. TSH anchor client with Islamic REIT in intake.</div>
+      <div class="stats">
+        <div><strong>1</strong> Lead</div>
+        <div><strong>2</strong> SMEs</div>
+        <div><strong>1</strong> future client team</div>
+        <div><strong>1</strong> active mandate</div>
+      </div>
+      <div class="prog">
+        <div class="bar"><div class="fill" style="width:70%;"></div></div>
+        <span class="pct">70%</span>
+      </div>
+      <div class="cta">Open Real Estate practice page &rarr;</div>
+      <div class="folder">G:\My Drive\ContexAi_Agents\Real_Estate\</div>
+    </a>
 
-    <div class="practice-tasks">
-      <div class="head">
-        <h4>Banking practice tasks</h4>
-        <span class="summary">4 done &middot; 2 awaiting you &middot; 6 total</span>
+    <a href="practices/Energy.html" class="practice-tile energy">
+      <h2>Energy &amp; Petrochemicals</h2>
+      <div class="lede">Refining economics, petrochem value chain, asset integrity, capital projects, oil trading. Cnergyico anchor.</div>
+      <div class="stats">
+        <div><strong>1</strong> Lead</div>
+        <div><strong>5</strong> SMEs</div>
+        <div><strong>1</strong> future client team</div>
+        <div><strong>0</strong> active mandates</div>
       </div>
-      <div class="items">
-        <div class="item"><div class="check done">&check;</div><div class="label done">banking-practice-lead skill built</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">contexai-banking-advisory plugin connected</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">SMFB Agents Team operational (LIVE client)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">SMFB folder migrated to ContexAi_Agents\Banking\</div></div>
-        <div class="item"><div class="check user">!</div><div class="label">Install banking-practice-lead skill locally<span class="note"><code>.\agents\install.ps1</code></span></div></div>
-        <div class="item"><div class="check user">!</div><div class="label">First new banking engagement (non-SMFB)<span class="note">Acid test for the wrapper Lead</span></div></div>
+      <div class="prog">
+        <div class="bar"><div class="fill" style="width:55%;"></div></div>
+        <span class="pct">55%</span>
       </div>
-    </div>
+      <div class="cta">Open Energy practice page &rarr;</div>
+      <div class="folder">G:\My Drive\ContexAi_Agents\Energy\</div>
+    </a>
+
+    <a href="practices/Accreditation.html" class="practice-tile accred">
+      <h2>Professional Bodies &amp; Accreditation</h2>
+      <div class="lede">CIP suite: corporate architecture, IP &amp; academic, regulatory engagement, master synthesizer. SECP S42 is the critical path.</div>
+      <div class="stats">
+        <div><strong>1</strong> Lead</div>
+        <div><strong>4</strong> CIP SMEs</div>
+        <div><strong>1</strong> future client team</div>
+        <div><strong>S42</strong> critical path</div>
+      </div>
+      <div class="prog">
+        <div class="bar"><div class="fill" style="width:45%;"></div></div>
+        <span class="pct">45%</span>
+      </div>
+      <div class="cta">Open Accreditation practice page &rarr;</div>
+      <div class="folder">G:\My Drive\ContexAi_Agents\Accreditation\</div>
+    </a>
+
   </div>
 
-  <!-- ─── REAL ESTATE PRACTICE ─── -->
-  <div id="real-estate-practice" class="practice-section real-est">
-    <div class="practice-head">
-      <div>
-        <span class="name">Real Estate &amp; Infrastructure</span>
-        <span class="meta" style="margin-left:12px;">REIT structuring &middot; Pakistani RE law &middot; TSH anchor</span>
-        <div class="practice-progress">
-          <span>Buildout:</span>
-          <div class="bar"><div class="fill" style="width:70%;"></div></div>
-          <span class="pct">70%</span>
-          <span style="color:#8A8FA3;">&middot; Lead built &middot; TSH client team future &middot; ENG-2026-001 in intake</span>
-        </div>
-      </div>
-      <code>G:\My Drive\ContexAi_Agents\Real_Estate\</code>
-    </div>
-    <div class="practice-body">
+  <!-- Active Engagements -->
+  <h2 class="section-title">Active engagements</h2>
+  <table class="engagements">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Client</th>
+        <th>Mandate</th>
+        <th>Practice</th>
+        <th>Status</th>
+        <th>Open</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ENG-2026-001</strong></td>
+        <td>TSH Group</td>
+        <td>Islamic REIT structuring</td>
+        <td>Real Estate &times; Banking</td>
+        <td><span class="badge intake">INTAKE</span></td>
+        <td><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">folder</a></td>
+      </tr>
+    </tbody>
+  </table>
 
-      <div class="card reit">
-        <span class="tag">PRACTICE LEAD</span>
-        <h2>reit-practice-lead</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">2 SMEs: REIT &amp; tax structuring, Pakistani corporate secretary. Day-1 decision locked: Rental vs Development vs Hybrid REIT.</p>
-        <ul>
-          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/reit-practice-lead/SKILL.md" target="_blank">
-              SKILL.md <span class="badge skill">skill</span></a></li>
-          <li>SMEs: <span class="badge skill">reit-advisory-lead</span> <span class="badge skill">legal-corporate-secretary</span></li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> REIT, real estate, TSH, stamp duty, ITO §99/§99A, SECP REIT Regs, RUDA, SPV, trust deed</p>
-        <div class="btn-row">
-          <button class="btn-copy" data-copy="reit-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-          <button class="btn-launch" data-log="reit-practice-lead">Log invocation</button>
-        </div>
-      </div>
-
-      <div class="card client" style="border-top-color:#00C853;">
-        <span class="tag" style="color:#1B5E20;">CLIENT TEAM &middot; FUTURE</span>
-        <h2>TSH Agents Team</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
-          TSH Group &mdash; handled by REIT + Banking Practices (for Islamic structures). Graduates with 3+ mandates.
-        </p>
-        <ul>
-          <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/TSH_Control_Center.html" target="_blank">
-              &raquo; Open TSH Control Center <span class="badge future">FUTURE</span></a></li>
-          <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/" target="_blank">
-              TSH Agents Team folder <span class="badge">folder</span></a></li>
-          <li>Future Chief: <span class="badge future">tsh-chief-of-staff</span> &middot; Plugin: <span class="badge future">tsh-agents-team</span></li>
-          <li>Anchor mandate: <a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">ENG-2026-001 Islamic REIT</a></li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Graduation:</strong> 3+ active TSH mandates OR institutional-memory needs.</p>
-      </div>
-
-    </div>
-
-    <div class="practice-tasks">
-      <div class="head">
-        <h4>Real Estate practice tasks</h4>
-        <span class="summary">5 done &middot; 4 awaiting you &middot; 9 total</span>
-      </div>
-      <div class="items">
-        <div class="item"><div class="check done">&check;</div><div class="label done">reit-practice-lead skill built</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">reit-advisory-lead + legal-corporate-secretary SMEs documented</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">TSH Agents Team Control Center (placeholder)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">ENG-2026-001 engagement brief drafted</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">ENG-2026-001 intake agenda drafted</div></div>
-        <div class="item"><div class="check user">!</div><div class="label">Run setup-eng-2026-001.ps1<span class="note">Moves brief + agenda into OneDrive engagement folder</span></div></div>
-        <div class="item"><div class="check user">!</div><div class="label">TSH sponsor intake call<span class="note">30 min &middot; lock the 8 open questions</span></div></div>
-        <div class="item"><div class="check user">!</div><div class="label">Brief both Practice Leads after intake<span class="note">REIT stream + Banking (Islamic) stream</span></div></div>
-        <div class="item"><div class="check user">!</div><div class="label">Phase 1 deliverable: structuring memo<span class="note">5 pages, decision-grade, Day +14 of kick-off</span></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ─── ENERGY & PETROCHEM PRACTICE ─── -->
-  <div id="energy-practice" class="practice-section energy">
-    <div class="practice-head">
-      <div>
-        <span class="name">Energy &amp; Petrochemicals</span>
-        <span class="meta" style="margin-left:12px;">5 SMEs &middot; Cnergyico anchor</span>
-        <div class="practice-progress">
-          <span>Buildout:</span>
-          <div class="bar"><div class="fill" style="width:55%;"></div></div>
-          <span class="pct">55%</span>
-          <span style="color:#8A8FA3;">&middot; Lead + 5 SMEs built &middot; Cnergyico client team future &middot; 0 mandates</span>
-        </div>
-      </div>
-      <code>G:\My Drive\ContexAi_Agents\Energy\</code>
-    </div>
-    <div class="practice-body">
-
-      <div class="card cnergyico">
-        <span class="tag" style="color:#F26122;">PRACTICE LEAD</span>
-        <h2 style="color:#0D1B3F;">energy-petrochem-lead</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">Orchestrates 5 SMEs: refining economics, petrochem value chain, asset integrity, capital projects, trading.</p>
-        <ul>
-          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
-              SKILL.md <span class="badge skill" style="background:#FFE3D6;color:#F26122;">skill</span></a></li>
-          <li>SMEs: <span class="badge skill" style="background:#FFE3D6;color:#F26122;">margin-architect</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">alchemist</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">sentinel</span></li>
-          <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill" style="background:#FFE3D6;color:#F26122;">constructor</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">trader</span></li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> refinery, crude slate, FCC, BTX, polyolefins, HAZOP, EPC, FEED, Brent/WTI/Dubai, freight, Cnergyico, OGRA, OMC</p>
-        <div class="btn-row">
-          <button class="btn-copy" data-copy="energy-petrochem-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-          <button class="btn-launch" data-log="energy-petrochem-lead">Log invocation</button>
-        </div>
-      </div>
-
-      <div class="card cnergyico-client">
-        <span class="tag" style="color:#F26122;">CLIENT TEAM &middot; FUTURE</span>
-        <h2 style="color:#0D1B3F;">Cnergyico Agents Team</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
-          <strong style="color:#0D1B3F;">Cnergyico PK</strong> &mdash; currently handled by the Energy Practice.
-          Graduates for plant-specific institutional context.
-        </p>
-        <ul>
-          <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/Cnergyico_Control_Center.html" target="_blank">
-              &raquo; Open Cnergyico Control Center <span class="badge future" style="background:#FFE3D6;color:#F26122;">FUTURE</span></a></li>
-          <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/" target="_blank">
-              Cnergyico Agents Team folder <span class="badge">folder</span></a></li>
-          <li>Future Chief: <span class="badge future" style="background:#FFE3D6;color:#F26122;">cnergyico-chief-of-staff</span></li>
-          <li>Future Plugin: <span class="badge future" style="background:#FFE3D6;color:#F26122;">cnergyico-agents-team</span></li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong style="color:#0D1B3F;">Graduation:</strong> ongoing retainer or 3+ active Cnergyico mandates.</p>
-      </div>
-
-    </div>
-
-    <div class="practice-tasks">
-      <div class="head">
-        <h4>Energy &amp; Petrochem practice tasks</h4>
-        <span class="summary">7 done &middot; 3 awaiting first mandate &middot; 10 total</span>
-      </div>
-      <div class="items">
-        <div class="item"><div class="check done">&check;</div><div class="label done">energy-petrochem-lead skill built</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">margin-architect SME (refining economics)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">alchemist SME (petrochem value chain)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">sentinel SME (asset integrity)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">constructor SME (capital projects)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">trader SME (oil trading &amp; logistics)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">Cnergyico Agents Team Control Center (placeholder)</div></div>
-        <div class="item"><div class="check pending">&middot;</div><div class="label">First Cnergyico mandate &mdash; intake</div></div>
-        <div class="item"><div class="check pending">&middot;</div><div class="label">Second Cnergyico mandate</div></div>
-        <div class="item"><div class="check pending">&middot;</div><div class="label">Third mandate &rarr; team graduates</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ─── ACCREDITATION PRACTICE ─── -->
-  <div id="accred-practice" class="practice-section accred">
-    <div class="practice-head">
-      <div>
-        <span class="name">Professional Bodies &amp; Accreditation</span>
-        <span class="meta" style="margin-left:12px;">4 CIP SMEs &middot; CIP anchor &middot; SECP §42 critical path</span>
-        <div class="practice-progress">
-          <span>Buildout:</span>
-          <div class="bar"><div class="fill" style="width:45%;"></div></div>
-          <span class="pct">45%</span>
-          <span style="color:#8A8FA3;">&middot; Lead + 4 SMEs built &middot; CIP client team future &middot; SECP §42 blocker</span>
-        </div>
-      </div>
-      <code>G:\My Drive\ContexAi_Agents\Accreditation\</code>
-    </div>
-    <div class="practice-body">
-
-      <div class="card accred">
-        <span class="tag" style="color:#6A1B9A;">PRACTICE LEAD</span>
-        <h2 style="color:#6A1B9A;">accreditation-practice-lead</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">Orchestrates 4 CIP-aligned SMEs &mdash; corporate architecture, IP &amp; academic, regulatory engagement, master synthesizer.</p>
-        <ul>
-          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/accreditation-practice-lead/SKILL.md" target="_blank">
-              SKILL.md <span class="badge skill">skill</span></a></li>
-          <li>SMEs: <span class="badge skill">cip-master-plan</span> <span class="badge skill">cip-corporate-secp</span></li>
-          <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">cip-ip-academic</span> <span class="badge skill">cip-regulatory-strategy</span></li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> CIP, CCP, Section 42 NPO, HEC, IPO-Pakistan, SBP/PBA endorsement, designation</p>
-        <div class="btn-row">
-          <button class="btn-copy" data-copy="accreditation-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-          <button class="btn-launch" data-log="accreditation-practice-lead">Log invocation</button>
-        </div>
-      </div>
-
-      <div class="card client" style="border-top-color:#9C27B0;">
-        <span class="tag" style="color:#6A1B9A;">CLIENT TEAM &middot; FUTURE</span>
-        <h2 style="color:#6A1B9A;">CIP Agents Team</h2>
-        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
-          <strong style="color:#6A1B9A;">Credit Institute of Pakistan</strong> &mdash; flagship Phase-1 engagement.
-          Graduates once Section 42 license granted &amp; institute is live.
-        </p>
-        <ul>
-          <li><a href="file:///G:/My Drive/ContexAi_Agents/Accreditation/CIP Agents Team/" target="_blank">
-              CIP Agents Team folder <span class="badge">folder</span></a></li>
-          <li>Future Chief: <span class="badge future">cip-chief-of-staff</span></li>
-          <li>Future Plugin: <span class="badge future">cip-agents-team</span></li>
-        </ul>
-        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong style="color:#6A1B9A;">Critical path:</strong> SECP Section 42 approval (6–9 months).</p>
-      </div>
-
-    </div>
-
-    <div class="practice-tasks">
-      <div class="head">
-        <h4>Accreditation practice tasks</h4>
-        <span class="summary">6 done &middot; 4 on the critical path &middot; 10 total</span>
-      </div>
-      <div class="items">
-        <div class="item"><div class="check done">&check;</div><div class="label done">accreditation-practice-lead skill built</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">cip-master-plan SME (project synthesizer)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">cip-corporate-secp SME (Section 42, MoA/AoA)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">cip-ip-academic SME (IPO-Pakistan, HEC)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">cip-regulatory-strategy SME (SBP/PBA endorsement)</div></div>
-        <div class="item"><div class="check done">&check;</div><div class="label done">CIP Agents Team Control Center (placeholder)</div></div>
-        <div class="item"><div class="check user">!</div><div class="label">SECP §42 incorporation filing<span class="note">CRITICAL PATH &middot; 6&ndash;9 months &middot; sequences everything else</span></div></div>
-        <div class="item"><div class="check pending">&middot;</div><div class="label">IPO-Pakistan trademark CCP designation<span class="note">After §42 status confirmed</span></div></div>
-        <div class="item"><div class="check pending">&middot;</div><div class="label">SBP / PBA endorsement engagement<span class="note">After regulator briefing sequence</span></div></div>
-        <div class="item"><div class="check pending">&middot;</div><div class="label">First CCP cohort &rarr; team graduates</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ─── ENGAGEMENT ROUTING (interactive) ─── -->
-  <h2 id="routing" class="section-title">&#128269; Engagement Routing
-    <span class="meta">&mdash; what would the Group Chief do?</span></h2>
+  <!-- Engagement Routing widget -->
+  <h2 class="section-title">Engagement routing
+    <span class="count">— test which Lead the Group Chief would pick</span></h2>
   <div class="routing-box">
     <label for="routing-input">Describe an ask in plain English:</label>
     <textarea id="routing-input" placeholder="e.g. 'TSH wants a Shariah-compliant REIT' or 'Cnergyico's gasoline crack is crushing us'"></textarea>
-    <div style="margin-top:10px; display:flex; gap:8px;">
+    <div style="margin-top:12px; display:flex; gap:10px;">
       <button class="btn-launch" onclick="runRouting()">Route this ask</button>
-      <button class="btn-copy" onclick="document.getElementById('routing-input').value=''; document.getElementById('routing-result').classList.remove('show');">Clear</button>
+      <button class="btn-secondary" onclick="document.getElementById('routing-input').value=''; document.getElementById('routing-result').classList.remove('show');">Clear</button>
     </div>
     <div id="routing-result" class="routing-result"></div>
   </div>
 
-  <!-- ─── ACTIVE ENGAGEMENTS ─── -->
-  <h2 id="engagements" class="section-title">&#128221; Active Engagements
-    <span class="meta">&mdash; live mandates &amp; intakes</span></h2>
-  <div class="card" style="border-top-color:#00C853; margin-bottom:24px;">
-    <table style="width:100%; border-collapse:collapse; font-size:13px;">
-      <thead>
-        <tr style="background:#0B1120; color:white;">
-          <th style="text-align:left; padding:8px;">ID</th>
-          <th style="text-align:left; padding:8px;">Client</th>
-          <th style="text-align:left; padding:8px;">Mandate</th>
-          <th style="text-align:left; padding:8px;">Practice</th>
-          <th style="text-align:left; padding:8px;">Status</th>
-          <th style="text-align:left; padding:8px;">Open</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding:8px; border-top:1px solid #eee;"><strong>ENG-2026-001</strong></td>
-          <td style="padding:8px; border-top:1px solid #eee;">TSH Group</td>
-          <td style="padding:8px; border-top:1px solid #eee;">Islamic REIT structuring</td>
-          <td style="padding:8px; border-top:1px solid #eee;">Real Estate × Banking</td>
-          <td style="padding:8px; border-top:1px solid #eee;"><span class="badge pend">INTAKE</span></td>
-          <td style="padding:8px; border-top:1px solid #eee;">
-            <a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">folder</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="font-size:11px; color:#595959; margin:12px 0 0 0;">
-      Live engagements pull from <code>engagements/registry.json</code> in R2 (see
-      <a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/dashboard-deploy.md" target="_blank">dashboard-deploy.md</a>
-      §6). <a href="https://contexai.org/dashboard.html" target="_blank">&raquo; Open Ops Dashboard for live KPIs</a>
-    </p>
-  </div>
-
-  <!-- ─── SHARED SERVICES (compact chips) ─── -->
-  <h2 class="section-title">&#128296; Shared Services
-    <span class="meta">&mdash; cross-domain skills called by any Practice Lead or Client Team</span></h2>
-  <div class="card shared" style="margin-bottom:24px;">
-    <div class="chip-group">
-      <span class="group-label">Doc control</span>
-      <span class="chip">awa-agent</span>
-    </div>
-    <div class="chip-group">
-      <span class="group-label">Modeling</span>
-      <span class="chip">smfb-financial-expert</span>
-      <span class="chip">xlsx</span>
-    </div>
-    <div class="chip-group">
-      <span class="group-label">Decks &amp; docs</span>
-      <span class="chip">pptx</span>
-      <span class="chip">docx</span>
-      <span class="chip">pdf</span>
-      <span class="chip">canvas-design</span>
-    </div>
-    <div class="chip-group">
-      <span class="group-label">Core banking</span>
-      <span class="chip">pibas-expert</span>
-    </div>
-    <div class="chip-group">
-      <span class="group-label">Regulatory &amp; legal</span>
-      <span class="chip">legal-corporate-secretary</span>
-      <span class="chip">contexai-regulatory-pakistan</span>
-    </div>
-    <div class="chip-group">
-      <span class="group-label">Brand &amp; comms</span>
-      <span class="chip">brand-guidelines</span>
-      <span class="chip">internal-comms</span>
-    </div>
-  </div>
-
-  <!-- ─── ACTIVITY LOG (compact) ─── -->
-  <h2 class="section-title">Recent agent activity
-    <span class="meta">&mdash; this browser only, localStorage</span></h2>
-  <div class="card shared" style="margin-bottom:24px;">
-    <div id="activity-log" class="activity-list">
-      <div class="empty">No invocations logged yet. Click "Log invocation" on any Practice Lead tile.</div>
-    </div>
-    <div class="btn-row">
-      <button class="btn-copy" onclick="clearActivity()">Clear log</button>
-      <button class="btn-copy" onclick="exportActivity()">Export CSV</button>
-    </div>
+  <!-- Shared services - single line -->
+  <div class="shared-bar">
+    <div class="label">&#128296; Shared services available to every practice</div>
+    <span class="chip">awa-agent</span>
+    <span class="chip">smfb-financial-expert</span>
+    <span class="chip">xlsx</span>
+    <span class="chip">pptx</span>
+    <span class="chip">docx</span>
+    <span class="chip">pdf</span>
+    <span class="chip">pibas-expert</span>
+    <span class="chip">legal-corporate-secretary</span>
+    <span class="chip">contexai-regulatory-pakistan</span>
+    <span class="chip">brand-guidelines</span>
+    <span class="chip">internal-comms</span>
+    <span class="chip">canvas-design</span>
   </div>
 
 </div>
@@ -678,169 +354,66 @@ Deadline: [if known].</pre>
 <div id="toast" class="toast"></div>
 
 <script>
-// ─── Copy-to-clipboard ────────────────────────────────────────────────────
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('.btn-copy');
-  if (!btn) return;
-  const text = btn.getAttribute('data-copy');
-  if (!text) return;
+function copyPrompt(btn, text) {
   navigator.clipboard.writeText(text.replace(/&#10;/g, '\n')).then(() => {
-    showToast('Copied to clipboard');
-  }).catch(() => {
-    showToast('Copy failed — select manually');
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = orig, 1500);
   });
-});
-
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 1800);
 }
 
-// ─── Activity log (localStorage) ──────────────────────────────────────────
-const LOG_KEY = 'contexai_agent_activity';
-
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('.btn-launch[data-log]');
-  if (!btn) return;
-  const agent = btn.getAttribute('data-log');
-  logInvocation(agent);
-});
-
-function logInvocation(agent, note) {
-  const log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
-  log.unshift({ agent, at: new Date().toISOString(), note: note || '' });
-  localStorage.setItem(LOG_KEY, JSON.stringify(log.slice(0, 50)));
-  renderActivity();
-  showToast(`Logged: ${agent}`);
-}
-
-function renderActivity() {
-  const log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
-  const el = document.getElementById('activity-log');
-  if (!log.length) {
-    el.innerHTML = '<div class="empty">No invocations logged yet. Click "Log invocation" on any Practice Lead tile.</div>';
-    return;
-  }
-  el.innerHTML = log.map(item => {
-    const d = new Date(item.at);
-    const when = d.toLocaleDateString(undefined, {month:'short',day:'numeric'}) + ' ' +
-                 d.toLocaleTimeString(undefined, {hour:'2-digit',minute:'2-digit'});
-    return `<div class="item">
-      <span><strong>${escapeHtml(item.agent)}</strong>${item.note ? ' — ' + escapeHtml(item.note) : ''}</span>
-      <span class="when">${when}</span>
-    </div>`;
-  }).join('');
-}
-
-function clearActivity() {
-  if (!confirm('Clear the activity log on this browser?')) return;
-  localStorage.removeItem(LOG_KEY);
-  renderActivity();
-}
-
-function exportActivity() {
-  const log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
-  if (!log.length) { showToast('Nothing to export'); return; }
-  const csv = 'agent,timestamp,note\n' + log.map(r =>
-    `"${r.agent}","${r.at}","${(r.note || '').replace(/"/g,'""')}"`).join('\n');
-  const blob = new Blob([csv], {type:'text/csv'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `contexai-agent-activity-${new Date().toISOString().slice(0,10)}.csv`;
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-
-function escapeHtml(s) {
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-
-// ─── Routing heuristic ────────────────────────────────────────────────────
 const ROUTING_RULES = [
   { match: /\b(smfb|sindh microfinance|sindh micro\s?finance)\b/i,
-    lead: 'smfb-chief-of-staff',
-    reason: 'Named client SMFB has its own client team. Always routes to the SMFB Chief, never to a Practice Lead.',
-    practice: 'Client Team' },
-  { match: /\b(reit|real estate|tsh|stamp duty|ito\s?§?\s?99|secp reit|spv|trust deed|ruda|dha|bahria|cvt|cgt on real)\b/i,
-    lead: 'reit-practice-lead',
-    reason: 'Real Estate / REIT signal. First Day-1 decision the Lead locks: Rental vs Development vs Hybrid REIT.',
-    practice: 'Real Estate & Infrastructure' },
+    lead: 'smfb-chief-of-staff', practice: 'Client Team',
+    reason: 'Named client SMFB has its own client team. Always routes to SMFB Chief, never a Practice Lead.' },
+  { match: /\b(reit|real estate|tsh|stamp duty|ito\s?S?\s?99|secp reit|spv|trust deed|ruda|dha|bahria|cvt|cgt on real)\b/i,
+    lead: 'reit-practice-lead', practice: 'Real Estate',
+    reason: 'Real Estate / REIT signal. Day-1 decision: Rental vs Development vs Hybrid REIT.' },
   { match: /\b(refinery|crude slate|fcc|hydrocracker|coker|btx|polyolefin|ethylene|propylene|naphtha|polymer|hazop|api 5(10|70|650|653)|rbi|epc|feed|fidic|turnaround|t&i|brent|wti|dubai|crack spread|vlcc|bunker|cnergyico|ogra)\b/i,
-    lead: 'energy-petrochem-lead',
-    reason: 'Energy / Petrochemicals signal. Lead routes to one of 5 SMEs (margin-architect, alchemist, sentinel, constructor, trader).',
-    practice: 'Energy & Petrochemicals' },
+    lead: 'energy-petrochem-lead', practice: 'Energy & Petrochemicals',
+    reason: 'Energy signal. Lead routes to one of 5 SMEs (margin-architect, alchemist, sentinel, constructor, trader).' },
   { match: /\b(cip|certified credit professional|ccp\b|section 42|hec|ipo[- ]pakistan|trademark.*designation|professional body|accreditation|pba endorsement)\b/i,
-    lead: 'accreditation-practice-lead',
-    reason: 'Professional Bodies & Accreditation. Critical path: SECP Section 42 license sequences everything else.',
-    practice: 'Professional Bodies & Accreditation' },
+    lead: 'accreditation-practice-lead', practice: 'Accreditation',
+    reason: 'Critical path: SECP Section 42 license sequences everything else.' },
   { match: /\b(murabaha|sukuk|ijarah|musharakah|shariah|islamic bank|takaful|aaoifi|ibi)\b/i,
-    lead: 'banking-practice-lead',
-    reason: 'Islamic Banking signal. Routes through banking-practice-lead → banking-advisory plugin → Islamic Banking SME.',
-    practice: 'Banking & Financial Services' },
+    lead: 'banking-practice-lead', practice: 'Banking',
+    reason: 'Islamic Banking signal. Routes through banking-practice-lead → banking-advisory plugin → Islamic Banking SME.' },
   { match: /\b(ipo|m&a|merger|acquisition|valuation|dcf|fund formation|private equity|venture|due diligence)\b/i,
-    lead: 'banking-practice-lead',
-    reason: 'Capital Markets signal. Routes through banking-practice-lead → banking-advisory plugin → Capital Markets domain.',
-    practice: 'Banking & Financial Services' },
+    lead: 'banking-practice-lead', practice: 'Banking',
+    reason: 'Capital Markets signal. Routes through banking-practice-lead → banking-advisory plugin → Capital Markets domain.' },
   { match: /\b(neobank|fintech|raast|emi license|psp license|tokenisation|tokenization|stablecoin|cbdc|blockchain|web3|defi)\b/i,
-    lead: 'banking-practice-lead',
-    reason: 'Innovation domain (Fintech / Blockchain / Startups).',
-    practice: 'Banking & Financial Services' },
+    lead: 'banking-practice-lead', practice: 'Banking',
+    reason: 'Innovation domain (Fintech / Blockchain / Startups).' },
   { match: /\b(pibas|core banking|eod|month-end|trial balance|format-smfb|sbp prudential|ifrs ?9|icaap|basel|car\b)\b/i,
-    lead: 'banking-practice-lead',
-    reason: 'Banking operations / regulatory signal. If SMFB is the client, routes to SMFB Chief.',
-    practice: 'Banking & Financial Services' },
-  { match: /\b(file|folder|where did i put|organise|organize|naming|version control|engagement folder)\b/i,
-    lead: 'awa-agent',
-    reason: 'Document control / file management — goes direct to Document Controller.',
-    practice: 'Shared Services' },
-  { match: /\b(spreadsheet|model|excel|xlsx|projection|three[- ]statement)\b/i,
-    lead: 'smfb-financial-expert / xlsx',
-    reason: 'Financial modeling — goes direct to the modeling shared service.',
-    practice: 'Shared Services' },
-  { match: /\b(deck|slide|pitch book|presentation|board pack)\b/i,
-    lead: 'pptx',
-    reason: 'Deliverable production — goes direct to the deck shared service.',
-    practice: 'Shared Services' },
+    lead: 'banking-practice-lead', practice: 'Banking',
+    reason: 'Banking operations / regulatory signal. If SMFB is the client, routes to SMFB Chief.' },
 ];
 
 function runRouting() {
   const ask = document.getElementById('routing-input').value.trim();
   const out = document.getElementById('routing-result');
   if (!ask) { out.innerHTML = '<em>Type an ask above first.</em>'; out.classList.add('show'); return; }
-
   const matches = ROUTING_RULES.filter(r => r.match.test(ask));
-
   let html;
   if (matches.length === 0) {
-    html = `<div class="lead">No clear single-domain signal &mdash; Group Chief runs <strong>intake protocol</strong>.</div>
-            <div class="reason">The Chief asks for the 5-field brief (Engagement, Goal, Inputs, Deliverable, Deadline) before delegating. Cross-domain asks get paired Leads.</div>`;
+    html = '<div class="lead">No clear single-domain signal &mdash; Group Chief runs <strong>intake protocol</strong>.</div>' +
+           '<div class="reason">The Chief asks for the 5-field brief before delegating. Cross-domain asks get paired Leads.</div>';
   } else if (matches.length === 1) {
     const m = matches[0];
-    html = `<div class="lead">&rarr; <code>${m.lead}</code> &middot; ${m.practice}</div>
-            <div class="reason">${m.reason}</div>`;
+    html = `<div class="lead">&rarr; <code>${m.lead}</code> &middot; ${m.practice}</div><div class="reason">${m.reason}</div>`;
   } else {
     const leads = matches.map(m => `<code>${m.lead}</code>`).join(' + ');
     const practices = [...new Set(matches.map(m => m.practice))].join(' &times; ');
-    html = `<div class="lead">&rarr; CROSS-PRACTICE: ${leads}</div>
-            <div class="reason"><strong>Practices touched:</strong> ${practices}.<br>
-              The Group Chief delegates to each Lead in parallel and synthesises the outputs. Leads don't coordinate directly &mdash; all coordination flows through the Chief.<br><br>
-              <strong>Reasoning:</strong><br>
-              ${matches.map(m => `&bull; ${m.reason}`).join('<br>')}
-            </div>`;
+    html = `<div class="lead">&rarr; CROSS-PRACTICE: ${leads}</div>` +
+           `<div class="reason"><strong>Practices touched:</strong> ${practices}.<br>` +
+           `The Group Chief delegates to each Lead in parallel and synthesises.<br><br>` +
+           `<strong>Reasoning:</strong><br>${matches.map(m => '&bull; ' + m.reason).join('<br>')}</div>`;
   }
-
   out.innerHTML = html;
   out.classList.add('show');
-
-  logInvocation('engagement-routing', ask.length > 60 ? ask.slice(0, 57) + '...' : ask);
 }
-
-// ─── Bootstrap ────────────────────────────────────────────────────────────
-renderActivity();
 </script>
 
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

@@ -6,7 +6,7 @@
 
 This spec defines *how* the agents collaborate — the routing protocol, the delegation contract, the synthesis pattern, and the engagement lifecycle. The companion `contexai-org-chart.md` defines *who* is in the team and their reporting lines.
 
-If you only have time to read one section, read **§3 The Delegation Protocol** — that's the core contract every agent in the team is built around.
+If you only have time to read one section, read **S3 The Delegation Protocol** — that's the core contract every agent in the team is built around.
 
 ---
 

@@ -74,7 +74,7 @@ Each Practice has a dedicated **Practice Lead** skill (built specifically for Co
 | --- | --- | --- | --- |
 | **Banking & Financial Services** | `banking-practice-lead` | `contexai-chief-of-staff` (banking-advisory plugin) → 3 Domain Leads → 9 SMEs | Anything banking, financial sector, SBP/SECP, regulatory, financial-services strategy |
 | **Energy & Petrochemicals** | `energy-petrochem-lead` | `margin-architect`, `alchemist`, `sentinel`, `constructor`, `trader` | Refinery margins, crude slate, FCC/coker, HAZOP, EPC project, oil trading, downstream marketing |
-| **Real Estate & Infrastructure** | `reit-practice-lead` | `reit-advisory-lead`, `legal-corporate-secretary` | REIT structuring, IM/Board Deck for RE deals, stamp duty, ITO §99, TSH project work |
+| **Real Estate & Infrastructure** | `reit-practice-lead` | `reit-advisory-lead`, `legal-corporate-secretary` | REIT structuring, IM/Board Deck for RE deals, stamp duty, ITO S99, TSH project work |
 | **Professional Bodies & Accreditation** | `accreditation-practice-lead` | `cip-master-plan`, `cip-corporate-secp`, `cip-ip-academic`, `cip-regulatory-strategy` | CIP, CCP designation, Section 42 NPO for institutes, HEC accreditation strategy |
 
 The Practice Lead pattern is uniform — every Lead follows the same five-field delegation contract and synthesis template. See `docs/contexai-agents-team-spec.md` for the architectural pattern.
@@ -140,7 +140,7 @@ This is the heuristic the Group Chief uses when an ask comes in.
 | Mentions Murabaha, Sukuk, Islamic banking, IBI | `banking-practice-lead` → banking-advisory plugin |
 | Mentions IPO, M&A, valuation, fund formation | `banking-practice-lead` → Capital Markets domain |
 | Mentions tokenisation, RAAST, EMI, neobank | `banking-practice-lead` → Innovation domain |
-| Mentions REIT, real estate, TSH, stamp duty, ITO §99 | `reit-practice-lead` |
+| Mentions REIT, real estate, TSH, stamp duty, ITO S99 | `reit-practice-lead` |
 | Mentions SPV / JV structuring, RUDA, DHA, Bahria | `reit-practice-lead` |
 | Mentions refinery, crude, FCC, BTX | `energy-petrochem-lead` |
 | Mentions HAZOP, mechanical integrity, RBI | `energy-petrochem-lead` → Sentinel |

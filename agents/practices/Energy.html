@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Energy & Petrochemicals — ContexAi Practice</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#F7F8FA;
+    margin:0; padding:0; color:#0B1120; font-size:21px; line-height:1.7; }
+  header { background:linear-gradient(135deg,#0D1B3F 0%,#F26122 100%);
+    color:white; padding:28px 40px; }
+  header .back { color:rgba(255,255,255,0.85); text-decoration:none; font-size:14px; }
+  header .back:hover { color:white; }
+  header h1 { margin:8px 0 4px 0; font-size:42px; font-weight:600; letter-spacing:-0.01em; }
+  header .sub { opacity:0.92; font-size:20px; }
+  header .folder { display:inline-block; margin-top:10px;
+    background:rgba(255,255,255,0.18); padding:4px 12px; border-radius:14px;
+    font-size:15px; font-family:Consolas,monospace; }
+  .container { max-width:1200px; margin:0 auto; padding:28px 40px; }
+  .progress-strip { background:white; padding:16px 20px; border-radius:8px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); margin-bottom:24px;
+    display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+    border-left:5px solid #F26122; }
+  .progress-strip .label { font-size:17px; color:#595959; font-weight:600; }
+  .progress-strip .bar { flex:1; min-width:200px; height:10px;
+    background:#E5E7EB; border-radius:5px; overflow:hidden; }
+  .progress-strip .fill { height:100%; background:#F26122; }
+  .progress-strip .pct { font-size:22px; font-weight:700; color:#0D1B3F; }
+  .progress-strip .note { font-size:16px; color:#8A8FA3; }
+  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px; }
+  @media (max-width:900px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
+  .kpi-tile { background:white; padding:16px 18px; border-radius:8px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); border-left:4px solid #F26122; }
+  .kpi-tile .label { font-size:14px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#8A8FA3; font-weight:600; }
+  .kpi-tile .value { font-size:40px; font-weight:700; color:#0D1B3F; margin-top:6px; line-height:1.2; }
+  .kpi-tile .sub { font-size:17px; color:#595959; margin-top:6px; }
+  .section-title { font-size:32px; font-weight:600; margin:32px 0 16px 0; color:#0D1B3F; }
+  .section-title .count { font-size:13px; color:#8A8FA3; font-weight:500; margin-left:8px; }
+  .card { background:white; border-radius:10px; padding:22px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:4px solid #F26122;
+    margin-bottom:20px; }
+  .card.client { border-top:4px solid #F26122; border-left:4px solid #0D1B3F; }
+  .card .tag { font-size:13px; text-transform:uppercase; letter-spacing:0.06em;
+    color:#F26122; font-weight:700; }
+  .card h2 { margin:10px 0 14px 0; font-size:32px; font-weight:600; color:#0D1B3F; }
+  .card .lede { font-size:20px; color:#3F4756; margin:0 0 18px 0; line-height:1.65; }
+  .card ul { list-style:none; padding:0; margin:0; }
+  .card li { padding:14px 0; border-bottom:1px solid #F0F0F0; font-size:20px; }
+  .card li:last-child { border-bottom:none; }
+  .card a { color:#0B1120; text-decoration:none; display:flex;
+    justify-content:space-between; align-items:center; gap:8px; }
+  .card a:hover { color:#F26122; }
+  .badge { font-size:14px; padding:3px 9px; border-radius:11px;
+    background:#FFE3D6; color:#F26122; font-weight:600; white-space:nowrap; }
+  .badge.live   { background:#C8E6C9; color:#1B5E20; }
+  .badge.future { background:#FFE3D6; color:#F26122; }
+  .badge.skill  { background:#FFE3D6; color:#F26122; font-family:Consolas,monospace; }
+  pre.cmd { background:#0F1331; color:#FF9966; padding:14px 18px;
+    border-radius:6px; font-family:Consolas,monospace; font-size:13px;
+    overflow-x:auto; white-space:pre-wrap; word-break:break-word; }
+  .btn-row { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+  .btn-copy { font-size:12px; padding:6px 12px; border-radius:5px;
+    border:1px solid #ddd; background:white; cursor:pointer;
+    font-family:inherit; font-weight:500; color:#0B1120; }
+  .btn-copy:hover { background:#FFE3D6; border-color:#F26122; color:#F26122; }
+  .sme-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin:12px 0; }
+  @media (max-width:1000px) { .sme-grid { grid-template-columns:repeat(2,1fr); } }
+  .sme-tile { background:#FFFBF7; border-radius:6px; padding:10px 12px;
+    border-left:3px solid #F26122; }
+  .sme-tile .name { font-size:16px; font-weight:700; color:#0D1B3F; font-family:Consolas,monospace; }
+  .sme-tile .desc { font-size:14px; color:#595959; margin-top:3px; }
+  .tasks { background:#FAFBFC; border-radius:8px; padding:18px 20px;
+    border-left:3px solid #F26122; margin:24px 0; }
+  .tasks .head { display:flex; justify-content:space-between;
+    align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
+  .tasks .head h3 { margin:0; font-size:18px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#595959; font-weight:600; }
+  .tasks .head .summary { font-size:16px; color:#8A8FA3; }
+  .tasks .items { display:grid; grid-template-columns:repeat(2,1fr); gap:6px 24px; }
+  @media (max-width:800px) { .tasks .items { grid-template-columns:1fr; } }
+  .tasks .item { display:flex; align-items:flex-start; gap:12px;
+    padding:8px 0; font-size:17px; }
+  .tasks .check { width:22px; height:22px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:12px; flex-shrink:0; font-weight:700; margin-top:1px; }
+  .tasks .check.done { background:#F26122; color:white; }
+  .tasks .check.user { background:#FFC400; color:#5C4500; }
+  .tasks .check.pending { background:#F2F2F2; color:#8A8FA3; }
+  .tasks .label.done { text-decoration:line-through; color:#8A8FA3; }
+  .tasks .label .note { font-size:14px; color:#8A8FA3; display:block; margin-top:2px; }
+  .triggers { background:white; border-radius:8px; padding:18px 20px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); margin:24px 0; }
+  .triggers h3 { margin:0 0 12px 0; font-size:18px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#595959; }
+  .triggers p { font-size:19px; color:#3F4756; margin:10px 0; line-height:1.65; }
+  .triggers .chip { display:inline-block; background:#FFE3D6; color:#F26122;
+    padding:3px 10px; border-radius:12px; font-size:12px; margin:3px;
+    font-family:Consolas,monospace; }
+  footer { background:#0D1B3F; color:#FFE3D6; padding:18px 40px;
+    text-align:center; font-size:16px; }
+  footer a { color:#FFE3D6; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="../ContexAi_Control_Center.html" class="back">&larr; ContexAi Control Center</a>
+  <h1>Energy &amp; Petrochemicals</h1>
+  <div class="sub">5 specialist SMEs &middot; Cnergyico PK anchor client &middot; Refining, petrochem, asset integrity, capital projects, trading</div>
+  <span class="folder">G:\My Drive\ContexAi_Agents\Energy\</span>
+</header>
+
+<div class="container">
+
+  <div class="progress-strip">
+    <span class="label">Practice buildout:</span>
+    <div class="bar"><div class="fill" style="width:55%;"></div></div>
+    <span class="pct">55%</span>
+    <span class="note">Lead + 5 SMEs built &middot; Cnergyico client team future &middot; 0 active mandates</span>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-tile">
+      <div class="label">Practice Lead</div>
+      <div class="value">1 LIVE</div>
+      <div class="sub">energy-petrochem-lead</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="label">SMEs</div>
+      <div class="value">5</div>
+      <div class="sub">Bench fully built</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="label">Client teams</div>
+      <div class="value">1 FUTURE</div>
+      <div class="sub">Cnergyico Agents Team</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="label">Active engagements</div>
+      <div class="value">0</div>
+      <div class="sub">Awaiting first mandate</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Practice Lead</h2>
+
+  <div class="card">
+    <span class="tag">PRACTICE LEAD &middot; LIVE</span>
+    <h2>energy-petrochem-lead</h2>
+    <p class="lede">Orchestrates the 5-SME bench below. Multi-SME pairing is the norm:
+      a crude-slate change touches <code>margin-architect</code> (yields, margins),
+      <code>sentinel</code> (corrosivity, metallurgy), and <code>trader</code> (procurement timing).</p>
+    <ul>
+      <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+          SKILL.md <span class="badge skill">skill</span></a></li>
+    </ul>
+
+    <h3 style="margin:18px 0 8px 0; font-size:14px; color:#0D1B3F;">The 5-SME bench</h3>
+    <div class="sme-grid">
+      <div class="sme-tile">
+        <div class="name">margin-architect</div>
+        <div class="desc">Refining economics, LP modelling, crack spreads, GPW, crude slate optimisation, Nelson Complexity, FCC/coker/HCU yields</div>
+      </div>
+      <div class="sme-tile">
+        <div class="name">alchemist</div>
+        <div class="desc">Petrochem value chain &mdash; polyolefins, BTX, PVC, polyester, methanol, PDH, MTO/MTP</div>
+      </div>
+      <div class="sme-tile">
+        <div class="name">sentinel</div>
+        <div class="desc">Asset integrity &mdash; API 510/570/653, RBI, CUI, HAZOP, LOPA, SIL, MOC, MTBF, RCA, turnarounds</div>
+      </div>
+      <div class="sme-tile">
+        <div class="name">constructor</div>
+        <div class="desc">Capital projects &mdash; EPC/EPCm/LSTK, FEED, AACE estimates, CPM, EVM, FIDIC, schedule recovery</div>
+      </div>
+      <div class="sme-tile">
+        <div class="name">trader</div>
+        <div class="desc">Brent/WTI/Dubai basis, Platts/Argus, paper vs physical, VLCC freight, bunkers, retail margins, NFR</div>
+      </div>
+    </div>
+
+    <p style="font-size:13px; color:#595959; margin:14px 0 6px 0;">Invocation prompt:</p>
+    <pre class="cmd">energy-petrochem-lead, [your ask].
+Engagement: [client / mandate].
+Deliverable: [format].</pre>
+    <div class="btn-row">
+      <button class="btn-copy" onclick="navigator.clipboard.writeText(this.dataset.copy.replace(/&#10;/g,'\n')); this.textContent='Copied'; setTimeout(()=>this.textContent='Copy prompt',1500);" data-copy="energy-petrochem-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
+    </div>
+  </div>
+
+  <h2 class="section-title">Client teams <span class="count">1 future</span></h2>
+
+  <div class="card client">
+    <span class="tag">CLIENT TEAM &middot; FUTURE</span>
+    <h2>Cnergyico Agents Team &mdash; Cnergyico PK Limited</h2>
+    <p class="lede">Pakistan's largest oil refining capacity. Currently handled by the Energy Practice.
+      Graduates to its own team once plant-specific institutional context (refinery configuration,
+      supply contracts, terminal ops, OGRA filings) outweighs generic SME knowledge.</p>
+    <ul>
+      <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/Cnergyico_Control_Center.html" target="_blank">
+          &raquo; Open Cnergyico Control Center <span class="badge future">FUTURE</span></a></li>
+      <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/" target="_blank">
+          Cnergyico Agents Team folder <span class="badge">folder</span></a></li>
+      <li>Future Chief: <span class="badge future">cnergyico-chief-of-staff</span></li>
+      <li>Future Plugin: <span class="badge future">cnergyico-agents-team</span></li>
+    </ul>
+    <p style="font-size:13px; color:#595959; margin:14px 0 0 0;"><strong style="color:#0D1B3F;">Graduation trigger:</strong>
+      ongoing retainer or 3+ active Cnergyico mandates.</p>
+  </div>
+
+  <div class="tasks">
+    <div class="head">
+      <h3>Energy &amp; Petrochem practice tasks</h3>
+      <span class="summary">7 done &middot; 3 awaiting first mandate &middot; 10 total</span>
+    </div>
+    <div class="items">
+      <div class="item"><div class="check done">&check;</div><div class="label done">energy-petrochem-lead skill built</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">margin-architect SME</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">alchemist SME</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">sentinel SME</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">constructor SME</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">trader SME</div></div>
+      <div class="item"><div class="check done">&check;</div><div class="label done">Cnergyico Agents Team Control Center (placeholder)</div></div>
+      <div class="item"><div class="check pending">&middot;</div><div class="label">First Cnergyico mandate &mdash; intake</div></div>
+      <div class="item"><div class="check pending">&middot;</div><div class="label">Second Cnergyico mandate</div></div>
+      <div class="item"><div class="check pending">&middot;</div><div class="label">Third mandate &rarr; team graduates</div></div>
+    </div>
+  </div>
+
+  <div class="triggers">
+    <h3>When the Group Chief routes here</h3>
+    <p><strong>Refining economics:</strong> crack spreads, crude slate, FCC / hydrocracker / coker yields, netbacks, Brent / WTI / Dubai differentials, Nelson Complexity</p>
+    <p><strong>Petrochem value chain:</strong> polyolefins (HDPE/LLDPE/LDPE/PP), PVC, polyester (PET/PTA/MEG), aromatics (BTX), methanol, MTO/MTP, PDH</p>
+    <p><strong>Asset integrity &amp; reliability:</strong> API 510/570/653, RBI, CUI, HAZOP, LOPA, SIL, MOC, RCA, turnarounds (TAR), T&amp;I, fired heater &middot; pump &middot; heat exchanger failures</p>
+    <p><strong>Capital projects:</strong> EPC / EPCm / LSTK contracting, FEED, AACE estimate classes, schedule slippage, contingency, claims</p>
+    <p><strong>Trading &amp; logistics:</strong> paper vs physical, EFP/EFS, VLCC/Suezmax/Aframax/MR freight, bunkers/VLSFO, retail margins, OGRA, OMC operations</p>
+    <div style="margin-top:12px;">
+      <span class="chip">refinery</span><span class="chip">crude slate</span><span class="chip">FCC</span>
+      <span class="chip">BTX</span><span class="chip">polyolefins</span><span class="chip">HAZOP</span>
+      <span class="chip">RBI</span><span class="chip">EPC</span><span class="chip">FEED</span>
+      <span class="chip">Brent</span><span class="chip">WTI</span><span class="chip">Dubai</span>
+      <span class="chip">freight</span><span class="chip">Cnergyico</span><span class="chip">OGRA</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Energy &amp; Petrochemicals &middot; ContexAi Practice &middot;
+  <a href="../ContexAi_Control_Center.html" style="color:#FFE3D6;">&larr; back to Control Center</a> &middot;
+  <a href="https://contexai.org" style="colo
