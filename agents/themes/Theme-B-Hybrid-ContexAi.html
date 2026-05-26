@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Theme B — Hybrid ContexAi + Flame/Parrot Accents</title>
+<style>
+  :root {
+    --ink:           #0B1120;
+    --ctxai-blue:    #1D5FFF;
+    --ctxai-blue-d:  #0040D9;
+    --flame:         #FFB300;
+    --flame-dark:    #FF8F00;
+    --flame-soft:    #FFF3D6;
+    --parrot:        #43A047;
+    --parrot-dark:   #1B5E20;
+    --parrot-soft:   #DCFCE7;
+    --cnergyico:     #F26122;
+    --cnergyico-navy:#0D1B3F;
+    --bg:            #F7F8FA;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:var(--bg);
+    margin:0; padding:0; color:var(--ink); }
+  header { background:linear-gradient(135deg,var(--ink) 0%,var(--ctxai-blue) 100%);
+    color:white; padding:24px 36px; }
+  header h1 { margin:0; font-size:26px; font-weight:600; }
+  header .sub { margin-top:4px; opacity:0.88; font-size:13px; }
+  header .theme-tag { display:inline-block; background:rgba(255,255,255,0.18);
+    padding:4px 12px; border-radius:14px; font-size:12px; font-weight:600;
+    margin-top:10px; }
+  .container { max-width:1280px; margin:0 auto; padding:24px 36px; }
+  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:16px 0; }
+  .kpi-tile { background:white; padding:12px 14px; border-radius:6px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.06); border-left:4px solid var(--ctxai-blue); }
+  .kpi-tile.parrot { border-left-color:var(--parrot); }
+  .kpi-tile.flame  { border-left-color:var(--flame); }
+  .kpi-tile.cnergy { border-left-color:var(--cnergyico); }
+  .kpi-tile .label { font-size:10px; text-transform:uppercase; letter-spacing:0.5px; color:#8A8FA3; }
+  .kpi-tile .value { font-size:22px; font-weight:700; margin-top:3px; }
+  .kpi-tile .sub { font-size:11px; color:#595959; margin-top:3px; }
+
+  .practice-section { margin:24px 0; padding:16px 18px 4px;
+    background:white; border-radius:10px; border-left:5px solid var(--ctxai-blue);
+    box-shadow:0 1px 3px rgba(0,0,0,0.05); }
+  .practice-section.banking  { border-left-color:var(--ctxai-blue); }
+  .practice-section.real-est { border-left-color:var(--parrot); }
+  .practice-section.energy   { border-left-color:var(--cnergyico); }
+  .practice-section.accred   { border-left-color:var(--flame); }
+  .practice-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:10px; }
+  .practice-head .name { font-size:17px; font-weight:600; }
+  .practice-section.banking  .practice-head .name { color:var(--ctxai-blue); }
+  .practice-section.real-est .practice-head .name { color:var(--parrot-dark); }
+  .practice-section.energy   .practice-head .name { color:var(--cnergyico-navy); }
+  .practice-section.accred   .practice-head .name { color:var(--flame-dark); }
+  .practice-head code { font-size:11px; background:#F7F8FA; padding:3px 8px; border-radius:4px; color:#595959; }
+  .practice-body { display:grid; grid-template-columns:1.1fr 1fr; gap:14px; margin-bottom:14px; }
+  .card { background:white; border-radius:6px; padding:14px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05); border-top:3px solid var(--ctxai-blue); }
+  .card.banking-lead   { border-top-color:var(--ctxai-blue); }
+  .card.banking-client { border-top-color:#1F3864; }
+  .card.real-est-lead   { border-top-color:var(--parrot); }
+  .card.real-est-client { border-top-color:var(--parrot); border-left:3px solid var(--parrot-dark); }
+  .card.energy-lead   { border-top-color:var(--cnergyico); }
+  .card.energy-client { border-top-color:var(--cnergyico); border-left:3px solid var(--cnergyico-navy); }
+  .card.accred-lead   { border-top-color:var(--flame); }
+  .card.accred-client { border-top-color:var(--flame); border-left:3px solid var(--flame-dark); }
+  .card h2 { margin:0 0 4px 0; font-size:15px; }
+  .card .tag { font-size:10px; text-transform:uppercase; color:#8A8FA3; font-weight:600; }
+  .card p { font-size:12px; color:#595959; margin:4px 0 0 0; }
+
+  .swatch-row { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; margin:24px 0; }
+  .swatch { background:white; border-radius:6px; padding:10px; text-align:center;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  .swatch .sw { height:50px; border-radius:4px; margin-bottom:6px; }
+  .swatch .name { font-size:11px; font-weight:600; }
+  .swatch .hex { font-size:11px; color:#595959; font-family:Consolas,monospace; }
+  footer { background:var(--ink); color:#CADCFC; padding:14px 36px; text-align:center; font-size:11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ContexAi Agents Control Center</h1>
+  <div class="sub">Group Chief · 4 Practices · ContexAi blue anchor with practice accents</div>
+  <span class="theme-tag">THEME B — Hybrid: ContexAi blue + flame/parrot/orange practice accents</span>
+</header>
+
+<div class="container">
+
+  <div class="kpi-row">
+    <div class="kpi-tile"><div class="label">Agents in org</div><div class="value">24+</div><div class="sub">1 Chief + 4 Leads + 19 SMEs</div></div>
+    <div class="kpi-tile parrot"><div class="label">Practices live</div><div class="value">4 of 4</div><div class="sub">Banking · RE · Energy · Accreditation</div></div>
+    <div class="kpi-tile cnergy"><div class="label">Client teams</div><div class="value">1 live, 3 future</div><div class="sub">SMFB · TSH · Cnergyico · CIP</div></div>
+    <div class="kpi-tile flame"><div class="label">Active engagements</div><div class="value">1</div><div class="sub">TSH Islamic REIT (intake)</div></div>
+  </div>
+
+  <div class="practice-section banking">
+    <div class="practice-head">
+      <div><span class="name">Banking &amp; Financial Services</span></div>
+      <code>ContexAi_Agents\Banking\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card banking-lead"><span class="tag">PRACTICE LEAD</span><h2>banking-practice-lead</h2><p>Backed by contexai-banking-advisory plugin · 3 Domain Leads, 9 SMEs.</p></div>
+      <div class="card banking-client"><span class="tag">CLIENT TEAM · LIVE</span><h2>SMFB Agents Team</h2><p>Sindh Microfinance Bank · SBP-regulated MFB · own Chief + plugin.</p></div>
+    </div>
+  </div>
+
+  <div class="practice-section real-est">
+    <div class="practice-head">
+      <div><span class="name">Real Estate &amp; Infrastructure</span></div>
+      <code>ContexAi_Agents\Real_Estate\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card real-est-lead"><span class="tag">PRACTICE LEAD</span><h2 style="color:var(--parrot-dark);">reit-practice-lead</h2><p>2 SMEs · REIT structuring · Pakistani corporate secretary.</p></div>
+      <div class="card real-est-client"><span class="tag">CLIENT TEAM · FUTURE</span><h2 style="color:var(--parrot-dark);">TSH Agents Team</h2><p>TSH Group · ENG-2026-001 Islamic REIT in intake.</p></div>
+    </div>
+  </div>
+
+  <div class="practice-section energy">
+    <div class="practice-head">
+      <div><span class="name">Energy &amp; Petrochemicals</span></div>
+      <code>ContexAi_Agents\Energy\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card energy-lead"><span class="tag">PRACTICE LEAD</span><h2 style="color:var(--cnergyico-navy);">energy-petrochem-lead</h2><p>5 SMEs · margin-architect · alchemist · sentinel · constructor · trader.</p></div>
+      <div class="card energy-client"><span class="tag">CLIENT TEAM · FUTURE</span><h2 style="color:var(--cnergyico-navy);">Cnergyico Agents Team</h2><p>Cnergyico PK · refinery, petrochem, retail, trading.</p></div>
+    </div>
+  </div>
+
+  <div class="practice-section accred">
+    <div class="practice-head">
+      <div><span class="name">Professional Bodies &amp; Accreditation</span></div>
+      <code>ContexAi_Agents\Accreditation\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card accred-lead"><span class="tag">PRACTICE LEAD</span><h2 style="color:var(--flame-dark);">accreditation-practice-lead</h2><p>4 CIP SMEs · master plan · corporate · IP &amp; academic · regulatory.</p></div>
+      <div class="card accred-client"><span class="tag">CLIENT TEAM · FUTURE</span><h2 style="color:var(--flame-dark);">CIP Agents Team</h2><p>Credit Institute of Pakistan · critical path: SECP §42.</p></div>
+    </div>
+  </div>
+
+  <h3 style="margin:30px 0 10px 0;">Palette swatches</h3>
+  <div class="swatch-row">
+    <div class="swatch"><div class="sw" style="background:#1D5FFF;"></div><div class="name">ContexAi Blue</div><div class="hex">#1D5FFF</div></div>
+    <div class="swatch"><div class="sw" style="background:#43A047;"></div><div class="name">Parrot Green</div><div class="hex">#43A047</div></div>
+    <div class="swatch"><div class="sw" style="background:#FFB300;"></div><div class="name">Flame Yellow</div><div class="hex">#FFB300</div></div>
+    <div class="swatch"><div class="sw" style="background:#F26122;"></div><div class="name">Cnergyico Flame</div><div class="hex">#F26122</div></div>
+    <div class="swatch"><div class="sw" style="background:#0D1B3F;"></div><div class="name">Cnergyico Navy</div><div class="hex">#0D1B3F</div></div>
+    <div class="swatch"><div class="sw" style="background:#0B1120;"></div><div class="name">ContexAi Ink</div><div class="hex">#0B1120</div></div>
+  </div>
+
+</div>
+
+<footer>Theme B · ContexAi blue anchor · Parrot Green for RE · Flame Yellow for Accreditation · Cnergyico Orange retained</footer>
+
+</body>
+</html>

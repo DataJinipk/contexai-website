@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Theme C — Bold Tropical</title>
+<style>
+  :root {
+    --ink:           #0A0E1A;
+    --flame:         #FFC400;
+    --flame-dark:    #FF8F00;
+    --parrot:        #00C853;
+    --parrot-dark:   #1B5E20;
+    --teal:          #00BCD4;
+    --teal-dark:     #00838F;
+    --cnergyico:     #F26122;
+    --cnergyico-navy:#0D1B3F;
+    --purple:        #9C27B0;
+    --purple-dark:   #6A1B9A;
+    --bg:            #FFFDF7;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:var(--bg);
+    margin:0; padding:0; color:var(--ink); }
+  header { background:linear-gradient(135deg,var(--purple-dark) 0%,var(--cnergyico) 50%,var(--flame) 100%);
+    color:white; padding:24px 36px; }
+  header h1 { margin:0; font-size:26px; font-weight:700; }
+  header .sub { margin-top:4px; opacity:0.92; font-size:13px; }
+  header .theme-tag { display:inline-block; background:rgba(0,0,0,0.22);
+    padding:4px 12px; border-radius:14px; font-size:12px; font-weight:600;
+    margin-top:10px; }
+  .container { max-width:1280px; margin:0 auto; padding:24px 36px; }
+  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:16px 0; }
+  .kpi-tile { background:white; padding:12px 14px; border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08); border-left:5px solid var(--teal); }
+  .kpi-tile.flame  { border-left-color:var(--flame); }
+  .kpi-tile.parrot { border-left-color:var(--parrot); }
+  .kpi-tile.purple { border-left-color:var(--purple); }
+  .kpi-tile .label { font-size:10px; text-transform:uppercase; letter-spacing:0.5px; color:#8A8FA3; }
+  .kpi-tile .value { font-size:22px; font-weight:700; margin-top:3px; }
+  .kpi-tile .sub { font-size:11px; color:#595959; margin-top:3px; }
+
+  .practice-section { margin:24px 0; padding:16px 18px 4px;
+    background:white; border-radius:12px; border-left:6px solid var(--teal);
+    box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .practice-section.banking  { border-left-color:var(--teal); }
+  .practice-section.real-est { border-left-color:var(--parrot); }
+  .practice-section.energy   { border-left-color:var(--cnergyico); }
+  .practice-section.accred   { border-left-color:var(--purple); }
+  .practice-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:10px; }
+  .practice-head .name { font-size:17px; font-weight:700; }
+  .practice-section.banking  .practice-head .name { color:var(--teal-dark); }
+  .practice-section.real-est .practice-head .name { color:var(--parrot-dark); }
+  .practice-section.energy   .practice-head .name { color:var(--cnergyico-navy); }
+  .practice-section.accred   .practice-head .name { color:var(--purple-dark); }
+  .practice-head code { font-size:11px; background:#FFF8E1; padding:3px 8px; border-radius:4px; color:#7F6000; }
+  .practice-body { display:grid; grid-template-columns:1.1fr 1fr; gap:14px; margin-bottom:14px; }
+  .card { background:white; border-radius:8px; padding:14px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.06); border-top:4px solid var(--teal); }
+  .card.banking-lead   { border-top-color:var(--teal); }
+  .card.banking-client { border-top-color:var(--teal); border-left:4px solid var(--flame); background:linear-gradient(180deg,#fff 95%,var(--flame-dark) 100%); }
+  .card.real-est-lead   { border-top-color:var(--parrot); }
+  .card.real-est-client { border-top-color:var(--parrot); border-left:4px solid var(--parrot-dark); background:linear-gradient(180deg,#fff 95%,var(--parrot-dark) 100%); }
+  .card.energy-lead   { border-top-color:var(--cnergyico); }
+  .card.energy-client { border-top-color:var(--cnergyico); border-left:4px solid var(--cnergyico-navy); background:linear-gradient(180deg,#fff 95%,var(--flame) 100%); }
+  .card.accred-lead   { border-top-color:var(--purple); }
+  .card.accred-client { border-top-color:var(--purple); border-left:4px solid var(--purple-dark); background:linear-gradient(180deg,#fff 95%,var(--flame) 100%); }
+  .card h2 { margin:0 0 4px 0; font-size:15px; font-weight:700; }
+  .card .tag { font-size:10px; text-transform:uppercase; color:#8A8FA3; font-weight:600; letter-spacing:0.04em; }
+  .card p { font-size:12px; color:#595959; margin:4px 0 0 0; }
+
+  .swatch-row { display:grid; grid-template-columns:repeat(8,1fr); gap:6px; margin:24px 0; }
+  .swatch { background:white; border-radius:6px; padding:8px; text-align:center;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  .swatch .sw { height:44px; border-radius:4px; margin-bottom:5px; }
+  .swatch .name { font-size:10px; font-weight:600; }
+  .swatch .hex { font-size:10px; color:#595959; font-family:Consolas,monospace; }
+  footer { background:var(--ink); color:#FFC400; padding:14px 36px; text-align:center; font-size:11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ContexAi Agents Control Center</h1>
+  <div class="sub">Group Chief · 4 Practices · High-saturation tropical palette</div>
+  <span class="theme-tag">THEME C — Bold Tropical · vivid practice colors, multi-stop header gradient</span>
+</header>
+
+<div class="container">
+
+  <div class="kpi-row">
+    <div class="kpi-tile"><div class="label">Agents in org</div><div class="value">24+</div><div class="sub">1 Chief + 4 Leads + 19 SMEs</div></div>
+    <div class="kpi-tile parrot"><div class="label">Practices live</div><div class="value">4 of 4</div><div class="sub">Banking · RE · Energy · Accreditation</div></div>
+    <div class="kpi-tile flame"><div class="label">Client teams</div><div class="value">1 live, 3 future</div><div class="sub">SMFB · TSH · Cnergyico · CIP</div></div>
+    <div class="kpi-tile purple"><div class="label">Active engagements</div><div class="value">1</div><div class="sub">TSH Islamic REIT (intake)</div></div>
+  </div>
+
+  <div class="practice-section banking">
+    <div class="practice-head">
+      <div><span class="name">Banking &amp; Financial Services</span></div>
+      <code>ContexAi_Agents\Banking\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card banking-lead"><span class="tag">PRACTICE LEAD</span><h2 style="color:var(--teal-dark);">banking-practice-lead</h2><p>Backed by contexai-banking-advisory plugin · 3 Domain Leads, 9 SMEs.</p></div>
+      <div class="card banking-client"><span class="tag">CLIENT TEAM · LIVE</span><h2 style="color:var(--teal-dark);">SMFB Agents Team</h2><p>Sindh Microfinance Bank · SBP-regulated MFB · own Chief + plugin.</p></div>
+    </div>
+  </div>
+
+  <div class="practice-section real-est">
+    <div class="practice-head">
+      <div><span class="name">Real Estate &amp; Infrastructure</span></div>
+      <code>ContexAi_Agents\Real_Estate\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card real-est-lead"><span class="tag">PRACTICE LEAD</span><h2 style="color:var(--parrot-dark);">reit-practice-lead</h2><p>2 SMEs · REIT structuring · Pakistani corporate secretary.</p></div>
+      <div class="card real-est-client"><span class="tag">CLIENT TEAM · FUTURE</span><h2 style="color:var(--parrot-dark);">TSH Agents Team</h2><p>TSH Group · ENG-2026-001 Islamic REIT in intake.</p></div>
+    </div>
+  </div>
+
+  <div class="practice-section energy">
+    <div class="practice-head">
+      <div><span class="name">Energy &amp; Petrochemicals</span></div>
+      <code>ContexAi_Agents\Energy\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card energy-lead"><span class="tag">PRACTICE LEAD</span><h2 style="color:var(--cnergyico-navy);">energy-petrochem-lead</h2><p>5 SMEs · margin-architect · alchemist · sentinel · constructor · trader.</p></div>
+      <div class="card energy-client"><span class="tag">CLIENT TEAM · FUTURE</span><h2 style="color:var(--cnergyico-navy);">Cnergyico Agents Team</h2><p>Cnergyico PK · refinery, petrochem, retail, trading.</p></div>
+    </div>
+  </div>
+
+  <div class="practice-section accred">
+    <div class="practice-head">
+      <div><span class="name">Professional Bodies &amp; Accreditation</span></div>
+      <code>ContexAi_Agents\Accreditation\</code>
+    </div>
+    <div class="practice-body">
+      <div class="card accred-lead"><span class="tag">PRACTICE LEAD</span><h2 style="color:var(--purple-dark);">accreditation-practice-lead</h2><p>4 CIP SMEs · master plan · corporate · IP &amp; academic · regulatory.</p></div>
+      <div class="card accred-client"><span class="tag">CLIENT TEAM · FUTURE</span><h2 style="color:var(--purple-dark);">CIP Agents Team</h2><p>Credit Institute of Pakistan · critical path: SECP §42.</p></div>
+    </div>
+  </div>
+
+  <h3 style="margin:30px 0 10px 0;">Palette swatches</h3>
+  <div class="swatch-row">
+    <div class="swatch"><div class="sw" style="background:#FFC400;"></div><div class="name">Flame Yellow</div><div class="hex">#FFC400</div></div>
+    <div class="swatch"><div class="sw" style="background:#00C853;"></div><div class="name">Parrot Green</div><div class="hex">#00C853</div></div>
+    <div class="swatch"><div class="sw" style="background:#00BCD4;"></div><div class="name">Tropical Teal</div><div class="hex">#00BCD4</div></div>
+    <div class="swatch"><div class="sw" style="background:#F26122;"></div><div class="name">Cnergyico Flame</div><div class="hex">#F26122</div></div>
+    <div class="swatch"><div class="sw" style="background:#9C27B0;"></div><div class="name">Royal Purple</div><div class="hex">#9C27B0</div></div>
+    <div class="swatch"><div class="sw" style="background:#0D1B3F;"></div><div class="name">Cnergyico Navy</div><div class="hex">#0D1B3F</div></div>
+    <div class="swatch"><div class="sw" style="background:#1B5E20;"></div><div class="name">Parrot Dark</div><div class="hex">#1B5E20</div></div>
+    <div class="swatch"><div class="sw" style="background:#FF8F00;"></div><div class="name">Flame Dark</div><div class="hex">#FF8F00</div></div>
+  </div>
+
+</div>
+
+<footer>Theme C · Vivid tropical · Teal for Banking · Parrot for RE · Cnergyico Flame for Energy · Purple for Accreditation</footer>
+
+</body>
+</html>

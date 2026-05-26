@@ -8,175 +8,210 @@
   * { box-sizing: border-box; }
   body { font-family: 'Segoe UI', Arial, sans-serif; background:#f6f7fb;
     margin:0; padding:0; color:#0B1120; }
-  header { background:linear-gradient(135deg,#0B1120 0%,#1D5FFF 100%);
-    color:white; padding:30px 40px; }
-  header h1 { margin:0; font-size:28px; font-weight:600; letter-spacing:-0.01em; }
-  header .sub { margin-top:6px; opacity:0.88; font-size:14px; }
-  header .quick { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  header { background:linear-gradient(135deg,#6A1B9A 0%,#F26122 50%,#FFC400 100%);
+    color:white; padding:24px 40px; }
+  header h1 { margin:0; font-size:26px; font-weight:600; letter-spacing:-0.01em; }
+  header .sub { margin-top:4px; opacity:0.88; font-size:13px; }
+  header .quick { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; }
   header .quick a { background:rgba(255,255,255,0.15); color:white;
-    padding:8px 16px; border-radius:4px; text-decoration:none; font-size:13px;
+    padding:7px 14px; border-radius:4px; text-decoration:none; font-size:12px;
     transition:background 0.15s; }
   header .quick a:hover { background:rgba(255,255,255,0.28); }
 
-  .container { max-width:1320px; margin:0 auto; padding:30px 40px; }
-  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:30px; }
-  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; margin-bottom:30px; }
-  .grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-bottom:30px; }
-  @media (max-width:1000px) { .grid3, .grid4, .grid2 { grid-template-columns:1fr; } }
+  .container { max-width:1320px; margin:0 auto; padding:24px 40px; }
+  .grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:20px; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:1000px) { .grid2, .grid3 { grid-template-columns:1fr; } }
 
-  .card { background:white; border-radius:8px; padding:24px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:5px solid #1D5FFF; }
-  .card.chief     { border-top-color:#1D5FFF; }
-  .card.banking   { border-top-color:#1D5FFF; }   /* ContexAi blue */
-  .card.cnergyico { border-top-color:#F26122; }   /* Cnergyico flame orange */
-  .card.cnergyico-client { border-top:5px solid #F26122; border-left:4px solid #0D1B3F; } /* Cnergyico navy + flame */
-  .card.reit      { border-top-color:#70AD47; }
-  .card.accred    { border-top-color:#7030A0; }
-  .card.client    { border-top-color:#1F3864; }
-  .card.shared    { border-top-color:#F9B208; }
-  .card.routing   { border-top-color:#C00000; }
-  .card h2 { margin:0 0 6px 0; font-size:18px; }
+  .card { background:white; border-radius:8px; padding:20px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:4px solid #00BCD4; }
+  .card.chief     { border-top-color:#00BCD4; }
+  .card.banking   { border-top-color:#00BCD4; }
+  .card.cnergyico { border-top-color:#F26122; }
+  .card.cnergyico-client { border-top:4px solid #F26122; border-left:4px solid #0D1B3F; }
+  .card.reit      { border-top-color:#00C853; }
+  .card.accred    { border-top-color:#9C27B0; }
+  .card.client    { border-top-color:#0D47A1; }
+  .card.shared    { border-top-color:#FFC400; }
+  .card h2 { margin:0 0 4px 0; font-size:17px; }
   .card .tag { font-size:11px; text-transform:uppercase; letter-spacing:0.5px;
-    color:#8A8FA3; margin-bottom:12px; display:block; }
+    color:#8A8FA3; margin-bottom:10px; display:block; }
   .card ul { list-style:none; padding:0; margin:0; }
-  .card li { padding:8px 0; border-bottom:1px solid #eee; font-size:14px; }
+  .card li { padding:6px 0; border-bottom:1px solid #eee; font-size:13px; }
   .card li:last-child { border-bottom:none; }
   .card a { color:#0B1120; text-decoration:none; display:flex;
     justify-content:space-between; align-items:center; gap:8px; }
-  .card a:hover { color:#1D5FFF; }
-  .card a.plain { display:inline; }
+  .card a:hover { color:#00BCD4; }
 
   .badge { font-size:10px; padding:2px 8px; border-radius:10px;
-    background:#EEF2FF; color:#1D5FFF; font-weight:600; white-space:nowrap; }
-  .badge.live { background:#A9D18E; color:#385723; }
+    background:#E0F7FA; color:#00838F; font-weight:600; white-space:nowrap; }
+  .badge.live   { background:#C8E6C9; color:#1B5E20; }
   .badge.future { background:#F2F2F2; color:#8A8FA3; }
-  .badge.skill { background:#DAE8FC; color:#1F3864; font-family:Consolas,monospace; }
+  .badge.skill  { background:#E0F7FA; color:#00838F; font-family:Consolas,monospace; }
   .badge.plugin { background:#FBE5D6; color:#7F3B05; font-family:Consolas,monospace; }
-  .badge.docx { background:#DAE8FC; color:#1F3864; }
-  .badge.xlsx { background:#D5E8D4; color:#385723; }
-  .badge.pptx { background:#FBE5D6; color:#7F3B05; }
-  .badge.pdf  { background:#F8CECC; color:#9D2235; }
-  .badge.html { background:#DAE8FC; color:#1F3864; }
-  .badge.md   { background:#F2F2F2; color:#595959; }
-  .badge.cmd  { background:#F2F2F2; color:#595959; font-family:Consolas,monospace; }
-  .badge.ok   { background:#A9D18E; color:#385723; }
-  .badge.pend { background:#FFE699; color:#7F6000; }
-  .badge.miss { background:#F8CECC; color:#9D2235; }
+  .badge.md     { background:#F2F2F2; color:#595959; }
+  .badge.pend   { background:#FFF3D6; color:#7F6000; }
 
-  pre.cmd { background:#0F1331; color:#A9D18E; padding:14px 18px;
+  pre.cmd { background:#0F1331; color:#A9D18E; padding:12px 16px;
     border-radius:6px; font-family:Consolas,monospace; font-size:12px;
-    overflow-x:auto; margin:8px 0; white-space:pre-wrap; word-break:break-word; }
+    overflow-x:auto; margin:6px 0; white-space:pre-wrap; word-break:break-word; }
 
-  /* Period / section banners */
-  .period-banner { display:flex; align-items:center; gap:16px; margin:30px 0 16px 0;
-    padding:14px 20px; border-radius:8px; color:white; }
-  .period-banner.chief    { background:linear-gradient(135deg,#0B1120 0%,#1D5FFF 100%); }
-  .period-banner.practice { background:linear-gradient(135deg,#1F3864 0%,#2E75B6 100%); }
-  .period-banner.client   { background:linear-gradient(135deg,#1F3864 0%,#385723 100%); }
-  .period-banner.shared   { background:linear-gradient(135deg,#7F6000 0%,#F9B208 100%); }
-  .period-banner.routing  { background:linear-gradient(135deg,#6D2E46 0%,#C00000 100%); }
-  .period-banner.engage   { background:linear-gradient(135deg,#385723 0%,#70AD47 100%); }
-  .period-banner .title { font-size:22px; font-weight:600; }
-  .period-banner .sub { opacity:0.88; font-size:13px; margin-top:4px; }
-  .period-banner .pill { background:rgba(255,255,255,0.25); padding:4px 12px;
-    border-radius:14px; font-size:12px; font-weight:600; }
-  .period-banner.flex-col { flex-direction:column; align-items:flex-start; }
-
-  .section-title { font-size:22px; font-weight:600; margin:30px 0 16px 0; color:#0B1120; }
-
-  /* Practice-group sub-headers (reflect ContexAi_Agents\<Practice>\ folder structure) */
-  .practice-group { font-size:16px; font-weight:600; margin:20px 0 10px 0;
-    padding:8px 14px; border-radius:6px; display:inline-block;
-    background:white; box-shadow:0 1px 2px rgba(0,0,0,0.05); }
-  .practice-group .label { font-size:11px; text-transform:uppercase; letter-spacing:0.06em;
-    color:#8A8FA3; margin-right:8px; }
-  .practice-group.banking  { border-left:4px solid #1D5FFF; color:#1D5FFF; }
-  .practice-group.real-est { border-left:4px solid #70AD47; color:#385723; }
-  .practice-group.energy   { border-left:4px solid #F26122; color:#0D1B3F; }
-  .practice-group.accred   { border-left:4px solid #7030A0; color:#7030A0; }
-  .practice-group code { font-size:12px; color:#595959; background:transparent; }
-  .info { background:#EEF2FF; border-left:4px solid #1D5FFF;
-    padding:14px 18px; border-radius:4px; margin:20px 0; font-size:13px; }
-  .info strong { color:#1D5FFF; }
-  footer { background:#0B1120; color:#CADCFC; padding:20px 40px;
-    text-align:center; font-size:12px; }
-
-  .roadmap { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; margin:20px 0; }
-  @media (max-width:1000px) { .roadmap { grid-template-columns:repeat(2,1fr); } }
-  .phase { background:white; padding:14px; border-radius:6px; text-align:center;
-    border-top:4px solid #A9D18E; }
-  .phase.future { border-top-color:#D9D9D9; }
-  .phase .ph-name { font-weight:600; font-size:13px; color:#0B1120; }
-  .phase .ph-status { font-size:11px; margin-top:4px; font-weight:600; }
-  .phase .ph-status.live { color:#70AD47; }
-  .phase .ph-status.future { color:#8A8FA3; }
-  .phase .ph-sub { font-size:11px; color:#595959; margin-top:2px; }
-
-  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:20px; }
+  /* KPI strip */
+  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:16px 0 24px 0; }
   @media (max-width:1000px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
-  .kpi-tile { background:white; padding:14px; border-radius:6px;
-    box-shadow:0 1px 2px rgba(0,0,0,0.06); border-left:4px solid #1D5FFF; }
+  .kpi-tile { background:white; padding:12px 14px; border-radius:6px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.06); border-left:4px solid #00BCD4; }
   .kpi-tile.cnergyico { border-left-color:#F26122; }
-  .kpi-tile.reit      { border-left-color:#70AD47; }
-  .kpi-tile.accred    { border-left-color:#7030A0; }
-  .kpi-tile.client    { border-left-color:#1F3864; }
+  .kpi-tile.reit      { border-left-color:#00C853; }
+  .kpi-tile.accred    { border-left-color:#9C27B0; }
+  .kpi-tile.client    { border-left-color:#FFC400; }
   .kpi-tile .label { font-size:10px; text-transform:uppercase;
     letter-spacing:0.5px; color:#8A8FA3; }
-  .kpi-tile .value { font-size:22px; font-weight:700; color:#0B1120; margin-top:4px; }
-  .kpi-tile .sub { font-size:11px; color:#595959; margin-top:4px; }
+  .kpi-tile .value { font-size:22px; font-weight:700; color:#0B1120; margin-top:3px; }
+  .kpi-tile .sub { font-size:11px; color:#595959; margin-top:3px; }
 
-  /* Routing search box */
-  .routing-box { background:white; padding:20px; border-radius:8px;
+  /* Group Chief block (compact) */
+  .chief-banner { background:linear-gradient(135deg,#0D1B3F 0%,#00BCD4 100%);
+    color:white; padding:14px 20px; border-radius:8px; margin-bottom:14px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px; }
+  .chief-banner .title { font-size:18px; font-weight:600; }
+  .chief-banner .sub { opacity:0.88; font-size:12px; margin-top:2px; }
+  .chief-banner .pill { background:rgba(255,255,255,0.25); padding:3px 10px;
+    border-radius:12px; font-size:11px; font-weight:600; white-space:nowrap; }
+
+  /* Practice section: a colored band that visually groups Lead + Client Team(s) */
+  .practice-section { margin:28px 0; padding:18px 20px 4px 20px;
+    background:white; border-radius:10px; border-left:5px solid #00BCD4;
+    box-shadow:0 1px 3px rgba(0,0,0,0.05); }
+  .practice-section.banking  { border-left-color:#00BCD4; }
+  .practice-section.real-est { border-left-color:#00C853; }
+  .practice-section.energy   { border-left-color:#F26122; }
+  .practice-section.accred   { border-left-color:#9C27B0; }
+  .practice-section .practice-head { display:flex; align-items:center;
+    justify-content:space-between; gap:14px; margin-bottom:14px; flex-wrap:wrap; }
+  .practice-section .practice-head .name { font-size:18px; font-weight:600; }
+  .practice-section.banking  .practice-head .name { color:#00838F; }
+  .practice-section.real-est .practice-head .name { color:#1B5E20; }
+  .practice-section.energy   .practice-head .name { color:#0D1B3F; }
+  .practice-section.accred   .practice-head .name { color:#6A1B9A; }
+  .practice-section .practice-head code { font-size:12px; color:#595959;
+    background:#F7F8FA; padding:3px 8px; border-radius:4px; }
+  .practice-section .practice-head .meta { font-size:11px; color:#8A8FA3; }
+  .practice-section .practice-body { display:grid; grid-template-columns:1.1fr 1fr; gap:16px;
+    margin-bottom:16px; }
+  @media (max-width:1000px) { .practice-section .practice-body { grid-template-columns:1fr; } }
+
+  /* Routing widget */
+  .routing-box { background:white; padding:18px; border-radius:8px;
     border-left:4px solid #C00000; box-shadow:0 1px 3px rgba(0,0,0,0.08);
-    margin-bottom:20px; }
-  .routing-box label { font-size:13px; font-weight:600; color:#0B1120; display:block; margin-bottom:8px; }
+    margin:24px 0; }
+  .routing-box label { font-size:13px; font-weight:600; color:#0B1120;
+    display:block; margin-bottom:6px; }
   .routing-box textarea { width:100%; padding:10px 12px; border:1px solid #ddd;
     border-radius:6px; font-family:'Segoe UI',Arial,sans-serif; font-size:14px;
-    resize:vertical; min-height:60px; }
-  .routing-box textarea:focus { outline:none; border-color:#1D5FFF; box-shadow:0 0 0 3px #EEF2FF; }
-  .routing-result { margin-top:14px; padding:14px; background:#F7F8FA;
+    resize:vertical; min-height:54px; }
+  .routing-box textarea:focus { outline:none; border-color:#00BCD4;
+    box-shadow:0 0 0 3px #E0F7FA; }
+  .routing-result { margin-top:12px; padding:12px; background:#F7F8FA;
     border-radius:6px; font-size:13px; display:none; }
   .routing-result.show { display:block; }
-  .routing-result .lead { font-weight:600; color:#1D5FFF; }
+  .routing-result .lead { font-weight:600; color:#00838F; }
   .routing-result .reason { color:#595959; margin-top:4px; }
   .routing-result code { background:white; padding:1px 6px; border-radius:4px;
     font-family:Consolas,monospace; font-size:12px; }
 
+  /* Engagements + Shared Services + Activity (compact sections) */
+  .section-title { font-size:18px; font-weight:600; margin:26px 0 12px 0; color:#0B1120; }
+  .section-title .meta { font-size:12px; color:#8A8FA3; font-weight:400; margin-left:8px; }
+
+  /* Shared Services as inline chips */
+  .chip { display:inline-block; background:#FFF8E1; color:#7F6000;
+    padding:5px 10px; border-radius:14px; font-size:12px; margin:3px;
+    font-family:Consolas,monospace; }
+  .chip-group { margin-bottom:10px; }
+  .chip-group .group-label { font-size:11px; text-transform:uppercase;
+    letter-spacing:0.04em; color:#8A8FA3; margin-right:6px; font-weight:600; }
+
   /* Activity log */
   .activity-list { font-size:13px; }
-  .activity-list .item { padding:8px 0; border-bottom:1px solid #eee; display:flex;
-    justify-content:space-between; gap:12px; }
+  .activity-list .item { padding:6px 0; border-bottom:1px solid #eee;
+    display:flex; justify-content:space-between; gap:12px; }
   .activity-list .item:last-child { border-bottom:none; }
   .activity-list .item .when { color:#8A8FA3; font-size:11px; white-space:nowrap; }
   .activity-list .empty { color:#8A8FA3; font-style:italic; padding:10px 0; }
 
-  /* Buttons (copy / launch) */
-  .btn-row { display:flex; gap:6px; margin-top:10px; }
-  .btn-copy, .btn-launch { font-size:11px; padding:5px 10px; border-radius:4px;
+  /* Per-practice task checklist (lives inside each practice section) */
+  .practice-tasks { margin:8px 0 16px 0; padding:14px 16px; background:#FAFBFC;
+    border-radius:8px; border-left:3px solid #00BCD4; }
+  .practice-section.banking  .practice-tasks { border-left-color:#00BCD4; }
+  .practice-section.real-est .practice-tasks { border-left-color:#00C853; }
+  .practice-section.energy   .practice-tasks { border-left-color:#F26122; }
+  .practice-section.accred   .practice-tasks { border-left-color:#9C27B0; }
+  .practice-tasks .head { display:flex; justify-content:space-between;
+    align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px; }
+  .practice-tasks .head h4 { margin:0; font-size:12px; text-transform:uppercase;
+    letter-spacing:0.05em; color:#595959; font-weight:600; }
+  .practice-tasks .head .summary { font-size:11px; color:#8A8FA3; font-weight:500; }
+  .practice-tasks .items { display:grid; grid-template-columns:repeat(2,1fr); gap:2px 18px; }
+  @media (max-width:900px) { .practice-tasks .items { grid-template-columns:1fr; } }
+  .practice-tasks .item { display:flex; align-items:flex-start; gap:8px;
+    padding:4px 0; font-size:12px; }
+  .practice-tasks .check { width:18px; height:18px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:10px; flex-shrink:0; font-weight:700; margin-top:1px; }
+  .practice-section.banking  .practice-tasks .check.done { background:#00BCD4; color:white; }
+  .practice-section.real-est .practice-tasks .check.done { background:#00C853; color:white; }
+  .practice-section.energy   .practice-tasks .check.done { background:#F26122; color:white; }
+  .practice-section.accred   .practice-tasks .check.done { background:#9C27B0; color:white; }
+  .practice-tasks .check.pending { background:#F2F2F2; color:#8A8FA3; font-size:10px; }
+  .practice-tasks .check.user { background:#FFC400; color:#5C4500; }
+  .practice-tasks .label { padding-top:1px; }
+  .practice-tasks .label.done { text-decoration:line-through; color:#8A8FA3; }
+  .practice-tasks .label .note { font-size:10px; color:#8A8FA3; display:block; margin-top:1px; }
+
+  /* Per-practice progress bar (inline in practice header) */
+  .practice-progress { display:flex; align-items:center; gap:8px;
+    margin-top:6px; font-size:11px; }
+  .practice-progress .bar { width:140px; height:6px; background:#E5E7EB;
+    border-radius:3px; overflow:hidden; }
+  .practice-progress .fill { height:100%; transition:width 0.3s; }
+  .practice-section.banking  .practice-progress .fill { background:#00BCD4; }
+  .practice-section.real-est .practice-progress .fill { background:#00C853; }
+  .practice-section.energy   .practice-progress .fill { background:#F26122; }
+  .practice-section.accred   .practice-progress .fill { background:#9C27B0; }
+  .practice-progress .pct { color:#595959; font-weight:600; }
+
+  /* Buttons */
+  .btn-row { display:flex; gap:6px; margin-top:8px; flex-wrap:wrap; }
+  .btn-copy, .btn-launch { font-size:11px; padding:4px 10px; border-radius:4px;
     border:1px solid #ddd; background:white; cursor:pointer; font-family:inherit;
     font-weight:500; color:#0B1120; }
-  .btn-copy:hover { background:#EEF2FF; border-color:#1D5FFF; color:#1D5FFF; }
+  .btn-copy:hover { background:#E0F7FA; border-color:#00BCD4; color:#00838F; }
   .btn-launch:hover { background:#0B1120; color:white; border-color:#0B1120; }
   .toast { position:fixed; bottom:20px; right:20px; background:#0B1120; color:white;
     padding:10px 16px; border-radius:6px; font-size:13px; opacity:0;
-    transition:opacity 0.3s; pointer-events:none; }
+    transition:opacity 0.3s; pointer-events:none; z-index:1000; }
   .toast.show { opacity:1; }
+
+  footer { background:#0B1120; color:#CADCFC; padding:16px 40px;
+    text-align:center; font-size:12px; }
+  footer a { color:#CADCFC; }
 </style>
 </head>
 <body>
 
 <header>
   <h1>ContexAi Agents Control Center</h1>
-  <div class="sub">Group Chief &middot; 4 Practice Leads &middot; 1 Client Team &middot; 20+ SMEs
-    &middot; Curated advisory marketplace at contexai.org</div>
+  <div class="sub">Group Chief &middot; 4 Practices &middot; Client Teams &amp; SMEs by practice
+    &middot; Curated advisory marketplace at <a href="https://contexai.org" style="color:white;">contexai.org</a></div>
   <div class="quick">
     <a href="#group-chief">&#127894; Group Chief</a>
-    <a href="#practices">&#127970; Practices</a>
-    <a href="#clients">&#127970; Client Teams</a>
-    <a href="#shared">&#128296; Shared Services</a>
-    <a href="#routing">&#128269; Engagement Routing</a>
-    <a href="#engagements">&#128221; Active Engagements</a>
-    <a href="https://contexai.org" target="_blank">&#127760; contexai.org</a>
+    <a href="#banking-practice">Banking</a>
+    <a href="#real-estate-practice">Real Estate</a>
+    <a href="#energy-practice">Energy</a>
+    <a href="#accred-practice">Accreditation</a>
+    <a href="#routing">&#128269; Routing</a>
+    <a href="#engagements">&#128221; Engagements</a>
     <a href="https://contexai.org/dashboard.html" target="_blank">&#128202; Ops Dashboard</a>
     <a href="https://github.com/DataJinipk/contexai-website" target="_blank">&#128190; GitHub</a>
   </div>
@@ -184,432 +219,362 @@
 
 <div class="container">
 
-  <div class="info">
-    <strong>How to use this dashboard:</strong> the four blocks below mirror the ContexAi org chart —
-    <strong>Group Chief</strong> (top orchestrator), <strong>Practice Leads</strong>
-    (Banking, Energy &amp; Petrochem, REIT, Accreditation), <strong>Client Teams</strong>
-    (SMFB live, others future), <strong>Shared Services</strong> (Document Controller, Modelling, PIBAS, Legal, Brand).
-    Click any tile to open the underlying SKILL.md, plugin, or sub-Control-Center.
-    Use the <strong>Engagement Routing</strong> textbox to test which Practice Lead the Group Chief would pick for any ask.
-    Recent invocations are logged below in <strong>Activity</strong> (local to this browser).
-  </div>
-
-  <div class="info" style="background:#FFF3CD;border-left:4px solid #F9B208;">
-    <strong>About links on this page:</strong>
-    SKILL.md and docs/ files open on <strong>GitHub</strong> (rendered markdown, works from anywhere).
-    The <strong>SMFB Control Center</strong> and Google-Drive / OneDrive folder links use <code>file:///</code> &mdash;
-    these only work when you open <em>this Control Center</em> by double-clicking the HTML file in File Explorer
-    (not via a webserver). If a <code>file:///</code> link doesn't open, copy the path from the link and paste it
-    in File Explorer.
-  </div>
-
-  <div class="roadmap">
-    <div class="phase"><div class="ph-name">Group Chief</div><div class="ph-status live">LIVE</div><div class="ph-sub">v1.0</div></div>
-    <div class="phase"><div class="ph-name">Banking</div><div class="ph-status live">LIVE</div><div class="ph-sub">+ banking-advisory plugin</div></div>
-    <div class="phase" style="border-top-color:#F26122;"><div class="ph-name" style="color:#0D1B3F;">Energy &amp; Petrochem</div><div class="ph-status live" style="color:#F26122;">LIVE</div><div class="ph-sub">5 SMEs &middot; Cnergyico</div></div>
-    <div class="phase"><div class="ph-name">REIT</div><div class="ph-status live">LIVE</div><div class="ph-sub">2 SMEs</div></div>
-    <div class="phase"><div class="ph-name">Accreditation</div><div class="ph-status live">LIVE</div><div class="ph-sub">4 CIP SMEs</div></div>
-    <div class="phase future"><div class="ph-name">Healthcare / Public Sector</div><div class="ph-status future">FUTURE</div><div class="ph-sub">on demand</div></div>
-  </div>
-
-  <!-- =========================================================== -->
-  <!-- GROUP CHIEF                                                   -->
-  <!-- =========================================================== -->
-  <div id="group-chief" class="period-banner chief flex-col">
-    <div>
-      <div class="title">&#127894; ContexAi Group Chief of Staff</div>
-      <div class="sub">Top-level orchestrator &middot; Front door for any engagement &middot; Runs intake &middot; Routes &middot; Synthesizes</div>
-    </div>
-    <span class="pill">v1.0 LIVE</span>
-  </div>
-
+  <!-- ─── KPI strip ─── -->
   <div class="kpi-row">
     <div class="kpi-tile">
       <div class="label">Agents in org</div>
       <div class="value">24+</div>
-      <div class="sub">1 Chief + 4 Leads + 19 SMEs + shared services</div>
+      <div class="sub">1 Chief + 4 Leads + 19 SMEs</div>
     </div>
     <div class="kpi-tile">
       <div class="label">Practices live</div>
       <div class="value">4 of 4</div>
-      <div class="sub">Banking · Energy · REIT · Accreditation</div>
+      <div class="sub">Banking · Real Estate · Energy · Accreditation</div>
     </div>
     <div class="kpi-tile client">
       <div class="label">Client teams</div>
-      <div class="value">1</div>
-      <div class="sub">SMFB live · TSH + Cnergyico future</div>
+      <div class="value">1 live, 3 future</div>
+      <div class="sub">SMFB · TSH · Cnergyico · CIP</div>
     </div>
     <div class="kpi-tile reit">
       <div class="label">Active engagements</div>
-      <div class="value" id="active-eng-count">1</div>
-      <div class="sub" id="active-eng-sub">TSH Islamic REIT (intake)</div>
+      <div class="value">1</div>
+      <div class="sub">TSH Islamic REIT (intake)</div>
     </div>
   </div>
 
-  <div class="grid3">
+  <!-- ─── Group Chief (compact) ─── -->
+  <div id="group-chief" class="chief-banner">
+    <div>
+      <div class="title">&#127894; Group Chief of Staff</div>
+      <div class="sub">Front door for any engagement &middot; Classifies &middot; Routes &middot; Synthesises</div>
+    </div>
+    <span class="pill">v1.0 LIVE</span>
+  </div>
 
-    <div class="card chief">
-      <span class="tag">INVOKE &mdash; Group Chief</span>
-      <h2>Front door for any ask</h2>
-      <ul>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/contexai-group-chief/SKILL.md" target="_blank">
-            contexai-group-chief SKILL.md <span class="badge skill">skill</span></a></li>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-org-chart.md" target="_blank">
-            Org Chart (canonical map) <span class="badge md">md</span></a></li>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-agents-team-spec.md" target="_blank">
-            Agents Team Architectural Spec <span class="badge md">md</span></a></li>
-      </ul>
-      <p style="font-size:12px;color:#595959;margin:10px 0 4px 0;">Copy the invocation prompt:</p>
-      <pre class="cmd">Group Chief, [your ask here].
+  <div class="card chief" style="margin-bottom:24px;">
+    <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:24px; align-items:start;">
+      <div>
+        <p style="font-size:13px; color:#595959; margin:0 0 10px 0;">
+          Invoke for any ContexAi ask &mdash; cross-practice work, new mandates, when you're not sure which Lead to call.
+          Uses the five-field delegation contract (Engagement / Goal / Inputs / Deliverable / Deadline).
+        </p>
+        <pre class="cmd">Group Chief, [your ask here].
 Context: [client / mandate if known].
 Deadline: [if known].</pre>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="Group Chief, [your ask here].&#10;Context: [client / mandate if known].&#10;Deadline: [if known].">Copy prompt</button>
-        <button class="btn-launch" data-log="contexai-group-chief">Log invocation</button>
+        <div class="btn-row">
+          <button class="btn-copy" data-copy="Group Chief, [your ask here].&#10;Context: [client / mandate if known].&#10;Deadline: [if known].">Copy prompt</button>
+          <button class="btn-launch" data-log="contexai-group-chief">Log invocation</button>
+        </div>
+      </div>
+      <div>
+        <span class="tag">CANONICAL DOCS</span>
+        <ul>
+          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/contexai-group-chief/SKILL.md" target="_blank">
+              contexai-group-chief SKILL.md <span class="badge skill">skill</span></a></li>
+          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-org-chart.md" target="_blank">
+              Org Chart <span class="badge md">md</span></a></li>
+          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-agents-team-spec.md" target="_blank">
+              Agents Team Spec <span class="badge md">md</span></a></li>
+        </ul>
       </div>
     </div>
-
-    <div class="card chief">
-      <span class="tag">INTAKE &mdash; New engagement</span>
-      <h2>Five-field contract</h2>
-      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">Every engagement starts with the same template. Don't delegate without it.</p>
-      <pre class="cmd">Engagement: &lt;Client / Mandate (ENG-2026-NNN)&gt;
-Goal: &lt;one sentence&gt;
-Inputs: &lt;file paths / sources&gt;
-Deliverable: &lt;format, audience, page count&gt;
-Deadline: &lt;date&gt;</pre>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="Engagement: <Client / Mandate (ENG-2026-NNN)>&#10;Goal: <one sentence>&#10;Inputs: <file paths / sources>&#10;Deliverable: <format, audience, page count>&#10;Deadline: <date>">Copy template</button>
-      </div>
-      <p style="font-size:12px;color:#595959;margin:10px 0 4px 0;">Existing intakes (move from Cowork outputs/ to the engagement folder):</p>
-      <ul>
-        <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">
-            ENG-2026-001 folder (TSH Islamic REIT) <span class="badge">folder</span></a></li>
-        <li>Brief: <code style="font-size:11px;">ENG-2026-001_engagement-brief_v1_2026-05-26.md</code></li>
-        <li>Agenda: <code style="font-size:11px;">ENG-2026-001_intake_agenda_v1_2026-05-26.md</code></li>
-      </ul>
-    </div>
-
-    <div class="card chief">
-      <span class="tag">SETUP &mdash; Install</span>
-      <h2>Sync skills locally</h2>
-      <ul>
-        <li><a href="https://github.com/DataJinipk/contexai-website/tree/main/agents" target="_blank">
-            Open agents/ folder on GitHub <span class="badge">folder</span></a></li>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/README.md" target="_blank">
-            agents/ README <span class="badge md">md</span></a></li>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/install.ps1" target="_blank">
-            install.ps1 <span class="badge cmd">ps1</span></a></li>
-      </ul>
-      <p style="font-size:12px;color:#595959;margin:10px 0 4px 0;">From PowerShell:</p>
-      <pre class="cmd">cd C:\Users\amirw\contexai-website\agents
-.\install.ps1</pre>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="cd C:\Users\amirw\contexai-website\agents&#10;.\install.ps1">Copy command</button>
-      </div>
-    </div>
-
   </div>
 
-  <!-- =========================================================== -->
-  <!-- PRACTICE LEADS                                                -->
-  <!-- =========================================================== -->
-  <div id="practices" class="period-banner practice flex-col">
-    <div>
-      <div class="title">&#127970; Practice Leads &mdash; 4 domains</div>
-      <div class="sub">Uniform five-field delegation contract &middot; Uniform six-section synthesis template &middot; Reports to Group Chief</div>
-    </div>
-    <span class="pill">4 LIVE</span>
-  </div>
-
-  <div class="grid4">
-
-    <div class="card banking">
-      <span class="tag">BANKING &amp; FINANCIAL SERVICES</span>
-      <h2>banking-practice-lead</h2>
-      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">Thin wrapper over the contexai-banking-advisory plugin (3 Domain Leads, 9 SMEs).</p>
-      <ul>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/banking-practice-lead/SKILL.md" target="_blank">
-            SKILL.md <span class="badge skill">skill</span></a></li>
-        <li>Plugin: <span class="badge plugin">contexai-banking-advisory</span></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 4px 0;"><strong>Triggers:</strong> Murabaha, Sukuk, IPO, M&amp;A, RAAST, neobank, IFRS 9, ICAAP, SBP, SECP NBFC, fintech, fund formation</p>
-      <p style="font-size:11px;color:#595959;margin:8px 0 4px 0;"><strong>Routes to (via plugin):</strong> Conventional, Islamic, Microfinance, IB, PE, Blockchain, Fintech, Startups SMEs</p>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="banking-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-        <button class="btn-launch" data-log="banking-practice-lead">Log invocation</button>
+  <!-- ─── BANKING PRACTICE ─── -->
+  <div id="banking-practice" class="practice-section banking">
+    <div class="practice-head">
+      <div>
+        <span class="name">Banking &amp; Financial Services</span>
+        <span class="meta" style="margin-left:12px;">Anchor practice &middot; backed by full plugin</span>
+        <div class="practice-progress">
+          <span>Buildout:</span>
+          <div class="bar"><div class="fill" style="width:100%;"></div></div>
+          <span class="pct">100%</span>
+          <span style="color:#8A8FA3;">&middot; Lead + Plugin + Live client team</span>
+        </div>
       </div>
+      <code>G:\My Drive\ContexAi_Agents\Banking\</code>
+    </div>
+    <div class="practice-body">
+
+      <div class="card banking">
+        <span class="tag">PRACTICE LEAD</span>
+        <h2>banking-practice-lead</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">Thin wrapper over the contexai-banking-advisory plugin (3 Domain Leads, 9 SMEs).</p>
+        <ul>
+          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/banking-practice-lead/SKILL.md" target="_blank">
+              SKILL.md <span class="badge skill">skill</span></a></li>
+          <li>Plugin: <span class="badge plugin">contexai-banking-advisory</span></li>
+          <li>Routes to: Conventional · Islamic · Microfinance · IB · PE · Blockchain · Fintech · Startups</li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> Murabaha, Sukuk, IPO, M&amp;A, RAAST, neobank, IFRS 9, ICAAP, SBP, SECP NBFC, fund formation</p>
+        <div class="btn-row">
+          <button class="btn-copy" data-copy="banking-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
+          <button class="btn-launch" data-log="banking-practice-lead">Log invocation</button>
+        </div>
+      </div>
+
+      <div class="card client">
+        <span class="tag">CLIENT TEAM &middot; LIVE</span>
+        <h2>SMFB Agents Team</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
+          Sindh Microfinance Bank &mdash; full multi-agent team. SBP-regulated MFB.
+          PIBAS core banking, monthly close, quarterly reporting.
+        </p>
+        <ul>
+          <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/PIBAS/reporting_improvement_phase1/desktop/SMFB_Control_Center.html" target="_blank">
+              &raquo; Open SMFB Control Center <span class="badge live">LIVE</span></a></li>
+          <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/" target="_blank">
+              SMFB Agents Team folder <span class="badge">folder</span></a></li>
+          <li>Chief: <span class="badge skill">smfb-chief-of-staff</span> &middot; Plugin: <span class="badge plugin">smfb-agents-team</span></li>
+          <li><a href="https://github.com/DataJinipk/smfb-reporting-improvement-phase1" target="_blank">
+              GitHub repo <span class="badge">github</span></a></li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>When to route:</strong> any ask where the named client is SMFB &mdash; always routes to SMFB Chief, never a Practice Lead.</p>
+      </div>
+
     </div>
 
-    <div class="card cnergyico">
-      <span class="tag" style="color:#F26122;">ENERGY &amp; PETROCHEMICALS &middot; CNERGYICO PRACTICE</span>
-      <h2 style="color:#0D1B3F;">energy-petrochem-lead</h2>
-      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">5 SMEs: refining economics, petrochem value chain, asset integrity, capital projects, oil trading. <strong style="color:#F26122;">Anchor client: Cnergyico PK.</strong></p>
-      <ul>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
-            SKILL.md <span class="badge skill" style="background:#FFE3D6;color:#F26122;">skill</span></a></li>
-        <li>SMEs: <span class="badge skill" style="background:#FFE3D6;color:#F26122;">margin-architect</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">alchemist</span></li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill" style="background:#FFE3D6;color:#F26122;">sentinel</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">constructor</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">trader</span></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 4px 0;"><strong>Triggers:</strong> refinery, crude slate, FCC, BTX, polyolefins, HAZOP, RBI, EPC, FEED, Brent/WTI/Dubai, freight, Cnergyico, OGRA, OMC</p>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="energy-petrochem-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-        <button class="btn-launch" data-log="energy-petrochem-lead">Log invocation</button>
+    <div class="practice-tasks">
+      <div class="head">
+        <h4>Banking practice tasks</h4>
+        <span class="summary">4 done &middot; 2 awaiting you &middot; 6 total</span>
+      </div>
+      <div class="items">
+        <div class="item"><div class="check done">&check;</div><div class="label done">banking-practice-lead skill built</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">contexai-banking-advisory plugin connected</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">SMFB Agents Team operational (LIVE client)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">SMFB folder migrated to ContexAi_Agents\Banking\</div></div>
+        <div class="item"><div class="check user">!</div><div class="label">Install banking-practice-lead skill locally<span class="note"><code>.\agents\install.ps1</code></span></div></div>
+        <div class="item"><div class="check user">!</div><div class="label">First new banking engagement (non-SMFB)<span class="note">Acid test for the wrapper Lead</span></div></div>
       </div>
     </div>
+  </div>
 
-    <div class="card reit">
-      <span class="tag">REAL ESTATE &amp; INFRASTRUCTURE</span>
-      <h2>reit-practice-lead</h2>
-      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">2 SMEs: REIT structuring (SECP &amp; ITO), Pakistan corporate secretary. Anchor client: TSH Group.</p>
-      <ul>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/reit-practice-lead/SKILL.md" target="_blank">
-            SKILL.md <span class="badge skill">skill</span></a></li>
-        <li>SMEs: <span class="badge skill">reit-advisory-lead</span></li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">legal-corporate-secretary</span></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 4px 0;"><strong>Triggers:</strong> REIT, real estate, TSH, stamp duty, ITO §99/§99A, SECP REIT Regs, RUDA, SPV, trust deed</p>
-      <p style="font-size:11px;color:#595959;margin:8px 0 4px 0;"><strong>Day-1 decision:</strong> Rental vs Development vs Hybrid REIT</p>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="reit-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-        <button class="btn-launch" data-log="reit-practice-lead">Log invocation</button>
+  <!-- ─── REAL ESTATE PRACTICE ─── -->
+  <div id="real-estate-practice" class="practice-section real-est">
+    <div class="practice-head">
+      <div>
+        <span class="name">Real Estate &amp; Infrastructure</span>
+        <span class="meta" style="margin-left:12px;">REIT structuring &middot; Pakistani RE law &middot; TSH anchor</span>
+        <div class="practice-progress">
+          <span>Buildout:</span>
+          <div class="bar"><div class="fill" style="width:70%;"></div></div>
+          <span class="pct">70%</span>
+          <span style="color:#8A8FA3;">&middot; Lead built &middot; TSH client team future &middot; ENG-2026-001 in intake</span>
+        </div>
+      </div>
+      <code>G:\My Drive\ContexAi_Agents\Real_Estate\</code>
+    </div>
+    <div class="practice-body">
+
+      <div class="card reit">
+        <span class="tag">PRACTICE LEAD</span>
+        <h2>reit-practice-lead</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">2 SMEs: REIT &amp; tax structuring, Pakistani corporate secretary. Day-1 decision locked: Rental vs Development vs Hybrid REIT.</p>
+        <ul>
+          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/reit-practice-lead/SKILL.md" target="_blank">
+              SKILL.md <span class="badge skill">skill</span></a></li>
+          <li>SMEs: <span class="badge skill">reit-advisory-lead</span> <span class="badge skill">legal-corporate-secretary</span></li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> REIT, real estate, TSH, stamp duty, ITO §99/§99A, SECP REIT Regs, RUDA, SPV, trust deed</p>
+        <div class="btn-row">
+          <button class="btn-copy" data-copy="reit-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
+          <button class="btn-launch" data-log="reit-practice-lead">Log invocation</button>
+        </div>
+      </div>
+
+      <div class="card client" style="border-top-color:#00C853;">
+        <span class="tag" style="color:#1B5E20;">CLIENT TEAM &middot; FUTURE</span>
+        <h2>TSH Agents Team</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
+          TSH Group &mdash; handled by REIT + Banking Practices (for Islamic structures). Graduates with 3+ mandates.
+        </p>
+        <ul>
+          <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/TSH_Control_Center.html" target="_blank">
+              &raquo; Open TSH Control Center <span class="badge future">FUTURE</span></a></li>
+          <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/" target="_blank">
+              TSH Agents Team folder <span class="badge">folder</span></a></li>
+          <li>Future Chief: <span class="badge future">tsh-chief-of-staff</span> &middot; Plugin: <span class="badge future">tsh-agents-team</span></li>
+          <li>Anchor mandate: <a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">ENG-2026-001 Islamic REIT</a></li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Graduation:</strong> 3+ active TSH mandates OR institutional-memory needs.</p>
+      </div>
+
+    </div>
+
+    <div class="practice-tasks">
+      <div class="head">
+        <h4>Real Estate practice tasks</h4>
+        <span class="summary">5 done &middot; 4 awaiting you &middot; 9 total</span>
+      </div>
+      <div class="items">
+        <div class="item"><div class="check done">&check;</div><div class="label done">reit-practice-lead skill built</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">reit-advisory-lead + legal-corporate-secretary SMEs documented</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">TSH Agents Team Control Center (placeholder)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">ENG-2026-001 engagement brief drafted</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">ENG-2026-001 intake agenda drafted</div></div>
+        <div class="item"><div class="check user">!</div><div class="label">Run setup-eng-2026-001.ps1<span class="note">Moves brief + agenda into OneDrive engagement folder</span></div></div>
+        <div class="item"><div class="check user">!</div><div class="label">TSH sponsor intake call<span class="note">30 min &middot; lock the 8 open questions</span></div></div>
+        <div class="item"><div class="check user">!</div><div class="label">Brief both Practice Leads after intake<span class="note">REIT stream + Banking (Islamic) stream</span></div></div>
+        <div class="item"><div class="check user">!</div><div class="label">Phase 1 deliverable: structuring memo<span class="note">5 pages, decision-grade, Day +14 of kick-off</span></div></div>
       </div>
     </div>
+  </div>
 
-    <div class="card accred">
-      <span class="tag">PROFESSIONAL BODIES &amp; ACCREDITATION</span>
-      <h2>accreditation-practice-lead</h2>
-      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">4 SMEs around CIP — corporate architecture, IP/academic, regulatory, master synthesizer.</p>
-      <ul>
-        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/accreditation-practice-lead/SKILL.md" target="_blank">
-            SKILL.md <span class="badge skill">skill</span></a></li>
-        <li>SMEs: <span class="badge skill">cip-master-plan</span></li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">cip-corporate-secp</span></li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">cip-ip-academic</span></li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">cip-regulatory-strategy</span></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 4px 0;"><strong>Triggers:</strong> CIP, CCP, Section 42 NPO, HEC, IPO-Pakistan trademark, SBP/PBA endorsement, designation</p>
-      <p style="font-size:11px;color:#595959;margin:8px 0 4px 0;"><strong>Critical path:</strong> SECP Section 42 license approval (6–9 months)</p>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="accreditation-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
-        <button class="btn-launch" data-log="accreditation-practice-lead">Log invocation</button>
+  <!-- ─── ENERGY & PETROCHEM PRACTICE ─── -->
+  <div id="energy-practice" class="practice-section energy">
+    <div class="practice-head">
+      <div>
+        <span class="name">Energy &amp; Petrochemicals</span>
+        <span class="meta" style="margin-left:12px;">5 SMEs &middot; Cnergyico anchor</span>
+        <div class="practice-progress">
+          <span>Buildout:</span>
+          <div class="bar"><div class="fill" style="width:55%;"></div></div>
+          <span class="pct">55%</span>
+          <span style="color:#8A8FA3;">&middot; Lead + 5 SMEs built &middot; Cnergyico client team future &middot; 0 mandates</span>
+        </div>
+      </div>
+      <code>G:\My Drive\ContexAi_Agents\Energy\</code>
+    </div>
+    <div class="practice-body">
+
+      <div class="card cnergyico">
+        <span class="tag" style="color:#F26122;">PRACTICE LEAD</span>
+        <h2 style="color:#0D1B3F;">energy-petrochem-lead</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">Orchestrates 5 SMEs: refining economics, petrochem value chain, asset integrity, capital projects, trading.</p>
+        <ul>
+          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+              SKILL.md <span class="badge skill" style="background:#FFE3D6;color:#F26122;">skill</span></a></li>
+          <li>SMEs: <span class="badge skill" style="background:#FFE3D6;color:#F26122;">margin-architect</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">alchemist</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">sentinel</span></li>
+          <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill" style="background:#FFE3D6;color:#F26122;">constructor</span> <span class="badge skill" style="background:#FFE3D6;color:#F26122;">trader</span></li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> refinery, crude slate, FCC, BTX, polyolefins, HAZOP, EPC, FEED, Brent/WTI/Dubai, freight, Cnergyico, OGRA, OMC</p>
+        <div class="btn-row">
+          <button class="btn-copy" data-copy="energy-petrochem-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
+          <button class="btn-launch" data-log="energy-petrochem-lead">Log invocation</button>
+        </div>
+      </div>
+
+      <div class="card cnergyico-client">
+        <span class="tag" style="color:#F26122;">CLIENT TEAM &middot; FUTURE</span>
+        <h2 style="color:#0D1B3F;">Cnergyico Agents Team</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
+          <strong style="color:#0D1B3F;">Cnergyico PK</strong> &mdash; currently handled by the Energy Practice.
+          Graduates for plant-specific institutional context.
+        </p>
+        <ul>
+          <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/Cnergyico_Control_Center.html" target="_blank">
+              &raquo; Open Cnergyico Control Center <span class="badge future" style="background:#FFE3D6;color:#F26122;">FUTURE</span></a></li>
+          <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/" target="_blank">
+              Cnergyico Agents Team folder <span class="badge">folder</span></a></li>
+          <li>Future Chief: <span class="badge future" style="background:#FFE3D6;color:#F26122;">cnergyico-chief-of-staff</span></li>
+          <li>Future Plugin: <span class="badge future" style="background:#FFE3D6;color:#F26122;">cnergyico-agents-team</span></li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong style="color:#0D1B3F;">Graduation:</strong> ongoing retainer or 3+ active Cnergyico mandates.</p>
+      </div>
+
+    </div>
+
+    <div class="practice-tasks">
+      <div class="head">
+        <h4>Energy &amp; Petrochem practice tasks</h4>
+        <span class="summary">7 done &middot; 3 awaiting first mandate &middot; 10 total</span>
+      </div>
+      <div class="items">
+        <div class="item"><div class="check done">&check;</div><div class="label done">energy-petrochem-lead skill built</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">margin-architect SME (refining economics)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">alchemist SME (petrochem value chain)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">sentinel SME (asset integrity)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">constructor SME (capital projects)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">trader SME (oil trading &amp; logistics)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">Cnergyico Agents Team Control Center (placeholder)</div></div>
+        <div class="item"><div class="check pending">&middot;</div><div class="label">First Cnergyico mandate &mdash; intake</div></div>
+        <div class="item"><div class="check pending">&middot;</div><div class="label">Second Cnergyico mandate</div></div>
+        <div class="item"><div class="check pending">&middot;</div><div class="label">Third mandate &rarr; team graduates</div></div>
       </div>
     </div>
-
   </div>
 
-  <!-- =========================================================== -->
-  <!-- CLIENT TEAMS                                                  -->
-  <!-- =========================================================== -->
-  <div id="clients" class="period-banner client flex-col">
-    <div>
-      <div class="title">&#127970; Client-Specific Teams &mdash; grouped by practice</div>
-      <div class="sub">Activated when a client has its own dedicated multi-agent plugin &middot; Holds institutional memory the Practice Leads don't have</div>
-      <div class="sub" style="margin-top:6px;">Mirrors folder structure: <code style="background:rgba(255,255,255,0.18);padding:2px 6px;border-radius:3px;color:white;">G:\My Drive\ContexAi_Agents\&lt;Practice&gt;\&lt;Team&gt;\</code></div>
+  <!-- ─── ACCREDITATION PRACTICE ─── -->
+  <div id="accred-practice" class="practice-section accred">
+    <div class="practice-head">
+      <div>
+        <span class="name">Professional Bodies &amp; Accreditation</span>
+        <span class="meta" style="margin-left:12px;">4 CIP SMEs &middot; CIP anchor &middot; SECP §42 critical path</span>
+        <div class="practice-progress">
+          <span>Buildout:</span>
+          <div class="bar"><div class="fill" style="width:45%;"></div></div>
+          <span class="pct">45%</span>
+          <span style="color:#8A8FA3;">&middot; Lead + 4 SMEs built &middot; CIP client team future &middot; SECP §42 blocker</span>
+        </div>
+      </div>
+      <code>G:\My Drive\ContexAi_Agents\Accreditation\</code>
     </div>
-    <span class="pill">1 LIVE &middot; 3 FUTURE</span>
-  </div>
+    <div class="practice-body">
 
-  <!-- BANKING PRACTICE -->
-  <div class="practice-group banking">
-    <span class="label">Banking Practice</span>
-    <code>ContexAi_Agents\Banking\</code>
-  </div>
-  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
-    <div class="card client" style="grid-column:1 / -1; max-width:none;">
-      <span class="tag">CLIENT TEAM &middot; LIVE</span>
-      <h2>SMFB Agents Team</h2>
-      <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
-        Sindh Microfinance Bank — full multi-agent team with its own Chief, Domain Leads, and SMEs.
-        SBP-regulated MFB. PIBAS core banking, monthly close, quarterly reporting.
-      </p>
-      <ul>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/PIBAS/reporting_improvement_phase1/desktop/SMFB_Control_Center.html" target="_blank">
-            &raquo; Open SMFB Control Center <span class="badge live">LIVE</span></a></li>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/" target="_blank">
-            SMFB Agents Team folder <span class="badge">folder</span></a></li>
-        <li>Chief: <span class="badge skill">smfb-chief-of-staff</span></li>
-        <li>Plugin: <span class="badge plugin">smfb-agents-team</span></li>
-        <li><a href="https://github.com/DataJinipk/smfb-reporting-improvement-phase1" target="_blank">
-            GitHub repo <span class="badge">github</span></a></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong>When to route:</strong> any ask where the named client is SMFB / Sindh Microfinance Bank — always routes to SMFB Chief, never to a Practice Lead.</p>
+      <div class="card accred">
+        <span class="tag" style="color:#6A1B9A;">PRACTICE LEAD</span>
+        <h2 style="color:#6A1B9A;">accreditation-practice-lead</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">Orchestrates 4 CIP-aligned SMEs &mdash; corporate architecture, IP &amp; academic, regulatory engagement, master synthesizer.</p>
+        <ul>
+          <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/accreditation-practice-lead/SKILL.md" target="_blank">
+              SKILL.md <span class="badge skill">skill</span></a></li>
+          <li>SMEs: <span class="badge skill">cip-master-plan</span> <span class="badge skill">cip-corporate-secp</span></li>
+          <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">cip-ip-academic</span> <span class="badge skill">cip-regulatory-strategy</span></li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong>Triggers:</strong> CIP, CCP, Section 42 NPO, HEC, IPO-Pakistan, SBP/PBA endorsement, designation</p>
+        <div class="btn-row">
+          <button class="btn-copy" data-copy="accreditation-practice-lead, [your ask].&#10;Engagement: [client / mandate].&#10;Deliverable: [format].">Copy prompt</button>
+          <button class="btn-launch" data-log="accreditation-practice-lead">Log invocation</button>
+        </div>
+      </div>
+
+      <div class="card client" style="border-top-color:#9C27B0;">
+        <span class="tag" style="color:#6A1B9A;">CLIENT TEAM &middot; FUTURE</span>
+        <h2 style="color:#6A1B9A;">CIP Agents Team</h2>
+        <p style="font-size:12px; color:#595959; margin:4px 0 8px 0;">
+          <strong style="color:#6A1B9A;">Credit Institute of Pakistan</strong> &mdash; flagship Phase-1 engagement.
+          Graduates once Section 42 license granted &amp; institute is live.
+        </p>
+        <ul>
+          <li><a href="file:///G:/My Drive/ContexAi_Agents/Accreditation/CIP Agents Team/" target="_blank">
+              CIP Agents Team folder <span class="badge">folder</span></a></li>
+          <li>Future Chief: <span class="badge future">cip-chief-of-staff</span></li>
+          <li>Future Plugin: <span class="badge future">cip-agents-team</span></li>
+        </ul>
+        <p style="font-size:11px; color:#595959; margin:8px 0 0 0;"><strong style="color:#6A1B9A;">Critical path:</strong> SECP Section 42 approval (6–9 months).</p>
+      </div>
+
     </div>
-  </div>
 
-  <!-- REAL ESTATE PRACTICE -->
-  <div class="practice-group real-est">
-    <span class="label">Real Estate Practice</span>
-    <code>ContexAi_Agents\Real_Estate\</code>
-  </div>
-  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
-    <div class="card client" style="border-top-color:#70AD47; grid-column:1 / -1;">
-      <span class="tag" style="color:#385723;">CLIENT TEAM &middot; FUTURE</span>
-      <h2>TSH Agents Team</h2>
-      <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
-        TSH Group — currently handled by Real Estate Practice + Banking Practice (for Islamic structures).
-        Will graduate to its own client team when engagement volume warrants.
-      </p>
-      <ul>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/TSH_Control_Center.html" target="_blank">
-            &raquo; Open TSH Control Center <span class="badge future">FUTURE</span></a></li>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Real_Estate/TSH Agents Team/" target="_blank">
-            TSH Agents Team folder <span class="badge">folder</span></a></li>
-        <li>Practice Leads: <span class="badge skill">reit-practice-lead</span> + <span class="badge skill">banking-practice-lead</span></li>
-        <li>Future Chief: <span class="badge future">tsh-chief-of-staff</span></li>
-        <li>Future Plugin: <span class="badge future">tsh-agents-team</span></li>
-        <li>Anchor mandate: <a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">ENG-2026-001 (Islamic REIT)</a></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong>When to route:</strong> any TSH ask currently goes through the Group Chief and is split across REIT and Banking Practice Leads (for Islamic structures). Graduation trigger: 3+ active TSH mandates.</p>
-    </div>
-  </div>
-
-  <!-- ENERGY PRACTICE -->
-  <div class="practice-group energy">
-    <span class="label">Energy &amp; Petrochem Practice</span>
-    <code>ContexAi_Agents\Energy\</code>
-  </div>
-  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
-    <div class="card cnergyico-client" style="grid-column:1 / -1;">
-      <span class="tag" style="color:#F26122;">CLIENT TEAM &middot; FUTURE</span>
-      <h2 style="color:#0D1B3F;">Cnergyico Agents Team</h2>
-      <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
-        <strong style="color:#0D1B3F;">Cnergyico PK</strong> — currently handled by the Energy &amp; Petrochem Practice. Will graduate to its
-        own team for plant-specific institutional context (refinery configuration, supply contracts, terminal ops, OGRA filings).
-      </p>
-      <ul>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/Cnergyico_Control_Center.html" target="_blank">
-            &raquo; Open Cnergyico Control Center <span class="badge future" style="background:#FFE3D6;color:#F26122;">FUTURE</span></a></li>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Energy/Cnergyico Agents Team/" target="_blank">
-            Cnergyico Agents Team folder <span class="badge">folder</span></a></li>
-        <li>Practice Lead: <span class="badge skill" style="background:#FFE3D6;color:#F26122;">energy-petrochem-lead</span></li>
-        <li>Future Chief: <span class="badge future" style="background:#FFE3D6;color:#F26122;">cnergyico-chief-of-staff</span></li>
-        <li>Future Plugin: <span class="badge future" style="background:#FFE3D6;color:#F26122;">cnergyico-agents-team</span></li>
-        <li>SMEs: margin-architect, alchemist, sentinel, constructor, trader</li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong style="color:#0D1B3F;">Graduation trigger:</strong> ongoing retainer or 3+ active Cnergyico mandates.</p>
+    <div class="practice-tasks">
+      <div class="head">
+        <h4>Accreditation practice tasks</h4>
+        <span class="summary">6 done &middot; 4 on the critical path &middot; 10 total</span>
+      </div>
+      <div class="items">
+        <div class="item"><div class="check done">&check;</div><div class="label done">accreditation-practice-lead skill built</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">cip-master-plan SME (project synthesizer)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">cip-corporate-secp SME (Section 42, MoA/AoA)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">cip-ip-academic SME (IPO-Pakistan, HEC)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">cip-regulatory-strategy SME (SBP/PBA endorsement)</div></div>
+        <div class="item"><div class="check done">&check;</div><div class="label done">CIP Agents Team Control Center (placeholder)</div></div>
+        <div class="item"><div class="check user">!</div><div class="label">SECP §42 incorporation filing<span class="note">CRITICAL PATH &middot; 6&ndash;9 months &middot; sequences everything else</span></div></div>
+        <div class="item"><div class="check pending">&middot;</div><div class="label">IPO-Pakistan trademark CCP designation<span class="note">After §42 status confirmed</span></div></div>
+        <div class="item"><div class="check pending">&middot;</div><div class="label">SBP / PBA endorsement engagement<span class="note">After regulator briefing sequence</span></div></div>
+        <div class="item"><div class="check pending">&middot;</div><div class="label">First CCP cohort &rarr; team graduates</div></div>
+      </div>
     </div>
   </div>
 
-  <!-- ACCREDITATION PRACTICE -->
-  <div class="practice-group accred">
-    <span class="label">Accreditation Practice</span>
-    <code>ContexAi_Agents\Accreditation\</code>
-  </div>
-  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;">
-    <div class="card client" style="border-top-color:#7030A0; grid-column:1 / -1;">
-      <span class="tag" style="color:#7030A0;">CLIENT TEAM &middot; FUTURE</span>
-      <h2 style="color:#7030A0;">CIP Agents Team</h2>
-      <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
-        <strong style="color:#7030A0;">Credit Institute of Pakistan</strong> — flagship Phase-1 engagement of the Accreditation Practice.
-        Currently served by <code>accreditation-practice-lead</code> + four CIP SMEs.
-        Will graduate to its own client team once the Section 42 license is granted and the institute is live.
-      </p>
-      <ul>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Accreditation/CIP Agents Team/" target="_blank">
-            CIP Agents Team folder <span class="badge">folder</span></a></li>
-        <li>Practice Lead: <span class="badge skill">accreditation-practice-lead</span></li>
-        <li>SMEs: <span class="badge skill">cip-master-plan</span> <span class="badge skill">cip-corporate-secp</span></li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp;<span class="badge skill">cip-ip-academic</span> <span class="badge skill">cip-regulatory-strategy</span></li>
-        <li>Future Chief: <span class="badge future">cip-chief-of-staff</span></li>
-        <li>Future Plugin: <span class="badge future">cip-agents-team</span></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong style="color:#7030A0;">Critical path:</strong> SECP Section 42 license approval (6–9 months). Graduation trigger: license granted + first cohort of CCP candidates.</p>
-    </div>
-  </div>
-
-  <!-- =========================================================== -->
-  <!-- SHARED SERVICES                                               -->
-  <!-- =========================================================== -->
-  <div id="shared" class="period-banner shared flex-col">
-    <div>
-      <div class="title">&#128296; Shared Services</div>
-      <div class="sub">Cross-domain skills called by any Practice Lead or Client Team during delivery</div>
-    </div>
-    <span class="pill">12+ skills</span>
-  </div>
-
-  <div class="grid3">
-
-    <div class="card shared">
-      <span class="tag">DOCUMENT CONTROL</span>
-      <h2>Engagement file management</h2>
-      <ul>
-        <li><span class="badge skill">awa-agent</span> &mdash; folder setup, naming, version control, archival</li>
-        <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/" target="_blank">
-            Open OneDrive Engagements folder <span class="badge">folder</span></a></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;"><strong>Naming:</strong> <code>&lt;ENG-ID&gt;_&lt;workstream&gt;_&lt;doc-type&gt;_v&lt;N&gt;_&lt;YYYY-MM-DD&gt;.&lt;ext&gt;</code></p>
-    </div>
-
-    <div class="card shared">
-      <span class="tag">FINANCIAL MODELING</span>
-      <h2>Models &amp; analysis</h2>
-      <ul>
-        <li><span class="badge skill">smfb-financial-expert</span> &mdash; 3-statement, BOD packs, audit-ready FS</li>
-        <li><span class="badge skill">xlsx</span> &mdash; general spreadsheets</li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;">Used by every practice for deliverable assembly.</p>
-    </div>
-
-    <div class="card shared">
-      <span class="tag">DECKS &amp; DOCUMENTS</span>
-      <h2>Deliverable production</h2>
-      <ul>
-        <li><span class="badge skill">pptx</span> &mdash; pitch books, board decks, IM execs</li>
-        <li><span class="badge skill">docx</span> &mdash; memos, letters, MoA/AoA, contracts</li>
-        <li><span class="badge skill">pdf</span> &mdash; merge/split/form-fill/OCR</li>
-        <li><span class="badge skill">canvas-design</span> &mdash; visual assets, posters</li>
-      </ul>
-    </div>
-
-    <div class="card shared">
-      <span class="tag">CORE BANKING</span>
-      <h2>PIBAS &amp; banking systems</h2>
-      <ul>
-        <li><span class="badge skill">pibas-expert</span> &mdash; PIBAS reports, batch, regulatory returns</li>
-        <li><a href="file:///G:/My Drive/ContexAi_Agents/Banking/SMFB Agents Team/PIBAS/" target="_blank">
-            SMFB PIBAS workspace <span class="badge">folder</span></a></li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;">Most active for SMFB; reusable for any PIBAS-based MFB engagement.</p>
-    </div>
-
-    <div class="card shared">
-      <span class="tag">REGULATORY &amp; LEGAL</span>
-      <h2>Pakistan compliance</h2>
-      <ul>
-        <li><span class="badge skill">legal-corporate-secretary</span> &mdash; Companies Act 2017, SECP filings, board resolutions</li>
-        <li><span class="badge skill">contexai-regulatory-pakistan</span> &mdash; SBP / SECP / FBR / IPO-Pak / HEC / PSX</li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;">Called by Banking, REIT, and Accreditation practices.</p>
-    </div>
-
-    <div class="card shared">
-      <span class="tag">BRAND &amp; COMMUNICATIONS</span>
-      <h2>On-brand outputs</h2>
-      <ul>
-        <li><span class="badge skill">brand-guidelines</span> &mdash; voice + typography enforcement</li>
-        <li><span class="badge skill">internal-comms</span> &mdash; status reports, leadership updates</li>
-      </ul>
-      <p style="font-size:11px;color:#595959;margin:8px 0 0 0;">Final-pass on any client-facing deliverable.</p>
-    </div>
-
-  </div>
-
-  <!-- =========================================================== -->
-  <!-- ENGAGEMENT ROUTING (INTERACTIVE)                              -->
-  <!-- =========================================================== -->
-  <div id="routing" class="period-banner routing flex-col">
-    <div>
-      <div class="title">&#128269; Engagement Routing &mdash; What would the Group Chief do?</div>
-      <div class="sub">Type any consulting ask. See the routing the Group Chief would pick, with rationale.</div>
-    </div>
-    <span class="pill">interactive</span>
-  </div>
-
+  <!-- ─── ENGAGEMENT ROUTING (interactive) ─── -->
+  <h2 id="routing" class="section-title">&#128269; Engagement Routing
+    <span class="meta">&mdash; what would the Group Chief do?</span></h2>
   <div class="routing-box">
     <label for="routing-input">Describe an ask in plain English:</label>
-    <textarea id="routing-input" placeholder="e.g. 'TSH wants a Shariah-compliant REIT for their industrial portfolio' or 'Cnergyico's gasoline crack is crushing us, should we cut runs?'"></textarea>
+    <textarea id="routing-input" placeholder="e.g. 'TSH wants a Shariah-compliant REIT' or 'Cnergyico's gasoline crack is crushing us'"></textarea>
     <div style="margin-top:10px; display:flex; gap:8px;">
       <button class="btn-launch" onclick="runRouting()">Route this ask</button>
       <button class="btn-copy" onclick="document.getElementById('routing-input').value=''; document.getElementById('routing-result').classList.remove('show');">Clear</button>
@@ -617,27 +582,18 @@ Deadline: &lt;date&gt;</pre>
     <div id="routing-result" class="routing-result"></div>
   </div>
 
-  <!-- =========================================================== -->
-  <!-- ACTIVE ENGAGEMENTS                                            -->
-  <!-- =========================================================== -->
-  <div id="engagements" class="period-banner engage flex-col">
-    <div>
-      <div class="title">&#128221; Active Engagements</div>
-      <div class="sub">Live mandates &middot; Lead expert &middot; Next milestone &middot; Status</div>
-    </div>
-    <span class="pill">1 active</span>
-  </div>
-
-  <div class="card" style="border-top-color:#70AD47; margin-bottom:30px;">
+  <!-- ─── ACTIVE ENGAGEMENTS ─── -->
+  <h2 id="engagements" class="section-title">&#128221; Active Engagements
+    <span class="meta">&mdash; live mandates &amp; intakes</span></h2>
+  <div class="card" style="border-top-color:#00C853; margin-bottom:24px;">
     <table style="width:100%; border-collapse:collapse; font-size:13px;">
       <thead>
         <tr style="background:#0B1120; color:white;">
           <th style="text-align:left; padding:8px;">ID</th>
           <th style="text-align:left; padding:8px;">Client</th>
           <th style="text-align:left; padding:8px;">Mandate</th>
-          <th style="text-align:left; padding:8px;">Lead</th>
+          <th style="text-align:left; padding:8px;">Practice</th>
           <th style="text-align:left; padding:8px;">Status</th>
-          <th style="text-align:left; padding:8px;">Next milestone</th>
           <th style="text-align:left; padding:8px;">Open</th>
         </tr>
       </thead>
@@ -646,87 +602,77 @@ Deadline: &lt;date&gt;</pre>
           <td style="padding:8px; border-top:1px solid #eee;"><strong>ENG-2026-001</strong></td>
           <td style="padding:8px; border-top:1px solid #eee;">TSH Group</td>
           <td style="padding:8px; border-top:1px solid #eee;">Islamic REIT structuring</td>
-          <td style="padding:8px; border-top:1px solid #eee;">Group Chief (cross-practice)</td>
+          <td style="padding:8px; border-top:1px solid #eee;">Real Estate × Banking</td>
           <td style="padding:8px; border-top:1px solid #eee;"><span class="badge pend">INTAKE</span></td>
-          <td style="padding:8px; border-top:1px solid #eee;">Sponsor intake call</td>
           <td style="padding:8px; border-top:1px solid #eee;">
             <a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">folder</a>
           </td>
         </tr>
       </tbody>
     </table>
-    <p style="font-size:12px; color:#595959; margin-top:14px;">
-      Engagements list pulls from <code>engagements/registry.json</code> in the R2 bucket
-      (see <a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/dashboard-deploy.md" target="_blank">dashboard-deploy.md</a>
-      §6 for the schema). Update the JSON to add/edit mandates; the Ops Dashboard's
-      <strong>Engagements</strong> tab and this section both read from it.
-    </p>
-    <p style="font-size:12px; color:#595959;">
-      <a href="https://contexai.org/dashboard.html" target="_blank">&raquo; Open Ops Dashboard for live KPIs</a>
+    <p style="font-size:11px; color:#595959; margin:12px 0 0 0;">
+      Live engagements pull from <code>engagements/registry.json</code> in R2 (see
+      <a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/dashboard-deploy.md" target="_blank">dashboard-deploy.md</a>
+      §6). <a href="https://contexai.org/dashboard.html" target="_blank">&raquo; Open Ops Dashboard for live KPIs</a>
     </p>
   </div>
 
-  <!-- =========================================================== -->
-  <!-- ACTIVITY LOG                                                  -->
-  <!-- =========================================================== -->
-  <div class="section-title">Recent agent activity (this browser)</div>
-  <div class="card shared" style="margin-bottom:30px;">
-    <span class="tag">ACTIVITY &middot; localStorage</span>
+  <!-- ─── SHARED SERVICES (compact chips) ─── -->
+  <h2 class="section-title">&#128296; Shared Services
+    <span class="meta">&mdash; cross-domain skills called by any Practice Lead or Client Team</span></h2>
+  <div class="card shared" style="margin-bottom:24px;">
+    <div class="chip-group">
+      <span class="group-label">Doc control</span>
+      <span class="chip">awa-agent</span>
+    </div>
+    <div class="chip-group">
+      <span class="group-label">Modeling</span>
+      <span class="chip">smfb-financial-expert</span>
+      <span class="chip">xlsx</span>
+    </div>
+    <div class="chip-group">
+      <span class="group-label">Decks &amp; docs</span>
+      <span class="chip">pptx</span>
+      <span class="chip">docx</span>
+      <span class="chip">pdf</span>
+      <span class="chip">canvas-design</span>
+    </div>
+    <div class="chip-group">
+      <span class="group-label">Core banking</span>
+      <span class="chip">pibas-expert</span>
+    </div>
+    <div class="chip-group">
+      <span class="group-label">Regulatory &amp; legal</span>
+      <span class="chip">legal-corporate-secretary</span>
+      <span class="chip">contexai-regulatory-pakistan</span>
+    </div>
+    <div class="chip-group">
+      <span class="group-label">Brand &amp; comms</span>
+      <span class="chip">brand-guidelines</span>
+      <span class="chip">internal-comms</span>
+    </div>
+  </div>
+
+  <!-- ─── ACTIVITY LOG (compact) ─── -->
+  <h2 class="section-title">Recent agent activity
+    <span class="meta">&mdash; this browser only, localStorage</span></h2>
+  <div class="card shared" style="margin-bottom:24px;">
     <div id="activity-log" class="activity-list">
-      <div class="empty">No invocations logged yet. Click "Log invocation" on any tile after you use that agent.</div>
+      <div class="empty">No invocations logged yet. Click "Log invocation" on any Practice Lead tile.</div>
     </div>
     <div class="btn-row">
       <button class="btn-copy" onclick="clearActivity()">Clear log</button>
-      <button class="btn-copy" onclick="exportActivity()">Export as CSV</button>
+      <button class="btn-copy" onclick="exportActivity()">Export CSV</button>
     </div>
-  </div>
-
-  <!-- =========================================================== -->
-  <!-- QUICK COMMANDS                                                -->
-  <!-- =========================================================== -->
-  <div class="section-title">Quick commands</div>
-  <div class="grid2">
-
-    <div class="card shared">
-      <span class="tag">DEPLOY &mdash; Dashboard</span>
-      <h2>Wrangler &amp; secrets</h2>
-      <p style="font-size:12px; color:#595959; margin:0 0 6px 0;">Generate ADMIN_TOKEN, set as secret, deploy Worker:</p>
-      <pre class="cmd">cd C:\Users\amirw\contexai-website
-
-$bytes = New-Object byte[] 32
-[Security.Cryptography.RNGCryptoServiceProvider]::Create().GetBytes($bytes)
-($bytes | ForEach-Object { $_.ToString("x2") }) -join ""
-
-npx wrangler secret put ADMIN_TOKEN
-npx wrangler deploy</pre>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="cd C:\Users\amirw\contexai-website&#10;npx wrangler deploy">Copy deploy command</button>
-      </div>
-    </div>
-
-    <div class="card shared">
-      <span class="tag">GIT &mdash; Push</span>
-      <h2>Standard commit + push</h2>
-      <p style="font-size:12px; color:#595959; margin:0 0 6px 0;">Discards CRLF noise, stages real work, commits, pushes:</p>
-      <pre class="cmd">cd C:\Users\amirw\contexai-website
-git add agents/ docs/ src/index.js public/dashboard.html
-git status
-git commit -m "feat: [your message]"
-git push origin main</pre>
-      <div class="btn-row">
-        <button class="btn-copy" data-copy="cd C:\Users\amirw\contexai-website&#10;git add agents/ docs/ src/index.js public/dashboard.html&#10;git status&#10;git commit -m &quot;feat: [your message]&quot;&#10;git push origin main">Copy git block</button>
-      </div>
-    </div>
-
   </div>
 
 </div>
 
 <footer>
   ContexAi Group &middot; Curated AI consulting marketplace at
-  <a href="https://contexai.org" style="color:#CADCFC;">contexai.org</a> &middot;
+  <a href="https://contexai.org">contexai.org</a> &middot;
   Founded by Amir W. Ahmed &middot;
-  <a href="https://github.com/DataJinipk/contexai-website" style="color:#CADCFC;">GitHub</a>
+  <a href="https://github.com/DataJinipk/contexai-website">GitHub</a>
 </footer>
 
 <div id="toast" class="toast"></div>
@@ -765,7 +711,6 @@ document.addEventListener('click', (e) => {
 function logInvocation(agent, note) {
   const log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
   log.unshift({ agent, at: new Date().toISOString(), note: note || '' });
-  // Keep last 50
   localStorage.setItem(LOG_KEY, JSON.stringify(log.slice(0, 50)));
   renderActivity();
   showToast(`Logged: ${agent}`);
@@ -775,7 +720,7 @@ function renderActivity() {
   const log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
   const el = document.getElementById('activity-log');
   if (!log.length) {
-    el.innerHTML = '<div class="empty">No invocations logged yet. Click "Log invocation" on any tile after you use that agent.</div>';
+    el.innerHTML = '<div class="empty">No invocations logged yet. Click "Log invocation" on any Practice Lead tile.</div>';
     return;
   }
   el.innerHTML = log.map(item => {
@@ -814,30 +759,23 @@ function escapeHtml(s) {
 }
 
 // ─── Routing heuristic ────────────────────────────────────────────────────
-// Mirrors the Group Chief's routing matrix from agents/contexai-group-chief/SKILL.md
-
 const ROUTING_RULES = [
-  // Client teams first — they always win when the client is named
   { match: /\b(smfb|sindh microfinance|sindh micro\s?finance)\b/i,
     lead: 'smfb-chief-of-staff',
     reason: 'Named client SMFB has its own client team. Always routes to the SMFB Chief, never to a Practice Lead.',
     practice: 'Client Team' },
-  // REIT / Real Estate
   { match: /\b(reit|real estate|tsh|stamp duty|ito\s?§?\s?99|secp reit|spv|trust deed|ruda|dha|bahria|cvt|cgt on real)\b/i,
     lead: 'reit-practice-lead',
-    reason: 'Real Estate / REIT signal. First Day-1 decision the Lead will lock: Rental vs Development vs Hybrid REIT.',
+    reason: 'Real Estate / REIT signal. First Day-1 decision the Lead locks: Rental vs Development vs Hybrid REIT.',
     practice: 'Real Estate & Infrastructure' },
-  // Energy / Petrochem
   { match: /\b(refinery|crude slate|fcc|hydrocracker|coker|btx|polyolefin|ethylene|propylene|naphtha|polymer|hazop|api 5(10|70|650|653)|rbi|epc|feed|fidic|turnaround|t&i|brent|wti|dubai|crack spread|vlcc|bunker|cnergyico|ogra)\b/i,
     lead: 'energy-petrochem-lead',
-    reason: 'Energy / Petrochemicals signal. Lead will route to one of the 5 SMEs (margin-architect, alchemist, sentinel, constructor, trader).',
+    reason: 'Energy / Petrochemicals signal. Lead routes to one of 5 SMEs (margin-architect, alchemist, sentinel, constructor, trader).',
     practice: 'Energy & Petrochemicals' },
-  // Accreditation / CIP
   { match: /\b(cip|certified credit professional|ccp\b|section 42|hec|ipo[- ]pakistan|trademark.*designation|professional body|accreditation|pba endorsement)\b/i,
     lead: 'accreditation-practice-lead',
-    reason: 'Professional Bodies & Accreditation signal. Critical path: SECP Section 42 license (6–9 months) sequences everything else.',
+    reason: 'Professional Bodies & Accreditation. Critical path: SECP Section 42 license sequences everything else.',
     practice: 'Professional Bodies & Accreditation' },
-  // Banking sub-signals
   { match: /\b(murabaha|sukuk|ijarah|musharakah|shariah|islamic bank|takaful|aaoifi|ibi)\b/i,
     lead: 'banking-practice-lead',
     reason: 'Islamic Banking signal. Routes through banking-practice-lead → banking-advisory plugin → Islamic Banking SME.',
@@ -848,24 +786,23 @@ const ROUTING_RULES = [
     practice: 'Banking & Financial Services' },
   { match: /\b(neobank|fintech|raast|emi license|psp license|tokenisation|tokenization|stablecoin|cbdc|blockchain|web3|defi)\b/i,
     lead: 'banking-practice-lead',
-    reason: 'Innovation domain signal. Routes through banking-practice-lead → banking-advisory plugin → Innovation domain (Fintech / Blockchain / Startups).',
+    reason: 'Innovation domain (Fintech / Blockchain / Startups).',
     practice: 'Banking & Financial Services' },
   { match: /\b(pibas|core banking|eod|month-end|trial balance|format-smfb|sbp prudential|ifrs ?9|icaap|basel|car\b)\b/i,
     lead: 'banking-practice-lead',
-    reason: 'Banking operations / regulatory signal. If SMFB is the client, routes to SMFB Chief; otherwise to banking-practice-lead.',
+    reason: 'Banking operations / regulatory signal. If SMFB is the client, routes to SMFB Chief.',
     practice: 'Banking & Financial Services' },
-  // Shared services
   { match: /\b(file|folder|where did i put|organise|organize|naming|version control|engagement folder)\b/i,
     lead: 'awa-agent',
-    reason: 'Document control / file management signal. Goes direct to the Document Controller.',
+    reason: 'Document control / file management — goes direct to Document Controller.',
     practice: 'Shared Services' },
   { match: /\b(spreadsheet|model|excel|xlsx|projection|three[- ]statement)\b/i,
     lead: 'smfb-financial-expert / xlsx',
-    reason: 'Financial modeling signal. Goes direct to the modeling shared service.',
+    reason: 'Financial modeling — goes direct to the modeling shared service.',
     practice: 'Shared Services' },
   { match: /\b(deck|slide|pitch book|presentation|board pack)\b/i,
     lead: 'pptx',
-    reason: 'Deliverable production signal. Goes direct to the deck shared service.',
+    reason: 'Deliverable production — goes direct to the deck shared service.',
     practice: 'Shared Services' },
 ];
 
@@ -874,25 +811,22 @@ function runRouting() {
   const out = document.getElementById('routing-result');
   if (!ask) { out.innerHTML = '<em>Type an ask above first.</em>'; out.classList.add('show'); return; }
 
-  // Find all matches
   const matches = ROUTING_RULES.filter(r => r.match.test(ask));
 
   let html;
   if (matches.length === 0) {
     html = `<div class="lead">No clear single-domain signal &mdash; Group Chief runs <strong>intake protocol</strong>.</div>
-            <div class="reason">The Group Chief would ask for the 5-field brief (Engagement, Goal, Inputs, Deliverable, Deadline) before delegating to any Lead. If the ask is genuinely cross-domain, the Chief pairs two or more Leads.</div>`;
+            <div class="reason">The Chief asks for the 5-field brief (Engagement, Goal, Inputs, Deliverable, Deadline) before delegating. Cross-domain asks get paired Leads.</div>`;
   } else if (matches.length === 1) {
     const m = matches[0];
     html = `<div class="lead">&rarr; <code>${m.lead}</code> &middot; ${m.practice}</div>
             <div class="reason">${m.reason}</div>`;
   } else {
-    // Cross-practice
     const leads = matches.map(m => `<code>${m.lead}</code>`).join(' + ');
     const practices = [...new Set(matches.map(m => m.practice))].join(' &times; ');
     html = `<div class="lead">&rarr; CROSS-PRACTICE: ${leads}</div>
             <div class="reason"><strong>Practices touched:</strong> ${practices}.<br>
-              The Group Chief delegates to each Lead in parallel and synthesizes the outputs into a single deliverable.
-              Leads do not coordinate with each other directly &mdash; all coordination flows through the Chief.<br><br>
+              The Group Chief delegates to each Lead in parallel and synthesises the outputs. Leads don't coordinate directly &mdash; all coordination flows through the Chief.<br><br>
               <strong>Reasoning:</strong><br>
               ${matches.map(m => `&bull; ${m.reason}`).join('<br>')}
             </div>`;
@@ -901,7 +835,6 @@ function runRouting() {
   out.innerHTML = html;
   out.classList.add('show');
 
-  // Log routing query
   logInvocation('engagement-routing', ask.length > 60 ? ask.slice(0, 57) + '...' : ask);
 }
 
