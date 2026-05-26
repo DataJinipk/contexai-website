@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cnergyico Agents Team — Control Center</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#f6f7fb;
+    margin:0; padding:0; color:#0D1B3F; }
+  /* Cnergyico = flame orange + deep navy */
+  header { background:linear-gradient(135deg,#0D1B3F 0%,#F26122 100%);
+    color:white; padding:30px 40px; }
+  header h1 { margin:0; font-size:28px; font-weight:600; letter-spacing:-0.01em; }
+  header .sub { margin-top:6px; opacity:0.92; font-size:14px; }
+  header .quick { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  header .quick a { background:rgba(255,255,255,0.18); color:white;
+    padding:8px 16px; border-radius:4px; text-decoration:none; font-size:13px;
+    transition:background 0.15s; }
+  header .quick a:hover { background:rgba(255,255,255,0.32); }
+
+  .container { max-width:1280px; margin:0 auto; padding:30px 40px; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:30px; }
+  .grid5 { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:30px; }
+  .grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-bottom:30px; }
+  @media (max-width:1100px) { .grid5 { grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:1000px) { .grid3, .grid2 { grid-template-columns:1fr; } }
+  .card { background:white; border-radius:8px; padding:24px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:5px solid #F26122; }
+  .card.sme      { border-top-color:#F26122; padding:18px; }
+  .card.navy     { border-top-color:#0D1B3F; }
+  .card.future   { border-top-color:#8A8FA3; }
+  .card h2 { margin:0 0 6px 0; font-size:18px; color:#0D1B3F; }
+  .card.sme h2 { font-size:15px; }
+  .card .tag { font-size:11px; text-transform:uppercase; letter-spacing:0.5px;
+    color:#F26122; margin-bottom:10px; display:block; font-weight:700; }
+  .card.navy .tag { color:#0D1B3F; }
+  .card ul { list-style:none; padding:0; margin:0; }
+  .card li { padding:7px 0; border-bottom:1px solid #eee; font-size:13px; }
+  .card li:last-child { border-bottom:none; }
+  .card a { color:#0B1120; text-decoration:none; display:flex;
+    justify-content:space-between; align-items:center; gap:8px; }
+  .card a:hover { color:#F26122; }
+  .badge { font-size:10px; padding:2px 8px; border-radius:10px;
+    background:#FFE3D6; color:#F26122; font-weight:600; white-space:nowrap; }
+  .badge.future { background:#F2F2F2; color:#8A8FA3; }
+  .badge.skill  { background:#FFE3D6; color:#F26122; font-family:Consolas,monospace; }
+  .badge.live   { background:#A9D18E; color:#385723; }
+  .badge.md     { background:#F2F2F2; color:#595959; }
+  .badge.navy   { background:#DAE8FC; color:#0D1B3F; }
+
+  .info-banner { display:flex; align-items:flex-start; gap:16px; margin:30px 0 16px 0;
+    padding:18px 22px; border-radius:8px; color:white;
+    background:linear-gradient(135deg,#0D1B3F 0%,#F26122 100%); }
+  .info-banner .title { font-size:22px; font-weight:600; }
+  .info-banner .sub { opacity:0.92; font-size:13px; margin-top:4px; }
+  .info-banner .pill { background:rgba(255,255,255,0.25); padding:4px 12px;
+    border-radius:14px; font-size:12px; font-weight:600; white-space:nowrap; }
+
+  .section-title { font-size:22px; font-weight:600; margin:30px 0 16px 0; color:#0D1B3F; }
+  .section-title.flame { color:#F26122; }
+  .info { background:#FFF3CD; border-left:4px solid #F9B208;
+    padding:14px 18px; border-radius:4px; margin:20px 0; font-size:13px; }
+  footer { background:#0D1B3F; color:#FFE3D6; padding:20px 40px;
+    text-align:center; font-size:12px; }
+  footer a { color:#FFE3D6; }
+
+  .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:20px; }
+  @media (max-width:1000px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
+  .kpi-tile { background:white; padding:14px; border-radius:6px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.06); border-left:4px solid #F26122; }
+  .kpi-tile.navy { border-left-color:#0D1B3F; }
+  .kpi-tile .label { font-size:10px; text-transform:uppercase;
+    letter-spacing:0.5px; color:#8A8FA3; }
+  .kpi-tile .value { font-size:22px; font-weight:700; color:#0D1B3F; margin-top:4px; }
+  .kpi-tile .sub { font-size:11px; color:#595959; margin-top:4px; }
+
+  pre.cmd { background:#0F1331; color:#F26122; padding:14px 18px;
+    border-radius:6px; font-family:Consolas,monospace; font-size:12px;
+    overflow-x:auto; margin:8px 0; white-space:pre-wrap; word-break:break-word; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Cnergyico Agents Team — Control Center</h1>
+  <div class="sub">Cnergyico PK Limited &middot; Anchor client of ContexAi's Energy &amp; Petrochemicals Practice
+    &middot; Refining · Petrochem · Marketing · Trading · Asset Integrity</div>
+  <div class="quick">
+    <a href="../ContexAi_Control_Center.html">&#127894; Back to ContexAi Control Center</a>
+    <a href="https://contexai.org/dashboard.html" target="_blank">&#128202; Ops Dashboard</a>
+    <a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">&#9889; Energy Practice Lead</a>
+    <a href="https://github.com/DataJinipk/contexai-website" target="_blank">&#128190; GitHub</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="info">
+    <strong>Status: FUTURE.</strong> Cnergyico does not yet have its own dedicated multi-agent plugin — it is currently
+    served by the <strong>Energy &amp; Petrochemicals Practice Lead</strong> (<code>energy-petrochem-lead</code>) and the
+    5 specialist SMEs underneath. This Control Center is the staging area for when Cnergyico graduates to its own team.
+    Graduation trigger: <strong>ongoing retainer</strong> or <strong>3+ active Cnergyico mandates</strong>.
+  </div>
+
+  <div class="info-banner">
+    <div style="flex:1;">
+      <div class="title">&#9889; Cnergyico PK &mdash; Refining, Petrochem, Marketing</div>
+      <div class="sub">Pakistan's largest oil refining capacity &middot; Crude-to-product across Brent / Dubai diet
+        &middot; Polymer / aromatics &middot; Bunkers, retail, terminal ops</div>
+    </div>
+    <span class="pill">FUTURE TEAM</span>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-tile">
+      <div class="label">SMEs on the bench</div>
+      <div class="value">5</div>
+      <div class="sub">Refining, Petrochem, Integrity, Projects, Trading</div>
+    </div>
+    <div class="kpi-tile navy">
+      <div class="label">Practice Lead</div>
+      <div class="value" style="font-size:16px;">energy-petrochem-lead</div>
+      <div class="sub">Lives in <code>agents/energy-petrochem-lead/</code></div>
+    </div>
+    <div class="kpi-tile">
+      <div class="label">Active mandates</div>
+      <div class="value">0</div>
+      <div class="sub">No live Cnergyico engagements</div>
+    </div>
+    <div class="kpi-tile navy">
+      <div class="label">Graduation status</div>
+      <div class="value">0 / 3</div>
+      <div class="sub">Need retainer or 3 mandates</div>
+    </div>
+  </div>
+
+  <!-- THE 5 SMEs -->
+  <div class="section-title flame">The 5 Energy &amp; Petrochemicals SMEs</div>
+  <div class="grid5">
+
+    <div class="card sme">
+      <span class="tag">REFINING ECONOMICS</span>
+      <h2>margin-architect</h2>
+      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">
+        LP modelling, crack spreads, GPW, crude slate optimization, netbacks, Brent/WTI/Dubai diffs, Nelson Complexity, FCC/Coker/Hydrocracker yields.
+      </p>
+      <ul>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+            See in Practice Lead <span class="badge skill">skill</span></a></li>
+      </ul>
+    </div>
+
+    <div class="card sme">
+      <span class="tag">PETROCHEM VALUE CHAIN</span>
+      <h2>alchemist</h2>
+      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">
+        Steam cracker economics, polyolefins (HDPE/LLDPE/LDPE/PP), PVC, polyester (PET/PTA/MEG), aromatics (BTX), MTO/MTP, PDH, C4 chemistry.
+      </p>
+      <ul>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+            See in Practice Lead <span class="badge skill">skill</span></a></li>
+      </ul>
+    </div>
+
+    <div class="card sme">
+      <span class="tag">ASSET INTEGRITY</span>
+      <h2>sentinel</h2>
+      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">
+        API 510/570/653, RBI, CUI, HAZOP, LOPA, SIL, MOC, MTBF, RCA, turnaround / T&amp;I, predictive maintenance, LOPC events.
+      </p>
+      <ul>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+            See in Practice Lead <span class="badge skill">skill</span></a></li>
+      </ul>
+    </div>
+
+    <div class="card sme">
+      <span class="tag">CAPITAL PROJECTS</span>
+      <h2>constructor</h2>
+      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">
+        EPC / EPCm / LSTK, FEED, FEL, AACE estimates, CPM, EVM, modular vs stick-built, FIDIC books, schedule slippage, claims management.
+      </p>
+      <ul>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+            See in Practice Lead <span class="badge skill">skill</span></a></li>
+      </ul>
+    </div>
+
+    <div class="card sme">
+      <span class="tag">OIL TRADER &amp; LOGISTICS</span>
+      <h2>trader</h2>
+      <p style="font-size:12px;color:#595959;margin:0 0 8px 0;">
+        Brent/WTI/Dubai/Murban basis, Platts/Argus, paper vs physical, EFP/EFS, VLCC/Suezmax/Aframax/MR freight, bunkers/VLSFO, retail margins.
+      </p>
+      <ul>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+            See in Practice Lead <span class="badge skill">skill</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ROUTING -->
+  <div class="section-title">Routing &amp; orchestration</div>
+  <div class="grid2">
+
+    <div class="card navy">
+      <span class="tag">PRIMARY PRACTICE LEAD</span>
+      <h2>energy-petrochem-lead</h2>
+      <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
+        Orchestrates the 5 SMEs above. Multi-SME pairing is the norm (e.g., crude slate change touches
+        margin-architect + sentinel + trader simultaneously). Reports to ContexAi Group Chief.
+      </p>
+      <ul>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/energy-petrochem-lead/SKILL.md" target="_blank">
+            SKILL.md <span class="badge skill">skill</span></a></li>
+      </ul>
+    </div>
+
+    <div class="card navy">
+      <span class="tag">GROUP CHIEF (above the Practice Lead)</span>
+      <h2>contexai-group-chief</h2>
+      <p style="font-size:13px;color:#595959;margin:0 0 10px 0;">
+        Front door for any ContexAi engagement. Routes Cnergyico-style asks to <code>energy-petrochem-lead</code>.
+        For cross-practice asks (e.g., refinery project financing), pairs Energy with Banking.
+      </p>
+      <ul>
+        <li><a href="../ContexAi_Control_Center.html">
+            ContexAi Control Center <span class="badge navy">html</span></a></li>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/agents/contexai-group-chief/SKILL.md" target="_blank">
+            contexai-group-chief SKILL.md <span class="badge skill">skill</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- RESOURCES & GRADUATION PLAN -->
+  <div class="section-title">Team resources &amp; graduation plan</div>
+  <div class="grid3">
+
+    <div class="card">
+      <span class="tag">CANONICAL DOCS</span>
+      <h2>Org chart &amp; specs</h2>
+      <ul>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-org-chart.md" target="_blank">
+            ContexAi Org Chart <span class="badge md">md</span></a></li>
+        <li><a href="https://github.com/DataJinipk/contexai-website/blob/main/docs/contexai-agents-team-spec.md" target="_blank">
+            Agents Team Spec <span class="badge md">md</span></a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">ENGAGEMENT FOLDER (when active)</span>
+      <h2>OneDrive: Cnergyico archive</h2>
+      <ul>
+        <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/Cnergyico/" target="_blank">
+            Open Cnergyico engagements folder <span class="badge">folder</span></a></li>
+        <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/" target="_blank">
+            All ContexAi engagements <span class="badge">folder</span></a></li>
+      </ul>
+      <p style="font-size:11px;color:#595959;margin-top:10px;">
+        Each engagement folder gets the standard 6 subfolders: 00_brief, 10_inputs, 20_workstreams, 30_drafts, 40_final, 50_lessons.
+      </p>
+    </div>
+
+    <div class="card future">
+      <span class="tag">FUTURE &middot; When team graduates</span>
+      <h2>Planned skills</h2>
+      <ul>
+        <li><span class="badge future">cnergyico-chief-of-staff</span> &mdash; client-specific orchestrator</li>
+        <li><span class="badge future">cnergyico-refinery-ops</span> &mdash; refinery-config-aware version of margin-architect</li>
+        <li><span class="badge future">cnergyico-procurement</span> &mdash; cargo, supplier, OGRA</li>
+        <li><span class="badge future">cnergyico-retail-marketing</span> &mdash; OMC retail &amp; non-fuel retail</li>
+      </ul>
+      <p style="font-size:11px;color:#595959;margin-top:10px;">
+        Built when Cnergyico crosses the graduation trigger (retainer or 3+ active mandates).
+      </p>
+    </div>
+
+  </div>
+
+  <!-- QUICK COMMANDS -->
+  <div class="section-title">Quick commands</div>
+  <div class="card navy">
+    <span class="tag">SHELL</span>
+    <h2>Bootstrap a new Cnergyico engagement</h2>
+    <p style="font-size:12px;color:#595959;margin:0 0 6px 0;">When the first Cnergyico mandate arrives, run the engagement-folder setup:</p>
+    <pre class="cmd">cd C:\Users\amirw\contexai-website
+# Pattern after setup-eng-2026-001.ps1 &mdash; Group Chief generates a new script per engagement.
+# Until then, ask the Group Chief: "Group Chief, prep intake for &lt;mandate&gt; at Cnergyico"</pre>
+  </div>
+
+</div>
+
+<footer>
+  Cnergyico Agents Team &middot; ContexAi Energy &amp; Petrochemicals Practice &middot;
+  <a href="https://contexai.org">contexai.org</a> &middot;
+  Status: FUTURE &middot; 0 of 3 mandates to graduate
+</footer>
+
+</body>
+</html>
