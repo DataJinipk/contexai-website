@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0A2540;color:#fff;position:relative}
+.cbar{position:absolute;top:0;left:0;width:100%;height:8px;display:flex;z-index:6}
+.cbar span{flex:1}
+.cbar span:nth-child(1){background:#6E5C9C}.cbar span:nth-child(2){background:#4D95D1}.cbar span:nth-child(3){background:#5D9ED5}.cbar span:nth-child(4){background:#E58940}.cbar span:nth-child(5){background:#DF6F18}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:48px 48px}
+.glow{position:absolute;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(110,92,156,.20),transparent 65%);top:-160px;right:-160px}
+.wrap{position:absolute;inset:0;padding:62px 72px;display:flex;flex-direction:column;justify-content:space-between}
+.top{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:30px;letter-spacing:-.02em}
+.logo span{color:#00B1FF}
+.tag{font-size:15px;font-weight:700;letter-spacing:.18em;color:#9AAAC4;border:1px solid rgba(255,255,255,.16);padding:8px 16px;border-radius:100px}
+.mid{display:flex;align-items:center;gap:36px}
+.copy{flex:1}
+.h{font-family:Georgia,'Times New Roman',serif;font-size:58px;line-height:1.05;letter-spacing:-.02em;margin-bottom:22px}
+.h em{font-style:italic;color:#5D9ED5}
+.sub{font-size:23px;line-height:1.5;color:#AEBBD4;max-width:560px;font-weight:300}
+.art{width:300px;height:300px;flex-shrink:0;position:relative}
+.donut-c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.donut-c .big{font-size:64px;font-weight:800;color:#fff;line-height:1}
+.donut-c .lbl{font-size:15px;letter-spacing:.14em;color:#9AAAC4;margin-top:6px}
+.bot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);padding-top:22px}
+.pills{display:flex;gap:10px}
+.pill{font-size:16px;color:#cdd7ea;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:9px 18px;border-radius:100px}
+.url{font-size:18px;color:#7E8DA8;font-weight:600}
+</style></head>
+<body>
+<div class="cbar"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="grid"></div><div class="glow"></div>
+<div class="wrap">
+  <div class="top"><div class="logo">Contex<span>Ai</span> Group</div><div class="tag">AGENTIC AI · PROFESSIONAL SERVICES</div></div>
+  <div class="mid">
+    <div class="copy">
+      <div class="h">AI does the first 70%.<br>The expert does the<br><em>decisive 30%.</em></div>
+      <div class="sub">Where autonomous agents are production-ready — and where a human stays firmly in the loop.</div>
+    </div>
+    <div class="art">
+      <svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="150" cy="150" r="118" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="26"/>
+        <circle cx="150" cy="150" r="118" fill="none" stroke="#00B1FF" stroke-width="26" stroke-dasharray="520 741" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 150 150)"/>
+        <circle cx="150" cy="150" r="118" fill="none" stroke="#E58940" stroke-width="26" stroke-dasharray="222 741" stroke-dashoffset="-520" stroke-linecap="round" transform="rotate(-90 150 150)"/>
+      </svg>
+      <div class="donut-c"><div class="big">70<span style="font-size:34px">/</span>30</div><div class="lbl">AI / HUMAN</div></div>
+    </div>
+  </div>
+  <div class="bot">
+    <div class="pills"><div class="pill">Advisory</div><div class="pill">Finance</div><div class="pill">Human-in-the-loop</div></div>
+    <div class="url">contexai.org</div>
+  </div>
+</div>
+</body></html>

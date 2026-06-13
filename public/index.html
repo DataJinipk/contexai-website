@@ -4,22 +4,72 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="ContexAi Group — Boutique financial consulting and strategic advisory. Dispute resolution, PPP advisory, and sector expertise across Pakistan and emerging markets.">
-<meta name="theme-color" content="#0B1120">
+<meta name="theme-color" content="#0A3E40">
 <title>ContexAi Group — Intelligence in Context</title>
+<link rel="canonical" href="https://contexai.org/">
+
+<!-- ─── Favicon (SVG covers all modern browsers; add favicon.ico + apple-touch-icon.png for legacy/iOS) ─── -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- ─── Open Graph (LinkedIn / WhatsApp / Facebook previews) ─── -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ContexAi Group">
+<meta property="og:title" content="ContexAi Group — Intelligence in Context">
+<meta property="og:description" content="A curated marketplace for senior consultants and Agentic AI builders — vetted human expertise and intelligent products for clients across Pakistan and emerging markets.">
+<meta property="og:url" content="https://contexai.org/">
+<meta property="og:image" content="https://contexai.org/images/launch/launch-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ContexAi Group — Intelligence in Context">
+
+<!-- ─── Twitter / X Card ─── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ContexAi Group — Intelligence in Context">
+<meta name="twitter:description" content="Senior consulting expertise and Agentic AI products for clients across Pakistan and emerging markets.">
+<meta name="twitter:image" content="https://contexai.org/images/launch/launch-card.png">
+
+<!-- ─── Structured data (Organization + Founder) ─── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ContexAi Group",
+  "url": "https://contexai.org/",
+  "logo": "https://contexai.org/images/launch/launch-square.png",
+  "image": "https://contexai.org/images/launch/launch-card.png",
+  "description": "Boutique financial consulting and strategic advisory, and a curated marketplace for senior consultants and Agentic AI builders, serving Pakistan and emerging markets.",
+  "foundingDate": "2001",
+  "founder": {
+    "@type": "Person",
+    "name": "Amir Waheed Ahmed",
+    "jobTitle": "Founder & Creator",
+    "sameAs": "https://www.linkedin.com/in/amirwah/"
+  },
+  "areaServed": ["Pakistan", "GCC", "North America"],
+  "email": "amir.wahmed@contexai.org",
+  "sameAs": ["https://www.linkedin.com/in/amirwah/"]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --ink:#0B1120;--ink2:#1C2A42;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --ink:#0A3E40;--ink2:#11595B;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
   --white:#fff;--cream:#F6F5F1;--warm:#EDEBE3;
-  --blue:#1D5FFF;--blue-d:#1247CC;--blue-l:#4F83FF;--blue-p:#EBF0FF;
+  /* ContexAi / EvoNergy brand palette (from letterhead) */
+  --blue:#0E7E76;--blue-d:#0C6E66;--blue-l:#46D6C6;--blue-p:#E8F1F9;--blue-txt:#0C6E66;
   --teal:#00C4A7;--teal-p:#E0FAF6;
-  --amber:#F59E0B;--amber-p:#FEF3C7;
-  --coral:#F43F5E;--coral-p:#FFE4E9;
-  --violet:#7C3AED;--violet-p:#F3EFFE;
+  --amber:#E58940;--amber-p:#FCE9D8;
+  --coral:#DF6F18;--coral-p:#FBE3CF;
+  --violet:#6E5C9C;--violet-p:#EEEAF4;
   --green:#16A34A;--green-p:#DCFCE7;
+  /* color-bar segments */
+  --bar1:#6E5C9C;--bar2:#4D95D1;--bar3:#5D9ED5;--bar4:#E58940;--bar5:#DF6F18;
+  /* brand cyan (ContexAi logo "Ai") */
+  --cyan:#14B8A6;
   --sh1:0 1px 4px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.04);
   --sh2:0 4px 16px rgba(0,0,0,.07),0 12px 32px rgba(0,0,0,.06);
   --sh3:0 8px 30px rgba(0,0,0,.10),0 24px 60px rgba(0,0,0,.08);
@@ -34,6 +84,14 @@ a{text-decoration:none;color:inherit}
 button{font-family:inherit;cursor:pointer;border:none;background:none}
 img{display:block;max-width:100%}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+/* ─── BRAND COLOR BAR (from EvoNergy letterhead) ─── */
+.evobar{display:flex;height:6px;width:100%;position:relative;z-index:100}
+.evobar span{flex:1}
+.evobar span:nth-child(1){background:var(--bar1)}
+.evobar span:nth-child(2){background:var(--bar2)}
+.evobar span:nth-child(3){background:var(--bar3)}
+.evobar span:nth-child(4){background:var(--bar4)}
+.evobar span:nth-child(5){background:var(--bar5)}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 /* ─── ECOSYSTEM TOP STRIP ─── */
@@ -50,7 +108,7 @@ img{display:block;max-width:100%}
 .nav.scrolled{box-shadow:var(--sh2)}
 .nav__in{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px}
 .logo{font-weight:800;font-size:1.25rem;color:var(--ink);letter-spacing:-.03em;display:flex;align-items:center;gap:2px}
-.logo span{color:var(--blue)}
+.logo span{color:var(--cyan)}
 .logo-badge{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink5);background:var(--cream);padding:2px 6px;border-radius:20px;margin-left:8px;align-self:center}
 .navlinks{display:flex;align-items:center;gap:4px}
 .navlinks a{font-size:.9rem;font-weight:500;color:var(--ink4);padding:6px 10px;border-radius:var(--radius-sm);transition:all .15s}
@@ -58,7 +116,7 @@ img{display:block;max-width:100%}
 .navlinks a.btn-primary{color:#fff;padding:9px 22px}
 .navlinks a.btn-primary:hover{color:#fff;background:var(--blue-d)}
 .btn{padding:9px 22px;border-radius:100px;font-size:.94rem;font-weight:600;transition:all .2s;display:inline-flex;align-items:center;gap:6px;line-height:1}
-.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:var(--blue-d);box-shadow:0 4px 14px rgba(29,95,255,.35);transform:translateY(-1px)}
+.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:var(--blue-d);box-shadow:0 4px 14px rgba(20,184,166,.35);transform:translateY(-1px)}
 .btn-outline{border:1.5px solid rgba(0,0,0,.1);color:var(--ink)}.btn-outline:hover{border-color:rgba(0,0,0,.3);background:var(--cream)}
 .mob-btn{display:none;width:38px;height:38px;border-radius:var(--radius-sm);border:1px solid rgba(0,0,0,.08);align-items:center;justify-content:center;cursor:pointer;background:transparent;transition:background .15s}
 .mob-btn:hover{background:var(--cream)}
@@ -79,15 +137,15 @@ img{display:block;max-width:100%}
 
 /* ─── HERO ─── */
 .hero{min-height:88vh;background:var(--ink);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 32px 60px;position:relative;overflow:hidden}
-.hero__glow{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(29,95,255,.18) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-55%);pointer-events:none}
+.hero__glow{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.18) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-55%);pointer-events:none}
 .hero__grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
-.hero__tag{display:inline-flex;align-items:center;gap:6px;background:rgba(29,95,255,.15);border:1px solid rgba(29,95,255,.3);color:rgba(255,255,255,.7);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;padding:6px 14px;border-radius:100px;margin-bottom:28px}
+.hero__tag{display:inline-flex;align-items:center;gap:6px;background:rgba(20,184,166,.15);border:1px solid rgba(20,184,166,.3);color:rgba(255,255,255,.7);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;padding:6px 14px;border-radius:100px;margin-bottom:28px}
 .hero__tag-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
 .hero h1{font-family:var(--serif);font-size:clamp(3rem,8vw,5.8rem);line-height:1.0;color:#fff;max-width:840px;letter-spacing:-.03em;margin-bottom:10px}
 .hero h1 em{font-style:italic;color:var(--blue-l)}
 .hero h1 span.divider{display:block;font-size:clamp(1.1rem,2.5vw,1.6rem);color:rgba(255,255,255,.25);font-family:var(--sans);font-weight:300;letter-spacing:.04em;text-transform:uppercase;font-style:normal;margin:12px 0}
-.hero__sub{font-size:1.08rem;color:rgba(255,255,255,.48);line-height:1.75;max-width:480px;margin:20px auto 36px;font-weight:300}
+.hero__sub{font-size:1.08rem;color:rgba(255,255,255,.62);line-height:1.75;max-width:480px;margin:20px auto 36px;font-weight:300}
 .hero__btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:64px}
 .hero__btns .btn-ghost{border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.7);background:transparent}.hero__btns .btn-ghost:hover{border-color:rgba(255,255,255,.5);color:#fff}
 .hero__stats{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.07);width:100%;max-width:700px}
@@ -99,7 +157,7 @@ img{display:block;max-width:100%}
 /* ─── ECOSYSTEM STRIP / VENTURES ─── */
 .ventures{padding:72px 32px;background:var(--cream)}
 .ventures__in{max-width:1280px;margin:0 auto}
-.sec__lbl{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--blue);margin-bottom:8px}
+.sec__lbl{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--blue-txt);margin-bottom:8px}
 .sec__t{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.7rem);color:var(--ink);line-height:1.07;margin-bottom:10px}
 .sec__d{font-size:1.02rem;color:var(--ink4);line-height:1.75;max-width:480px;margin-bottom:36px;font-weight:300}
 .venture-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -129,8 +187,8 @@ img{display:block;max-width:100%}
 .method .sec__d{color:rgba(255,255,255,.45)}
 .method__tracks{display:grid;gap:10px;margin-top:4px}
 .method__track{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.65);font-size:.94rem;transition:all .2s}
-.method__track:hover{background:rgba(29,95,255,.12);border-color:rgba(29,95,255,.3);color:#fff}
-.method__track::before{content:'✓';width:18px;height:18px;border-radius:50%;background:rgba(29,95,255,.2);color:var(--blue-l);font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.method__track:hover{background:rgba(20,184,166,.12);border-color:rgba(20,184,166,.3);color:#fff}
+.method__track::before{content:'✓';width:18px;height:18px;border-radius:50%;background:rgba(20,184,166,.2);color:var(--blue-l);font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .method__img{border-radius:var(--radius);overflow:hidden;height:380px}
 .method__img img{width:100%;height:100%;object-fit:cover}
 
@@ -145,7 +203,7 @@ img{display:block;max-width:100%}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .svc-card{border-radius:var(--radius);background:var(--white);padding:26px;border:1px solid rgba(0,0,0,.05);transition:all .25s}
 .svc-card:hover{box-shadow:var(--sh2);transform:translateY(-3px)}
-.svc-card__ico{width:38px;height:38px;border-radius:var(--radius-sm);background:var(--blue-p);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1.02rem;margin-bottom:14px}
+.svc-card__ico{width:38px;height:38px;border-radius:var(--radius-sm);background:var(--blue-p);color:var(--blue-txt);display:flex;align-items:center;justify-content:center;font-size:1.02rem;margin-bottom:14px}
 .svc-card__name{font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:6px}
 .svc-card__desc{font-size:.88rem;color:var(--ink4);line-height:1.6}
 
@@ -161,7 +219,7 @@ img{display:block;max-width:100%}
 .person__img{width:90px;height:90px;border-radius:50%;overflow:hidden;margin:0 auto 14px;background:var(--cream)}
 .person__img img{width:100%;height:100%;object-fit:cover}
 .person__name{font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:3px}
-.person__role{font-size:.84rem;color:var(--blue);font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+.person__role{font-size:.84rem;color:var(--blue-txt);font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
 .person__bio{font-size:.88rem;color:var(--ink4);line-height:1.55}
 
 /* ─── EXPERTS BAND: full profile cards ─── */
@@ -170,19 +228,19 @@ img{display:block;max-width:100%}
 .experts__d{font-size:.98rem;color:var(--ink4);text-align:center;max-width:680px;margin:0 auto 36px;line-height:1.65}
 .experts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .expert{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:28px;transition:all .25s;display:flex;flex-direction:column}
-.expert:hover{box-shadow:var(--sh1);border-color:rgba(29,95,255,.15)}
+.expert:hover{box-shadow:var(--sh1);border-color:rgba(20,184,166,.15)}
 .expert__head{display:flex;gap:18px;align-items:flex-start;margin-bottom:18px}
-.expert__avatar{width:72px;height:72px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--blue-l),var(--blue-d));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.05rem;font-weight:600;letter-spacing:.02em;box-shadow:0 4px 12px rgba(29,95,255,.18)}
+.expert__avatar{width:72px;height:72px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--blue-l),var(--blue-d));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.05rem;font-weight:600;letter-spacing:.02em;box-shadow:0 4px 12px rgba(20,184,166,.18)}
 .expert__avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .expert__meta{flex:1;min-width:0;padding-top:4px}
 .expert__name{font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.25}
-.expert__title{font-size:.88rem;color:var(--blue);font-weight:600;margin-bottom:8px;line-height:1.45;text-transform:none;letter-spacing:0}
+.expert__title{font-size:.88rem;color:var(--blue-txt);font-weight:600;margin-bottom:8px;line-height:1.45;text-transform:none;letter-spacing:0}
 .expert__loc{font-size:.86rem;color:var(--ink4);display:flex;align-items:center;gap:6px}
 .expert__loc::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ink5);flex-shrink:0}
 .expert__bio{font-size:.94rem;color:var(--ink4);line-height:1.65;margin-bottom:18px}
 .expert__areas-lbl{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink5);margin-bottom:12px}
 .expert__contact{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(0,0,0,.06);font-size:.84rem}
-.expert__contact a{color:var(--blue);font-weight:500;display:inline-flex;align-items:center;gap:5px;transition:color .15s}
+.expert__contact a{color:var(--blue-txt);font-weight:500;display:inline-flex;align-items:center;gap:5px;transition:color .15s}
 .expert__contact a:hover{color:var(--blue-d);text-decoration:underline}
 .expert__areas ul{list-style:none;padding:0;margin:0;font-size:.9rem;color:var(--ink3);line-height:1.7}
 .expert__areas li{display:flex;align-items:flex-start;gap:10px;padding:3px 0}
@@ -197,7 +255,7 @@ img{display:block;max-width:100%}
 .board-card__img{width:64px;height:64px;border-radius:50%;overflow:hidden;flex-shrink:0;background:var(--cream)}
 .board-card__img img{width:100%;height:100%;object-fit:cover}
 .board-card__name{font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:2px}
-.board-card__role{font-size:.82rem;color:var(--blue);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.board-card__role{font-size:.82rem;color:var(--blue-txt);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
 .board-card__bio{font-size:.88rem;color:var(--ink4);line-height:1.55}
 
 /* ─── INSIGHTS ─── */
@@ -206,7 +264,7 @@ img{display:block;max-width:100%}
 .insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
 .insight{border-radius:var(--radius);background:var(--white);border:1px solid rgba(0,0,0,.05);padding:26px;transition:all .25s}
 .insight:hover{box-shadow:var(--sh2);transform:translateY(-3px)}
-.insight__tag{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin-bottom:10px}
+.insight__tag{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue-txt);margin-bottom:10px}
 .insight__title{font-family:var(--serif);font-size:1.05rem;color:var(--ink);margin-bottom:8px;line-height:1.3}
 .insight__body{font-size:.9rem;color:var(--ink4);line-height:1.65;margin-bottom:14px}
 .insight__date{font-size:.8rem;color:var(--ink5);text-transform:uppercase;letter-spacing:.06em}
@@ -232,8 +290,8 @@ img{display:block;max-width:100%}
 .cta::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:rgba(255,255,255,.06);top:-200px;right:-100px}
 .cta h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);color:#fff;margin-bottom:10px;line-height:1.05}
 .cta h2 em{font-style:italic;opacity:.75}
-.cta p{color:rgba(255,255,255,.65);margin-bottom:28px;font-size:1.02rem;max-width:400px;margin-left:auto;margin-right:auto}
-.cta .btn-white{background:#fff;color:var(--blue);font-weight:700}.cta .btn-white:hover{background:var(--cream);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.cta p{color:rgba(255,255,255,.85);margin-bottom:28px;font-size:1.02rem;max-width:400px;margin-left:auto;margin-right:auto}
+.cta .btn-white{background:#fff;color:var(--blue-txt);font-weight:700}.cta .btn-white:hover{background:var(--cream);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.15)}
 .cta .btn-ghost-w{border:1.5px solid rgba(255,255,255,.35);color:rgba(255,255,255,.85)}.cta .btn-ghost-w:hover{border-color:#fff;color:#fff}
 .cta__offices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1200px;margin:56px auto 0;padding-top:44px;border-top:1px solid rgba(255,255,255,.18);position:relative;z-index:1}
 .cta__office{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:28px;text-align:left;transition:all .25s}
@@ -277,13 +335,13 @@ img{display:block;max-width:100%}
 .agentic__desc{font-size:.95rem;color:var(--ink4);line-height:1.65;margin-bottom:18px;flex:1}
 .agentic__meta{font-size:.85rem;color:var(--ink5)}
 .agentic__meta span{font-weight:600;color:var(--ink3)}
-.agentic__card--apply{background:linear-gradient(135deg,var(--blue-p),var(--white));border-color:rgba(29,95,255,.15)}
+.agentic__card--apply{background:linear-gradient(135deg,var(--blue-p),var(--white));border-color:rgba(20,184,166,.15)}
 
 /* ─── JOIN THE NETWORK ─── */
 .join{padding:84px 32px;background:var(--white)}
 .join__in{max-width:1280px;margin:0 auto}
 .join-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
-.join__card--emp{background:linear-gradient(135deg,var(--blue-p),var(--white));border-color:rgba(29,95,255,.18)}
+.join__card--emp{background:linear-gradient(135deg,var(--blue-p),var(--white));border-color:rgba(20,184,166,.18)}
 .join__card--emp .join__icon{background:var(--blue-d);color:#fff}
 @media(max-width:1024px){.join-grid{grid-template-columns:1fr}}
 .join__card{background:var(--cream);border:1px solid rgba(0,0,0,.05);border-radius:18px;padding:36px;transition:all .25s;display:flex;flex-direction:column}
@@ -337,6 +395,9 @@ img{display:block;max-width:100%}
 </head>
 <body>
 
+<!-- ─── BRAND COLOR BAR ─── -->
+<div class="evobar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
 <!-- ─── NAV ─── -->
 <nav class="nav" id="main-nav">
   <div class="nav__in">
@@ -346,6 +407,8 @@ img{display:block;max-width:100%}
       <a href="#agentic">Agentic AI</a>
       <a href="#services">Services</a>
       <a href="#team">Members</a>
+      <a href="/insights">Insights</a>
+      <a href="/economy">Economy &amp; Fiscal</a>
       <a href="/positions">Positions</a>
       <a href="#join">Join</a>
       <a href="#contact" class="btn btn-primary">Contact Us</a>
@@ -362,9 +425,10 @@ img{display:block;max-width:100%}
   <a href="#agentic" class="mob-link">Agentic AI Showcase</a>
   <a href="#services" class="mob-link">Services</a>
   <a href="#team" class="mob-link">Featured Members</a>
+  <a href="/insights" class="mob-link">Research &amp; Insights</a>
+  <a href="/economy" class="mob-link">Economy &amp; Fiscal Advisory</a>
   <a href="/positions" class="mob-link">Open Positions</a>
   <a href="#join" class="mob-link">Join the Network</a>
-  <a href="#insights" class="mob-link">Research &amp; Insights</a>
   <a href="#contact" class="btn btn-primary mob-link">Contact Us</a>
 </div>
 
@@ -505,7 +569,7 @@ img{display:block;max-width:100%}
   <div class="agentic__in">
     <div class="sec__lbl">Agentic AI Showcase</div>
     <h2 class="sec__t rv">Production-ready AI agents from independent builders</h2>
-    <p class="sec__d rv">A curated catalogue of Agentic AI products from independent developers — vetted, demonstrable, and ready for client engagements. ContexAi connects builders with the consulting and enterprise mandates that need them most. <a href="#join" style="color:var(--blue);font-weight:600">Showcase your AI product &rarr;</a></p>
+    <p class="sec__d rv">A curated catalogue of Agentic AI products from independent developers — vetted, demonstrable, and ready for client engagements. ContexAi connects builders with the consulting and enterprise mandates that need them most. <a href="#join" style="color:var(--blue-txt);font-weight:600">Showcase your AI product &rarr;</a></p>
     <div class="agentic-grid">
 
       <div class="agentic__card rv">
@@ -530,7 +594,7 @@ img{display:block;max-width:100%}
       </div>
 
       <div class="agentic__card agentic__card--apply rv">
-        <div class="agentic__cat" style="color:var(--blue)">Your product here</div>
+        <div class="agentic__cat" style="color:var(--blue-txt)">Your product here</div>
         <div class="agentic__name">Showcase Your Agent</div>
         <div class="agentic__desc">Built an Agentic AI product? List it on ContexAi to reach consulting firms, enterprises, and clients actively looking for vetted AI solutions.</div>
         <a href="/apply?type=ai" class="btn btn-primary" style="margin-top:14px">Apply to Showcase &rarr;</a>
@@ -558,7 +622,7 @@ img{display:block;max-width:100%}
 
     <div class="experts-band rv">
       <h3 class="experts__t">Featured Members of the Network</h3>
-      <p class="experts__d">Founding members of the ContexAi network — senior advisors based across the Gulf and North America, with deep sector and regional expertise across finance, real estate, project engineering, IT, credit risk, and heavy industry. <a href="#join" style="color:var(--blue);font-weight:600">Apply to join the network &rarr;</a></p>
+      <p class="experts__d">Founding members of the ContexAi network — senior advisors based across the Gulf and North America, with deep sector and regional expertise across finance, real estate, project engineering, IT, credit risk, and heavy industry. <a href="#join" style="color:var(--blue-txt);font-weight:600">Apply to join the network &rarr;</a></p>
       <div class="experts-grid">
 
         <div class="expert rv">
@@ -727,44 +791,26 @@ img{display:block;max-width:100%}
   <div class="insights__in">
     <div class="sec__lbl">Research &amp; Insights</div>
     <h2 class="sec__t rv">Latest industry insights</h2>
-    <p class="sec__d rv">Cutting-edge research and analysis from our sector experts and thought leaders.</p>
+    <p class="sec__d rv">Practitioner analysis from our sector experts. <a href="/insights" style="color:var(--blue-txt);font-weight:600">View all insights &rarr;</a></p>
     <div class="insight-grid">
-      <div class="insight rv">
-        <div class="insight__tag">Water Technology</div>
-        <div class="insight__title">Emerging Trends in Water Technology</div>
-        <div class="insight__body">Analysing the next wave of innovation in water treatment, management, and infrastructure projects across Pakistan.</div>
-        <div class="insight__date">January 2026</div>
-      </div>
-      <div class="insight rv d1">
+      <a class="insight rv" href="/insights/pakistan-energy-transition-bankable">
         <div class="insight__tag">Energy</div>
-        <div class="insight__title">Energy Transition in Pakistan</div>
-        <div class="insight__body">Comprehensive analysis of renewable energy growth, regulatory changes, and investment opportunities in the power sector.</div>
-        <div class="insight__date">December 2025</div>
-      </div>
-      <div class="insight rv d2">
-        <div class="insight__tag">Fintech</div>
-        <div class="insight__title">Banking Digitalisation Impact</div>
-        <div class="insight__body">How digital banking initiatives are transforming financial access and service delivery in emerging markets.</div>
-        <div class="insight__date">November 2025</div>
-      </div>
-      <div class="insight rv">
-        <div class="insight__tag">Sustainability</div>
-        <div class="insight__title">Sustainable Finance Framework</div>
-        <div class="insight__body">Implementing green finance instruments and sustainability-linked lending for emerging markets.</div>
-        <div class="insight__date">October 2025</div>
-      </div>
-      <div class="insight rv d1">
-        <div class="insight__tag">Petrochemicals</div>
-        <div class="insight__title">Petrochemical Market Outlook</div>
-        <div class="insight__body">Assessing supply chain dynamics, pricing trends, and investment opportunities in the regional market.</div>
-        <div class="insight__date">September 2025</div>
-      </div>
-      <div class="insight rv d2">
-        <div class="insight__tag">AgriTech</div>
-        <div class="insight__title">AgTech Investment Landscape</div>
-        <div class="insight__body">Opportunities in smart farming, precision agriculture, and sustainable food production systems.</div>
-        <div class="insight__date">August 2025</div>
-      </div>
+        <div class="insight__title">Pakistan's Energy Transition: Where the Bankable Opportunities Actually Are</div>
+        <div class="insight__body">Capacity payments, circular debt, and the grid decide which renewable and efficiency plays can actually be financed. A practitioner's map.</div>
+        <div class="insight__date">9 June 2026 · 7 min</div>
+      </a>
+      <a class="insight rv d1" href="/insights/why-ppp-bids-fail-bankability">
+        <div class="insight__tag">PPP &amp; Infrastructure</div>
+        <div class="insight__title">Why Most PPP Bids Fail the Bankability Test — and How to Fix Yours</div>
+        <div class="insight__body">Strong projects die at financial close. The five recurring reasons PPP bids stall — and how to de-risk each before you bid.</div>
+        <div class="insight__date">9 June 2026 · 8 min</div>
+      </a>
+      <a class="insight rv d2" href="/insights/agentic-ai-professional-services">
+        <div class="insight__tag">Agentic AI</div>
+        <div class="insight__title">Agentic AI in Professional Services: What's Actually Production-Ready</div>
+        <div class="insight__body">Beyond the demos — where autonomous agents create defensible value in advisory and finance, and where a human must stay in the loop.</div>
+        <div class="insight__date">9 June 2026 · 6 min</div>
+      </a>
     </div>
   </div>
 </section>
@@ -849,7 +895,7 @@ img{display:block;max-width:100%}
   <h2 class="rv">Ready to work<br><em>together?</em></h2>
   <p class="rv">Whether you need strategic advisory, dispute resolution, or sector-specific PPP support — let's talk.</p>
   <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap" class="rv">
-    <a href="mailto:amir.wahmed@contexai.org" class="btn btn-white">Start a Conversation &rarr;</a>
+    <a href="/contact" class="btn btn-white">Start a Conversation &rarr;</a>
     <a href="#services" class="btn btn-ghost-w">View Services</a>
   </div>
 
@@ -916,21 +962,22 @@ img{display:block;max-width:100%}
         <a href="/positions">Open Positions</a>
         <a href="/apply">Apply to Join</a>
         <a href="/post-position">Post a Position</a>
-        <a href="#insights">Research</a>
+        <a href="/insights">Insights</a>
+        <a href="/contact">Contact</a>
       </div>
       <div class="ft__col">
         <h4>Contact</h4>
         <a href="mailto:amir.wahmed@contexai.org">amir.wahmed@contexai.org</a>
         <a href="tel:+923028222316">+92 (302) 8222316</a>
-        <a href="#">Karachi, Pakistan</a>
-        <a href="#">LinkedIn</a>
+        <span>Karachi, Pakistan</span>
+        <a href="https://www.linkedin.com/in/amirwah/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="ft__bot">
       <p>&copy; 2026 ContexAi Group. All rights reserved.</p>
       <div class="ft__bot-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
       </div>
     </div>
   </div>
@@ -1003,7 +1050,14 @@ document.querySelectorAll('.tab-btn').forEach(function(btn){
 
 })();
 </script>
-</body>
-</html>
+
+<!-- ─── Cloudflare Web Analytics ───
+     Privacy-first, no cookie banner needed. To activate:
+     1. Cloudflare dash → Analytics & Logs → Web Analytics → Add a site (contexai.org)
+     2. Copy the token it gives you and replace REPLACE_WITH_TOKEN below
+     3. Uncomment the script tag.
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "REPLACE_WITH_TOKEN"}'></script>
+-->
 </body>
 </html>

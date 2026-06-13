@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://contexai.org/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://contexai.org/positions</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://contexai.org/apply</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://contexai.org/post-position</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://contexai.org/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://contexai.org/insights</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://contexai.org/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://contexai.org/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

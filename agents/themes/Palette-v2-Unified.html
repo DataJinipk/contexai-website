@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ContexAi Brand Palette v2 — Unified (11 color families)</title>
+<style>
+  :root {
+    --ink:           #0A0E1A;
+    --ctxai-blue:    #1D5FFF;
+    --ctxai-blue-d:  #0040D9;
+    --teal:          #00BCD4;  --teal-dark:     #00838F;  --teal-soft:     #E0F7FA;
+    --parrot:        #00C853;  --parrot-dark:   #1B5E20;  --parrot-soft:   #DCFCE7;
+    --flame:         #FFC400;  --flame-dark:    #FF8F00;  --flame-soft:    #FFF3D6;
+    --cnergyico:     #F26122;  --cnergyico-navy:#0D1B3F;  --cnergyico-soft:#FFE3D6;
+    --purple:        #9C27B0;  --purple-dark:   #6A1B9A;  --purple-soft:   #F3E5F5;
+    --lemon:         #FFEE58;  --lemon-dark:    #FDD835;  --lemon-soft:    #FFFDE7;
+    --lime:          #C6FF00;  --lime-dark:     #AEEA00;  --lime-soft:     #F4FFD1;
+    --magenta:       #D81B60;  --magenta-dark:  #AD1457;  --magenta-soft:  #FCE4EC;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0;
+    background:linear-gradient(135deg, var(--teal-soft) 0%, var(--lime-soft) 25%, var(--lemon-soft) 50%, var(--magenta-soft) 75%, var(--purple-soft) 100%) fixed;
+    background-image:linear-gradient(135deg, var(--teal-soft) 0%, var(--lime-soft) 25%, var(--lemon-soft) 50%, var(--magenta-soft) 75%, var(--purple-soft) 100%),
+      linear-gradient(rgba(10,14,26,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(10,14,26,0.04) 1px, transparent 1px);
+    background-size: 100% 100%, 60px 60px, 60px 60px;
+    color:var(--ink); }
+  header { background:linear-gradient(135deg, var(--purple-dark) 0%, var(--magenta) 22%, var(--cnergyico) 45%, var(--flame) 65%, var(--lime) 82%, var(--teal) 100%);
+    color:white; padding:36px 40px; }
+  header h1 { margin:0; font-size:34px; font-weight:700; letter-spacing:-0.01em; }
+  header .sub { margin-top:8px; opacity:0.95; font-size:18px; }
+  header .ver { display:inline-block; background:rgba(0,0,0,0.30); padding:5px 14px;
+    border-radius:14px; font-size:14px; font-weight:600; margin-top:14px; }
+
+  .container { max-width:1280px; margin:0 auto; padding:32px 40px; }
+
+  .family { background:white; border-radius:14px; padding:22px 26px; margin-bottom:22px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08); }
+  .family h2 { margin:0 0 4px 0; font-size:22px; font-weight:700; }
+  .family .role { font-size:14px; color:#595959; margin-bottom:16px; }
+  .family.banking h2  { color:var(--teal-dark); }
+  .family.realest h2  { color:var(--parrot-dark); }
+  .family.energy h2   { color:var(--cnergyico-navy); }
+  .family.accred h2   { color:var(--purple-dark); }
+  .family.lemon h2    { color:#7F6000; }
+  .family.lime h2     { color:#33691E; }
+  .family.magenta h2  { color:var(--magenta-dark); }
+  .family.flame h2    { color:var(--flame-dark); }
+  .family.ctxai h2    { color:var(--ctxai-blue-d); }
+  .family.ink h2      { color:var(--ink); }
+
+  .ramp { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  @media (max-width:900px) { .ramp { grid-template-columns:repeat(2,1fr); } }
+  .chip { border-radius:10px; padding:18px 16px; min-height:96px;
+    display:flex; flex-direction:column; justify-content:space-between;
+    box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+  .chip .name { font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; }
+  .chip .hex  { font-family:Consolas,monospace; font-size:18px; font-weight:600; margin-top:6px; }
+  .chip .var  { font-family:Consolas,monospace; font-size:12px; opacity:0.85; margin-top:4px; }
+  .chip.dark  { color:white; }
+  .chip.light { color:var(--ink); border:1px solid rgba(0,0,0,0.06); }
+
+  .badge-row { margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; }
+  .b { padding:5px 12px; border-radius:12px; font-size:13px; font-weight:600;
+    font-family:Consolas,monospace; }
+
+  /* NEW badge styling */
+  .pill-new { display:inline-block; background:var(--magenta); color:white;
+    font-size:11px; padding:3px 10px; border-radius:10px; vertical-align:middle;
+    font-weight:700; letter-spacing:0.04em; margin-left:8px; }
+
+  /* practice mapping at bottom */
+  .mapping { background:white; border-radius:14px; padding:24px 28px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08); margin-top:18px; }
+  .mapping h2 { margin:0 0 14px 0; font-size:20px; }
+  .map-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  @media (max-width:900px) { .map-grid { grid-template-columns:repeat(2,1fr); } }
+  .map { padding:14px 16px; border-radius:10px; color:white; min-height:80px;
+    display:flex; flex-direction:column; justify-content:space-between; }
+  .map .who { font-size:18px; font-weight:700; }
+  .map .what { font-size:13px; opacity:0.92; }
+
+  footer { background:var(--ink); color:#FFC400; padding:18px 40px;
+    text-align:center; font-size:14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ContexAi Brand Palette v2</h1>
+  <div class="sub">Unified across Group Chief, 4 Practice Pages, 2 Client Teams, 3 Theme references &middot; 11 color families &middot; 33 tokens</div>
+  <span class="ver">v2 &middot; previous palette + Lemon Yellow + Lemon Green + Magenta Ultra</span>
+</header>
+
+<div class="container">
+
+<!-- 1. INK + ContexAi Blue (Foundation) -->
+<div class="family ink">
+  <h2>Foundation &mdash; Ink &amp; ContexAi Blue</h2>
+  <div class="role">Primary text, brand anchor, navigation surfaces, ops/GitHub tabs.</div>
+  <div class="ramp">
+    <div class="chip dark" style="background:#0A0E1A;"><span class="name">Ink</span><span class="hex">#0A0E1A</span><span class="var">--ink</span></div>
+    <div class="chip dark" style="background:#1D5FFF;"><span class="name">ContexAi Blue</span><span class="hex">#1D5FFF</span><span class="var">--ctxai-blue</span></div>
+    <div class="chip dark" style="background:#0040D9;"><span class="name">ContexAi Blue Dark</span><span class="hex">#0040D9</span><span class="var">--ctxai-blue-d</span></div>
+    <div class="chip light" style="background:#F7F8FA;"><span class="name">Surface</span><span class="hex">#F7F8FA</span><span class="var">--bg (default)</span></div>
+  </div>
+</div>
+
+<!-- 2. TEAL (Banking) -->
+<div class="family banking">
+  <h2>Teal &mdash; Banking &amp; Financial Services</h2>
+  <div class="role">Banking practice header, banking tab, banking working-folder bar.</div>
+  <div class="ramp">
+    <div class="chip dark" style="background:#00838F;"><span class="name">Teal Dark</span><span class="hex">#00838F</span><span class="var">--teal-dark</span></div>
+    <div class="chip dark" style="background:#00BCD4;"><span class="name">Teal</span><span class="hex">#00BCD4</span><span class="var">--teal</span></div>
+    <div class="chip light" style="background:#E0F7FA;"><span class="name">Teal Soft</span><span class="hex">#E0F7FA</span><span class="var">--teal-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #00BCD4;"><span class="name" style="color:#00838F;">Border</span><span class="hex" style="color:#00838F;">on white</span></div>
+  </div>
+</div>
+
+<!-- 3. PARROT (Real Estate) -->
+<div class="family realest">
+  <h2>Parrot Green &mdash; Real Estate &amp; Infrastructure</h2>
+  <div class="role">Real Estate practice, TSH client, REIT advisory contexts.</div>
+  <div class="ramp">
+    <div class="chip dark" style="background:#1B5E20;"><span class="name">Parrot Dark</span><span class="hex">#1B5E20</span><span class="var">--parrot-dark</span></div>
+    <div class="chip dark" style="background:#00C853;"><span class="name">Parrot</span><span class="hex">#00C853</span><span class="var">--parrot</span></div>
+    <div class="chip light" style="background:#DCFCE7;"><span class="name">Parrot Soft</span><span class="hex">#DCFCE7</span><span class="var">--parrot-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #00C853;"><span class="name" style="color:#1B5E20;">Border</span><span class="hex" style="color:#1B5E20;">on white</span></div>
+  </div>
+</div>
+
+<!-- 4. CNERGYICO (Energy) -->
+<div class="family energy">
+  <h2>Cnergyico Flame &amp; Navy &mdash; Energy &amp; Petrochemicals</h2>
+  <div class="role">Energy practice, Cnergyico client &mdash; brand-true colors.</div>
+  <div class="ramp">
+    <div class="chip dark" style="background:#0D1B3F;"><span class="name">Cnergyico Navy</span><span class="hex">#0D1B3F</span><span class="var">--cnergyico-navy</span></div>
+    <div class="chip dark" style="background:#F26122;"><span class="name">Cnergyico Flame</span><span class="hex">#F26122</span><span class="var">--cnergyico</span></div>
+    <div class="chip light" style="background:#FFE3D6;"><span class="name">Flame Soft</span><span class="hex">#FFE3D6</span><span class="var">--cnergyico-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #F26122;"><span class="name" style="color:#0D1B3F;">Border</span><span class="hex" style="color:#0D1B3F;">on white</span></div>
+  </div>
+</div>
+
+<!-- 5. ROYAL PURPLE (Accreditation) -->
+<div class="family accred">
+  <h2>Royal Purple &mdash; Accreditation &amp; Professional Bodies</h2>
+  <div class="role">Accreditation practice, CIP, regulatory/legal contexts.</div>
+  <div class="ramp">
+    <div class="chip dark" style="background:#6A1B9A;"><span class="name">Purple Dark</span><span class="hex">#6A1B9A</span><span class="var">--purple-dark</span></div>
+    <div class="chip dark" style="background:#9C27B0;"><span class="name">Royal Purple</span><span class="hex">#9C27B0</span><span class="var">--purple</span></div>
+    <div class="chip light" style="background:#F3E5F5;"><span class="name">Purple Soft</span><span class="hex">#F3E5F5</span><span class="var">--purple-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #9C27B0;"><span class="name" style="color:#6A1B9A;">Border</span><span class="hex" style="color:#6A1B9A;">on white</span></div>
+  </div>
+</div>
+
+<!-- 6. FLAME YELLOW (Accent) -->
+<div class="family flame">
+  <h2>Flame Yellow &mdash; Accent, Highlights, Status</h2>
+  <div class="role">Pending tasks, callouts, user-action checkmarks, info banners.</div>
+  <div class="ramp">
+    <div class="chip dark" style="background:#FF8F00;"><span class="name">Flame Dark</span><span class="hex">#FF8F00</span><span class="var">--flame-dark</span></div>
+    <div class="chip light" style="background:#FFC400;color:#5C4500;"><span class="name">Flame Yellow</span><span class="hex">#FFC400</span><span class="var">--flame</span></div>
+    <div class="chip light" style="background:#FFF3D6;"><span class="name">Flame Soft</span><span class="hex">#FFF3D6</span><span class="var">--flame-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #FFC400;"><span class="name" style="color:#FF8F00;">Border</span><span class="hex" style="color:#FF8F00;">on white</span></div>
+  </div>
+</div>
+
+<!-- 7. LEMON YELLOW (NEW) -->
+<div class="family lemon">
+  <h2>Lemon Yellow <span class="pill-new">NEW IN v2</span></h2>
+  <div class="role">Vibrant accent for KPI tiles, info chips, body-background highlights, lemon-themed callouts.</div>
+  <div class="ramp">
+    <div class="chip light" style="background:#FDD835;color:#5C4500;"><span class="name">Lemon Dark</span><span class="hex">#FDD835</span><span class="var">--lemon-dark</span></div>
+    <div class="chip light" style="background:#FFEE58;color:#5C4500;"><span class="name">Lemon</span><span class="hex">#FFEE58</span><span class="var">--lemon</span></div>
+    <div class="chip light" style="background:#FFFDE7;"><span class="name">Lemon Soft</span><span class="hex">#FFFDE7</span><span class="var">--lemon-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #FDD835;"><span class="name" style="color:#7F6000;">Border</span><span class="hex" style="color:#7F6000;">on white</span></div>
+  </div>
+  <div class="badge-row">
+    <span class="b" style="background:#FFFDE7;color:#7F6000;">.badge.lemon</span>
+    <span class="b" style="background:#FFEE58;color:#5C4500;">.kpi-tile.lemon</span>
+  </div>
+</div>
+
+<!-- 8. LEMON GREEN / LIME (NEW) -->
+<div class="family lime">
+  <h2>Lemon Green / Lime <span class="pill-new">NEW IN v2</span></h2>
+  <div class="role">High-energy accent for growth metrics, success states, vibrant fills on white surfaces.</div>
+  <div class="ramp">
+    <div class="chip light" style="background:#AEEA00;color:#33691E;"><span class="name">Lime Dark</span><span class="hex">#AEEA00</span><span class="var">--lime-dark</span></div>
+    <div class="chip light" style="background:#C6FF00;color:#33691E;"><span class="name">Lime</span><span class="hex">#C6FF00</span><span class="var">--lime</span></div>
+    <div class="chip light" style="background:#F4FFD1;"><span class="name">Lime Soft</span><span class="hex">#F4FFD1</span><span class="var">--lime-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #C6FF00;"><span class="name" style="color:#33691E;">Border</span><span class="hex" style="color:#33691E;">on white</span></div>
+  </div>
+  <div class="badge-row">
+    <span class="b" style="background:#F4FFD1;color:#33691E;">.badge.lime</span>
+    <span class="b" style="background:#C6FF00;color:#33691E;">.kpi-tile.lime</span>
+  </div>
+</div>
+
+<!-- 9. MAGENTA ULTRA (NEW) -->
+<div class="family magenta">
+  <h2>Magenta Ultra <span class="pill-new">NEW IN v2</span></h2>
+  <div class="role">High-impact accent for critical items, escalations, premium / featured states, gradient anchors.</div>
+  <div class="ramp">
+    <div class="chip dark" style="background:#AD1457;"><span class="name">Magenta Dark</span><span class="hex">#AD1457</span><span class="var">--magenta-dark</span></div>
+    <div class="chip dark" style="background:#D81B60;"><span class="name">Magenta Ultra</span><span class="hex">#D81B60</span><span class="var">--magenta</span></div>
+    <div class="chip light" style="background:#FCE4EC;"><span class="name">Magenta Soft</span><span class="hex">#FCE4EC</span><span class="var">--magenta-soft</span></div>
+    <div class="chip light" style="background:white;border:2px solid #D81B60;"><span class="name" style="color:#AD1457;">Border</span><span class="hex" style="color:#AD1457;">on white</span></div>
+  </div>
+  <div class="badge-row">
+    <span class="b" style="background:#FCE4EC;color:#AD1457;">.badge.magenta</span>
+    <span class="b" style="background:#D81B60;color:white;">.kpi-tile.magenta</span>
+  </div>
+</div>
+
+<!-- Practice mapping summary -->
+<div class="mapping">
+  <h2>Practice &rarr; Color mapping</h2>
+  <div class="map-grid">
+    <div class="map" style="background:linear-gradient(135deg,#00838F,#00BCD4);"><div class="who">Banking</div><div class="what">Teal &middot; SMFB anchor</div></div>
+    <div class="map" style="background:linear-gradient(135deg,#1B5E20,#00C853);"><div class="who">Real Estate</div><div class="what">Parrot Green &middot; TSH anchor</div></div>
+    <div class="map" style="background:linear-gradient(135deg,#0D1B3F,#F26122);"><div class="who">Energy &amp; Petrochem</div><div class="what">Cnergyico Flame &middot; Cnergyico anchor</div></div>
+    <div class="map" style="background:linear-gradient(135deg,#6A1B9A,#9C27B0);"><div class="who">Accreditation</div><div class="what">Royal Purple &middot; CIP anchor</div></div>
+  </div>
+  <h2 style="margin-top:22px;">New v2 accents &mdash; usage guidance</h2>
+  <div class="map-grid">
+    <div class="map" style="background:linear-gradient(135deg,#FDD835,#FFEE58);color:#5C4500;"><div class="who">Lemon Yellow</div><div class="what">Soft KPI highlights &middot; cheerful neutral accent</div></div>
+    <div class="map" style="background:linear-gradient(135deg,#AEEA00,#C6FF00);color:#33691E;"><div class="who">Lemon Green</div><div class="what">Growth, success, velocity metrics</div></div>
+    <div class="map" style="background:linear-gradient(135deg,#AD1457,#D81B60);"><div class="who">Magenta Ultra</div><div class="what">Critical, escalation, featured</div></div>
+    <div class="map" style="background:linear-gradient(135deg,#FF8F00,#FFC400);color:#5C4500;"><div class="who">Flame Yellow</div><div class="what">Pending, callout, user-action</div></div>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  ContexAi Brand Palette v2 &middot; 11 color families &middot; 33 tokens &middot; Generated 2026-06-13
+  &middot; <a href="../ContexAi_Control_Center.html" style="color:#FFC400;">Back to ContexAi Control Center</a>
+</footer>
+
+</body>
+</html>

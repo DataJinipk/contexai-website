@@ -70,6 +70,10 @@ export default {
       return handleSubmission(request, env, 'position-applications');
     }
 
+    if (url.pathname === '/api/contact' && request.method === 'POST') {
+      return handleSubmission(request, env, 'contact-messages');
+    }
+
     if (url.pathname === '/api/checkout-session' && request.method === 'POST') {
       return handleCheckoutSession(request, env);
     }
@@ -328,6 +332,8 @@ async function handleSubmission(request, env, prefix) {
       message = 'Position received. Our Web Expert Agents will review and publish approved roles within 2 business days.';
     } else if (isPositionApplication) {
       message = 'Application sent. The hiring contact has been notified, and you should hear back within 5 business days.';
+    } else if (prefix === 'contact-messages') {
+      message = 'Thanks for reaching out. Your message has reached the ContexAi team and we will respond within 2 business days.';
     } else {
       message = 'Application received. Our Web Expert Agents will review and respond within 5 business days.';
     }
@@ -608,12 +614,12 @@ async function handleAdminRoute(request, env, url) {
 // ─── /api/admin/applications ────────────────────────────────────────────────
 
 async function adminApplications(request, env, url, origin) {
-  const kind = url.searchParams.get('kind') || 'all'; // applications | positions | position-applications | all
+  const kind = url.searchParams.get('kind') || 'all'; // applications | positions | position-applications | contact-messages | all
   const since = url.searchParams.get('since'); // YYYY-MM-DD
   const limit = Math.min(parseInt(url.searchParams.get('limit') || '200', 10), 500);
 
   const prefixes = kind === 'all'
-    ? ['applications/', 'positions/', 'position-applications/']
+    ? ['applications/', 'positions/', 'position-applications/', 'contact-messages/']
     : [`${kind}/`];
 
   const items = [];
