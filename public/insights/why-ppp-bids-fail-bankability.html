@@ -61,12 +61,60 @@ blockquote{border-left:3px solid var(--blue);padding:4px 0 4px 20px;margin:24px 
 .sticky-cta{position:fixed;bottom:22px;right:22px;background:#0E7E76;color:#fff;padding:13px 22px;border-radius:30px;font-weight:600;font-size:.94rem;text-decoration:none;box-shadow:0 6px 22px rgba(14,126,118,.45);z-index:100;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
 .sticky-cta:hover{background:#14B8A6;transform:translateY(-2px);box-shadow:0 10px 30px rgba(14,126,118,.55)}
 @media(max-width:600px){.sticky-cta{padding:11px 16px;font-size:.85rem;bottom:14px;right:14px}}
+/* === Site-wide top nav (Phase 1.7+) === */
+.topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
+.topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
+.topnav__logo .ai{color:#14B8A6}
+.topnav__logo .badge{font-size:.62rem;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-left:4px;color:#fff}
+.topnav__links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.topnav__links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .15s;white-space:nowrap}
+.topnav__links a:hover{color:#fff}
+.topnav__links a.current{color:#fff;border-bottom:2px solid #FFC400;padding-bottom:2px}
+.topnav__links a.cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
+.topnav__links a.cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.topnav__burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+@media(max-width:980px){
+  .topnav__links{display:none;width:100%}
+  .topnav__burger{display:block}
+  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E7E76;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .topnav__in{position:relative;flex-wrap:wrap}
+}
+
 
 </style>
 </head>
 <body>
 <div aria-hidden="true" title="ContexAi Brand Palette v2" style="display:flex;height:8px;width:100%;line-height:0;box-shadow:0 2px 6px rgba(0,0,0,.10);position:relative;z-index:100"><span title="Ink / Navy" style="display:block;flex:1;background:#0D1B3F"></span><span title="ContexAi Blue" style="display:block;flex:1;background:#0040D9"></span><span title="Teal Dark — Banking" style="display:block;flex:1;background:#00838F"></span><span title="Teal" style="display:block;flex:1;background:#00BCD4"></span><span title="Lemon Green" style="display:block;flex:1;background:#AEEA00"></span><span title="Lemon Yellow" style="display:block;flex:1;background:#FDD835"></span><span title="Flame Yellow" style="display:block;flex:1;background:#FFC400"></span><span title="Cnergyico Flame — Energy" style="display:block;flex:1;background:#F26122"></span><span title="Magenta Ultra" style="display:block;flex:1;background:#D81B60"></span><span title="Royal Purple — Accreditation" style="display:block;flex:1;background:#9C27B0"></span><span title="Parrot Green — Real Estate" style="display:block;flex:1;background:#00C853"></span></div>
-<div class="bar"><div class="bar__in"><a href="/" class="logo">Contex<span>Ai</span> Group</a><a href="/insights" class="back">&larr; All insights</a></div></div>
+<nav class="topnav">
+  <div class="topnav__in">
+    <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
+    <div class="topnav__links" id="topnav-links">
+      <a href="/#about">About</a>
+      <a href="/practices">Practices</a>
+      <a href="/team">Team</a>
+      <a href="/case-studies">Case Studies</a>
+      <a href="/#services">Services</a>
+      <a href="/#agentic">Agentic AI</a>
+      <a href="/insights">Insights</a>
+      <a href="/economy">Economy &amp; Fiscal</a>
+      <a href="/positions">Positions</a>
+      <a href="/contact" class="cta">Contact Us</a>
+    </div>
+    <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<script>(function(){
+  var p = location.pathname.replace(/\/$/,'') || '/';
+  document.querySelectorAll('.topnav__links a').forEach(function(a){
+    var href = a.getAttribute('href');
+    if(href === p || (p.startsWith('/practices') && href === '/practices') || (p.startsWith('/insights') && href === '/insights') || (p.startsWith('/case-studies') && href === '/case-studies')){
+      a.classList.add('current');
+    }
+  });
+})();</script>
+
 
 <article>
   <div class="tag">PPP &amp; Infrastructure</div>
