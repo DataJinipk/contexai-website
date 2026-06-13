@@ -225,6 +225,59 @@ img{display:block;max-width:100%}
 .tab-btn[data-tab="advisory"].active   { background:#00838F; color:#fff; box-shadow:0 4px 12px rgba(0,131,143,.32); }
 .tab-btn[data-tab="sector"]           { background:#FFE3D6; color:#C84F1A; border-top-color:#F26122; }   /* Cnergyico Flame */
 .tab-btn[data-tab="sector"].active     { background:#F26122; color:#fff; box-shadow:0 4px 12px rgba(242,97,34,.32); }
+
+/* ============================================================
+   v2 PALETTE — per-card colors across Agentic AI / Insights /
+   Testimonials / Join sections. Each card gets:
+   - left-accent border in its palette color
+   - colored category tag
+   - soft tinted background on hover
+   ============================================================ */
+
+/* === Agentic AI cards === */
+.agentic__card        { border-left:5px solid #D81B60 !important; }                                        /* Magenta */
+.agentic__card .agentic__cat { color:#AD1457 !important; }
+.agentic__card.d1     { border-left-color:#F26122 !important; }                                            /* Flame */
+.agentic__card.d1 .agentic__cat { color:#C84F1A !important; }
+.agentic__card.d2     { border-left-color:#0040D9 !important; }                                            /* ContexAi Blue */
+.agentic__card.d2 .agentic__cat { color:#0040D9 !important; }
+.agentic__card--apply { border-left-color:#AEEA00 !important;
+  background:linear-gradient(135deg,#F4FFD1,#FFFDE7) !important; }                                         /* Lime + Lemon */
+.agentic__card--apply .agentic__cat { color:#33691E !important; }
+.agentic__card:hover  { transform:translateY(-4px); }
+
+/* === Insight cards === */
+.insight              { border-left:5px solid #F26122 !important; transition:all .2s; }                    /* Energy → Flame */
+.insight .insight__tag{ color:#C84F1A !important; font-weight:700; }
+.insight.d1           { border-left-color:#00C853 !important; }                                            /* PPP → Parrot */
+.insight.d1 .insight__tag { color:#1B5E20 !important; }
+.insight.d2           { border-left-color:#0040D9 !important; }                                            /* Agentic AI → Blue */
+.insight.d2 .insight__tag { color:#0040D9 !important; }
+.insight:hover        { transform:translateY(-3px); box-shadow:0 6px 20px rgba(0,0,0,.10); }
+
+/* === Testimonial cards === */
+.test                 { border-left:5px solid #00838F !important; transition:all .2s; }                    /* Teal */
+.test .test__attr     { color:#00838F !important; font-weight:600; }
+.test.d1              { border-left-color:#D81B60 !important; }                                            /* Magenta */
+.test.d1 .test__attr  { color:#AD1457 !important; }
+.test.d2              { border-left-color:#00C853 !important; }                                            /* Parrot */
+.test.d2 .test__attr  { color:#1B5E20 !important; }
+.test:hover           { transform:translateY(-3px); box-shadow:0 6px 20px rgba(0,0,0,.10); }
+
+/* === Join cards === */
+.join__card--emp      { border-top:5px solid #0040D9 !important;
+  background:linear-gradient(135deg,#E6EEFF,#fff) !important;
+  border-color:rgba(0,64,217,.18) !important; }                                                            /* ContexAi Blue */
+.join__card--emp .join__icon { background:#0040D9 !important; color:#fff !important; }
+.join__card--emp .join__name { color:#0040D9 !important; }
+.join__card.d1       { border-top:5px solid #FDD835 !important;
+  background:linear-gradient(135deg,#FFFDE7,#fff) !important;
+  border-color:rgba(253,216,53,.30) !important; }                                                          /* Lemon Yellow — SME */
+.join__card.d1 .join__icon { background:#FDD835 !important; color:#5C4500 !important; }
+.join__card.d1 .join__name { color:#FF8F00 !important; }
+.join__card--ai       { border-top:5px solid #D81B60 !important;
+  background:linear-gradient(135deg,#6A1B9A,#0D1B3F) !important; color:#fff !important; }                  /* Magenta + Purple→Navy */
+.join__card--ai .join__icon { background:#D81B60 !important; color:#fff !important; }
 .tab-content{display:none}.tab-content.active{display:block}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .svc-card{border-radius:var(--radius);background:var(--white);padding:26px;border:1px solid rgba(0,0,0,.05);transition:all .25s}
