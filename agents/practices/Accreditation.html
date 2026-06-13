@@ -4,9 +4,50 @@
 <meta charset="utf-8">
 <title>Professional Bodies & Accreditation — ContexAi Practice</title>
 <style>
-  :root { color-scheme: light; }
+  :root {
+    color-scheme: light;
+    /* ============ ContexAi Unified Palette v2 ============ */
+    --ink:           #0A0E1A;   /* primary dark text */
+    --ctxai-blue:    #1D5FFF;
+    --ctxai-blue-d:  #0040D9;
+    /* Teal — Banking */
+    --teal:          #00BCD4;
+    --teal-dark:     #00838F;
+    --teal-soft:     #E0F7FA;
+    /* Parrot — Real Estate */
+    --parrot:        #00C853;
+    --parrot-dark:   #1B5E20;
+    --parrot-soft:   #DCFCE7;
+    /* Flame Yellow — accent */
+    --flame:         #FFC400;
+    --flame-dark:    #FF8F00;
+    --flame-soft:    #FFF3D6;
+    /* Cnergyico Flame — Energy */
+    --cnergyico:     #F26122;
+    --cnergyico-navy:#0D1B3F;
+    --cnergyico-soft:#FFE3D6;
+    /* Royal Purple — Accreditation */
+    --purple:        #9C27B0;
+    --purple-dark:   #6A1B9A;
+    --purple-soft:   #F3E5F5;
+    /* === NEW v2 additions === */
+    /* Lemon Yellow */
+    --lemon:         #FFEE58;
+    --lemon-dark:    #FDD835;
+    --lemon-soft:    #FFFDE7;
+    /* Lemon Green / Lime */
+    --lime:          #C6FF00;
+    --lime-dark:     #AEEA00;
+    --lime-soft:     #F4FFD1;
+    /* Magenta Ultra */
+    --magenta:       #D81B60;
+    --magenta-dark:  #AD1457;
+    --magenta-soft:  #FCE4EC;
+    /* surfaces */
+    --bg: #F7F8FA;
+  }
   * { box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background:#F7F8FA;
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#FAF7FC;;
     margin:0; padding:0; color:#0B1120; font-size:24px; line-height:1.7; }
   header { background:linear-gradient(135deg,#6A1B9A 0%,#9C27B0 100%);
     color:white; padding:28px 40px; }
@@ -19,7 +60,7 @@
     font-size:20px; font-family:Consolas,monospace; }
   .container { max-width:1200px; margin:0 auto; padding:28px 40px; }
   .progress-strip { background:white; padding:16px 20px; border-radius:8px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.06); margin-bottom:24px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.07); margin-bottom:24px;
     display:flex; align-items:center; gap:18px; flex-wrap:wrap;
     border-left:5px solid #9C27B0; }
   .progress-strip .label { font-size:22px; color:#595959; font-weight:600; }
@@ -31,7 +72,7 @@
   .kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px; }
   @media (max-width:900px) { .kpi-row { grid-template-columns:repeat(2,1fr); } }
   .kpi-tile { background:white; padding:16px 18px; border-radius:8px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.06); border-left:4px solid #9C27B0; }
+    box-shadow:0 3px 10px rgba(0,0,0,0.07); border-left:4px solid #9C27B0; }
   .kpi-tile .label { font-size:19px; text-transform:uppercase;
     letter-spacing:0.06em; color:#8A8FA3; font-weight:600; }
   .kpi-tile .value { font-size:40px; font-weight:700; color:#0B1120; margin-top:6px; line-height:1.2; }
@@ -39,7 +80,7 @@
   .section-title { font-size:32px; font-weight:600; margin:32px 0 16px 0; color:#6A1B9A; }
   .section-title .count { font-size:22px; color:#8A8FA3; font-weight:500; margin-left:8px; }
   .card { background:white; border-radius:10px; padding:22px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:4px solid #9C27B0;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08); border-top:4px solid #9C27B0;
     margin-bottom:20px; }
   .card .tag { font-size:18px; text-transform:uppercase; letter-spacing:0.06em;
     color:#6A1B9A; font-weight:700; }
@@ -94,7 +135,7 @@
     border-radius:8px; padding:14px 18px; margin:20px 0; font-size:19px; }
   .critical-path strong { color:#E65100; }
   .triggers { background:white; border-radius:8px; padding:18px 20px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.06); margin:24px 0; }
+    box-shadow:0 3px 10px rgba(0,0,0,0.07); margin:24px 0; }
   .triggers h3 { margin:0 0 12px 0; font-size:22px; text-transform:uppercase;
     letter-spacing:0.06em; color:#595959; }
   .triggers p { font-size:23px; color:#3F4756; margin:10px 0; line-height:1.65; }
@@ -104,6 +145,53 @@
   footer { background:#6A1B9A; color:#F3E5F5; padding:18px 40px;
     text-align:center; font-size:21px; }
   footer a { color:#F3E5F5; }
+
+  .working-folders { background:white; padding:18px 22px; border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.07); margin-bottom:24px;
+    border-left:5px solid #6A1B9A; }
+  .working-folders h3 { margin:0 0 14px 0; font-size:18px; text-transform:uppercase;
+    letter-spacing:0.06em; color:#595959; font-weight:600; }
+  .working-folders .links { display:flex; gap:10px; flex-wrap:wrap; }
+  .working-folders a { display:inline-flex; align-items:center; gap:8px;
+    background:#6A1B9A; color:white; padding:11px 18px; border-radius:6px;
+    text-decoration:none; font-size:18px; font-weight:500;
+    box-shadow:0 1px 3px rgba(0,0,0,0.15); transition:all 0.15s; }
+  .working-folders a:hover { background:#9C27B0; transform:translateY(-1px);
+    box-shadow:0 3px 8px rgba(0,0,0,0.22); }
+  .working-folders .icon { font-size:16px; opacity:0.9; }
+  .kpi-tile.lemon { border-left-color:#FDD835; background:linear-gradient(180deg,#fff 80%,#FFFDE7 100%); }
+  .kpi-tile.lime  { border-left-color:#AEEA00; background:linear-gradient(180deg,#fff 80%,#F4FFD1 100%); }
+  .badge.lemon { background:#FFFDE7; color:#7F6000; font-weight:600; }
+  .badge.lime  { background:#F4FFD1; color:#33691E; font-weight:600; }
+  .kpi-tile.magenta { border-left-color:#D81B60; background:linear-gradient(180deg,#fff 80%,#FCE4EC 100%); }
+  .badge.magenta { background:#FCE4EC; color:#AD1457; font-weight:600; }
+  /* === v2 Palette Ribbon (the "color bar") === */
+  .palette-ribbon { display:flex; height:8px; width:100%; }
+  .palette-ribbon span { flex:1; }
+  .palette-ribbon .c1  { background:#0D1B3F; }   /* Cnergyico Navy */
+  .palette-ribbon .c2  { background:#0040D9; }   /* ContexAi Blue Dark */
+  .palette-ribbon .c3  { background:#00838F; }   /* Teal Dark — Banking */
+  .palette-ribbon .c4  { background:#00BCD4; }   /* Teal */
+  .palette-ribbon .c5  { background:#AEEA00; }   /* Lemon Green */
+  .palette-ribbon .c6  { background:#FDD835; }   /* Lemon Yellow */
+  .palette-ribbon .c7  { background:#FFC400; }   /* Flame Yellow */
+  .palette-ribbon .c8  { background:#F26122; }   /* Cnergyico Flame */
+  .palette-ribbon .c9  { background:#D81B60; }   /* Magenta Ultra */
+  .palette-ribbon .c10 { background:#9C27B0; }   /* Royal Purple */
+  .palette-ribbon .c11 { background:#00C853; }   /* Parrot — Real Estate */
+
+  /* === Vibrant tab strip (header .quick) === */
+  header .quick a:nth-child(1) { background:#0D1B3F !important; }   /* Navy ink */
+  header .quick a:nth-child(2) { background:#00838F !important; }   /* Teal — Banking */
+  header .quick a:nth-child(3) { background:#1B5E20 !important; }   /* Parrot — RE */
+  header .quick a:nth-child(4) { background:#F26122 !important; }   /* Cnergyico — Energy */
+  header .quick a:nth-child(5) { background:#6A1B9A !important; }   /* Purple — Accred */
+  header .quick a:nth-child(6) { background:#D81B60 !important; }   /* Magenta */
+  header .quick a:nth-child(7) { background:#0040D9 !important; }   /* CTXAI Blue */
+  header .quick a:hover { filter:brightness(1.18); transform:translateY(-1px); }
+
+
+
 </style>
 </head>
 <body>
@@ -114,15 +202,28 @@
   <div class="sub">4 CIP SMEs &middot; CIP anchor &middot; SECP S42 incorporation is the critical path that sequences everything else</div>
   <span class="folder">G:\My Drive\ContexAi_Agents\Accreditation\</span>
 </header>
+<div class="palette-ribbon"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span><span class="c5"></span><span class="c6"></span><span class="c7"></span><span class="c8"></span><span class="c9"></span><span class="c10"></span><span class="c11"></span></div>
+
 
 <div class="container">
 
   <div class="progress-strip">
     <span class="label">Practice buildout:</span>
-    <div class="bar"><div class="fill" style="width:45%;"></div></div>
-    <span class="pct">45%</span>
+    <div class="bar"><div class="fill" style="width:45%;"></div></div><span class="pct">45%</span>
     <span class="note">Lead + 4 SMEs built &middot; CIP client team future &middot; SECP S42 blocker</span>
   </div>
+
+  <div class="working-folders">
+    <h3>📂 Working folders — OneDrive &amp; Google Drive</h3>
+    <div class="links">
+      <a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/" target="_blank"><span class="icon">📁</span>ContexAi root</a>
+      <a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Accreditation/" target="_blank"><span class="icon">📁</span>Accreditation working folder</a>
+      <a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Engagements/" target="_blank"><span class="icon">📁</span>All engagements</a>
+      <a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Engagements/CIP/" target="_blank"><span class="icon">📁</span>CIP engagements</a>
+      <a href="file:///G:/My Drive/ContexAi_Agents/Accreditation/CIP Agents Team/" target="_blank"><span class="icon">📁</span>CIP Drive folder</a>
+    </div>
+  </div>
+
 
   <div class="critical-path">
     <strong>&#9888; Critical path:</strong> SECP Section 42 incorporation approval (6&ndash;9 months).

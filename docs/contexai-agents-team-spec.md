@@ -104,7 +104,7 @@ The Group Chief runs this every time a new engagement starts. It produces a one-
 - Fee structure: <if client engagement>
 - Conflicts checked: <yes/no>
 - Linked files: <paths>
-- Folder: <OneDrive\AWA\ContexAi\Engagements\<client>\>
+- Folder: <OneDrive\01_Professional\AWA\ContexAi\Engagements\<client>\>
 ```
 
 ## 6. Memory & Document Conventions

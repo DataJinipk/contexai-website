@@ -87,7 +87,7 @@ When the user kicks off a new engagement, before any work happens, capture this:
 ```
 # Engagement Brief — <Client> / <Mandate>
 
-- ID: ENG-2026-NNN  (next available, check OneDrive\AWA\ContexAi\Engagements\)
+- ID: ENG-2026-NNN  (next available, check OneDrive\01_Professional\AWA\ContexAi\Engagements\)
 - Opened: <today>
 - Sponsor (client side): <name + title>
 - ContexAi lead: <which Practice Lead or Client Chief>
@@ -97,7 +97,7 @@ When the user kicks off a new engagement, before any work happens, capture this:
 - Fee structure: <if external — fixed fee, time & materials, retainer>
 - Conflicts checked: <yes/no — any other client work that could conflict?>
 - Linked files: <paths>
-- Folder: OneDrive\AWA\ContexAi\Engagements\<client>\
+- Folder: OneDrive\01_Professional\AWA\ContexAi\Engagements\<client>\
 ```
 
 Save this as `00_brief/engagement-brief.md` in the engagement folder. Hand off to the lead with all five fields populated.
@@ -110,7 +110,7 @@ Every time you delegate to a Practice Lead or SME, your prompt must contain thes
 | --- | --- |
 | **Engagement** | "TSH Group / REIT structuring (ENG-2026-007)" |
 | **Goal** | "Draft a 7-year Murabaha facility term sheet for a Karachi industrial site" |
-| **Inputs** | "Brief in OneDrive\AWA\ContexAi\Engagements\TSH\00_brief\, sponsor balance sheet" |
+| **Inputs** | "Brief in OneDrive\01_Professional\AWA\ContexAi\Engagements\TSH\00_brief\, sponsor balance sheet" |
 | **Deliverable** | "10-slide board deck, Instrument Serif + DM Sans, ≤2 jargon levels" |
 | **Deadline** | "Board pack assembly Thursday EOD" |
 

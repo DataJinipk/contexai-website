@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1128px;height:191px;overflow:hidden}
+body{font-family:'Segoe UI',system-ui,sans-serif;position:relative;background:#0B1120}
+.sky{position:absolute;inset:0;background:linear-gradient(180deg,#0B1120 0%,#13203b 60%,#1a2c4d 100%)}
+.sun{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(245,158,11,.28),rgba(29,95,255,.10),transparent 62%);top:-150px;right:120px}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:42px 42px}
+svg.range{position:absolute;bottom:0;left:0;width:1128px;height:120px}
+.wrap{position:absolute;inset:0;padding:0 56px;display:flex;align-items:center;justify-content:space-between;z-index:3}
+.logo{font-size:30px;font-weight:800;letter-spacing:-.02em;color:#fff}
+.logo span{color:#4F83FF}
+.tag{font-size:15px;color:#C4D0E6;font-weight:300;margin-top:7px}
+.tag b{color:#fff;font-weight:600}
+.right{text-align:right}
+.pills{display:flex;gap:8px;justify-content:flex-end;margin-bottom:9px}
+.pill{font-size:12.5px;color:#dce4f2;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:5px 12px;border-radius:100px}
+.url{font-size:14px;color:#9fb0cc;font-weight:600}
+</style></head>
+<body>
+<div class="sky"></div><div class="sun"></div><div class="grid"></div>
+<svg class="range" viewBox="0 0 1128 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,120 L0,70 L120,30 L240,75 L360,40 L480,80 L600,45 L760,85 L900,50 L1010,78 L1128,55 L1128,120 Z" fill="#0d1a33" opacity=".75"/>
+  <path d="M0,120 L0,92 L160,58 L320,95 L470,62 L640,98 L820,68 L980,100 L1128,78 L1128,120 Z" fill="#0a1428"/>
+</svg>
+<div class="wrap">
+  <div class="left">
+    <div class="logo">Contex<span>Ai</span> Group</div>
+    <div class="tag"><b>Intelligence in Context.</b> Strategic advisory + Agentic AI for Pakistan &amp; emerging markets.</div>
+  </div>
+  <div class="right">
+    <div class="pills"><div class="pill">Advisory</div><div class="pill">Energy</div><div class="pill">Agentic AI</div></div>
+    <div class="url">contexai.org</div>
+  </div>
+</div>
+</body></html>

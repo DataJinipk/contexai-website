@@ -1,76 +1,91 @@
-# ContexAI Group - Production Website
+# ContexAi Group — Website
 
-Production-ready website for ContexAI Group, a premier boutique financial consulting firm specializing in dispute resolution, startup advisory, and strategic initiatives across multiple sectors.
+Production website for **ContexAi Group** — a boutique financial consulting and strategic advisory practice, and a curated marketplace connecting senior consultants (Subject Matter Experts), Agentic AI builders, and employers across Pakistan and emerging markets.
 
-## Features
+**Live:** https://contexai.org
 
-### Leadership
-- **Board of Directors**: Experienced professionals from leading financial institutions, regulatory bodies, and international development organizations
-- **Leadership Team**: Deep expertise with practical experience across multiple sectors and markets
-- **Founder & CEO**: Amir Waheed Ahmed with 20+ years of experience in financial consulting and PPP advisory
+## Stack
 
-### Services
-- Interactive tabbed navigation for services (Financial, Dispute Resolution, Advisory, Sector Expertise)
-- Mobile-responsive menu with smooth animations
-- Comprehensive insights section with industry research
-- Client testimonials for social proof
-- Statistics section showcasing expertise and track record
+This is a **Cloudflare Worker** (not Netlify — older docs were wrong). The Worker serves the static `public/` site and adds a small API.
 
-### Sectors of Expertise
-- Water Technologies
-- Petrochemicals
-- Oil & Gas
-- Power Sector
-- EPC Contracting
-- Digital Banking and Fintech
-- Micro Finance
-- Smart & Organic Farming
-- Sustainability and SDGs
-- Public Private Partnerships (PPP)
-- Start-up Incubation & Support
+- **`src/index.js`** — the Worker: static asset routing + JSON API.
+- **`public/`** — the static site (homepage, apply/positions pages, dashboard, images).
+- **`wrangler.jsonc`** — Worker config and bindings.
 
-### Design & User Experience
-- Enhanced visual design with improved gradients, hover effects, and animations
-- Scroll-based navigation effects and interactive elements
-- Professional presentation focused on consulting services
-- Mobile-first responsive design approach
-- Accessibility features with focus-visible states
+### Bindings (see `wrangler.jsonc`)
 
-## Deployment
+| Binding | Type | Purpose |
+|---------|------|---------|
+| `ASSETS` | Static assets | Serves everything in `public/` |
+| `APPLICATIONS` | R2 bucket | Stores submissions + uploaded files + Stripe purchase logs |
+| `QUOTA_KV` | KV namespace | Per-email posting/application quota counters |
 
-The site is deployed to **contexai.org** via Netlify. Configuration lives in `netlify.toml`.
+### API endpoints
 
-```powershell
-# One-time setup
-netlify link              # link this folder to the Netlify project
-netlify status            # confirm the link
+| Method | Path | Purpose |
+|--------|------|---------|
+| POST | `/api/apply` | SME / AI-builder applications |
+| POST | `/api/post-position` | Employer position postings (quota-gated) |
+| POST | `/api/apply-position` | Applications to a posted role (quota-gated) |
+| POST | `/api/checkout-session` | Create a Stripe Checkout session |
+| POST | `/api/stripe-webhook` | Stripe webhook receiver (HMAC-verified) |
+| GET | `/api/quota` | Remaining quota for an email |
+| GET | `/api/admin/*` | Read-only dashboard data (Bearer `ADMIN_TOKEN`) |
 
-# Each release
-netlify deploy --prod     # uploads contents of public/
-```
-
-## Folder Layout
+### Secrets (set via `wrangler secret put <NAME>`)
 
 ```
-public/                 ← deployed to contexai.org
-  index.html            ← live homepage
-
-_archive/               ← legacy/draft versions, NOT deployed
-  ContexAi_Website.html             (original version)
-  ContexAi_NewWebsite.html          (legacy enhanced version)
-  ContexAi_ProductionWebsite.html   (early stub)
-  ContexAi_ProductionWebsite_staging.html
-
-<root>/                 ← venture brand pages, NOT currently deployed
-  Apni_Sawari_Website.html
-  Events_Brand_Studio_Website.html
-  FarmDirect_Market_Website.html
-  Food_HomeChef_Website.html
-  PopoPanda_Website.html
-  Zameen-o-Makan_Website.html
-
-netlify.toml            ← Netlify build config (publish = "public")
-README.md               ← this file
+STRIPE_SECRET_KEY        # sk_test_... or sk_live_...
+STRIPE_WEBHOOK_SECRET    # whsec_...
+STRIPE_PRICE_STARTER     # price_...  (5 posts / $10)
+STRIPE_PRICE_PRO         # price_...  (20 posts / $25)
+ADMIN_TOKEN              # bearer token gating /api/admin/*
+GITHUB_TOKEN             # optional — raises GitHub API rate limit for the dashboard
 ```
 
-To publish a venture page, move it (or copy it) into `public/` and redeploy.
+## Develop & deploy
+
+```bash
+npm install
+npx wrangler dev          # local dev at http://localhost:8787
+npx wrangler deploy       # deploy to Cloudflare
+```
+
+## Pages (clean URLs, resolved by the assets binding)
+
+| URL | File |
+|-----|------|
+| `/` | `public/index.html` |
+| `/positions` | `public/positions.html` |
+| `/apply` | `public/apply.html` |
+| `/post-position` | `public/post-position.html` |
+| `/apply-position` | `public/apply-position.html` |
+| `/dashboard` | `public/dashboard.html` |
+| `/privacy` | `public/privacy.html` |
+| `/terms` | `public/terms.html` |
+
+## Folder layout
+
+```
+src/index.js          ← Cloudflare Worker (API + asset routing)
+public/               ← static site (deployed)
+  index.html          ← homepage
+  privacy.html, terms.html
+  robots.txt, sitemap.xml, favicon.svg
+  images/             ← owned imagery, expert photos, launch social cards
+docs/                 ← specs, org charts, plans
+agents/               ← internal control-center pages & agent skill files
+_archive/             ← legacy drafts, NOT deployed
+wrangler.jsonc        ← Worker config & bindings
+```
+
+## SEO / social
+
+- Open Graph + Twitter cards in `index.html` use `public/images/launch/launch-card.png` for link previews.
+- `robots.txt` + `sitemap.xml` are live.
+- **Cloudflare Web Analytics** snippet is in `index.html` (commented) — add your token to activate.
+
+## Notes
+
+- Venture brand pages (`Apni_Sawari_Website.html`, etc.) live at repo root and are **not** deployed. Move one into `public/` to publish it.
+- See `docs/website-improvement-and-linkedin-automation-plan.md` for the current improvement roadmap and the LinkedIn daily-posting automation blueprint.

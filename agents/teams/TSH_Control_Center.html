@@ -4,9 +4,50 @@
 <meta charset="utf-8">
 <title>TSH Agents Team — Control Center</title>
 <style>
-  :root { color-scheme: light; }
+  :root {
+    color-scheme: light;
+    /* ============ ContexAi Unified Palette v2 ============ */
+    --ink:           #0A0E1A;   /* primary dark text */
+    --ctxai-blue:    #1D5FFF;
+    --ctxai-blue-d:  #0040D9;
+    /* Teal — Banking */
+    --teal:          #00BCD4;
+    --teal-dark:     #00838F;
+    --teal-soft:     #E0F7FA;
+    /* Parrot — Real Estate */
+    --parrot:        #00C853;
+    --parrot-dark:   #1B5E20;
+    --parrot-soft:   #DCFCE7;
+    /* Flame Yellow — accent */
+    --flame:         #FFC400;
+    --flame-dark:    #FF8F00;
+    --flame-soft:    #FFF3D6;
+    /* Cnergyico Flame — Energy */
+    --cnergyico:     #F26122;
+    --cnergyico-navy:#0D1B3F;
+    --cnergyico-soft:#FFE3D6;
+    /* Royal Purple — Accreditation */
+    --purple:        #9C27B0;
+    --purple-dark:   #6A1B9A;
+    --purple-soft:   #F3E5F5;
+    /* === NEW v2 additions === */
+    /* Lemon Yellow */
+    --lemon:         #FFEE58;
+    --lemon-dark:    #FDD835;
+    --lemon-soft:    #FFFDE7;
+    /* Lemon Green / Lime */
+    --lime:          #C6FF00;
+    --lime-dark:     #AEEA00;
+    --lime-soft:     #F4FFD1;
+    /* Magenta Ultra */
+    --magenta:       #D81B60;
+    --magenta-dark:  #AD1457;
+    --magenta-soft:  #FCE4EC;
+    /* surfaces */
+    --bg: #F7F8FA;
+  }
   * { box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background:#f6f7fb;
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#F7FCF9;;
     margin:0; padding:0; color:#0B1120; }
   /* TSH = green/REIT theme */
   header { background:linear-gradient(135deg,#1B5E20 0%,#00C853 100%);
@@ -24,7 +65,7 @@
   .grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-bottom:30px; }
   @media (max-width:1000px) { .grid3, .grid2 { grid-template-columns:1fr; } }
   .card { background:white; border-radius:8px; padding:24px;
-    box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:5px solid #00C853; }
+    box-shadow:0 4px 12px rgba(0,0,0,0.08); border-top:5px solid #00C853; }
   .card.engagement { border-top-color:#00BCD4; }
   .card.routing    { border-top-color:#F9B208; }
   .card.future     { border-top-color:#8A8FA3; }
@@ -74,6 +115,39 @@
   pre.cmd { background:#0F1331; color:#A9D18E; padding:14px 18px;
     border-radius:6px; font-family:Consolas,monospace; font-size:21px;
     overflow-x:auto; margin:8px 0; white-space:pre-wrap; word-break:break-word; }
+  .kpi-tile.lemon { border-left-color:#FDD835; background:linear-gradient(180deg,#fff 80%,#FFFDE7 100%); }
+  .kpi-tile.lime  { border-left-color:#AEEA00; background:linear-gradient(180deg,#fff 80%,#F4FFD1 100%); }
+  .badge.lemon { background:#FFFDE7; color:#7F6000; font-weight:600; }
+  .badge.lime  { background:#F4FFD1; color:#33691E; font-weight:600; }
+  .kpi-tile.magenta { border-left-color:#D81B60; background:linear-gradient(180deg,#fff 80%,#FCE4EC 100%); }
+  .badge.magenta { background:#FCE4EC; color:#AD1457; font-weight:600; }
+  /* === v2 Palette Ribbon (the "color bar") === */
+  .palette-ribbon { display:flex; height:8px; width:100%; }
+  .palette-ribbon span { flex:1; }
+  .palette-ribbon .c1  { background:#0D1B3F; }   /* Cnergyico Navy */
+  .palette-ribbon .c2  { background:#0040D9; }   /* ContexAi Blue Dark */
+  .palette-ribbon .c3  { background:#00838F; }   /* Teal Dark — Banking */
+  .palette-ribbon .c4  { background:#00BCD4; }   /* Teal */
+  .palette-ribbon .c5  { background:#AEEA00; }   /* Lemon Green */
+  .palette-ribbon .c6  { background:#FDD835; }   /* Lemon Yellow */
+  .palette-ribbon .c7  { background:#FFC400; }   /* Flame Yellow */
+  .palette-ribbon .c8  { background:#F26122; }   /* Cnergyico Flame */
+  .palette-ribbon .c9  { background:#D81B60; }   /* Magenta Ultra */
+  .palette-ribbon .c10 { background:#9C27B0; }   /* Royal Purple */
+  .palette-ribbon .c11 { background:#00C853; }   /* Parrot — Real Estate */
+
+  /* === Vibrant tab strip (header .quick) === */
+  header .quick a:nth-child(1) { background:#0D1B3F !important; }   /* Navy ink */
+  header .quick a:nth-child(2) { background:#00838F !important; }   /* Teal — Banking */
+  header .quick a:nth-child(3) { background:#1B5E20 !important; }   /* Parrot — RE */
+  header .quick a:nth-child(4) { background:#F26122 !important; }   /* Cnergyico — Energy */
+  header .quick a:nth-child(5) { background:#6A1B9A !important; }   /* Purple — Accred */
+  header .quick a:nth-child(6) { background:#D81B60 !important; }   /* Magenta */
+  header .quick a:nth-child(7) { background:#0040D9 !important; }   /* CTXAI Blue */
+  header .quick a:hover { filter:brightness(1.18); transform:translateY(-1px); }
+
+
+
 </style>
 </head>
 <body>
@@ -89,6 +163,8 @@
     <a href="https://github.com/DataJinipk/contexai-website" target="_blank">&#128190; GitHub</a>
   </div>
 </header>
+<div class="palette-ribbon"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span><span class="c5"></span><span class="c6"></span><span class="c7"></span><span class="c8"></span><span class="c9"></span><span class="c10"></span><span class="c11"></span></div>
+
 
 <div class="container">
 
@@ -137,11 +213,11 @@
     <span class="tag">ENG-2026-001 &middot; TSH Islamic REIT</span>
     <h2>Shariah-compliant REIT structuring</h2>
     <ul>
-      <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">
+      <li><a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Engagements/TSH/ENG-2026-001/" target="_blank">
           Open engagement folder <span class="badge">folder</span></a></li>
-      <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/00_brief/ENG-2026-001_engagement-brief_v1_2026-05-26.md" target="_blank">
+      <li><a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Engagements/TSH/ENG-2026-001/00_brief/ENG-2026-001_engagement-brief_v1_2026-05-26.md" target="_blank">
           Engagement Brief v1 <span class="badge md">md</span></a></li>
-      <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/ENG-2026-001/00_brief/ENG-2026-001_intake_agenda_v1_2026-05-26.md" target="_blank">
+      <li><a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Engagements/TSH/ENG-2026-001/00_brief/ENG-2026-001_intake_agenda_v1_2026-05-26.md" target="_blank">
           Intake Agenda v1 <span class="badge md">md</span></a></li>
       <li>Status: <span class="badge intake">INTAKE</span> &mdash; awaiting sponsor confirmation on 8 open questions</li>
       <li>Goal: Decide Rental vs Hybrid REIT structure; deliver memo + term sheet + sponsor board deck</li>
@@ -216,9 +292,9 @@
       <span class="tag">ENGAGEMENT FOLDER</span>
       <h2>OneDrive: TSH archive</h2>
       <ul>
-        <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/TSH/" target="_blank">
+        <li><a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Engagements/TSH/" target="_blank">
             Open TSH engagements folder <span class="badge">folder</span></a></li>
-        <li><a href="file:///C:/Users/amirw/OneDrive/AWA/ContexAi/Engagements/" target="_blank">
+        <li><a href="file:///C:/Users/amirw/OneDrive/01_Professional/AWA/ContexAi/Engagements/" target="_blank">
             All ContexAi engagements <span class="badge">folder</span></a></li>
       </ul>
       <p style="font-size:19px;color:#595959;margin-top:10px;">

@@ -13,7 +13,7 @@
 $ErrorActionPreference = "Stop"
 
 # ─── Paths ───────────────────────────────────────────────────────────────────
-$base   = "$env:USERPROFILE\OneDrive\AWA\ContexAi\Engagements\TSH\ENG-2026-001"
+$base   = "$env:USERPROFILE\OneDrive\01_Professional\AWA\ContexAi\Engagements\TSH\ENG-2026-001"
 $brief  = "$base\00_brief\ENG-2026-001_engagement-brief_v1_2026-05-26.md"
 $agenda = "$base\00_brief\ENG-2026-001_intake_agenda_v1_2026-05-26.md"
 
@@ -168,7 +168,7 @@ $agendaContent = @'
 - **Sponsor & day-to-day contact** — formally confirm both, plus preferred channel (email / WhatsApp / scheduled calls).
 - **Fee structure preference** — fixed fee on Phase 1 + retainer through SECP filing is the ContexAi proposal; willing to discuss.
 - Group Chief states the next 48 hours:
-  - Brief moves to `OneDrive\AWA\ContexAi\Engagements\TSH\ENG-2026-001\`
+  - Brief moves to `OneDrive\01_Professional\AWA\ContexAi\Engagements\TSH\ENG-2026-001\`
   - Banking and Real Estate Practice Leads briefed same-day
   - First deliverable (structuring memo Draft 1) committed for [Day +14]
 
