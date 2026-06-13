@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ContexAi case studies — anonymized engagement stories across Banking, Real Estate, Energy & Petrochemicals, Accreditation, and Agentic AI. Filter by practice.">
+<title>Case Studies — ContexAi Group</title>
+<link rel="canonical" href="https://contexai.org/case-studies">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ContexAi Case Studies">
+<meta property="og:description" content="Engagement stories across our four practices — anonymized for client confidentiality, real for credibility.">
+<meta property="og:url" content="https://contexai.org/case-studies">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0A3E40;--ink-deep:#0A3E40;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --turquoise:#0E7E76;--turquoise-light:#14B8A6;--cream:#F6F5F1;--warm:#EDEBE3;
+  --teal-dark:#00838F;--parrot-dark:#1B5E20;--cnergyico:#F26122;--cnergyico-navy:#0D1B3F;
+  --purple-dark:#6A1B9A;--magenta:#D81B60;--flame-dark:#FF8F00;--lemon-dark:#FDD835;
+}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink3);line-height:1.7;background:#fff;font-size:1.05rem;-webkit-font-smoothing:antialiased}
+a{color:var(--turquoise);text-decoration:none}
+
+.bar{background:var(--turquoise);padding:18px 32px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.bar__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.bar a.logo{color:#fff;font-weight:800;font-size:1.2rem;letter-spacing:-.03em}
+.bar a.logo span{color:var(--turquoise-light)}
+.bar .nav-mini{display:flex;gap:18px}
+.bar .nav-mini a{color:rgba(255,255,255,.78);font-size:.92rem;font-weight:500}
+.bar .nav-mini a:hover{color:#fff}
+
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--turquoise) 100%);padding:56px 32px 64px;color:#fff}
+.hero__in{max-width:1280px;margin:0 auto}
+.lbl{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--turquoise-light);margin-bottom:12px}
+.hero h1{font-family:'Instrument Serif',serif;font-size:clamp(2.4rem,5vw,3.6rem);color:#fff;line-height:1.05;margin-bottom:18px;letter-spacing:-.02em}
+.hero p{color:rgba(255,255,255,.85);max-width:720px;font-size:1.12rem;font-weight:300;line-height:1.6}
+
+main{max-width:1280px;margin:0 auto;padding:48px 32px 72px}
+
+/* Filter pills */
+.filters{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap;align-items:center;background:var(--cream);padding:16px;border-radius:14px}
+.filters .lbl-pill{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink4);margin-right:6px;padding-left:6px}
+.filter-pill{background:#fff;border:1.5px solid transparent;padding:8px 16px;border-radius:20px;font-size:.88rem;font-weight:600;cursor:pointer;color:var(--ink3);font-family:inherit;transition:all .18s;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.filter-pill:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.08)}
+.filter-pill[data-filter="all"]{border-color:var(--turquoise);color:var(--turquoise)}
+.filter-pill[data-filter="banking"]{border-color:var(--teal-dark);color:var(--teal-dark)}
+.filter-pill[data-filter="real-estate"]{border-color:var(--parrot-dark);color:var(--parrot-dark)}
+.filter-pill[data-filter="energy"]{border-color:var(--cnergyico);color:var(--cnergyico)}
+.filter-pill[data-filter="accreditation"]{border-color:var(--purple-dark);color:var(--purple-dark)}
+.filter-pill[data-filter="agentic-ai"]{border-color:var(--magenta);color:var(--magenta)}
+.filter-pill[data-filter="cross-cutting"]{border-color:var(--ink-deep);color:var(--ink-deep)}
+.filter-pill.active[data-filter="all"]{background:var(--turquoise);color:#fff}
+.filter-pill.active[data-filter="banking"]{background:var(--teal-dark);color:#fff}
+.filter-pill.active[data-filter="real-estate"]{background:var(--parrot-dark);color:#fff}
+.filter-pill.active[data-filter="energy"]{background:var(--cnergyico);color:#fff}
+.filter-pill.active[data-filter="accreditation"]{background:var(--purple-dark);color:#fff}
+.filter-pill.active[data-filter="agentic-ai"]{background:var(--magenta);color:#fff}
+.filter-pill.active[data-filter="cross-cutting"]{background:var(--ink-deep);color:#fff}
+.filter-count{margin-left:auto;font-size:.84rem;color:var(--ink4);font-weight:500}
+
+/* Case-study grid */
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:1100px){.cs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.cs-grid{grid-template-columns:1fr}}
+.cs{background:#fff;border-radius:16px;padding:26px;border:1px solid rgba(0,0,0,.06);border-top:5px solid var(--c);transition:all .25s;display:flex;flex-direction:column;position:relative;min-height:340px;text-decoration:none;color:inherit}
+.cs:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.09)}
+.cs.hidden{display:none}
+.cs.banking{--c:#00838F;--c-soft:#E0F7FA}
+.cs.real-estate{--c:#1B5E20;--c-soft:#DCFCE7}
+.cs.energy{--c:#F26122;--c-soft:#FFE3D6}
+.cs.accreditation{--c:#6A1B9A;--c-soft:#F3E5F5}
+.cs.agentic-ai{--c:#D81B60;--c-soft:#FCE4EC}
+.cs.cross-cutting{--c:#0040D9;--c-soft:#E6EEFF}
+
+.cs__head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.cs__sector{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--c);background:var(--c-soft);padding:5px 12px;border-radius:12px}
+.cs__status{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:5px 11px;border-radius:12px}
+.cs__status.live{background:#C8E6C9;color:#1B5E20}
+.cs__status.intake{background:#FFE599;color:#7F6000}
+.cs__status.critical{background:#FFE3D6;color:#C84F1A}
+.cs__status.bench{background:#E0E0E0;color:#595959}
+.cs__status.soon{background:#FCE4EC;color:#AD1457}
+
+.cs h2{font-family:'Instrument Serif',serif;font-size:1.4rem;color:var(--c);line-height:1.15;margin-bottom:6px}
+.cs__client{font-size:.86rem;color:var(--ink4);margin-bottom:14px;font-weight:500}
+.cs__teaser{font-size:.95rem;color:var(--ink3);line-height:1.55;margin-bottom:14px;flex:1}
+.cs__meta{display:flex;flex-wrap:wrap;gap:6px;padding-top:14px;border-top:1px dashed rgba(0,0,0,.08);margin-top:auto}
+.cs__chip{font-size:.74rem;color:var(--ink4);background:#F8F8F8;padding:3px 9px;border-radius:10px;font-weight:500}
+.cs__more{margin-top:12px;font-size:.88rem;font-weight:700;color:var(--c)}
+.cs__more.disabled{color:var(--ink5);font-weight:500}
+
+/* CTA */
+.cta-box{background:linear-gradient(135deg,var(--turquoise),var(--ink));border-radius:18px;padding:48px 36px;text-align:center;color:#fff;margin-top:48px}
+.cta-box h3{font-family:'Instrument Serif',serif;font-size:1.9rem;color:#fff;margin-bottom:12px}
+.cta-box p{color:rgba(255,255,255,.85);max-width:580px;margin:0 auto 22px;font-size:1.05rem}
+.cta-box a{display:inline-block;background:#fff;color:var(--turquoise);padding:13px 26px;border-radius:24px;font-weight:700;font-size:.95rem}
+.cta-box a:hover{background:var(--turquoise-light);color:var(--ink)}
+
+footer{background:var(--ink);color:rgba(255,255,255,.65);text-align:center;padding:28px;font-size:.9rem}
+footer a{color:rgba(255,255,255,.85)}
+
+/* Sticky CTA */
+.sticky-cta{position:fixed;bottom:22px;right:22px;background:#0E7E76;color:#fff;padding:13px 22px;border-radius:30px;font-weight:600;font-size:.94rem;text-decoration:none;box-shadow:0 6px 22px rgba(14,126,118,.45);z-index:100;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.sticky-cta:hover{background:#14B8A6;transform:translateY(-2px);box-shadow:0 10px 30px rgba(14,126,118,.55)}
+@media(max-width:600px){.sticky-cta{padding:11px 16px;font-size:.85rem;bottom:14px;right:14px}}
+
+.empty-state{padding:60px 30px;text-align:center;color:var(--ink4);font-size:1rem;background:var(--cream);border-radius:14px;display:none}
+.empty-state.show{display:block}
+/* === Site-wide top nav (Phase 1.7+) === */
+.topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
+.topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
+.topnav__logo .ai{color:#14B8A6}
+.topnav__logo .badge{font-size:.62rem;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-left:4px;color:#fff}
+.topnav__links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.topnav__links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .15s;white-space:nowrap}
+.topnav__links a:hover{color:#fff}
+.topnav__links a.current{color:#fff;border-bottom:2px solid #FFC400;padding-bottom:2px}
+.topnav__links a.cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
+.topnav__links a.cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.topnav__burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+@media(max-width:980px){
+  .topnav__links{display:none;width:100%}
+  .topnav__burger{display:block}
+  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E7E76;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .topnav__in{position:relative;flex-wrap:wrap}
+}
+
+</style>
+</head>
+<body>
+
+<div aria-hidden="true" title="ContexAi Brand Palette v2" style="display:flex;height:8px;width:100%;line-height:0;box-shadow:0 2px 6px rgba(0,0,0,.10);position:relative;z-index:100"><span style="display:block;flex:1;background:#0D1B3F"></span><span style="display:block;flex:1;background:#0040D9"></span><span style="display:block;flex:1;background:#00838F"></span><span style="display:block;flex:1;background:#00BCD4"></span><span style="display:block;flex:1;background:#AEEA00"></span><span style="display:block;flex:1;background:#FDD835"></span><span style="display:block;flex:1;background:#FFC400"></span><span style="display:block;flex:1;background:#F26122"></span><span style="display:block;flex:1;background:#D81B60"></span><span style="display:block;flex:1;background:#9C27B0"></span><span style="display:block;flex:1;background:#00C853"></span></div>
+
+<nav class="topnav">
+  <div class="topnav__in">
+    <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
+    <div class="topnav__links" id="topnav-links">
+      <a href="/#about">About</a>
+      <a href="/practices">Practices</a>
+      <a href="/team">Team</a>
+      <a href="/case-studies">Case Studies</a>
+      <a href="/#services">Services</a>
+      <a href="/#agentic">Agentic AI</a>
+      <a href="/insights">Insights</a>
+      <a href="/economy">Economy &amp; Fiscal</a>
+      <a href="/positions">Positions</a>
+      <a href="/contact" class="cta">Contact Us</a>
+    </div>
+    <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<script>(function(){
+  var p = location.pathname.replace(/\/$/,'') || '/';
+  document.querySelectorAll('.topnav__links a').forEach(function(a){
+    var href = a.getAttribute('href');
+    if(href === p || (p.startsWith('/practices') && href === '/practices') || (p.startsWith('/insights') && href === '/insights') || (p.startsWith('/case-studies') && href === '/case-studies')){
+      a.classList.add('current');
+    }
+  });
+})();</script>
+</div>
+
+<section class="hero">
+  <div class="hero__in">
+    <div class="lbl">Engagement Stories</div>
+    <h1>Real mandates. Real outcomes. Real depth.</h1>
+    <p>Anonymized engagement stories from across our four practices. Each one is a live or recently completed mandate, with senior partner sign-off and client-side validation. Logos and named details unlock as sponsor approvals come through.</p>
+  </div>
+</section>
+
+<main>
+
+  <div class="filters">
+    <span class="lbl-pill">Filter:</span>
+    <button class="filter-pill active" data-filter="all">All <span class="count">(8)</span></button>
+    <button class="filter-pill" data-filter="banking">Banking <span class="count">(2)</span></button>
+    <button class="filter-pill" data-filter="real-estate">Real Estate <span class="count">(1)</span></button>
+    <button class="filter-pill" data-filter="energy">Energy &amp; Petrochem <span class="count">(1)</span></button>
+    <button class="filter-pill" data-filter="accreditation">Accreditation <span class="count">(1)</span></button>
+    <button class="filter-pill" data-filter="agentic-ai">Agentic AI <span class="count">(3)</span></button>
+    <button class="filter-pill" data-filter="cross-cutting">Cross-cutting <span class="count">(1)</span></button>
+    <span class="filter-count" id="cs-count">Showing 8 of 8</span>
+  </div>
+
+  <div class="cs-grid" id="cs-grid">
+
+    <!-- 1. SMFB — Banking -->
+    <a class="cs banking" data-cat="banking" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Banking</span>
+        <span class="cs__status live">Live</span>
+      </div>
+      <h2>End-to-end MFB advisory across Finance, Ops, Tech &amp; People</h2>
+      <div class="cs__client">Client: <strong>SBP-regulated Microfinance Bank, Sindh</strong></div>
+      <p class="cs__teaser">Multi-agent team running BOD packs, SBP Format-SMFB returns, PIBAS core-banking reviews, ALCO support, and a 3-year strategic plan in parallel. Senior partner overlay on every workstream.</p>
+      <div class="cs__meta">
+        <span class="cs__chip">2025 → present</span>
+        <span class="cs__chip">5 workstreams</span>
+        <span class="cs__chip">Anchor mandate</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; pending sponsor approval</span>
+    </a>
+
+    <!-- 2. SMFB Sub — Banking (PIBAS upgrade) -->
+    <a class="cs banking" data-cat="banking" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Banking</span>
+        <span class="cs__status live">Live</span>
+      </div>
+      <h2>PIBAS core-banking modernization &amp; reconciliation automation</h2>
+      <div class="cs__client">Client: <strong>SBP-regulated Microfinance Bank, Sindh</strong></div>
+      <p class="cs__teaser">Diagnosis-to-design on PIBAS module gaps, suspense-account clearance, EOD failure remediation, and a sequenced upgrade roadmap. Tech-honest separation of "fix now" vs "rebuild later".</p>
+      <div class="cs__meta">
+        <span class="cs__chip">2026 H1</span>
+        <span class="cs__chip">Core banking</span>
+        <span class="cs__chip">Automation</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; pending sponsor approval</span>
+    </a>
+
+    <!-- 3. TSH — Real Estate -->
+    <a class="cs real-estate" data-cat="real-estate" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Real Estate</span>
+        <span class="cs__status intake">Intake</span>
+      </div>
+      <h2>Islamic REIT structuring for a Pakistani industrial sponsor</h2>
+      <div class="cs__client">Client: <strong>Pakistani industrial holding group (TSH)</strong></div>
+      <p class="cs__teaser">End-to-end Shariah-compliant REIT structure under SECP Regulations 2022 — sponsor intake, structuring memo, RMC selection, trust-deed design, financial model, regulatory roadmap, and Highest-and-Best-Use analysis.</p>
+      <div class="cs__meta">
+        <span class="cs__chip">ENG-2026-001</span>
+        <span class="cs__chip">SECP REIT 2022</span>
+        <span class="cs__chip">AAOIFI overlay</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; engagement in flight</span>
+    </a>
+
+    <!-- 4. Cnergyico — Energy -->
+    <a class="cs energy" data-cat="energy" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Energy &amp; Petrochem</span>
+        <span class="cs__status bench">Bench-ready</span>
+      </div>
+      <h2>Refinery economics &amp; downstream margin diagnostic</h2>
+      <div class="cs__client">Client: <strong>Major Pakistani oil refiner</strong></div>
+      <p class="cs__teaser">Five-SME diagnostic across refining economics (margin-architect), petrochem value-chain (alchemist), asset integrity (sentinel), capital projects (constructor), and trading (trader). LP / PIMS-grade modeling on a Brent / Dubai diet.</p>
+      <div class="cs__meta">
+        <span class="cs__chip">Pre-mandate</span>
+        <span class="cs__chip">5 SMEs</span>
+        <span class="cs__chip">Downstream stack</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; targeting first mandate</span>
+    </a>
+
+    <!-- 5. CIP — Accreditation -->
+    <a class="cs accreditation" data-cat="accreditation" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Accreditation</span>
+        <span class="cs__status critical">Critical Path</span>
+      </div>
+      <h2>Building Pakistan's Credit Institute — Section 42 NPO + CCP designation</h2>
+      <div class="cs__client">Client: <strong>Credit Institute of Pakistan (CIP) founding board</strong></div>
+      <p class="cs__teaser">Master plan sequencing 4 parallel workstreams — SECP Section 42 incorporation, IPO-Pakistan trademark for the CCP designation, HEC accreditation strategy, and SBP / PBA regulator engagement. ~12-month critical path.</p>
+      <div class="cs__meta">
+        <span class="cs__chip">~12 months</span>
+        <span class="cs__chip">4 workstreams</span>
+        <span class="cs__chip">CCP designation</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; live build</span>
+    </a>
+
+    <!-- 6. Dispute Resolution Agent — Agentic AI -->
+    <a class="cs agentic-ai" data-cat="agentic-ai" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Agentic AI</span>
+        <span class="cs__status soon">Coming Soon</span>
+      </div>
+      <h2>Dispute Resolution Agent — arbitration &amp; commercial-contract reasoning</h2>
+      <div class="cs__client">Builder: <strong>ContexAi Agentic AI bench</strong></div>
+      <p class="cs__teaser">Autonomous agent that drafts, summarizes, and reasons over arbitration filings, commercial contracts, and case law. Targeted at legal &amp; advisory teams running multi-jurisdictional disputes.</p>
+      <div class="cs__meta">
+        <span class="cs__chip">In development</span>
+        <span class="cs__chip">Legal &amp; Advisory</span>
+        <span class="cs__chip">RAG over case law</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; alpha pending</span>
+    </a>
+
+    <!-- 7. PPP Bid Strategist — Agentic AI -->
+    <a class="cs agentic-ai" data-cat="agentic-ai" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Agentic AI</span>
+        <span class="cs__status soon">Coming Soon</span>
+      </div>
+      <h2>PPP Bid Strategist — risk-adjusted tender response automation</h2>
+      <div class="cs__client">Builder: <strong>ContexAi Agentic AI bench</strong></div>
+      <p class="cs__teaser">Reviews tender documents, models risk-adjusted returns, and assembles bid response drafts for public-private partnership opportunities. Built for infrastructure and finance sponsors closing on PPP mandates.</p>
+      <div class="cs__meta">
+        <span class="cs__chip">In development</span>
+        <span class="cs__chip">Infrastructure</span>
+        <span class="cs__chip">Bankability</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; alpha pending</span>
+    </a>
+
+    <!-- 8. Islamic-overlay on REIT — Cross-cutting -->
+    <a class="cs cross-cutting" data-cat="cross-cutting" href="#" onclick="return false">
+      <div class="cs__head">
+        <span class="cs__sector">Cross-cutting</span>
+        <span class="cs__status intake">Intake</span>
+      </div>
+      <h2>Banking + Real Estate co-engagement — Islamic-finance overlay on Pakistani REIT</h2>
+      <div class="cs__client">Client: <strong>Cross-practice mandate (TSH)</strong></div>
+      <p class="cs__teaser">REIT Advisory Lead + Islamic Banking SME running joint — Mudaraba pool design, Ijarah on underlying real-estate assets, Shariah-board engagement, and SECP filing of a structure that satisfies both REIT regs and AAOIFI standards.</p>
+      <div class="cs__meta">
+        <span class="cs__chip">Joint mandate</span>
+        <span class="cs__chip">2 practices</span>
+        <span class="cs__chip">Shariah + SECP</span>
+      </div>
+      <span class="cs__more disabled">Full case study &middot; engagement in flight</span>
+    </a>
+
+  </div>
+
+  <div class="empty-state" id="cs-empty">
+    No case studies match this filter yet. As more mandates clear sponsor approval, this section will populate.
+  </div>
+
+  <div class="cta-box">
+    <h3>Have a mandate in mind?</h3>
+    <p>Partner-led engagements, anchored by a senior practice lead, supported by an Agentic AI bench. Whether it's a Tier-1 bank transformation, a REIT structuring, a refinery diagnostic, or a Section 42 NPO build — let's talk.</p>
+    <a href="/contact">Start a conversation &rarr;</a>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 ContexAi Group &middot; <a href="/">Home</a> &middot; <a href="/practices">Practices</a> &middot; <a href="/team">Team</a> &middot; <a href="/insights">Insights</a> &middot; <a href="/contact">Contact</a>
+</footer>
+
+<a href="/contact" class="sticky-cta">Talk to ContexAi <span>&rarr;</span></a>
+
+<script>
+(function(){
+  var pills  = document.querySelectorAll('.filter-pill');
+  var cards  = document.querySelectorAll('.cs');
+  var count  = document.getElementById('cs-count');
+  var empty  = document.getElementById('cs-empty');
+
+  pills.forEach(function(p){
+    p.addEventListener('click', function(){
+      pills.forEach(function(x){ x.classList.remove('active'); });
+      p.classList.add('active');
+      var f = p.dataset.filter;
+      var shown = 0;
+      cards.forEach(function(c){
+        var match = (f === 'all') || (c.dataset.cat === f);
+        c.classList.toggle('hidden', !match);
+        if(match) shown++;
+      });
+      count.textContent = 'Showing ' + shown + ' of ' + cards.length;
+      empty.classList.toggle('show', shown === 0);
+      // sync URL hash so filter state can be linked
+      history.replaceState(null, '', f === 'all' ? location.pathname : '#' + f);
+    });
+  });
+
+  // Apply hash filter on load if present
+  if(location.hash){
+    var initial = document.querySelector('.filter-pill[data-filter="' + location.hash.slice(1) + '"]');
+    if(initial) initial.click();
+  }
+})();
+</script>
+
+</body>
+</html>
