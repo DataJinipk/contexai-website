@@ -177,9 +177,30 @@
   .kpi-tile.magenta { border-left-color:#D81B60; background:linear-gradient(180deg,#fff 80%,#FCE4EC 100%); }
   .badge.magenta { background:#FCE4EC; color:#AD1457; font-weight:600; }
   /* === v2 Palette Ribbon (the "color bar") === */
-  .palette-ribbon { display:flex; height:8px; width:100%; }
-  .palette-ribbon span { flex:1; }
-  .palette-ribbon .c1  { background:#0D1B3F; }   /* Cnergyico Navy */
+  .palette-ribbon { display:flex; height:28px; width:100%;
+    box-shadow:0 3px 8px rgba(0,0,0,0.18); position:relative; z-index:2; }
+  .palette-ribbon span { flex:1; transition:flex 0.2s, filter 0.2s;
+    position:relative; cursor:default; }
+  .palette-ribbon span:hover { flex:2.4; filter:brightness(1.18); }
+  .palette-ribbon span::after { content:attr(data-name); position:absolute;
+    bottom:100%; left:50%; transform:translateX(-50%);
+    background:rgba(10,14,26,0.92); color:white; padding:3px 9px;
+    border-radius:4px; font-size:11px; font-weight:600; white-space:nowrap;
+    opacity:0; transition:opacity 0.15s; pointer-events:none;
+    font-family:'Segoe UI', Arial, sans-serif; letter-spacing:0.02em; }
+  .palette-ribbon span:hover::after { opacity:1; }
+  .palette-ribbon .c1  { background:#0D1B3F; }
+  .palette-ribbon .c2  { background:#0040D9; }
+  .palette-ribbon .c3  { background:#00838F; }
+  .palette-ribbon .c4  { background:#00BCD4; }
+  .palette-ribbon .c5  { background:#AEEA00; }
+  .palette-ribbon .c6  { background:#FDD835; }
+  .palette-ribbon .c7  { background:#FFC400; }
+  .palette-ribbon .c8  { background:#F26122; }
+  .palette-ribbon .c9  { background:#D81B60; }
+  .palette-ribbon .c10 { background:#9C27B0; }
+  .palette-ribbon .c11 { background:#00C853; }
+/* Cnergyico Navy */
   .palette-ribbon .c2  { background:#0040D9; }   /* ContexAi Blue Dark */
   .palette-ribbon .c3  { background:#00838F; }   /* Teal Dark — Banking */
   .palette-ribbon .c4  { background:#00BCD4; }   /* Teal */
@@ -213,7 +234,7 @@
   <div class="sub">Anchor practice &middot; Backed by the contexai-banking-advisory plugin &middot; SMFB live client</div>
   <span class="folder">G:\My Drive\ContexAi_Agents\Banking\</span>
 </header>
-<div class="palette-ribbon"><span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span><span class="c5"></span><span class="c6"></span><span class="c7"></span><span class="c8"></span><span class="c9"></span><span class="c10"></span><span class="c11"></span></div>
+<div class="palette-ribbon" title="ContexAi Brand Palette v2 — 11 color families"><span class="c1" data-name="Ink / Navy"></span><span class="c2" data-name="ContexAi Blue"></span><span class="c3" data-name="Teal Dark — Banking"></span><span class="c4" data-name="Teal"></span><span class="c5" data-name="Lemon Green"></span><span class="c6" data-name="Lemon Yellow"></span><span class="c7" data-name="Flame Yellow"></span><span class="c8" data-name="Cnergyico Flame — Energy"></span><span class="c9" data-name="Magenta Ultra"></span><span class="c10" data-name="Royal Purple — Accreditation"></span><span class="c11" data-name="Parrot Green — Real Estate"></span></div>
 
 
 <div class="container">
