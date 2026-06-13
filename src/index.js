@@ -74,6 +74,10 @@ export default {
       return handleSubmission(request, env, 'contact-messages');
     }
 
+    if (url.pathname === '/api/newsletter' && request.method === 'POST') {
+      return handleSubmission(request, env, 'newsletter-subscribers');
+    }
+
     if (url.pathname === '/api/checkout-session' && request.method === 'POST') {
       return handleCheckoutSession(request, env);
     }

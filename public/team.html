@@ -105,6 +105,17 @@ section{margin-bottom:72px}
 
 footer{background:var(--ink);color:rgba(255,255,255,.65);text-align:center;padding:28px;font-size:.9rem}
 footer a{color:rgba(255,255,255,.85)}
+.sticky-cta{position:fixed;bottom:22px;right:22px;background:#0E7E76;color:#fff;padding:13px 22px;border-radius:30px;font-weight:600;font-size:.94rem;text-decoration:none;box-shadow:0 6px 22px rgba(14,126,118,.45);z-index:100;display:inline-flex;align-items:center;gap:8px;transition:all .2s}.sticky-cta:hover{background:#14B8A6;transform:translateY(-2px);box-shadow:0 10px 30px rgba(14,126,118,.55)}@media(max-width:600px){.sticky-cta{padding:11px 16px;font-size:.85rem;bottom:14px;right:14px}}
+/* Founder milestone timeline */
+.timeline{margin:36px 0 0;padding:30px 30px 26px;background:linear-gradient(135deg,#F6F5F1,#fff);border-radius:18px;border-left:4px solid var(--turquoise)}
+.timeline h3{font-family:'Instrument Serif',serif;font-size:1.3rem;color:var(--ink);margin-bottom:18px;font-weight:600}
+.timeline .track{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;position:relative}
+.timeline .track::before{content:"";position:absolute;top:24px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--turquoise),var(--turquoise-light));opacity:.3;z-index:0}
+.timeline .ms{flex:1;min-width:135px;text-align:center;position:relative;z-index:1}
+.timeline .ms .yr{font-family:'Instrument Serif',serif;font-size:1.4rem;color:var(--turquoise);font-weight:700;background:#fff;display:inline-block;padding:6px 14px;border-radius:14px;box-shadow:0 2px 8px rgba(14,126,118,.18);margin-bottom:8px;border:2px solid var(--turquoise)}
+.timeline .ms .ev{font-size:.86rem;color:var(--ink3);line-height:1.4;font-weight:500}
+
+
 </style>
 </head>
 <body>
@@ -140,6 +151,19 @@ footer a{color:rgba(255,255,255,.85)}
       </div>
     </div>
   </div>
+
+  <div class="timeline">
+    <h3>Career milestones</h3>
+    <div class="track">
+      <div class="ms"><div class="yr">2002</div><div class="ev">Began financial consulting career</div></div>
+      <div class="ms"><div class="yr">2008</div><div class="ev">First microfinance bank transformation</div></div>
+      <div class="ms"><div class="yr">2014</div><div class="ev">GCC banking advisory (UAE, KSA)</div></div>
+      <div class="ms"><div class="yr">2018</div><div class="ev">First REIT structuring mandate</div></div>
+      <div class="ms"><div class="yr">2024</div><div class="ev">Cnergyico Energy &amp; Petrochem advisory</div></div>
+      <div class="ms"><div class="yr">2026</div><div class="ev">Founded <strong>ContexAi Group</strong></div></div>
+    </div>
+  </div>
+
 </section>
 
 <!-- ─── PRACTICE LEADS ─── -->
@@ -229,5 +253,7 @@ footer a{color:rgba(255,255,255,.85)}
   &copy; 2026 ContexAi Group &middot; <a href="/">Home</a> &middot; <a href="/practices">Practices</a> &middot; <a href="/insights">Insights</a> &middot; <a href="/contact">Contact</a>
 </footer>
 
+
+<a href="/contact" class="sticky-cta">Talk to ContexAi <span>&rarr;</span></a>
 </body>
 </html>

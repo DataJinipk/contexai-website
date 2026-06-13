@@ -957,28 +957,161 @@ img{display:block;max-width:100%}
   </div>
 </section>
 
-<!-- ─── TESTIMONIALS ─── -->
-<section class="testimonials" id="testimonials">
-  <div class="testimonials__in">
-    <div class="sec__lbl">Client Testimonials</div>
-    <h2 class="sec__t rv">Trusted by industry leaders</h2>
-    <div class="test-grid">
-      <div class="test rv">
-        <div class="test__quote">"ContexAi's deep sector expertise and strategic financial consulting helped us navigate a complex merger in the energy sector. Their methodology is exceptional."</div>
-        <div class="test__attr">— CEO, Energy Company</div>
+
+<!-- ─── CLIENT / SECTOR WALL (Phase 1.5) ─── -->
+<section class="client-wall" style="background:linear-gradient(180deg,#fff,var(--warm));padding:64px 32px">
+  <style>
+    .cw__in{max-width:1280px;margin:0 auto}
+    .cw__lbl{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--blue-txt);margin-bottom:10px;text-align:center}
+    .cw__t{font-family:'Instrument Serif',serif;font-size:clamp(1.8rem,3.2vw,2.4rem);color:var(--ink);line-height:1.15;margin-bottom:6px;text-align:center;letter-spacing:-.01em}
+    .cw__d{font-size:1rem;color:var(--ink4);max-width:680px;margin:0 auto 38px;text-align:center;line-height:1.6}
+    .cw__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    @media(max-width:900px){.cw__grid{grid-template-columns:repeat(2,1fr)}}
+    .cw__tile{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:22px;text-align:center;border-top:4px solid var(--c);transition:all .2s}
+    .cw__tile:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .cw__banking{--c:#00838F}
+    .cw__realest{--c:#1B5E20}
+    .cw__energy{--c:#F26122}
+    .cw__accred{--c:#6A1B9A}
+    .cw__sector{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--c);margin-bottom:8px}
+    .cw__name{font-family:'Instrument Serif',serif;font-size:1.2rem;color:var(--ink);line-height:1.2;margin-bottom:8px}
+    .cw__desc{font-size:.86rem;color:var(--ink4);line-height:1.5}
+  </style>
+  <div class="cw__in">
+    <div class="cw__lbl">Anchor Clients &amp; Engagements</div>
+    <h2 class="cw__t">The institutions trusting ContexAi.</h2>
+    <p class="cw__d">Each ContexAi practice is anchored by a flagship engagement. Logos pending sponsor approval — sector identifiers below.</p>
+    <div class="cw__grid">
+      <div class="cw__tile cw__banking rv">
+        <div class="cw__sector">Banking</div>
+        <div class="cw__name">SMFB</div>
+        <div class="cw__desc">SBP-regulated Microfinance Bank · live multi-workstream advisory</div>
       </div>
-      <div class="test rv d1">
-        <div class="test__quote">"The dispute resolution desk provided exceptional service during our contractual disagreement — resolved efficiently while preserving the business relationship."</div>
-        <div class="test__attr">— Director, Manufacturing Group</div>
+      <div class="cw__tile cw__realest rv">
+        <div class="cw__sector">Real Estate</div>
+        <div class="cw__name">TSH Group</div>
+        <div class="cw__desc">Pakistani industrial holding · Islamic REIT structuring (ENG-2026-001)</div>
       </div>
-      <div class="test rv d2">
-        <div class="test__quote">"End-to-end project advisory ensured our infrastructure project was delivered on time and within budget. Highly recommended for complex project environments."</div>
-        <div class="test__attr">— Project Manager, Infrastructure</div>
+      <div class="cw__tile cw__energy rv">
+        <div class="cw__sector">Energy &amp; Petrochem</div>
+        <div class="cw__name">Cnergyico PK</div>
+        <div class="cw__desc">Pakistan's largest oil refiner · refining + petrochem + retail bench</div>
+      </div>
+      <div class="cw__tile cw__accred rv">
+        <div class="cw__sector">Accreditation</div>
+        <div class="cw__name">CIP</div>
+        <div class="cw__desc">Credit Institute of Pakistan · Section 42 NPO build &middot; CCP designation</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ─── GLOBAL PRESENCE (Phase 1.5) ─── -->
+<section class="presence" style="background:linear-gradient(135deg,var(--ink),#0E7E76);padding:64px 32px;color:#fff">
+  <style>
+    .pr__in{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+    @media(max-width:900px){.pr__in{grid-template-columns:1fr}}
+    .pr__lbl{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#14B8A6;margin-bottom:12px}
+    .pr__t{font-family:'Instrument Serif',serif;font-size:clamp(2rem,3.6vw,2.8rem);color:#fff;line-height:1.1;margin-bottom:14px;letter-spacing:-.01em}
+    .pr__d{font-size:1.04rem;color:rgba(255,255,255,.78);max-width:540px;margin-bottom:24px;line-height:1.65}
+    .pr__locs{display:flex;gap:24px;flex-wrap:wrap}
+    .pr__loc{display:flex;align-items:center;gap:8px}
+    .pr__loc .dot{width:8px;height:8px;border-radius:50%;background:#14B8A6;box-shadow:0 0 0 3px rgba(20,184,166,.3)}
+    .pr__loc.future .dot{background:#FDD835;box-shadow:0 0 0 3px rgba(253,216,53,.3)}
+    .pr__loc .name{font-weight:600;font-size:.94rem}
+    .pr__loc .sub{font-size:.78rem;color:rgba(255,255,255,.55);display:block;margin-top:2px}
+    .pr__map{background:rgba(255,255,255,.05);border-radius:16px;padding:32px;border:1px solid rgba(255,255,255,.08);position:relative;min-height:240px;display:flex;align-items:center;justify-content:center}
+    .pr__map svg{width:100%;max-width:380px;height:auto}
+    .pr__pin{position:absolute;display:flex;align-items:center;gap:6px;font-size:.78rem;color:#fff;font-weight:600;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+    .pr__pin .marker{width:14px;height:14px;border-radius:50%;background:#14B8A6;border:2px solid #fff;box-shadow:0 0 0 4px rgba(20,184,166,.4)}
+    .pr__pin.future .marker{background:#FDD835;box-shadow:0 0 0 4px rgba(253,216,53,.4)}
+  </style>
+  <div class="pr__in">
+    <div>
+      <div class="pr__lbl">Where ContexAi works</div>
+      <h2 class="pr__t">Karachi headquarters. MENA reach. Global SME network.</h2>
+      <p class="pr__d">Founded and headquartered in Karachi, ContexAi runs live mandates across Pakistan with active SME engagement across the GCC, Canada, and Europe. UAE and KSA offices on the 24-month roadmap.</p>
+      <div class="pr__locs">
+        <div class="pr__loc"><span class="dot"></span><div><span class="name">Karachi, Pakistan</span><span class="sub">Headquarters · Live mandates</span></div></div>
+        <div class="pr__loc"><span class="dot"></span><div><span class="name">SME network: GCC · Canada · Europe</span><span class="sub">Active engagements across 4 continents</span></div></div>
+        <div class="pr__loc future"><span class="dot"></span><div><span class="name">Dubai, UAE</span><span class="sub">Planned office · 12–24 months</span></div></div>
+        <div class="pr__loc future"><span class="dot"></span><div><span class="name">Riyadh, KSA</span><span class="sub">Planned office · 24 months</span></div></div>
+      </div>
+    </div>
+    <div class="pr__map">
+      <svg viewBox="0 0 380 240" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="globe"><stop offset="0%" stop-color="rgba(20,184,166,.18)"/><stop offset="100%" stop-color="rgba(20,184,166,0)"/></radialGradient>
+        </defs>
+        <rect x="0" y="0" width="380" height="240" fill="url(#globe)" rx="12"/>
+        <!-- Stylized world arcs -->
+        <path d="M 30 120 Q 100 60, 190 120 T 350 120" stroke="rgba(255,255,255,.15)" stroke-width="1" fill="none"/>
+        <path d="M 30 150 Q 100 90, 190 150 T 350 150" stroke="rgba(255,255,255,.10)" stroke-width="1" fill="none"/>
+        <path d="M 30 90 Q 100 30, 190 90 T 350 90" stroke="rgba(255,255,255,.10)" stroke-width="1" fill="none"/>
+        <!-- Karachi (HQ) -->
+        <circle cx="230" cy="120" r="6" fill="#14B8A6" stroke="#fff" stroke-width="2"/>
+        <circle cx="230" cy="120" r="14" fill="none" stroke="#14B8A6" stroke-width="1" opacity=".5"/>
+        <text x="230" y="148" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">Karachi · HQ</text>
+        <!-- Dubai (planned) -->
+        <circle cx="200" cy="115" r="5" fill="#FDD835" stroke="#fff" stroke-width="2"/>
+        <text x="180" y="100" fill="#fff" font-size="10" text-anchor="end" opacity=".85">Dubai · planned</text>
+        <!-- Riyadh (planned) -->
+        <circle cx="180" cy="125" r="5" fill="#FDD835" stroke="#fff" stroke-width="2"/>
+        <text x="160" y="140" fill="#fff" font-size="10" text-anchor="end" opacity=".85">Riyadh · planned</text>
+        <!-- Connecting arc -->
+        <path d="M 230 120 Q 215 100, 200 115" stroke="#14B8A6" stroke-width="1.5" fill="none" opacity=".6" stroke-dasharray="3,3"/>
+        <path d="M 230 120 Q 205 110, 180 125" stroke="#14B8A6" stroke-width="1.5" fill="none" opacity=".5" stroke-dasharray="3,3"/>
+      </svg>
+    </div>
+  </div>
+</section>
+<!-- ─── TESTIMONIALS (Phase 1.5: photo+role+company) ─── -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials__in">
+    <div class="sec__lbl">Client Testimonials</div>
+    <h2 class="sec__t rv">Trusted by industry leaders</h2>
+    <style>
+      .test{background:#fff;border-radius:14px;padding:26px;border:1px solid rgba(0,0,0,.06);transition:all .2s}
+      .test:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+      .test__head{display:flex;align-items:center;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(0,0,0,.06)}
+      .test__avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.95rem;letter-spacing:-.02em;flex-shrink:0}
+      .test__who{display:flex;flex-direction:column}
+      .test__name{font-size:.95rem;font-weight:700;color:var(--ink)}
+      .test__role{font-size:.82rem;color:var(--ink4);margin-top:2px}
+      .test__quote{font-family:'Instrument Serif',serif;font-size:1.08rem;color:var(--ink3);line-height:1.55;font-style:italic;margin-bottom:14px}
+      .test__sector{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:4px 10px;border-radius:12px}
+      .test .test__sector.energy{background:#FFE3D6;color:#C84F1A}
+      .test .test__sector.banking{background:#E0F7FA;color:#00838F}
+      .test .test__sector.infra{background:#DCFCE7;color:#1B5E20}
+    </style>
+    <div class="test-grid">
+      <div class="test rv">
+        <div class="test__head">
+          <div class="test__avatar" style="background:linear-gradient(135deg,#F26122,#0D1B3F)">EC</div>
+          <div class="test__who"><span class="test__name">CEO</span><span class="test__role">Energy &amp; Petrochemicals Sponsor</span></div>
+        </div>
+        <p class="test__quote">"ContexAi's deep sector expertise and strategic financial consulting helped us navigate a complex merger in the energy sector. Their methodology is exceptional."</p>
+        <span class="test__sector energy">Energy</span>
+      </div>
+      <div class="test rv d1">
+        <div class="test__head">
+          <div class="test__avatar" style="background:linear-gradient(135deg,#D81B60,#6A1B9A)">DG</div>
+          <div class="test__who"><span class="test__name">Director</span><span class="test__role">Manufacturing Group</span></div>
+        </div>
+        <p class="test__quote">"The dispute resolution desk provided exceptional service during our contractual disagreement — resolved efficiently while preserving the business relationship."</p>
+        <span class="test__sector banking">Banking</span>
+      </div>
+      <div class="test rv d2">
+        <div class="test__head">
+          <div class="test__avatar" style="background:linear-gradient(135deg,#00C853,#1B5E20)">PM</div>
+          <div class="test__who"><span class="test__name">Project Manager</span><span class="test__role">Infrastructure Developer</span></div>
+        </div>
+        <p class="test__quote">"End-to-end project advisory ensured our infrastructure project was delivered on time and within budget. Highly recommended for complex project environments."</p>
+        <span class="test__sector infra">Infrastructure</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ─── JOIN THE NETWORK ─── -->
 <section class="join" id="join">
@@ -1087,7 +1220,16 @@ img{display:block;max-width:100%}
       <div class="ft__brand">
         <a href="#" class="logo">Contex<span>Ai</span></a>
         <p>Intelligence in Context. Boutique financial consulting and strategic advisory serving Pakistan and emerging markets since 2001.</p>
-      </div>
+      
+        <div class="ft__col">
+          <h4>Stay informed</h4>
+          <p style="font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:14px">Quarterly ContexAi briefing. Practitioner analysis on Pakistani &amp; emerging-market finance.</p>
+          <form action="/api/newsletter" method="POST" style="display:flex;gap:6px;flex-wrap:wrap">
+            <input type="email" name="email" placeholder="you@company.com" required style="flex:1;min-width:160px;padding:10px 14px;border-radius:6px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;font-family:inherit;font-size:.88rem">
+            <button type="submit" style="background:#14B8A6;color:#0A3E40;border:none;padding:10px 18px;border-radius:6px;font-weight:700;font-size:.88rem;cursor:pointer">Subscribe</button>
+          </form>
+        </div>
+</div>
       <div class="ft__col">
         <h4>Services</h4>
         <a href="#services">Financial Consulting</a>
