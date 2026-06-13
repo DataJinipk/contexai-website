@@ -483,13 +483,13 @@ img{display:block;max-width:100%}
     <a href="#" class="logo">Contex<span>Ai</span><span class="logo-badge">Group</span></a>
     <div class="navlinks">
       <a href="#about">About</a>
-      <a href="#agentic">Agentic AI</a>
+      <a href="/practices">Practices</a>
+      <a href="/team">Team</a>
       <a href="#services">Services</a>
-      <a href="#team">Members</a>
+      <a href="#agentic">Agentic AI</a>
       <a href="/insights">Insights</a>
       <a href="/economy">Economy &amp; Fiscal</a>
       <a href="/positions">Positions</a>
-      <a href="#join">Join</a>
       <a href="#contact" class="btn btn-primary">Contact Us</a>
     </div>
     <button class="mob-btn" id="mob-toggle" aria-label="Menu" aria-expanded="false">
@@ -501,9 +501,10 @@ img{display:block;max-width:100%}
 <!-- ─── MOBILE MENU ─── -->
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <a href="#about" class="mob-link">About</a>
-  <a href="#agentic" class="mob-link">Agentic AI Showcase</a>
+  <a href="/practices" class="mob-link">Practices</a>
+  <a href="/team" class="mob-link">Team</a>
   <a href="#services" class="mob-link">Services</a>
-  <a href="#team" class="mob-link">Featured Members</a>
+  <a href="#agentic" class="mob-link">Agentic AI Showcase</a>
   <a href="/insights" class="mob-link">Research &amp; Insights</a>
   <a href="/economy" class="mob-link">Economy &amp; Fiscal Advisory</a>
   <a href="/positions" class="mob-link">Open Positions</a>
@@ -536,6 +537,68 @@ img{display:block;max-width:100%}
     <div class="hero__stat"><strong>80+</strong><span>Projects Delivered</span></div>
     <div class="hero__stat"><strong>15+</strong><span>Sectors Served</span></div>
     <div class="hero__stat"><strong>95%</strong><span>Client Retention</span></div>
+  </div>
+</section>
+
+<!-- ─── PRACTICES STRIP (v2 — Phase 1) ─── -->
+<section class="practices-strip" id="practices-strip" style="background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);padding:64px 32px 72px">
+  <style>
+    .ps__in{max-width:1280px;margin:0 auto}
+    .ps__lbl{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--blue);margin-bottom:10px}
+    .ps__t{font-family:'Instrument Serif',serif;font-size:clamp(2rem,3.4vw,2.6rem);color:var(--ink);line-height:1.1;margin-bottom:10px;letter-spacing:-.01em}
+    .ps__d{font-size:1.05rem;color:var(--ink4);max-width:720px;margin-bottom:32px;line-height:1.65}
+    .ps__d a{color:var(--blue-txt);font-weight:600}
+    .ps__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    @media(max-width:1100px){.ps__grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.ps__grid{grid-template-columns:1fr}}
+    .ps__card{background:#fff;border-radius:14px;padding:24px;border:1px solid rgba(0,0,0,.06);text-decoration:none;color:inherit;transition:all .25s;position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:220px}
+    .ps__card::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--c)}
+    .ps__card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.10)}
+    .ps__card .ptag{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--c-deep);background:var(--c-soft);padding:4px 10px;border-radius:12px;align-self:flex-start;margin-bottom:14px}
+    .ps__card h3{font-family:'Instrument Serif',serif;font-size:1.35rem;color:var(--c-deep);line-height:1.15;margin-bottom:10px}
+    .ps__card p{font-size:.92rem;color:var(--ink4);line-height:1.55;margin-bottom:14px;flex:1}
+    .ps__card .anchor{font-size:.82rem;color:var(--ink4);padding-top:12px;border-top:1px dashed rgba(0,0,0,.08);font-weight:500}
+    .ps__card .anchor strong{color:var(--c-deep)}
+    .ps__card .more{margin-top:10px;font-weight:600;color:var(--c);font-size:.88rem}
+    .ps__banking{--c:#00BCD4;--c-deep:#00838F;--c-soft:#E0F7FA}
+    .ps__realest{--c:#00C853;--c-deep:#1B5E20;--c-soft:#DCFCE7}
+    .ps__energy{--c:#F26122;--c-deep:#0D1B3F;--c-soft:#FFE3D6}
+    .ps__accred{--c:#9C27B0;--c-deep:#6A1B9A;--c-soft:#F3E5F5}
+  </style>
+  <div class="ps__in">
+    <div class="ps__lbl">Our Practices</div>
+    <h2 class="ps__t">Sector-deep advisory, four verticals.</h2>
+    <p class="ps__d">Each practice is partner-led, anchored by a flagship client, and supported by an Agentic AI bench scoped to its regulatory and technical grammar. <a href="/practices">See all practices &rarr;</a></p>
+    <div class="ps__grid">
+      <a class="ps__card ps__banking rv" href="/practices/banking">
+        <span class="ptag">Banking</span>
+        <h3>Banking &amp; Financial Services</h3>
+        <p>Conventional, Islamic, and microfinance — three banking grammars under one practice.</p>
+        <div class="anchor">Anchor: <strong>SMFB</strong> · SBP-regulated</div>
+        <span class="more">Explore &rarr;</span>
+      </a>
+      <a class="ps__card ps__realest rv" href="/practices/real-estate">
+        <span class="ptag">Real Estate</span>
+        <h3>Real Estate &amp; Infrastructure</h3>
+        <p>Shariah-compliant REITs, sponsor advisory, PPP bankability, corporate-secretary work.</p>
+        <div class="anchor">Anchor: <strong>TSH Group</strong> · Islamic REIT</div>
+        <span class="more">Explore &rarr;</span>
+      </a>
+      <a class="ps__card ps__energy rv" href="/practices/energy">
+        <span class="ptag">Energy &amp; Petrochem</span>
+        <h3>Energy &amp; Petrochemicals</h3>
+        <p>Refinery economics, asset integrity, downstream margins, global trading — five SMEs.</p>
+        <div class="anchor">Anchor: <strong>Cnergyico PK</strong> · Refining</div>
+        <span class="more">Explore &rarr;</span>
+      </a>
+      <a class="ps__card ps__accred rv" href="/practices/accreditation">
+        <span class="ptag">Accreditation</span>
+        <h3>Professional Bodies &amp; Accreditation</h3>
+        <p>SECP Section 42 NPO build, IPO-Pakistan trademark, HEC accreditation, code of ethics.</p>
+        <div class="anchor">Anchor: <strong>CIP</strong> · S42 in flight</div>
+        <span class="more">Explore &rarr;</span>
+      </a>
+    </div>
   </div>
 </section>
 

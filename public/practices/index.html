@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ContexAi practices — Banking & Financial Services, Real Estate & Infrastructure, Energy & Petrochemicals, and Accreditation & Professional Bodies. Four sector-deep advisory verticals.">
+<title>Practices — ContexAi Group</title>
+<link rel="canonical" href="https://contexai.org/practices">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ContexAi Practices">
+<meta property="og:description" content="Four sector-deep advisory verticals — Banking, Real Estate & REIT, Energy & Petrochemicals, Accreditation.">
+<meta property="og:url" content="https://contexai.org/practices">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0A3E40;--ink-deep:#0A3E40;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --turquoise:#0E7E76;--turquoise-light:#14B8A6;--cream:#F6F5F1;--warm:#EDEBE3;
+  --teal-dark:#00838F;--teal:#00BCD4;
+  --parrot:#00C853;--parrot-dark:#1B5E20;
+  --cnergyico:#F26122;--cnergyico-navy:#0D1B3F;
+  --purple:#9C27B0;--purple-dark:#6A1B9A;
+  --flame:#FFC400;--flame-dark:#FF8F00;
+  --lemon:#FFEE58;--lemon-dark:#FDD835;
+  --lime:#C6FF00;--lime-dark:#AEEA00;
+  --magenta:#D81B60;--magenta-dark:#AD1457;
+}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink3);line-height:1.7;background:#fff;font-size:1.05rem;-webkit-font-smoothing:antialiased}
+a{color:var(--turquoise);text-decoration:none}
+.bar{background:var(--turquoise);padding:18px 32px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.bar__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.bar a.logo{color:#fff;font-weight:800;font-size:1.2rem;letter-spacing:-.03em}
+.bar a.logo span{color:var(--turquoise-light)}
+.bar a.back{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500}
+.bar a.back:hover{color:#fff}
+
+.hero{background:linear-gradient(135deg,var(--turquoise) 0%,var(--ink) 100%);padding:48px 32px 64px;color:#fff}
+.hero__in{max-width:1280px;margin:0 auto}
+.lbl{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--turquoise-light);margin-bottom:12px}
+.hero h1{font-family:'Instrument Serif',serif;font-size:clamp(2.4rem,5.5vw,3.8rem);color:#fff;line-height:1.05;margin-bottom:18px;letter-spacing:-.02em}
+.hero p{color:rgba(255,255,255,.78);max-width:720px;font-size:1.1rem;font-weight:300}
+
+main{max-width:1280px;margin:0 auto;padding:64px 32px 80px}
+
+.prac-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(max-width:900px){.prac-grid{grid-template-columns:1fr}}
+
+.prac{background:#fff;border-radius:18px;padding:32px;border:1px solid rgba(0,0,0,.06);transition:all .25s;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative;overflow:hidden;min-height:280px}
+.prac::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--accent)}
+.prac:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.10)}
+.prac .ptag{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:14px;display:inline-block;background:var(--accent-soft);padding:5px 12px;border-radius:14px;align-self:flex-start}
+.prac h2{font-family:'Instrument Serif',serif;font-size:1.7rem;color:var(--accent-deep);line-height:1.15;margin-bottom:12px}
+.prac p{color:var(--ink3);font-size:1rem;line-height:1.65;margin-bottom:16px;flex:1}
+.prac .anchor{font-size:.86rem;color:var(--ink4);padding-top:14px;border-top:1px solid rgba(0,0,0,.06);font-weight:500}
+.prac .anchor strong{color:var(--accent-deep)}
+.prac .more{margin-top:14px;font-weight:600;color:var(--accent);font-size:.95rem;display:inline-flex;align-items:center;gap:6px}
+.prac .more:hover{gap:10px;transition:gap .15s}
+
+.prac.banking{--accent:var(--teal-dark);--accent-deep:var(--teal-dark);--accent-soft:#E0F7FA}
+.prac.real-est{--accent:var(--parrot);--accent-deep:var(--parrot-dark);--accent-soft:#DCFCE7}
+.prac.energy{--accent:var(--cnergyico);--accent-deep:var(--cnergyico-navy);--accent-soft:#FFE3D6}
+.prac.accred{--accent:var(--purple);--accent-deep:var(--purple-dark);--accent-soft:#F3E5F5}
+
+.note{background:var(--cream);border-radius:16px;padding:36px;margin:64px 0 0;text-align:center}
+.note h3{font-family:'Instrument Serif',serif;font-size:1.7rem;color:var(--ink);margin-bottom:10px}
+.note p{font-size:1rem;color:var(--ink3);max-width:640px;margin:0 auto 18px}
+.note a.cta{display:inline-block;background:var(--turquoise);color:#fff;padding:12px 28px;border-radius:24px;font-weight:600}
+.note a.cta:hover{background:var(--turquoise-light);color:var(--ink)}
+
+footer{background:var(--ink);color:rgba(255,255,255,.65);text-align:center;padding:28px;font-size:.9rem}
+footer a{color:rgba(255,255,255,.85)}
+</style>
+</head>
+<body>
+
+<div aria-hidden="true" title="ContexAi Brand Palette v2" style="display:flex;height:8px;width:100%;line-height:0;box-shadow:0 2px 6px rgba(0,0,0,.10);position:relative;z-index:100"><span title="Ink / Navy" style="display:block;flex:1;background:#0D1B3F"></span><span title="ContexAi Blue" style="display:block;flex:1;background:#0040D9"></span><span title="Teal Dark — Banking" style="display:block;flex:1;background:#00838F"></span><span title="Teal" style="display:block;flex:1;background:#00BCD4"></span><span title="Lemon Green" style="display:block;flex:1;background:#AEEA00"></span><span title="Lemon Yellow" style="display:block;flex:1;background:#FDD835"></span><span title="Flame Yellow" style="display:block;flex:1;background:#FFC400"></span><span title="Cnergyico Flame — Energy" style="display:block;flex:1;background:#F26122"></span><span title="Magenta Ultra" style="display:block;flex:1;background:#D81B60"></span><span title="Royal Purple — Accreditation" style="display:block;flex:1;background:#9C27B0"></span><span title="Parrot Green — Real Estate" style="display:block;flex:1;background:#00C853"></span></div>
+
+<div class="bar"><div class="bar__in"><a href="/" class="logo">Contex<span>Ai</span> Group</a><a href="/" class="back">&larr; Home</a></div></div>
+
+<section class="hero">
+  <div class="hero__in">
+    <div class="lbl">Our Practices</div>
+    <h1>Sector-deep advisory, four verticals.</h1>
+    <p>Banking, Real Estate, Energy & Petrochemicals, and Accreditation. Each practice runs partner-led mandates anchored by a flagship client and supported by an Agentic AI bench — the depth a generalist firm can't match, with the speed a boutique can.</p>
+  </div>
+</section>
+
+<main>
+  <div class="prac-grid">
+
+    <a class="prac banking" href="/practices/banking">
+      <span class="ptag">Banking & Financial Services</span>
+      <h2>Banks, MFIs, regulators — built on sector grammar, not generic playbooks.</h2>
+      <p>From SBP-regulated Microfinance Banks to Islamic banking conversions, core-banking modernization (PIBAS / T24 / Finacle), prudential compliance, and Tier-1 transformation programs. Our work spans conventional, Islamic, and microfinance models.</p>
+      <div class="anchor">Anchor client: <strong>Sindh Microfinance Bank (SMFB)</strong> · SBP-regulated</div>
+      <span class="more">Explore practice &rarr;</span>
+    </a>
+
+    <a class="prac real-est" href="/practices/real-estate">
+      <span class="ptag">Real Estate & Infrastructure</span>
+      <h2>REIT structuring, sponsor advisory, and bankable PPP design.</h2>
+      <p>Shariah-compliant and conventional REITs, corporate structuring for sponsors, SECP filings, Pakistani Companies Act 2017 governance, and PPP / infrastructure finance for projects that need to clear bankability before financial close.</p>
+      <div class="anchor">Anchor client: <strong>TSH Group (Three Stars Hosiery Mills)</strong> · Islamic REIT in intake</div>
+      <span class="more">Explore practice &rarr;</span>
+    </a>
+
+    <a class="prac energy" href="/practices/energy">
+      <span class="ptag">Energy & Petrochemicals</span>
+      <h2>Refinery economics, asset integrity, downstream margins, trading.</h2>
+      <p>Brent / Dubai / WTI economics, LP / PIMS / Aspen modeling, FCC / Coker / Hydrocracker yields, GPW and netbacks. Five specialist SMEs cover margin, chemistry, integrity, projects, and global trading.</p>
+      <div class="anchor">Anchor client: <strong>Cnergyico PK Limited</strong> · Pakistan's largest oil refiner</div>
+      <span class="more">Explore practice &rarr;</span>
+    </a>
+
+    <a class="prac accred" href="/practices/accreditation">
+      <span class="ptag">Accreditation & Professional Bodies</span>
+      <h2>Building Pakistan's next professional institute — from incorporation to recognition.</h2>
+      <p>SECP Section 42 NPO incorporation, corporate-secretary work, IPO-Pakistan trademark for designations (e.g. CCP), HEC accreditation strategy, code of ethics, disciplinary frameworks, and reciprocal recognition with overseas bodies.</p>
+      <div class="anchor">Anchor mandate: <strong>Credit Institute of Pakistan (CIP)</strong> · Section 42 build in flight</div>
+      <span class="more">Explore practice &rarr;</span>
+    </a>
+
+  </div>
+
+  <div class="note">
+    <h3>Need a practice that's not here yet?</h3>
+    <p>We graduate new practices when we land three anchor mandates in a vertical. If you have a sector that needs senior-only advisory and an AI bench, let's talk.</p>
+    <a class="cta" href="/contact">Talk to ContexAi &rarr;</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 ContexAi Group &middot; <a href="/">Home</a> &middot; <a href="/insights">Insights</a> &middot; <a href="/team">Team</a> &middot; <a href="/contact">Contact</a>
+</footer>
+
+</body>
+</html>
