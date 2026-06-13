@@ -66,8 +66,18 @@
   --coral:#DF6F18;--coral-p:#FBE3CF;
   --violet:#6E5C9C;--violet-p:#EEEAF4;
   --green:#16A34A;--green-p:#DCFCE7;
-  /* color-bar segments */
-  --bar1:#6E5C9C;--bar2:#4D95D1;--bar3:#5D9ED5;--bar4:#E58940;--bar5:#DF6F18;
+  /* color-bar segments — v2 unified palette (11 families) */
+  --bar1:#0D1B3F;   /* Ink / Navy */
+  --bar2:#0040D9;   /* ContexAi Blue */
+  --bar3:#00838F;   /* Teal Dark — Banking */
+  --bar4:#00BCD4;   /* Teal */
+  --bar5:#AEEA00;   /* Lemon Green */
+  --bar6:#FDD835;   /* Lemon Yellow */
+  --bar7:#FFC400;   /* Flame Yellow */
+  --bar8:#F26122;   /* Cnergyico Flame — Energy */
+  --bar9:#D81B60;   /* Magenta Ultra */
+  --bar10:#9C27B0;  /* Royal Purple — Accreditation */
+  --bar11:#00C853;  /* Parrot Green — Real Estate */
   /* brand cyan (ContexAi logo "Ai") */
   --cyan:#14B8A6;
   --sh1:0 1px 4px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.04);
@@ -84,14 +94,21 @@ a{text-decoration:none;color:inherit}
 button{font-family:inherit;cursor:pointer;border:none;background:none}
 img{display:block;max-width:100%}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
-/* ─── BRAND COLOR BAR (from EvoNergy letterhead) ─── */
-.evobar{display:flex;height:6px;width:100%;position:relative;z-index:100}
-.evobar span{flex:1}
+/* ─── BRAND COLOR BAR — v2 (11 segments, ContexAi unified palette) ─── */
+.evobar{display:flex;height:8px;width:100%;position:relative;z-index:100;box-shadow:0 2px 6px rgba(0,0,0,.10)}
+.evobar span{flex:1;transition:flex .25s ease, filter .15s ease}
+.evobar span:hover{flex:2;filter:brightness(1.18)}
 .evobar span:nth-child(1){background:var(--bar1)}
 .evobar span:nth-child(2){background:var(--bar2)}
 .evobar span:nth-child(3){background:var(--bar3)}
 .evobar span:nth-child(4){background:var(--bar4)}
 .evobar span:nth-child(5){background:var(--bar5)}
+.evobar span:nth-child(6){background:var(--bar6)}
+.evobar span:nth-child(7){background:var(--bar7)}
+.evobar span:nth-child(8){background:var(--bar8)}
+.evobar span:nth-child(9){background:var(--bar9)}
+.evobar span:nth-child(10){background:var(--bar10)}
+.evobar span:nth-child(11){background:var(--bar11)}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 /* ─── ECOSYSTEM TOP STRIP ─── */
@@ -396,7 +413,7 @@ img{display:block;max-width:100%}
 <body>
 
 <!-- ─── BRAND COLOR BAR ─── -->
-<div class="evobar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="evobar" aria-hidden="true" title="ContexAi Brand Palette v2"><span title="Ink / Navy"></span><span title="ContexAi Blue"></span><span title="Teal Dark — Banking"></span><span title="Teal"></span><span title="Lemon Green"></span><span title="Lemon Yellow"></span><span title="Flame Yellow"></span><span title="Cnergyico Flame — Energy"></span><span title="Magenta Ultra"></span><span title="Royal Purple — Accreditation"></span><span title="Parrot Green — Real Estate"></span></div>
 
 <!-- ─── NAV ─── -->
 <nav class="nav" id="main-nav">
