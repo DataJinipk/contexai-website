@@ -47,6 +47,21 @@ blockquote{border-left:3px solid var(--blue);padding:4px 0 4px 20px;margin:24px 
 .disc{font-size:.82rem;color:var(--ink5);margin-top:24px;font-style:italic}
 .foot{background:var(--ink);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:.88rem}
 .foot a{color:rgba(255,255,255,.8)}
+.byline{display:flex;align-items:center;gap:14px;margin:14px 0 28px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.18);flex-wrap:wrap}
+.byline .author{display:flex;align-items:center;gap:10px}
+.byline .avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#14B8A6,#0E7E76);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.85rem;letter-spacing:-.02em}
+.byline .meta{display:flex;flex-direction:column}
+.byline .meta .name{font-size:.92rem;font-weight:600;color:#fff}
+.byline .meta .role{font-size:.78rem;color:rgba(255,255,255,.65)}
+.byline .date{font-size:.84rem;color:rgba(255,255,255,.6);font-weight:500}
+.byline .share{margin-left:auto;display:flex;gap:8px}
+.byline .share a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;text-decoration:none;font-size:.78rem;font-weight:700;transition:all .15s;cursor:pointer}
+.byline .share a:hover{background:#14B8A6;transform:translateY(-1px)}
+
+.sticky-cta{position:fixed;bottom:22px;right:22px;background:#0E7E76;color:#fff;padding:13px 22px;border-radius:30px;font-weight:600;font-size:.94rem;text-decoration:none;box-shadow:0 6px 22px rgba(14,126,118,.45);z-index:100;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.sticky-cta:hover{background:#14B8A6;transform:translateY(-2px);box-shadow:0 10px 30px rgba(14,126,118,.55)}
+@media(max-width:600px){.sticky-cta{padding:11px 16px;font-size:.85rem;bottom:14px;right:14px}}
+
 </style>
 </head>
 <body>
@@ -56,6 +71,7 @@ blockquote{border-left:3px solid var(--blue);padding:4px 0 4px 20px;margin:24px 
 <article>
   <div class="tag">PPP &amp; Infrastructure</div>
   <h1>Why Most PPP Bids Fail the Bankability Test — and How to Fix Yours</h1>
+<div class="byline"><div class="author"><div class="avatar">AWA</div><div class="meta"><span class="name">Amir Waheed Ahmed</span><span class="role">Founder &amp; Creator, ContexAi Group</span></div></div><span class="date">9 June 2026 &middot; ContexAi Research</span><div class="share"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcontexai.org/insights/why-ppp-bids-fail-bankability" target="_blank" rel="noopener" title="Share on LinkedIn">in</a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcontexai.org/insights/why-ppp-bids-fail-bankability&amp;text=Why+Most+PPP+Bids+Fail+Bankability+%E2%80%94+ContexAi" target="_blank" rel="noopener" title="Share on X">X</a><a onclick="navigator.clipboard.writeText(window.location.href);this.textContent=&quot;OK&quot;;setTimeout(()=>this.textContent=&quot;&#10683;&quot;,1500)" title="Copy link">&#10683;</a></div></div>
   <div class="meta">By ContexAi Group · 9 June 2026 · 8 min read</div>
 
   <p>A surprising number of public-private partnership projects are technically sound, socially valuable, and politically supported — and still never reach financial close. The project dies not in the design room but in the lenders' credit committee. After two decades advising on infrastructure and PPP transactions, we see the same five failure modes again and again. The good news: each is fixable if you address it <em>before</em> you bid, not after.</p>
@@ -92,5 +108,7 @@ blockquote{border-left:3px solid var(--blue);padding:4px 0 4px 20px;margin:24px 
 </div>
 
 <footer class="foot">&copy; 2026 ContexAi Group · <a href="/insights">More insights</a> · <a href="/">contexai.org</a></footer>
+
+<a href="/contact" class="sticky-cta">Talk to ContexAi <span>&rarr;</span></a>
 </body>
 </html>
