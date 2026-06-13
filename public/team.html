@@ -106,14 +106,6 @@ section{margin-bottom:72px}
 footer{background:var(--ink);color:rgba(255,255,255,.65);text-align:center;padding:28px;font-size:.9rem}
 footer a{color:rgba(255,255,255,.85)}
 .sticky-cta{position:fixed;bottom:22px;right:22px;background:#0E7E76;color:#fff;padding:13px 22px;border-radius:30px;font-weight:600;font-size:.94rem;text-decoration:none;box-shadow:0 6px 22px rgba(14,126,118,.45);z-index:100;display:inline-flex;align-items:center;gap:8px;transition:all .2s}.sticky-cta:hover{background:#14B8A6;transform:translateY(-2px);box-shadow:0 10px 30px rgba(14,126,118,.55)}@media(max-width:600px){.sticky-cta{padding:11px 16px;font-size:.85rem;bottom:14px;right:14px}}
-/* Founder milestone timeline */
-.timeline{margin:36px 0 0;padding:30px 30px 26px;background:linear-gradient(135deg,#F6F5F1,#fff);border-radius:18px;border-left:4px solid var(--turquoise)}
-.timeline h3{font-family:'Instrument Serif',serif;font-size:1.3rem;color:var(--ink);margin-bottom:18px;font-weight:600}
-.timeline .track{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;position:relative}
-.timeline .track::before{content:"";position:absolute;top:24px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--turquoise),var(--turquoise-light));opacity:.3;z-index:0}
-.timeline .ms{flex:1;min-width:135px;text-align:center;position:relative;z-index:1}
-.timeline .ms .yr{font-family:'Instrument Serif',serif;font-size:1.4rem;color:var(--turquoise);font-weight:700;background:#fff;display:inline-block;padding:6px 14px;border-radius:14px;box-shadow:0 2px 8px rgba(14,126,118,.18);margin-bottom:8px;border:2px solid var(--turquoise)}
-.timeline .ms .ev{font-size:.86rem;color:var(--ink3);line-height:1.4;font-weight:500}
 /* === Site-wide top nav (Phase 1.7+) === */
 .topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
 .topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
@@ -191,94 +183,212 @@ footer a{color:rgba(255,255,255,.85)}
       <div class="role">Founder &amp; Creator</div>
       <h2>Amir Waheed Ahmed</h2>
       <div class="title">Founder &amp; Creator, ContexAi Group &middot; 20+ years in financial consulting</div>
-      <p>Amir founded ContexAi to combine senior human expertise with production-grade Agentic AI. With 20+ years across financial consulting, banking transformation, microfinance, REIT structuring, and energy/petrochem advisory in Pakistan and the GCC, he has built the firm around a simple thesis: clients deserve partner-level intent and AI-bench velocity, in one engagement model.</p>
-      <p>Before ContexAi, Amir advised Tier-1 banks, microfinance institutions, REIT sponsors, and energy companies across Pakistan, the UAE, and KSA. His current focus is building four sector-deep practices anchored by flagship clients (SMFB, TSH, Cnergyico, CIP) and a curated network of senior consultants and Agentic AI builders.</p>
+      <p>20+ years in financial consulting, PPP advisory, dispute resolution, and strategic planning across Pakistan and emerging markets. Sector experience spans water, energy, infrastructure, fintech, and public-private partnerships.</p>
+      <p>Partner-led engagements. Every mandate runs through senior consulting hands.</p>
       <div class="links">
         <a href="https://www.linkedin.com/in/amirwaheedahmed" target="_blank" rel="noopener">LinkedIn &rarr;</a>
         <a href="/contact" class="alt">Contact Amir</a>
       </div>
     </div>
   </div>
-
-  <div class="timeline">
-    <h3>Career milestones</h3>
-    <div class="track">
-      <div class="ms"><div class="yr">2002</div><div class="ev">Began financial consulting career</div></div>
-      <div class="ms"><div class="yr">2008</div><div class="ev">First microfinance bank transformation</div></div>
-      <div class="ms"><div class="yr">2014</div><div class="ev">GCC banking advisory (UAE, KSA)</div></div>
-      <div class="ms"><div class="yr">2018</div><div class="ev">First REIT structuring mandate</div></div>
-      <div class="ms"><div class="yr">2024</div><div class="ev">Cnergyico Energy &amp; Petrochem advisory</div></div>
-      <div class="ms"><div class="yr">2026</div><div class="ev">Founded <strong>ContexAi Group</strong></div></div>
-    </div>
-  </div>
+</div>
 
 </section>
 
-<!-- ─── PRACTICE LEADS ─── -->
+<!-- ─── FEATURED MEMBERS OF THE NETWORK ─── -->
+<style>
+  .members-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  @media(max-width:900px){.members-grid{grid-template-columns:1fr}}
+  .member{background:#fff;border-radius:16px;padding:28px;border:1px solid rgba(0,0,0,.06);border-top:5px solid var(--accent);transition:all .25s;display:flex;flex-direction:column}
+  .member:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.09)}
+  .member.teal{--accent:#00838F;--accent-soft:#E0F7FA}
+  .member.parrot{--accent:#1B5E20;--accent-soft:#DCFCE7}
+  .member.cnergyico{--accent:#F26122;--accent-soft:#FFE3D6}
+  .member.purple{--accent:#6A1B9A;--accent-soft:#F3E5F5}
+  .member.blue{--accent:#0040D9;--accent-soft:#E6EEFF}
+  .member.magenta{--accent:#AD1457;--accent-soft:#FCE4EC}
+  .member.flame{--accent:#FF8F00;--accent-soft:#FFF3D6}
+  .member__head{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+  .member__avatar{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--turquoise));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.05rem;letter-spacing:-.02em;flex-shrink:0;font-family:'Instrument Serif',serif}
+  .member__id{flex:1;min-width:0}
+  .member__name{font-family:'Instrument Serif',serif;font-size:1.35rem;color:var(--accent);line-height:1.15;margin-bottom:4px}
+  .member__role{font-size:.94rem;font-weight:600;color:var(--ink);margin-bottom:2px}
+  .member__loc{font-size:.82rem;color:var(--ink4);font-weight:500}
+  .member__bio{font-size:.93rem;color:var(--ink3);line-height:1.6;margin-bottom:16px}
+  .member__areas{background:var(--accent-soft);border-radius:10px;padding:14px 16px;margin-top:auto}
+  .member__areas-lbl{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:8px}
+  .member__areas ul{list-style:none;padding:0;margin:0}
+  .member__areas li{font-size:.86rem;color:var(--ink3);padding:3px 0 3px 16px;position:relative;line-height:1.45}
+  .member__areas li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+</style>
+
 <section>
-  <div class="sec-lbl">Practice Leads</div>
-  <h2 class="sec-t">Four sector-deep practices, each partner-led.</h2>
-  <p class="sec-d">Each ContexAi practice has its own lead — a partner who has run live mandates in that vertical. Supported by Subject Matter Experts and an Agentic AI bench scoped to the practice's regulatory and technical grammar.</p>
-  <div class="leads-grid">
+  <div class="sec-lbl">Featured Members of the Network</div>
+  <h2 class="sec-t">Founding members &mdash; Gulf &amp; North America.</h2>
+  <p class="sec-d">Senior advisors based across the Gulf and North America, with deep sector and regional expertise across finance, real estate, project engineering, IT, credit risk, and heavy industry. <a href="/#join" style="color:var(--turquoise);font-weight:600">Apply to join the network &rarr;</a></p>
 
-    <div class="lead banking">
-      <span class="practice-tag">Banking &amp; Financial Services</span>
-      <h3>Banking Practice Lead</h3>
-      <div class="title">Anchored on SMFB &middot; 3 sub-practices: Conventional / Islamic / Microfinance</div>
-      <p>Backed by the contexai-banking-advisory plugin — three Domain Leads (Conventional, Islamic, Microfinance) and nine specialist SMEs covering PIBAS core banking, IFRS 9 ECL, SBP submissions, Shariah structuring, and microfinance prudential compliance.</p>
-      <div class="smes"><strong>Bench:</strong> 9+ SMEs &middot; <a href="/practices/banking">Banking Practice page &rarr;</a></div>
+  <div class="members-grid">
+
+    <!-- Rashid Ahmed -->
+    <div class="member cnergyico">
+      <div class="member__head">
+        <div class="member__avatar">RA</div>
+        <div class="member__id">
+          <div class="member__name">Rashid Ahmed, P.Eng., PMP</div>
+          <div class="member__role">Principal &mdash; Project Engineering &amp; Capital Projects</div>
+          <div class="member__loc">Edmonton, Alberta, Canada</div>
+        </div>
+      </div>
+      <p class="member__bio">Canadian Professional Engineer (P.Eng.) and Certified Project Management Professional (PMP) with 30+ years across Canadian Natural Resources, WorleyParsons, Qatar Petroleum, and Saudi Aramco. Specialises in oil &amp; gas FEED and EPC projects, sustaining capital programmes, and multi-million-dollar infrastructure delivery.</p>
+      <div class="member__areas">
+        <div class="member__areas-lbl">Areas of expertise</div>
+        <ul>
+          <li>Oil &amp; gas project &amp; facility management</li>
+          <li>FEED &amp; EPC capital project delivery</li>
+          <li>Long Range Planning &amp; capital budgeting</li>
+          <li>Risk management &amp; resource optimisation</li>
+          <li>Mechanical engineering (rotating &amp; static, piping)</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="lead real-est">
-      <span class="practice-tag">Real Estate &amp; Infrastructure</span>
-      <h3>REIT Advisory Lead</h3>
-      <div class="title">Anchored on TSH (ENG-2026-001) &middot; Shariah-compliant REIT structuring</div>
-      <p>Specializes in REIT structuring (Shariah-compliant and conventional) under SECP Regulations 2022, supported by Pakistani Corporate Secretary expertise (Companies Act 2017) and an Islamic-finance overlay pulled from the Banking Practice when needed.</p>
-      <div class="smes"><strong>Bench:</strong> 2 SMEs + Banking overlay &middot; <a href="/practices/real-estate">Real Estate Practice page &rarr;</a></div>
+    <!-- Nafis Khan -->
+    <div class="member parrot">
+      <div class="member__head">
+        <div class="member__avatar">NK</div>
+        <div class="member__id">
+          <div class="member__name">Nafis Khan, CPA, CA, FCIS</div>
+          <div class="member__role">Principal &mdash; Real Estate Finance &amp; CFO Advisory</div>
+          <div class="member__loc">New York, New York, United States</div>
+        </div>
+      </div>
+      <p class="member__bio">CPA (AICPA), CA (ICAP), FCIS, and 20-year Chief Financial Officer at AION Partners &mdash; a New York-based real estate investment firm covering commercial, residential multi-family, land development, and construction. Earlier roles in internal audit (407 ETR), financial analysis (Richmond Hill Hydro), and KPMG audit practice. Now Principal Consultant at The Pro Consultants, advising on US and cross-border real estate finance.</p>
+      <div class="member__areas">
+        <div class="member__areas-lbl">Areas of expertise</div>
+        <ul>
+          <li>Real estate CFO &amp; portfolio finance</li>
+          <li>Construction &amp; property accounting</li>
+          <li>Tax planning (1031 like-kind exchange, recapitalisation)</li>
+          <li>Funds structuring &amp; project financing</li>
+          <li>Internal audit, SOX &amp; risk-based controls</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="lead energy">
-      <span class="practice-tag">Energy &amp; Petrochemicals</span>
-      <h3>Energy &amp; Petrochem Lead</h3>
-      <div class="title">Targeting Cnergyico &middot; 5 SMEs across the downstream stack</div>
-      <p>Orchestrates five specialist SMEs — margin-architect (refining), alchemist (petrochem), sentinel (integrity), constructor (capital projects), and trader (global trading & marine logistics). Inspired by Saudi Aramco, Reliance Jamnagar, and Valero operational excellence.</p>
-      <div class="smes"><strong>Bench:</strong> 5 SMEs &middot; <a href="/practices/energy">Energy Practice page &rarr;</a></div>
+    <!-- Syed Muhammad Asrar -->
+    <div class="member blue">
+      <div class="member__head">
+        <div class="member__avatar">SA</div>
+        <div class="member__id">
+          <div class="member__name">Syed Muhammad Asrar, FCA</div>
+          <div class="member__role">Principal &mdash; M&amp;A &amp; Investment Advisory</div>
+          <div class="member__loc">United Arab Emirates</div>
+        </div>
+      </div>
+      <p class="member__bio">Chartered Accountant (FCA, ICAP) and senior investment professional with 25+ years across M&amp;A, private investments, and financial leadership. Most recently Director &mdash; M&amp;A and Ventures at Tawazun Holding (UAE), managing transactions with investment budgets exceeding USD 1B. Prior Chief Investment Officer at Emaar Industries &amp; Investments, and Financial Controller at Dubai Investments PJSC. Executive education at Harvard, Wharton, and INSEAD.</p>
+      <div class="member__areas">
+        <div class="member__areas-lbl">Areas of expertise</div>
+        <ul>
+          <li>M&amp;A deal lifecycle (evaluation to exit)</li>
+          <li>Private investments &amp; asset allocation</li>
+          <li>Strategic acquisitions &amp; portfolio exits</li>
+          <li>Investment strategy across the GCC</li>
+          <li>Financial leadership &amp; capital structuring</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="lead accred">
-      <span class="practice-tag">Accreditation &amp; Professional Bodies</span>
-      <h3>Accreditation Practice Lead</h3>
-      <div class="title">Anchored on CIP &middot; SECP S42 NPO build &middot; CCP designation</div>
-      <p>Four-workstream orchestration — corporate (SECP Section 42), regulatory (SBP/PBA), academic (HEC / independent route), and IP (IPO-Pakistan trademark). Master plan sequences the critical path through Section 42 licensing.</p>
-      <div class="smes"><strong>Bench:</strong> 4 SMEs &middot; <a href="/practices/accreditation">Accreditation Practice page &rarr;</a></div>
+    <!-- Muhammed Khalid Shekhani -->
+    <div class="member teal">
+      <div class="member__head">
+        <div class="member__avatar">MS</div>
+        <div class="member__id">
+          <div class="member__name">Muhammed Khalid Shekhani, CPA, CA</div>
+          <div class="member__role">Principal &mdash; Corporate &amp; Financial Advisory</div>
+          <div class="member__loc">Mississauga, Ontario, Canada</div>
+        </div>
+      </div>
+      <p class="member__bio">Chartered accountant (ICAP, CPA Canada) with 30+ years across SGS Group (Director Finance &mdash; Canada and Pakistan), Canacre, and EY audit practice. Specialises in integrated finance leadership, multinational consolidation under IFRS and US GAAP, and finance-led business transformation.</p>
+      <div class="member__areas">
+        <div class="member__areas-lbl">Areas of expertise</div>
+        <ul>
+          <li>IFRS &amp; US GAAP financial reporting</li>
+          <li>FP&amp;A, budgeting &amp; forecasting</li>
+          <li>Multi-entity consolidation &amp; intercompany</li>
+          <li>SOX, internal controls &amp; audit readiness</li>
+          <li>ERP &amp; finance systems (Oracle, Hyperion, Deltek)</li>
+        </ul>
+      </div>
     </div>
 
-  </div>
-</section>
+    <!-- Tahir Razak -->
+    <div class="member purple">
+      <div class="member__head">
+        <div class="member__avatar">TR</div>
+        <div class="member__id">
+          <div class="member__name">Tahir Razak</div>
+          <div class="member__role">Principal &mdash; IT Strategy &amp; Digital Transformation</div>
+          <div class="member__loc">Greater Toronto Area, Canada</div>
+        </div>
+      </div>
+      <p class="member__bio">Senior IT business leader (PMP, ITIL, COBIT, Salesforce certified) with 30+ years leading enterprise technology functions at Hyundai Canada, Toys R Us Canada, Gulf Cryo (Dubai), Weir Engineering Services, and as founder of Gaboo Systems. Industries span retail, automotive, manufacturing, oil &amp; gas, and distribution across North America and the Arabian Gulf.</p>
+      <div class="member__areas">
+        <div class="member__areas-lbl">Areas of expertise</div>
+        <ul>
+          <li>ERP implementation (Oracle, SAP S/4HANA, D365)</li>
+          <li>Digital transformation strategy</li>
+          <li>Cloud architecture &amp; migration (Azure, OCI)</li>
+          <li>Cybersecurity &amp; IT governance (NIST, ITIL)</li>
+          <li>Business intelligence &amp; analytics</li>
+        </ul>
+      </div>
+    </div>
 
-<!-- ─── FEATURED SMEs ─── -->
-<section>
-  <div class="sec-lbl">Featured Subject Matter Experts</div>
-  <h2 class="sec-t">The bench powering our practices.</h2>
-  <p class="sec-d">ContexAi's Subject Matter Experts span banking transformation, refinery economics, real estate structuring, regulatory strategy, and Agentic AI. Each SME is partner-grade in their domain and pulled in only when their domain is the answer.</p>
-  <div class="bench-grid">
+    <!-- Adnan Moosa -->
+    <div class="member magenta">
+      <div class="member__head">
+        <div class="member__avatar">AM</div>
+        <div class="member__id">
+          <div class="member__name">Adnan Moosa, MBA, ECCP, CGCE</div>
+          <div class="member__role">Principal &mdash; Credit Risk &amp; Collections Strategy</div>
+          <div class="member__loc">New York, New York, United States</div>
+        </div>
+      </div>
+      <p class="member__bio">Credit Institute of Canada professional (ECCP, CGCE, CCP) with 30+ years across Shell (13 years, including Cluster Credit Manager Middle East &amp; South Asia covering 12+ countries with US$2bn exposure), Chubb, Brenntag Canada, Samuel Son &amp; Co, and currently Regional Head of Credit &amp; Collections at Nouryon. MBA in Finance &amp; Accounting. Vice President &amp; Treasurer of the Toronto Chapter, Credit Institute of Canada. Frequent speaker at international credit and finance forums.</p>
+      <div class="member__areas">
+        <div class="member__areas-lbl">Areas of expertise</div>
+        <ul>
+          <li>Credit policy &amp; risk strategy</li>
+          <li>DSO reduction &amp; working capital optimisation</li>
+          <li>Cross-border credit operations (Americas, EMEA)</li>
+          <li>AI &amp; automation in credit and finance</li>
+          <li>M&amp;A credit integration &amp; transformation</li>
+        </ul>
+      </div>
+    </div>
 
-    <div class="sme teal"><div class="role">Banking · Conventional</div><h4>Tier-1 Banking SME</h4><p>Retail, corporate, SME, trade, treasury, FX, branch operations, prudential compliance. 25+ years across Pakistan and MENA.</p></div>
-    <div class="sme teal"><div class="role">Banking · Islamic</div><h4>Islamic Finance SME</h4><p>Murabaha, Ijarah, Sukuk, full Islamic banking conversion. AAOIFI standards, Shariah board governance.</p></div>
-    <div class="sme teal"><div class="role">Banking · Microfinance</div><h4>Microfinance SME</h4><p>SBP MFB Prudential Regulations, gold-loan productization, financial inclusion strategy. Deep field operator.</p></div>
-
-    <div class="sme parrot"><div class="role">Real Estate · REIT</div><h4>REIT Advisory Lead</h4><p>Shariah-compliant and conventional REIT structuring under SECP Regulations 2022. PSX-listing readiness.</p></div>
-    <div class="sme parrot"><div class="role">Legal · Corporate Secretary</div><h4>Pakistani Corporate Secretary</h4><p>Companies Act 2017, SECP filings, board governance, MoA / AoA, Special Resolutions, Form-26.</p></div>
-
-    <div class="sme cnergyico"><div class="role">Refining Economics</div><h4>margin-architect</h4><p>LP / PIMS / Aspen, crack spreads, GPW, netbacks, crude slate optimization. Aramco / Reliance grade.</p></div>
-    <div class="sme cnergyico"><div class="role">Petrochem Strategy</div><h4>alchemist</h4><p>Steam crackers, polyolefins, BTX, aromatics, recycling. SABIC / Reliance O2C-inspired.</p></div>
-    <div class="sme cnergyico"><div class="role">Asset Integrity</div><h4>sentinel</h4><p>API 510 / 570 / 653, RBI, HAZOP, LOPA, turnarounds. Valero operational excellence-inspired.</p></div>
-
-    <div class="sme purple"><div class="role">Accreditation · Corporate</div><h4>cip-corporate-secp</h4><p>SECP Section 42 NPO licensing, Companies Act 2017, MoA / AoA, board committees, statutory filings.</p></div>
-    <div class="sme purple"><div class="role">Accreditation · Regulatory</div><h4>cip-regulatory-strategy</h4><p>SBP / PBA / SECP engagement, reciprocal recognition with Credit Institute of Canada, Chartered Banker UK.</p></div>
-    <div class="sme purple"><div class="role">Accreditation · IP / Academic</div><h4>cip-ip-academic</h4><p>IPO-Pakistan trademark for designations, HEC accreditation, code of ethics, disciplinary framework.</p></div>
-
-    <div class="sme magenta"><div class="role">Cross-Practice · AI Bench</div><h4>Agentic AI Builders</h4><p>Production-ready autonomous agents — Dispute Resolution Agent, PPP Bid Strategist, SAP Co-Pilot, and growing.</p></div>
+    <!-- Mir Kazim Ali -->
+    <div class="member flame">
+      <div class="member__head">
+        <div class="member__avatar">MK</div>
+        <div class="member__id">
+          <div class="member__name">Mir Kazim Ali, P.Eng., MBA</div>
+          <div class="member__role">Principal &mdash; Cement &amp; Industrial Operations</div>
+          <div class="member__loc">Edmonton, Alberta, Canada</div>
+        </div>
+      </div>
+      <p class="member__bio">Professional Engineer (P.Eng.), Certified Director, and 30-year cement industry leader with executive roles across Holcim/Holderbank (Switzerland, Indonesia, USA), Saudi Cement Company, PSCL, and Christian Pfeiffer. Co-founder and President of CEMTREC Solutions; currently Vice President Operations at Bridge Gap Engineering Canada. Specialises in cement plant operations, grinding technology, and ESG-led industrial transformation.</p>
+      <div class="member__areas">
+        <div class="member__areas-lbl">Areas of expertise</div>
+        <ul>
+          <li>Cement plant operations &amp; optimisation</li>
+          <li>Cement grinding technology (VRM, ball mills)</li>
+          <li>Health, safety &amp; ESG leadership</li>
+          <li>Industrial cost reduction &amp; productivity</li>
+          <li>Cross-border cement &amp; mining consulting</li>
+        </ul>
+      </div>
+    </div>
 
   </div>
 </section>
