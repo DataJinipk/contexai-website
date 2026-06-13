@@ -48,7 +48,8 @@ section{margin-bottom:72px}
 /* Founder hero card */
 .founder{background:linear-gradient(135deg,var(--cream) 0%,#fff 60%);border-radius:20px;padding:42px;border-left:6px solid var(--turquoise);display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:start}
 @media(max-width:800px){.founder{grid-template-columns:1fr}}
-.founder .avatar{width:180px;height:180px;border-radius:50%;background:linear-gradient(135deg,var(--turquoise),var(--ink));display:flex;align-items:center;justify-content:center;font-family:'Instrument Serif',serif;font-size:3.6rem;color:#fff;letter-spacing:-.02em;box-shadow:0 8px 24px rgba(14,126,118,.30)}
+.founder .avatar{width:180px;height:180px;border-radius:50%;background:linear-gradient(135deg,var(--turquoise),var(--ink));display:flex;align-items:center;justify-content:center;font-family:'Instrument Serif',serif;font-size:3.6rem;color:#fff;letter-spacing:-.02em;box-shadow:0 8px 24px rgba(14,126,118,.30);overflow:hidden}
+  .founder .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .founder .role{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--turquoise);margin-bottom:8px}
 .founder h2{font-family:'Instrument Serif',serif;font-size:2.2rem;color:var(--ink);margin-bottom:6px}
 .founder .title{font-size:1rem;color:var(--ink4);margin-bottom:18px;font-weight:500}
@@ -178,7 +179,7 @@ footer a{color:rgba(255,255,255,.85)}
 <section>
   <div class="sec-lbl">Founder &amp; Creator</div>
   <div class="founder">
-    <div class="avatar">AWA</div>
+    <div class="avatar"><img src="/images/amir.jpg" alt="Amir Waheed Ahmed"></div>
     <div>
       <div class="role">Founder &amp; Creator</div>
       <h2>Amir Waheed Ahmed</h2>
