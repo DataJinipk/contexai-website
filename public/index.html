@@ -1174,4 +1174,39 @@ window.addEventListener('scroll', function(){
 /* ─── SMOOTH SCROLL for # links ─── */
 document.addEventListener('click', function(e){
   var a = e.target.closest('a[href^="#"]');
-  if(!a) retu
+  if(!a) return;
+  var href = a.getAttribute('href');
+  if(!href || href === '#') return;
+  var el = document.querySelector(href);
+  if(!el) return;
+  e.preventDefault();
+  var top = el.getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({top: top, behavior: 'smooth'});
+});
+
+/* ─── REVEAL ON SCROLL — adds .vis to .rv elements ─── */
+(function(){
+  var nodes = document.querySelectorAll('.rv');
+  if(!nodes.length) return;
+  if(!('IntersectionObserver' in window)){
+    nodes.forEach(function(n){ n.classList.add('vis'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.classList.add('vis');
+        io.unobserve(en.target);
+      }
+    });
+  }, {rootMargin: '0px 0px -8% 0px', threshold: 0.04});
+  nodes.forEach(function(n){ io.observe(n); });
+  setTimeout(function(){
+    document.querySelectorAll('.rv:not(.vis)').forEach(function(n){ n.classList.add('vis'); });
+  }, 2000);
+})();
+
+})();
+</script>
+</body>
+</html>
