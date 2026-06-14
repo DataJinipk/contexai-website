@@ -17,7 +17,7 @@
 <meta property="og:title" content="ContexAi Group — Intelligence in Context">
 <meta property="og:description" content="A curated marketplace for senior consultants and Agentic AI builders — vetted human expertise and intelligent products for clients across Pakistan and emerging markets.">
 <meta property="og:url" content="https://contexai.org/">
-<meta property="og:image" content="https://contexai.org/images/launch/launch-card.png">
+<meta property="og:image" content="https://contexai.org/images/linkedin/launch-hero.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="ContexAi Group — Intelligence in Context">
@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ContexAi Group — Intelligence in Context">
 <meta name="twitter:description" content="Senior consulting expertise and Agentic AI products for clients across Pakistan and emerging markets.">
-<meta name="twitter:image" content="https://contexai.org/images/launch/launch-card.png">
+<meta name="twitter:image" content="https://contexai.org/images/linkedin/launch-hero.png">
 
 <!-- ─── Structured data (Organization + Founder) ─── -->
 <script type="application/ld+json">
@@ -36,7 +36,7 @@
   "name": "ContexAi Group",
   "url": "https://contexai.org/",
   "logo": "https://contexai.org/images/launch/launch-square.png",
-  "image": "https://contexai.org/images/launch/launch-card.png",
+  "image": "https://contexai.org/images/linkedin/launch-hero.png",
   "description": "Boutique financial consulting and strategic advisory, and a curated marketplace for senior consultants and Agentic AI builders, serving Pakistan and emerging markets.",
   "foundingDate": "2001",
   "founder": {
@@ -200,12 +200,25 @@ img{display:block;max-width:100%}
 .method{background:var(--ink);padding:72px 32px}
 .method__in{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .method .sec__lbl{color:var(--blue-l)}
+/* vibrant, per-section accent labels */
+#services .sec__lbl{color:#C84F1A}
+#agentic .sec__lbl{color:#7B1FA2}
+#team .sec__lbl{color:#00838F}
+#insights .sec__lbl{color:#AD1457}
+#join .sec__lbl{color:#2E7D32}
 .method .sec__t{color:#fff}
 .method .sec__d{color:rgba(255,255,255,.45)}
 .method__tracks{display:grid;gap:10px;margin-top:4px}
-.method__track{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.65);font-size:.94rem;transition:all .2s}
-.method__track:hover{background:rgba(20,184,166,.12);border-color:rgba(20,184,166,.3);color:#fff}
-.method__track::before{content:'✓';width:18px;height:18px;border-radius:50%;background:rgba(20,184,166,.2);color:var(--blue-l);font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.method__track{display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:var(--radius-sm);background:rgba(255,255,255,.06);background:color-mix(in srgb, var(--tc,#00BCD4) 42%, transparent);border:1px solid color-mix(in srgb, var(--tc,#00BCD4) 70%, transparent);border-left:5px solid var(--tc,#00BCD4);color:#fff;font-size:.98rem;font-weight:600;transition:all .25s;box-shadow:0 1px 4px rgba(0,0,0,.10), inset 0 1px 0 rgba(255,255,255,.05)}
+.method__track:hover{background:color-mix(in srgb, var(--tc,#00BCD4) 60%, transparent);transform:translateX(6px);box-shadow:0 4px 14px color-mix(in srgb, var(--tc,#00BCD4) 28%, transparent)}
+.method__track::before{content:'✓';width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.96);color:var(--tc,#00BCD4);border:2px solid var(--tc,#00BCD4);font-size:.82rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.method__track:nth-child(1){--tc:#00BCD4}
+.method__track:nth-child(2){--tc:#AEEA00}
+.method__track:nth-child(3){--tc:#FDD835}
+.method__track:nth-child(4){--tc:#F26122}
+.method__track:nth-child(5){--tc:#D81B60}
+.method__track:nth-child(6){--tc:#9C27B0}
+.method__track:nth-child(7){--tc:#00C853}
 .method__img{border-radius:var(--radius);overflow:hidden;height:380px}
 .method__img img{width:100%;height:100%;object-fit:cover}
 
