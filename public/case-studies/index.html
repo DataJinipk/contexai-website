@@ -66,8 +66,8 @@ main{max-width:1280px;margin:0 auto;padding:48px 32px 72px}
 .cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 @media(max-width:1100px){.cs-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.cs-grid{grid-template-columns:1fr}}
-.cs{background:#fff;border-radius:16px;padding:26px;border:1px solid rgba(0,0,0,.06);border-top:5px solid var(--c);transition:all .25s;display:flex;flex-direction:column;position:relative;min-height:340px;text-decoration:none;color:inherit}
-.cs:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.09)}
+.cs{background:linear-gradient(160deg, color-mix(in srgb, var(--c) 18%, #fff) 0%, #FFFDE7 100%);border-radius:16px;padding:26px;border:1px solid color-mix(in srgb, var(--c) 28%, transparent);border-top:5px solid var(--c);transition:all .25s;display:flex;flex-direction:column;position:relative;min-height:340px;text-decoration:none;color:inherit}
+.cs:hover{transform:translateY(-3px);box-shadow:0 12px 32px color-mix(in srgb, var(--c) 22%, transparent);background:linear-gradient(160deg, color-mix(in srgb, var(--c) 26%, #fff) 0%, #FFFDE7 100%);border-color:var(--c)}
 .cs.hidden{display:none}
 .cs.banking{--c:#00838F;--c-soft:#E0F7FA}
 .cs.real-estate{--c:#1B5E20;--c-soft:#DCFCE7}

@@ -247,24 +247,30 @@ img{display:block;max-width:100%}
    - soft tinted background on hover
    ============================================================ */
 
-/* === Agentic AI cards === */
-.agentic__card        { border-left:5px solid #D81B60 !important; }                                        /* Magenta */
+/* === Agentic AI cards (gradient bg + vibrant edge — matches Showcase Your Agent style) === */
+.agentic__card        { border-left:5px solid #D81B60 !important; transition:all .25s;
+  background:linear-gradient(135deg, color-mix(in srgb, #D81B60 22%, #fff) 0%, #FFFDE7 100%) !important; }                                        /* Magenta + lemon */
 .agentic__card .agentic__cat { color:#AD1457 !important; }
-.agentic__card.d1     { border-left-color:#F26122 !important; }                                            /* Flame */
+.agentic__card.d1     { border-left-color:#F26122 !important;
+  background:linear-gradient(135deg, color-mix(in srgb, #F26122 22%, #fff) 0%, #FFFDE7 100%) !important; }                                            /* Flame + lemon */
 .agentic__card.d1 .agentic__cat { color:#C84F1A !important; }
-.agentic__card.d2     { border-left-color:#0040D9 !important; }                                            /* ContexAi Blue */
+.agentic__card.d2     { border-left-color:#0040D9 !important;
+  background:linear-gradient(135deg, color-mix(in srgb, #0040D9 20%, #fff) 0%, #F4FFD1 100%) !important; }                                            /* ContexAi Blue + lime */
 .agentic__card.d2 .agentic__cat { color:#0040D9 !important; }
 .agentic__card--apply { border-left-color:#AEEA00 !important;
   background:linear-gradient(135deg,#F4FFD1,#FFFDE7) !important; }                                         /* Lime + Lemon */
 .agentic__card--apply .agentic__cat { color:#33691E !important; }
 .agentic__card:hover  { transform:translateY(-4px); }
 
-/* === Insight cards === */
-.insight              { border-left:5px solid #F26122 !important; transition:all .2s; }                    /* Energy → Flame */
+/* === Insight cards (gradient bg + vibrant edge) === */
+.insight              { border-left:5px solid #F26122 !important; transition:all .25s;
+  background:linear-gradient(135deg, color-mix(in srgb, #F26122 22%, #fff) 0%, #FFFDE7 100%) !important; }                    /* Energy → Flame+lemon */
 .insight .insight__tag{ color:#C84F1A !important; font-weight:700; }
-.insight.d1           { border-left-color:#00C853 !important; }                                            /* PPP → Parrot */
+.insight.d1           { border-left-color:#00C853 !important;
+  background:linear-gradient(135deg, color-mix(in srgb, #00C853 22%, #fff) 0%, #F4FFD1 100%) !important; }                                            /* PPP → Parrot+lime */
 .insight.d1 .insight__tag { color:#1B5E20 !important; }
-.insight.d2           { border-left-color:#0040D9 !important; }                                            /* Agentic AI → Blue */
+.insight.d2           { border-left-color:#0040D9 !important;
+  background:linear-gradient(135deg, color-mix(in srgb, #0040D9 20%, #fff) 0%, #FFFDE7 100%) !important; }                                            /* Agentic AI → Blue+lemon */
 .insight.d2 .insight__tag { color:#0040D9 !important; }
 .insight:hover        { transform:translateY(-3px); box-shadow:0 6px 20px rgba(0,0,0,.10); }
 
@@ -832,7 +838,7 @@ img{display:block;max-width:100%}
     .cw__d{font-size:1rem;color:var(--ink4);max-width:680px;margin:0 auto 38px;text-align:center;line-height:1.6}
     .cw__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
     @media(max-width:900px){.cw__grid{grid-template-columns:repeat(2,1fr)}}
-    .cw__tile{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:22px;text-align:center;border-top:4px solid var(--c);transition:all .2s}
+    .cw__tile{background:linear-gradient(160deg, color-mix(in srgb, var(--c) 18%, #fff) 0%, #FFFDE7 100%);border:1px solid color-mix(in srgb, var(--c) 28%, transparent);border-radius:14px;padding:22px;text-align:center;border-top:5px solid var(--c);transition:all .25s}
     .cw__tile:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.06)}
     .cw__banking{--c:#00838F}
     .cw__realest{--c:#1B5E20}
@@ -1168,41 +1174,4 @@ window.addEventListener('scroll', function(){
 /* ─── SMOOTH SCROLL for # links ─── */
 document.addEventListener('click', function(e){
   var a = e.target.closest('a[href^="#"]');
-  if(!a) return;
-  var target = document.querySelector(a.getAttribute('href'));
-  if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
-});
-
-/* ─── REVEAL ANIMATION ─── */
-if('IntersectionObserver' in window){
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){ entry.target.classList.add('vis'); io.unobserve(entry.target); }
-    });
-  },{threshold:.07, rootMargin:'0px 0px -32px 0px'});
-  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
-} else {
-  document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('vis'); });
-}
-
-/* ─── TABS ─── */
-document.querySelectorAll('.tab-btn').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var tabId = btn.dataset.tab;
-    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
-    btn.classList.add('active');
-    document.querySelectorAll('.tab-content').forEach(function(c){ c.classList.remove('active'); });
-    var pane = document.getElementById(tabId);
-    if(pane){ pane.classList.add('active'); }
-  });
-});
-
-})();
-</script>
-
-<!-- ─── Cloudflare Web Analytics ───
-     Privacy-first, no cookie banner needed. To activate:
-     1. Cloudflare dash → Analytics & Logs → Web Analytics → Add a site (contexai.org)
-     2. Copy the token it gives you and replace REPLACE_WITH_TOKEN below
-     3. Uncomment the script tag.
-<script defer src="https://static.cloudflareinsights
+  if(!a) retu
