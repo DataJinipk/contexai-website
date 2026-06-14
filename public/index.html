@@ -293,9 +293,22 @@ img{display:block;max-width:100%}
 .join__card--ai .join__icon { background:#D81B60 !important; color:#fff !important; }
 .tab-content{display:none}.tab-content.active{display:block}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.svc-card{border-radius:var(--radius);background:var(--white);padding:26px;border:1px solid rgba(0,0,0,.05);transition:all .25s}
-.svc-card:hover{box-shadow:var(--sh2);transform:translateY(-3px)}
-.svc-card__ico{width:38px;height:38px;border-radius:var(--radius-sm);background:var(--blue-p);color:var(--blue-txt);display:flex;align-items:center;justify-content:center;font-size:1.02rem;margin-bottom:14px}
+.svc-card{border-radius:var(--radius);background:var(--white);padding:26px;border:1px solid rgba(0,0,0,.05);transition:all .25s;position:relative;overflow:hidden;border-top:4px solid var(--sc,#00BCD4)}
+.svc-card::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:color-mix(in srgb, var(--sc,#00BCD4) 14%, transparent);pointer-events:none;z-index:0}
+.svc-card > *{position:relative;z-index:1}
+.svc-card:hover{box-shadow:0 10px 30px color-mix(in srgb, var(--sc,#00BCD4) 26%, transparent);transform:translateY(-4px);border-color:var(--sc,#00BCD4)}
+.svc-card:hover::before{background:color-mix(in srgb, var(--sc,#00BCD4) 22%, transparent)}
+.svc-card__ico{width:42px;height:42px;border-radius:var(--radius-sm);background:color-mix(in srgb, var(--sc,#00BCD4) 28%, #fff);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.12rem;margin-bottom:14px;box-shadow:0 2px 6px color-mix(in srgb, var(--sc,#00BCD4) 32%, transparent)}
+/* Palette rotation per card position */
+.svc-card:nth-child(1){--sc:#00BCD4}   /* Teal */
+.svc-card:nth-child(2){--sc:#AEEA00}   /* Lemon Green */
+.svc-card:nth-child(3){--sc:#FDD835}   /* Lemon Yellow */
+.svc-card:nth-child(4){--sc:#F26122}   /* Cnergyico Flame */
+.svc-card:nth-child(5){--sc:#D81B60}   /* Magenta Ultra */
+.svc-card:nth-child(6){--sc:#9C27B0}   /* Royal Purple */
+.svc-card:nth-child(7){--sc:#00C853}   /* Parrot Green */
+.svc-card:nth-child(8){--sc:#0040D9}   /* ContexAi Blue */
+.svc-card:nth-child(9){--sc:#FFC400}   /* Flame Yellow */
 .svc-card__name{font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:6px}
 .svc-card__desc{font-size:.88rem;color:var(--ink4);line-height:1.6}
 
@@ -566,9 +579,9 @@ img{display:block;max-width:100%}
     .ps__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
     @media(max-width:1100px){.ps__grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:600px){.ps__grid{grid-template-columns:1fr}}
-    .ps__card{background:#fff;border-radius:14px;padding:24px;border:1px solid rgba(0,0,0,.06);text-decoration:none;color:inherit;transition:all .25s;position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:220px}
-    .ps__card::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--c)}
-    .ps__card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.10)}
+    .ps__card{background:linear-gradient(160deg, color-mix(in srgb, var(--c) 18%, #fff) 0%, #fff 70%);border-radius:14px;padding:24px;border:1px solid color-mix(in srgb, var(--c) 28%, transparent);text-decoration:none;color:inherit;transition:all .25s;position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:220px}
+    .ps__card::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--c)}
+    .ps__card:hover{transform:translateY(-4px);box-shadow:0 12px 32px color-mix(in srgb, var(--c) 24%, transparent);background:linear-gradient(160deg, color-mix(in srgb, var(--c) 26%, #fff) 0%, #fff 70%);border-color:var(--c)}
     .ps__card .ptag{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--c-deep);background:var(--c-soft);padding:4px 10px;border-radius:12px;align-self:flex-start;margin-bottom:14px}
     .ps__card h3{font-family:'Instrument Serif',serif;font-size:1.35rem;color:var(--c-deep);line-height:1.15;margin-bottom:10px}
     .ps__card p{font-size:.92rem;color:var(--ink4);line-height:1.55;margin-bottom:14px;flex:1}
