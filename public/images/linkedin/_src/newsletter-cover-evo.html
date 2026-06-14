@@ -3,23 +3,23 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1280px;height:720px;overflow:hidden}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#0A2540;color:#fff;position:relative}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0A3E40;color:#fff;position:relative}
 .bar{display:flex;height:12px;width:100%;position:absolute;left:0;z-index:5}
 .bar.top{top:0}.bar.bot{bottom:0}
 .bar span{flex:1}
-.bar span:nth-child(1){background:#6E5C9C}.bar span:nth-child(2){background:#4D95D1}
-.bar span:nth-child(3){background:#5D9ED5}.bar span:nth-child(4){background:#E58940}
-.bar span:nth-child(5){background:#DF6F18}
-.glow{position:absolute;width:880px;height:880px;border-radius:50%;background:radial-gradient(circle,rgba(110,92,156,.20),rgba(39,119,193,.14),transparent 64%);top:50%;left:50%;transform:translate(-50%,-56%)}
+.bar span:nth-child(1){background:#00BCD4}.bar span:nth-child(2){background:#14B8A6}
+.bar span:nth-child(3){background:#AEEA00}.bar span:nth-child(4){background:#FDD835}
+.bar span:nth-child(5){background:#F26122}
+.glow{position:absolute;width:880px;height:880px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.20),rgba(20,184,166,.14),transparent 64%);top:50%;left:50%;transform:translate(-50%,-56%)}
 .gridbg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:52px 52px}
 .wrap{position:absolute;inset:0;padding:74px 80px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center}
 .top-row{display:flex;align-items:center;gap:16px}
 .logo{font-size:30px;font-weight:800;letter-spacing:-.02em}
-.logo span{color:#00B1FF}
+.logo span{color:#2DD4BF}
 .tagchip{font-size:14px;font-weight:700;letter-spacing:.24em;color:#B7C4DA;border:1px solid rgba(255,255,255,.18);padding:7px 15px;border-radius:100px}
 .mid{display:flex;flex-direction:column;align-items:center}
 .h{font-family:Georgia,'Times New Roman',serif;font-size:84px;line-height:1.02;letter-spacing:-.02em;margin-bottom:24px}
-.h em{font-style:italic;color:#5D9ED5}
+.h em{font-style:italic;color:#AEEA00}
 .sub{font-size:25px;line-height:1.5;color:#C4D0E6;max-width:840px;font-weight:300}
 .sub b{color:#fff;font-weight:600}
 .botline{font-size:18px;color:#8EA0BE;font-weight:600;letter-spacing:.04em}
@@ -28,14 +28,14 @@ svg.net{position:absolute;inset:0;opacity:.55}
 <body>
 <div class="glow"></div><div class="gridbg"></div>
 <svg class="net" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="rgba(93,158,213,.30)" stroke-width="1.5">
+  <g stroke="rgba(174,234,0,.30)" stroke-width="1.5">
     <line x1="170" y1="200" x2="320" y2="320"/><line x1="320" y1="320" x2="210" y2="480"/>
     <line x1="320" y1="320" x2="470" y2="430"/><line x1="1090" y1="210" x2="970" y2="340"/>
     <line x1="970" y1="340" x2="1110" y2="480"/><line x1="970" y1="340" x2="820" y2="440"/>
   </g>
-  <g fill="#5D9ED5"><circle cx="170" cy="200" r="6"/><circle cx="210" cy="480" r="6"/><circle cx="1090" cy="210" r="6"/><circle cx="1110" cy="480" r="6"/></g>
-  <g fill="#6E5C9C"><circle cx="320" cy="320" r="8"/></g>
-  <g fill="#E58940"><circle cx="970" cy="340" r="8"/><circle cx="470" cy="430" r="5"/><circle cx="820" cy="440" r="5"/></g>
+  <g fill="#AEEA00"><circle cx="170" cy="200" r="6"/><circle cx="210" cy="480" r="6"/><circle cx="1090" cy="210" r="6"/><circle cx="1110" cy="480" r="6"/></g>
+  <g fill="#00BCD4"><circle cx="320" cy="320" r="8"/></g>
+  <g fill="#FDD835"><circle cx="970" cy="340" r="8"/><circle cx="470" cy="430" r="5"/><circle cx="820" cy="440" r="5"/></g>
 </svg>
 <div class="bar top"><span></span><span></span><span></span><span></span><span></span></div>
 <div class="wrap">
