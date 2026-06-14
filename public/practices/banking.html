@@ -52,8 +52,8 @@ section{margin-bottom:72px}
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:900px){.cap-grid{grid-template-columns:repeat(2,1fr)} }
 @media(max-width:600px){.cap-grid{grid-template-columns:1fr} }
-.cap{background:#fff;border-radius:14px;padding:22px;border:1px solid rgba(0,0,0,.06);border-left:5px solid var(--accent);transition:all .2s}
-.cap:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.07)}
+.cap{background:linear-gradient(160deg, color-mix(in srgb, var(--accent) 18%, #fff) 0%, #FFFDE7 100%);border-radius:14px;padding:22px;border:1px solid color-mix(in srgb, var(--accent) 22%, transparent);border-left:5px solid var(--accent);transition:all .25s}
+.cap:hover{transform:translateY(-3px);box-shadow:0 10px 28px color-mix(in srgb, var(--accent) 20%, transparent);background:linear-gradient(160deg, color-mix(in srgb, var(--accent) 28%, #fff) 0%, #FFFDE7 100%)}
 .cap h3{font-size:1.05rem;color:var(--accent-deep);margin-bottom:6px;font-weight:600}
 .cap p{font-size:.94rem;color:var(--ink3);line-height:1.55}
 
@@ -70,7 +70,7 @@ section{margin-bottom:72px}
 
 .team-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:900px){.team-row{grid-template-columns:1fr} }
-.team-tile{background:#fff;border-radius:14px;padding:24px;border:1px solid rgba(0,0,0,.06);border-top:4px solid var(--accent)}
+.team-tile{background:linear-gradient(160deg, color-mix(in srgb, var(--accent) 16%, #fff) 0%, #FFFDE7 100%);border-radius:14px;padding:24px;border:1px solid color-mix(in srgb, var(--accent) 22%, transparent);border-top:4px solid var(--accent);transition:all .2s}
 .team-tile .role{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700;margin-bottom:8px}
 .team-tile h4{font-size:1.1rem;color:var(--accent-deep);margin-bottom:8px}
 .team-tile p{font-size:.92rem;color:var(--ink3);line-height:1.55}
@@ -181,7 +181,7 @@ footer a{color:rgba(255,255,255,.85)}
     <div>
       <div class="label">Flagship engagement</div>
       <h3>Pakistani Microfinance Bank (Confidential)</h3>
-      <p>SBP-regulated Microfinance Bank serving low-income financial inclusion across Sindh. ContexAi delivers end-to-end finance, ops, tech, and growth advisory through a dedicated multi-agent team plus partner-led oversight.</p>
+      <p>SBP-regulated Microfinance Bank serving low-income financial inclusion in Pakistan. ContexAi delivers end-to-end finance, ops, tech, and growth advisory through a dedicated multi-agent team plus partner-led oversight.</p>
       <span class="badge">LIVE · Anchor Client</span>
     </div>
     <div class="meta">
