@@ -34,8 +34,13 @@ main{max-width:1080px;margin:0 auto;padding:48px 32px 72px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.grid{grid-template-columns:1fr}}
-.card{display:flex;flex-direction:column;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:26px;transition:all .2s;background:#fff}
-.card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08);transform:translateY(-3px);border-color:rgba(20,184,166,.2)}
+.card{--c:#0E7E76;display:flex;flex-direction:column;border:1px solid color-mix(in srgb, var(--c) 22%, transparent);border-radius:16px;padding:26px;transition:all .25s;background:linear-gradient(160deg, color-mix(in srgb, var(--c) 18%, #fff) 0%, #FFFDE7 100%);border-left:4px solid var(--c)}
+.card:nth-child(3n+1){--c:#F26122}
+.card:nth-child(3n+2){--c:#00838F}
+.card:nth-child(3n+3){--c:#D81B60}
+.card .card__tag,.card .card__more{color:color-mix(in srgb, var(--c) 80%, #0A3E40)}
+.card .card__t{color:#0A3E40}
+.card:hover{box-shadow:0 12px 30px color-mix(in srgb, var(--c) 22%, transparent);transform:translateY(-4px);background:linear-gradient(160deg, color-mix(in srgb, var(--c) 28%, #fff) 0%, #FFFDE7 100%)}
 .card__tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#0C6E66;margin-bottom:12px}
 .card__t{font-family:'Instrument Serif',serif;font-size:1.3rem;color:var(--ink-deep);line-height:1.2;margin-bottom:10px}
 .card__d{font-size:.92rem;color:var(--ink4);line-height:1.6;flex:1;margin-bottom:16px}
