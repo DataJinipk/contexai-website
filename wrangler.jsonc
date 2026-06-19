@@ -10,7 +10,7 @@
 		"enabled": true
 	},
 	"vars": {
-		"CF_ANALYTICS_TOKEN": "YOUR_TOKEN_HERE"
+		"CF_ANALYTICS_TOKEN": ""
 	},
 	"assets": {
 		"directory": "public",
