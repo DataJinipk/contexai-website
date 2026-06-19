@@ -95,7 +95,22 @@ export default {
       return handleAdminRoute(request, env, url);
     }
 
-    return env.ASSETS.fetch(request);
+    // Static asset response with optional Cloudflare Web Analytics injection
+    const assetResponse = await env.ASSETS.fetch(request);
+    const contentType = assetResponse.headers.get('content-type') || '';
+    if (contentType.includes('text/html') && env.CF_ANALYTICS_TOKEN) {
+      return new HTMLRewriter()
+        .on('head', {
+          element(el) {
+            el.append(
+              `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"${env.CF_ANALYTICS_TOKEN}"}'></script>`,
+              { html: true }
+            );
+          },
+        })
+        .transform(assetResponse);
+    }
+    return assetResponse;
   },
 };
 
