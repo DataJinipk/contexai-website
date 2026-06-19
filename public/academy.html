@@ -120,22 +120,44 @@ footer{background:#082F31;border-top:1px solid var(--line);padding:54px 0 28px;c
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.lvl-card{animation:none}}
+
+/* === Site-wide top nav (unified teal style) === */
+.topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
+.topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
+.topnav__logo .ai{color:#14B8A6}
+.topnav__logo .badge{font-size:.62rem;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-left:4px;color:#fff}
+.topnav__links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.topnav__links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .15s;white-space:nowrap}
+.topnav__links a:hover{color:#fff}
+.topnav__links a.current{color:#fff;border-bottom:2px solid #FFC400;padding-bottom:2px}
+.topnav__links a.cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
+.topnav__links a.cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.topnav__burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+@media(max-width:980px){
+  .topnav__links{display:none;width:100%}
+  .topnav__burger{display:block}
+  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E7E76;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .topnav__in{position:relative;flex-wrap:wrap}
+}
+
 </style>
 </head>
 <body>
 
-<nav class="nav" id="main-nav">
-  <div class="nav__in">
-    <a href="/" class="logo">Contex<span>Ai</span><span class="logo-badge">Academy</span></a>
-    <div class="navlinks">
+<nav class="topnav">
+  <div class="topnav__in">
+    <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
+    <div class="topnav__links" id="topnav-links">
       <a href="/#about">About</a>
       <a href="/#services">Capabilities</a>
       <a href="/practices">Industries</a>
       <a href="/insights">Insights</a>
       <a href="/team">Team</a>
-      <a href="/#contact" class="btn btn-primary">Contact Us</a>
+      <a href="/contact" class="cta">Contact Us</a>
     </div>
-    <button class="mob-btn" aria-label="Menu" onclick="location.href='/'"><span></span></button>
+    <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
