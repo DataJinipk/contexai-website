@@ -536,17 +536,37 @@ img{display:block;max-width:100%}
   <div class="topnav__in">
     <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
     <div class="topnav__links" id="topnav-links">
-      <a href="/#about">About</a>
-      <a href="/practices">Practices</a>
-      <a href="/team">Team</a>
-      <a href="/case-studies">Case Studies</a>
-      <a href="/#services">Services</a>
-      <a href="/#agentic">Agentic AI</a>
-      <a href="/insights">Insights</a>
-      <a href="/economy">Economy &amp; Fiscal</a>
+
+      <div class="topnav__dd">
+        <a href="/" class="topnav__dd-trigger">Home <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/#about">About</a>
+          <a href="/team">Team</a>
+        </div>
+      </div>
+
+      <div class="topnav__dd">
+        <a href="/practices" class="topnav__dd-trigger">Practice <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/case-studies">Case Studies</a>
+          <a href="/#services">Services</a>
+          <a href="/#agentic">Agentic AI</a>
+        </div>
+      </div>
+
+      <div class="topnav__dd">
+        <a href="/insights" class="topnav__dd-trigger">Market Intelligence <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/insights">Insights</a>
+          <a href="/economy">Economy &amp; Fiscal</a>
+          <a href="/research">Research</a>
+        </div>
+      </div>
+
       <a href="/academy">Academy</a>
       <a href="/positions">Positions</a>
       <a href="/contact" class="cta">Contact Us</a>
+
     </div>
     <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>

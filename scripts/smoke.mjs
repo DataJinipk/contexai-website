@@ -30,6 +30,8 @@ const ROUTES = [
   '/post-position',
   '/privacy',
   '/terms',
+  '/academy',
+  '/research',
 ];
 
 const NAV_MARKER = 'topnav__in';      // every page should have the site-wide top nav
