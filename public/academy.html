@@ -76,8 +76,14 @@ a{color:#0C6E66;text-decoration:none}
 
 /* What's coming preview */
 .preview{margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:14px;max-width:680px;margin-left:auto;margin-right:auto}
-.preview__pill{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:18px 16px;font-size:.86rem;color:var(--ink-deep);text-align:center;font-weight:500}
-.preview__pill::before{content:'';display:block;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg, var(--aqua), var(--cyan));margin:0 auto 10px}
+.preview__pill{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:20px 16px;font-size:.88rem;color:var(--ink-deep);text-align:center;font-weight:500;border-top:4px solid var(--c, var(--aqua));transition:transform .2s,box-shadow .2s}
+.preview__pill:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.preview__pill[data-theme="prompting"]{--c:#0040D9}
+.preview__pill[data-theme="llms"]{--c:#00838F}
+.preview__pill[data-theme="mcp"]{--c:#D81B60}
+.preview__pill[data-theme="agentic"]{--c:#F26122}
+.preview__pill[data-theme="product"]{--c:#00C853}
+.preview__pill::before{content:'';display:block;width:34px;height:34px;border-radius:50%;background:var(--c, linear-gradient(135deg, var(--aqua), var(--cyan)));margin:0 auto 12px;opacity:.88}
 
 /* Back link */
 .back{display:inline-block;margin-top:48px;font-size:.92rem;color:var(--ink4);font-weight:500}
@@ -111,17 +117,37 @@ a{color:#0C6E66;text-decoration:none}
   <div class="topnav__in">
     <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
     <div class="topnav__links" id="topnav-links">
-      <a href="/#about">About</a>
-      <a href="/practices">Practices</a>
-      <a href="/team">Team</a>
-      <a href="/case-studies">Case Studies</a>
-      <a href="/#services">Services</a>
-      <a href="/#agentic">Agentic AI</a>
-      <a href="/insights">Insights</a>
-      <a href="/economy">Economy &amp; Fiscal</a>
-      <a href="/academy" class="current">Academy</a>
+
+      <div class="topnav__dd">
+        <a href="/" class="topnav__dd-trigger">Home <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/#about">About</a>
+          <a href="/team">Team</a>
+        </div>
+      </div>
+
+      <div class="topnav__dd">
+        <a href="/practices" class="topnav__dd-trigger">Practice <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/case-studies">Case Studies</a>
+          <a href="/#services">Services</a>
+          <a href="/#agentic">Agentic AI</a>
+        </div>
+      </div>
+
+      <div class="topnav__dd">
+        <a href="/insights" class="topnav__dd-trigger">Market Intelligence <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/insights">Insights</a>
+          <a href="/economy">Economy &amp; Fiscal</a>
+          <a href="/research">Research</a>
+        </div>
+      </div>
+
+      <a href="/academy">Academy</a>
       <a href="/positions">Positions</a>
       <a href="/contact" class="cta">Contact Us</a>
+
     </div>
     <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
@@ -156,11 +182,11 @@ a{color:#0C6E66;text-decoration:none}
       <p class="note">No spam. We'll only email you when enrolment opens.</p>
 
       <div class="preview" aria-label="What's coming">
-        <div class="preview__pill">Advanced prompting</div>
-        <div class="preview__pill">Local LLMs</div>
-        <div class="preview__pill">MCP &amp; voice agents</div>
-        <div class="preview__pill">Agentic workflows</div>
-        <div class="preview__pill">Shipping AI products</div>
+        <div class="preview__pill" data-theme="prompting">Advanced prompting</div>
+        <div class="preview__pill" data-theme="llms">Local LLMs</div>
+        <div class="preview__pill" data-theme="mcp">MCP &amp; voice agents</div>
+        <div class="preview__pill" data-theme="agentic">Agentic workflows</div>
+        <div class="preview__pill" data-theme="product">Shipping AI products</div>
       </div>
 
       <a href="/" class="back">Back to ContexAi Group</a>

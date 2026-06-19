@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ContexAi Research — independent, practitioner-grade research on Pakistan & emerging-market finance. Coming soon. Subscribe to be notified.">
+<meta name="theme-color" content="#9C27B0">
+<title>ContexAi Research — Coming Soon</title>
+<link rel="canonical" href="https://contexai.org/research">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ContexAi Group">
+<meta property="og:title" content="ContexAi Research — Coming Soon">
+<meta property="og:description" content="Independent practitioner research on Pakistan & emerging-market finance. Subscribe to be notified when papers go live.">
+<meta property="og:url" content="https://contexai.org/research">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  /* ContexAi v2 palette tokens (full 11-color brand palette) */
+  --ink:#0E7E76;--ink-deep:#0A3E40;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --cream:#F6F5F1;--aqua:#14B8A6;--cyan:#5EEAD4;
+  --navy:#0D1B3F;--blue:#0040D9;--teal-dark:#00838F;--teal-bright:#00BCD4;
+  --lemon-green:#AEEA00;--lemon-yellow:#FDD835;--flame-yellow:#FFC400;
+  --cnergyico:#F26122;--magenta:#D81B60;
+  --purple:#9C27B0;--parrot:#00C853;
+  /* Research = royal purple accent */
+  --accent:var(--purple);--accent-soft:#F3E5F5;--accent-deep:#6A1B9A;
+  --max:1180px;--serif:"Instrument Serif",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink3);line-height:1.65;-webkit-font-smoothing:antialiased;background:#fff}
+a{color:#0C6E66;text-decoration:none}
+
+/* === Site-wide top nav (unified teal style — Worker rewrites this on every request) === */
+.topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
+.topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
+.topnav__logo .ai{color:#14B8A6}
+.topnav__logo .badge{font-size:.62rem;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-left:4px;color:#fff}
+.topnav__links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.topnav__links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .15s;white-space:nowrap}
+.topnav__links a:hover{color:#fff}
+.topnav__links a.current{color:#fff;border-bottom:2px solid #FFC400;padding-bottom:2px}
+.topnav__links a.cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
+.topnav__links a.cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.topnav__burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+@media(max-width:980px){
+  .topnav__links{display:none;width:100%}
+  .topnav__burger{display:block}
+  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E7E76;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .topnav__in{position:relative;flex-wrap:wrap}
+}
+
+/* Hero — Coming Soon with royal purple accent */
+.coming{padding:96px 32px 120px;background:linear-gradient(180deg, var(--accent-soft) 0%, #fff 100%);min-height:calc(100vh - 120px);display:flex;align-items:center;justify-content:center}
+.coming__in{max-width:780px;margin:0 auto;text-align:center}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);background:rgba(156,39,176,.10);padding:8px 18px;border-radius:30px;margin-bottom:28px}
+.coming h1{font-family:var(--serif);font-size:clamp(2.5rem,5vw,3.8rem);line-height:1.05;color:var(--ink-deep);margin-bottom:20px;letter-spacing:-.01em}
+.coming h1 .accent{color:var(--accent)}
+.coming p.lead{font-size:1.12rem;color:var(--ink4);max-width:640px;margin:0 auto 36px;font-weight:300}
+.coming p.note{font-size:.95rem;color:var(--ink5);max-width:540px;margin:30px auto 0}
+
+/* Workstream progress (4 stages) */
+.progress{display:flex;align-items:center;gap:14px;justify-content:center;margin:36px auto;flex-wrap:wrap}
+.progress__step{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--ink4)}
+.progress__dot{width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(156,39,176,.18)}
+.progress__dot--pending{background:var(--ink5);box-shadow:none}
+.progress__line{height:2px;width:38px;background:linear-gradient(90deg, var(--accent) 0%, var(--ink5) 100%)}
+
+/* Notify form — uses /api/newsletter with source=research-waitlist */
+.notify{margin-top:18px;display:inline-flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;background:#fff;padding:8px;border-radius:50px;box-shadow:0 6px 22px rgba(156,39,176,.15);border:1px solid rgba(156,39,176,.18)}
+.notify input{font-family:inherit;font-size:.95rem;padding:12px 18px;border:none;background:transparent;outline:none;min-width:240px;color:var(--ink-deep)}
+.notify input::placeholder{color:var(--ink5)}
+.notify button{font-family:inherit;font-size:.92rem;font-weight:700;padding:12px 26px;background:var(--accent);color:#fff;border:none;border-radius:50px;cursor:pointer;transition:background .15s}
+.notify button:hover{background:var(--accent-deep)}
+
+/* Research themes preview — 4 themed pills using full brand palette */
+.preview{margin-top:60px;display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:14px;max-width:760px;margin-left:auto;margin-right:auto}
+.preview__pill{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:20px 16px;font-size:.88rem;color:var(--ink-deep);text-align:center;font-weight:500;border-top:4px solid var(--c, var(--accent));transition:transform .2s,box-shadow .2s}
+.preview__pill:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.preview__pill[data-theme="banking"]{--c:var(--teal-dark)}
+.preview__pill[data-theme="energy"]{--c:var(--cnergyico)}
+.preview__pill[data-theme="real-estate"]{--c:var(--parrot)}
+.preview__pill[data-theme="macro"]{--c:var(--blue)}
+.preview__pill[data-theme="agentic"]{--c:var(--magenta)}
+.preview__pill::before{content:'';display:block;width:34px;height:34px;border-radius:50%;background:var(--c, var(--accent));margin:0 auto 12px;opacity:.88}
+
+/* Back link */
+.back{display:inline-block;margin-top:48px;font-size:.92rem;color:var(--ink4);font-weight:500}
+.back:hover{color:var(--accent)}
+.back::before{content:'← '}
+
+/* Simple footer */
+.foot{background:var(--ink-deep);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:.88rem}
+.foot a{color:rgba(255,255,255,.85)}
+</style>
+</head>
+<body>
+
+<!-- ─── BRAND COLOR BAR ─── -->
+<div aria-hidden="true" title="ContexAi Brand Palette v2" style="display:flex;height:8px;width:100%;line-height:0;box-shadow:0 2px 6px rgba(0,0,0,.10);position:relative;z-index:101">
+  <span style="display:block;flex:1;background:#0D1B3F"></span>
+  <span style="display:block;flex:1;background:#0040D9"></span>
+  <span style="display:block;flex:1;background:#00838F"></span>
+  <span style="display:block;flex:1;background:#00BCD4"></span>
+  <span style="display:block;flex:1;background:#AEEA00"></span>
+  <span style="display:block;flex:1;background:#FDD835"></span>
+  <span style="display:block;flex:1;background:#FFC400"></span>
+  <span style="display:block;flex:1;background:#F26122"></span>
+  <span style="display:block;flex:1;background:#D81B60"></span>
+  <span style="display:block;flex:1;background:#9C27B0"></span>
+  <span style="display:block;flex:1;background:#00C853"></span>
+</div>
+
+<!-- ─── TOP NAV (Worker will rewrite this with canonical TOPNAV_HTML) ─── -->
+<nav class="topnav">
+  <div class="topnav__in">
+    <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
+    <div class="topnav__links" id="topnav-links">
+      <div class="topnav__dd">
+        <a href="/" class="topnav__dd-trigger">Home <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/#about">About</a>
+          <a href="/team">Team</a>
+        </div>
+      </div>
+      <div class="topnav__dd">
+        <a href="/practices" class="topnav__dd-trigger">Practice <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/case-studies">Case Studies</a>
+          <a href="/#services">Services</a>
+          <a href="/#agentic">Agentic AI</a>
+        </div>
+      </div>
+      <div class="topnav__dd">
+        <a href="/insights" class="topnav__dd-trigger">Market Intelligence <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/insights">Insights</a>
+          <a href="/economy">Economy &amp; Fiscal</a>
+          <a href="/research" class="current">Research</a>
+        </div>
+      </div>
+      <a href="/academy">Academy</a>
+      <a href="/positions">Positions</a>
+      <a href="/contact" class="cta">Contact Us</a>
+    </div>
+    <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ─── COMING SOON HERO ─── -->
+<main>
+  <section class="coming">
+    <div class="coming__in">
+      <span class="eyebrow">ContexAi Research</span>
+      <h1>Independent <span class="accent">practitioner research</span> &mdash; coming soon.</h1>
+      <p class="lead">
+        White papers, working notes, and sector deep-dives on Pakistan and emerging-market finance &mdash; written by practitioners, not desk analysts. The first publication is in active drafting.
+      </p>
+
+      <div class="progress" aria-label="Build progress">
+        <div class="progress__step"><span class="progress__dot"></span> Research agenda</div>
+        <div class="progress__line"></div>
+        <div class="progress__step"><span class="progress__dot"></span> First three papers drafting</div>
+        <div class="progress__line"></div>
+        <div class="progress__step"><span class="progress__dot progress__dot--pending"></span> Peer review</div>
+        <div class="progress__line"></div>
+        <div class="progress__step"><span class="progress__dot progress__dot--pending"></span> First publication</div>
+      </div>
+
+      <form class="notify" action="/api/newsletter" method="POST">
+        <input type="hidden" name="source" value="research-waitlist">
+        <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address">
+        <button type="submit">Notify me when it launches</button>
+      </form>
+
+      <p class="note">No spam. We'll only email you when the first paper goes live.</p>
+
+      <div class="preview" aria-label="Research themes">
+        <div class="preview__pill" data-theme="banking">Banking &amp; microfinance</div>
+        <div class="preview__pill" data-theme="energy">Energy &amp; downstream</div>
+        <div class="preview__pill" data-theme="real-estate">Real estate &amp; REITs</div>
+        <div class="preview__pill" data-theme="macro">Macro &amp; fiscal policy</div>
+        <div class="preview__pill" data-theme="agentic">Agentic AI in finance</div>
+      </div>
+
+      <a href="/" class="back">Back to ContexAi Group</a>
+    </div>
+  </section>
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="foot">
+  <p>&copy; 2026 ContexAi Group &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="/contact">Contact</a></p>
+</footer>
+
+</body>
+</html>
