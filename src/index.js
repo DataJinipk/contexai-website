@@ -95,26 +95,60 @@ export default {
       return handleAdminRoute(request, env, url);
     }
 
-    // Static asset response with optional Cloudflare Web Analytics injection
+    // Static asset response with HTMLRewriter injection:
+    //   1. Replace <nav class="topnav"> with the canonical TOPNAV_HTML (always, for HTML)
+    //   2. Append Cloudflare Web Analytics beacon (only when CF_ANALYTICS_TOKEN is set)
     const assetResponse = await env.ASSETS.fetch(request);
     const contentType = assetResponse.headers.get('content-type') || '';
     const isHtml = contentType.includes('text/html');
     let response = assetResponse;
-    if (isHtml && env.CF_ANALYTICS_TOKEN) {
-      response = new HTMLRewriter()
-        .on('head', {
+    if (isHtml) {
+      const rewriter = new HTMLRewriter()
+        .on('nav.topnav', {
+          element(el) {
+            el.replace(TOPNAV_HTML, { html: true });
+          },
+        });
+      if (env.CF_ANALYTICS_TOKEN) {
+        rewriter.on('head', {
           element(el) {
             el.append(
               `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"${env.CF_ANALYTICS_TOKEN}"}'></script>`,
               { html: true }
             );
           },
-        })
-        .transform(assetResponse);
+        });
+      }
+      response = rewriter.transform(assetResponse);
     }
     return withSecurityHeaders(response, isHtml);
   },
 };
+
+// ─── Canonical site-wide top nav ────────────────────────────────────────────
+// Injected via HTMLRewriter into every page that has <nav class="topnav">.
+// Change THIS to update the nav across all 22 sub-pages — no per-page edit.
+// index.html and academy.html have their own (richer, anchor-link) navs and are
+// not touched by the rewriter.
+const TOPNAV_HTML = `<nav class="topnav">
+  <div class="topnav__in">
+    <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
+    <div class="topnav__links" id="topnav-links">
+      <a href="/#about">About</a>
+      <a href="/practices">Practices</a>
+      <a href="/team">Team</a>
+      <a href="/case-studies">Case Studies</a>
+      <a href="/#services">Services</a>
+      <a href="/#agentic">Agentic AI</a>
+      <a href="/insights">Insights</a>
+      <a href="/economy">Economy &amp; Fiscal</a>
+      <a href="/academy">Academy</a>
+      <a href="/positions">Positions</a>
+      <a href="/contact" class="cta">Contact Us</a>
+    </div>
+    <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>`;
 
 // ─── Security headers ───────────────────────────────────────────────────────
 // Applied to every static-asset response. CSP is HTML-only.
