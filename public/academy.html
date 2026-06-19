@@ -3,125 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ContexAi Academy — a hands-on, 5-level Advanced AI training program. From advanced prompting and local LLMs to MCP & voice agents, diffusion & AI clones, agentic workflows, and shipping a real AI product with no code.">
-<meta name="theme-color" content="#0A3E40">
-<title>ContexAi Academy — Master Advanced AI, From Prompt to Product</title>
+<meta name="description" content="ContexAi Academy — Advanced AI training, coming soon. Subscribe to be notified when enrolment opens.">
+<meta name="theme-color" content="#0E7E76">
+<title>ContexAi Academy — Coming Soon</title>
 <link rel="canonical" href="https://contexai.org/academy">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ContexAi Group">
-<meta property="og:title" content="ContexAi Academy — Master Advanced AI">
-<meta property="og:description" content="A 5-level, project-driven journey: prompting, local LLMs, MCP & voice agents, diffusion & AI clones, agentic workflows, and shipping a real AI product.">
+<meta property="og:title" content="ContexAi Academy — Coming Soon">
+<meta property="og:description" content="A 5-level hands-on AI training programme. Subscribe to be notified when enrolment opens.">
 <meta property="og:url" content="https://contexai.org/academy">
-<meta property="og:image" content="https://contexai.org/images/linkedin/launch-hero.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --ink:#0A3E40;--ink2:#11595B;--ink3:#3D4F6B;--ink4:#6B7FA0;
-  --bg:#0A3E40;--bg2:#0C4A4C;--bg3:#082F31;
-  --teal:#11595B;--teal-2:#14B8A6;--aqua:#5EEAD4;
-  --paper:#F7FAF9;--ink-on:#0A3E40;
-  --line:rgba(255,255,255,.12);--card:rgba(255,255,255,.05);
+  --ink:#0E7E76;--ink-deep:#0A3E40;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
+  --cream:#F6F5F1;--aqua:#14B8A6;--cyan:#5EEAD4;
   --max:1180px;--serif:"Instrument Serif",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;
 }
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:#EAF4F2;background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
-.serif{font-family:var(--serif);font-weight:400;letter-spacing:.01em}
-.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:8px;font-weight:600;font-size:14.5px;transition:transform .15s,background .2s,border-color .2s;cursor:pointer}
-.btn-primary{background:var(--teal-2);color:#0A3E40}
-.btn-primary:hover{background:#2dd4bf;transform:translateY(-2px)}
-.btn-ghost{background:transparent;color:#EAF4F2;border:1px solid var(--line)}
-.btn-ghost:hover{border-color:var(--aqua);transform:translateY(-2px)}
+body{font-family:var(--sans);color:var(--ink3);line-height:1.65;-webkit-font-smoothing:antialiased;background:#fff}
+a{color:#0C6E66;text-decoration:none}
 
-/* NAV (matches ContexAi Group) */
-.nav{position:sticky;top:0;z-index:60;background:rgba(8,47,49,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav__in{max-width:var(--max);margin:0 auto;padding:0 26px;height:66px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:var(--serif);font-size:24px;color:#fff;display:flex;align-items:center;gap:8px}
-.logo span{color:var(--aqua)}
-.logo .logo-badge{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(94,234,212,.15);color:var(--aqua);border-radius:6px;padding:3px 7px}
-.navlinks{display:flex;align-items:center;gap:20px;font-size:14px;color:#bcd6d2}
-.navlinks a:hover{color:#fff}
-.navlinks a.active{color:var(--aqua);font-weight:600}
-.mob-btn{display:none;background:none;border:0;cursor:pointer;width:30px;height:30px}
-.mob-btn span,.mob-btn span::before,.mob-btn span::after{content:"";display:block;width:22px;height:2px;background:#EAF4F2;position:relative}
-.mob-btn span::before{position:absolute;top:-7px}.mob-btn span::after{position:absolute;top:7px}
-@media(max-width:1080px){.navlinks{display:none}.mob-btn{display:block}}
-
-.hero{position:relative;overflow:hidden;padding:88px 0 78px;background:radial-gradient(900px 460px at 82% -10%,rgba(20,184,166,.16),transparent 60%),radial-gradient(820px 420px at 4% 2%,rgba(17,89,91,.4),transparent 55%)}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
-@media(max-width:920px){.hero-grid{grid-template-columns:1fr;gap:34px}}
-.hero h1{font-family:var(--serif);font-size:clamp(44px,6.4vw,76px);line-height:1;margin:16px 0 0;color:#fff}
-.hero h1 .amp{display:block;font-style:italic;font-size:.5em;color:#9fc2bd;margin:8px 0}
-.hero h1 .aqua{font-style:italic;color:var(--aqua)}
-.lead{font-size:clamp(16px,2vw,19px);color:#bcd6d2;margin:22px 0 30px;max-width:540px}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap}
-.stats{display:flex;gap:36px;margin-top:42px;flex-wrap:wrap}
-.stat .n{font-size:32px;font-weight:800;font-family:var(--serif)}
-.stat .l{font-size:13px;color:#9fc2bd}
-
-.visual{position:relative;height:420px}
-.lvl-card{position:absolute;left:0;right:0;margin:auto;width:88%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:14px;backdrop-filter:blur(4px);animation:float 6s ease-in-out infinite}
-.lvl-card .badge{flex:0 0 auto;width:48px;height:30px;border-radius:7px;display:grid;place-items:center;font-weight:800;font-size:12px;color:#06302e;background:var(--aqua)}
-.lvl-card .t{font-weight:600;font-size:14.5px}.lvl-card .s{font-size:12px;color:#9fc2bd}
-.v1{top:4px;transform:rotate(-3deg);--r:-3deg}.v2{top:86px;transform:rotate(1.5deg);--r:1.5deg;animation-delay:.6s}
-.v3{top:168px;transform:rotate(-1deg);--r:-1deg;animation-delay:1.2s;z-index:3;border-color:rgba(94,234,212,.4)}
-.v4{top:250px;transform:rotate(2deg);--r:2deg;animation-delay:1.8s}.v5{top:332px;transform:rotate(-2.5deg);--r:-2.5deg;animation-delay:2.4s}
-@keyframes float{0%,100%{transform:translateY(0) rotate(var(--r,0))}50%{transform:translateY(-7px) rotate(var(--r,0))}}
-
-section.block{padding:84px 0}
-.alt{background:var(--bg2)}.deep{background:var(--bg3)}
-.center{text-align:center;max-width:740px;margin:0 auto}
-.center h2,.cta h2{font-family:var(--serif);font-size:clamp(32px,4.4vw,50px);line-height:1.05;color:#fff;margin-top:10px}
-.center h2 .aqua,.cta h2 .aqua{font-style:italic;color:var(--aqua)}
-.center p{color:#bcd6d2;font-size:17px;margin-top:14px}
-
-.levels{margin-top:52px;display:grid;gap:16px}
-.level{display:grid;grid-template-columns:130px 1fr;gap:22px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;transition:transform .2s,border-color .2s}
-.level:hover{transform:translateY(-4px);border-color:rgba(94,234,212,.35)}
-@media(max-width:640px){.level{grid-template-columns:1fr;gap:12px}}
-.level .pill{display:inline-flex;align-items:center;font-weight:700;font-size:13px;color:#06302e;background:var(--aqua);border-radius:999px;padding:7px 14px;width:max-content}
-.level h3{font-family:var(--serif);font-size:24px;color:#fff}
-.level p{color:#bcd6d2;margin:8px 0 0;font-size:15.5px}
-.level .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
-.tag{font-size:12.5px;font-weight:500;color:var(--aqua);background:rgba(94,234,212,.1);border:1px solid rgba(94,234,212,.2);border-radius:8px;padding:5px 10px}
-
-.feats{margin-top:50px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media(max-width:860px){.feats{grid-template-columns:1fr}}
-.feat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
-.feat .ic{width:46px;height:46px;border-radius:11px;display:grid;place-items:center;font-size:22px;background:rgba(94,234,212,.12);margin-bottom:14px}
-.feat h3{font-size:18px;font-weight:700}.feat p{color:#bcd6d2;font-size:15px;margin-top:8px}
-
-.agents{margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-@media(max-width:860px){.agents{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.agents{grid-template-columns:1fr}}
-.agent{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
-.agent .dot{width:42px;height:42px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-size:18px;color:#06302e;background:var(--aqua)}
-.agent h3{font-size:16px;font-weight:700}.agent p{font-size:13.5px;color:#bcd6d2;margin-top:6px}
-
-.cta{border:1px solid var(--line);background:linear-gradient(120deg,rgba(17,89,91,.6),rgba(20,184,166,.18));border-radius:22px;padding:56px 40px;text-align:center}
-.cta p{color:#cfe6e2;font-size:17px;margin-top:12px}
-
-footer{background:#082F31;border-top:1px solid var(--line);padding:54px 0 28px;color:#9fc2bd;font-size:14px}
-.ft__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
-@media(max-width:780px){.ft__grid{grid-template-columns:1fr 1fr}}
-.ft__col h4{color:#EAF4F2;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
-.ft__col a{display:block;color:#9fc2bd;margin:6px 0}.ft__col a:hover{color:var(--aqua)}
-.ft__bot{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.lvl-card{animation:none}}
-
-/* === Site-wide top nav (unified teal style) === */
+/* === Site-wide top nav (unified teal style — Worker rewrites this on every request) === */
 .topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
 .topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
 .topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
@@ -142,10 +52,61 @@ footer{background:#082F31;border-top:1px solid var(--line);padding:54px 0 28px;c
   .topnav__in{position:relative;flex-wrap:wrap}
 }
 
+/* Hero — Under Construction */
+.coming{padding:96px 32px 120px;background:linear-gradient(180deg, #F6F5F1 0%, #fff 100%);min-height:calc(100vh - 120px);display:flex;align-items:center;justify-content:center}
+.coming__in{max-width:760px;margin:0 auto;text-align:center}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--aqua);background:rgba(20,184,166,.10);padding:8px 18px;border-radius:30px;margin-bottom:28px}
+.coming h1{font-family:var(--serif);font-size:clamp(2.5rem,5vw,3.6rem);line-height:1.1;color:var(--ink-deep);margin-bottom:20px;letter-spacing:-.01em}
+.coming p.lead{font-size:1.12rem;color:var(--ink4);max-width:620px;margin:0 auto 36px;font-weight:300}
+.coming p.note{font-size:.95rem;color:var(--ink5);max-width:540px;margin:30px auto 0}
+
+/* Progress indicator */
+.progress{display:flex;align-items:center;gap:14px;justify-content:center;margin:36px auto;flex-wrap:wrap}
+.progress__step{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--ink4)}
+.progress__dot{width:10px;height:10px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 4px rgba(20,184,166,.18)}
+.progress__dot--pending{background:var(--ink5);box-shadow:none}
+.progress__line{height:2px;width:38px;background:linear-gradient(90deg, var(--aqua) 0%, var(--ink5) 100%)}
+
+/* Notify form */
+.notify{margin-top:18px;display:inline-flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;background:#fff;padding:8px;border-radius:50px;box-shadow:0 4px 18px rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.06)}
+.notify input{font-family:inherit;font-size:.95rem;padding:12px 18px;border:none;background:transparent;outline:none;min-width:240px;color:var(--ink-deep)}
+.notify input::placeholder{color:var(--ink5)}
+.notify button{font-family:inherit;font-size:.92rem;font-weight:700;padding:12px 26px;background:var(--ink);color:#fff;border:none;border-radius:50px;cursor:pointer;transition:background .15s}
+.notify button:hover{background:var(--aqua);color:var(--ink-deep)}
+
+/* What's coming preview */
+.preview{margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:14px;max-width:680px;margin-left:auto;margin-right:auto}
+.preview__pill{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:18px 16px;font-size:.86rem;color:var(--ink-deep);text-align:center;font-weight:500}
+.preview__pill::before{content:'';display:block;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg, var(--aqua), var(--cyan));margin:0 auto 10px}
+
+/* Back link */
+.back{display:inline-block;margin-top:48px;font-size:.92rem;color:var(--ink4);font-weight:500}
+.back:hover{color:var(--ink-deep)}
+.back::before{content:'← '}
+
+/* Simple footer */
+.foot{background:var(--ink-deep);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:.88rem}
+.foot a{color:rgba(255,255,255,.85)}
 </style>
 </head>
 <body>
 
+<!-- ─── BRAND COLOR BAR ─── -->
+<div aria-hidden="true" title="ContexAi Brand Palette v2" style="display:flex;height:8px;width:100%;line-height:0;box-shadow:0 2px 6px rgba(0,0,0,.10);position:relative;z-index:101">
+  <span style="display:block;flex:1;background:#0D1B3F"></span>
+  <span style="display:block;flex:1;background:#0040D9"></span>
+  <span style="display:block;flex:1;background:#00838F"></span>
+  <span style="display:block;flex:1;background:#00BCD4"></span>
+  <span style="display:block;flex:1;background:#AEEA00"></span>
+  <span style="display:block;flex:1;background:#FDD835"></span>
+  <span style="display:block;flex:1;background:#FFC400"></span>
+  <span style="display:block;flex:1;background:#F26122"></span>
+  <span style="display:block;flex:1;background:#D81B60"></span>
+  <span style="display:block;flex:1;background:#9C27B0"></span>
+  <span style="display:block;flex:1;background:#00C853"></span>
+</div>
+
+<!-- ─── TOP NAV (Worker will rewrite this with canonical TOPNAV_HTML) ─── -->
 <nav class="topnav">
   <div class="topnav__in">
     <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
@@ -158,7 +119,7 @@ footer{background:#082F31;border-top:1px solid var(--line);padding:54px 0 28px;c
       <a href="/#agentic">Agentic AI</a>
       <a href="/insights">Insights</a>
       <a href="/economy">Economy &amp; Fiscal</a>
-      <a href="/academy">Academy</a>
+      <a href="/academy" class="current">Academy</a>
       <a href="/positions">Positions</a>
       <a href="/contact" class="cta">Contact Us</a>
     </div>
@@ -166,150 +127,51 @@ footer{background:#082F31;border-top:1px solid var(--line);padding:54px 0 28px;c
   </div>
 </nav>
 
+<!-- ─── UNDER CONSTRUCTION HERO ─── -->
 <main>
+  <section class="coming">
+    <div class="coming__in">
+      <span class="eyebrow">ContexAi Academy</span>
+      <h1>Coming soon.</h1>
+      <p class="lead">
+        A hands-on, project-driven AI training programme — from advanced prompting and local LLMs, to MCP &amp; voice agents, to shipping a real AI product. Enrolment isn't open yet, but the curriculum is in active build.
+      </p>
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">ContexAi Academy · Advanced AI training</span>
-      <h1>Master advanced AI.<span class="amp">&amp;</span><span class="aqua">From prompt to product.</span></h1>
-      <p class="lead">A hands-on, project-driven program that takes you from advanced prompting and local LLMs all the way to shipping a real, working AI product — without getting lost in theory.</p>
-      <div class="cta-row">
-        <a href="https://academy.contexai.org" data-app-link class="btn btn-primary">Start learning →</a>
-        <a href="#how" class="btn btn-ghost">How it works</a>
+      <div class="progress" aria-label="Build progress">
+        <div class="progress__step"><span class="progress__dot"></span> Curriculum</div>
+        <div class="progress__line"></div>
+        <div class="progress__step"><span class="progress__dot"></span> Cohort design</div>
+        <div class="progress__line"></div>
+        <div class="progress__step"><span class="progress__dot progress__dot--pending"></span> Platform</div>
+        <div class="progress__line"></div>
+        <div class="progress__step"><span class="progress__dot progress__dot--pending"></span> First cohort</div>
       </div>
-      <div class="stats">
-        <div class="stat"><div class="n" data-count="5">0</div><div class="l">Progressive levels</div></div>
-        <div class="stat"><div class="n" data-count="23">0</div><div class="l">Modules &amp; labs</div></div>
-        <div class="stat"><div class="n" data-count="100" data-suffix="%">0</div><div class="l">Hands-on, project-based</div></div>
+
+      <form class="notify" action="/api/newsletter" method="POST">
+        <input type="hidden" name="source" value="academy-waitlist">
+        <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address">
+        <button type="submit">Notify me when it launches</button>
+      </form>
+
+      <p class="note">No spam. We'll only email you when enrolment opens.</p>
+
+      <div class="preview" aria-label="What's coming">
+        <div class="preview__pill">Advanced prompting</div>
+        <div class="preview__pill">Local LLMs</div>
+        <div class="preview__pill">MCP &amp; voice agents</div>
+        <div class="preview__pill">Agentic workflows</div>
+        <div class="preview__pill">Shipping AI products</div>
       </div>
+
+      <a href="/" class="back">Back to ContexAi Group</a>
     </div>
-    <div class="visual" aria-hidden="true">
-      <div class="lvl-card v1"><span class="badge">L1</span><div><div class="t">Advanced prompting &amp; local LLMs</div><div class="s">CoT · ToT · Ollama · tuning</div></div></div>
-      <div class="lvl-card v2"><span class="badge">L2</span><div><div class="t">MCP &amp; autonomous voice agents</div><div class="s">stdio/SSE · custom servers</div></div></div>
-      <div class="lvl-card v3"><span class="badge">L3</span><div><div class="t">Diffusion &amp; AI clones</div><div class="s">LoRA · image/video · branding</div></div></div>
-      <div class="lvl-card v4"><span class="badge">L4</span><div><div class="t">Agentic automations</div><div class="s">LangGraph · CrewAI</div></div></div>
-      <div class="lvl-card v5"><span class="badge">L5</span><div><div class="t">Ship a real AI product</div><div class="s">No-code · Bubble · n8n</div></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="program">
-  <div class="wrap center reveal">
-    <span class="eyebrow">What is ContexAi Academy</span>
-    <h2 class="serif">Not another theory course. <span class="aqua">A studio for builders.</span></h2>
-    <p>Every level pairs the concepts you need with a real lab and a project you keep. You learn by shipping — guided by an in-product AI tutor, an auto-grader, and a certificate that proves you finished.</p>
-  </div>
-</section>
-
-<section class="block alt" id="levels">
-  <div class="wrap">
-    <div class="center reveal"><span class="eyebrow">The journey</span><h2 class="serif">Five levels, one outcome: <span class="aqua">you can build.</span></h2></div>
-    <div class="levels">
-      <div class="level reveal"><div><span class="pill">Level 1</span></div><div><h3>Advanced prompting &amp; local LLMs</h3><p>Master chain-of-thought, tree-of-thought and directional-stimulus prompting, run open-source models locally with Ollama / llama.cpp, and tune temperature, top-p and penalties like a pro.</p><div class="tags"><span class="tag">Prompt engineering</span><span class="tag">Ollama</span><span class="tag">Parameter tuning</span></div></div></div>
-      <div class="level reveal"><div><span class="pill">Level 2</span></div><div><h3>MCP integrations &amp; voice agents</h3><p>Integrate connectors with the Model Context Protocol — online and offline — then design system prompts that power fully autonomous, low-latency voice agents.</p><div class="tags"><span class="tag">MCP servers</span><span class="tag">stdio / SSE</span><span class="tag">Voice agents</span></div></div></div>
-      <div class="level reveal"><div><span class="pill">Level 3</span></div><div><h3>Generative diffusion &amp; AI clones</h3><p>Understand latent diffusion, train LoRAs, build a consistent digital AI clone, and run pipelines for images, video, ads, branding material and cinematic cuts.</p><div class="tags"><span class="tag">Diffusion</span><span class="tag">LoRA</span><span class="tag">Video &amp; ads</span></div></div></div>
-      <div class="level reveal"><div><span class="pill">Level 4</span></div><div><h3>Complex automations &amp; agentic workflows</h3><p>Build production-grade automations for process optimization and get hands-on with self-correcting AI agents using LangGraph, CrewAI and AutoGen.</p><div class="tags"><span class="tag">Orchestrator–workers</span><span class="tag">LangGraph</span><span class="tag">CrewAI</span></div></div></div>
-      <div class="level reveal"><div><span class="pill">Level 5</span></div><div><h3>Ship a real AI product — no code</h3><p>Scope, scaffold and launch a market-ready AI micro-SaaS using visual builders and automation wrappers — a 100% functional product, without a single line of backend code.</p><div class="tags"><span class="tag">Bubble / FlutterFlow</span><span class="tag">Make.com / n8n</span><span class="tag">Capstone launch</span></div></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="how">
-  <div class="wrap">
-    <div class="center reveal"><span class="eyebrow">How it works</span><h2 class="serif">Learn by building, <span class="aqua">not by watching.</span></h2></div>
-    <div class="feats">
-      <div class="feat reveal"><div class="ic">🧪</div><h3>Hands-on labs</h3><p>Each level ends in a real lab and a project you build and keep — local LLMs, MCP servers, LoRAs, agent workflows, and a shipped product.</p></div>
-      <div class="feat reveal"><div class="ic">🤖</div><h3>An AI tutor beside you</h3><p>An in-product AI tutor answers questions grounded in the exact module you're on, and an auto-grader reviews your project submissions.</p></div>
-      <div class="feat reveal"><div class="ic">🎓</div><h3>Progress &amp; certificate</h3><p>Track completion across every level. Finish the required modules and a verifiable certificate is issued automatically.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="block deep" id="agents">
-  <div class="wrap">
-    <div class="center reveal"><span class="eyebrow">Built-in AI agents</span><h2 class="serif">The Academy runs on agents — <span class="aqua">so you learn on agents.</span></h2><p>ContexAi Academy ships with its own team of AI agents working behind the scenes, the same kind you'll learn to build.</p></div>
-    <div class="agents">
-      <div class="agent reveal"><div class="dot">📘</div><h3>Tutor</h3><p>Explains concepts grounded in your current module.</p></div>
-      <div class="agent reveal"><div class="dot">💬</div><h3>Support</h3><p>Answers enrollment, access &amp; certificate questions.</p></div>
-      <div class="agent reveal"><div class="dot">✅</div><h3>Auto-grader</h3><p>Scores your lab &amp; project submissions with feedback.</p></div>
-      <div class="agent reveal"><div class="dot">✍️</div><h3>Content</h3><p>Helps instructors draft new lessons and labs.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap center reveal">
-    <span class="eyebrow">Who it's for</span>
-    <h2 class="serif">Founders, builders &amp; professionals <span class="aqua">who want to ship with AI.</span></h2>
-    <p>Whether you're automating a business process, launching an AI product, or future-proofing your skills — if you'd rather build than just read about it, this is for you.</p>
-  </div>
-</section>
-
-<section class="block alt">
-  <div class="wrap">
-    <div class="cta reveal">
-      <h2 class="serif">Be among the first to <span class="aqua">master advanced AI.</span></h2>
-      <p>ContexAi Academy is launching its flagship Advanced AI Training Course. Register your interest and we'll notify you the moment enrolment opens.</p>
-      <div class="cta-row" style="justify-content:center;margin-top:24px">
-        <a href="https://academy.contexai.org" data-app-link class="btn btn-primary">Enrol in the Academy →</a>
-        <a href="/" class="btn btn-ghost">Back to ContexAi Group</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+  </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="ft__grid">
-      <div class="ft__col">
-        <a href="/" class="logo" style="font-size:22px">Contex<span>Ai</span><span class="logo-badge">Academy</span></a>
-        <p style="margin-top:12px;max-width:300px">Master advanced AI, from prompt to product — the hands-on training arm of ContexAi Group.</p>
-      </div>
-      <div class="ft__col">
-        <h4>Academy</h4>
-        <a href="#program">Overview</a>
-        <a href="#levels">The 5 levels</a>
-        <a href="#how">How it works</a>
-        <a href="#agents">AI agents</a>
-      </div>
-      <div class="ft__col">
-        <h4>ContexAi Group</h4>
-        <a href="/#about">About</a>
-        <a href="/practices">Practices</a>
-        <a href="/insights">Insights</a>
-        <a href="/positions">Open Positions</a>
-        <a href="/contact">Contact</a>
-      </div>
-      <div class="ft__col">
-        <h4>Contact</h4>
-        <a href="mailto:amir.wahmed@contexai.org">amir.wahmed@contexai.org</a>
-        <a href="https://www.linkedin.com/in/amirwah/" target="_blank" rel="noopener">LinkedIn</a>
-        <span>Karachi, Pakistan</span>
-      </div>
-    </div>
-    <div class="ft__bot">
-      <p>&copy; <span id="yr"></span> ContexAi Group. All rights reserved.</p>
-      <div class="ft__bot-links"><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a></div>
-    </div>
-  </div>
+<!-- ─── FOOTER ─── -->
+<footer class="foot">
+  <p>&copy; 2026 ContexAi Group · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/contact">Contact</a></p>
 </footer>
 
-<script>
-  // ── ContexAi Academy LMS app URL — CHANGE THIS ONE LINE once the app is deployed ──
-  // (e.g. "https://academy.contexai.org" or "https://app.contexai.org"). Every
-  // [data-app-link] button below points here.
-  const ACADEMY_APP_URL = "https://academy.contexai.org";
-  document.querySelectorAll('[data-app-link]').forEach(a => a.setAttribute('href', ACADEMY_APP_URL));
-
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  function runCount(el){const t=+el.dataset.count,suf=el.dataset.suffix||'',d=1300,t0=performance.now();function s(n){const p=Math.min((n-t0)/d,1);el.textContent=Math.round(t*p)+suf;if(p<1)requestAnimationFrame(s);else el.textContent=t+suf;}requestAnimationFrame(s);}
-  const sio=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){runCount(e.target);sio.unobserve(e.target)}})},{threshold:.6});
-  document.querySelectorAll('[data-count]').forEach(el=>sio.observe(el));
-  document.getElementById('yr').textContent=new Date().getFullYear();
-</script>
 </body>
 </html>
