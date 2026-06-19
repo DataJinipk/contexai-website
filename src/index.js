@@ -98,8 +98,10 @@ export default {
     // Static asset response with optional Cloudflare Web Analytics injection
     const assetResponse = await env.ASSETS.fetch(request);
     const contentType = assetResponse.headers.get('content-type') || '';
-    if (contentType.includes('text/html') && env.CF_ANALYTICS_TOKEN) {
-      return new HTMLRewriter()
+    const isHtml = contentType.includes('text/html');
+    let response = assetResponse;
+    if (isHtml && env.CF_ANALYTICS_TOKEN) {
+      response = new HTMLRewriter()
         .on('head', {
           element(el) {
             el.append(
@@ -110,9 +112,38 @@ export default {
         })
         .transform(assetResponse);
     }
-    return assetResponse;
+    return withSecurityHeaders(response, isHtml);
   },
 };
+
+// ─── Security headers ───────────────────────────────────────────────────────
+// Applied to every static-asset response. CSP is HTML-only.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://contexai.org",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  "img-src 'self' data: https:",
+  "connect-src 'self' https://static.cloudflareinsights.com https://cloudflareinsights.com",
+  "frame-ancestors 'self' https://*.claude.ai https://claude.ai",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "object-src 'none'",
+  "upgrade-insecure-requests",
+].join('; ');
+
+function withSecurityHeaders(response, isHtml) {
+  // Response objects are immutable for headers when streamed — construct a new one
+  const headers = new Headers(response.headers);
+  headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  headers.set('X-Content-Type-Options', 'nosniff');
+  headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+  headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=()');
+  if (isHtml) {
+    headers.set('Content-Security-Policy', CSP);
+  }
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+}
 
 // ─── CORS helpers ────────────────────────────────────────────────────────────
 
