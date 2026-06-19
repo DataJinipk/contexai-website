@@ -72,6 +72,36 @@ textarea{resize:vertical}
   .topnav__in{position:relative;flex-wrap:wrap}
 }
 
+
+/* === Dropdown nav (brand colour accents on hover) === */
+.topnav__dd{position:relative}
+.topnav__dd-trigger{display:flex;align-items:center;gap:6px;cursor:pointer;color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;white-space:nowrap;transition:color .15s}
+.topnav__dd-trigger:hover{color:#fff}
+.topnav__caret{font-size:.7em;transition:transform .2s;opacity:.7;color:#FFC400}
+.topnav__dd:hover .topnav__caret{transform:rotate(180deg);opacity:1}
+.topnav__dd-panel{position:absolute;top:100%;left:-12px;background:#0E7E76;border-radius:0 0 14px 14px;padding:12px 0 8px;min-width:230px;box-shadow:0 12px 28px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .15s,visibility .15s,transform .15s;z-index:200;border-top:3px solid #FFC400}.topnav__dd-panel::before{content:"";position:absolute;top:-6px;left:0;right:0;height:6px;background:transparent}
+.topnav__dd:hover .topnav__dd-panel,.topnav__dd:focus-within .topnav__dd-panel{opacity:1;visibility:visible;transform:translateY(0)}
+.topnav__dd-panel a{display:block;padding:11px 22px 11px 18px;font-size:.91rem;color:rgba(255,255,255,.88);white-space:nowrap;font-weight:500;text-decoration:none;border-left:4px solid transparent;transition:all .15s}
+.topnav__dd-panel a:hover{background:rgba(255,255,255,.10);color:#fff;padding-left:22px}
+.topnav__dd-panel a[href="/#about"]:hover{border-left-color:#14B8A6}
+.topnav__dd-panel a[href="/team"]:hover{border-left-color:#D81B60}
+.topnav__dd-panel a[href="/case-studies"]:hover{border-left-color:#FDD835}
+.topnav__dd-panel a[href="/#services"]:hover{border-left-color:#0040D9}
+.topnav__dd-panel a[href="/#agentic"]:hover{border-left-color:#D81B60}
+.topnav__dd-panel a[href="/insights"]:hover{border-left-color:#F26122}
+.topnav__dd-panel a[href="/economy"]:hover{border-left-color:#AEEA00}
+.topnav__dd-panel a[href="/research"]:hover{border-left-color:#9C27B0}
+@media(max-width:980px){
+  .topnav__dd{width:100%}
+  .topnav__dd-trigger{display:flex;width:100%;padding:10px 0 4px;font-weight:700;color:#FFC400;font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;border-top:1px solid rgba(255,255,255,.10);margin-top:6px}
+  .topnav__caret{display:none}
+  .topnav__dd-panel{position:static;background:transparent;box-shadow:none;border-radius:0;opacity:1;visibility:visible;transform:none;margin:0;padding:0;border-top:none;min-width:0}
+  .topnav__dd-panel a{padding:7px 0 7px 12px;font-size:.95rem;color:rgba(255,255,255,.92);border-left:3px solid rgba(255,255,255,.15)}
+  .topnav__dd-panel a:hover{padding-left:16px}
+}
+/* CRITICAL fix — prevent topnav links from wrapping to two rows */
+.topnav__links{flex-wrap:nowrap;gap:18px}
+
 </style>
 </head>
 <body>
@@ -80,17 +110,37 @@ textarea{resize:vertical}
   <div class="topnav__in">
     <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
     <div class="topnav__links" id="topnav-links">
-      <a href="/#about">About</a>
-      <a href="/practices">Practices</a>
-      <a href="/team">Team</a>
-      <a href="/case-studies">Case Studies</a>
-      <a href="/#services">Services</a>
-      <a href="/#agentic">Agentic AI</a>
-      <a href="/insights">Insights</a>
-      <a href="/economy">Economy &amp; Fiscal</a>
+
+      <div class="topnav__dd">
+        <a href="/" class="topnav__dd-trigger">Home <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/#about">About</a>
+          <a href="/team">Team</a>
+        </div>
+      </div>
+
+      <div class="topnav__dd">
+        <a href="/practices" class="topnav__dd-trigger">Practice <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/case-studies">Case Studies</a>
+          <a href="/#services">Services</a>
+          <a href="/#agentic">Agentic AI</a>
+        </div>
+      </div>
+
+      <div class="topnav__dd">
+        <a href="/insights" class="topnav__dd-trigger">Market Intelligence <span class="topnav__caret">&#9662;</span></a>
+        <div class="topnav__dd-panel">
+          <a href="/insights">Insights</a>
+          <a href="/economy">Economy &amp; Fiscal</a>
+          <a href="/research">Research</a>
+        </div>
+      </div>
+
       <a href="/academy">Academy</a>
       <a href="/positions">Positions</a>
       <a href="/contact" class="cta">Contact Us</a>
+
     </div>
     <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
