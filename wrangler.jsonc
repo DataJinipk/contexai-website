@@ -9,6 +9,9 @@
 	"observability": {
 		"enabled": true
 	},
+	"vars": {
+		"CF_ANALYTICS_TOKEN": "YOUR_TOKEN_HERE"
+	},
 	"assets": {
 		"directory": "public",
 		"binding": "ASSETS"

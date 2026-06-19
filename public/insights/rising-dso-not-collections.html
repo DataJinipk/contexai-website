@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="When days-sales-outstanding creeps up, the cause usually sits upstream of the AR team — in pricing, customer concentration, unbooked disputes, or a customer using you as a credit line. A practitioner's guide to diagnosing rising DSO before you set a target.">
+<title>Rising DSO Is Never Just a Collections Problem — ContexAi</title>
+<link rel="canonical" href="https://contexai.org/insights/rising-dso-not-collections">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rising DSO Is Never Just a Collections Problem">
+<meta property="og:description" content="DSO is a symptom, not a target. The four upstream causes of rising days-sales-outstanding — and the different fix each one needs.">
+<meta property="og:url" content="https://contexai.org/insights/rising-dso-not-collections">
+<meta property="og:image" content="https://contexai.org/images/linkedin/credit-dso.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rising DSO Is Never Just a Collections Problem","datePublished":"2026-06-19","dateModified":"2026-06-19","author":{"@type":"Organization","name":"ContexAi Group","url":"https://contexai.org/"},"publisher":{"@type":"Organization","name":"ContexAi Group","logo":{"@type":"ImageObject","url":"https://contexai.org/images/launch/launch-square.png"}},"mainEntityOfPage":"https://contexai.org/insights/rising-dso-not-collections","image":"https://contexai.org/images/linkedin/credit-dso.png"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#0E7E76;--ink-deep:#0A3E40;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;--blue:#0E7E76;--cream:#F6F5F1;--turquoise:#0E7E76;--turquoise-light:#14B8A6}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink3);line-height:1.8;background:#fff;font-size:1.06rem}
+a{color:#0C6E66;text-decoration:none}a:hover{text-decoration:underline}
+.bar{background:var(--ink);padding:18px 32px}
+.bar__in{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.bar a.logo{color:#fff;font-weight:800;font-size:1.2rem;letter-spacing:-.03em}
+.bar a.logo span{color:#14B8A6}
+.bar a.back{color:rgba(255,255,255,.6);font-size:.9rem}
+article{max-width:760px;margin:0 auto;padding:52px 32px 40px}
+.tag{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#0C6E66;margin-bottom:14px}
+h1{font-family:'Instrument Serif',serif;font-size:clamp(2rem,5vw,2.9rem);color:var(--ink);line-height:1.1;margin-bottom:16px}
+.meta{color:var(--ink5);font-size:.9rem;margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(0,0,0,.08)}
+article h2{font-family:'Instrument Serif',serif;font-size:1.6rem;color:var(--ink);margin:36px 0 12px;line-height:1.2}
+article p{margin-bottom:18px}
+article ul,article ol{margin:0 0 18px 22px}
+article li{margin-bottom:10px}
+article strong{color:var(--ink)}
+blockquote{border-left:3px solid var(--blue);padding:4px 0 4px 20px;margin:24px 0;color:var(--ink3);font-style:italic;font-family:'Instrument Serif',serif;font-size:1.2rem}
+.cta{max-width:760px;margin:0 auto 64px;padding:0 32px}
+.cta__box{background:var(--cream);border-radius:16px;padding:30px 32px}
+.cta__box h3{font-family:'Instrument Serif',serif;font-size:1.4rem;color:var(--ink);margin-bottom:8px}
+.cta__box p{font-size:.95rem;color:var(--ink4);margin-bottom:16px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:11px 24px;border-radius:100px;font-weight:600;font-size:.92rem}
+.disc{font-size:.82rem;color:var(--ink5);margin-top:24px;font-style:italic}
+.foot{background:var(--ink);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:.88rem}
+.foot a{color:rgba(255,255,255,.8)}
+.byline{display:flex;align-items:center;gap:14px;margin:14px 0 28px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.18);flex-wrap:wrap}
+.byline .author{display:flex;align-items:center;gap:10px}
+.byline .avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#14B8A6,#0E7E76);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.85rem;letter-spacing:-.02em}
+.byline .meta{display:flex;flex-direction:column}
+.byline .meta .name{font-size:.92rem;font-weight:600;color:#fff}
+.byline .meta .role{font-size:.78rem;color:rgba(255,255,255,.65)}
+.byline .date{font-size:.84rem;color:rgba(255,255,255,.6);font-weight:500}
+.byline .share{margin-left:auto;display:flex;gap:8px}
+.byline .share a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;text-decoration:none;font-size:.78rem;font-weight:700;transition:all .15s;cursor:pointer}
+.byline .share a:hover{background:#14B8A6;transform:translateY(-1px)}
+
+.sticky-cta{position:fixed;bottom:22px;right:22px;background:#0E7E76;color:#fff;padding:13px 22px;border-radius:30px;font-weight:600;font-size:.94rem;text-decoration:none;box-shadow:0 6px 22px rgba(14,126,118,.45);z-index:100;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.sticky-cta:hover{background:#14B8A6;transform:translateY(-2px);box-shadow:0 10px 30px rgba(14,126,118,.55)}
+@media(max-width:600px){.sticky-cta{padding:11px 16px;font-size:.85rem;bottom:14px;right:14px}}
+/* === Site-wide top nav (Phase 1.7+) === */
+.topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
+.topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
+.topnav__logo .ai{color:#14B8A6}
+.topnav__logo .badge{font-size:.62rem;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-left:4px;color:#fff}
+.topnav__links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.topnav__links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .15s;white-space:nowrap}
+.topnav__links a:hover{color:#fff}
+.topnav__links a.current{color:#fff;border-bottom:2px solid #FFC400;padding-bottom:2px}
+.topnav__links a.cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
+.topnav__links a.cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.topnav__burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+@media(max-width:980px){
+  .topnav__links{display:none;width:100%}
+  .topnav__burger{display:block}
+  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E7E76;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .topnav__in{position:relative;flex-wrap:wrap}
+}
+
+
+</style>
+</head>
+<body>
+<div aria-hidden="true" title="ContexAi Brand Palette v2" style="display:flex;height:8px;width:100%;line-height:0;box-shadow:0 2px 6px rgba(0,0,0,.10);position:relative;z-index:100"><span title="Ink / Navy" style="display:block;flex:1;background:#0D1B3F"></span><span title="ContexAi Blue" style="display:block;flex:1;background:#0040D9"></span><span title="Teal Dark — Banking" style="display:block;flex:1;background:#00838F"></span><span title="Teal" style="display:block;flex:1;background:#00BCD4"></span><span title="Lemon Green" style="display:block;flex:1;background:#AEEA00"></span><span title="Lemon Yellow" style="display:block;flex:1;background:#FDD835"></span><span title="Flame Yellow" style="display:block;flex:1;background:#FFC400"></span><span title="Cnergyico Flame — Energy" style="display:block;flex:1;background:#F26122"></span><span title="Magenta Ultra" style="display:block;flex:1;background:#D81B60"></span><span title="Royal Purple — Accreditation" style="display:block;flex:1;background:#9C27B0"></span><span title="Parrot Green — Real Estate" style="display:block;flex:1;background:#00C853"></span></div>
+<nav class="topnav">
+  <div class="topnav__in">
+    <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
+    <div class="topnav__links" id="topnav-links">
+      <a href="/#about">About</a>
+      <a href="/practices">Practices</a>
+      <a href="/team">Team</a>
+      <a href="/case-studies">Case Studies</a>
+      <a href="/#services">Services</a>
+      <a href="/#agentic">Agentic AI</a>
+      <a href="/insights">Insights</a>
+      <a href="/economy">Economy &amp; Fiscal</a>
+      <a href="/academy">Academy</a>
+      <a href="/positions">Positions</a>
+      <a href="/contact" class="cta">Contact Us</a>
+    </div>
+    <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<script>(function(){
+  var p = location.pathname.replace(/\/$/,'') || '/';
+  document.querySelectorAll('.topnav__links a').forEach(function(a){
+    var href = a.getAttribute('href');
+    if(href === p || (p.startsWith('/practices') && href === '/practices') || (p.startsWith('/insights') && href === '/insights') || (p.startsWith('/case-studies') && href === '/case-studies')){
+      a.classList.add('current');
+    }
+  });
+})();</script>
+
+
+<article>
+  <div class="tag">Credit &amp; Working Capital</div>
+  <h1>Rising DSO Is Never Just a Collections Problem</h1>
+<div class="byline"><div class="author"><div class="avatar">AWA</div><div class="meta"><span class="name">Amir Waheed Ahmed</span><span class="role">Founder &amp; Creator, ContexAi Group</span></div></div><span class="date">19 June 2026 &middot; ContexAi Research</span><div class="share"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcontexai.org/insights/rising-dso-not-collections" target="_blank" rel="noopener" title="Share on LinkedIn">in</a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcontexai.org/insights/rising-dso-not-collections&amp;text=Rising+DSO+Is+Never+Just+a+Collections+Problem+%E2%80%94+ContexAi" target="_blank" rel="noopener" title="Share on X">X</a><a onclick="navigator.clipboard.writeText(window.location.href);this.textContent=&quot;OK&quot;;setTimeout(()=>this.textContent=&quot;&#10683;&quot;,1500)" title="Copy link">&#10683;</a></div></div>
+  <div class="meta">By ContexAi Group · 19 June 2026 · 5 min read</div>
+
+  <p>When days-sales-outstanding starts to climb, the instinct is almost always the same: lean on the receivables team. Chase harder. Send more reminders. Tighten the dunning schedule. Sometimes that works at the margin. More often it treats the temperature instead of the infection — because DSO is a symptom, and the cause usually sits well upstream of the people sending the statements.</p>
+  <p>Treat the number as a diagnostic rather than a target, and four distinct drivers tend to account for most of the deterioration. Each one is a genuinely different problem, and each needs a different owner and a different fix.</p>
+
+  <h2>1. You bought the revenue with terms</h2>
+  <p>The most common cause hides inside the sales motion. To close a quarter, the deal gets discounted on price — and then discounted again on payment days. Net-30 quietly becomes net-60, net-90, or "pay when you can." The revenue still books at full value, but the cash arrives a quarter later, and the cost of that financing never lands on the salesperson who granted it. The fix is not in collections at all; it is pricing discipline and a credit policy that makes extended terms a priced, approved exception rather than a silent giveaway.</p>
+
+  <h2>2. Customer concentration</h2>
+  <p>When one or two large buyers represent a big share of the book, they set the payment rhythm — not you. They pay on their cycle, stretch when their own cash is tight, and there is little you can do without risking the relationship. Here the issue is structural, not behavioural: the answer lies in diversifying the customer base over time, building the cost of that financing into the pricing for concentrated accounts, and managing the exposure as the credit risk it actually is.</p>
+
+  <h2>3. Disputes nobody booked as disputes</h2>
+  <p>A surprising slice of "late" receivables are not late at all in the customer's mind — they are withheld. A short delivery, a quality issue, a pricing discrepancy, an unanswered query. The invoice sits unpaid because the customer is unhappy, but nothing was ever logged as a dispute, so it shows up as a collections failure instead of a service failure. The fix is a fast, visible dispute-resolution loop that surfaces these early, routes them to whoever can actually resolve them, and stops them ageing silently in the ledger.</p>
+
+  <h2>4. You have become someone's credit line</h2>
+  <p>When a customer's own bank line is tight, the cheapest source of working capital available to them is their suppliers. They stretch payables precisely because you let them — interest-free. Rising DSO concentrated in financially stressed accounts is a leading indicator of counterparty risk, not an administrative lag. The right response is credit monitoring, tighter limits, and in some cases pricing the risk of who you sell to before the exposure turns into a write-off.</p>
+
+  <h2>Diagnose before you set a target</h2>
+  <p>The reason "reduce DSO by X days" so often fails as an objective is that it presumes a single cause. In reality the four drivers above call for four different owners — sales, commercial, operations, and credit risk — and pulling the collections lever alone moves none of them. Before you set a DSO goal, decompose the number: which accounts, which cohorts, which of the four causes is actually driving the trend. The teams that get this right treat DSO as a window into the quality of their revenue, not merely the efficiency of their cash chasing.</p>
+
+  <p class="disc">This article is general analysis, not investment, financial, tax, or legal advice. Every situation should be assessed on its specific facts.</p>
+</article>
+
+<div class="cta">
+  <div class="cta__box">
+    <h3>Working capital tightening, or DSO drifting the wrong way?</h3>
+    <p>ContexAi advises on credit risk, receivables and working-capital diagnostics, and the commercial and dispute-resolution fixes behind them — combining finance, banking, and sector expertise across Pakistan and the GCC.</p>
+    <a class="btn" href="/contact">Talk to us &rarr;</a>
+  </div>
+</div>
+
+<footer class="foot">&copy; 2026 ContexAi Group · <a href="/insights">More insights</a> · <a href="/">contexai.org</a></footer>
+
+<a href="/contact" class="sticky-cta">Talk to ContexAi <span>&rarr;</span></a>
+</body>
+</html>
