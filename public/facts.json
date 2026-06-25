@@ -1,0 +1,601 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://contexai.org/#organization",
+      "name": "ContexAi Group",
+      "alternateName": [
+        "ContexAi",
+        "ContexAi Consultancy"
+      ],
+      "url": "https://contexai.org",
+      "logo": "https://contexai.org/images/launch/launch-square.png",
+      "description": "Boutique financial advisory and Agentic AI services for institutional buyers across Pakistan and emerging markets. Practices: Banking & Microfinance, Real Estate & REITs, Energy & Downstream, Accreditation & Standards.",
+      "founder": {
+        "@id": "https://contexai.org/team#amir-waheed-ahmed"
+      },
+      "foundingDate": "2001",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PK",
+        "addressLocality": "Karachi"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Pakistan"
+        },
+        {
+          "@type": "Country",
+          "name": "United Arab Emirates"
+        },
+        {
+          "@type": "Country",
+          "name": "Saudi Arabia"
+        },
+        {
+          "@type": "Country",
+          "name": "Canada"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        }
+      ],
+      "knowsAbout": [
+        "Financial advisory",
+        "PPP advisory",
+        "Dispute resolution",
+        "M&A advisory",
+        "Investment advisory",
+        "Islamic banking",
+        "Microfinance banking",
+        "REIT structuring",
+        "SECP Section 42 NPO",
+        "Refining and downstream economics",
+        "Power infrastructure",
+        "Agentic AI",
+        "Capital project engineering",
+        "Credit risk and collections",
+        "Corporate governance"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/amirwaheedahmed",
+        "https://github.com/DataJinipk"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "amir.wahmed@contexai.org",
+        "telephone": "+92-302-8222316",
+        "areaServed": "PK",
+        "availableLanguage": [
+          "en",
+          "ur"
+        ]
+      },
+      "employee": [
+        {
+          "@id": "https://contexai.org/team#amir-waheed-ahmed"
+        },
+        {
+          "@id": "https://contexai.org/team#mohammad-wasi-khan"
+        },
+        {
+          "@id": "https://contexai.org/team#naveed-a-malik"
+        },
+        {
+          "@id": "https://contexai.org/team#rashid-ahmed"
+        },
+        {
+          "@id": "https://contexai.org/team#nafis-khan"
+        },
+        {
+          "@id": "https://contexai.org/team#syed-muhammad-asrar"
+        },
+        {
+          "@id": "https://contexai.org/team#muhammed-khalid-shekhani"
+        },
+        {
+          "@id": "https://contexai.org/team#tahir-razak"
+        },
+        {
+          "@id": "https://contexai.org/team#adnan-moosa"
+        },
+        {
+          "@id": "https://contexai.org/team#mir-kazim-ali"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#amir-waheed-ahmed",
+      "name": "Amir Waheed Ahmed",
+      "jobTitle": "Founder & Creator, ContexAi Group",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Karachi, Pakistan"
+      },
+      "knowsAbout": [
+        "Financial consulting",
+        "PPP advisory",
+        "Dispute resolution",
+        "Strategic planning",
+        "Agentic AI"
+      ],
+      "image": "https://contexai.org/images/amir.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/amirwaheedahmed"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#mohammad-wasi-khan",
+      "name": "Mohammad Wasi Khan",
+      "jobTitle": "Principal — Refining, Midstream & Energy Infrastructure",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Karachi, Pakistan"
+      },
+      "knowsAbout": [
+        "Refinery strategy",
+        "OMC build-out",
+        "Midstream infrastructure",
+        "Petrochemicals",
+        "Oil trading and M&A",
+        "Corporate governance"
+      ],
+      "image": "https://contexai.org/images/expert-wasi-khan.jpg",
+      "honorificSuffix": "Certified Independent Director (PICG)"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#naveed-a-malik",
+      "name": "Naveed A. Malik",
+      "jobTitle": "Principal — Mega Projects, Power Infrastructure & ERP",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Islamabad, Pakistan"
+      },
+      "knowsAbout": [
+        "Mega projects",
+        "Power infrastructure",
+        "ERP implementation",
+        "Project finance"
+      ],
+      "image": "https://contexai.org/images/expert-naveed-malik.jpg"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#rashid-ahmed",
+      "name": "Rashid Ahmed",
+      "jobTitle": "Principal — Project Engineering & Capital Projects",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Edmonton, Alberta, Canada"
+      },
+      "knowsAbout": [
+        "Project engineering",
+        "Capital project execution",
+        "Owner's engineer advisory",
+        "Construction management"
+      ],
+      "image": "https://contexai.org/images/expert-rashid.jpg",
+      "honorificSuffix": "P.Eng., PMP"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#nafis-khan",
+      "name": "Nafis Khan",
+      "jobTitle": "Principal — Real Estate Finance & CFO Advisory",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "New York, NY, USA"
+      },
+      "knowsAbout": [
+        "Real estate finance",
+        "REIT structuring",
+        "CFO advisory",
+        "Treasury and capital markets"
+      ],
+      "image": "https://contexai.org/images/expert-nafis.jpg",
+      "honorificSuffix": "CPA, CA, FCIS"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#syed-muhammad-asrar",
+      "name": "Syed Muhammad Asrar",
+      "jobTitle": "Principal — M&A & Investment Advisory",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "United Arab Emirates"
+      },
+      "knowsAbout": [
+        "M&A",
+        "Investment advisory",
+        "Cross-border transactions",
+        "GCC capital markets"
+      ],
+      "image": "https://contexai.org/images/expert-asrar.jpg",
+      "honorificSuffix": "FCA"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#muhammed-khalid-shekhani",
+      "name": "Muhammed Khalid Shekhani",
+      "jobTitle": "Principal — Corporate & Financial Advisory",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Mississauga, Ontario, Canada"
+      },
+      "knowsAbout": [
+        "Corporate advisory",
+        "Financial advisory",
+        "Audit and assurance"
+      ],
+      "image": "https://contexai.org/images/expert-khalid.jpg",
+      "honorificSuffix": "CPA, CA"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#tahir-razak",
+      "name": "Tahir Razak",
+      "jobTitle": "Principal — IT Strategy & Digital Transformation",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Greater Toronto Area, Canada"
+      },
+      "knowsAbout": [
+        "IT strategy",
+        "Digital transformation",
+        "Enterprise architecture",
+        "Technology M&A"
+      ],
+      "image": "https://contexai.org/images/expert-tahir.jpg"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#adnan-moosa",
+      "name": "Adnan Moosa",
+      "jobTitle": "Principal — Credit Risk & Collections Strategy",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "New York, NY, USA"
+      },
+      "knowsAbout": [
+        "Credit risk",
+        "Collections strategy",
+        "Retail banking risk",
+        "Consumer credit modelling"
+      ],
+      "image": "https://contexai.org/images/expert-adnan-moosa.jpg",
+      "honorificSuffix": "MBA, ECCP, CGCE"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://contexai.org/team#mir-kazim-ali",
+      "name": "Mir Kazim Ali",
+      "jobTitle": "Principal — Cement & Industrial Operations",
+      "worksFor": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Edmonton, Alberta, Canada"
+      },
+      "knowsAbout": [
+        "Cement industry",
+        "Industrial operations",
+        "Plant operations",
+        "Manufacturing strategy"
+      ],
+      "image": "https://contexai.org/images/expert-mir-kazim-ali.jpg",
+      "honorificSuffix": "P.Eng., MBA"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://contexai.org/practices/banking#service",
+      "name": "Banking & Microfinance Advisory",
+      "description": "Senior advisory across conventional, Islamic and microfinance banking — SBP Prudential Regulation compliance, IFRS 9 ECL, ALM/ALCO, ICAAP, BCP, branchless and digital banking strategy, MFB transformation, gold-loan structuring, and SBP submission packs.",
+      "provider": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "areaServed": "Pakistan",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Tier-1, Tier-2 and microfinance banks regulated by the State Bank of Pakistan"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Banking & Microfinance Advisory",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SBP Prudential Regulation compliance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Islamic banking conversion (full IBI or window)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Microfinance bank transformation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IFRS 9 ECL modelling"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ALM/ALCO/ICAAP/BCP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Core-banking system advisory (PIBAS, IBM IRAS)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gold-loan Islamic structuring"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Branch and digital channels strategy"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://contexai.org/practices/real-estate#service",
+      "name": "Real Estate & REIT Advisory",
+      "description": "REIT structuring under SECP REIT Regulations 2022, real-estate fund formation, trust-deed drafting, sponsor advisory, Highest-and-Best-Use studies, and Islamic-finance overlays for Pakistani and GCC real-estate vehicles.",
+      "provider": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "areaServed": [
+        "Pakistan",
+        "United Arab Emirates",
+        "Saudi Arabia"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Sponsors, asset managers and HNI families building Pakistani REITs and real-estate funds"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Real Estate & REIT Advisory",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SECP REIT registration and structuring"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trust deed and constitutive documents"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sponsor and unit-holder advisory"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Highest-and-Best-Use (HBU) studies"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "REIT IPO and PSX listing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Islamic-finance overlay (Shariah-compliant REIT)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Real-estate fund formation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://contexai.org/practices/energy#service",
+      "name": "Energy & Downstream Advisory",
+      "description": "Senior advisory across refining economics, midstream infrastructure (SPM, terminals, pipelines), oil marketing companies, refinery upgrade economics, and petrochemicals — drawing on a network of former refinery CEOs and chief engineers.",
+      "provider": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "areaServed": [
+        "Pakistan",
+        "United Arab Emirates",
+        "Saudi Arabia"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Refiners, OMCs, midstream operators and infrastructure investors in Pakistan and the GCC"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Energy & Downstream Advisory",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refinery upgrade and capacity expansion economics"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "OMC build-out and retail strategy"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Single-Point-Mooring (SPM) and midstream infrastructure"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pakistan deemed-duty / pricing regime advisory"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refinery M&A and partnership structuring"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Petrochemicals and downstream integration"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://contexai.org/practices/accreditation#service",
+      "name": "Accreditation, NPO & Standards Advisory",
+      "description": "SECP Section 42 not-for-profit company incorporation, accreditation-body strategy, IPO-Pakistan trademark registration of designations and curricula, HEC alignment, and SBP/PBA endorsement engagements for professional bodies.",
+      "provider": {
+        "@id": "https://contexai.org/#organization"
+      },
+      "areaServed": "Pakistan",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Founders of Pakistani professional accreditation institutes, NPOs and standards bodies"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Accreditation, NPO & Standards Advisory",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SECP Section 42 NPO incorporation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Accreditation-body governance and strategy"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IPO-Pakistan trademark registration"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HEC alignment and recognition"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SBP/PBA endorsement engagement"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Code of Professional Ethics design"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
