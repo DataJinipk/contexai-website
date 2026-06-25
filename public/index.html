@@ -554,6 +554,9 @@ img{display:block;max-width:100%}
 /* CRITICAL fix — prevent topnav links from wrapping to two rows */
 .topnav__links{flex-wrap:nowrap;gap:18px}
 
+
+.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
+.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
 </style>
 </head>
 <body>
@@ -595,7 +598,7 @@ img{display:block;max-width:100%}
 
       <a href="/academy">Academy</a>
       <a href="/positions">Positions</a>
-      <a href="/contact" class="cta">Contact Us</a>
+      <a href="/contact" class="topnav__cta">Contact Us</a>
 
     </div>
     <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -1233,40 +1236,7 @@ setTimeout(function(){
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){'use strict';
 
-/* ─── MOBILE NAV TOGGLE ─── (legacy white-nav; .topnav has its own burger) */
-var toggle = document.getElementById('mob-toggle');
-var menu   = document.getElementById('mobile-menu');
-var open   = false;
-function toggleMenu(state){
-  open = state;
-  if (!toggle || !menu) return;
-  toggle.classList.toggle('open', open);
-  menu.classList.toggle('open', open);
-  menu.setAttribute('aria-hidden', !open);
-  toggle.setAttribute('aria-expanded', open);
-  document.body.style.overflow = open ? 'hidden' : '';
-}
-if (toggle && menu) {
-  toggle.addEventListener('click', function(){ toggleMenu(!open); });
-  menu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){ toggleMenu(false); });
-  });
-  document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape' && open) toggleMenu(false);
-  });
-}
-
-/* ─── SCROLL NAV SHADOW ─── (legacy white-nav; .topnav has built-in shadow) */
-var nav = document.getElementById('main-nav');
-if (nav) {
-  var ticking = false;
-  window.addEventListener('scroll', function(){
-    if(!ticking){ requestAnimationFrame(function(){
-      nav.classList.toggle('scrolled', window.scrollY > 40);
-      ticking = false;
-    }); ticking = true; }
-  }, {passive:true});
-}
+/* legacy mobile nav + scroll-shadow JS removed (dead code after topnav refactor) */
 
 /* ─── SMOOTH SCROLL for # links ─── */
 document.addEventListener('click', function(e){
@@ -1303,6 +1273,32 @@ document.addEventListener('click', function(e){
   }, 2000);
 })();
 
+})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('form.notify, form[action="/api/newsletter"]').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var fd = new FormData(form);
+      var btn = form.querySelector('button[type="submit"]');
+      var original = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Submitting…'; }
+      fetch('/api/newsletter', { method: 'POST', body: fd })
+        .then(function(r){ return r.json().catch(function(){ return {ok:r.ok}; }); })
+        .then(function(json){
+          var msg = document.createElement('div');
+          msg.style.cssText = 'margin-top:18px;padding:14px 22px;background:rgba(20,184,166,.12);border:1px solid rgba(20,184,166,.3);border-radius:30px;color:#0A3E40;font-weight:600;font-size:.95rem;text-align:center;animation:fadeIn .3s ease';
+          msg.textContent = json && json.ok ? "You\u2019re on the list. We\u2019ll email you when it launches." : "Something went wrong \u2014 try again or email amir.wahmed@contexai.org";
+          form.parentNode.insertBefore(msg, form.nextSibling);
+          form.style.display = 'none';
+        })
+        .catch(function(){
+          if (btn) { btn.disabled = false; btn.textContent = original; }
+          alert('Network error. Please email amir.wahmed@contexai.org');
+        });
+    });
+  });
 })();
 </script>
 </body>
