@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex,follow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="ContexAi Research — independent, practitioner-grade research on Pakistan & emerging-market finance. Coming soon. Subscribe to be notified.">
 <meta name="theme-color" content="#9C27B0">
@@ -131,6 +132,9 @@ a{color:#0C6E66;text-decoration:none}
 /* CRITICAL fix — prevent topnav links from wrapping to two rows */
 .topnav__links{flex-wrap:nowrap;gap:18px}
 
+
+.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
+.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
 </style>
 </head>
 <body>
@@ -180,7 +184,7 @@ a{color:#0C6E66;text-decoration:none}
       </div>
       <a href="/academy">Academy</a>
       <a href="/positions">Positions</a>
-      <a href="/contact" class="cta">Contact Us</a>
+      <a href="/contact" class="topnav__cta">Contact Us</a>
     </div>
     <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
@@ -232,5 +236,31 @@ a{color:#0C6E66;text-decoration:none}
   <p>&copy; 2026 ContexAi Group &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a> &middot; <a href="/contact">Contact</a></p>
 </footer>
 
+<script>
+(function(){
+  document.querySelectorAll('form.notify, form[action="/api/newsletter"]').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var fd = new FormData(form);
+      var btn = form.querySelector('button[type="submit"]');
+      var original = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Submitting…'; }
+      fetch('/api/newsletter', { method: 'POST', body: fd })
+        .then(function(r){ return r.json().catch(function(){ return {ok:r.ok}; }); })
+        .then(function(json){
+          var msg = document.createElement('div');
+          msg.style.cssText = 'margin-top:18px;padding:14px 22px;background:rgba(20,184,166,.12);border:1px solid rgba(20,184,166,.3);border-radius:30px;color:#0A3E40;font-weight:600;font-size:.95rem;text-align:center;animation:fadeIn .3s ease';
+          msg.textContent = json && json.ok ? "You\u2019re on the list. We\u2019ll email you when it launches." : "Something went wrong \u2014 try again or email amir.wahmed@contexai.org";
+          form.parentNode.insertBefore(msg, form.nextSibling);
+          form.style.display = 'none';
+        })
+        .catch(function(){
+          if (btn) { btn.disabled = false; btn.textContent = original; }
+          alert('Network error. Please email amir.wahmed@contexai.org');
+        });
+    });
+  });
+})();
+</script>
 </body>
 </html>

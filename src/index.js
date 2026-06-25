@@ -168,7 +168,7 @@ const TOPNAV_HTML = `<nav class="topnav">
 
       <a href="/academy">Academy</a>
       <a href="/positions">Positions</a>
-      <a href="/contact" class="cta">Contact Us</a>
+      <a href="/contact" class="topnav__cta">Contact Us</a>
 
     </div>
     <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -206,6 +206,7 @@ const TOPNAV_DROPDOWN_CSS = `<style id="contexai-dropdown-css">
   .topnav__dd-panel a{padding:7px 0 7px 12px;font-size:.95rem;color:rgba(255,255,255,.92);border-left:3px solid rgba(255,255,255,.15)}
   .topnav__dd-panel a:hover{padding-left:16px}
 }
+.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
 </style>`;
 
 // ─── Security headers ───────────────────────────────────────────────────────

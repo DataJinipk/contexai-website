@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ContexAi Group — Boutique Financial Advisory & Agentic AI">
+<meta name="twitter:description" content="Senior consulting and Agentic AI for institutional buyers across Pakistan and emerging markets.">
+<meta property="og:image" content="https://contexai.org/images/launch/launch-card.png">
 <meta name="description" content="Contact ContexAi Group — strategic advisory, dispute resolution, PPP, and sector-specific consulting across Pakistan and emerging markets.">
-<title>Contact — ContexAi Group</title>
+<title>Contact ContexAi Group — Boutique Financial Advisory & Agentic AI, Pakistan & Emerging Markets</title>
 <link rel="canonical" href="https://contexai.org/contact">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -102,6 +106,9 @@ textarea{resize:vertical}
 /* CRITICAL fix — prevent topnav links from wrapping to two rows */
 .topnav__links{flex-wrap:nowrap;gap:18px}
 
+
+.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
+.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
 </style>
 </head>
 <body>
@@ -139,12 +146,13 @@ textarea{resize:vertical}
 
       <a href="/academy">Academy</a>
       <a href="/positions">Positions</a>
-      <a href="/contact" class="cta">Contact Us</a>
+      <a href="/contact" class="topnav__cta">Contact Us</a>
 
     </div>
     <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
   </div>
 </nav>
+var escapeHtml = function(s){ return String(s||'').replace(/[&<>"']/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); };
 <script>(function(){
   var p = location.pathname.replace(/\/$/,'') || '/';
   document.querySelectorAll('.topnav__links a').forEach(function(a){
