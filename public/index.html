@@ -1237,10 +1237,15 @@ img{display:block;max-width:100%}
 
 <!-- ─── ECONOMIC VIBES NEWS TICKER (bottom) ─── -->
 <style>
-  .ev-ticker--news{border-top:2px solid #C6DA0B;border-bottom:none}
+  /* Bottom news ticker: pinned to the viewport so it stays visible + scrolling while the visitor scrolls */
+  .ev-ticker--news{position:fixed;left:0;right:0;bottom:0;z-index:60;
+    border-top:2px solid #C6DA0B;border-bottom:none;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
   .ev-ticker--news .ev-ticker__label{background:#0A7E8C;color:#C6DA0B}
   .ev-ticker--news .ev-ticker__cta{background:#08616C;color:#fff}
   .ev-ticker--news .ev-ticker__item b{color:#EAF7A0}
+  /* reserve space so the fixed bar never overlaps the footer */
+  body{padding-bottom:46px}
+  @media (max-width:640px){ body{padding-bottom:40px} .ev-ticker--news .ev-ticker__cta{display:none} }
 </style>
 <a class="ev-ticker ev-ticker--news" href="/insights" aria-label="ContexAi — latest market &amp; policy news">
   <span class="ev-ticker__label">📰&nbsp;ContexAi&nbsp;News</span>
