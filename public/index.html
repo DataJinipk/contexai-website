@@ -630,8 +630,8 @@ img{display:block;max-width:100%}
     font:600 14px/1 "Segoe UI","Helvetica Neue",Arial,sans-serif;overflow:hidden;position:relative;border-bottom:2px solid #C6DA0B}
   .ev-ticker__label{flex:0 0 auto;display:flex;align-items:center;background:#C6DA0B;color:#414d00;font-weight:800;
     letter-spacing:.5px;padding:0 16px;white-space:nowrap;text-transform:uppercase;font-size:13px;z-index:2}
-  .ev-ticker__viewport{flex:1 1 auto;overflow:hidden;display:flex;align-items:center}
-  .ev-ticker__track{display:inline-flex;white-space:nowrap;will-change:transform;animation:ev-marquee 38s linear infinite}
+  .ev-ticker__viewport{flex:1 1 auto;min-width:0;overflow:hidden;display:flex;align-items:center}
+  .ev-ticker__track{flex:0 0 auto;display:inline-flex;white-space:nowrap;will-change:transform;animation:ev-marquee 60s linear infinite}
   .ev-ticker__item{display:inline-flex;align-items:center;padding:10px 0;white-space:nowrap}
   .ev-ticker__item b{color:#EAF7A0}
   .ev-ticker .up{color:#9FE9BF;font-weight:700} .ev-ticker .dn{color:#FFC3C9;font-weight:700}
@@ -645,32 +645,54 @@ img{display:block;max-width:100%}
 <a class="ev-ticker" href="/economic-vibes" aria-label="Economic Vibes — today's market brief">
   <span class="ev-ticker__label">📊&nbsp;Economic&nbsp;Vibes</span>
   <span class="ev-ticker__viewport">
+    <!-- EV-DATA:START (auto-updated by the Economic Vibes daily job — edit values here) -->
     <span class="ev-ticker__track">
       <span class="ev-ticker__item">
-        <b>SUN 19 JUL 2026</b><span class="ev-ticker__sep">•</span>
-        KSE-100 175,802 <span class="dn">▼ 1.30%</span><span class="ev-ticker__sep">•</span>
+        <b>SUN 19 JUL 2026 · PSX CLOSE</b><span class="ev-ticker__sep">•</span>
+        KSE-100 175,802 <span class="dn">▼ 1.30%</span> <span class="dn">(−2,320)</span><span class="ev-ticker__sep">•</span>
+        KSE-30 <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
+        KSE All-Share <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
+        Breadth: decliners &gt; advancers<span class="ev-ticker__sep">•</span>
+        Actives: SNGP <span class="up">▲</span> · KEL <span class="up">▲</span> · LOTCHEM · BOP<span class="ev-ticker__sep">•</span>
+        Drags: ENGROH <span class="dn">▼</span> · SYS <span class="dn">▼</span> · UBL <span class="dn">▼</span> · OGDC <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
+        Sectors: Banks <span class="dn">▼</span> · E&amp;P <span class="dn">▼</span> · Cement <span class="dn">▼</span> · Tech <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
         S&amp;P 500 <span class="dn">▼ 1.0%</span><span class="ev-ticker__sep">•</span>
+        Nasdaq <span class="dn">▼ 1.5%</span><span class="ev-ticker__sep">•</span>
+        Dow <span class="dn">−407</span><span class="ev-ticker__sep">•</span>
+        US 10Y 4.537%<span class="ev-ticker__sep">•</span>
         Brent <span class="up">▲ ~$85</span><span class="ev-ticker__sep">•</span>
         WTI ~$80<span class="ev-ticker__sep">•</span>
-        Gold ~$3,984<span class="ev-ticker__sep">•</span>
+        Gold <span class="up">▲ ~$3,984</span><span class="ev-ticker__sep">•</span>
         USD/PKR ~279.4<span class="ev-ticker__sep">•</span>
         SBP 11.50%<span class="ev-ticker__sep">•</span>
+        CPI 11.7%<span class="ev-ticker__sep">•</span>
         Mood: <span class="dn">Risk-off</span><span class="ev-ticker__sep">•</span>
-        Read today's Morning Brief<span class="ev-ticker__sep">•</span>
+        <b>Read today's Morning Brief →</b><span class="ev-ticker__sep">•</span>
       </span>
       <span class="ev-ticker__item" aria-hidden="true">
-        <b>SUN 19 JUL 2026</b><span class="ev-ticker__sep">•</span>
-        KSE-100 175,802 <span class="dn">▼ 1.30%</span><span class="ev-ticker__sep">•</span>
+        <b>SUN 19 JUL 2026 · PSX CLOSE</b><span class="ev-ticker__sep">•</span>
+        KSE-100 175,802 <span class="dn">▼ 1.30%</span> <span class="dn">(−2,320)</span><span class="ev-ticker__sep">•</span>
+        KSE-30 <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
+        KSE All-Share <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
+        Breadth: decliners &gt; advancers<span class="ev-ticker__sep">•</span>
+        Actives: SNGP <span class="up">▲</span> · KEL <span class="up">▲</span> · LOTCHEM · BOP<span class="ev-ticker__sep">•</span>
+        Drags: ENGROH <span class="dn">▼</span> · SYS <span class="dn">▼</span> · UBL <span class="dn">▼</span> · OGDC <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
+        Sectors: Banks <span class="dn">▼</span> · E&amp;P <span class="dn">▼</span> · Cement <span class="dn">▼</span> · Tech <span class="dn">▼</span><span class="ev-ticker__sep">•</span>
         S&amp;P 500 <span class="dn">▼ 1.0%</span><span class="ev-ticker__sep">•</span>
+        Nasdaq <span class="dn">▼ 1.5%</span><span class="ev-ticker__sep">•</span>
+        Dow <span class="dn">−407</span><span class="ev-ticker__sep">•</span>
+        US 10Y 4.537%<span class="ev-ticker__sep">•</span>
         Brent <span class="up">▲ ~$85</span><span class="ev-ticker__sep">•</span>
         WTI ~$80<span class="ev-ticker__sep">•</span>
-        Gold ~$3,984<span class="ev-ticker__sep">•</span>
+        Gold <span class="up">▲ ~$3,984</span><span class="ev-ticker__sep">•</span>
         USD/PKR ~279.4<span class="ev-ticker__sep">•</span>
         SBP 11.50%<span class="ev-ticker__sep">•</span>
+        CPI 11.7%<span class="ev-ticker__sep">•</span>
         Mood: <span class="dn">Risk-off</span><span class="ev-ticker__sep">•</span>
-        Read today's Morning Brief<span class="ev-ticker__sep">•</span>
+        <b>Read today's Morning Brief →</b><span class="ev-ticker__sep">•</span>
       </span>
     </span>
+    <!-- EV-DATA:END -->
   </span>
   <span class="ev-ticker__cta">Full brief →</span>
 </a>
