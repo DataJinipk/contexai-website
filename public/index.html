@@ -639,7 +639,9 @@ img{display:block;max-width:100%}
   .ev-ticker__cta{flex:0 0 auto;display:flex;align-items:center;background:#08616C;padding:0 16px;font-weight:800;white-space:nowrap;z-index:2}
   .ev-ticker:hover .ev-ticker__track{animation-play-state:paused}
   @keyframes ev-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  @media (prefers-reduced-motion:reduce){.ev-ticker__track{animation:none}}
+  /* The site has a global *{animation-duration:.01ms!important} reduced-motion reset that freezes marquees.
+     A class selector + !important out-specifies the * rule, so the ticker keeps scrolling. */
+  @media (prefers-reduced-motion:reduce){.ev-ticker__track{animation-duration:60s!important;animation-name:ev-marquee!important}}
   @media (max-width:640px){.ev-ticker__cta{display:none}.ev-ticker__label{font-size:11px;padding:0 10px}.ev-ticker{font-size:12.5px}}
 </style>
 <a class="ev-ticker" href="/economic-vibes" aria-label="Economic Vibes — today's market brief">
