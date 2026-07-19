@@ -624,6 +624,57 @@ img{display:block;max-width:100%}
 
 <main>
 
+<!-- ─── ECONOMIC VIBES TICKER ─── -->
+<style>
+  .ev-ticker{display:flex;align-items:stretch;background:#0A7E8C;color:#fff;text-decoration:none;
+    font:600 14px/1 "Segoe UI","Helvetica Neue",Arial,sans-serif;overflow:hidden;position:relative;border-bottom:2px solid #C6DA0B}
+  .ev-ticker__label{flex:0 0 auto;display:flex;align-items:center;background:#C6DA0B;color:#414d00;font-weight:800;
+    letter-spacing:.5px;padding:0 16px;white-space:nowrap;text-transform:uppercase;font-size:13px;z-index:2}
+  .ev-ticker__viewport{flex:1 1 auto;overflow:hidden;display:flex;align-items:center}
+  .ev-ticker__track{display:inline-flex;white-space:nowrap;will-change:transform;animation:ev-marquee 38s linear infinite}
+  .ev-ticker__item{display:inline-flex;align-items:center;padding:10px 0;white-space:nowrap}
+  .ev-ticker__item b{color:#EAF7A0}
+  .ev-ticker .up{color:#9FE9BF;font-weight:700} .ev-ticker .dn{color:#FFC3C9;font-weight:700}
+  .ev-ticker__sep{opacity:.45;padding:0 16px}
+  .ev-ticker__cta{flex:0 0 auto;display:flex;align-items:center;background:#08616C;padding:0 16px;font-weight:800;white-space:nowrap;z-index:2}
+  .ev-ticker:hover .ev-ticker__track{animation-play-state:paused}
+  @keyframes ev-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.ev-ticker__track{animation:none}}
+  @media (max-width:640px){.ev-ticker__cta{display:none}.ev-ticker__label{font-size:11px;padding:0 10px}.ev-ticker{font-size:12.5px}}
+</style>
+<a class="ev-ticker" href="/economic-vibes" aria-label="Economic Vibes — today's market brief">
+  <span class="ev-ticker__label">📊&nbsp;Economic&nbsp;Vibes</span>
+  <span class="ev-ticker__viewport">
+    <span class="ev-ticker__track">
+      <span class="ev-ticker__item">
+        <b>SUN 19 JUL 2026</b><span class="ev-ticker__sep">•</span>
+        KSE-100 175,802 <span class="dn">▼ 1.30%</span><span class="ev-ticker__sep">•</span>
+        S&amp;P 500 <span class="dn">▼ 1.0%</span><span class="ev-ticker__sep">•</span>
+        Brent <span class="up">▲ ~$85</span><span class="ev-ticker__sep">•</span>
+        WTI ~$80<span class="ev-ticker__sep">•</span>
+        Gold ~$3,984<span class="ev-ticker__sep">•</span>
+        USD/PKR ~279.4<span class="ev-ticker__sep">•</span>
+        SBP 11.50%<span class="ev-ticker__sep">•</span>
+        Mood: <span class="dn">Risk-off</span><span class="ev-ticker__sep">•</span>
+        Read today's Morning Brief<span class="ev-ticker__sep">•</span>
+      </span>
+      <span class="ev-ticker__item" aria-hidden="true">
+        <b>SUN 19 JUL 2026</b><span class="ev-ticker__sep">•</span>
+        KSE-100 175,802 <span class="dn">▼ 1.30%</span><span class="ev-ticker__sep">•</span>
+        S&amp;P 500 <span class="dn">▼ 1.0%</span><span class="ev-ticker__sep">•</span>
+        Brent <span class="up">▲ ~$85</span><span class="ev-ticker__sep">•</span>
+        WTI ~$80<span class="ev-ticker__sep">•</span>
+        Gold ~$3,984<span class="ev-ticker__sep">•</span>
+        USD/PKR ~279.4<span class="ev-ticker__sep">•</span>
+        SBP 11.50%<span class="ev-ticker__sep">•</span>
+        Mood: <span class="dn">Risk-off</span><span class="ev-ticker__sep">•</span>
+        Read today's Morning Brief<span class="ev-ticker__sep">•</span>
+      </span>
+    </span>
+  </span>
+  <span class="ev-ticker__cta">Full brief →</span>
+</a>
+
 <!-- ─── HERO ─── -->
 <section class="hero">
   <div class="hero__grid"></div>
