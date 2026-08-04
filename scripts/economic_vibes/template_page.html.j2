@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Vibes — Daily Market Intelligence | ContexAi Group</title>
+<meta name="description" content="Economic Vibes is ContexAi Group's daily, C-suite-grade market intelligence — a Morning Brief and PSX Daily Market Wrap across Global, GCC and Pakistan markets.">
+<meta property="og:title" content="Economic Vibes — Daily Market Intelligence | ContexAi Group">
+<meta property="og:description" content="Daily Morning Brief + PSX Daily Market Wrap across Global, GCC and Pakistan markets.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://contexai.org/economic-vibes">
+<style>
+  :root{ --tqd:#0A7E8C; --tq:#0FA3B0; --tqb:#17C0CE; --tqbg:#EBFAFB; --lemon:#C6DA0B; --lemontx:#5F7400;
+    --pos:#0E9F6E; --neg:#D8434E; --ink:#123; --muted:#4a5f63; --blue:#1D5FFF; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; color:var(--ink);
+    background:var(--tqbg); line-height:1.6; font-size:16px; }
+  .seg{ display:flex; height:8px; width:100%; }
+  .seg i{ flex:1; }
+  .wrap{ max-width:900px; margin:0 auto; background:#fff; }
+  .top{ background:#fff; padding:18px 34px 14px; border-bottom:1px solid #e6f4f6; }
+  .lock{ display:flex; align-items:center; gap:0; }
+  .lock .c{ color:#0B0B0B; } .lock .a{ color:var(--blue); }
+  .lock h1{ font-size:26px; font-weight:800; margin:0; }
+  .lock .divider{ color:#C6D8DC; padding:0 10px; font-weight:400; font-size:24px; }
+  .lock .pub{ color:var(--tqd); font-weight:800; font-size:19px; }
+  .kicker{ color:var(--muted); font-size:13px; margin-top:6px; }
+  .hero{ background:var(--tqd); color:#fff; padding:26px 34px; }
+  .hero .eyebrow{ color:var(--lemon); font-weight:800; text-transform:uppercase; letter-spacing:1px; font-size:13px; }
+  .hero h2{ font-size:30px; margin:6px 0 8px; line-height:1.2; }
+  .hero p{ margin:0; color:#dbf6f9; font-size:16px; }
+  .content{ padding:24px 34px 40px; }
+  .snap{ display:flex; flex-wrap:wrap; gap:10px; margin:6px 0 22px; }
+  .snap .c2{ flex:1 1 120px; background:#fff; border:1px solid #cfeef1; border-top:4px solid var(--tq);
+    border-radius:9px; padding:10px 12px; }
+  .snap .l{ font-size:11px; color:var(--lemontx); font-weight:800; text-transform:uppercase; letter-spacing:.4px; }
+  .snap .v{ font-size:19px; font-weight:800; color:var(--tqd); }
+  .snap .d{ font-size:12px; font-weight:700; }
+  .neg{ color:var(--neg); } .pos{ color:var(--pos); }
+  h3.sec{ color:#fff; background:var(--tq); padding:8px 14px; border-radius:6px; font-size:18px; margin:26px 0 12px; }
+  h3.sec .n{ color:var(--lemon); font-weight:900; margin-right:8px; }
+  h4{ color:var(--tqd); font-size:16px; margin:18px 0 6px; border-bottom:2px solid var(--lemon); padding-bottom:4px; }
+  p{ text-align:justify; }
+  a{ color:var(--tqd); font-weight:600; }
+  ul.five{ list-style:none; padding:0; margin:10px 0; }
+  ul.five li{ background:#fff; border:1px solid #cfeef1; border-left:4px solid var(--tq);
+    border-radius:0 8px 8px 0; padding:10px 14px; margin:8px 0; }
+  .chip{ background:var(--lemon); color:var(--lemontx); font-weight:800; font-size:11px; padding:2px 8px;
+    border-radius:4px; text-transform:uppercase; letter-spacing:.3px; margin-right:6px; }
+  table{ width:100%; border-collapse:collapse; margin:10px 0; font-size:14px; }
+  th{ background:var(--tqd); color:#fff; text-align:left; padding:8px; }
+  td{ padding:8px; border-bottom:1px solid #e0f0f2; vertical-align:top; }
+  tr:nth-child(even) td{ background:#f4fcfd; }
+  .dl{ display:inline-block; background:var(--tqd); color:#fff; text-decoration:none; font-weight:700;
+    padding:12px 22px; border-radius:9px; margin:16px 0; }
+  .disc{ font-size:12.5px; color:var(--muted); background:var(--tqbg); border:1px solid #cfeef1;
+    border-radius:8px; padding:12px 16px; margin-top:24px; text-align:justify; }
+  .foot{ background:var(--tqd); color:#eafdff; text-align:center; font-size:12px; padding:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="seg"><i style="background:#0040D9"></i><i style="background:#00838F"></i><i style="background:#00BCD4"></i><i style="background:#AEEA00"></i><i style="background:#FDD835"></i><i style="background:#FFC400"></i><i style="background:#F26122"></i><i style="background:#D81B60"></i><i style="background:#9C27B0"></i></div>
+
+  <div class="top">
+    <div class="lock"><h1><span class="c">Contex</span><span class="a">Ai</span></h1><span class="divider">|</span><span class="pub">Economic Vibes</span></div>
+    <div class="kicker">Daily market intelligence · Morning Brief ~06:30 AM PKT · PSX Daily Market Wrap after close · WhatsApp Channel: Economic Vibes</div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Morning Brief · {{ date_long }}</div>
+    <h2>{{ headline }}</h2>
+    <p>A C-suite read across Global, GCC and Pakistan — sourced via Reuters, CNBC, Business Recorder, Express Tribune, Mettis Global, AGBI, Gulf News, S&amp;P Global, Kitco &amp; SBP. <b>V</b> = verified · <b>EST.</b> = desk estimate.</p>
+  </div>
+
+  <div class="content">
+    <div class="snap">
+      {% for c in snapshot %}<div class="c2"><div class="l">{{ c.label }} <span style="font-size:9px">{{ c.tag }}</span></div><div class="v {{ c.delta_class }}">{{ c.value }}</div><div class="d {{ c.delta_class }}">{{ c.delta }}</div></div>
+      {% endfor %}
+    </div>
+
+    <a class="dl" href="{{ pdf_filename }}">📄 Download today's one-page PDF brief</a>
+
+    <h3 class="sec"><span class="n">01</span>Five Things You Need To Know To Start Your Day</h3>
+    <ul class="five">
+      {% for f in five_things %}<li><span class="chip">{{ f.chip }}</span>{{ f.html }} Sentiment: <b class="{{ f.sentiment_class }}">{{ f.sentiment }}</b>.</li>
+      {% endfor %}
+    </ul>
+
+    <h3 class="sec"><span class="n">02</span>Regional Market &amp; Economic Matrix</h3>
+    <h4>A. Local Market — Pakistan Focus</h4>
+    <p>{{ matrix.local_html }}</p>
+    <h4>B. GCC &amp; Middle East</h4>
+    <p>{{ matrix.gcc_html }}</p>
+    <h4>C. Global Intelligence</h4>
+    <p>{{ matrix.global_html }}</p>
+
+    <h3 class="sec"><span class="n">03</span>Legislative &amp; Regulatory Tracker — Who Wins, Who Loses</h3>
+    <table>
+      <tr><th>Jurisdiction</th><th>Policy Change</th><th>Sectors</th><th>Net Impact</th></tr>
+      {% for r in legislative %}<tr><td><b>{{ r.jur }}</b></td><td>{{ r.policy_html }}</td><td>{{ r.sectors }}</td><td>{{ r.impact_html }}</td></tr>
+      {% endfor %}
+    </table>
+
+    <h3 class="sec"><span class="n">04</span>The Day Ahead — KSE-100 Levels &amp; Desk Stance</h3>
+    <p><b>Levels (EST.):</b> support <b>{{ levels.support }}</b> — {{ levels.support_note }} · pivot <b>{{ levels.pivot }}</b> — {{ levels.pivot_note }} · resistance <b>{{ levels.resistance }}</b> — {{ levels.resistance_note }}.</p>
+    <p>{{ desk_stance_html }}</p>
+
+    <a class="dl" href="{{ pdf_filename }}">📄 Download the full one-page PDF brief</a>
+
+    <div class="disc"><b>Disclaimer:</b> {{ disclaimer }}</div>
+  </div>
+
+  <div class="seg"><i style="background:#0040D9"></i><i style="background:#00838F"></i><i style="background:#00BCD4"></i><i style="background:#AEEA00"></i><i style="background:#FDD835"></i><i style="background:#FFC400"></i><i style="background:#F26122"></i><i style="background:#D81B60"></i><i style="background:#9C27B0"></i></div>
+  <div class="foot">© 2026 ContexAi Group · contexai.org · Economic Vibes — daily market intelligence, released ~06:30 AM PKT</div>
+</div>
+</body>
+</html>
