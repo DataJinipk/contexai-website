@@ -1,0 +1,98 @@
+name: economic-vibes
+
+# Autonomous "Economic Vibes — Morning Brief" pipeline.
+# Runs in GitHub's cloud, so it fires whether or not any laptop is on.
+#
+# Schedule: 01:30 UTC = 06:30 AM PKT (UTC+5), Monday–Friday.
+# GitHub cron is best-effort and can be delayed a few minutes under load.
+# You can also trigger it by hand from the Actions tab (workflow_dispatch),
+# with dry_run=true to build + commit without posting to LinkedIn/WhatsApp.
+
+on:
+  schedule:
+    - cron: '30 1 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Build & commit only — do NOT post to LinkedIn/WhatsApp'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write        # allows the job to push generated files back to main
+
+concurrency:
+  group: economic-vibes
+  cancel-in-progress: false
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Karachi
+      ANTHROPIC_API_KEY:      ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_MODEL:           ${{ vars.CLAUDE_MODEL }}          # e.g. claude-sonnet-4-5 (set in repo Variables)
+      LINKEDIN_ACCESS_TOKEN:  ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+      LINKEDIN_ORG_ID:        '131244052'
+      WHATSAPP_TOKEN:         ${{ secrets.WHATSAPP_TOKEN }}
+      WHATSAPP_PHONE_ID:      ${{ secrets.WHATSAPP_PHONE_ID }}
+      WHATSAPP_TO:            ${{ secrets.WHATSAPP_TO }}
+      PUBLIC_PDF_BASE_URL:    'https://contexai.org'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system deps (WeasyPrint + pandoc)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf-2.0-0 \
+            libffi-dev libcairo2 shared-mime-info fonts-dejavu pandoc
+
+      - name: Install Python deps
+        run: pip install -r scripts/economic_vibes/requirements.txt
+
+      - name: Build brief, render PDF, update site files
+        run: python scripts/economic_vibes/build_brief.py
+        # Writes: public/<date>-Economic-Vibes-Morning-Brief.pdf, public/<date>-...-brief.html,
+        #         public/<date>-Economic-Vibes-Morning-Brief.docx (if pandoc present),
+        #         rewrites public/economic-vibes.html, public/index.html markers, public/sitemap.xml,
+        #         and scripts/economic_vibes/out/{linkedin.txt, whatsapp.txt}
+
+      - name: Commit & push generated files
+        run: |
+          git config user.name  "contexai-bot"
+          git config user.email "bot@contexai.org"
+          git add public/ scripts/economic_vibes/out/ || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Economic Vibes — $(date +'%A, %d %B %Y') [auto]"
+            git push
+          fi
+
+      - name: Post to LinkedIn (ContexAi Group page)
+        if: ${{ github.event_name == 'schedule' || inputs.dry_run == false }}
+        continue-on-error: true      # a posting failure must not fail the whole run / block the deploy
+        run: python scripts/economic_vibes/post_linkedin.py
+
+      - name: Post to WhatsApp
+        if: ${{ github.event_name == 'schedule' || inputs.dry_run == false }}
+        continue-on-error: true
+        run: python scripts/economic_vibes/post_whatsapp.py
+
+      - name: Upload artifacts (PDF + captions)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: economic-vibes-${{ github.run_id }}
+          path: |
+            public/*-Economic-Vibes-Morning-Brief.pdf
+            scripts/economic_vibes/out/*.txt
+          if-no-files-found: ignore
+          retention-days: 14
