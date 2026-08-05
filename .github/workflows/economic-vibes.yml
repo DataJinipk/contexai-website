@@ -70,11 +70,15 @@ jobs:
         run: python scripts/economic_vibes/build_brief.py emit-prompt
 
       - name: Research + write payload (Claude Code · Max plan)
+        timeout-minutes: 9        # fail fast instead of hanging a morning run
         run: |
           MODEL_FLAG=""
           if [ -n "${CLAUDE_MODEL}" ]; then MODEL_FLAG="--model ${CLAUDE_MODEL}"; fi
           claude -p "$(cat scripts/economic_vibes/out/prompt.txt)" \
             $MODEL_FLAG \
+            --max-turns 45 \
+            --verbose \
+            --output-format stream-json \
             --dangerously-skip-permissions
           test -f scripts/economic_vibes/out/payload.json \
             || (echo "Claude Code did not write payload.json" && exit 1)

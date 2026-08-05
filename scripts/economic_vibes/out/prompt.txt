@@ -9,6 +9,7 @@ RESEARCH RULES:
 - Never invent a level. Tag every figure V (verified) or EST. (desk estimate) in the snapshot 'tag' fields and inline in prose.
 - Cover: KSE-100 close (pts & %), volume, breadth, movers, sector leaders/laggards; US indices + 10Y/2Y + Fed stance; GCC (oil output/OPEC+, non-oil PMI, PIF/Vision 2030); gold, silver, WTI, Brent; USD/PKR interbank; SBP rate, CPI, KIBOR, IMF; and a 3-row legislative tracker (Pakistan / GCC / Global) with who-wins/who-loses.
 - House voice: tight, analytical, justified prose. Inline links use real verified source URLs as <a href="URL">text</a>. Use HTML entities (&amp; for &).
+- WORK EFFICIENTLY: aim for ~12-16 web searches total; two credible sources per key figure is enough — do not exhaust every source. As soon as you have the numbers, WRITE scripts/economic_vibes/out/payload.json and STOP. Do not re-verify endlessly.
 
 Use these exact identifiers: date_long='Wednesday, 05 August 2026', iso_date='2026-08-05', pdf_filename='2026-08-05-Economic-Vibes-Morning-Brief.pdf', date_news='05 AUG 2026'.
 
