@@ -86,6 +86,14 @@ jobs:
         continue-on-error: true
         run: python scripts/economic_vibes/post_whatsapp.py
 
+      - name: Success ping (Slack)
+        if: success()
+        continue-on-error: true
+        env:
+          SLACK_WEBHOOK_URL:   ${{ secrets.SLACK_WEBHOOK_URL }}
+          PUBLIC_PDF_BASE_URL: 'https://contexai.org'
+        run: python scripts/economic_vibes/notify_success.py
+
       - name: Alert on failure (Slack / email)
         if: failure()
         env:

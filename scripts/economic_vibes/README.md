@@ -58,6 +58,12 @@ morning genuinely misbehaves. Add whichever channel you want:
 Backstop: GitHub also emails the repo owner by default when a **scheduled** workflow fails, so
 you're covered even before you add a webhook.
 
+### Success ping (optional, uses the same webhook)
+If `SLACK_WEBHOOK_URL` is set, a quiet success step (`notify_success.py`) posts a one-liner each
+morning — `✅ Economic Vibes posted — <date>` with the live page link, the PDF link, and the
+LinkedIn result. Same channel as the failure alert; no extra secret. Delete the "Success ping"
+step from the workflow if you'd rather stay failure-only.
+
 ### LinkedIn token
 The UGC post needs a token minted for an app with the **Community Management API** / `w_organization_social`
 product, authorized by a Page admin. Personal tokens won't post to the company page. If the token expires,
