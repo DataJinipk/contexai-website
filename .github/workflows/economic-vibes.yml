@@ -86,6 +86,19 @@ jobs:
         continue-on-error: true
         run: python scripts/economic_vibes/post_whatsapp.py
 
+      - name: Alert on failure (Slack / email)
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SMTP_HOST:         ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:         ${{ secrets.SMTP_PORT }}
+          SMTP_USER:         ${{ secrets.SMTP_USER }}
+          SMTP_PASS:         ${{ secrets.SMTP_PASS }}
+          ALERT_EMAIL_TO:    ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM:  ${{ secrets.SMTP_USER }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/economic_vibes/notify_failure.py
+
       - name: Upload artifacts (PDF + captions)
         if: always()
         uses: actions/upload-artifact@v4

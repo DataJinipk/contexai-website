@@ -43,6 +43,21 @@ In the repo → **Settings → Secrets and variables → Actions**:
 
 `GITHUB_TOKEN` is provided automatically; the workflow already has `contents: write` to push.
 
+### Failure alerts (recommended)
+A final step runs **only on a failed run** (`notify_failure.py`) and pings Slack and/or email —
+whichever you configure. Posting failures alone do **not** trigger it (those steps are
+`continue-on-error`); it fires on a real build/push failure, so you only get pinged when the
+morning genuinely misbehaves. Add whichever channel you want:
+
+| name | purpose |
+|------|---------|
+| `SLACK_WEBHOOK_URL` | Slack Incoming Webhook — one-line alert with a link to the failed run |
+| `SMTP_HOST` / `SMTP_PORT` / `SMTP_USER` / `SMTP_PASS` | SMTP relay for email (e.g. Gmail app password on `smtp.gmail.com:587`) |
+| `ALERT_EMAIL_TO` | where the failure email goes (e.g. amir.wahmed@gmail.com) |
+
+Backstop: GitHub also emails the repo owner by default when a **scheduled** workflow fails, so
+you're covered even before you add a webhook.
+
 ### LinkedIn token
 The UGC post needs a token minted for an app with the **Community Management API** / `w_organization_social`
 product, authorized by a Page admin. Personal tokens won't post to the company page. If the token expires,
