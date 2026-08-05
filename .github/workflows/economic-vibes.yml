@@ -30,8 +30,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Karachi
-      ANTHROPIC_API_KEY:      ${{ secrets.ANTHROPIC_API_KEY }}
-      CLAUDE_MODEL:           ${{ vars.CLAUDE_MODEL }}          # e.g. claude-sonnet-4-5 (set in repo Variables)
+      # AI step runs through Claude Code on your Max subscription (no Console/API bill).
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      CLAUDE_MODEL:           ${{ vars.CLAUDE_MODEL }}          # optional: sonnet | opus | full string
       LINKEDIN_ACCESS_TOKEN:  ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
       LINKEDIN_ORG_ID:        '131244052'
       WHATSAPP_TOKEN:         ${{ secrets.WHATSAPP_TOKEN }}
@@ -47,6 +48,14 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Setup Node (for Claude Code)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Install system deps (WeasyPrint + pandoc)
         run: |
           sudo apt-get update
@@ -57,8 +66,21 @@ jobs:
       - name: Install Python deps
         run: pip install -r scripts/economic_vibes/requirements.txt
 
-      - name: Build brief, render PDF, update site files
-        run: python scripts/economic_vibes/build_brief.py
+      - name: Emit research prompt
+        run: python scripts/economic_vibes/build_brief.py emit-prompt
+
+      - name: Research + write payload (Claude Code · Max plan)
+        run: |
+          MODEL_FLAG=""
+          if [ -n "${CLAUDE_MODEL}" ]; then MODEL_FLAG="--model ${CLAUDE_MODEL}"; fi
+          claude -p "$(cat scripts/economic_vibes/out/prompt.txt)" \
+            $MODEL_FLAG \
+            --dangerously-skip-permissions
+          test -f scripts/economic_vibes/out/payload.json \
+            || (echo "Claude Code did not write payload.json" && exit 1)
+
+      - name: Render PDF + update site files
+        run: python scripts/economic_vibes/build_brief.py render
         # Writes: public/<date>-Economic-Vibes-Morning-Brief.pdf, public/<date>-...-brief.html,
         #         public/<date>-Economic-Vibes-Morning-Brief.docx (if pandoc present),
         #         rewrites public/economic-vibes.html, public/index.html markers, public/sitemap.xml,

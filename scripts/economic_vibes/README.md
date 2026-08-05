@@ -27,15 +27,15 @@ tab → economic-vibes → Run workflow** (set `dry_run=true` to build + commit 
 
 In the repo → **Settings → Secrets and variables → Actions**:
 
-**Variables**
+**Variables** (optional)
 | name | value |
 |------|-------|
-| `CLAUDE_MODEL` | your current model string, e.g. `claude-sonnet-4-5` |
+| `CLAUDE_MODEL` | optional Claude Code model — `sonnet` (default) or `opus` |
 
 **Secrets**
 | name | purpose |
 |------|---------|
-| `ANTHROPIC_API_KEY` | Claude API key for the research + writing step |
+| `CLAUDE_CODE_OAUTH_TOKEN` | **Max-plan** token for the research + writing step — billed to your Claude Max subscription, **no separate API/Console charge**. Generate locally with `claude setup-token` (token looks like `sk-ant-oat01-…`). |
 | `LINKEDIN_ACCESS_TOKEN` | OAuth token for a ContexAi Group **page admin**, scope `w_organization_social` |
 | `WHATSAPP_TOKEN` | WhatsApp Cloud API token *(optional — see note)* |
 | `WHATSAPP_PHONE_ID` | Cloud API sender phone-number id *(optional)* |
@@ -76,8 +76,13 @@ forward into the Channel, or opted-in subscribers. If those secrets are absent i
 and the public PDF URL for manual posting. To fully automate a Channel, swap in a third-party provider
 (360dialog / Whapi) inside `post_whatsapp.py`.
 
+> The AI step uses **Claude Code** with `CLAUDE_CODE_OAUTH_TOKEN`, so it draws on your Max plan
+> rather than pay-as-you-go API credits. The workflow order is: emit prompt → `claude -p` writes
+> `out/payload.json` → render. (A legacy `ANTHROPIC_API_KEY` fallback path still exists in the
+> script for local testing, but the workflow no longer uses it.)
+
 ## Test it safely
-1. Add `ANTHROPIC_API_KEY` + `CLAUDE_MODEL` first.
+1. Add `CLAUDE_CODE_OAUTH_TOKEN` first (see above).
 2. Actions → **economic-vibes** → **Run workflow** with **dry_run = true**.
 3. Check the committed `public/economic-vibes.html`, the new PDF, and the run **artifacts**
    (`out/linkedin.txt`, `out/whatsapp.txt`, the PDF). The build fails loudly if the disclaimer is
