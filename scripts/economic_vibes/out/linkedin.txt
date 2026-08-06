@@ -1,27 +1,27 @@
-🌅 Economic Vibes — Morning Brief | Wednesday, 05 August 2026
+🌅 Economic Vibes — Morning Brief | Thursday, 06 August 2026
 
-Wall Street closed at records overnight while the KSE-100 took a breather — here's what the desk is watching this morning.
+The KSE-100 stormed back above 180,000 while Wall Street closed mixed at fresh records — here's what the desk is watching this morning.
 
 THE OVERNIGHT TAPE
-S&P 500 +1.79% to 7,736.52, Dow +1.71% to 54,085.88 (first close above 54,000), Nasdaq +2.59% to 26,584.99 — all-time highs driven by easing US-Iran tensions over the Strait of Hormuz and a tech rebound. US 10Y sits at 4.63%, 2Y at 4.21%, with markets pricing rising odds of a Fed hike (not a cut) in September after Chair Kevin Warsh's FOMC voted 9-3 to hold on 29 July.
+Dow +0.5% to a record 54,349 (fifth straight record close), while the S&P 500 slipped 0.17% to 7,723.55 and the Nasdaq fell 0.83% to 26,363.44, snapping a four-day tech rally as investors rotated out of megacap growth. US 10Y sits at 4.63%, 2Y at 4.21%, with September rate-hike odds easing to ~61% (from over 82% pre-FOMC) after Fed Chair Kevin Warsh's hawkish 29 July hold.
 
 PAKISTAN
-KSE-100 slipped 0.63% to 177,083.22 (−1,116.80 pts) on institutional profit-taking in banks, E&P and cement, as breadth turned negative (161 advancers vs 295 decliners, 711.3m shares, Rs25.9bn) — though foreign investors stayed net buyers (Rs166.3m). UBL, Engro Holdings, OGDC, Lucky Cement and PPL led the drag; Meezan Bank, PSO and Power Cement held up. On the macro side: CPI eased to 9.2% YoY in July from 11.1%, and the SBP held its policy rate at 11.5% for a second straight meeting. The IMF's Executive Board cleared the third EFF/second RSF review in May, unlocking roughly $1.3bn combined; the next review is expected in H2 2026.
+KSE-100 surged 1.66% to close at 180,014.93 (+2,931.71 pts), reclaiming the 180,000 level on broad, breadth-confirmed buying — 303 advancers vs 158 decliners on 740.6m shares (Rs35.9bn) — led by banks, fertiliser, cement and E&P. Foreign investors were net buyers (Rs771.9m). Reports emerged that Islamabad is seeking Chinese refinancing of a $1.3bn commercial loan. On the macro side: CPI eased to 9.2% YoY in July, and the SBP held its policy rate at 11.5% for a second straight meeting; six-month KIBOR tracks near 11.70–11.90% (desk est.).
 
 GCC
-Seven OPEC+ producers added 188,000 bpd of August supply even as Brent (−5.9% to $78.87) and WTI (down 5%+) tumbled on Hormuz de-escalation hopes. Saudi's non-oil PMI held at 53.1 in July; the UAE's cooled toward its softest pace in years on regional disruptions — a mixed but still-expansionary read for Vision 2030 diversification.
+Saudi's non-oil PMI held at a robust 53.1 in July; the UAE's jumped to 52.7 from 50.8 as new export orders grew for the first time since March — Gulf economies rebounding from wartime lows. Oil kept sliding: Brent fell to $79.15, WTI toward $75, as Iran reportedly reached an agreement with Oman on a Hormuz shipping route, deepening a two-day 10%+ drawdown.
 
 GLOBAL
-Gold is holding near $4,076, silver near $58.74, as Fed policy uncertainty keeps havens bid even with equities at records. Washington's trade agenda is heating up: a 50% tariff on Canadian goods lands 19 August, and Section 301 forced-labor tariffs (10–12.5% on ~60 economies) are already in force since 24 July.
+Gold is holding near $4,096 (+0.44%), and silver popped to $62.50 — its highest since June — as havens stayed bid despite record US equities. Washington's trade agenda keeps moving: the 50% tariff on Canadian goods lands in five days (19 August), and Section 301 forced-labor tariffs (10–12.5% on ~60 economies, including Saudi Arabia and the UAE) remain in force; Pakistan's own reciprocal tariff with the US sits at a comparatively favourable 19%.
 
 LEGISLATIVE TRACKER
-Pakistan's Finance Act 2026 brings a 5% withholding tax (10% for non-filers) on social media earnings, now being deducted at source by banks — a cost for creators, a win for compliance-tech vendors.
-Saudi's new Companies Law and the UAE's Cabinet Decision 59/2026 competition rules tighten disclosure — wins for institutional investors, added overhead for SMEs.
-US tariffs on Canada (50%) and forced-labor goods (10–12.5%, ~60 economies) raise input costs for importers and retailers even as they shield targeted US manufacturers.
+Pakistan's Finance Act 2026 digital-creator withholding tax (5%/10%) continues to be deducted at source by banks.
+Section 301 forced-labor duties keep Saudi/UAE exporters exposed even as new corporate-transparency rules (Saudi Companies Law, UAE Cabinet Decision 59/2026) tighten disclosure.
+The Canada tariff step-up (19 August) and Pakistan's 19% US tariff rate reshape relative trade competitiveness across textiles and manufacturing.
 
 THE DAY AHEAD
-KSE-100: support 176,000 (deeper at 174,500), pivot 177,083 (Tuesday's close), resistance 178,200 (Monday's close/high, then 179,500).
-Desk view: Tuesday's dip reads as profit-taking, not reversal — falling oil is a tailwind for Pakistan's import bill, and global risk appetite stays supportive. All levels are indicative desk estimates, not recommendations.
+KSE-100: support 178,500 (Wednesday's intraday low, deeper at 177,100), pivot 180,015 (Wednesday's close), resistance 180,200 (Wednesday's high, then the psychological 182,000).
+Desk view: breadth-confirmed buying and foreign inflows argue for a healthier tape than last week's profit-taking; falling oil remains the key tailwind for Pakistan's import bill. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
