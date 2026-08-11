@@ -1,27 +1,27 @@
-🌅 Economic Vibes — Morning Brief | Monday, 10 August 2026
+🌅 Economic Vibes — Morning Brief | Tuesday, 11 August 2026
 
-Wall Street closed last week at a record even as a weak July jobs report muddied the Fed's path, oil firmed on an unresolved Hormuz standoff, and the KSE-100 paused after a four-session rally — here's what the desk is watching this morning.
+Wall Street took a breather from last week's records, oil spiked 5% on stalled Strait of Hormuz talks, and the KSE-100 slipped a marginal 0.07% as sector rotation offset a flat headline print — here's what the desk is watching this morning.
 
 THE OVERNIGHT TAPE
-S&P 500 +0.62% to a record 7,757.64, Nasdaq +1.30% to 26,690.62, and Dow +0.28% to 54,036.93 on Friday, after July nonfarm payrolls unexpectedly fell 23,000 and May-June prints were revised down a combined 103,000. The 10-year Treasury yield eased to 4.64% (2-year 4.20%), even as the Fed's own 29 July decision was a divided 9-3 hold at 3.50%-3.75%, with three dissenters pushing for a hike.
+S&P 500 -0.06% to 7,753.11, Dow -0.11% to 53,975.98, and Nasdaq -0.32% to 26,605.36 on Monday, a mild pullback from last week's records as Nvidia dropped roughly 3% on AI infrastructure funding reports and rising oil prices added a note of caution. The 10-year Treasury yield held near 4.65% (2-year 4.25%), still digesting the Fed's 29 July decision — a divided 9-3 hold at 3.50%-3.75% with the first unified three-way dissent since September 2016.
 
 PAKISTAN
-KSE-100 eased 0.19% (−346.57 pts) to close at 181,430.02, snapping a four-session advance as profit-taking hit MCB and UBL even as MARI, CNERGY and BOP led gainers; breadth turned negative at 207 advancers vs 260 decliners on turnover of 716.04m shares (Rs34.1bn). CPI eased to 9.2% YoY in July from 11.1% in June, and the SBP held its policy rate at 11.5% for a second straight meeting; six-month KIBOR tracks near 11.70–11.90% (desk est.). USD/PKR held steady near 277.85 interbank, and SBP-held FX reserves rose to $17.04bn.
+KSE-100 eased 0.07% (-119.74 pts) to close at 181,310.28, though the broader All-Share Index gained 0.21%; breadth was split 50/50 as CNERGY, ATRL and PABC led gainers and HUBC, AICL and TRG led losers, with Power Generation and Fertilizer stocks offsetting gains in Oil & Gas Exploration and Refinery names that tracked Monday's oil spike. CPI eased to 9.2% YoY in July from 11.1% in June, and the SBP held its policy rate at 11.5% for a second straight meeting; six-month KIBOR tracks near 11.70-11.90% (desk est.). USD/PKR held steady near 277.70 interbank, with SBP-held FX reserves at $17.04bn.
 
 GCC
-OPEC+ confirmed a further 188,000 bpd increase for September, a sixth straight monthly hike ahead of a planned Q4 pause. Saudi's non-oil PMI held at 53.1 in July, a fourth consecutive month of expansion, while the PIF continues rolling out its 2026-2030 strategy toward tourism, entertainment and localisation. Oil firmed on the back of it — Brent +1.3% to $83.55, WTI +1.15% to $78.18 — as Strait of Hormuz reopening talks between Iran and Oman remained unresolved.
+OPEC+ confirmed a further 188,000 bpd increase for September, its sixth straight monthly hike completing the 2023 cuts unwind. Saudi's non-oil PMI held at 53.1 in July, a fourth consecutive month of expansion, while the PIF continues rolling out its 2026-2030 strategy toward tourism, entertainment and localisation. Oil surged on the back of stalled diplomacy — Brent +5.0% to $87.72, WTI +5.1% to $82.13 — as Iran-Oman talks on reopening the Strait of Hormuz remained stalled and a Saudi refinery attack near the Red Sea compounded supply concerns.
 
 GLOBAL
-Gold climbed to roughly $4,350/oz (+2.4%), and silver rose to $63.54, as the weak payrolls print revived haven demand despite record US equities. Washington's trade agenda keeps moving: a 50% Section 338 tariff on Canadian dairy, alcohol and motor-vehicle exports lands in nine days (19 August), while Pakistan's own reciprocal US tariff sits at a comparatively favourable 19%.
+Gold ticked up to roughly $4,427/oz (+0.8%), and silver held near $66.3, on renewed haven demand. The Fed's rate path is getting more contested: September hike odds, which fell to roughly 44-46% after July's weak jobs print, are rebuilding as Hormuz-driven oil gains revive inflation risk ahead of Wednesday's July CPI release. Washington's trade agenda keeps moving too: a 50% Section 338 tariff on Canadian dairy, alcohol and motor-vehicle exports lands in eight days (19 August), while Pakistan's own reciprocal US tariff sits at a comparatively favourable 19%.
 
 LEGISLATIVE TRACKER
 Pakistan faces a 16 July EU GSP+ compliance review on labour rights, with India's zero-tariff EU access threatening to undercut Pakistani textile exporters from 2027.
-OPEC+'s September output hike and Saudi's PIF 2026-2030 strategy reshape Gulf energy and sovereign-wealth positioning.
+OPEC+'s September output hike and Saudi's PIF 2026-2030 strategy reshape Gulf energy and sovereign-wealth positioning, even as the Hormuz standoff lifts Gulf producers' realised prices.
 The 19 August Section 338 tariff step-up on Canadian goods contrasts with Pakistan's steadier 19% US tariff rate.
 
 THE DAY AHEAD
-KSE-100: support 180,000 (psychological, deeper at 178,500), pivot 181,430 (Friday's close), resistance 181,780 (Thursday's close, then the 2026 high of 189,167 set in January).
-Desk view: Friday's dip looks like digestion after a rally of more than 3% since 20 July, with oil's Hormuz-driven firmness the key swing factor for Pakistan's import bill and disinflation path. All levels are indicative desk estimates, not recommendations.
+KSE-100: support 180,000 (psychological, near Monday's 180,820 low; deeper at 178,500), pivot 181,310 (Monday's close), resistance 182,350 (Monday's intraday high, then the 2026 high of 189,167 set in January).
+Desk view: Monday's dip masks a sharp sector rotation rather than broad risk-off, with oil's Hormuz-driven spike the key swing factor for Pakistan's import bill and disinflation path, and for the Fed's increasingly contested rate path into September. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
