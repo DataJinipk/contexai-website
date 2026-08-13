@@ -1,24 +1,24 @@
-KSE-100 sheds 1,464 points as the Hormuz standoff and a hawkish Fed repricing dominate the tape.
+KSE-100 rebounds 465 points to 180,311 as cooling US inflation and a nearing Hormuz endgame lift sentiment.
 
 THE OVERNIGHT TAPE
-US equities closed lower Tuesday — S&P 500 −0.24%, Dow −0.16%, Nasdaq −0.55% — as tech weakness and stalled US-Iran Strait of Hormuz talks weighed on sentiment. The 10-year Treasury yield pushed above 4.7%, its highest since January, with markets now pricing roughly 55% odds of a 25bp September Fed hike — a sharp reversal from July's split 9-3 hold. Brent and WTI both surged ~5% to settle near $87.72 and $82.13 on fears a naval blockade keeps Hormuz constrained. Gold reclaimed $4,400/oz and silver hit a seven-week high near $65.50 on safe-haven demand.
+US equities closed mostly higher Wednesday — S&P 500 +0.3% to 7,748.50, Nasdaq +0.5% to 26,588.49, Dow -0.04% to 53,770.27 — after July CPI matched forecasts (3.4% headline, 2.5% core) and eased pressure on the Fed to hike in September. Market-implied odds of a 25bp September hike fell back to roughly 50% from over 60% a week earlier, and the 10-year Treasury yield eased to about 4.65%. Brent and WTI were little changed near $88.98 and $83.27 as deadly attacks on vessels in the Red Sea and Gulf of Oman kept shipping risk in focus. Gold extended its advance to $4,428/oz and silver jumped to $66.20/oz on safe-haven demand.
 
 PAKISTAN
-The KSE-100 retreated 0.81% (−1,464 pts) to 179,846.68, giving back ground after touching an intraday high of 181,017 as banks, cement, fertiliser, autos, E&P and OMCs all came under selling pressure. SBP held its policy rate at 11.5% for a second straight review even as July CPI cooled to 9.2% from 11.1% (food inflation, notably, accelerated to 10.6%). USD/PKR interbank held broadly steady at 277.67. Islamabad is preparing for a fifth IMF EFF/RSF review mission next month that could unlock roughly $1.2bn, with energy circular debt and privatisation progress the key tests.
+The KSE-100 gained 464.53 points (+0.26%) to close at 180,311.22, recovering part of Tuesday's 1,464-point drop as oil & gas exploration names (Pakistan Oilfields, Mari Energies), Habib Bank and Hub Power led the rebound. Breadth improved to 249 advancers versus 211 decliners on turnover of 220 million shares worth Rs20bn. SBP held its policy rate at 11.5% for a second straight review even as July CPI cooled to 9.2% from 11.1% (food inflation, notably, still accelerated to 10.6%). USD/PKR interbank held broadly steady at 277.66. Islamabad is preparing for a fifth IMF EFF/RSF review mission next month that could unlock roughly $1.2bn, with energy circular debt and privatisation progress the key tests.
 
 GCC
-Seven OPEC+ members lifted output by 188,000 bpd for August, a fifth straight monthly increase, even as Hormuz risk keeps prices elevated. Saudi Arabia's non-oil PMI held firm at 53.1 in July (from 53.3), with Kuwait's reading rebounding. The PIF, chaired by Crown Prince Mohammed bin Salman, approved its 2026–2030 strategy, pivoting toward value creation with tourism, travel and entertainment as priority sectors under Vision 2030.
+OPEC+ finalised a further 188,000 bpd output increase for September, completing the rollback of 2023 voluntary cuts, while signalling a pause in additional hikes from the fourth quarter. Saudi Arabia's non-oil PMI eased slightly to 53.1 in July (from 53.3) but stayed firmly expansionary, with Kuwait's reading rebounding. The PIF, chaired by Crown Prince Mohammed bin Salman, approved its 2026–2030 strategy, pivoting toward value creation with tourism, travel and entertainment as priority sectors under Vision 2030.
 
 GLOBAL
-The Hormuz standoff and a hawkish Fed repricing are now the two swing factors for global risk sentiment. Washington's new demands on Tehran have clouded any near-term reopening of the strait, keeping oil bid and inflation risk — and hence rate-hike odds — elevated into September's FOMC.
+A benign US CPI print and a nearing Hormuz endgame are the two swing factors reshaping global risk sentiment. Pakistan is racing to broker a US-Iran arrangement on the Strait before an August 16 deadline, even as Washington and Tehran maintain hardened public positions.
 
 LEGISLATIVE TRACKER
 • Pakistan: 5th IMF EFF/RSF review due next month (~$1.2bn at stake) — wins: banks, FX reserves, sovereign risk; loses: energy consumers facing tariff conditionality.
-• GCC: OPEC+ +188,000 bpd for August; PIF's 2026–2030 strategy backs tourism/entertainment — wins: oil-importing economies, Saudi non-oil diversification plays; loses: OPEC+ producers' per-barrel revenue.
-• Global: Fed repricing toward a 25bp September hike (~55% odds) — wins: USD, fixed-income savers; loses: rate-sensitive equities, EM FX including the PKR.
+• GCC: OPEC+ finalises ~188,000 bpd September hike, signals Q4 pause; PIF's 2026–2030 strategy backs tourism/entertainment — wins: oil-importing economies, Saudi non-oil diversification plays; loses: OPEC+ producers' per-barrel revenue.
+• Global: July CPI cools September Fed-hike odds to ~50% — wins: rate-sensitive equities, EM FX including the PKR; loses: USD bulls, money-market yield-seekers.
 
 THE DAY AHEAD
-KSE-100 support 178,500 (deeper support 176,500) · pivot 179,847 (Tuesday's close) · resistance 181,017 (Tuesday's high), then 181,310. We read this as a geopolitical repricing, not a trend reversal — a close back above 181,000 reopens record territory; a break of 178,500 points to a deeper retracement. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 179,900 (deeper support 178,500) · pivot 180,311 (Wednesday's close) · resistance 180,901 (Wednesday's high), then Monday's 181,310. We read this as a de-escalation and dovish-repricing rebound — a close back above 180,900 reopens the path toward record territory; a slip below 179,900 points to a retest of 178,500. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
