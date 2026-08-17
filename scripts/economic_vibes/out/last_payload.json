@@ -1,203 +1,159 @@
 {
-  "headline": "KSE-100 slips 206 points to 180,104 as Wall Street notches fresh record highs on cooling US inflation",
-  "mood": "Mixed tape · Wall Street sets records, PSX consolidates, gold and oil retreat",
+  "headline": "PSX reopens today after Independence Day break as Wall Street cools from records and oil, gold firm on Warsh's hawkish tone",
+  "mood": "Mixed tape · PSX reopens flat, Wall Street cools from records, oil and gold firmer",
   "mood_class": "dn",
   "snapshot": [
     {
       "label": "KSE-100",
       "tag": "V",
       "value": "180,105",
-      "delta": "▼ 0.11% Thu · -206 pts",
+      "delta": "▼ 0.11% Thu · closed Fri (Independence Day)",
       "delta_class": "neg"
     },
     {
       "label": "S&amp;P 500",
       "tag": "V",
-      "value": "▲ 0.6%",
-      "delta": "Nasdaq +0.8% · Dow +0.13% — records",
-      "delta_class": "pos"
+      "value": "▼ 0.2%",
+      "delta": "Nasdaq -0.3% · Dow -0.2% Fri — S&amp;P's 3rd straight weekly gain",
+      "delta_class": "neg"
     },
     {
       "label": "US 10Y / 2Y",
       "tag": "V",
-      "value": "4.66 / 4.16",
-      "delta": "cooling · Sept hike odds ~40%",
-      "delta_class": "pos"
+      "value": "4.67 / 4.17",
+      "delta": "hawkish hold — Warsh",
+      "delta_class": "neg"
     },
     {
       "label": "Brent / WTI",
       "tag": "V",
-      "value": "$87.18 / $81.27",
-      "delta": "eased · Hormuz talks near close",
-      "delta_class": "neg"
+      "value": "$88.52 / $82.40",
+      "delta": "▲ 1.7% / 1.4% Fri · OPEC+ Sept hike live",
+      "delta_class": "pos"
     },
     {
       "label": "Gold",
       "tag": "V",
-      "value": "$4,350",
-      "delta": "-1.3% · silver $64.29",
-      "delta_class": "neg"
+      "value": "$4,373.50",
+      "delta": "+0.53% Fri · silver $64.53",
+      "delta_class": "pos"
     },
     {
       "label": "USD/PKR",
       "tag": "V",
       "value": "277.65",
-      "delta": "interbank · steady",
+      "delta": "interbank · steady, markets shut Fri",
       "delta_class": ""
     }
   ],
   "five_things": [
     {
-      "chip": "PSX Pulls Back",
-      "html": "The <b>KSE-100</b> shed 206.60 points (-0.11%) to close at 180,104.61 on Thursday, snapping its two-day rebound as profit-taking hit fertiliser and pharmaceutical counters even as oil &amp; gas exploration and cement names held firm; breadth turned negative with 269 decliners against 197 advancers (29 unchanged) on turnover of 388 million shares (<a href=\"https://tribune.com.pk/story/2623712/psx-closes-nearly-flat-above-180100-points\">Express Tribune</a>, <a href=\"https://arynews.tv/psx-kse-100-report-wednesday-august-13-2026\">ARY News</a>).",
-      "sentiment": "consolidative",
+      "chip": "PSX Reopens After Holiday",
+      "html": "The <b>KSE-100</b> resumes trading today unchanged from Thursday's close of 180,104.61, after the Pakistan Stock Exchange stayed shut Friday for the Independence Day holiday; Thursday's session itself closed 206.60 points lower (-0.11%, -0.73% on the week) as profit-taking hit fertiliser and pharmaceutical counters even as oil &amp; gas exploration and cement held firm, with breadth negative (269 decliners vs 197 advancers) on turnover of 891.33 million shares worth Rs36.69bn (<a href=\"https://tribune.com.pk/story/2623780/psx-ends-with-mild-losses-lacks-triggers\">Express Tribune</a>, <a href=\"https://propakistani.pk/2026/08/11/psx-announces-holiday-on-friday/\">ProPakistani</a>).",
+      "sentiment": "range-bound, awaiting fresh cues",
+      "sentiment_class": ""
+    },
+    {
+      "chip": "Wall Street Cools From Records",
+      "html": "US equities eased back Friday — the <b>S&amp;P 500</b> slipped 0.2% to 7,785.76, the <b>Dow</b> shed 0.2% to 53,732.41 and the <b>Nasdaq</b> fell 0.3% to 26,729.16 — after a preliminary University of Michigan reading showed August consumer sentiment tumbling to 51 from July's 55.2, well below the 55 expected; even so, the S&amp;P notched a third straight weekly gain (<a href=\"https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html\">CNBC</a>, <a href=\"https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026\">TheStreet</a>).",
+      "sentiment": "cooling, still resilient",
+      "sentiment_class": ""
+    },
+    {
+      "chip": "Warsh Keeps Hawkish Tone",
+      "html": "Fed Chair <b>Kevin Warsh</b> has held the funds rate at 3.50-3.75% since June but continues to stress a strict 2% inflation target ahead of the September 15-16 FOMC meeting; the 10-year Treasury yield rose 5bp to 4.67% (30-year 5.27%) and the 2-year held near 4.17% on the hawkish rhetoric, even as prediction markets price only a roughly 26% chance of a September hike (<a href=\"https://www.cnbc.com/2026/07/31/kevin-warsh-fed-inflation-rate-hike-markets.html\">CNBC</a>, <a href=\"https://advisorperspectives.com/dshort/updates/2026/08/14/treasury-yields-snapshot-august-14-2026\">Advisor Perspectives</a>).",
+      "sentiment": "hawkish undertone",
       "sentiment_class": "neg"
     },
     {
-      "chip": "Wall Street Record",
-      "html": "US equities extended their advance Thursday — the <b>S&amp;P 500</b> closed at a fresh record near 7,799 (+0.6%), the Nasdaq Composite jumped to 26,803.03 (+0.8%) and the Dow added 69.72 points (+0.13%) to 53,839.99 — after a flat July producer-price print reinforced bets the Fed will hold rates in September (<a href=\"https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html\">CNBC</a>, <a href=\"https://www.detroitnews.com/story/business/2026/08/13/sp-500-hits-record-high-as-oil-producer-inflation-weaken/91285508007/\">Detroit News</a>).",
-      "sentiment": "firmer",
+      "chip": "OPEC+ Locks In Sept Hike",
+      "html": "<b>Brent</b> firmed to $88.52 (+1.7%) and <b>WTI</b> to $82.40 (+1.4%) Friday as OPEC+'s finalised 188,000 bpd September increase — completing the rollback of 2023's voluntary cuts — failed to fully offset a lingering Middle East risk premium; delegates expect quotas to hold steady through year-end pending the next JMMC review on October 4 (<a href=\"https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/\">Iraq Business News</a>, <a href=\"https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/\">World Oil</a>).",
+      "sentiment": "supply normalising, price still firm",
       "sentiment_class": "pos"
     },
     {
-      "chip": "Hormuz Talks Near Close",
-      "html": "The US, Iran and Oman are closing in on an interim arrangement to reopen the <b>Strait of Hormuz</b>, though Tehran insists the waterway will not fully reopen until Washington agrees to end hostilities, withdraw forces and provide compensation — keeping a residual risk premium in oil markets even as Brent eased to $87.18 and WTI to $81.27 (<a href=\"https://www.washingtonpost.com/business/2026/08/05/iran-war-us-hormuz-trump-august-5-2026/11441d6a-9090-11f1-9fdc-0a725c989a7b_story.html\">Washington Post</a>, <a href=\"https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want\">Al Jazeera</a>).",
-      "sentiment": "cautiously watchful",
-      "sentiment_class": ""
-    },
-    {
-      "chip": "Gold, Silver Retreat",
-      "html": "Gold slid 1.3% to $4,349.80/oz and silver fell 1.4% to $64.29/oz Thursday as a cooler-than-expected July PPI print eased Treasury yields and softened near-term safe-haven demand, even as both metals remain well above year-ago levels (<a href=\"https://www.kitco.com/news/article/2026-08-13/gold-snaps-four-day-advance-yields-ease-oil-drops-kitco-pm-report\">Kitco</a>).",
-      "sentiment": "pullback",
-      "sentiment_class": "neg"
-    },
-    {
-      "chip": "OPEC+ September Hike Finalised",
-      "html": "Seven OPEC+ producers — Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman — finalised a <b>188,000 bpd</b> September output increase, completing the rollback of 2023's 1.65 million bpd voluntary cuts, while Saudi Arabia's non-oil private sector (Riyad Bank PMI) held expansionary at 53.1 in July even as export orders fell for a fifth straight month (<a href=\"https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/\">Iraq Business News</a>, <a href=\"https://www.arabnews.com/node/2653330/business-economy\">Arab News</a>).",
-      "sentiment": "supply normalising",
-      "sentiment_class": ""
+      "chip": "Gold, Silver Firm",
+      "html": "Gold rose 0.53% to $4,373.50/oz and silver gained 0.32% to $64.53/oz Friday as weaker US retail-sales-adjacent data trimmed Fed-hike odds even as a still-hawkish Warsh Fed and Middle East risk kept haven demand supported (<a href=\"https://www.kitco.com/news/article/2026-08-14/gold-silver-rise-weak-retail-sales-cut-fed-hike-odds-kitco-pm-report\">Kitco</a>).",
+      "sentiment": "firmer",
+      "sentiment_class": "pos"
     }
   ],
   "matrix": {
-    "local_html": "The <b>KSE-100</b> retreated 206.60 points (-0.11%) to close at 180,104.61 on Thursday, giving back part of Wednesday's rebound as fertiliser and pharmaceutical counters saw profit-taking while oil &amp; gas exploration and cement held up; breadth turned negative with 269 decliners against 197 advancers and 29 unchanged on turnover of 388 million shares, led by CNERGY, BOP, KEL and SSGC (<a href=\"https://tribune.com.pk/story/2623712/psx-closes-nearly-flat-above-180100-points\">Express Tribune</a>). The exchange is now closed for an extended weekend around Pakistan's Independence Day, with trading resuming Monday. The <b>SBP</b> held its policy rate at 11.5% at its July 27 review for a second straight pause, with July CPI at 9.2% y/y even as food inflation ran hotter at 10.6% (<a href=\"https://www.brecorder.com/news/40432859/pakistan-inflation-clocks-in-at-92-in-july-2026\">Business Recorder</a>). Six-month KIBOR stood at roughly 11.51/11.76% as of August 7 (<a href=\"https://www.sbp.org.pk/assets/document/kibor-rates-07-august-2026.pdf\">SBP</a>). The interbank <b>USD/PKR</b> held broadly steady at 277.65, up a marginal one paisa on the day (<a href=\"https://www.brecorder.com/news/40434649/rupee-records-gain-against-us-dollar\">Business Recorder</a>). On the <b>IMF</b> front, an EFF/RSF review mission is due in Islamabad next month, with Pakistan eyeing roughly $1.2bn combined — about $1bn under the EFF and $200m under the climate-focused RSF — with circular debt, structural reforms and privatisation progress the key tests (<a href=\"https://propakistani.pk/2026/08/11/pakistan-eyes-1-2-billion-tranche-as-crucial-imf-review-talks-set-for-next-month/\">ProPakistani</a>).",
-    "gcc_html": "OPEC+ has finalised a further <b>188,000 bpd</b> output increase for September — the alliance's sixth straight monthly hike this year — completing the rollback of the 2023 voluntary cuts, with the eight-nation group next due to meet on September 6 to assess Hormuz-linked risk (<a href=\"https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/\">Iraq Business News</a>). Saudi Arabia's non-oil private sector stayed in solid expansion for a fourth straight month, with the Riyad Bank PMI easing slightly to 53.1 in July from 53.3 in June as domestic demand strengthened even as export orders fell for a fifth consecutive month on high freight costs (<a href=\"https://www.arabnews.com/node/2653330/business-economy\">Arab News</a>, <a href=\"https://www.agbi.com/economy/2026/08/saudi-arabia-sustains-non-oil-growth-and-kuwait-rebounds/\">AGBI</a>). The <b>PIF</b>, chaired by Crown Prince Mohammed bin Salman, has approved its 2026–2030 strategy, pivoting from rapid asset growth toward value creation with tourism, travel and entertainment as priority sectors under <b>Vision 2030</b> (<a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF</a>).",
-    "global_html": "US equities closed at fresh records Thursday — the S&amp;P 500 rose roughly 0.6% to about 7,799, the Nasdaq Composite jumped 0.8% to 26,803.03 and the Dow added 69.72 points (+0.13%) to 53,839.99 — after a flat July producer-price print reinforced bets the Fed will hold rates in September, with market-implied odds of a hike easing to roughly 40% from about 50% a day earlier (<a href=\"https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html\">CNBC</a>). The <b>10-year Treasury yield</b> eased to about 4.66% and the 2-year held near 4.16% on the softer inflation read (<a href=\"https://tradingeconomics.com/united-states/government-bond-yield\">Trading Economics</a>). <b>Brent</b> and <b>WTI</b> eased to $87.18 and $81.27 respectively as investors await clarity on a prospective US-Iran-Oman arrangement to reopen the Strait of Hormuz, even as Tehran insists on further concessions before a full reopening (<a href=\"https://www.washingtonpost.com/business/2026/08/05/iran-war-us-hormuz-trump-august-5-2026/11441d6a-9090-11f1-9fdc-0a725c989a7b_story.html\">Washington Post</a>). Gold and silver pulled back from recent highs, easing 1.3% to $4,349.80/oz and 1.4% to $64.29/oz respectively, as cooling yields reduced near-term safe-haven demand (<a href=\"https://www.kitco.com/news/article/2026-08-13/gold-snaps-four-day-advance-yields-ease-oil-drops-kitco-pm-report\">Kitco</a>)."
+    "local_html": "The <b>KSE-100</b> enters today's session unchanged from Thursday's close of 180,104.61, after the Pakistan Stock Exchange remained shut Friday for the Independence Day holiday (<a href=\"https://propakistani.pk/2026/08/11/psx-announces-holiday-on-friday/\">ProPakistani</a>, <a href=\"https://www.brecorder.com/news/40434299\">Business Recorder</a>). Thursday's session itself closed 206.60 points lower (-0.11%, -0.73% on the week) as profit-taking hit fertiliser and pharmaceutical counters even as oil &amp; gas exploration and cement held firm; breadth was negative with 269 decliners against 197 advancers (29 unchanged) on turnover of 891.33 million shares worth Rs36.69bn, led by Cnergyico (+4.35%) and Service Industries (+3.91%) among gainers against Systems Ltd (-1.59%) and Engro Holdings (-0.94%) among laggards (<a href=\"https://tribune.com.pk/story/2623780/psx-ends-with-mild-losses-lacks-triggers\">Express Tribune</a>). The <b>SBP</b> held its policy rate at 11.5% at its July 27 review for a second straight pause, with July CPI at 9.2% y/y even as food inflation ran hotter at 10.6% (<a href=\"https://www.brecorder.com/news/40432859/pakistan-inflation-clocks-in-at-92-in-july-2026\">Business Recorder</a>). Six-month KIBOR stood at roughly 11.51/11.76% as of August 7 (<a href=\"https://www.sbp.org.pk/assets/document/kibor-rates-07-august-2026.pdf\">SBP</a>). The interbank <b>USD/PKR</b> was last quoted at 277.65 on Thursday, with banks and the exchange closed Friday for the holiday (<a href=\"https://www.brecorder.com/news/40434649/rupee-records-gain-against-us-dollar\">Business Recorder</a>). On the <b>IMF</b> front, a mission is due in Islamabad for the fourth EFF review and second RSF review, with roughly $1.2bn combined — about $1bn under the EFF and $200m under the RSF — at stake, with tax collection, energy-sector reforms and privatisation progress under scrutiny (<a href=\"https://www.energyupdate.com.pk/2026/08/12/imf-mission-to-visit-pakistan-next-month-for-eff-rsf-reviews/\">Energy Update</a>).",
+    "gcc_html": "OPEC+ has finalised a further 188,000 bpd output increase for September — completing the alliance's unwinding of 2023's voluntary cuts — with delegates signalling quotas will likely hold steady through year-end pending the next JMMC review on October 4 (<a href=\"https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/\">Iraq Business News</a>, <a href=\"https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/\">World Oil</a>). Saudi Arabia's non-oil private sector held expansionary for a fourth straight month, with the Riyad Bank PMI easing to 53.1 in July from 53.3 in June as domestic demand strengthened even as export orders fell for a fifth consecutive month (<a href=\"https://www.brecorder.com/news/40433243/saudi-non-oil-growth-stays-solid-in-july-as-demand-improves-pmi-shows\">Business Recorder</a>). The <b>PIF</b>, chaired by Crown Prince Mohammed bin Salman, is executing its 2026-2030 strategy across Vision, Strategic and Financial portfolios, prioritising tourism, travel, entertainment and sport — including a July tie-up between SURJ Sports Investment, Live Nation and Oak View Group to launch Radia, and a $2bn co-investment MoU with I Squared Capital — under <b>Vision 2030</b> (<a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF</a>).",
+    "global_html": "US equities eased back from record territory Friday — the S&amp;P 500 slipped 0.2% to 7,785.76, the Dow shed 0.2% to 53,732.41 and the Nasdaq Composite fell 0.3% to 26,729.16 — after a preliminary University of Michigan reading showed August consumer sentiment tumbling to 51 from July's 55.2, well below the 55 expected; even so, the S&amp;P notched a third straight weekly gain (<a href=\"https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html\">CNBC</a>, <a href=\"https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026\">TheStreet</a>). The <b>10-year Treasury yield</b> rose 5bp to about 4.67% (30-year 5.27%) and the 2-year held near 4.17%, as Fed Chair <b>Kevin Warsh</b> kept a hawkish tone on the Fed's strict 2% inflation target ahead of the September 15-16 FOMC meeting, even as prediction markets price roughly a 26% chance of a hike (<a href=\"https://advisorperspectives.com/dshort/updates/2026/08/14/treasury-yields-snapshot-august-14-2026\">Advisor Perspectives</a>). <b>Brent</b> and <b>WTI</b> firmed to $88.52 and $82.40 respectively as OPEC+'s finalised September output hike failed to fully offset a lingering Middle East risk premium (<a href=\"https://tradingeconomics.com/commodity/brent-crude-oil\">Trading Economics</a>). Gold and silver advanced to $4,373.50/oz (+0.53%) and $64.53/oz (+0.32%) as haven demand held firm against the still-hawkish Fed backdrop (<a href=\"https://www.kitco.com/news/article/2026-08-14/gold-silver-rise-weak-retail-sales-cut-fed-hike-odds-kitco-pm-report\">Kitco</a>)."
   },
   "legislative": [
     {
       "jur": "Local — Pakistan",
-      "policy_html": "<a href=\"https://propakistani.pk/2026/08/11/pakistan-eyes-1-2-billion-tranche-as-crucial-imf-review-talks-set-for-next-month/\">Fifth IMF EFF/RSF review mission</a> due in Islamabad next month — ~$1bn EFF plus $200m RSF at stake, with circular debt, structural reforms and privatisation progress under scrutiny",
+      "policy_html": "<a href=\"https://www.energyupdate.com.pk/2026/08/12/imf-mission-to-visit-pakistan-next-month-for-eff-rsf-reviews/\">IMF mission for 4th EFF / 2nd RSF review</a> due in Islamabad next month — roughly $1.2bn combined ($1bn EFF, $200m RSF) at stake, with tax collection, energy reforms and privatisation progress under scrutiny",
       "sectors": "Banks, IPPs/Energy, Equities, Sovereign FX",
-      "impact_html": "<b class=\"pos\">Wins:</b> banks and FX reserves if the tranche clears, sovereign risk premium eases. <b class=\"neg\">Loses:</b> energy consumers facing tariff/circular-debt adjustment conditionality, importers if reform slippage pressures the PKR."
+      "impact_html": "<b class=\"pos\">Wins:</b> banks and FX reserves if the tranche clears, sovereign risk premium eases. <b class=\"neg\">Loses:</b> energy consumers facing tariff/circular-debt conditionality, importers if reform slippage pressures the PKR."
     },
     {
       "jur": "GCC — Saudi Arabia / OPEC+",
-      "policy_html": "<a href=\"https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/\">OPEC+ finalises 188,000 bpd September hike</a>, completing the 2023 cuts rollback ahead of a September 6 review; <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF's 2026–2030 strategy</a> pivots toward tourism and entertainment",
+      "policy_html": "<a href=\"https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/\">OPEC+ finalises 188,000 bpd September hike</a>, completing the 2023 cuts rollback ahead of an October 4 JMMC review; <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF's 2026-2030 strategy</a> prioritises tourism, travel and entertainment",
       "sectors": "Energy, Sovereign wealth, Tourism/Entertainment, Oil-importer FX",
-      "impact_html": "<b class=\"pos\">Wins:</b> oil-importing economies via incremental supply; Saudi non-oil diversification plays in tourism and leisure. <b class=\"neg\">Loses:</b> OPEC+ producers' per-barrel fiscal revenue as Brent eases toward $87."
+      "impact_html": "<b class=\"pos\">Wins:</b> Saudi non-oil diversification plays in tourism, entertainment and sport; producers' near-term revenue as Brent firms toward $88.5. <b class=\"neg\">Loses:</b> oil-importing economies, including Pakistan, facing a heavier import bill as prices hold up despite the added OPEC+ supply."
     },
     {
       "jur": "Global — US Federal Reserve",
-      "policy_html": "Flat July <a href=\"https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html\">producer-price print</a> pulls September rate-hike odds to roughly 40%, from about 50% a day earlier, even as core price pressure stays firmer than headline",
+      "policy_html": "Fed Chair <a href=\"https://www.cnbc.com/2026/07/31/kevin-warsh-fed-inflation-rate-hike-markets.html\">Kevin Warsh keeps a hawkish tone</a> on the 2% inflation target ahead of the September 15-16 FOMC meeting, even as prediction markets price only a roughly 26% hike probability",
       "sectors": "USD, Rates, EM FX (incl. PKR), Equities",
-      "impact_html": "<b class=\"pos\">Wins:</b> rate-sensitive and growth equities, EM currencies including the PKR. <b class=\"neg\">Loses:</b> US dollar bulls and money-market yield-seekers as hike odds recede further."
+      "impact_html": "<b class=\"pos\">Wins:</b> EM currencies including the PKR and rate-sensitive equities if the Fed ultimately holds. <b class=\"neg\">Loses:</b> risk assets and short-duration yield-seekers if hawkish rhetoric hardens into an actual September hike."
     }
   ],
   "levels": {
     "support": "180,036",
     "support_note": "Thursday's intraday low; deeper support at 179,500 (desk estimate)",
     "pivot": "180,105",
-    "pivot_note": "Thursday's close",
+    "pivot_note": "Thursday's close — last session before the Independence Day holiday",
     "resistance": "180,311",
     "resistance_note": "Wednesday's close; a reclaim opens the path to Thursday's intraday high near 181,434"
   },
-  "desk_stance_html": "We read Thursday's modest 206-point pullback as consolidation rather than a trend reversal — breadth was negative and fertiliser/pharma saw profit-taking, but oil &amp; gas exploration and cement held firm, and the index remains less than 1% off Wednesday's multi-day high. With the exchange closed for an extended Independence Day weekend, Monday's reopening should take its cues from how the Hormuz talks and September Fed-hike odds evolve over the break. A close back above 180,311 would reopen the path toward Thursday's 181,434 intraday high; a slip below 180,036 would point to a retest of 179,500. Oil &amp; gas exploration, cement and commercial banks are the counters to watch for confirmation on the reopen. All levels are indicative desk estimates, not recommendations.",
+  "desk_stance_html": "The PSX reopens today after a three-day break with the tape essentially unchanged from Thursday's 180,104.61 close — Friday's Independence Day holiday means Monday's session carries the accumulated newsflow of a full weekend, from Wall Street's Friday pullback to firmer oil and gold. We read Thursday's 206-point dip as consolidation rather than a reversal: breadth was negative and fertiliser/pharma saw profit-taking, but oil &amp; gas exploration and cement held firm, and the index remains within 1% of its multi-day highs. A close back above 180,311 would reopen the path toward Thursday's 181,434 intraday high; a slip below 180,036 would point to a retest of 179,500. With Brent holding near $88.5 and Fed Chair Warsh maintaining a hawkish tone into the September 15-16 FOMC, oil &amp; gas exploration, cement and commercial banks are the counters to watch for the reopen's directional cue. All levels are indicative desk estimates, not recommendations.",
   "ticker_items": [
-    "<b>FRI 14 AUG 2026 · LAST CLOSE THU 13 AUG</b>",
+    "<b>MON 17 AUG 2026 · LAST CLOSE THU 13 AUG (PSX closed Fri, Independence Day)</b>",
     "KSE-100 180,105 <span class=\"dn\">▼ 0.11%</span> (-206) Thu close",
-    "S&amp;P 500 ▲0.6% · Dow ▲0.13% · Nasdaq ▲0.8% — records",
-    "US 10Y 4.66% / 2Y 4.16% — cooling, Sept hike odds ~40%",
-    "Brent $87.18 / WTI $81.27 — eased, Hormuz talks near close",
-    "Gold $4,350 <span class=\"dn\">▼ 1.3%</span> · Silver $64.29",
-    "USD/PKR 277.65 interbank · steady",
+    "S&amp;P 500 <span class=\"dn\">▼0.2%</span> · Dow <span class=\"dn\">▼0.2%</span> · Nasdaq <span class=\"dn\">▼0.3%</span> Fri — S&amp;P's 3rd straight weekly gain",
+    "US 10Y 4.67% / 2Y 4.17% — hawkish Fed tone, Sept 16 FOMC",
+    "Brent $88.52 / WTI $82.40 <span class=\"up\">▲</span> — OPEC+ Sept hike in effect",
+    "Gold $4,373.50 <span class=\"up\">▲ 0.53%</span> · Silver $64.53",
+    "USD/PKR 277.65 interbank · markets closed Fri",
     "SBP policy rate 11.5% · July CPI 9.2%",
-    "Mood: Mixed tape · Wall Street sets records, PSX consolidates, gold and oil retreat",
+    "Mood: Mixed tape · PSX reopens flat, Wall Street cools from records, oil and gold firmer",
     "<b>Read today's Morning Brief →</b>"
   ],
   "news_items": [
-    "<b>14 AUG 2026</b>",
-    "📉 KSE-100 slips 206 points to 180,104 as profit-taking hits fertiliser, pharma",
-    "📈 Wall Street closes at fresh records as soft PPI cools Fed-hike bets",
-    "🇮🇷 US, Iran, Oman near interim deal to reopen Strait of Hormuz",
-    "🛢️ Brent, WTI ease to $87/$81 as Hormuz endgame nears",
-    "🥇 Gold, silver retreat from highs as easing yields cool safe-haven bid",
-    "🛢️ OPEC+ finalises 188,000 bpd September hike, next review Sept 6",
-    "🇸🇦 Saudi non-oil PMI holds expansionary at 53.1 in July",
-    "🏦 SBP holds policy rate at 11.5%, IMF review mission due next month",
+    "<b>17 AUG 2026</b>",
+    "📉 PSX reopens after Independence Day break; last close 180,104, -0.11%",
+    "📊 Wall Street cools from records: S&amp;P -0.2%, Dow -0.2%, Nasdaq -0.3% Friday",
+    "🏦 Fed Chair Warsh keeps hawkish tone; Sept 16 FOMC meeting in focus",
+    "🛢️ Brent $88.52, WTI $82.40 firm as OPEC+ September hike takes effect",
+    "🥇 Gold $4,373.50, silver $64.53 firmer on haven demand",
+    "🇸🇦 Saudi non-oil PMI holds expansionary at 53.1 in July; PIF details 2026-2030 strategy",
+    "🇵🇰 IMF mission due for 4th EFF, 2nd RSF review; ~$1.2bn combined at stake",
+    "💵 USD/PKR steady at 277.65 interbank, SBP holds policy rate at 11.5%",
     "<b>More on contexai.org/insights →</b>"
   ],
-  "linkedin_text": "KSE-100 slips 206 points to 180,104 even as Wall Street notches fresh record highs on cooling US inflation.\n\nTHE OVERNIGHT TAPE\nUS equities closed at fresh records Thursday — S&P 500 +0.6% to a record near 7,799, Nasdaq +0.8% to 26,803.03, Dow +0.13% (69.72 pts) to 53,839.99 — after a flat July producer-price print reinforced bets the Fed will hold rates in September. Market-implied odds of a September hike eased to roughly 40% from about 50% a day earlier, and the 10-year Treasury yield slipped to about 4.66% (2-year near 4.16%). Brent and WTI eased to $87.18 and $81.27 as markets await clarity on a prospective US-Iran-Oman arrangement to reopen the Strait of Hormuz. Gold and silver pulled back from recent highs, easing 1.3% to $4,349.80/oz and 1.4% to $64.29/oz as cooling yields softened near-term safe-haven demand.\n\nPAKISTAN\nThe KSE-100 shed 206.60 points (-0.11%) to close at 180,104.61, giving back part of Wednesday's rebound as fertiliser and pharmaceutical counters saw profit-taking while oil & gas exploration and cement held up. Breadth turned negative with 269 decliners against 197 advancers (29 unchanged) on turnover of 388 million shares, led by CNERGY, BOP, KEL and SSGC. The exchange is now closed for an extended Independence Day weekend, reopening Monday. SBP held its policy rate at 11.5% for a second straight review, with July CPI at 9.2% even as food inflation ran hotter at 10.6%. Six-month KIBOR stood near 11.51/11.76% as of August 7. USD/PKR interbank held broadly steady at 277.65. An IMF EFF/RSF review mission is due in Islamabad next month, with Pakistan eyeing roughly $1.2bn combined, with circular debt and privatisation progress the key tests.\n\nGCC\nOPEC+ finalised a further 188,000 bpd output increase for September, completing the rollback of 2023's voluntary cuts, with the group next due to meet September 6. Saudi Arabia's non-oil PMI eased slightly to 53.1 in July (from 53.3) but stayed firmly expansionary for a fourth straight month, even as export orders fell for a fifth month on high freight costs. The PIF, chaired by Crown Prince Mohammed bin Salman, has approved its 2026–2030 strategy, pivoting toward value creation with tourism, travel and entertainment as priority sectors under Vision 2030.\n\nGLOBAL\nA benign US producer-price print and a nearing Hormuz endgame are the two swing factors reshaping global risk sentiment. Washington, Tehran and Muscat are closing in on an interim arrangement to reopen the Strait, though Iran insists on further concessions before a full reopening.\n\nLEGISLATIVE TRACKER\n• Pakistan: 5th IMF EFF/RSF review due next month (~$1.2bn at stake) — wins: banks, FX reserves, sovereign risk; loses: energy consumers facing tariff conditionality.\n• GCC: OPEC+ finalises 188,000 bpd September hike, next review Sept 6; PIF's 2026–2030 strategy backs tourism/entertainment — wins: oil-importing economies, Saudi non-oil diversification plays; loses: OPEC+ producers' per-barrel revenue.\n• Global: flat July PPI pulls September Fed-hike odds to ~40% — wins: rate-sensitive equities, EM FX including the PKR; loses: USD bulls, money-market yield-seekers.\n\nTHE DAY AHEAD\nKSE-100 support 180,036 (deeper support 179,500) · pivot 180,105 (Thursday's close) · resistance 180,311 (Wednesday's close), then Thursday's 181,434 intraday high. We read this as consolidation, not reversal — a close back above 180,311 reopens the path toward record territory; a slip below 180,036 points to a retest of 179,500. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis brief is for informational purposes only and does not constitute investment advice. ContexAi Group is not a licensed investment adviser; all figures are sourced from licensed media and verified where marked (V) or flagged as desk estimates (EST.).\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
-  "whatsapp_caption": "📊 Economic Vibes — Morning Brief · Fri 14 Aug 2026\n\n📉 KSE-100 180,105 (-0.11%, -206 pts)\n📈 Wall Street records: S&P +0.6% · Nasdaq +0.8% · Dow +0.13%\n🛢️ Brent $87.18 / WTI $81.27 — Hormuz endgame nears\n🥇 Gold $4,350 · Silver $64.29 — pulled back from highs\n💵 USD/PKR 277.65 interbank\n\nFull PDF attached 📎 — support/pivot/resistance levels, Pakistan/GCC/Global matrix, and today's legislative tracker inside.\n\nThis brief is for informational purposes only and does not constitute investment advice. ContexAi Group is not a licensed investment adviser.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "linkedin_text": "PSX reopens today after its Independence Day break as Wall Street cools from record highs and oil, gold firm on Fed Chair Warsh's hawkish tone.\n\nTHE OVERNIGHT TAPE\nUS equities eased back from record territory Friday — the S&P 500 slipped 0.2% to 7,785.76, the Dow shed 0.2% to 53,732.41 and the Nasdaq Composite fell 0.3% to 26,729.16 — after a preliminary University of Michigan reading showed August consumer sentiment tumbling to 51 from July's 55.2, well below the 55 expected. Even so, the S&P notched a third straight weekly gain. The 10-year Treasury yield rose 5bp to about 4.67% (30-year 5.27%) and the 2-year held near 4.17%, as Fed Chair Kevin Warsh kept a hawkish tone on the Fed's strict 2% inflation target ahead of the September 15-16 FOMC meeting, even as prediction markets price only a roughly 26% chance of a hike. Brent and WTI firmed to $88.52 and $82.40 as OPEC+'s finalised September output hike failed to fully offset a lingering Middle East risk premium. Gold rose 0.53% to $4,373.50/oz and silver gained 0.32% to $64.53/oz as haven demand held firm against the still-hawkish Fed backdrop.\n\nPAKISTAN\nThe KSE-100 resumes trading today unchanged from Thursday's close of 180,104.61, after the Pakistan Stock Exchange stayed shut Friday for the Independence Day holiday. Thursday's session itself closed 206.60 points lower (-0.11%, -0.73% on the week) as profit-taking hit fertiliser and pharmaceutical counters even as oil & gas exploration and cement held firm; breadth was negative with 269 decliners against 197 advancers (29 unchanged) on turnover of 891.33 million shares worth Rs36.69bn, led by Cnergyico (+4.35%) and Service Industries (+3.91%) among gainers against Systems Ltd (-1.59%) and Engro Holdings (-0.94%) among laggards. SBP held its policy rate at 11.5% for a second straight review, with July CPI at 9.2% even as food inflation ran hotter at 10.6%. Six-month KIBOR stood near 11.51/11.76% as of August 7. USD/PKR interbank was last quoted at 277.65 Thursday, with banks and the exchange closed Friday. An IMF mission is due in Islamabad for the fourth EFF review and second RSF review, with roughly $1.2bn combined at stake, with tax collection, energy reforms and privatisation progress the key tests.\n\nGCC\nOPEC+ finalised a further 188,000 bpd output increase for September, completing the rollback of 2023's voluntary cuts, with delegates signalling quotas will likely hold steady through year-end pending the next JMMC review on October 4. Saudi Arabia's non-oil PMI eased slightly to 53.1 in July (from 53.3) but stayed firmly expansionary for a fourth straight month, even as export orders fell for a fifth month on high freight costs. The PIF, chaired by Crown Prince Mohammed bin Salman, is executing its 2026-2030 strategy across Vision, Strategic and Financial portfolios, prioritising tourism, travel, entertainment and sport — including a July tie-up between SURJ Sports Investment, Live Nation and Oak View Group to launch Radia, and a $2bn co-investment MoU with I Squared Capital.\n\nGLOBAL\nA hawkish Fed and a firm Middle East risk premium are the two swing factors reshaping global risk sentiment. Fed Chair Kevin Warsh has held rates steady since June but continues to stress the Fed's strict 2% inflation target, keeping yields elevated even as prediction markets lean toward a September hold.\n\nLEGISLATIVE TRACKER\n• Pakistan: IMF mission for 4th EFF / 2nd RSF review due next month (~$1.2bn at stake) — wins: banks, FX reserves, sovereign risk; loses: energy consumers facing tariff conditionality.\n• GCC: OPEC+ finalises 188,000 bpd September hike, next review Oct 4; PIF's 2026-2030 strategy backs tourism/entertainment/sport — wins: Saudi non-oil diversification plays, producer revenue; loses: oil-importing economies including Pakistan.\n• Global: Fed Chair Warsh's hawkish tone vs ~26% priced odds of a September hike — wins: EM FX including the PKR, rate-sensitive equities if the Fed holds; loses: risk assets and short-duration yield-seekers if hawkish rhetoric hardens into a hike.\n\nTHE DAY AHEAD\nKSE-100 support 180,036 (deeper support 179,500) · pivot 180,105 (Thursday's close, last session before the holiday) · resistance 180,311 (Wednesday's close), then Thursday's 181,434 intraday high. We read Thursday's dip as consolidation, not reversal — a close back above 180,311 reopens the path toward Thursday's intraday high; a slip below 180,036 points to a retest of 179,500. Oil & gas exploration, cement and commercial banks are the counters to watch on the reopen. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis brief is for informational purposes only and does not constitute investment advice. ContexAi Group is not a licensed investment adviser; all figures are sourced from licensed media and verified where marked (V) or flagged as desk estimates (EST.).\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "whatsapp_caption": "📊 Economic Vibes — Morning Brief · Mon 17 Aug 2026\n\n📉 KSE-100 180,105 (-0.11%, -206 pts) Thu close — PSX reopens after Independence Day break\n📊 Wall Street cools: S&P -0.2% · Dow -0.2% · Nasdaq -0.3% Fri\n🛢️ Brent $88.52 / WTI $82.40 — OPEC+ Sept hike in effect\n🥇 Gold $4,373.50 · Silver $64.53 — firmer on haven demand\n💵 USD/PKR 277.65 interbank\n\nFull PDF attached 📎 — support/pivot/resistance levels, Pakistan/GCC/Global matrix, and today's legislative tracker inside.\n\nThis brief is for informational purposes only and does not constitute investment advice. ContexAi Group is not a licensed investment adviser.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
   "sources": [
     {
-      "title": "PSX closes nearly flat above 180,100 points — The Express Tribune",
-      "url": "https://tribune.com.pk/story/2623712/psx-closes-nearly-flat-above-180100-points"
+      "title": "PSX ends with mild losses, lacks triggers — The Express Tribune",
+      "url": "https://tribune.com.pk/story/2623780/psx-ends-with-mild-losses-lacks-triggers"
     },
     {
-      "title": "PSX: KSE-100 Report, August 13 2026 — ARY News",
-      "url": "https://arynews.tv/psx-kse-100-report-wednesday-august-13-2026"
+      "title": "PSX Announces Holiday on Friday — ProPakistani",
+      "url": "https://propakistani.pk/2026/08/11/psx-announces-holiday-on-friday/"
     },
     {
-      "title": "Rupee gains 01 paisa against dollar — The Nation",
-      "url": "https://www.nation.com.pk/13-Aug-2026/rupee-gains-01-paisa-dollar"
+      "title": "PSX, SBP to remain closed on August 14 — Business Recorder",
+      "url": "https://www.brecorder.com/news/40434299"
     },
     {
       "title": "Rupee records gain against US dollar — Business Recorder",
       "url": "https://www.brecorder.com/news/40434649/rupee-records-gain-against-us-dollar"
-    },
-    {
-      "title": "Stock market today: S&P 500 record high, oil, PPI live updates — CNBC",
-      "url": "https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html"
-    },
-    {
-      "title": "S&P 500 hits record high as oil, producer inflation weaken — The Detroit News",
-      "url": "https://www.detroitnews.com/story/business/2026/08/13/sp-500-hits-record-high-as-oil-producer-inflation-weaken/91285508007/"
-    },
-    {
-      "title": "US 10 Year / 2 Year Treasury Note Yield — Trading Economics",
-      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
-    },
-    {
-      "title": "Brent crude oil — Price, Chart, News — Trading Economics",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
-    },
-    {
-      "title": "Iran and the US say a Strait of Hormuz deal is close — The Washington Post",
-      "url": "https://www.washingtonpost.com/business/2026/08/05/iran-war-us-hormuz-trump-august-5-2026/11441d6a-9090-11f1-9fdc-0a725c989a7b_story.html"
-    },
-    {
-      "title": "Iran, Oman, US 'close' to Hormuz deal: What do they all want? — Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want"
-    },
-    {
-      "title": "Gold snaps four-day advance as yields ease, oil drops — Kitco PM Report",
-      "url": "https://www.kitco.com/news/article/2026-08-13/gold-snaps-four-day-advance-yields-ease-oil-drops-kitco-pm-report"
-    },
-    {
-      "title": "OPEC+ to Increase Output by 188,000 bpd in September — Iraq Business News",
-      "url": "https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/"
-    },
-    {
-      "title": "Saudi non-oil business activity remains strong as PMI stands at 53.1 in July — Arab News",
-      "url": "https://www.arabnews.com/node/2653330/business-economy"
-    },
-    {
-      "title": "Saudi Arabia sustains non-oil growth and Kuwait rebounds — AGBI",
-      "url": "https://www.agbi.com/economy/2026/08/saudi-arabia-sustains-non-oil-growth-and-kuwait-rebounds/"
-    },
-    {
-      "title": "Chaired by HRH Crown Prince, PIF Board of Directors Approves PIF 2026-2030 Strategy — PIF",
-      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
     },
     {
       "title": "Pakistan inflation clocks in at 9.2% in July 2026 — Business Recorder",
@@ -208,16 +164,60 @@
       "url": "https://www.sbp.org.pk/assets/document/kibor-rates-07-august-2026.pdf"
     },
     {
-      "title": "Pakistan Eyes $1.2 Billion Tranche as Crucial IMF Review Talks Set for Next Month — ProPakistani",
-      "url": "https://propakistani.pk/2026/08/11/pakistan-eyes-1-2-billion-tranche-as-crucial-imf-review-talks-set-for-next-month/"
+      "title": "IMF Mission to Visit Pakistan Next Month for EFF, RSF Reviews — Energy Update",
+      "url": "https://www.energyupdate.com.pk/2026/08/12/imf-mission-to-visit-pakistan-next-month-for-eff-rsf-reviews/"
+    },
+    {
+      "title": "S&P 500 closes lower, but posts third straight weekly gain: Live updates — CNBC",
+      "url": "https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html"
+    },
+    {
+      "title": "Nasdaq, S&P 500 decline following market's record close — TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026"
+    },
+    {
+      "title": "Treasury Yields Snapshot: August 14, 2026 — Advisor Perspectives",
+      "url": "https://advisorperspectives.com/dshort/updates/2026/08/14/treasury-yields-snapshot-august-14-2026"
+    },
+    {
+      "title": "Brent crude oil — Price, Chart, News — Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+    },
+    {
+      "title": "Gold, silver rise as weak retail sales cut Fed-hike odds — Kitco PM Report",
+      "url": "https://www.kitco.com/news/article/2026-08-14/gold-silver-rise-weak-retail-sales-cut-fed-hike-odds-kitco-pm-report"
+    },
+    {
+      "title": "OPEC+ to Increase Output by 188,000 bpd in September — Iraq Business News",
+      "url": "https://www.iraq-businessnews.com/2026/08/03/opec-to-increase-output-by-188000-bpd-in-september/"
+    },
+    {
+      "title": "OPEC+ approves final production quota increase of 2026 — World Oil",
+      "url": "https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/"
+    },
+    {
+      "title": "Saudi non-oil growth stays solid in July as demand improves, PMI shows — Business Recorder",
+      "url": "https://www.brecorder.com/news/40433243/saudi-non-oil-growth-stays-solid-in-july-as-demand-improves-pmi-shows"
+    },
+    {
+      "title": "Chaired by HRH Crown Prince, PIF Board of Directors Approves PIF 2026-2030 Strategy — PIF",
+      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
+    },
+    {
+      "title": "Analysis: Markets heard a dovish Kevin Warsh. The Fed chairman's own words suggest a rate hike — CNBC",
+      "url": "https://www.cnbc.com/2026/07/31/kevin-warsh-fed-inflation-rate-hike-markets.html"
+    },
+    {
+      "title": "September 2026 FOMC Prediction — Will the Fed Hold Rates? — PredictionMarketsPicks",
+      "url": "https://predictionmarketspicks.com/tools/fed-rate-tracker/september-2026"
     }
   ],
-  "iso_date": "2026-08-14",
-  "date_long": "Friday, 14 August 2026",
-  "last_close_long": "Thursday, 13 August 2026",
-  "date_news": "14 AUG 2026",
-  "pdf_filename": "2026-08-14-Economic-Vibes-Morning-Brief.pdf",
-  "brief_html_filename": "2026-08-14-economic-vibes-morning-brief.html",
-  "docx_filename": "2026-08-14-Economic-Vibes-Morning-Brief.docx",
+  "iso_date": "2026-08-17",
+  "date_long": "Monday, 17 August 2026",
+  "last_close_long": "Friday, 14 August 2026",
+  "date_news": "17 AUG 2026",
+  "pdf_filename": "2026-08-17-Economic-Vibes-Morning-Brief.pdf",
+  "brief_html_filename": "2026-08-17-economic-vibes-morning-brief.html",
+  "docx_filename": "2026-08-17-Economic-Vibes-Morning-Brief.docx",
   "disclaimer": "Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions."
 }
