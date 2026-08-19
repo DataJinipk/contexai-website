@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Vibes — Morning Brief · Wednesday, 19 August 2026</title>
+<style>
+  @page { size:A4; margin:12mm 11mm 17mm 11mm; @bottom-center{ content:element(foot); } }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; font-size:14px; line-height:1.5;
+    color:#123; background:#EBFAFB; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page{ background:#EBFAFB; padding:0 14px; }
+  a{ color:#0A7E8C; text-decoration:none; border-bottom:1px solid #C6DA0B; font-weight:600; }
+  .masthead{ background:#FFFFFF; color:#0A2540; padding:14px 20px 12px; border-radius:8px 8px 0 0;
+    border:1px solid #D4EFF2; border-bottom:none; }
+  .mast-row{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .mast-lock{ display:flex; align-items:center; }
+  .mast-lock .logo{ height:38px; width:auto; display:block; }
+  .mast-lock .divider{ color:#C6D8DC; font-weight:400; padding:0 11px; font-size:26px; }
+  .mast-lock .pub{ color:#0A7E8C; font-weight:800; font-size:17.5px; white-space:nowrap; }
+  .masthead .sub{ margin:7px 0 0; font-size:11.5px; color:#5A7480; font-weight:500; letter-spacing:.2px; }
+  .mast-date{ text-align:right; font-size:11.5px; color:#0A7E8C; font-weight:700; line-height:1.4; white-space:nowrap; }
+  .mast-date b{ font-size:13px; color:#0A2540; }
+  .colorbar{ display:flex; height:8px; width:100%; overflow:hidden; }
+  .colorbar > i{ flex:1; display:block; height:100%; }
+  .foot{ position:running(foot); }
+  .foot .fbar{ display:flex; height:7px; width:100%; overflow:hidden; }
+  .foot .fbar i{ flex:1; display:block; height:100%; }
+  .foot .fstrip{ background:#0A7E8C; color:#EAFDFF; font-size:9px; text-align:center; padding:4px 6px; font-weight:600; }
+  .body{ padding:10px 6px 4px; }
+  h2.sec{ font-size:15px; color:#fff; background:#0FA3B0; margin:8px 0 6px; padding:5px 12px;
+    border-radius:5px; font-weight:700; letter-spacing:.2px; }
+  h2.sec .n{ color:#C6DA0B; font-weight:900; margin-right:8px; }
+  h3.sub{ font-size:13px; color:#08616C; margin:8px 0 3px; font-weight:800;
+    border-bottom:2px solid #C6DA0B; padding-bottom:3px; }
+  p{ margin:6px 0; text-align:justify; }
+  b,strong{ color:#08616C; }
+  .pos{ color:#0E9F6E; font-weight:700; } .neg{ color:#D8434E; font-weight:700; }
+  ul.five{ list-style:none; margin:5px 0; padding:0; }
+  ul.five li{ padding:6px 10px 6px 13px; margin:4.5px 0; background:#fff; border:1px solid #BDE9ED;
+    border-left:4px solid #0FA3B0; border-radius:0 7px 7px 0; text-align:justify; page-break-inside:avoid; }
+  .chip{ display:inline-block; background:#C6DA0B; color:#46520A; font-weight:800; font-size:10px;
+    padding:1px 8px; border-radius:3px; margin-right:6px; text-transform:uppercase; letter-spacing:.3px; }
+  .news{ margin:3px 0 2px; padding-left:16px; } .news li{ margin:3.5px 0; text-align:justify; }
+  .synth{ background:#fff; border:1px solid #BDE9ED; border-radius:7px; padding:6px 11px; margin:4px 0;
+    page-break-inside:avoid; }
+  .synth b{ color:#08616C; }
+  table{ width:100%; border-collapse:collapse; margin:5px 0 3px; table-layout:fixed; font-size:10.8px; page-break-inside:avoid; }
+  thead th{ background:#0A7E8C; color:#fff; font-weight:700; font-size:11px; text-align:left;
+    padding:5px 7px; vertical-align:bottom; white-space:normal; }
+  tbody td{ padding:4px 6px; border-bottom:1px solid #D4EFF2; vertical-align:top; line-height:1.35; }
+  tbody tr:nth-child(even){ background:#F4FCFD; }
+  .disc{ font-size:9.8px; line-height:1.42; color:#4A6068; background:#DFF6F8; border:1px solid #BDE9ED;
+    border-radius:6px; padding:7px 11px; margin-top:8px; text-align:justify; page-break-inside:avoid; }
+  .snap{ display:flex; gap:7px; margin:4px 0 2px; }
+  .snap .c2{ flex:1 1 0; min-width:0; background:#fff; border:1px solid #BDE9ED; border-top:4px solid #0FA3B0;
+    border-radius:7px; padding:7px 8px; }
+  .snap .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .snap .v{ font-size:15px; font-weight:800; color:#0A7E8C; white-space:nowrap; line-height:1.2; }
+  .snap .d{ font-size:9.5px; font-weight:700; margin-top:1px; }
+  .lvl{ display:flex; gap:7px; margin:6px 0 2px; }
+  .lvl .c3{ flex:1 1 0; background:#fff; border:1px solid #BDE9ED; border-left:4px solid #C6DA0B;
+    border-radius:0 7px 7px 0; padding:6px 9px; }
+  .lvl .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .lvl .v{ font-size:14px; font-weight:800; color:#0A7E8C; }
+  .lvl .d{ font-size:9.5px; margin-top:1px; }
+  .synth.flow{ page-break-inside:auto; }
+  .tag{ font-size:9px; font-weight:800; color:#0A7E8C; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="foot">
+    <div class="fbar">
+      <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+      <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+      <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+    </div>
+    <div class="fstrip">ContexAi — Economic Vibes · A ContexAi Research Product · contexai.org · Delivered ~06:30 AM PKT · WhatsApp Channel: Economic Vibes</div>
+  </div>
+
+  <div class="masthead">
+    <div class="mast-row">
+      <div class="mast-lock"><img class="logo" src="contexai_group_logo.png" alt="ContexAi Group"><span class="divider">|</span><span class="pub">Economic Vibes — Morning Brief</span></div>
+      <div class="mast-date"><b>Wednesday, 19 August 2026</b><br>Morning Edition · PKT</div>
+    </div>
+    <div class="sub">ContexAi Research Desk · Sourced via Reuters, CNBC, Business Recorder, Express Tribune, Mettis Global, AGBI, Gulf News, S&amp;P Global, Kitco, SBP &amp; Regulatory Trackers · For the C-Suite &amp; HNW Investor · <b>V</b> = verified vs licensed media/official portal · <b>EST.</b> = ContexAi desk estimate</div>
+  </div>
+  <div class="colorbar">
+    <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+    <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+    <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+  </div>
+
+  <div class="body">
+    <div class="snap">
+      <div class="c2"><div class="l">KSE-100 <span class="tag">V</span></div><div class="v">177,955</div><div class="d neg">▼ 1.41% Tue · −2,547 pts</div></div>
+      <div class="c2"><div class="l">S&amp;P 500 <span class="tag">V</span></div><div class="v">▼ 0.7%</div><div class="d neg">Nasdaq −1.3% · Dow −0.2%</div></div>
+      <div class="c2"><div class="l">US 10Y / 2Y <span class="tag">V</span></div><div class="v">4.74 / 4.19</div><div class="d neg">30Y near 5.3% · hawkish Fed</div></div>
+      <div class="c2"><div class="l">Brent / WTI <span class="tag">V</span></div><div class="v">$91.0 / $85.0</div><div class="d pos">Hormuz tanker attack</div></div>
+      <div class="c2"><div class="l">Gold <span class="tag">V</span></div><div class="v">$4,388</div><div class="d neg">−0.6% · silver $64.90</div></div>
+      <div class="c2"><div class="l">USD/PKR <span class="tag">V</span></div><div class="v">277.60</div><div class="d ">interbank · steady</div></div>
+      
+    </div>
+
+    <h2 class="sec"><span class="n">01</span>Five Things You Need To Know To Start Your Day</h2>
+    <ul class="five">
+      <li><span class="chip">KSE-100 sheds 2,547 points</span> The benchmark closed Tuesday at <b>177,955.51</b>, down 2,546.94 points (1.41%) from Monday's 180,502.45, having swung from an intraday high of 180,602.44 to a low of 177,866.04 after the Supreme Court ordered former PM Imran Khan's transfer to Shifa International Hospital for medical examination, compounding fading hopes for a durable US-Iran deal over the Strait of Hormuz. Selling was broad-based — banks, oil &amp; gas exploration and marketing names, cement, fertiliser, power generation and auto assemblers all fell — on volume of 1.03bn shares worth Rs50.7bn. Sources: <a href="https://tribune.com.pk/story/2624555/psx-tumbles-1806-points-amid-geopolitical-tensions">Express Tribune</a>, <a href="https://www.brecorder.com/news/40435341/psx-benchmark-index-settles-over-2500-points-lower">Business Recorder</a>. Sentiment: <span class="neg">risk-off, broad-based</span>.</li>
+      <li><span class="chip">Wall Street falls as chip stocks sell off</span> The S&amp;P 500 fell 53.30 points (0.69%) to <b>7,691.76</b>, the Dow eased 0.22% to 53,343.40 and the Nasdaq dropped 1.33% to 26,289.71 as a chip-stock sell-off compounded pressure from elevated oil prices and government bond yields. Sources: <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026">TheStreet</a>, <a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html">Yahoo Finance</a>. Sentiment: <span class="neg">risk-off</span>.</li>
+      <li><span class="chip">Tanker struck near Hormuz, Brent near $91</span> A vessel transiting the Strait of Hormuz near Oman was struck by a projectile, sustaining engine-room damage and a crew casualty, after the 60-day US-Iran negotiation window lapsed without progress; Iran says the strait stays "closed" until US sanctions conditions are addressed, though separate talks with Oman continue. Brent held near <b>$91.0/bbl</b> and WTI near $85.0/bbl on the risk premium. Sources: <a href="https://www.kitco.com/news/article/2026-08-18/gold-pulls-back-hormuz-attack-keeps-crude-above-90-kitco-am-report">Kitco</a>, <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics</a>. Sentiment: <span class="pos">firm, geopolitically driven</span>.</li>
+      <li><span class="chip">Gold, silver slip despite Hormuz risk</span> Spot gold eased 0.6% to <b>$4,388/oz</b> and silver fell 1.2% to $64.90/oz, as a firmer 10-year Treasury yield (4.74%, with the 30-year still near a 19-year high above 5.3%) capped safe-haven demand even as the Hormuz tanker attack kept a floor under risk premia. Sources: <a href="https://www.kitco.com/news/article/2026-08-18/gold-pulls-back-hormuz-attack-keeps-crude-above-90-kitco-am-report">Kitco</a>, <a href="https://www.forbes.com/advisor/investing/gold-price/">Forbes Advisor</a>. Sentiment: <span class="neg">soft, yields-capped</span>.</li>
+      <li><span class="chip">OPEC+ output hike, Saudi PMI holds near 53</span> Seven OPEC+ members (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, Oman) are raising output by 188,000 bpd from August under an early-July decision, while Saudi Arabia's non-oil private sector stayed expansionary for a fourth straight month in July (Riyad Bank PMI 53.1), underpinning the PIF's 2026–2030 diversification push even as the Hormuz standoff raises regional shipping-cost risk. Sources: <a href="https://www.aljazeera.com/economy/2026/7/6/opec-countries-say-they-will-expand-monthly-oil-production">Al Jazeera</a>, <a href="https://www.brecorder.com/news/40433243/saudi-non-oil-growth-stays-solid-in-july-as-demand-improves-pmi-shows">Business Recorder</a>. Sentiment: <span class="pos">resilient, diversification intact</span>.</li>
+      
+    </ul>
+
+    <h2 class="sec"><span class="n">02</span>Regional Market &amp; Economic Matrix</h2>
+    <h3 class="sub">A. Local Market — Pakistan Focus</h3>
+    <div class="synth">The KSE-100 tumbled 2,546.94 points (1.41%) to <b>177,955.51</b> on Tuesday, wiping out Monday's energy-led gain after the Supreme Court ordered former PM Imran Khan's transfer to Shifa International Hospital for medical examination compounded fading prospects for a lasting US-Iran deal over Hormuz. The sell-off was unusually broad — banks, oil &amp; gas, cement, fertiliser, power and autos all fell — on volume of 1.03bn shares worth Rs50.7bn, a sign this was genuine de-risking rather than sector rotation. July CPI eased to <b>9.2% y/y</b> from 11.1% in June, and the SBP held its policy rate at 11.5% for a second straight meeting. An <a href="https://www.samaa.tv/2087355015-imf-team-to-visit-pakistan-next-month-for-1-2bn-tranche">IMF mission is expected next month</a> for the fourth EFF/second RSF review, with roughly $1.2bn (a $1bn fifth EFF tranche plus $200m RSF) in view, contingent on budget implementation, privatisation and energy circular-debt progress.</div>
+    <h3 class="sub">B. GCC &amp; Middle East</h3>
+    <div class="synth">Brent held near <b>$91.0/bbl</b> after a vessel transiting the Strait of Hormuz near Oman was struck by a projectile, sustaining engine-room damage and a crew casualty, following the lapse of the 60-day US-Iran negotiation window; Iran maintains the strait stays "closed" until US sanctions conditions are addressed, even as separate Oman-mediated talks continue. Seven <a href="https://www.aljazeera.com/economy/2026/7/6/opec-countries-say-they-will-expand-monthly-oil-production">OPEC+ members are raising output by 188,000 bpd from August</a>, a signal of confidence in demand even amid the standoff. Saudi Arabia's <a href="https://www.brecorder.com/news/40433243/saudi-non-oil-growth-stays-solid-in-july-as-demand-improves-pmi-shows">non-oil private sector stayed expansionary in July</a> (Riyad Bank PMI 53.1), with the PIF's 2026–2030 strategy (tourism, manufacturing, logistics, NEOM) still the medium-term anchor. Firmer crude is a near-term fiscal tailwind for Gulf exporters, but the fresh tanker attack raises shipping- and insurance-cost risk for the region.</div>
+    <h3 class="sub">C. Global Intelligence</h3>
+    <div class="synth">Wall Street fell Tuesday — S&amp;P 500 −0.69% to 7,691.76, Dow −0.22% to 53,343.40, Nasdaq −1.33% to 26,289.71 — as a chip-stock sell-off compounded pressure from elevated oil prices and government bond yields. The 10-year Treasury yield stood at 4.74% and the 2-year at 4.19%, with the 30-year still near a 19-year high above 5.3%; Fed Chair <a href="https://www.cnbc.com/2026/07/31/kevin-warsh-fed-inflation-rate-hike-markets.html">Kevin Warsh</a>'s hawkish July tone — nine of 18 FOMC participants project a 2026 hike — keeps a September rate hike in play, a risk compounded by the fresh Hormuz tanker attack's inflationary impulse. Brent held near $91.0/bbl and WTI near $85.0/bbl on the risk premium, while gold eased 0.6% to $4,388/oz (silver −1.2% to $64.90) as higher yields capped haven demand despite the risk-off mood.</div>
+
+    <h2 class="sec"><span class="n">03</span>Legislative &amp; Regulatory Tracker — Who Wins, Who Loses</h2>
+    <table>
+      <colgroup><col style="width:15%"><col style="width:29%"><col style="width:21%"><col style="width:35%"></colgroup>
+      <thead><tr><th>Jurisdiction</th><th>Legislation / Policy Change</th><th>Affected Sector(s)</th><th>Net Impact &amp; Strategic Outlook</th></tr></thead>
+      <tbody>
+        <tr><td><b>Local — Pakistan</b></td><td><a href="https://www.samaa.tv/2087355015-imf-team-to-visit-pakistan-next-month-for-1-2bn-tranche">IMF mission expected next month</a> for the fourth EFF/second RSF review (~$1.2bn: ~$1bn fifth EFF tranche + ~$200m RSF), focused on budget implementation, privatisation and energy circular-debt reform; SBP holds policy rate at 11.5% as July CPI eases to 9.2%.</td><td>Banks, IPPs, Energy, Sovereign bonds</td><td><b class="pos">Wins:</b> exporters and energy-linked equities if the ~$1.2bn tranche clears on schedule, easing FX reserve pressure. <b class="neg">Loses:</b> power and gas utilities facing continued circular-debt reform pressure, and rate-sensitive banks that had priced in an earlier cut the hold denies them.</td></tr>
+        <tr><td><b>Regional — GCC</b></td><td><a href="https://www.aljazeera.com/economy/2026/7/6/opec-countries-say-they-will-expand-monthly-oil-production">Seven OPEC+ members raise output by 188,000 bpd from August</a> under an early-July decision, even as the Hormuz tanker attack near Oman keeps regional transit risk elevated.</td><td>Energy, Oil exporters, Shipping/Insurance</td><td><b class="pos">Wins:</b> Gulf national budgets and oil exporters via firmer crude and added output flexibility. <b class="neg">Loses:</b> shippers and insurers exposed to Hormuz transit risk, and import-dependent economies facing costlier energy.</td></tr>
+        <tr><td><b>Global</b></td><td>A tanker struck near the Strait of Hormuz after the US-Iran negotiation window lapsed without a successor deal; Fed Chair Kevin Warsh's hawkish tilt (nine of 18 FOMC participants see a 2026 hike) keeps a September rate hike in play as long-dated yields sit near multi-decade highs.</td><td>Rates, Energy, Equities, USD, Shipping/Insurance</td><td><b class="pos">Wins:</b> energy producers and the dollar on the risk premium; Gulf exporters via firmer crude. <b class="neg">Loses:</b> rate-sensitive growth equities and chip stocks, EM borrowers facing costlier dollar funding, and shippers exposed to Hormuz transit risk.</td></tr>
+        
+      </tbody>
+    </table>
+
+    <h2 class="sec"><span class="n">04</span>The Day Ahead — KSE-100 Levels &amp; Desk Stance</h2>
+    <div class="lvl">
+      <div class="c3"><div class="l">Support <span class="tag">EST.</span></div><div class="v">177,000</div><div class="d">just below Tuesday's intraday low of 177,866; deeper support at 175,500</div></div>
+      <div class="c3"><div class="l">Pivot <span class="tag">EST.</span></div><div class="v">177,956</div><div class="d">Tuesday's close (177,955.51)</div></div>
+      <div class="c3"><div class="l">Resistance <span class="tag">EST.</span></div><div class="v">180,600</div><div class="d">Tuesday's intraday high (180,602.44); then round-number resistance at 181,000</div></div>
+    </div>
+    <div class="synth flow">We read Tuesday's swoon as genuine de-risking rather than sector rotation: selling was broad across banks, energy and cyclicals, and it accelerated on a confirmed domestic development (Imran Khan's hospital transfer) rather than rumour, while offshore a fresh Hormuz tanker attack keeps the crude-and-yields backdrop hostile to risk assets. That argues for a <b>cautious near-term stance</b>, watching whether the 177,000–177,900 band holds; a clean break exposes the 175,500 shelf. A stabilisation in Hormuz headlines and confirmation of the September IMF mission timeline are the cleanest catalysts to rebuild confidence. All levels are indicative desk estimates, not recommendations.</div>
+
+    <div class="disc"><b>Disclaimer:</b> Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.</div>
+  </div>
+</div>
+</body>
+</html>

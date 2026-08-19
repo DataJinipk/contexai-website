@@ -1,26 +1,26 @@
-KSE-100 clears 180,500 — but the breadth tells a different story
+KSE-100 sheds 2,547 points as Hormuz tanker strike and a hospital transfer rattle sentiment
 
-Good morning. Here's the Economic Vibes desk read for Tuesday, 18 August 2026.
+Good morning. Here's the Economic Vibes desk read for Wednesday, 19 August 2026.
 
 THE OVERNIGHT TAPE
-Wall Street fell Monday after the 60-day US-Iran memorandum governing the Strait of Hormuz expired without a successor deal and President Trump threatened action against Oman: S&P 500 -0.5% to 7,745.06, Dow -0.5% to 53,459.78, Nasdaq -0.3% to 26,644.91. The 30-year Treasury yield surged past 5.31% — its highest since 2007 — and the 10-year rose to 4.72% as Fed Chair Kevin Warsh signalled a hike may not be his preferred tool against inflation.
+Wall Street fell Tuesday as a chip-stock sell-off compounded pressure from elevated oil prices and bond yields: S&P 500 -0.69% to 7,691.76, Dow -0.22% to 53,343.40, Nasdaq -1.33% to 26,289.71. The 10-year Treasury yield stood at 4.74% and the 2-year at 4.19%, with the 30-year still near a 19-year high above 5.3%. Fed Chair Kevin Warsh's hawkish July tone -- nine of 18 FOMC participants project a 2026 hike -- keeps a September rate hike in play.
 
 PAKISTAN
-KSE-100 closed at 180,502.44 (+397.83 pts, +0.22%) on volume of 511.22m shares, but breadth was negative — 43 gainers vs 57 losers. The rally was almost entirely energy-led (CNERGY, PSO, ATRL, SSGC) tracking firmer crude, while banks, cement and fertilizer lagged. July CPI eased to 9.2% y/y and SBP held its policy rate at 11.5% for a second straight meeting. An IMF mission is expected in September for the fourth EFF/second RSF review, which could unlock roughly $1.2bn.
+The KSE-100 tumbled 2,546.94 points (1.41%) to close at 177,955.51, wiping out Monday's gain after the Supreme Court ordered former PM Imran Khan's transfer to Shifa International Hospital for medical examination, compounding fading US-Iran deal prospects. Selling was broad -- banks, oil & gas, cement, fertiliser, power and autos all fell -- on volume of 1.03bn shares worth Rs50.7bn. July CPI eased to 9.2% y/y and SBP held its policy rate at 11.5% for a second straight meeting. An IMF mission is expected next month for the fourth EFF/second RSF review, with roughly $1.2bn in view.
 
 GCC
-Saudi non-oil PMI held near 53 in July, staying expansionary for a fourth straight month, and PIF published its 2026-2030 strategy prioritising tourism, urban development, manufacturing, logistics, clean energy and NEOM alongside strong FY2025 results. Firmer oil on the Hormuz standoff is a fiscal tailwind for exporters even as it raises regional shipping-cost risk.
+A vessel transiting the Strait of Hormuz near Oman was struck by a projectile, sustaining engine-room damage and a crew casualty, after the 60-day US-Iran negotiation window lapsed without progress; Iran says the strait stays "closed" until US sanctions conditions are addressed. Brent held near $91.0/bbl on the risk premium. Seven OPEC+ members are raising output by 188,000 bpd from August, and Saudi's non-oil private sector stayed expansionary in July (PMI 53.1), underpinning the PIF's 2026-2030 diversification push.
 
 GLOBAL
-WTI jumped 3.1% to $84.95/bbl on the Hormuz risk premium while Brent held near $88.31/bbl. Gold held above $4,400 (silver $65.66, +1.3%) on softer US retail sales (-0.6% in July), though both remain well off 2026's record above $5,000.
+WTI held near $85.0/bbl alongside Brent's climb, while gold eased 0.6% to $4,388/oz (silver -1.2% to $64.90) as higher yields capped haven demand despite the risk-off mood. Both remain well off 2026's highs.
 
 LEGISLATIVE TRACKER
-• Pakistan: IMF fourth review prep + SBP rate hold — wins for exporters if the tranche clears, headwind for rate-sensitive banks.
-• GCC: Saudi's new Copyright Law (Aug 12) and UAE's merger-control regulations (Jul 30) tighten IP and antitrust frameworks — wins for rights holders, added compliance cost for platforms and acquirers.
-• Global: Hormuz memorandum lapses, Warsh signals hike may not be preferred tool — wins for energy and the dollar, headwind for rate-sensitive growth equities and EM borrowers.
+- Pakistan: IMF mission prep for the ~$1.2bn EFF/RSF tranche -- wins for exporters if it clears on schedule, headwind for utilities under circular-debt reform pressure.
+- GCC: OPEC+ 188,000 bpd output hike amid the Hormuz tanker attack -- wins for Gulf budgets and exporters, headwind for shippers and insurers exposed to transit risk.
+- Global: Hormuz tanker strike + Warsh's hawkish tilt toward a September hike -- wins for energy and the dollar, headwind for rate-sensitive equities and EM borrowers.
 
 THE DAY AHEAD
-KSE-100 support 179,500 · pivot 180,502 (Monday's close) · resistance 181,159 (Monday's high), then 182,000. We read Monday's move as narrow strength — the entire gain was concentrated in energy names, and decliners outnumbered advancers. That leaves the tape vulnerable to a reversal if Hormuz tensions ease. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 177,000 (below Tuesday's intraday low of 177,866) - pivot 177,956 (Tuesday's close) - resistance 180,600 (Tuesday's high), then 181,000. We read Tuesday's move as genuine de-risking -- selling was broad-based and triggered by confirmed news, not rumour -- arguing for a cautious near-term stance until Hormuz headlines stabilise. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
