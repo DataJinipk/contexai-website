@@ -1,26 +1,26 @@
-KSE-100 sheds 2,547 points as Hormuz tanker strike and a hospital transfer rattle sentiment
+KSE-100 slips 1,109 points on refinery-pricing jitters as Wall Street ticks up on Treasury's bond-market rescue
 
-Good morning. Here's the Economic Vibes desk read for Wednesday, 19 August 2026.
+Good morning. Here's the Economic Vibes desk read for Thursday, 20 August 2026.
 
 THE OVERNIGHT TAPE
-Wall Street fell Tuesday as a chip-stock sell-off compounded pressure from elevated oil prices and bond yields: S&P 500 -0.69% to 7,691.76, Dow -0.22% to 53,343.40, Nasdaq -1.33% to 26,289.71. The 10-year Treasury yield stood at 4.74% and the 2-year at 4.19%, with the 30-year still near a 19-year high above 5.3%. Fed Chair Kevin Warsh's hawkish July tone -- nine of 18 FOMC participants project a 2026 hike -- keeps a September rate hike in play.
+Wall Street edged higher Wednesday after the US Treasury said it would double liquidity-support buybacks of longer-dated debt to at least $4bn per operation from September: S&P 500 +0.2% to 7,707.98, Dow +0.2% to 53,463.05, Nasdaq +0.2% to 26,331.09. Long-dated yields pulled back from multi-decade highs -- the 10-year eased to roughly 4.65%, the 30-year to near 5.19% -- putting fresh pressure on Fed Chair Kevin Warsh's hawkish tilt (nine of 18 FOMC participants project a 2026 hike).
 
 PAKISTAN
-The KSE-100 tumbled 2,546.94 points (1.41%) to close at 177,955.51, wiping out Monday's gain after the Supreme Court ordered former PM Imran Khan's transfer to Shifa International Hospital for medical examination, compounding fading US-Iran deal prospects. Selling was broad -- banks, oil & gas, cement, fertiliser, power and autos all fell -- on volume of 1.03bn shares worth Rs50.7bn. July CPI eased to 9.2% y/y and SBP held its policy rate at 11.5% for a second straight meeting. An IMF mission is expected next month for the fourth EFF/second RSF review, with roughly $1.2bn in view.
+The KSE-100 slipped 1,109.14 points (0.62%) to close at 176,846.36, giving back an early rally that had lifted the index to an intraday high of 178,942.31, after media reports that the petroleum ministry would negotiate diesel-price cuts with local refineries triggered broad selling in refinery, banking, fertiliser and E&P names -- UBL, Engro Holdings, HBL, FFC, Attock Refinery, Meezan Bank, Mari Energies, Systems, Cnergyico and National Bank together erased 859 points. Breadth turned negative (185 gainers vs 271 losers) on volume of 787.9m shares worth Rs39.6bn. July CPI eased to 9.2% y/y and SBP held its policy rate at 11.5% for a second straight meeting; an IMF mission is expected in September for the next EFF/RSF review, with roughly $1.2bn in view.
 
 GCC
-A vessel transiting the Strait of Hormuz near Oman was struck by a projectile, sustaining engine-room damage and a crew casualty, after the 60-day US-Iran negotiation window lapsed without progress; Iran says the strait stays "closed" until US sanctions conditions are addressed. Brent held near $91.0/bbl on the risk premium. Seven OPEC+ members are raising output by 188,000 bpd from August, and Saudi's non-oil private sector stayed expansionary in July (PMI 53.1), underpinning the PIF's 2026-2030 diversification push.
+Brent held near $92.4/bbl and WTI near $85.6/bbl, extending a fourth straight session of gains, as Strait of Hormuz shipping traffic collapsed to roughly three vessels over the weekend against a pre-conflict norm near 130 daily. Seven OPEC+ members continue raising output by 188,000 bpd a month, and Saudi Arabia's non-oil private sector held a fourth straight month of expansion in July (PMI 53.1). Separately, the PIF board approved its 2026-2030 strategy, prioritising tourism, travel and entertainment alongside deeper private-sector participation.
 
 GLOBAL
-WTI held near $85.0/bbl alongside Brent's climb, while gold eased 0.6% to $4,388/oz (silver -1.2% to $64.90) as higher yields capped haven demand despite the risk-off mood. Both remain well off 2026's highs.
+Gold jumped roughly 3.7% to $4,493/oz on the lower-yield, softer-dollar backdrop even as silver eased to $63.87/oz. The Treasury's buyback move is effectively easing financial conditions the Fed itself has resisted loosening, a tension likely to dominate the next FOMC debate.
 
 LEGISLATIVE TRACKER
-- Pakistan: IMF mission prep for the ~$1.2bn EFF/RSF tranche -- wins for exporters if it clears on schedule, headwind for utilities under circular-debt reform pressure.
-- GCC: OPEC+ 188,000 bpd output hike amid the Hormuz tanker attack -- wins for Gulf budgets and exporters, headwind for shippers and insurers exposed to transit risk.
-- Global: Hormuz tanker strike + Warsh's hawkish tilt toward a September hike -- wins for energy and the dollar, headwind for rate-sensitive equities and EM borrowers.
+- Pakistan: Petroleum ministry in talks with refineries on diesel-price cuts -- wins for consumers and exporters if the IMF tranche clears, headwind for refiners and rate-sensitive banks.
+- GCC: OPEC+ output hike plus PIF's new 2026-2030 strategy amid a near-total Hormuz transit halt -- wins for Gulf budgets and PIF-linked tourism names, headwind for shippers and insurers.
+- Global: Treasury doubles bond buybacks, pressuring Fed Chair Warsh's hawkish stance -- wins for duration assets and gold, headwind for the Fed-independence narrative and the dollar.
 
 THE DAY AHEAD
-KSE-100 support 177,000 (below Tuesday's intraday low of 177,866) - pivot 177,956 (Tuesday's close) - resistance 180,600 (Tuesday's high), then 181,000. We read Tuesday's move as genuine de-risking -- selling was broad-based and triggered by confirmed news, not rumour -- arguing for a cautious near-term stance until Hormuz headlines stabilise. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 176,600 (below Wednesday's intraday low of 176,638) - pivot 176,846 (Wednesday's close) - resistance 178,942 (Wednesday's high), then 180,000. We read Wednesday's reversal as sector-specific rather than broad risk-off, arguing for a cautious-but-not-defensive stance while watching whether the 176,600-176,850 band holds. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
