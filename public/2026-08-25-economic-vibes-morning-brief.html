@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Vibes — Morning Brief · Tuesday, 25 August 2026</title>
+<style>
+  @page { size:A4; margin:12mm 11mm 17mm 11mm; @bottom-center{ content:element(foot); } }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; font-size:14px; line-height:1.5;
+    color:#123; background:#EBFAFB; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page{ background:#EBFAFB; padding:0 14px; }
+  a{ color:#0A7E8C; text-decoration:none; border-bottom:1px solid #C6DA0B; font-weight:600; }
+  .masthead{ background:#FFFFFF; color:#0A2540; padding:14px 20px 12px; border-radius:8px 8px 0 0;
+    border:1px solid #D4EFF2; border-bottom:none; }
+  .mast-row{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .mast-lock{ display:flex; align-items:center; }
+  .mast-lock .logo{ height:38px; width:auto; display:block; }
+  .mast-lock .divider{ color:#C6D8DC; font-weight:400; padding:0 11px; font-size:26px; }
+  .mast-lock .pub{ color:#0A7E8C; font-weight:800; font-size:17.5px; white-space:nowrap; }
+  .masthead .sub{ margin:7px 0 0; font-size:11.5px; color:#5A7480; font-weight:500; letter-spacing:.2px; }
+  .mast-date{ text-align:right; font-size:11.5px; color:#0A7E8C; font-weight:700; line-height:1.4; white-space:nowrap; }
+  .mast-date b{ font-size:13px; color:#0A2540; }
+  .colorbar{ display:flex; height:8px; width:100%; overflow:hidden; }
+  .colorbar > i{ flex:1; display:block; height:100%; }
+  .foot{ position:running(foot); }
+  .foot .fbar{ display:flex; height:7px; width:100%; overflow:hidden; }
+  .foot .fbar i{ flex:1; display:block; height:100%; }
+  .foot .fstrip{ background:#0A7E8C; color:#EAFDFF; font-size:9px; text-align:center; padding:4px 6px; font-weight:600; }
+  .body{ padding:10px 6px 4px; }
+  h2.sec{ font-size:15px; color:#fff; background:#0FA3B0; margin:8px 0 6px; padding:5px 12px;
+    border-radius:5px; font-weight:700; letter-spacing:.2px; }
+  h2.sec .n{ color:#C6DA0B; font-weight:900; margin-right:8px; }
+  h3.sub{ font-size:13px; color:#08616C; margin:8px 0 3px; font-weight:800;
+    border-bottom:2px solid #C6DA0B; padding-bottom:3px; }
+  p{ margin:6px 0; text-align:justify; }
+  b,strong{ color:#08616C; }
+  .pos{ color:#0E9F6E; font-weight:700; } .neg{ color:#D8434E; font-weight:700; }
+  ul.five{ list-style:none; margin:5px 0; padding:0; }
+  ul.five li{ padding:6px 10px 6px 13px; margin:4.5px 0; background:#fff; border:1px solid #BDE9ED;
+    border-left:4px solid #0FA3B0; border-radius:0 7px 7px 0; text-align:justify; page-break-inside:avoid; }
+  .chip{ display:inline-block; background:#C6DA0B; color:#46520A; font-weight:800; font-size:10px;
+    padding:1px 8px; border-radius:3px; margin-right:6px; text-transform:uppercase; letter-spacing:.3px; }
+  .news{ margin:3px 0 2px; padding-left:16px; } .news li{ margin:3.5px 0; text-align:justify; }
+  .synth{ background:#fff; border:1px solid #BDE9ED; border-radius:7px; padding:6px 11px; margin:4px 0;
+    page-break-inside:avoid; }
+  .synth b{ color:#08616C; }
+  table{ width:100%; border-collapse:collapse; margin:5px 0 3px; table-layout:fixed; font-size:10.8px; page-break-inside:avoid; }
+  thead th{ background:#0A7E8C; color:#fff; font-weight:700; font-size:11px; text-align:left;
+    padding:5px 7px; vertical-align:bottom; white-space:normal; }
+  tbody td{ padding:4px 6px; border-bottom:1px solid #D4EFF2; vertical-align:top; line-height:1.35; }
+  tbody tr:nth-child(even){ background:#F4FCFD; }
+  .disc{ font-size:9.8px; line-height:1.42; color:#4A6068; background:#DFF6F8; border:1px solid #BDE9ED;
+    border-radius:6px; padding:7px 11px; margin-top:8px; text-align:justify; page-break-inside:avoid; }
+  .snap{ display:flex; gap:7px; margin:4px 0 2px; }
+  .snap .c2{ flex:1 1 0; min-width:0; background:#fff; border:1px solid #BDE9ED; border-top:4px solid #0FA3B0;
+    border-radius:7px; padding:7px 8px; }
+  .snap .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .snap .v{ font-size:15px; font-weight:800; color:#0A7E8C; white-space:nowrap; line-height:1.2; }
+  .snap .d{ font-size:9.5px; font-weight:700; margin-top:1px; }
+  .lvl{ display:flex; gap:7px; margin:6px 0 2px; }
+  .lvl .c3{ flex:1 1 0; background:#fff; border:1px solid #BDE9ED; border-left:4px solid #C6DA0B;
+    border-radius:0 7px 7px 0; padding:6px 9px; }
+  .lvl .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .lvl .v{ font-size:14px; font-weight:800; color:#0A7E8C; }
+  .lvl .d{ font-size:9.5px; margin-top:1px; }
+  .synth.flow{ page-break-inside:auto; }
+  .tag{ font-size:9px; font-weight:800; color:#0A7E8C; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="foot">
+    <div class="fbar">
+      <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+      <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+      <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+    </div>
+    <div class="fstrip">ContexAi — Economic Vibes · A ContexAi Research Product · contexai.org · Delivered ~06:30 AM PKT · WhatsApp Channel: Economic Vibes</div>
+  </div>
+
+  <div class="masthead">
+    <div class="mast-row">
+      <div class="mast-lock"><img class="logo" src="contexai_group_logo.png" alt="ContexAi Group"><span class="divider">|</span><span class="pub">Economic Vibes — Morning Brief</span></div>
+      <div class="mast-date"><b>Tuesday, 25 August 2026</b><br>Morning Edition · PKT</div>
+    </div>
+    <div class="sub">ContexAi Research Desk · Sourced via Reuters, CNBC, Business Recorder, Express Tribune, Mettis Global, AGBI, Gulf News, S&amp;P Global, Kitco, SBP &amp; Regulatory Trackers · For the C-Suite &amp; HNW Investor · <b>V</b> = verified vs licensed media/official portal · <b>EST.</b> = ContexAi desk estimate</div>
+  </div>
+  <div class="colorbar">
+    <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+    <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+    <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+  </div>
+
+  <div class="body">
+    <div class="snap">
+      <div class="c2"><div class="l">KSE-100 <span class="tag">V</span></div><div class="v">176,967</div><div class="d neg">▼ 0.11% Mon · -200 pts</div></div>
+      <div class="c2"><div class="l">S&amp;P 500 <span class="tag">V</span></div><div class="v">▼ 0.3%</div><div class="d neg">Nasdaq -0.8% · Dow +0.3%</div></div>
+      <div class="c2"><div class="l">US 10Y / 2Y <span class="tag">V</span></div><div class="v">4.72 / 4.19</div><div class="d neg">hawkish hold; Jackson Hole Fri</div></div>
+      <div class="c2"><div class="l">Brent / WTI <span class="tag">V</span></div><div class="v">$92.1 / $84.9</div><div class="d neg">-2.5% · Iran sanctions</div></div>
+      <div class="c2"><div class="l">Gold <span class="tag">V</span></div><div class="v">$4,652</div><div class="d pos">▲ ~1.2% · silver $69.0</div></div>
+      <div class="c2"><div class="l">USD/PKR <span class="tag">V</span></div><div class="v">277.55</div><div class="d ">interbank · steady</div></div>
+      
+    </div>
+
+    <h2 class="sec"><span class="n">01</span>Five Things You Need To Know To Start Your Day</h2>
+    <ul class="five">
+      <li><span class="chip">KSE-100 dips 200 points despite Moody's B3 upgrade</span> The benchmark closed Monday at <b>176,966.69</b>, down 199.84 points (0.11%) after swinging from an intraday high of 178,122.88 to a low of 176,735.57 on profit-taking in ENGROH, MEBL, SRVI, SYS and MCB (&minus;453 points combined), even as OGDC, PPL, MLCF, DGKC and FCCL added 392 points; volume held firm at 930m shares worth Rs44bn, led by CNERGY (266m shares). Breadth stayed slightly negative (222 advancers vs 241 decliners of 498 traded). The session came hours after <b>Moody's upgraded Pakistan's sovereign rating to B3 from Caa1</b> (stable outlook), citing FX reserves near $17bn (from $14bn a year earlier) and interest payments falling to ~35% of revenue from 49%. Sources: <a href="https://tribune.com.pk/story/2625603/psx-slips-200-points-in-volatile-session">Express Tribune</a>, <a href="https://www.brecorder.com/news/40436274/psx-kse-100-closes-in-red-loses-200-points">Business Recorder</a>. Sentiment: <span class="pos">steady, upgrade-cushioned</span>.</li>
+      <li><span class="chip">Wall Street splits as chip stocks slide, Fed awaits Jackson Hole</span> The Dow added 140.15 points (0.3%) to <b>53,417.16</b>, while the S&amp;P 500 slipped 0.3% to 7,652.86 and the Nasdaq fell 0.8% to 25,980.19 as chip stocks sank &mdash; Micron dropped 5.8%, AMD and Broadcom lost more than 3% and 2% respectively &mdash; even as Treasury yields eased, with the 10-year near <b>4.72%</b> and the 2-year near 4.19%. The FOMC held its rate at 3.50%-3.75% on 29 July (9-3, three dissents favouring a hike), and markets now await Fed Chair Kevin Warsh's first Jackson Hole address on Friday, 28 August, just weeks ahead of the 16 September decision. Sources: <a href="https://www.washingtonpost.com/business/2026/08/24/wall-street-stocks-dow-nasdaq/27d744ee-9ff9-11f1-8606-1d40ad00172e_story.html">Washington Post</a>, <a href="https://www.techtimes.com/articles/325228/20260821/jackson-hole-2026-what-watch-when-warsh-steps-podium-friday.htm">Tech Times</a>. Sentiment: <span class="neg">mixed, rate-decision risk building</span>.</li>
+      <li><span class="chip">Gold nears $4,660, silver holds near $69 on Fed and PCE positioning</span> Spot gold traded near <b>$4,652&ndash;4,657/oz</b> (+~1.2%), just off the $4,660 mark, while silver held near $69/oz (+0.4%), with haven demand framed by this week's PCE inflation print and Chair Warsh's looming Jackson Hole remarks. Sources: <a href="https://www.kitco.com/news/article/2026-08-24/gold-nears-4660-pce-jackson-hole-frame-fed-trade-kitco-am-report">Kitco</a>, <a href="https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-august-24-2026-gold-to-stay-hot-through-the-end-of-the-month-123911561.html">Yahoo Finance</a>. Sentiment: <span class="pos">firm, haven bid intact</span>.</li>
+      <li><span class="chip">Oil slides despite &lsquo;toughest-ever&rsquo; US sanctions on Iran</span> Brent fell 2.5% to <b>$92.06/bbl</b> and WTI dropped 2.5% to $84.89/bbl even as the Trump administration unveiled a sweeping new sanctions regime &mdash; dubbed &quot;Operation Economic Outcast&quot; &mdash; that Treasury Secretary Scott Bessent called an &quot;economic D-Day&quot; against Iran, with China not exempted; the sell-off suggests traders see limited near-term risk to actual supply despite Iran's warning of possible Hormuz ship seizures. Sources: <a href="https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html">CNBC</a>, <a href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html">CNBC</a>. Sentiment: <span class="neg">softer, sanctions priced as non-disruptive</span>.</li>
+      <li><span class="chip">GCC: OPEC+ holds output path, Saudi PMI eases, PIF presses 2026-2030 strategy</span> Seven OPEC+ members kept to their fifth straight monthly increase of 188,000 bpd in August even as Hormuz-linked shipping risk clouds actual barrels moved; Saudi Arabia's non-oil private sector expanded at a slightly softer pace in July (Riyad Bank PMI 53.1, down from 53.3), while PIF continued rolling out its <b>2026-2030 strategy</b> &mdash; published 12 August with a tilt toward tourism, entertainment and private-sector co-investment &mdash; following its completed acquisition of Electronic Arts alongside Silver Lake and Affinity Partners on 4 August. Sources: <a href="https://www.agbi.com/economy/2026/08/saudi-arabia-sustains-non-oil-growth-and-kuwait-rebounds/">AGBI</a>, <a href="https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/">PIF</a>. Sentiment: <span class="pos">resilient, diversification on track</span>.</li>
+      
+    </ul>
+
+    <h2 class="sec"><span class="n">02</span>Regional Market &amp; Economic Matrix</h2>
+    <h3 class="sub">A. Local Market — Pakistan Focus</h3>
+    <div class="synth">The KSE-100 slipped 199.84 points (0.11%) to close at <b>176,966.69</b> on Monday, swinging between an intraday high of 178,122.88 and a low of 176,735.57 as profit-taking in ENGROH, MEBL, SRVI, SYS and MCB (&minus;453 points combined) offset gains in OGDC, PPL, MLCF, DGKC and FCCL (+392 points); volume was healthy at 930m shares worth Rs44bn, led by CNERGY (266m shares), with breadth modestly negative (222 gainers vs 241 losers of 498 traded). The session followed <b>Moody's upgrade of Pakistan's sovereign rating to B3 from Caa1</b> (stable outlook) on governance gains and easing external risk &mdash; FX reserves near $17bn versus $14bn a year earlier, and interest payments down to ~35% of revenue from 49% &mdash; extending the momentum from <a href="https://tribune.com.pk/story/2625596/moodys-upgrades-pakistans-sovereign-credit-rating-to-b3">S&amp;P's B upgrade on 22 July</a>. July CPI eased to <b>9.2% y/y</b> from 11.1% in June, the SBP held its policy rate at 11.5% for a second straight meeting, and KIBOR sat near 11.39/11.89% as of 20 August; an <a href="https://www.samaa.tv/2087355015-imf-team-to-visit-pakistan-next-month-for-1-2bn-tranche">IMF mission is expected in September</a> for the next EFF/RSF review, with roughly $1.2bn in view.</div>
+    <h3 class="sub">B. GCC &amp; Middle East</h3>
+    <div class="synth">Brent fell 2.5% to <b>$92.06/bbl</b> and WTI dropped to $84.89/bbl even as Washington unveiled its toughest-ever Iran sanctions package, with Tehran warning of possible <a href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html">Strait of Hormuz ship seizures</a> in response. Seven <a href="https://www.aljazeera.com/economy/2026/7/6/opec-countries-say-they-will-expand-monthly-oil-production">OPEC+ members continued a fifth straight 188,000 bpd monthly output increase</a>, while Saudi Arabia's non-oil private sector expanded at a slightly softer pace in July (<a href="https://www.agbi.com/economy/2026/08/saudi-arabia-sustains-non-oil-growth-and-kuwait-rebounds/">Riyad Bank PMI 53.1</a>, down from 53.3 in June). Separately, <a href="https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/">PIF's 2026-2030 strategy</a>, published 12 August, deepens its tilt toward tourism, entertainment and private-sector co-investment, on the heels of its completed Electronic Arts acquisition with Silver Lake and Affinity Partners on 4 August &mdash; the diversification anchor even as Hormuz-linked shipping risk clouds the near-term oil outlook.</div>
+    <h3 class="sub">C. Global Intelligence</h3>
+    <div class="synth">Wall Street was split Monday &mdash; the Dow added 0.3% to <b>53,417.16</b> while the S&amp;P 500 slipped 0.3% to 7,652.86 and the Nasdaq fell 0.8% to 25,980.19 as chip stocks sold off (Micron &minus;5.8%, AMD and Broadcom down more than 3% and 2%); Treasury yields eased, with the 10-year near 4.72% and the 2-year near 4.19%, ahead of Fed Chair Kevin Warsh's first Jackson Hole address on <b>Friday, 28 August</b> &mdash; nineteen days before the 16 September FOMC decision, where markets are pricing roughly one-in-three odds of a hike after the 9-3 hold on 29 July. Washington simultaneously rolled out its <a href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html">toughest-ever sanctions regime against Iran</a> &mdash; &quot;Operation Economic Outcast&quot;, per Treasury Secretary Bessent &mdash; while <a href="https://www.usnews.com/news/politics/articles/2026-08-24/the-latest-canadas-prime-minister-promises-retaliatory-tariffs-as-negotiations-with-the-us-falter">Canada vowed retaliatory tariffs</a> after President Trump threatened a 50% levy on Canadian autos, parts and steel. Gold held firm near $4,652-4,657/oz and silver near $69/oz as havens stayed bid into the policy-heavy week.</div>
+
+    <h2 class="sec"><span class="n">03</span>Legislative &amp; Regulatory Tracker — Who Wins, Who Loses</h2>
+    <table>
+      <colgroup><col style="width:15%"><col style="width:29%"><col style="width:21%"><col style="width:35%"></colgroup>
+      <thead><tr><th>Jurisdiction</th><th>Legislation / Policy Change</th><th>Affected Sector(s)</th><th>Net Impact &amp; Strategic Outlook</th></tr></thead>
+      <tbody>
+        <tr><td><b>Local — Pakistan</b></td><td><a href="https://www.dawn.com/news/2024988/moodys-lifts-pakistan-sovereign-rating-to-b3-from-caa1-cites-governance-improvement-and-easing-of-external-risk">Moody's upgrades Pakistan to B3</a> from Caa1 (stable outlook) on 24 August, citing stronger governance and external buffers; SBP holds its policy rate at 11.5% for a second straight meeting as July CPI eases to 9.2%, with an <a href="https://www.samaa.tv/2087355015-imf-team-to-visit-pakistan-next-month-for-1-2bn-tranche">IMF mission expected in September</a> for the next EFF/RSF review (~$1.2bn in view).</td><td>Banks, Sovereign bonds, Equities, IMF-linked sovereign risk</td><td><b class="pos">Wins:</b> sovereign bondholders and banks holding government paper as the upgrade lowers external financing costs, and exporters/importers if the ~$1.2bn IMF tranche clears on schedule. <b class="neg">Loses:</b> leveraged borrowers and rate-sensitive sectors (autos, cement, construction) still financing at 11.5%, with Pakistan's B3 rating still seven notches below investment grade.</td></tr>
+        <tr><td><b>Regional — GCC</b></td><td>Seven OPEC+ members roll over a fifth straight <a href="https://www.aljazeera.com/economy/2026/7/6/opec-countries-say-they-will-expand-monthly-oil-production">188,000 bpd monthly output increase</a> even as Iran warns of possible Hormuz ship seizures; <a href="https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/">PIF's 2026-2030 strategy</a>, published 12 August, deepens its private-sector, tourism-led diversification push.</td><td>Energy, Oil exporters, Tourism/PIF portfolio, Shipping/Insurance</td><td><b class="pos">Wins:</b> PIF-linked tourism, entertainment and gaming assets (including the newly closed Electronic Arts deal) under the refreshed strategy, and Gulf oil exporters if the Hormuz risk premium reasserts itself. <b class="neg">Loses:</b> Saudi Arabia's broader non-oil momentum, which softened slightly in July (PMI 53.1 vs 53.3), and shippers/insurers exposed to the escalating Hormuz standoff.</td></tr>
+        <tr><td><b>Global</b></td><td>The US unveils its <a href="https://www.cnbc.com/2026/08/24/us-iran-war-trump-hormuz-bessent-economic-sanctions-.html">toughest-ever Iran sanctions regime</a> &mdash; &quot;Operation Economic Outcast&quot; &mdash; on 24 August, extending pressure to China's trade with Tehran, while <a href="https://www.usnews.com/news/politics/articles/2026-08-24/the-latest-canadas-prime-minister-promises-retaliatory-tariffs-as-negotiations-with-the-us-falter">Canada vows retaliatory tariffs</a> after Trump threatened 50% duties on Canadian autos, parts and steel.</td><td>Energy, Chips/Tech, Autos/Steel, Safe havens</td><td><b class="pos">Wins:</b> gold and other havens as sanctions and tariff escalation lift geopolitical risk premia, plus US sanctions-compliance and trade-advisory firms. <b class="neg">Loses:</b> chipmakers already under pressure (Micron, AMD, Broadcom fell Monday) and cross-border autos/steel exporters facing the threatened 50% US tariff on Canadian goods.</td></tr>
+        
+      </tbody>
+    </table>
+
+    <h2 class="sec"><span class="n">04</span>The Day Ahead — KSE-100 Levels &amp; Desk Stance</h2>
+    <div class="lvl">
+      <div class="c3"><div class="l">Support <span class="tag">EST.</span></div><div class="v">175,000</div><div class="d">session's key floor per desk technicals; deeper support near 173,500</div></div>
+      <div class="c3"><div class="l">Pivot <span class="tag">EST.</span></div><div class="v">176,967</div><div class="d">Monday's close</div></div>
+      <div class="c3"><div class="l">Resistance <span class="tag">EST.</span></div><div class="v">178,100</div><div class="d">Monday's intraday high; a clean break opens 178,700</div></div>
+    </div>
+    <div class="synth flow">The desk reads Monday's dip as consolidation, not reversal: Moody's B3 upgrade and the improving reserves/interest-payment trajectory argue for a constructive medium-term PSX view, but near-term price action stays tethered to global cross-currents &mdash; a hawkish-leaning Fed heading into Chair Warsh's Jackson Hole address on 28 August, and a fresh US-Iran sanctions escalation that has so far left oil sellers unfazed. We'd fade weakness toward <b>175,000</b> support and take a cautious approach above <b>178,100</b> resistance pending clarity from Jackson Hole and the September IMF mission. All levels are indicative desk estimates, not recommendations.</div>
+
+    <div class="disc"><b>Disclaimer:</b> Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.</div>
+  </div>
+</div>
+</body>
+</html>

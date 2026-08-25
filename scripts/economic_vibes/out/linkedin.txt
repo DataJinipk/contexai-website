@@ -1,31 +1,31 @@
-KSE-100 rebounds 575 points on energy-led buying as gold breaks above $4,600 and Wall Street closes out a volatile week higher
+KSE-100 dips 200 points — but a Moody's sovereign upgrade to B3 changes the medium-term story
 
-Good morning. Here's the Economic Vibes desk read for Monday, 24 August 2026.
+Good morning. Tuesday, 25 August 2026. Here's the desk's read on overnight and Monday's close.
 
 THE OVERNIGHT TAPE
-Wall Street closed higher Friday -- S&P 500 +0.4% to 7,674.37, Dow +1.0% to 53,277.01, Nasdaq +0.4% to 26,180.45 -- but all three indices still logged a weekly loss after a bond-market selloff pushed the 10-year Treasury yield back up to 4.74% and the 2-year to roughly 4.18%, as the relief from the US Treasury's mid-week buyback announcement faded and Fed Chair Kevin Warsh's hawkish policy tilt stayed unmoved.
+Wall Street was split Monday: the Dow added 0.3% to 53,417.16, the S&P 500 slipped 0.3% to 7,652.86 and the Nasdaq fell 0.8% to 25,980.19 as chip stocks sold off (Micron -5.8%, AMD and Broadcom down more than 3% and 2%). The 10-year Treasury eased to ~4.72% and the 2-year to ~4.19% as markets look ahead to Fed Chair Kevin Warsh's first Jackson Hole address on Friday, 28 August — nineteen days before the 16 September FOMC decision. Gold held firm near $4,652-4,657/oz and silver near $69/oz.
 
 PAKISTAN
-The KSE-100 rebounded 574.76 points (0.33%) to close at 177,166.52 on Friday, recovering from an intraday low of 176,110.75 as value-hunting in oil & gas names -- Attock Refinery (+5.09%), OGDC (+1.99%), Hub Power (+1.25%) -- offset drag from Thal Limited, United Bank and The Bank of Punjab. Breadth turned positive (246 gainers vs 216 losers) on volume of 689.2m shares worth Rs35.66bn. July CPI eased to 9.2% y/y and SBP held its policy rate at 11.5% for a second straight meeting; an IMF mission is expected in September for the next EFF/RSF review, with roughly $1.2bn in view.
+The KSE-100 slipped 199.84 points (0.11%) to close at 176,966.69, swinging between an intraday high of 178,122.88 and a low of 176,735.57. Profit-taking in ENGROH, MEBL, SRVI, SYS and MCB (-453 points combined) offset gains in OGDC, PPL, MLCF, DGKC and FCCL (+392 points); volume held firm at 930m shares worth Rs44bn, led by CNERGY. The session followed Moody's upgrade of Pakistan's sovereign rating to B3 from Caa1 (stable outlook), citing FX reserves near $17bn (from $14bn a year earlier) and interest payments falling to ~35% of revenue from 49%. July CPI eased to 9.2% y/y, the SBP held its rate at 11.5%, and an IMF mission is expected in September for the next EFF/RSF review (~$1.2bn in view).
 
 GCC
-Brent held near $94.4/bbl and WTI near $87.3/bbl as Strait of Hormuz shipping disruption kept a risk premium in crude, even as OPEC+ continues raising output by 188,000 bpd a month. Saudi Arabia's non-oil private sector held a fourth straight month of expansion in July (PMI 53.1) even after Q2 real GDP contracted 4.8% y/y -- the kingdom's first quarterly contraction since 2023 -- while Kuwait's non-oil PMI rebounded to 50.8. Separately, PIF published its 2026-2030 strategy, pivoting to private-sector-led "value realisation" in tourism, entertainment and advanced manufacturing.
+Brent fell 2.5% to $92.06/bbl and WTI to $84.89/bbl even as Washington unveiled its toughest-ever Iran sanctions package, with Tehran warning of possible Hormuz ship seizures. OPEC+ continued a fifth straight 188,000 bpd monthly output increase, while Saudi Arabia's non-oil PMI eased slightly to 53.1 in July. PIF's 2026-2030 strategy, published 12 August, deepens its tourism and private-sector-led diversification push, on the heels of its completed Electronic Arts acquisition.
 
 GLOBAL
-Gold climbed to a three-month high near $4,603/oz (+~1.9%) on renewed fiscal-sustainability hedging even as Treasury yields stayed firm, with silver near $68.97/oz. The Treasury's buyback-driven yield relief proved short-lived, keeping the tension between fiscal yield-management and Fed Chair Warsh's hawkish stance in focus ahead of the next FOMC meeting.
+The US rolled out "Operation Economic Outcast" against Iran — Treasury Secretary Bessent's "economic D-Day" — while Canada vowed retaliatory tariffs after President Trump threatened a 50% levy on Canadian autos, parts and steel.
 
 LEGISLATIVE TRACKER
-- Pakistan: SBP holds at 11.5% as CPI eases to 9.2%; September IMF mission in view for ~$1.2bn -- wins for depositors and exporters if the tranche clears, headwind for leveraged borrowers awaiting a cut.
-- GCC: OPEC+ output hike plus PIF's 2026-2030 strategy amid Hormuz disruption and a Saudi GDP contraction -- wins for Gulf budgets and PIF-linked tourism names, headwind for the broader Saudi economy and shippers/insurers.
-- Global: Treasury's buyback relief fades as yields climb back toward Warsh's hawkish backdrop -- wins for gold and haven assets, headwind for the Fed-independence narrative and risk assets.
+- Pakistan: Moody's B3 upgrade + SBP hold at 11.5% + September IMF review. Wins: bondholders, banks, exporters. Loses: leveraged borrowers still at 11.5%.
+- GCC: OPEC+ output rollover + PIF 2026-2030 strategy. Wins: PIF-linked tourism/gaming, oil exporters. Loses: Saudi non-oil momentum, shippers/insurers.
+- Global: US Iran sanctions + Canada tariff retaliation. Wins: gold, havens, compliance advisors. Loses: chipmakers, autos/steel exporters.
 
 THE DAY AHEAD
-KSE-100 support 176,100 (Friday's intraday low) -- pivot 177,167 (Friday's close) -- resistance 178,000, then 180,000. We read Friday's rebound as constructive but narrow, concentrated in oil & gas names rather than broad-based conviction, arguing for a cautiously constructive stance while watching the 176,100-177,200 band. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 175,000 (deeper support 173,500) · pivot 176,967 (Monday's close) · resistance 178,100 (Monday's intraday high, then 178,700). We'd fade weakness toward support and take a cautious approach above resistance pending clarity from Jackson Hole and the September IMF mission. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-This brief is for informational purposes only and does not constitute investment advice. ContexAi Group is not a licensed investment adviser; all figures are sourced from licensed media and verified where marked (V) or flagged as desk estimates (EST.).
+Disclaimer: This brief is for informational purposes only and does not constitute investment advice. All figures are sourced from licensed financial media and verified where possible; desk estimates are clearly marked. ContexAi Group accepts no liability for trading decisions made based on this content.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
