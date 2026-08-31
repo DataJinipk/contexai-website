@@ -1,31 +1,33 @@
-KSE-100 dips 200 points — but a Moody's sovereign upgrade to B3 changes the medium-term story
+KSE-100 climbs 374 points to 177,697 as Wall Street wobbles on a hawkish Fed
 
-Good morning. Tuesday, 25 August 2026. Here's the desk's read on overnight and Monday's close.
+Good morning — here's the ContexAi Research desk's read on markets for Monday, 31 August 2026, covering Friday's close.
 
 THE OVERNIGHT TAPE
-Wall Street was split Monday: the Dow added 0.3% to 53,417.16, the S&P 500 slipped 0.3% to 7,652.86 and the Nasdaq fell 0.8% to 25,980.19 as chip stocks sold off (Micron -5.8%, AMD and Broadcom down more than 3% and 2%). The 10-year Treasury eased to ~4.72% and the 2-year to ~4.19% as markets look ahead to Fed Chair Kevin Warsh's first Jackson Hole address on Friday, 28 August — nineteen days before the 16 September FOMC decision. Gold held firm near $4,652-4,657/oz and silver near $69/oz.
+The S&P 500 slipped 0.25% to 7,711.76, the Dow was roughly flat (-0.02% to 53,559.99) and the Nasdaq fell 0.52% to 26,402.42 as Fed Chair Kevin Warsh's first Jackson Hole keynote struck a hawkish tone — he flagged that underlying inflation trends haven't meaningfully improved despite a resilient economy. Markets responded by roughly doubling the odds of a September rate hike to a coin-flip; the 10-year Treasury yield firmed to ~4.72% and the 2-year to ~4.34%. Gold held above $4,600/oz and silver spiked toward $71/oz on haven demand into the speech.
 
 PAKISTAN
-The KSE-100 slipped 199.84 points (0.11%) to close at 176,966.69, swinging between an intraday high of 178,122.88 and a low of 176,735.57. Profit-taking in ENGROH, MEBL, SRVI, SYS and MCB (-453 points combined) offset gains in OGDC, PPL, MLCF, DGKC and FCCL (+392 points); volume held firm at 930m shares worth Rs44bn, led by CNERGY. The session followed Moody's upgrade of Pakistan's sovereign rating to B3 from Caa1 (stable outlook), citing FX reserves near $17bn (from $14bn a year earlier) and interest payments falling to ~35% of revenue from 49%. July CPI eased to 9.2% y/y, the SBP held its rate at 11.5%, and an IMF mission is expected in September for the next EFF/RSF review (~$1.2bn in view).
+The KSE-100 added 373.73 points (0.21%) to close at 177,696.51 on Friday, capping a +530-point (0.3%) week. Ready-market volume rose to 658.3 million shares worth Rs31.45bn; breadth was modestly negative (202 advancers vs 257 decliners) even as banks and Systems Ltd led gains. The SBP held its policy rate at 11.5% for a second straight meeting, while August CPI is projected near 11.0% y/y — a sharp acceleration worth watching. USD/PKR interbank held steady around 277.51/277.71, and the IMF's 4th EFF and 3rd RSF reviews are set to begin in September, with roughly $1.2bn in combined disbursement in view.
 
 GCC
-Brent fell 2.5% to $92.06/bbl and WTI to $84.89/bbl even as Washington unveiled its toughest-ever Iran sanctions package, with Tehran warning of possible Hormuz ship seizures. OPEC+ continued a fifth straight 188,000 bpd monthly output increase, while Saudi Arabia's non-oil PMI eased slightly to 53.1 in July. PIF's 2026-2030 strategy, published 12 August, deepens its tourism and private-sector-led diversification push, on the heels of its completed Electronic Arts acquisition.
+Brent steadied near $90.1/bbl and WTI near $83.6/bbl as Strait of Hormuz shipping flows reportedly eased. The seven-nation OPEC+ group confirmed a further 188,000 bpd September output increase, with the UAE remaining outside the group after its 1 May exit amid a quota dispute with Riyadh. Saudi Arabia's non-oil PMI eased slightly to 53.1 in July (from 53.3) while UAE's improved to 52.7; PIF's 2025 annual report showed profit more than doubling to $17bn with AUM crossing $900bn, underpinning its newly approved 2026-2030 diversification strategy.
 
 GLOBAL
-The US rolled out "Operation Economic Outcast" against Iran — Treasury Secretary Bessent's "economic D-Day" — while Canada vowed retaliatory tariffs after President Trump threatened a 50% levy on Canadian autos, parts and steel.
+Beyond the Fed, Washington's tariff regime keeps evolving: after the Supreme Court ruled in February that IEEPA doesn't authorise presidential tariffs, the administration rebuilt a 15% global tariff via the time-limited Section 122 mechanism — a fresh cliff-edge due around Q4 2026 that export-dependent economies, including Pakistan's textile sector, should watch closely.
 
 LEGISLATIVE TRACKER
-- Pakistan: Moody's B3 upgrade + SBP hold at 11.5% + September IMF review. Wins: bondholders, banks, exporters. Loses: leveraged borrowers still at 11.5%.
-- GCC: OPEC+ output rollover + PIF 2026-2030 strategy. Wins: PIF-linked tourism/gaming, oil exporters. Loses: Saudi non-oil momentum, shippers/insurers.
-- Global: US Iran sanctions + Canada tariff retaliation. Wins: gold, havens, compliance advisors. Loses: chipmakers, autos/steel exporters.
+• Pakistan: Finance Act 2026's faceless tax administration and social-media withholding tax — wins for compliance transparency, costs for digital creators.
+• GCC: OPEC+ output hike and UAE's exit reshape the group's pricing power.
+• Global: Section 122 tariffs extend trade uncertainty into Q4 2026.
 
 THE DAY AHEAD
-KSE-100 support 175,000 (deeper support 173,500) · pivot 176,967 (Monday's close) · resistance 178,100 (Monday's intraday high, then 178,700). We'd fade weakness toward support and take a cautious approach above resistance pending clarity from Jackson Hole and the September IMF mission. All levels are indicative desk estimates, not recommendations.
+KSE-100 — Support 177,000 (intraday low 177,165; deeper support 176,300) · Pivot 177,697 (Friday's close) · Resistance 178,050 (Friday's high, then 178,700).
+
+Desk stance: Friday's gain was low-conviction — negative breadth on a rising index suggests narrow, large-cap-led buying. We favour a defensive tilt toward banks and export-linked names that benefit from PKR stability and IMF continuity, while watching CPI, the Fed, and Hormuz-linked oil risk. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-Disclaimer: This brief is for informational purposes only and does not constitute investment advice. All figures are sourced from licensed financial media and verified where possible; desk estimates are clearly marked. ContexAi Group accepts no liability for trading decisions made based on this content.
+This report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
