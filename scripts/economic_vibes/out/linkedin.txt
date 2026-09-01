@@ -1,28 +1,28 @@
-KSE-100 climbs 374 points to 177,697 as Wall Street wobbles on a hawkish Fed
+KSE-100 sheds 721 points as US-Iran strikes reignite Hormuz risk
 
-Good morning — here's the ContexAi Research desk's read on markets for Monday, 31 August 2026, covering Friday's close.
+Good morning — here's the ContexAi Research desk's read on markets for Tuesday, 01 September 2026, covering Monday's close.
 
 THE OVERNIGHT TAPE
-The S&P 500 slipped 0.25% to 7,711.76, the Dow was roughly flat (-0.02% to 53,559.99) and the Nasdaq fell 0.52% to 26,402.42 as Fed Chair Kevin Warsh's first Jackson Hole keynote struck a hawkish tone — he flagged that underlying inflation trends haven't meaningfully improved despite a resilient economy. Markets responded by roughly doubling the odds of a September rate hike to a coin-flip; the 10-year Treasury yield firmed to ~4.72% and the 2-year to ~4.34%. Gold held above $4,600/oz and silver spiked toward $71/oz on haven demand into the speech.
+The S&P 500 fell 0.33% to 7,686.14, the Dow dropped 374.09 points (0.7%) to 53,185.90 and the Nasdaq eased 0.12% to 26,370.89 after US forces struck Iranian rocket launchers on Larak Island in the Strait of Hormuz and Iran retaliated with strikes on Jordan's King Hussein and Al Azraq air bases and a reported (UAE-denied) attempt near Dubai's Al Minhad Air Base. All three indices still closed a fifth consecutive winning month. CME-tracked odds of a September Fed hike held near 60-64%, up from roughly 35% before Chair Warsh's hawkish Jackson Hole remarks; the 10-year Treasury yield touched 4.75% intraday — the highest since January 2025 — before easing to ~4.72%, with the 2-year near 4.33-4.35%. Gold slipped to a near two-week low around $4,451/oz as rate-hike bets outweighed haven demand, while silver rose to $67.11.
 
 PAKISTAN
-The KSE-100 added 373.73 points (0.21%) to close at 177,696.51 on Friday, capping a +530-point (0.3%) week. Ready-market volume rose to 658.3 million shares worth Rs31.45bn; breadth was modestly negative (202 advancers vs 257 decliners) even as banks and Systems Ltd led gains. The SBP held its policy rate at 11.5% for a second straight meeting, while August CPI is projected near 11.0% y/y — a sharp acceleration worth watching. USD/PKR interbank held steady around 277.51/277.71, and the IMF's 4th EFF and 3rd RSF reviews are set to begin in September, with roughly $1.2bn in combined disbursement in view.
+The KSE-100 shed 720.83 points (0.41%) to close at 176,975.68 on Monday, reversing part of Friday's gain. Ready-market volume jumped 42% to 931.7-937.2 million shares worth Rs39.1bn, with breadth negative (169 advancers vs 302 decliners). Selling hit autos, cement, banks, E&P, OMCs and power generation on oil-driven inflation fears, while refiners rallied on anticipated upgradation-policy news — Attock Refinery (+8.44%) and Cnergyico PK (+7.31%) led gainers. The SBP held its policy rate at 11.5% for a second straight meeting (next MPC 14 September), while brokerages see August CPI rebounding sharply to 10.75-11.4% y/y from July's 9.2%. USD/PKR interbank held steady near 277.60, and the IMF's 4th EFF and 3rd RSF reviews are set to open in September alongside Senate scrutiny of the Sovereign Wealth Fund (Amendment) Bill 2026.
 
 GCC
-Brent steadied near $90.1/bbl and WTI near $83.6/bbl as Strait of Hormuz shipping flows reportedly eased. The seven-nation OPEC+ group confirmed a further 188,000 bpd September output increase, with the UAE remaining outside the group after its 1 May exit amid a quota dispute with Riyadh. Saudi Arabia's non-oil PMI eased slightly to 53.1 in July (from 53.3) while UAE's improved to 52.7; PIF's 2025 annual report showed profit more than doubling to $17bn with AUM crossing $900bn, underpinning its newly approved 2026-2030 diversification strategy.
+Brent jumped roughly 3% to near $90.7/bbl and WTI to ~$85.6/bbl after the Larak Island strike and Iran's retaliation reached Jordanian and UAE territory — the first major exchange in over a month in a conflict now in its seventh month. The UAE said it intercepted an Iranian drone over its waters. OPEC+'s seven remaining members continue their ~188,000 bpd monthly output unwind without the UAE, which exited the group on 1 May. Saudi Arabia's non-oil PMI held at 53.1 in July (a fourth straight expansionary month) while the UAE's has slumped to 50.8 in June, its weakest in over five years.
 
 GLOBAL
-Beyond the Fed, Washington's tariff regime keeps evolving: after the Supreme Court ruled in February that IEEPA doesn't authorise presidential tariffs, the administration rebuilt a 15% global tariff via the time-limited Section 122 mechanism — a fresh cliff-edge due around Q4 2026 that export-dependent economies, including Pakistan's textile sector, should watch closely.
+Washington's Section 122 tariff mechanism — the 15% global tariff regime rebuilt after February's Supreme Court IEEPA ruling — remains on its 150-day clock, with a fresh cliff-edge due around Q4 2026 that export-dependent economies, including Pakistan's textile sector, continue to watch closely alongside the Fed's hawkish tilt.
 
 LEGISLATIVE TRACKER
-• Pakistan: Finance Act 2026's faceless tax administration and social-media withholding tax — wins for compliance transparency, costs for digital creators.
-• GCC: OPEC+ output hike and UAE's exit reshape the group's pricing power.
-• Global: Section 122 tariffs extend trade uncertainty into Q4 2026.
+• Pakistan: Sovereign Wealth Fund (Amendment) Bill 2026 tightens SWF governance ahead of IMF reviews.
+• GCC: OPEC+ output unwind continues without the UAE as Iran-linked strikes reach Gulf and Jordanian soil.
+• Global: Section 122 tariffs and a likely September Fed hike tighten conditions into Q4 2026.
 
 THE DAY AHEAD
-KSE-100 — Support 177,000 (intraday low 177,165; deeper support 176,300) · Pivot 177,697 (Friday's close) · Resistance 178,050 (Friday's high, then 178,700).
+KSE-100 — Support 176,300 (deeper support 175,000) · Pivot 176,976 (Monday's close) · Resistance 178,000 (Monday's intraday high, then Friday's 178,050).
 
-Desk stance: Friday's gain was low-conviction — negative breadth on a rising index suggests narrow, large-cap-led buying. We favour a defensive tilt toward banks and export-linked names that benefit from PKR stability and IMF continuity, while watching CPI, the Fed, and Hormuz-linked oil risk. All levels are indicative desk estimates, not recommendations.
+Desk stance: Monday's decline looks headline-driven rather than a trend break — volume rose 42% and breadth turned negative, but the intraday round-trip toward 178,000 shows two-way flow, not capitulation. We favour a defensive tilt toward refiners, fertiliser and IMF-programme beneficiaries while watching Hormuz-adjacent escalation, CPI, and the Fed. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
