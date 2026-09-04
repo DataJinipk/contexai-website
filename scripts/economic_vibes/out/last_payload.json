@@ -1,193 +1,181 @@
 {
-  "headline": "KSE-100 plunges 1,690 points to 174,777 as fresh US strikes on Iran jolt Hormuz; Wall Street shrugs, gold firms",
-  "mood": "Local risk-off, global calm · Hormuz the swing factor",
-  "mood_class": "dn",
+  "headline": "KSE-100 edges up 153 points to 174,930 as Wall Street posts its best session in weeks and gold spikes 3.5% on renewed Iran war fears",
+  "mood": "Broadly risk-on, gold the outlier · Hormuz still the swing factor",
+  "mood_class": "up",
   "snapshot": [
     {
       "label": "KSE-100",
       "tag": "V",
-      "value": "174,777",
-      "delta": "▼ 0.96% Wed · &minus;1,690 pts",
-      "delta_class": "neg"
+      "value": "174,930",
+      "delta": "▲ 0.09% Thu · +153 pts",
+      "delta_class": "pos"
     },
     {
       "label": "S&amp;P 500",
       "tag": "V",
-      "value": "▲ 0.46%",
-      "delta": "Nasdaq +0.45% · Dow +0.56%",
+      "value": "▲ 1.06%",
+      "delta": "Nasdaq +1.40% · Dow +1.18%",
       "delta_class": "pos"
     },
     {
       "label": "US 10Y / 2Y",
       "tag": "V",
-      "value": "4.79 / 4.37",
-      "delta": "hike odds ~66% · yields pause",
-      "delta_class": "neg"
+      "value": "4.77 / 4.35",
+      "delta": "yields ease · Waller dovish",
+      "delta_class": "pos"
     },
     {
       "label": "Brent / WTI",
       "tag": "V",
-      "value": "$94.9 / $90.7",
-      "delta": "fresh US strikes near Hormuz",
-      "delta_class": "pos"
+      "value": "$95.5 / $91.3",
+      "delta": "range-bound · Oman rebuffs Iran on Hormuz fees",
+      "delta_class": ""
     },
     {
       "label": "Gold",
       "tag": "V",
-      "value": "$4,336",
-      "delta": "+0.2% · silver $63.87",
-      "delta_class": ""
+      "value": "$4,489",
+      "delta": "+3.5% · silver $67.00",
+      "delta_class": "pos"
     },
     {
       "label": "USD/PKR",
       "tag": "V",
-      "value": "277.55",
+      "value": "277.52",
       "delta": "interbank · little changed",
       "delta_class": ""
     }
   ],
   "five_things": [
     {
-      "chip": "KSE-100 sheds 1,690 points to 174,777 as banks, E&amp;P and cement sell off",
-      "html": "The benchmark tumbled 1,690.40 points (0.96%) to close at <b>174,776.60</b> on Wednesday, down from Tuesday's 176,466.99, after swinging between an intraday high of 175,841.83 and a low of 174,562.88. Ready-market volume fell to 610.18 million shares worth Rs31.86bn across 501 companies traded, with breadth sharply negative at 113 advancers vs 356 decliners (32 unchanged). Meezan Bank, United Bank, Pakistan Petroleum and Fauji Fertiliser collectively dragged the index down roughly 604 points, with commercial banks, cement and E&amp;P names &mdash; also including Lucky Cement, OGDC and Habib Bank &mdash; bearing the brunt of the sell-off; Engro Fertiliser, Thal and Askari Bank offered limited support (+139 points combined). Cnergyico PK led volumes with 124.89 million shares traded. Sources: <a href=\"https://www.brecorder.com/news/40437545/psx-kse-100-loses-over-1700-points\">Business Recorder</a>, <a href=\"https://arynews.tv/psx-market-closes-lower-as-kse-100-index-drops-1690-points\">ARY News</a>.",
-      "sentiment": "risk-off, breadth deteriorating sharply",
-      "sentiment_class": "neg"
-    },
-    {
-      "chip": "US launches fresh strikes on Iran near Strait of Hormuz; wedding strike kills five",
-      "html": "US forces struck Islamic Revolutionary Guard Corps targets in Iran &mdash; including air-defence sites, radar systems and maritime assets &mdash; at 1600 GMT on Wednesday, reigniting the six-month conflict after a weekend exchange of fire and Monday's tanker strikes near the Strait of Hormuz. One US strike hit a home hosting a wedding, killing five and wounding dozens, according to local officials, while Tehran fired missiles and drones at regional sites in response. President Trump has separately vowed further action against Iran over the retaliation, even as roughly 17 million barrels of crude continued to transit Hormuz on Monday, suggesting Tehran does not yet control the waterway. Sources: <a href=\"https://www.npr.org/2026/09/02/g-s1-141500/us-iran-war\">NPR</a>, <a href=\"https://gulfnews.com/world/mena/us-strikes-multiple-iranian-naval-vessels-mine-laying-ships-used-to-harass-shipping-in-strait-of-hormuz-1.500470395\">Gulf News</a>.",
-      "sentiment": "escalating, Hormuz risk elevated",
-      "sentiment_class": "neg"
-    },
-    {
-      "chip": "Wall Street snaps three-day losing streak as Treasury yields pause near 4.79%",
-      "html": "The <b>S&amp;P 500</b> rose 0.46% to 7,666.60, the <b>Dow</b> added 295 points (0.56%) to 53,061.95 and the <b>Nasdaq</b> gained 0.45% to 26,217.83 on Wednesday, snapping a three-day losing streak as the 10-year Treasury yield held near <b>4.79%</b> &mdash; its highest since 2023 but no longer climbing &mdash; with the 2-year around 4.37%. CME FedWatch continued to price roughly <b>66% odds</b> of a September 16 rate hike, little changed from the prior session, even as New York Fed President John Williams said there were &ldquo;no clear signs right now&rdquo; that a hike was necessary. Equities largely looked through the fresh Iran strikes reported mid-session, with cyclicals outpacing tech. Sources: <a href=\"https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-2-dow-sp-500-nasdaq-082624175.html\">Yahoo Finance</a>, <a href=\"https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-02-2026\">TheStreet</a>.",
-      "sentiment": "resilient, yields plateauing",
+      "chip": "KSE-100 edges up 153 points to 174,930 after volatile session, breadth improves",
+      "html": "The benchmark inched up 153.09 points (0.09%) to close at <b>174,929.68</b> on Thursday, recovering a slice of Wednesday's 1,690-point rout after swinging between an intraday high of 175,796.24 and a low of 174,893.67. Ready-market volume held at 627.45 million shares worth Rs25.19bn across 494 companies, with breadth turning modestly positive at 252 advancers vs 207 decliners (35 unchanged). OGDC, PACE, TPL and TELE led gainers (+1.4% to +3.7%), while Pakistan Refinery, Bank Makramah and Cnergyico lagged (down 3.8%&ndash;6.2%); Topline Securities flagged renewed rotation into automobiles, cement and oil &amp; gas exploration even as Gulf tensions capped the upside. Sources: <a href=\"https://www.brecorder.com/news/40437729/psx-kse-100-index-closes-marginally-up-after-volatile-trading\">Business Recorder</a>, <a href=\"https://arynews.tv/psx-closes-higher-as-kse-100-gains-153-points\">ARY News</a>.",
+      "sentiment": "choppy but stabilizing",
       "sentiment_class": "pos"
     },
     {
-      "chip": "Gold steadies near four-week low, silver soft as rate-hike bets hold firm",
-      "html": "Spot gold traded around <b>$4,336/oz</b>, up $7.79 (0.18%) on the day, clawing back a sliver of Tuesday's steep loss as bargain buyers met a market still repricing Fed policy after Jackson Hole. Silver slipped further to <b>$63.87/oz</b>, down $0.22 (0.35%), widening the gold/silver ratio to 67.9 as the metal continued to lag gold. Traders said the correction is &ldquo;measured in dollars of yield, not ounces of demand,&rdquo; with roughly 66&ndash;70% odds of a September Fed hike still capping the haven bid despite the widening Gulf conflict. Sources: <a href=\"https://www.usagold.com/daily-precious-metals-market-report-september-2-2026/\">USAGOLD</a>, <a href=\"https://www.riotimesonline.com/gold-silver-precious-metals-wednesday-september-2-2026/\">Rio Times</a>.",
-      "sentiment": "stabilizing, rates still dominant",
+      "chip": "Wall Street jumps over 1% as Treasury yields ease and Fed's Waller turns dovish",
+      "html": "The <b>S&amp;P 500</b> jumped 1.06% (+81.00) to 7,747.71, the <b>Dow</b> surged 623.57 points (1.18%) to 53,686.11 and the <b>Nasdaq</b> climbed 1.40% (+366.23) to 26,584.06 on Thursday, the strongest session in weeks, as the 10-year Treasury yield eased to <b>4.77%</b> off its multi-year high and the 2-year held near 4.35%. Fed Governor Christopher Waller struck a dovish tone, saying he was willing to &ldquo;sit and be patient&rdquo; as inflation data cools and flagging scope for downward core-CPI revisions, tempering &mdash; but not eliminating &mdash; the roughly 66% odds CME FedWatch still assigns to a hike at the 16 September FOMC meeting. Credit-sensitive and cyclical sectors led the advance. Sources: <a href=\"https://investrade.com/market-review-september-03-2026/\">Investrade</a>, <a href=\"https://www.cnbc.com/2026/09/02/stock-market-today-live-updates.html\">CNBC</a>.",
+      "sentiment": "risk-on, yields easing",
+      "sentiment_class": "pos"
+    },
+    {
+      "chip": "Gold spikes over 3% to near $4,489 as Iran war reignites haven demand; silver tops $67",
+      "html": "Spot gold surged roughly <b>$155 (3.5%)</b> to trade near <b>$4,489/oz</b> on Thursday, its sharpest one-day jump in weeks, as renewed US-Iran hostilities and President Trump's warning that the fighting &ldquo;wouldn't take too long&rdquo; left traders unconvinced the conflict is truly winding down. Silver rallied in tandem to reclaim <b>$67/oz</b>, with the gold/silver ratio holding near 67. Dovish remarks from Fed Governor Waller added a second tailwind, easing the real-yield pressure that had capped bullion for weeks. Sources: <a href=\"https://fortune.com/article/current-price-of-gold-09-03-2026/\">Fortune</a>, <a href=\"https://www.cnbc.com/select/the-price-of-gold-today-september-3-2026-and-the-best-places-to-buy/\">CNBC</a>.",
+      "sentiment": "flight-to-safety, rate-cut hopes",
+      "sentiment_class": "pos"
+    },
+    {
+      "chip": "Brent, WTI little changed as Oman denies Iran's Hormuz transit-fee claim; Trump warns Muscat",
+      "html": "Brent settled near <b>$95.5/bbl</b> (&minus;$0.11) and WTI edged up to <b>$91.3/bbl</b> (+0.32%) on Thursday, holding a tight range even as the Gulf conflict entered its seventh month. A New York Post report said Oman rejected Iran's claim that the two sides had agreed to Strait of Hormuz transit fees for shipping, while President Trump separately threatened to bomb Oman if it &ldquo;gets in the way&rdquo; of talks to restore commercial passage through the strait &mdash; underscoring how fragile any de-escalation remains. Israel's defence minister also warned Iran that further strikes would draw retaliation against &ldquo;all&rdquo; of the regime's infrastructure, including energy sites. Sources: <a href=\"https://investrade.com/market-review-september-03-2026/\">Investrade</a>, <a href=\"https://www.aljazeera.com/news/liveblog/2026/9/2/iran-war-live-us-bombs-iran-tehran-retaliates-on-gulf-neighbours-jordan\">Al Jazeera</a>.",
+      "sentiment": "geopolitical risk elevated, prices contained",
       "sentiment_class": ""
     },
     {
-      "chip": "GCC: Saudi, UAE non-oil PMIs hit multi-month highs even as OPEC+ output rollback completes",
-      "html": "Saudi Arabia's Riyad Bank PMI climbed to <b>53.8 in August</b> (from 53.1 in July) &mdash; a six-month high and fifth straight expansionary month &mdash; with output growing at its fastest pace in seven months, though export orders fell sharply amid regional tensions. The UAE's S&amp;P Global non-oil PMI jumped to <b>55.3 in August</b> (from 52.7 in July), the sharpest improvement since December 2024, driven by a surge in new business and a return to export growth. The resilience comes as OPEC+'s seven active members completed their planned <b>188,000 bpd September output increase</b> on 2 August, unwinding roughly 1.65 million bpd of 2023's voluntary cuts, with quotas expected to hold into the fourth quarter pending market conditions &mdash; even as fresh US-Iran strikes near Hormuz on Wednesday underscore the risk to that momentum. Sources: <a href=\"https://www.arabnews.com/node/2649718/business-economy\">Arab News</a>, <a href=\"https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html\">CNBC</a>.",
-      "sentiment": "resilient non-oil momentum, war overhang persists",
+      "chip": "Saudi, UAE non-oil PMIs extend multi-month highs as OPEC+ eyes steady Q4 quotas",
+      "html": "The UAE's S&amp;P Global non-oil PMI held at <b>55.3 in August</b>, its fastest expansion since December 2024, with new orders rising at the joint-quickest pace since March 2024 despite the ongoing conflict. Saudi Arabia's Riyad Bank PMI matched its <b>six-month high of 53.8</b>, with output growing at its strongest pace since early 2026. The resilience comes as OPEC+'s seven active members &mdash; having completed their 188,000 bpd September output increase on 2 August &mdash; head into a <b>6 September meeting</b> expected to hold quotas steady through year-end, barring further Hormuz escalation. Sources: <a href=\"https://www.thenationalnews.com/business/2026/09/03/uae-non-oil-sector-records-fastest-growth-since-december-2024-despite-iran-war-impact/\">The National</a>, <a href=\"https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/\">World Oil</a>.",
+      "sentiment": "resilient non-oil momentum",
       "sentiment_class": "pos"
     }
   ],
   "matrix": {
-    "local_html": "The KSE-100 tumbled 1,690.40 points (0.96%) to close at <b>174,776.60</b> on Wednesday, its steepest single-day drop this week, on ready-market volume of 610.18 million shares worth Rs31.86bn with breadth sharply negative (113 advancers vs 356 decliners of 501 traded). Commercial banks, cement and E&amp;P names led the rout &mdash; Meezan Bank, United Bank, Pakistan Petroleum, Fauji Fertiliser, Lucky Cement, OGDC and Habib Bank &mdash; as fresh US strikes on Iran near the Strait of Hormuz stoked fears over Pakistan's import bill, with only Engro Fertiliser, Thal and Askari Bank offering support. Pakistan's <b>CPI inflation is running near 11% y/y in August</b> on higher food and fuel costs, and the SBP is widely expected to hold its policy rate at <b>11.5%</b> at the 14 September MPC; six-month <a href=\"https://www.sbp.org.pk/ecodata/kibor_index.asp\">KIBOR</a> stood near 12.6%, and USD/PKR interbank was little changed around <b>277.55</b> (bid 277.45/offer 277.65). Pakistan and the IMF are set to open the <b>4th EFF and 3rd RSF reviews in September</b>, with the mission expected to scrutinise the Sovereign Wealth Fund (Amendment) Bill 2026 &mdash; still before the Senate Standing Committee on Finance, which has sought a clause-by-clause justification before proceeding &mdash; alongside the government's economic governance reform agenda. Sources: <a href=\"https://www.brecorder.com/news/40437545/psx-kse-100-loses-over-1700-points\">Business Recorder</a>, <a href=\"https://propakistani.pk/2026/08/28/pakistan-imf-to-begin-4th-review-of-7-billion-eff-in-september/\">ProPakistani</a>.",
-    "gcc_html": "Brent rose to roughly <b>$94.9/bbl</b> and WTI held near $90.7/bbl after US forces struck IRGC air-defence, radar and maritime assets in Iran at 1600 GMT Wednesday &mdash; the first such barrage since the weekend &mdash; with one strike killing five at a wedding and Tehran retaliating with missiles and drones at regional sites; roughly 17 million barrels of crude still transited Hormuz on Monday. OPEC+'s seven active members completed their <b>188,000 bpd September output increase</b> on 2 August, finishing the unwind of 2023's voluntary cuts, with quotas seen holding into Q4. Non-oil momentum accelerated through August: <a href=\"https://www.arabnews.com/node/2649718/business-economy\">Saudi Arabia's PMI rose to a six-month high of 53.8</a> while the UAE's climbed to 55.3, its sharpest improvement since December 2024 &mdash; even as Wednesday's strikes near Hormuz test that resilience heading into September data.",
-    "global_html": "Wall Street snapped a three-day losing streak Wednesday even as the US struck Iranian targets near the Strait of Hormuz mid-session: the S&amp;P 500 rose 0.46% to 7,666.60, the Dow added 295 points (0.56%) to 53,061.95 and the Nasdaq gained 0.45% to 26,217.83, as the 10-year Treasury yield held near <b>4.79%</b> &mdash; its highest since 2023 &mdash; without extending its climb, and the 2-year sat near 4.37%. CME FedWatch continued to price roughly <b>66% odds</b> of a hike at the 16 September FOMC meeting, with NY Fed President John Williams cautioning there were &ldquo;no clear signs right now&rdquo; a hike was needed. Gold steadied near a four-week low at $4,336/oz (+0.18%) while silver slipped to $63.87/oz (-0.35%), as rate-hike positioning continued to outweigh the haven bid from the widening Gulf conflict. Sources: <a href=\"https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-2-dow-sp-500-nasdaq-082624175.html\">Yahoo Finance</a>, <a href=\"https://tradingeconomics.com/commodity/brent-crude-oil\">Trading Economics</a>."
+    "local_html": "The KSE-100 recovered a modest 153.09 points (0.09%) to close at <b>174,929.68</b> on Thursday, rebounding from Wednesday's 1,690-point rout on ready-market volume of 627.45 million shares worth Rs25.19bn, with breadth improving to 252 advancers vs 207 decliners of 494 traded. OGDC, PACE, TPL and TELE led gainers while Pakistan Refinery, Bank Makramah and Cnergyico lagged, as Topline Securities noted fresh rotation into autos, cement and E&amp;P even with Gulf risk capping the upside. Pakistan's <b>CPI inflation is running near 11% y/y in August</b> on higher food and fuel costs, and the SBP is widely expected to hold its policy rate at <b>11.5%</b> at the 14 September MPC; six-month <a href=\"https://www.sbp.org.pk/ecodata/kibor_index.asp\">KIBOR</a> stood near 11.80%, and USD/PKR interbank was little changed around <b>277.52</b> (bid 277.42/offer 277.62). The <b>Sovereign Wealth Fund (Amendment) Bill 2026</b> remains before the Senate Standing Committee on Finance ahead of the IMF's 4th EFF and 3rd RSF reviews, due to open this month. Sources: <a href=\"https://www.brecorder.com/news/40437729/psx-kse-100-index-closes-marginally-up-after-volatile-trading\">Business Recorder</a>, <a href=\"https://tribune.com.pk/story/2625171/august-inflation-seen-jumping-to-11\">Express Tribune</a>.",
+    "gcc_html": "Brent held near <b>$95.5/bbl</b> and WTI near $91.3/bbl on Thursday as the Iran conflict entered its seventh month without a fresh flare-up: Oman denied Iranian claims of a Hormuz transit-fee deal, President Trump warned Muscat against obstructing shipping talks, and Israel's defence minister vowed retaliation against Iranian energy infrastructure if attacked again. OPEC+'s seven active members completed their <b>188,000 bpd September output increase</b> on 2 August and head into a 6 September meeting expected to hold quotas steady into Q4. Non-oil momentum stayed firm: <a href=\"https://www.thenationalnews.com/business/2026/09/03/uae-non-oil-sector-records-fastest-growth-since-december-2024-despite-iran-war-impact/\">the UAE's PMI held at a 55.3</a> multi-month high while Saudi Arabia matched its six-month high of 53.8, both defying the war's overhang.",
+    "global_html": "Wall Street posted its best session in weeks Thursday: the S&amp;P 500 jumped 1.06% to 7,747.71, the Dow surged 623.57 points (1.18%) to 53,686.11 and the Nasdaq climbed 1.40% to 26,584.06, as the 10-year Treasury yield eased to <b>4.77%</b> off its multi-year high and the 2-year held near 4.35%. Fed Governor Christopher Waller struck a dovish note, saying he could &ldquo;sit and be patient&rdquo; as inflation cools, tempering but not erasing the roughly <b>66% odds</b> CME FedWatch assigns to a hike at the 16 September FOMC meeting. Gold surged 3.5% to near $4,489/oz and silver reclaimed $67/oz as the still-unresolved Iran conflict kept haven demand bid even as equities rallied. Sources: <a href=\"https://investrade.com/market-review-september-03-2026/\">Investrade</a>, <a href=\"https://fortune.com/article/current-price-of-gold-09-03-2026/\">Fortune</a>."
   },
   "legislative": [
     {
       "jur": "Local — Pakistan",
-      "policy_html": "<a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Pakistan Sovereign Wealth Fund (Amendment) Bill, 2026</a> remains before the Senate Standing Committee on Finance and Revenue, which has sought a clause-by-clause justification of the amendments ahead of September's IMF EFF/RSF review mission.",
+      "policy_html": "<a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Pakistan Sovereign Wealth Fund (Amendment) Bill, 2026</a> remains before the Senate Standing Committee on Finance and Revenue as the IMF's 4th EFF and 3rd RSF review mission prepares to visit this month.",
       "sectors": "State-owned enterprises, SWF-held assets, IMF programme compliance",
       "impact_html": "<b class=\"pos\">Wins:</b> IMF governance conditionality advanced; investors seeking transparent SOE oversight and mandatory performance disclosure. <b class=\"neg\">Loses:</b> SWF-held entities face continued deal-execution delays while committee review drags on."
     },
     {
       "jur": "Regional — GCC",
-      "policy_html": "<a href=\"https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html\">OPEC+ completed its 188,000 bpd September output increase</a> on 2 August, even as fresh US strikes on Iranian targets near the Strait of Hormuz reignited the conflict on Wednesday.",
+      "policy_html": "<a href=\"https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/\">OPEC+ heads into its 6 September meeting</a> expected to hold quotas steady into Q4 after completing the 188,000 bpd September output increase on 2 August.",
       "sectors": "Oil &amp; gas majors, Gulf shipping/insurance, non-oil private sector",
-      "impact_html": "<b class=\"pos\">Wins:</b> OPEC+ output discipline sustained; Saudi Arabia (PMI 53.8) and UAE (PMI 55.3) non-oil sectors post multi-month highs. <b class=\"neg\">Loses:</b> Gulf shipping and insurance costs rise again on renewed Hormuz strike risk; exporters face falling export orders amid regional tensions."
+      "impact_html": "<b class=\"pos\">Wins:</b> Saudi Arabia (PMI 53.8) and UAE (PMI 55.3) non-oil sectors extend multi-month highs; output discipline supports price stability. <b class=\"neg\">Loses:</b> Gulf shippers and insurers remain exposed to Hormuz transit-fee disputes and any fresh escalation."
     },
     {
       "jur": "Global",
-      "policy_html": "The Fed's <a href=\"https://fedratecalc.com/next-fomc-meeting/\">16 September FOMC meeting</a> looms with hike odds near 66% per CME FedWatch, as the 10-year Treasury yield holds near a multi-year high of 4.79% following Chair Kevin Warsh's hawkish Jackson Hole remarks.",
+      "policy_html": "The Fed's <a href=\"https://fedratecalc.com/next-fomc-meeting/\">16 September FOMC meeting</a> looms with hike odds near 66% per CME FedWatch, even as Governor Waller's dovish remarks and a retreat in the 10-year yield to 4.77% complicate the case for tightening.",
       "sectors": "Rate-sensitive equities, EM currencies (incl. PKR), energy majors",
-      "impact_html": "<b class=\"pos\">Wins:</b> US dollar, savers, and cyclical equities that led Wednesday's rally as yields paused their climb. <b class=\"neg\">Loses:</b> EM currencies and rate-sensitive borrowers remain exposed if the Fed follows through on a September hike."
+      "impact_html": "<b class=\"pos\">Wins:</b> Equities and cyclicals that led Thursday's rally as yields eased. <b class=\"neg\">Loses:</b> EM currencies and rate-sensitive borrowers remain exposed if the Fed still delivers a September hike."
     }
   ],
   "levels": {
-    "support": "174,000",
-    "support_note": "psychological floor near today's session low; deeper support at 173,000",
-    "pivot": "174,777",
-    "pivot_note": "Wednesday's close",
-    "resistance": "175,842",
-    "resistance_note": "Wednesday's intraday high; then 176,467 (Tuesday's close)"
+    "support": "174,900",
+    "support_note": "Thursday's intraday low; deeper support at 174,000",
+    "pivot": "174,930",
+    "pivot_note": "Thursday's close",
+    "resistance": "175,800",
+    "resistance_note": "Thursday's intraday high; then 176,467 (last week's close)"
   },
-  "desk_stance_html": "We read Wednesday's 0.96% KSE-100 decline as a sharper, more broad-based risk-off move than Tuesday's 0.29% dip &mdash; breadth deteriorated to 113 advancers versus 356 decliners, and volume held up even as prices fell, suggesting genuine distribution rather than thin-market noise. The proximate trigger is a fresh escalation in the Gulf: US strikes on Iranian air-defence and maritime assets near the Strait of Hormuz pushed Brent to nearly $95 and WTI above $90, a direct threat to Pakistan's import bill just as August CPI runs near 11% y/y ahead of the SBP's 14 September MPC. The divergence with Wall Street &mdash; which shrugged off the same headlines to snap a three-day losing streak &mdash; tells us global investors are for now pricing the conflict as contained to the region, while local investors are pricing the energy and fiscal pass-through directly. We favour a <b>defensive tilt toward E&amp;P, fertiliser and IMF-programme beneficiaries</b> while staying alert to further Hormuz escalation, the 14 September MPC decision, and any progress on the Sovereign Wealth Fund bill. All levels are indicative desk estimates, not recommendations.",
+  "desk_stance_html": "We read Thursday's modest 0.09% KSE-100 gain as tentative stabilization rather than a durable reversal: breadth improved to 252 advancers versus 207 decliners, and the index clawed back a slice of Wednesday's 1,690-point rout, but volume actually fell (627.45m shares vs 610.18m) so conviction remains thin. The bigger signal is the divergence between hard and soft assets: gold's 3.5% spike toward $4,489 alongside Wall Street's best session in weeks tells us global investors are pricing both easier Fed policy (post-Waller) and lingering Hormuz tail risk simultaneously, while oil stayed range-bound near $95.5 Brent as Oman rebuffed Iran's transit-fee claims. For Pakistan, that combination is a mixed blessing &mdash; a calmer oil tape eases the import-bill math into the SBP's 14 September MPC, but a stronger dollar-gold bid and 66% Fed hike odds still argue against near-term PKR strength. We favour a <b>selective tilt toward E&amp;P, banks and IMF-programme beneficiaries</b> while staying alert to the 6 September OPEC+ decision, the SBP's MPC, and any fresh Hormuz escalation. All levels are indicative desk estimates, not recommendations.",
   "ticker_items": [
-    "<b>THU 03 SEP 2026 · LAST CLOSE WED 02 SEP</b>",
-    "KSE-100 174,777 <span class=\"down\">▼ 0.96%</span> (-1,690) Wed close",
-    "S&amp;P 500 7,666.60 <span class=\"up\">▲ 0.46%</span>",
-    "Dow 53,061.95 <span class=\"up\">▲ 0.56%</span>",
-    "Nasdaq 26,217.83 <span class=\"up\">▲ 0.45%</span>",
-    "US 10Y 4.79% / 2Y 4.37%",
-    "Brent $94.9 · WTI $90.7",
-    "Gold $4,336 · Silver $63.87",
-    "USD/PKR 277.55 interbank",
+    "<b>FRI 04 SEP 2026 · LAST CLOSE THU 03 SEP</b>",
+    "KSE-100 174,930 <span class=\"up\">▲ 0.09%</span> (+153) Thu close",
+    "S&amp;P 500 7,747.71 <span class=\"up\">▲ 1.06%</span>",
+    "Dow 53,686.11 <span class=\"up\">▲ 1.18%</span>",
+    "Nasdaq 26,584.06 <span class=\"up\">▲ 1.40%</span>",
+    "US 10Y 4.77% / 2Y 4.35%",
+    "Brent $95.5 · WTI $91.3",
+    "Gold $4,489 · Silver $67.00",
+    "USD/PKR 277.52 interbank",
     "SBP rate 11.5% · CPI ~11%",
-    "<b>Mood: Local risk-off deepens as fresh US strikes hit Iran near Hormuz</b>",
+    "<b>Mood: Wall Street's best session in weeks; gold spikes as Hormuz risk lingers</b>",
     "<b>Read today's Morning Brief →</b>"
   ],
   "news_items": [
-    "<b>03 SEP 2026</b>",
-    "📉 KSE-100 sheds 1,690 points to 174,777 as banks, E&amp;P, cement sell off",
-    "🛢️ Oil jumps as US strikes Iranian targets near Strait of Hormuz",
-    "🇺🇸 Wall Street snaps losing streak as Treasury yields pause near 4.79%",
-    "📈 Fed hike odds hold near 66% ahead of 16 September FOMC meeting",
-    "🥇 Gold steadies at $4,336, silver softens to $63.87 as rates dominate",
+    "<b>04 SEP 2026</b>",
+    "📈 KSE-100 edges up 153 points to 174,930 as breadth improves",
+    "🇺🇸 Wall Street jumps over 1% as yields ease, Fed's Waller turns dovish",
+    "🥇 Gold spikes 3.5% to near $4,489 on renewed Iran war fears",
+    "🛢️ Brent, WTI little changed near $95.5/$91.3 as Oman rebuffs Iran on Hormuz fees",
+    "🇸🇦 Saudi non-oil PMI holds at 6-month high of 53.8; UAE at 55.3",
     "🏦 Pakistan CPI running near 11% y/y in August; SBP seen holding at 11.5%",
-    "🇸🇦 Saudi non-oil PMI hits 6-month high of 53.8; UAE surges to 55.3",
-    "🇮🇷 US strikes near Hormuz kill five in wedding-home strike; Iran retaliates",
+    "📜 Sovereign Wealth Fund bill still before Senate committee ahead of IMF review",
+    "🇮🇷 Trump warns Oman against blocking Hormuz talks; Israel threatens Iran energy sites",
     "<b>More on contexai.org/insights →</b>"
   ],
-  "linkedin_text": "KSE-100 plunges 1,690 points as fresh US strikes hit Iran near Hormuz\n\nGood morning — here's the ContexAi Research desk's read on markets for Thursday, 03 September 2026, covering Wednesday's close.\n\nTHE OVERNIGHT TAPE\nThe S&P 500 rose 0.46% to 7,666.60, the Dow added 295 points (0.56%) to 53,061.95 and the Nasdaq gained 0.45% to 26,217.83, snapping a three-day losing streak even as the US struck Iranian air-defence, radar and maritime assets near the Strait of Hormuz mid-session. The 10-year Treasury yield held near 4.79% — its highest since 2023 — without extending its climb, and the 2-year sat near 4.37%. CME FedWatch continued to price roughly 66% odds of a hike at the 16 September FOMC meeting. Gold steadied near a four-week low at $4,336/oz (+0.18%) while silver slipped to $63.87/oz (-0.35%).\n\nPAKISTAN\nThe KSE-100 tumbled 1,690.40 points (0.96%) to close at 174,776.60 on Wednesday, its steepest drop this week. Ready-market volume was 610.18 million shares worth Rs31.86bn, with breadth sharply negative (113 advancers vs 356 decliners). Commercial banks, cement and E&P names led the rout — Meezan Bank, United Bank, Pakistan Petroleum, Fauji Fertiliser, Lucky Cement, OGDC and Habib Bank — as fresh Gulf strikes stoked import-bill fears. August CPI is running near 11% y/y, and the SBP is expected to hold its policy rate at 11.5% at the 14 September MPC; USD/PKR interbank was little changed near 277.55. The IMF's 4th EFF and 3rd RSF reviews are set to open in September alongside continued Senate scrutiny of the Sovereign Wealth Fund (Amendment) Bill 2026.\n\nGCC\nBrent rose to roughly $94.9/bbl and WTI held near $90.7/bbl after US forces struck IRGC targets near the Strait of Hormuz on Wednesday, with one strike killing five at a wedding and Iran retaliating with missiles and drones. OPEC+ completed its 188,000 bpd September output increase on 2 August. Saudi Arabia's non-oil PMI climbed to a six-month high of 53.8 in August, while the UAE's surged to 55.3 — its sharpest improvement since December 2024 — even as the fresh strikes test that momentum.\n\nGLOBAL\nWall Street shrugged off the same Hormuz headlines that hit Karachi hard, snapping a three-day losing streak as Treasury yields paused near a multi-year high. The divergence suggests global investors see the conflict as regionally contained, for now, while Pakistan prices the direct energy and fiscal pass-through.\n\nLEGISLATIVE TRACKER\n• Pakistan: Sovereign Wealth Fund (Amendment) Bill 2026 remains before the Senate Standing Committee, which has sought clause-by-clause justification ahead of September's IMF reviews.\n• GCC: OPEC+ output discipline holds even as fresh US strikes near Hormuz reignite the six-month conflict.\n• Global: The Fed's 16 September FOMC meeting looms with hike odds near 66% as the 10-year yield holds near 4.79%.\n\nTHE DAY AHEAD\nKSE-100 — Support 174,000 (deeper support 173,000) · Pivot 174,777 (Wednesday's close) · Resistance 175,842 (Wednesday's intraday high, then 176,467).\n\nDesk stance: Wednesday's sharper, broader decline — breadth deteriorated to 113 advancers vs 356 decliners on firm volume — looks like genuine distribution rather than thin-market noise. The trigger is a fresh Gulf escalation that pushed Brent near $95, a direct threat to Pakistan's import bill just as CPI runs near 11% ahead of the SBP's 14 September decision. We favour a defensive tilt toward E&P, fertiliser and IMF-programme beneficiaries while watching further Hormuz escalation, the MPC decision, and the SWF bill. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
-  "whatsapp_caption": "📊 Economic Vibes — Morning Brief, Thu 03 Sep 2026\n\n🇵🇰 KSE-100 ▼ 0.96% to 174,777 (-1,690 pts)\n🇺🇸 S&P 500 ▲ 0.46% · Dow ▲ 0.56% as Wall St shrugs off fresh Iran strikes\n🛢️ Brent $94.9 · WTI $90.7 (US strikes near Strait of Hormuz)\n🥇 Gold $4,336 (+0.2%) · Silver $63.87\n💵 USD/PKR 277.55\n\nFull PDF attached 📎 — support/resistance levels, GCC &amp; global roundup, and the legislative tracker inside.\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "linkedin_text": "KSE-100 edges higher as Wall Street posts its best session in weeks and gold spikes on renewed Iran war fears\n\nGood morning — here's the ContexAi Research desk's read on markets for Friday, 04 September 2026, covering Thursday's close.\n\nTHE OVERNIGHT TAPE\nThe S&P 500 jumped 1.06% (+81.00) to 7,747.71, the Dow surged 623.57 points (1.18%) to 53,686.11 and the Nasdaq climbed 1.40% (+366.23) to 26,584.06 — the strongest session in weeks — as the 10-year Treasury yield eased to 4.77% off its multi-year high and the 2-year held near 4.35%. Fed Governor Christopher Waller struck a dovish tone, saying he could \"sit and be patient\" as inflation cools, tempering but not eliminating the roughly 66% odds CME FedWatch assigns to a hike at the 16 September FOMC meeting. Gold surged 3.5% to near $4,489/oz and silver reclaimed $67/oz as renewed US-Iran hostilities kept haven demand bid even as equities rallied. Brent held near $95.5/bbl and WTI near $91.3/bbl, little changed.\n\nPAKISTAN\nThe KSE-100 inched up 153.09 points (0.09%) to close at 174,929.68 on Thursday, recovering a slice of Wednesday's 1,690-point rout. Ready-market volume was 627.45 million shares worth Rs25.19bn, with breadth improving to 252 advancers vs 207 decliners. OGDC, PACE, TPL and TELE led gainers while Pakistan Refinery, Bank Makramah and Cnergyico lagged, with Topline Securities flagging renewed rotation into autos, cement and E&P. August CPI is running near 11% y/y, and the SBP is expected to hold its policy rate at 11.5% at the 14 September MPC; USD/PKR interbank was little changed near 277.52. The Sovereign Wealth Fund (Amendment) Bill 2026 remains before the Senate Standing Committee ahead of the IMF's 4th EFF and 3rd RSF reviews, due to open this month.\n\nGCC\nOman denied Iran's claim that the two had agreed Strait of Hormuz transit fees for shipping, while President Trump threatened to bomb Oman if it \"gets in the way\" of talks to restore commercial passage — a reminder of how fragile any de-escalation remains as the conflict enters its seventh month. OPEC+ completed its 188,000 bpd September output increase on 2 August and heads into a 6 September meeting expected to hold quotas steady into Q4. Saudi Arabia's non-oil PMI matched a six-month high of 53.8 in August, while the UAE's held at 55.3, its fastest pace since December 2024.\n\nGLOBAL\nWall Street's best session in weeks came alongside a gold spike — a reminder that dovish Fed signals and lingering Hormuz tail risk are being priced simultaneously. Equity and haven-asset gains on the same day suggest investors see easier policy ahead even as the Gulf conflict stays unresolved.\n\nLEGISLATIVE TRACKER\n• Pakistan: Sovereign Wealth Fund (Amendment) Bill 2026 remains before the Senate Standing Committee ahead of September's IMF reviews.\n• GCC: OPEC+ heads into its 6 September meeting expected to hold quotas steady into Q4.\n• Global: The Fed's 16 September FOMC meeting looms with hike odds near 66% even as yields ease and Waller turns dovish.\n\nTHE DAY AHEAD\nKSE-100 — Support 174,900 (deeper support 174,000) · Pivot 174,930 (Thursday's close) · Resistance 175,800 (Thursday's intraday high, then 176,467).\n\nDesk stance: Thursday's gain looks like tentative stabilization rather than a durable reversal — breadth improved but volume actually fell versus Wednesday, so conviction remains thin. A calmer oil tape eases Pakistan's import-bill math into the SBP's 14 September MPC, but a stronger dollar-gold bid and 66% Fed hike odds argue against near-term PKR strength. We favour a selective tilt toward E&P, banks and IMF-programme beneficiaries while watching the 6 September OPEC+ decision, the MPC, and any fresh Hormuz escalation. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "whatsapp_caption": "📊 Economic Vibes — Morning Brief, Fri 04 Sep 2026\n\n🇵🇰 KSE-100 ▲ 0.09% to 174,930 (+153 pts)\n🇺🇸 S&P 500 ▲ 1.06% · Dow ▲ 1.18% · Nasdaq ▲ 1.40% as yields ease, Waller turns dovish\n🛢️ Brent $95.5 · WTI $91.3 (Oman rebuffs Iran on Hormuz fees)\n🥇 Gold $4,489 (+3.5%) · Silver $67.00\n💵 USD/PKR 277.52\n\nFull PDF attached 📎 — support/resistance levels, GCC &amp; global roundup, and the legislative tracker inside.\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
   "sources": [
     {
-      "title": "Business Recorder — PSX: KSE-100 loses over 1,700 points",
-      "url": "https://www.brecorder.com/news/40437545/psx-kse-100-loses-over-1700-points"
+      "title": "Business Recorder — PSX: KSE-100 Index closes marginally up after volatile trading",
+      "url": "https://www.brecorder.com/news/40437729/psx-kse-100-index-closes-marginally-up-after-volatile-trading"
     },
     {
-      "title": "ARY News — PSX market closes lower as KSE-100 index drops 1,690 points",
-      "url": "https://arynews.tv/psx-market-closes-lower-as-kse-100-index-drops-1690-points"
+      "title": "ARY News — PSX closes higher as KSE-100 gains 153 points",
+      "url": "https://arynews.tv/psx-closes-higher-as-kse-100-gains-153-points"
     },
     {
-      "title": "Express Tribune — KSE-100 sheds 1,250 points amid fresh US-Iran escalation",
-      "url": "https://tribune.com.pk/story/2627062/kse-100-sheds-1250-points-amid-fresh-us-iran-escalation"
+      "title": "The Nation — PSX sheds 1,690pts (prior session context)",
+      "url": "https://www.nation.com.pk/03-Sep-2026/psx-sheds-1-690pts"
     },
     {
-      "title": "Yahoo Finance — Stock market today: Dow, S&P 500, Nasdaq edge higher as bond yields pause climb",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-2-dow-sp-500-nasdaq-082624175.html"
+      "title": "Investrade — Market Review: September 03, 2026",
+      "url": "https://investrade.com/market-review-september-03-2026/"
     },
     {
-      "title": "TheStreet — Stock Market Today (Sept. 2, 2026): S&P 500, Dow jump after back-to-back losing days",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-02-2026"
+      "title": "CNBC — S&P 500 posts back-to-back gains as Treasury yields retreat",
+      "url": "https://www.cnbc.com/2026/09/02/stock-market-today-live-updates.html"
     },
     {
-      "title": "NPR — U.S. military strikes Iran, while Trump vows more for Tehran's retaliation",
-      "url": "https://www.npr.org/2026/09/02/g-s1-141500/us-iran-war"
+      "title": "Fortune — Current price of gold: September 3, 2026",
+      "url": "https://fortune.com/article/current-price-of-gold-09-03-2026/"
     },
     {
-      "title": "Gulf News — US strikes multiple Iranian naval vessels, mine-laying ships used to harass shipping in Strait of Hormuz",
-      "url": "https://gulfnews.com/world/mena/us-strikes-multiple-iranian-naval-vessels-mine-laying-ships-used-to-harass-shipping-in-strait-of-hormuz-1.500470395"
+      "title": "CNBC Select — The price of gold today, September 3, 2026",
+      "url": "https://www.cnbc.com/select/the-price-of-gold-today-september-3-2026-and-the-best-places-to-buy/"
     },
     {
-      "title": "Trading Economics — Brent crude oil price",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
-    },
-    {
-      "title": "Fortune — Current price of oil as of September 2, 2026",
-      "url": "https://fortune.com/article/price-of-oil-09-02-2026/"
-    },
-    {
-      "title": "USAGOLD — Daily Precious Metals Market Report, September 2, 2026",
-      "url": "https://www.usagold.com/daily-precious-metals-market-report-september-2-2026/"
-    },
-    {
-      "title": "Rio Times — Gold Slips Below $4,400, Silver Tumbles on Rate-Hike Bets",
-      "url": "https://www.riotimesonline.com/gold-silver-precious-metals-wednesday-september-2-2026/"
+      "title": "Yahoo Finance — Gold price today, Thursday, September 3, 2026",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-thursday-september-3-2026-gold-moves-higher-on-hopes-that-iran-war-reescalation-will-be-short-lived-110444019.html"
     },
     {
       "title": "Business Recorder — Dollar's rate in interbank market",
-      "url": "https://www.brecorder.com/news/40437615/dollars-rate-in-interbank-market"
+      "url": "https://www.brecorder.com/news/40437800/dollars-rate-in-interbank-market"
     },
     {
       "title": "Express Tribune — August inflation seen jumping to 11%",
@@ -206,24 +194,36 @@
       "url": "https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate"
     },
     {
-      "title": "Arab News — Saudi non-oil business activity hits four-month high as PMI rises to 53.3 (updated Aug data to 53.8)",
-      "url": "https://www.arabnews.com/node/2649718/business-economy"
+      "title": "The National — UAE non-oil sector records fastest growth since December 2024 despite Iran war impact",
+      "url": "https://www.thenationalnews.com/business/2026/09/03/uae-non-oil-sector-records-fastest-growth-since-december-2024-despite-iran-war-impact/"
     },
     {
-      "title": "CNBC — OPEC+ agrees September oil hike, completing rollback of voluntary cuts",
-      "url": "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html"
+      "title": "Arab News — Saudi PMI rises to 6-month high as non-oil growth accelerates",
+      "url": "https://www.arabnews.com/business/saudi-pmi-rises-to-6-month-high-as-non-oil-growth-accelerates-3000302"
+    },
+    {
+      "title": "World Oil — OPEC+ approves final production quota increase of 2026",
+      "url": "https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/"
+    },
+    {
+      "title": "Forbes — CME FedWatch provides a 66% chance Fed will hike rates in September",
+      "url": "https://www.forbes.com/sites/digital-assets/2026/08/31/cme-fedwatch-provides-a-66-chance-fed-will-hike-rates-in-september/"
     },
     {
       "title": "FedRateCalc — Next FOMC Meeting: September 15-16, 2026",
       "url": "https://fedratecalc.com/next-fomc-meeting/"
+    },
+    {
+      "title": "Al Jazeera — Iran war updates: Trump says renewed US-Iran fighting will not last long",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/2/iran-war-live-us-bombs-iran-tehran-retaliates-on-gulf-neighbours-jordan"
     }
   ],
-  "iso_date": "2026-09-03",
-  "date_long": "Thursday, 03 September 2026",
-  "last_close_long": "Wednesday, 02 September 2026",
-  "date_news": "03 SEP 2026",
-  "pdf_filename": "2026-09-03-Economic-Vibes-Morning-Brief.pdf",
-  "brief_html_filename": "2026-09-03-economic-vibes-morning-brief.html",
-  "docx_filename": "2026-09-03-Economic-Vibes-Morning-Brief.docx",
+  "iso_date": "2026-09-04",
+  "date_long": "Friday, 04 September 2026",
+  "last_close_long": "Thursday, 03 September 2026",
+  "date_news": "04 SEP 2026",
+  "pdf_filename": "2026-09-04-Economic-Vibes-Morning-Brief.pdf",
+  "brief_html_filename": "2026-09-04-economic-vibes-morning-brief.html",
+  "docx_filename": "2026-09-04-Economic-Vibes-Morning-Brief.docx",
   "disclaimer": "Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions."
 }
