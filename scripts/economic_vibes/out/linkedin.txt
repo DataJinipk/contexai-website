@@ -1,28 +1,28 @@
-KSE-100 edges higher as Wall Street posts its best session in weeks and gold spikes on renewed Iran war fears
+KSE-100 grinds 0.23% higher to 175,329 as hot US jobs data revives Fed hike bets and Brent nears $97 on Iran-Kuwait strikes
 
-Good morning — here's the ContexAi Research desk's read on markets for Friday, 04 September 2026, covering Thursday's close.
+Good morning — here's the ContexAi Research desk's read on markets for Monday, 07 September 2026, covering Friday's close.
 
 THE OVERNIGHT TAPE
-The S&P 500 jumped 1.06% (+81.00) to 7,747.71, the Dow surged 623.57 points (1.18%) to 53,686.11 and the Nasdaq climbed 1.40% (+366.23) to 26,584.06 — the strongest session in weeks — as the 10-year Treasury yield eased to 4.77% off its multi-year high and the 2-year held near 4.35%. Fed Governor Christopher Waller struck a dovish tone, saying he could "sit and be patient" as inflation cools, tempering but not eliminating the roughly 66% odds CME FedWatch assigns to a hike at the 16 September FOMC meeting. Gold surged 3.5% to near $4,489/oz and silver reclaimed $67/oz as renewed US-Iran hostilities kept haven demand bid even as equities rallied. Brent held near $95.5/bbl and WTI near $91.3/bbl, little changed.
+The S&P 500 fell 0.38% to 7,718.60, the Dow lost 0.51% to 53,414.25 and the Nasdaq eased 0.29% to 26,506.99 on Friday after a blowout August payrolls report — +162,000 jobs versus 53,000 expected, unemployment steady at 4.1% — pushed the 10-year Treasury yield to 4.78% and the 2-year to 4.34%, lifting the odds of a hike at the 15–16 September FOMC to near 60% on CME FedWatch, even as Fed Governor Waller argues the committee can "wait one meeting" for disinflation. Gold slid 1.3% to $4,420/oz and silver eased to $66.30 as the dollar firmed. Brent pushed toward $97.5/bbl and WTI near $92.6/bbl on renewed Iran-Kuwait strikes, approaching three-month highs.
 
 PAKISTAN
-The KSE-100 inched up 153.09 points (0.09%) to close at 174,929.68 on Thursday, recovering a slice of Wednesday's 1,690-point rout. Ready-market volume was 627.45 million shares worth Rs25.19bn, with breadth improving to 252 advancers vs 207 decliners. OGDC, PACE, TPL and TELE led gainers while Pakistan Refinery, Bank Makramah and Cnergyico lagged, with Topline Securities flagging renewed rotation into autos, cement and E&P. August CPI is running near 11% y/y, and the SBP is expected to hold its policy rate at 11.5% at the 14 September MPC; USD/PKR interbank was little changed near 277.52. The Sovereign Wealth Fund (Amendment) Bill 2026 remains before the Senate Standing Committee ahead of the IMF's 4th EFF and 3rd RSF reviews, due to open this month.
+The KSE-100 added 399.14 points (0.23%) to close at 175,328.82 on Friday, swinging between 174,515 and 175,418 intraday. Ready-market volume rose to 874.32 million shares worth Rs32.42bn, with breadth split 235 advancers to 218 decliners. MEBL, BAHL, MARI, PPL and OGDC led gainers while UBL, ATRL, PSEL, Cnergyico and FFC lagged as rising oil prices kept investors cautious. August CPI accelerated to 11.1% y/y from 9.2% in July, complicating the SBP's path after it held its policy rate at 11.5% in July. SBP reserves rose to $17.12bn and USD/PKR interbank held near 277.50.
 
 GCC
-Oman denied Iran's claim that the two had agreed Strait of Hormuz transit fees for shipping, while President Trump threatened to bomb Oman if it "gets in the way" of talks to restore commercial passage — a reminder of how fragile any de-escalation remains as the conflict enters its seventh month. OPEC+ completed its 188,000 bpd September output increase on 2 August and heads into a 6 September meeting expected to hold quotas steady into Q4. Saudi Arabia's non-oil PMI matched a six-month high of 53.8 in August, while the UAE's held at 55.3, its fastest pace since December 2024.
+The UAE's non-oil PMI rose to 55.3 in August, its fastest pace since December 2024, while Saudi Arabia's PMI climbed to a six-month high of 53.8, both showing resilience despite the conflict backdrop. OPEC+'s seven core members head into a 6 September meeting expected to hold quotas steady into Q4. Saudi's PIF continues executing its board-approved 2026–2030 strategy prioritising tourism, travel and domestic investment under Vision 2030.
 
 GLOBAL
-Wall Street's best session in weeks came alongside a gold spike — a reminder that dovish Fed signals and lingering Hormuz tail risk are being priced simultaneously. Equity and haven-asset gains on the same day suggest investors see easier policy ahead even as the Gulf conflict stays unresolved.
+The hot US jobs report reset the rate-cut narrative just as it looked like the Fed had room to ease, sending yields and the dollar higher and pressuring both equities and gold. The other swing factor remains the Middle East, where continued US-Iran strikes, including missiles on Kuwait, have pushed Brent within reach of $100/bbl for the first time since Q2.
 
 LEGISLATIVE TRACKER
-• Pakistan: Sovereign Wealth Fund (Amendment) Bill 2026 remains before the Senate Standing Committee ahead of September's IMF reviews.
+• Pakistan: FBR SRO 1495(I)/2026 amends the 2026 tax return form weeks ahead of the 30 September filing deadline.
 • GCC: OPEC+ heads into its 6 September meeting expected to hold quotas steady into Q4.
-• Global: The Fed's 16 September FOMC meeting looms with hike odds near 66% even as yields ease and Waller turns dovish.
+• Global: The Fed's 15–16 September FOMC meeting looms with hike odds near 60% after the jobs shock.
 
 THE DAY AHEAD
-KSE-100 — Support 174,900 (deeper support 174,000) · Pivot 174,930 (Thursday's close) · Resistance 175,800 (Thursday's intraday high, then 176,467).
+KSE-100 — Support 174,500 (deeper support 173,500) · Pivot 175,329 (Friday's close) · Resistance 175,400 (Friday's intraday high, then 176,000).
 
-Desk stance: Thursday's gain looks like tentative stabilization rather than a durable reversal — breadth improved but volume actually fell versus Wednesday, so conviction remains thin. A calmer oil tape eases Pakistan's import-bill math into the SBP's 14 September MPC, but a stronger dollar-gold bid and 66% Fed hike odds argue against near-term PKR strength. We favour a selective tilt toward E&P, banks and IMF-programme beneficiaries while watching the 6 September OPEC+ decision, the MPC, and any fresh Hormuz escalation. All levels are indicative desk estimates, not recommendations.
+Desk stance: Friday's gain masks a two-sided tape — E&P and banks did the heavy lifting on the oil rally while broader breadth stayed thin. The bigger risk sits offshore: revived Fed hike odds and Brent's push toward $100/bbl worsen Pakistan's import bill just as CPI printed back in double digits. We favour a selective tilt toward E&P and banks while trimming broader beta into the SBP's September MPC and any fresh Hormuz escalation. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
