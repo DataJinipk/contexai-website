@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Vibes — Morning Brief · Monday, 07 September 2026</title>
+<style>
+  @page { size:A4; margin:12mm 11mm 17mm 11mm; @bottom-center{ content:element(foot); } }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; font-size:14px; line-height:1.5;
+    color:#123; background:#EBFAFB; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page{ background:#EBFAFB; padding:0 14px; }
+  a{ color:#0A7E8C; text-decoration:none; border-bottom:1px solid #C6DA0B; font-weight:600; }
+  .masthead{ background:#FFFFFF; color:#0A2540; padding:14px 20px 12px; border-radius:8px 8px 0 0;
+    border:1px solid #D4EFF2; border-bottom:none; }
+  .mast-row{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .mast-lock{ display:flex; align-items:center; }
+  .mast-lock .logo{ height:38px; width:auto; display:block; }
+  .mast-lock .divider{ color:#C6D8DC; font-weight:400; padding:0 11px; font-size:26px; }
+  .mast-lock .pub{ color:#0A7E8C; font-weight:800; font-size:17.5px; white-space:nowrap; }
+  .masthead .sub{ margin:7px 0 0; font-size:11.5px; color:#5A7480; font-weight:500; letter-spacing:.2px; }
+  .mast-date{ text-align:right; font-size:11.5px; color:#0A7E8C; font-weight:700; line-height:1.4; white-space:nowrap; }
+  .mast-date b{ font-size:13px; color:#0A2540; }
+  .colorbar{ display:flex; height:8px; width:100%; overflow:hidden; }
+  .colorbar > i{ flex:1; display:block; height:100%; }
+  .foot{ position:running(foot); }
+  .foot .fbar{ display:flex; height:7px; width:100%; overflow:hidden; }
+  .foot .fbar i{ flex:1; display:block; height:100%; }
+  .foot .fstrip{ background:#0A7E8C; color:#EAFDFF; font-size:9px; text-align:center; padding:4px 6px; font-weight:600; }
+  .body{ padding:10px 6px 4px; }
+  h2.sec{ font-size:15px; color:#fff; background:#0FA3B0; margin:8px 0 6px; padding:5px 12px;
+    border-radius:5px; font-weight:700; letter-spacing:.2px; }
+  h2.sec .n{ color:#C6DA0B; font-weight:900; margin-right:8px; }
+  h3.sub{ font-size:13px; color:#08616C; margin:8px 0 3px; font-weight:800;
+    border-bottom:2px solid #C6DA0B; padding-bottom:3px; }
+  p{ margin:6px 0; text-align:justify; }
+  b,strong{ color:#08616C; }
+  .pos{ color:#0E9F6E; font-weight:700; } .neg{ color:#D8434E; font-weight:700; }
+  ul.five{ list-style:none; margin:5px 0; padding:0; }
+  ul.five li{ padding:6px 10px 6px 13px; margin:4.5px 0; background:#fff; border:1px solid #BDE9ED;
+    border-left:4px solid #0FA3B0; border-radius:0 7px 7px 0; text-align:justify; page-break-inside:avoid; }
+  .chip{ display:inline-block; background:#C6DA0B; color:#46520A; font-weight:800; font-size:10px;
+    padding:1px 8px; border-radius:3px; margin-right:6px; text-transform:uppercase; letter-spacing:.3px; }
+  .news{ margin:3px 0 2px; padding-left:16px; } .news li{ margin:3.5px 0; text-align:justify; }
+  .synth{ background:#fff; border:1px solid #BDE9ED; border-radius:7px; padding:6px 11px; margin:4px 0;
+    page-break-inside:avoid; }
+  .synth b{ color:#08616C; }
+  table{ width:100%; border-collapse:collapse; margin:5px 0 3px; table-layout:fixed; font-size:10.8px; page-break-inside:avoid; }
+  thead th{ background:#0A7E8C; color:#fff; font-weight:700; font-size:11px; text-align:left;
+    padding:5px 7px; vertical-align:bottom; white-space:normal; }
+  tbody td{ padding:4px 6px; border-bottom:1px solid #D4EFF2; vertical-align:top; line-height:1.35; }
+  tbody tr:nth-child(even){ background:#F4FCFD; }
+  .disc{ font-size:9.8px; line-height:1.42; color:#4A6068; background:#DFF6F8; border:1px solid #BDE9ED;
+    border-radius:6px; padding:7px 11px; margin-top:8px; text-align:justify; page-break-inside:avoid; }
+  .snap{ display:flex; gap:7px; margin:4px 0 2px; }
+  .snap .c2{ flex:1 1 0; min-width:0; background:#fff; border:1px solid #BDE9ED; border-top:4px solid #0FA3B0;
+    border-radius:7px; padding:7px 8px; }
+  .snap .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .snap .v{ font-size:15px; font-weight:800; color:#0A7E8C; white-space:nowrap; line-height:1.2; }
+  .snap .d{ font-size:9.5px; font-weight:700; margin-top:1px; }
+  .lvl{ display:flex; gap:7px; margin:6px 0 2px; }
+  .lvl .c3{ flex:1 1 0; background:#fff; border:1px solid #BDE9ED; border-left:4px solid #C6DA0B;
+    border-radius:0 7px 7px 0; padding:6px 9px; }
+  .lvl .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .lvl .v{ font-size:14px; font-weight:800; color:#0A7E8C; }
+  .lvl .d{ font-size:9.5px; margin-top:1px; }
+  .synth.flow{ page-break-inside:auto; }
+  .tag{ font-size:9px; font-weight:800; color:#0A7E8C; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="foot">
+    <div class="fbar">
+      <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+      <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+      <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+    </div>
+    <div class="fstrip">ContexAi — Economic Vibes · A ContexAi Research Product · contexai.org · Delivered ~06:30 AM PKT · WhatsApp Channel: Economic Vibes</div>
+  </div>
+
+  <div class="masthead">
+    <div class="mast-row">
+      <div class="mast-lock"><img class="logo" src="contexai_group_logo.png" alt="ContexAi Group"><span class="divider">|</span><span class="pub">Economic Vibes — Morning Brief</span></div>
+      <div class="mast-date"><b>Monday, 07 September 2026</b><br>Morning Edition · PKT</div>
+    </div>
+    <div class="sub">ContexAi Research Desk · Sourced via Reuters, CNBC, Business Recorder, Express Tribune, Mettis Global, AGBI, Gulf News, S&amp;P Global, Kitco, SBP &amp; Regulatory Trackers · For the C-Suite &amp; HNW Investor · <b>V</b> = verified vs licensed media/official portal · <b>EST.</b> = ContexAi desk estimate</div>
+  </div>
+  <div class="colorbar">
+    <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+    <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+    <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+  </div>
+
+  <div class="body">
+    <div class="snap">
+      <div class="c2"><div class="l">KSE-100 <span class="tag">V</span></div><div class="v">175,329</div><div class="d pos">▲ 0.23% Fri · +399 pts</div></div>
+      <div class="c2"><div class="l">S&amp;P 500 <span class="tag">V</span></div><div class="v">▼ 0.38%</div><div class="d neg">Nasdaq -0.29% · Dow -0.51%</div></div>
+      <div class="c2"><div class="l">US 10Y / 2Y <span class="tag">V</span></div><div class="v">4.78 / 4.34</div><div class="d neg">hot jobs data · hike bets firm</div></div>
+      <div class="c2"><div class="l">Brent / WTI <span class="tag">V</span></div><div class="v">$97.5 / $92.6</div><div class="d pos">+1.2% Mon · Iran-Kuwait strikes</div></div>
+      <div class="c2"><div class="l">Gold <span class="tag">V</span></div><div class="v">$4,420</div><div class="d neg">−1.3% · silver $66.30</div></div>
+      <div class="c2"><div class="l">USD/PKR <span class="tag">V</span></div><div class="v">277.50</div><div class="d ">interbank · little changed</div></div>
+      
+    </div>
+
+    <h2 class="sec"><span class="n">01</span>Five Things You Need To Know To Start Your Day</h2>
+    <ul class="five">
+      <li><span class="chip">Payrolls Shock Revives Hike Bets</span> An outsized August payrolls beat &mdash; <b>+162,000 jobs</b> against a 53,000 consensus, with unemployment steady at 4.1% &mdash; pushed the 10-year Treasury yield to <b>4.78%</b> and the 2-year to 4.34%, its highest since January 2025, as traders lifted the odds of a hike at the 15&ndash;16 September FOMC to near 60% on CME FedWatch. Fed Governor Waller had argued the committee could &ldquo;wait one meeting&rdquo; for disinflation to show, but the data cuts against that case. Sources: <a href="https://www.cnbc.com/2026/09/04/treasurys-bonds-nonfarm-payrolls-unemployment-data.html">CNBC</a>, <a href="https://www.usagold.com/daily-precious-metals-market-report-september-4-2026/">USAGOLD</a>. Sentiment: <span class="neg">hawkish repricing</span>.</li>
+      <li><span class="chip">Wall Street Retreats From Records</span> The <b>S&amp;P 500</b> fell 0.38% to 7,718.60, the <b>Dow</b> lost 0.51% to 53,414.25 and the <b>Nasdaq</b> eased 0.29% to 26,506.99 on Friday as the hot jobs print reversed the week's rate-cut optimism and pulled equities off their highs. Sources: <a href="https://www.washingtonpost.com/business/2026/09/04/stock-market-dow-nasdaq-jobs/b9e994e6-a89f-11f1-9e38-f705d048bd5a_story.html">Washington Post</a>, <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-04-2026">TheStreet</a>. Sentiment: <span class="neg">risk-off close</span>.</li>
+      <li><span class="chip">Brent Nears $97 on Iran-Kuwait Strikes</span> Crude extended its advance toward three-month highs on Monday &mdash; <b>Brent at $97.47/bbl</b> (+1.24%) and <b>WTI at $92.59/bbl</b> (+1.22%) &mdash; after Iranian strikes hit US-linked bases in Kuwait on 2&ndash;3 September, keeping a Strait of Hormuz risk premium bid even as OPEC+'s seven core members head into their <b>6 September meeting</b> expected to hold quotas steady into Q4. Sources: <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics</a>, <a href="https://www.riotimesonline.com/oil-brent-iran-strikes-kuwait-2026/">Rio Times</a>. Sentiment: <span class="neg">supply risk building</span>.</li>
+      <li><span class="chip">KSE-100 Grinds to a Firmer Close</span> The benchmark added 399.14 points (0.23%) to close at <b>175,328.82</b> on Friday, swinging between an intraday low of 174,515.38 and a high of 175,418.29. Ready-market volume rose to 874.32 million shares worth Rs32.42bn, with breadth split 235 advancers to 218 decliners (43 unchanged). MEBL, BAHL, MARI, PPL and OGDC added a combined 250 points; UBL, ATRL, PSEL, Cnergyico and FFC dragged the index down 212 points as rising oil prices kept investors cautious. Sources: <a href="https://www.brecorder.com/news/40437906/psx-kse-100-index-gains-nearly-400-points-after-volatile-trading">Business Recorder</a>. Sentiment: <span class="pos">choppy but constructive</span>.</li>
+      <li><span class="chip">Pakistan CPI Back in Double Digits</span> August CPI accelerated to <b>11.1% y/y</b> from 9.2% in July &mdash; urban inflation at 10.4%, rural at 12.2% &mdash; on higher food and fuel costs, complicating the SBP's path after it held its policy rate at 11.5% for a second straight meeting in July. KIBOR has begun inching up in sympathy, with 6-month paper at 11.61&ndash;11.86% as of Friday. Sources: <a href="https://www.brecorder.com/news/40437517/august-cpi-based-inflation-clocks-in-at-111pc-yoy">Business Recorder</a>, <a href="https://www.pbs.gov.pk/monthly-inflation-report-for-august-2026/">PBS</a>. Sentiment: <span class="neg">inflation resurging</span>.</li>
+      
+    </ul>
+
+    <h2 class="sec"><span class="n">02</span>Regional Market &amp; Economic Matrix</h2>
+    <h3 class="sub">A. Local Market — Pakistan Focus</h3>
+    <div class="synth">Pakistan's macro picture turned more complicated this week: August CPI jumped to <b>11.1% y/y</b> from 9.2% in July, its first double-digit print in months, even as the KSE-100 added 0.23% to close at 175,328.82 on Friday on broad-based buying in banks, autos and E&amp;P. SBP foreign reserves rose to <b>$17.12bn</b> in the week to 28 August, with FY26 remittances tracking toward $42bn, and the central bank holds its policy rate at 11.5% into a September MPC that now looks more finely balanced given the inflation resurgence and a firmer oil import bill. USD/PKR interbank held little changed near 277.50. Sources: <a href="https://www.brecorder.com/news/40437517/august-cpi-based-inflation-clocks-in-at-111pc-yoy">Business Recorder</a>, <a href="https://propakistani.pk/2026/08/27/sbp-reserves-increase-by-17-million/">ProPakistani</a>.</div>
+    <h3 class="sub">B. GCC &amp; Middle East</h3>
+    <div class="synth">Gulf non-oil momentum stayed resilient despite the conflict backdrop: the UAE's S&amp;P Global PMI rose to <b>55.3 in August</b> from 52.7, its fastest pace since December 2024, while Saudi Arabia's Riyad Bank PMI climbed to a six-month high of <b>53.8</b>. That strength is being tested by a firmer oil tape &mdash; Brent near $97.5/bbl on renewed Iran-Kuwait strikes &mdash; as OPEC+'s seven core members head into a 6 September meeting expected to hold quotas steady into Q4 after completing their planned 2026 output-cut unwind. Saudi's PIF, meanwhile, is executing its board-approved 2026&ndash;2030 strategy prioritising tourism, travel and domestic ecosystem investment as Vision 2030 enters its final stretch. Sources: <a href="https://www.thenationalnews.com/business/2026/09/03/uae-non-oil-sector-records-fastest-growth-since-december-2024-despite-iran-war-impact/">The National</a>, <a href="https://www.arabnews.com/business/saudi-pmi-rises-to-6-month-high-as-non-oil-growth-accelerates-3000302">Arab News</a>.</div>
+    <h3 class="sub">C. Global Intelligence</h3>
+    <div class="synth">A blowout August payrolls report reset the rate-cut narrative: nonfarm payrolls added 162,000 versus 53,000 expected, unemployment held at 4.1%, and Treasury yields jumped &mdash; the 10-year to 4.78%, the 2-year to 4.34% &mdash; lifting the odds of a hike at the 15&ndash;16 September FOMC meeting toward 60% even as Fed Governor Waller argues for patience. Equities retreated in response (S&amp;P 500 &minus;0.38%) while gold slid 1.3% to $4,420/oz on a firmer dollar. The other swing factor is the Middle East: continued US-Iran strikes, including missiles on Kuwait, have pushed Brent within reach of $100/bbl for the first time since Q2. Sources: <a href="https://www.cnbc.com/2026/09/04/treasurys-bonds-nonfarm-payrolls-unemployment-data.html">CNBC</a>, <a href="https://tradingeconomics.com/commodity/brent-crude-oil">Trading Economics</a>.</div>
+
+    <h2 class="sec"><span class="n">03</span>Legislative &amp; Regulatory Tracker — Who Wins, Who Loses</h2>
+    <table>
+      <colgroup><col style="width:15%"><col style="width:29%"><col style="width:21%"><col style="width:35%"></colgroup>
+      <thead><tr><th>Jurisdiction</th><th>Legislation / Policy Change</th><th>Affected Sector(s)</th><th>Net Impact &amp; Strategic Outlook</th></tr></thead>
+      <tbody>
+        <tr><td><b>Local — Pakistan</b></td><td><a href="https://propakistani.pk/2026/09/03/fbr-again-changes-2026-tax-return-form/">FBR SRO 1495(I)/2026</a> amends the Tax Year 2026 income tax return form just weeks ahead of the 30 September filing deadline, adding new schedule provisions.</td><td>Salaried &amp; corporate taxpayers, tax practitioners, compliance software</td><td><b class="pos">Wins:</b> Tax advisory and compliance-software firms billing for last-minute adjustments; FBR gains finer-grained disclosure ahead of its Rs15.3tn FY27 collection target. <b class="neg">Loses:</b> Individual and corporate filers facing compressed timelines, with practitioners flagging legal uncertainty over the notification's timing.</td></tr>
+        <tr><td><b>Regional — GCC</b></td><td><a href="https://worldoil.com/news/2026/8/2/opec-approves-final-production-quota-increase-of-2026/">OPEC+'s seven core members</a> head into their 6 September meeting expected to hold quotas steady into Q4 after completing the 188,000 bpd September output increase.</td><td>Oil &amp; gas majors, Gulf shipping/insurance, non-oil private sector</td><td><b class="pos">Wins:</b> Saudi Arabia (PMI 53.8) and UAE (PMI 55.3) non-oil sectors, which extend multi-month growth highs on quota discipline and steady supply. <b class="neg">Loses:</b> Gulf shippers, insurers and energy importers exposed to a rising Hormuz risk premium as Brent approaches $100/bbl.</td></tr>
+        <tr><td><b>Global</b></td><td>The Fed's <a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm">15&ndash;16 September FOMC meeting</a> looms with hike odds near 60% on CME FedWatch after a hot August jobs report, even as Governor Waller pushes back on tightening this cycle.</td><td>Rate-sensitive equities, EM currencies (incl. PKR), energy majors</td><td><b class="pos">Wins:</b> The dollar and short-end yields, which firmed on hike repricing; energy majors benefiting from a rising Brent/WTI complex. <b class="neg">Loses:</b> Rate-sensitive equities and EM currencies, including the PKR, which face tighter-for-longer risk if the Fed does hike in September.</td></tr>
+        
+      </tbody>
+    </table>
+
+    <h2 class="sec"><span class="n">04</span>The Day Ahead — KSE-100 Levels &amp; Desk Stance</h2>
+    <div class="lvl">
+      <div class="c3"><div class="l">Support <span class="tag">EST.</span></div><div class="v">174,500</div><div class="d">Friday's intraday low (174,515); deeper support at 173,500</div></div>
+      <div class="c3"><div class="l">Pivot <span class="tag">EST.</span></div><div class="v">175,329</div><div class="d">Friday's close</div></div>
+      <div class="c3"><div class="l">Resistance <span class="tag">EST.</span></div><div class="v">175,400</div><div class="d">Friday's intraday high (175,418); then 176,000</div></div>
+    </div>
+    <div class="synth flow">Friday's 0.23% gain masks a genuinely two-sided tape: banks, autos and E&amp;P names such as <b>MEBL, MARI, PPL and OGDC</b> did the heavy lifting as the oil rally lifted energy earnings expectations, while <b>UBL, Cnergyico and FFC</b> dragged, and volume rose alongside the index &mdash; a mild positive for conviction. The bigger risk sits offshore: a hawkish US jobs surprise has revived Fed hike odds into the 15&ndash;16 September FOMC, and Brent's push toward $100/bbl on renewed Iran-Kuwait strikes worsens Pakistan's import bill just as August CPI printed back in double digits at 11.1%. We'd stay selectively long E&amp;P and banks as oil-rally beneficiaries while trimming broader beta into the SBP's September MPC and any fresh Hormuz escalation. All levels are indicative desk estimates, not recommendations.</div>
+
+    <div class="disc"><b>Disclaimer:</b> Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.</div>
+  </div>
+</div>
+</body>
+</html>
