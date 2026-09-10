@@ -1,201 +1,201 @@
 {
-  "headline": "KSE-100 falls for a second day to 172,642 as an unresolved US-Iran conflict, a widening US-Canada trade war and a coin-flip Fed decision weigh on sentiment",
-  "mood": "Risk premiums widen · Fed decision now a coin flip, trade war escalates",
+  "headline": "KSE-100 falls a third day to 171,944 as Brent tops $100/bbl on intensifying Hormuz strikes and Wall Street extends its slide",
+  "mood": "Risk-off persists · Hormuz oil shock and hawkish Fed repricing dominate",
   "mood_class": "dn",
   "snapshot": [
     {
       "label": "KSE-100",
       "tag": "V",
-      "value": "172,642",
-      "delta": "▼ 0.57% Tue · -994 pts",
+      "value": "171,944",
+      "delta": "▼ 0.40% Wed · -699 pts",
       "delta_class": "neg"
     },
     {
       "label": "S&amp;P 500",
       "tag": "V",
-      "value": "▼ 0.58%",
-      "delta": "Nasdaq -0.32% · Dow -1.18%",
+      "value": "▼ 0.48%",
+      "delta": "Nasdaq -0.64% · Dow -0.77%",
       "delta_class": "neg"
     },
     {
       "label": "US 10Y / 2Y",
       "tag": "V",
-      "value": "4.79 / 4.38",
-      "delta": "10Y briefly topped 4.8%",
+      "value": "4.80 / 4.40",
+      "delta": "yields extend higher, hawkish tilt",
       "delta_class": "neg"
     },
     {
       "label": "Brent / WTI",
       "tag": "V",
-      "value": "$97.4 / $92.8",
-      "delta": "3-month highs · Hormuz risk",
+      "value": "$100.7 / $96.2",
+      "delta": "Brent tops $100 · Hormuz shock",
       "delta_class": "pos"
     },
     {
       "label": "Gold",
       "tag": "V",
-      "value": "$4,394",
-      "delta": "−0.3% · silver $65.7",
-      "delta_class": "neg"
+      "value": "$4,400",
+      "delta": "+1.1% · silver $66.58",
+      "delta_class": "pos"
     },
     {
       "label": "USD/PKR",
       "tag": "V",
-      "value": "277.37",
-      "delta": "interbank · marginally firmer",
-      "delta_class": ""
+      "value": "279.40",
+      "delta": "interbank · weaker vs Tue's 277.37",
+      "delta_class": "neg"
     }
   ],
   "five_things": [
     {
-      "chip": "KSE-100 Falls For Second Day",
-      "html": "The benchmark eased <b>993.92 points (0.57%)</b> to close at 172,642.16 on Tuesday, retreating from an intraday high of 173,736.19 to a low of 171,490.63 as selling persisted for a second straight session. Volume rose to 722.62 million shares worth Rs27.94bn, though breadth stayed decisively negative at 101 advancers to 359 decliners (36 unchanged) out of 496 traded names. <b>UBL, LUCK, MEBL, NBP and PPL</b> dragged the index down roughly 485 points; PSEL, MCB and ATRL offset with about 199 points combined. Topline Securities said the bourse &ldquo;came under pressure today as the ongoing US-Iran conflict and elevated international oil prices continued to weigh on investor sentiment.&rdquo; Sources: <a href=\"https://www.brecorder.com/news/40438433/psx-kse-100-sheds-nearly-1000-points-amid-geopolitical-uncertainty\">Business Recorder</a>, <a href=\"https://tribune.com.pk/story/2628201/psx-loses-994-points-as-me-conflict-dents-trust\">The Express Tribune</a>.",
-      "sentiment": "risk-off close",
+      "chip": "KSE-100 Falls A Third Day",
+      "html": "The benchmark shed <b>698.56 points (0.40%)</b> to close at 171,943.60 on Wednesday, extending its slide to nearly 3,400 points over three sessions as the widening US-Iran conflict and a surging oil tape kept sentiment fragile. The index swung between an intraday high of 173,174.18 and a low of 171,801.66; ready-market volume eased to <b>477.67 million shares</b> from Tuesday's 722.62 million as participation thinned. Selling stayed broad-based across banks, E&amp;P, cement, fertiliser and OMC counters, with <b>UBL, OGDC, PPL, MCB, Fauji Fertiliser, Lucky Cement, Bank AL Habib and Attock Refinery</b> among the heaviest laggards. Sources: <a href=\"https://www.brecorder.com/news/40438618/psx-selling-continues-kse-100-settles-nearly-700-points-lower\">Business Recorder</a>, <a href=\"https://www.nation.com.pk/10-Sep-2026/psx-stays-bearish-loses-698-points\">The Nation</a>.",
+      "sentiment": "risk-off, third straight loss",
       "sentiment_class": "neg"
     },
     {
-      "chip": "Oil Holds Near Three-Month Highs",
-      "html": "Brent settled near <b>$97.4/bbl</b> (+0.26%) and WTI topped $94/bbl intraday before paring to around <b>$92.8/bbl</b>, both holding near three-month highs as the ongoing US-Iran conflict keeps traffic through the Strait of Hormuz &mdash; which historically carried roughly 20% of global oil trade &mdash; severely restricted. OPEC+'s seven core members (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman, following the UAE's May exit from the group) held October quotas unchanged at their 6 September meeting. Sources: <a href=\"https://tradingeconomics.com/commodity/brent-crude-oil\">Trading Economics</a>, <a href=\"https://gulfnews.com/business/energy/opec-keeps-october-oil-output-quota-unchanged-from-september-levels-1.500665366\">Gulf News</a>.",
-      "sentiment": "elevated supply risk",
+      "chip": "Brent Tops $100 On Hormuz Strikes",
+      "html": "Brent crude breached <b>$100/bbl</b> for the first time since July, settling near $100.7 (+3%), while WTI climbed to about $96.2, as the US and Iran traded their most intense strikes yet around the Strait of Hormuz &mdash; a corridor that carried roughly a fifth of global oil supply before the conflict, now down to a handful of daily transits. Iran's foreign minister said the strait will not reopen until Washington eases sanctions and pays reparations. Sources: <a href=\"https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html\">CNBC</a>, <a href=\"https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz\">Al Jazeera</a>.",
+      "sentiment": "supply-risk premium building",
       "sentiment_class": "neg"
     },
     {
-      "chip": "Canada Fires Back With Tariffs",
-      "html": "Canada's counter-tariffs on roughly <b>$20&ndash;27.6bn</b> of US goods &mdash; spanning steel, aluminium (duties doubled to 50%), dairy, appliances, agri-equipment and pulp and paper &mdash; took effect Tuesday, matching Washington's levies dollar-for-dollar. The Trump administration responded with fresh import bans on Canadian dairy, motorcycles and alcoholic beverages due 29 September, adding a second macro headwind alongside firmer oil to Tuesday's US equity slide. Sources: <a href=\"https://www.aljazeera.com/news/2026/9/8/canadas-retaliatory-tariffs-on-20bn-of-us-goods-take-effect\">Al Jazeera</a>, <a href=\"https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html\">Canada.ca</a>.",
-      "sentiment": "escalating trade risk",
+      "chip": "Wall Street Extends Losing Streak",
+      "html": "US equities fell for a third straight session Wednesday: the S&amp;P 500 slipped 0.48% to 7,636.46, the Dow dropped 0.77% to 52,381.02 and the Nasdaq eased 0.64% to 26,253.34, as rising oil prices and firm Treasury yields pressured margins and growth names. The 10-year Treasury hovered near <b>4.80%</b> and the 2-year near 4.40%, both close to multi-month highs, with traders positioning for a coin-flip 16 September FOMC decision under Chair Kevin Warsh. Sources: <a href=\"https://www.cnbc.com/2026/09/08/us-treasury-yields-bonds.html\">CNBC</a>, <a href=\"https://investrade.com/market-review-september-09-2026/\">Investrade</a>.",
+      "sentiment": "broad-based risk-off",
       "sentiment_class": "neg"
     },
     {
-      "chip": "Fed Decision Now A Coin Flip",
-      "html": "CME FedWatch odds of a 25bp hike at the <b>16 September FOMC</b> have eased to roughly 50&ndash;56% from 58&ndash;60% shortly after Jackson Hole, with Kalshi (48%) and Polymarket (49%) also pricing a near coin-flip outcome. The 10-year Treasury briefly ticked back above <b>4.8%</b> on Tuesday before settling near 4.79%, with the 2-year flat at 4.38%, as traders weighed Chair Warsh's hawkish tone against fiscal-risk concerns flagged by Treasury Secretary Scott Bessent. Sources: <a href=\"https://www.cnbc.com/2026/09/08/us-treasury-yields-bonds.html\">CNBC</a>, <a href=\"https://www.cnbc.com/2026/08/31/markets-see-warsh-endorsing-a-rate-hike-in-september-not-everyone-is-convinced.html\">CNBC</a>.",
-      "sentiment": "finely balanced, yields firm",
-      "sentiment_class": "neg"
+      "chip": "Gulf Non-Oil Momentum Holds",
+      "html": "Away from the war premium, Gulf non-oil economies kept expanding: the UAE's S&amp;P Global PMI rose to <b>55.3</b> in August, its strongest since December 2024, while Saudi Arabia's Riyad Bank PMI climbed to <b>53.8</b>, a six-month high, even as export orders softened. OPEC+'s seven core producers held October quotas unchanged at their 6 September meeting, keeping the combined ceiling near 31.01m bpd as the group prioritises stability over added volume amid the Hormuz disruption. Sources: <a href=\"https://www.arabnews.com/business/saudi-pmi-rises-to-6-month-high-as-non-oil-growth-accelerates-3000302\">Arab News</a>, <a href=\"https://www.opec.org/pr-detail/1835613-6-september-2026.html\">OPEC</a>.",
+      "sentiment": "resilient despite war premium",
+      "sentiment_class": "pos"
     },
     {
-      "chip": "IMF Mission Homes In On SWF Bill",
-      "html": "Pakistan's <b>Sovereign Wealth Fund (Amendment) Bill, 2026</b>, tabled in the Senate and referred to its Standing Committee on Finance and Revenue, is expected to be a focus of the IMF's fourth EFF and third RSF review mission due in Islamabad this month; the bill adds fiscal safeguards, tightens governance and expands disclosure requirements for SWF-held state enterprises. It lands against a backdrop of August CPI at <b>11.1% y/y</b>, an SBP policy rate held at 11.5% and 6-month KIBOR at 11.86%. Sources: <a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Business Recorder</a>, <a href=\"https://propakistani.pk/2026/08/28/pakistan-imf-to-begin-4th-review-of-7-billion-eff-in-september/\">ProPakistani</a>.",
-      "sentiment": "governance reform, IMF scrutiny",
+      "chip": "Gold, Silver Extend Safe-Haven Bid",
+      "html": "Gold climbed back above <b>$4,400/oz</b> (+1.1%), ending a three-session dip as a softer dollar and Middle East risk drove haven demand, while silver rose to <b>$66.58/oz</b> (+1.2%). Both metals remain firmly inside their 2026 uptrend as investors hedge against a hawkish Fed and an unresolved Iran conflict. Sources: <a href=\"https://www.cnbc.com/select/the-price-of-gold-today-sept-9-2026/\">CNBC</a>, <a href=\"https://www.kitco.com/charts/silver\">Kitco</a>.",
+      "sentiment": "firmer safe-haven bid",
       "sentiment_class": "pos"
     }
   ],
   "matrix": {
-    "local_html": "Pakistan's tape extended its slide for a second session: the KSE-100 fell 993.92 points (0.57%) to close at 172,642.16 on Tuesday, having shed almost 2,700 points over two sessions as the ongoing US-Iran conflict and a firmer oil tape unsettled investors. Breadth stayed negative at 101 advancers to 359 decliners out of 496 names, with <b>UBL, LUCK, MEBL, NBP and PPL</b> the heaviest drags (~485 points) against a partial offset from PSEL, MCB and ATRL (~199 points); volume rose to 722.62 million shares worth Rs27.94bn. On policy, the government's <b>Sovereign Wealth Fund (Amendment) Bill, 2026</b> is before the Senate Standing Committee on Finance and Revenue, a governance overhaul the IMF is expected to scrutinise when its fourth EFF/third RSF review mission arrives this month. August CPI held at 11.1% y/y, the SBP's policy rate stays at 11.5%, 6-month KIBOR sits at 11.86%, and USD/PKR interbank was little changed near 277.37. Sources: <a href=\"https://www.brecorder.com/news/40438433/psx-kse-100-sheds-nearly-1000-points-amid-geopolitical-uncertainty\">Business Recorder</a>, <a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Business Recorder</a>.",
-    "gcc_html": "Gulf oil benchmarks held near three-month highs as the US-Iran conflict kept traffic through the Strait of Hormuz severely restricted: Brent settled around $97.4/bbl and WTI near $92.8/bbl after topping $94 intraday. OPEC+'s seven core producers &mdash; Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman, following the UAE's exit from the group in May &mdash; held October quotas unchanged at their 6 September meeting, continuing the existing roadmap into year-end. Saudi's PIF, meanwhile, is executing its board-approved <b>2026&ndash;2030 strategy</b>, having launched the Gulf Coast Development Company on 7 September to build an integrated coastal destination at Al-Khafji, part of a broader push into tourism, urban development and clean energy under Vision 2030. Sources: <a href=\"https://gulfnews.com/business/energy/opec-keeps-october-oil-output-quota-unchanged-from-september-levels-1.500665366\">Gulf News</a>, <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF</a>.",
-    "global_html": "US equities fell for a second straight session Tuesday as a firmer oil tape and an escalating US-Canada trade war outweighed any Fed relief: the S&amp;P 500 slipped 0.58% to 7,673.52, the Dow dropped 1.18% (over 600 points) to 52,786.07 and the Nasdaq eased 0.32% to 26,421.41. Canada's retaliatory tariffs on $20&ndash;27.6bn of US goods took effect the same day, and Washington answered with fresh import bans on Canadian dairy, motorcycles and alcohol from 29 September. The 10-year Treasury briefly topped 4.8% before settling near 4.79%, with the 2-year flat at 4.38%, as fiscal-risk concerns flagged by Treasury Secretary Scott Bessent added to hawkish-Fed positioning ahead of the 16 September FOMC, where CME FedWatch now prices roughly a 50&ndash;56% hike probability. Gold eased to $4,394/oz and silver held near $65.7/oz. Sources: <a href=\"https://www.cnbc.com/2026/09/07/stock-market-tuesday-live-updates.html\">CNBC</a>, <a href=\"https://www.cnbc.com/2026/09/08/us-treasury-yields-bonds.html\">CNBC</a>."
+    "local_html": "The KSE-100 fell for a third straight session, shedding 698.56 points (0.40%) to close at 171,943.60 on Wednesday &mdash; a nearly 3,400-point slide over three days &mdash; as the widening US-Iran conflict and a surging oil tape drove broad-based selling in banks, E&amp;P, cement, fertiliser and OMC names, led by <b>UBL, OGDC, PPL, MCB, Fauji Fertiliser and Lucky Cement</b>. Ready-market volume eased to 477.67 million shares from Tuesday's 722.62 million. On the policy front, the government's <b>Sovereign Wealth Fund (Amendment) Bill, 2026</b> remains before the Senate Standing Committee on Finance and Revenue, a governance overhaul the IMF is expected to scrutinise when its fourth EFF/third RSF review mission arrives this month, with Pakistan tracking to meet six of seven quantitative targets. August CPI jumped to <b>11.15% y/y</b> from July's four-month low of 9.2%, the SBP's policy rate stays at 11.5% (held since 27 July), 6-month KIBOR sits at 11.86%, and USD/PKR interbank has drifted to roughly 279.40 from Tuesday's 277.37 as the oil-driven import bill widens. Sources: <a href=\"https://www.brecorder.com/news/40438618/psx-selling-continues-kse-100-settles-nearly-700-points-lower\">Business Recorder</a>, <a href=\"https://www.brecorder.com/news/40437417/pakistans-august-inflation-rises-1115-statistics-bureau-says\">Business Recorder</a>.",
+    "gcc_html": "Gulf oil benchmarks surged as the US-Iran conflict intensified around the Strait of Hormuz: Brent topped $100/bbl for the first time since July (+3%) and WTI climbed to about $96.2, even as OPEC+'s seven core producers &mdash; Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman &mdash; held October quotas unchanged at their 6 September meeting, keeping the combined ceiling near 31.01m bpd and prioritising stability over volume. Away from the war premium, non-oil momentum held up well: the UAE's S&amp;P Global PMI hit 55.3 in August, its best reading since December 2024, and Saudi Arabia's PMI rose to a six-month high of 53.8. Saudi's PIF continues executing its board-approved 2026&ndash;2030 strategy, having launched the Gulf Coast Development Company on 7 September to build an integrated coastal destination at Al-Khafji under the Vision 2030 tourism and urban-development push. Sources: <a href=\"https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html\">CNBC</a>, <a href=\"https://www.arabianbusiness.com/finance/economy/uae-non-oil-sector-growth-august-2026\">Arabian Business</a>.",
+    "global_html": "US equities fell for a third consecutive session Wednesday as rising oil prices and firm Treasury yields dented the outlook for corporate margins and consumer demand: the S&amp;P 500 slipped 0.48% to 7,636.46, the Dow dropped 0.77% to 52,381.02 and the Nasdaq eased 0.64% to 26,253.34. The 10-year Treasury held near 4.80% and the 2-year near 4.40%, both close to multi-month highs, as traders weighed a coin-flip 16 September FOMC decision under Chair Kevin Warsh against Governor Waller's dovish lean. Congress continues working toward a stopgap funding bill to avert a shutdown at the 30 September fiscal-year deadline, with prediction markets pricing only modest odds of a lapse. Gold reclaimed $4,400/oz (+1.1%) and silver rose to $66.58/oz as haven demand built against the hawkish-Fed, oil-shock backdrop. Sources: <a href=\"https://investrade.com/market-review-september-09-2026/\">Investrade</a>, <a href=\"https://www.cnbc.com/2026/09/08/us-treasury-yields-bonds.html\">CNBC</a>."
   },
   "legislative": [
     {
       "jur": "Local — Pakistan",
-      "policy_html": "<a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Sovereign Wealth Fund (Amendment) Bill, 2026</a> &mdash; tabled in the Senate and referred to its Standing Committee on Finance and Revenue, tightening SWF governance, fiscal safeguards and disclosure ahead of the IMF's fourth EFF/third RSF review mission.",
+      "policy_html": "<a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Sovereign Wealth Fund (Amendment) Bill, 2026</a> &mdash; still before the Senate Standing Committee on Finance and Revenue, tightening SWF governance, fiscal safeguards and disclosure ahead of the IMF's fourth EFF/third RSF review mission due this month.",
       "sectors": "State-owned enterprises, sovereign fund-held assets, banks",
-      "impact_html": "<b class=\"pos\">Wins:</b> Investors and IMF stakeholders gain clearer governance and disclosure standards, potentially easing the path to the next EFF/RSF tranche release. <b class=\"neg\">Loses:</b> SWF-held state enterprises face tighter accountability and reporting obligations, raising near-term compliance costs."
+      "impact_html": "<b class=\"pos\">Wins:</b> Investors and IMF stakeholders gain clearer governance and disclosure standards, supporting the case for the next EFF/RSF tranche. <b class=\"neg\">Loses:</b> SWF-held state enterprises face tighter accountability and reporting obligations, raising near-term compliance costs."
     },
     {
       "jur": "Regional — GCC",
-      "policy_html": "<a href=\"https://gulfnews.com/business/energy/opec-keeps-october-oil-output-quota-unchanged-from-september-levels-1.500665366\">OPEC+'s seven core members</a> held October production quotas unchanged at their 6 September meeting, continuing the existing roadmap into year-end as Brent holds near three-month highs.",
+      "policy_html": "<a href=\"https://www.opec.org/pr-detail/1835613-6-september-2026.html\">OPEC+'s seven core producers</a> held October output quotas unchanged at their 6 September meeting, keeping the combined ceiling near 31.01m bpd as Brent trades above $100/bbl on Hormuz disruption.",
       "sectors": "Oil &amp; gas majors, Gulf shipping/insurance, non-oil private sector",
-      "impact_html": "<b class=\"pos\">Wins:</b> Producers retaining current quotas amid a firm oil tape near $97/bbl, and Saudi's PIF-backed diversification projects such as the Gulf Coast Development Company. <b class=\"neg\">Loses:</b> Gulf shippers, insurers and energy importers exposed to a persistent Hormuz risk premium."
+      "impact_html": "<b class=\"pos\">Wins:</b> Producers capturing higher realised prices without added supply, and Saudi's PIF-backed diversification projects such as the Gulf Coast Development Company. <b class=\"neg\">Loses:</b> Gulf shippers, insurers and energy importers exposed to a persistent Hormuz risk premium."
     },
     {
       "jur": "Global",
-      "policy_html": "<a href=\"https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html\">Canada's retaliatory tariffs</a> on roughly $20&ndash;27.6bn of US goods took effect 8 September, doubling steel and aluminium duties to 50% and hitting dairy, appliances and pulp and paper.",
-      "sectors": "US &amp; Canadian steel, aluminium, dairy, agri-equipment, autos",
-      "impact_html": "<b class=\"pos\">Wins:</b> Non-US/Canada steel and aluminium exporters gaining relative price competitiveness. <b class=\"neg\">Loses:</b> US exporters facing the new Canadian tariffs, and US consumers &mdash; studies suggest importers absorb the bulk of tariff costs &mdash; ahead of Washington's own import bans on Canadian goods from 29 September."
+      "policy_html": "US Congress continues negotiating a stopgap funding bill to avert a shutdown at the 30 September fiscal year-end, running alongside a finely balanced 16 September FOMC decision under new Fed Chair Kevin Warsh.",
+      "sectors": "US equities, Treasuries, banks, technology",
+      "impact_html": "<b class=\"pos\">Wins:</b> Risk assets and labour-sensitive sectors if a shutdown is averted and the Fed opts to hold. <b class=\"neg\">Loses:</b> Growth and rate-sensitive names if a 25bp hike is delivered into an oil-driven inflation shock, and any funding lapse that disrupts data releases and federal operations."
     }
   ],
   "levels": {
-    "support": "171,500",
-    "support_note": "Tuesday's intraday low (171,491); deeper support at 170,000",
-    "pivot": "172,642",
-    "pivot_note": "Tuesday's close",
-    "resistance": "173,740",
-    "resistance_note": "Tuesday's intraday high (173,736); then 175,350"
+    "support": "171,000",
+    "support_note": "near Wednesday's intraday low of 171,802; deeper support at 169,500",
+    "pivot": "171,944",
+    "pivot_note": "Wednesday's close",
+    "resistance": "173,174",
+    "resistance_note": "Wednesday's intraday high; then Tuesday's close near 172,642"
   },
-  "desk_stance_html": "Tuesday's 485-point drag from <b>UBL, LUCK, MEBL, NBP and PPL</b> against a thin 199-point offset from PSEL, MCB and ATRL, alongside breadth of 101 advancers to 359 decliners and rising volume (722.62m shares vs 679.19m Monday), suggests the two-day, nearly 2,700-point slide reflects sustained distribution rather than a one-off shock. The proximate triggers &mdash; an unresolved US-Iran conflict keeping Brent near $97.4/bbl, a widening US-Canada trade war, and a finely balanced 16 September FOMC (hike odds near 50&ndash;56%) &mdash; are unlikely to clear before the Fed decision. We'd stay defensive on broader beta into the FOMC while retaining selective exposure to banks and E&amp;P names that benefit from a firmer oil tape, alongside SWF-adjacent names positioned to benefit from tighter governance ahead of the IMF's review mission. All levels are indicative desk estimates, not recommendations.",
+  "desk_stance_html": "Wednesday's thinner volume (477.67m shares vs Tuesday's 722.62m) alongside a third consecutive loss suggests the nearly 3,400-point, three-day slide is losing some distribution intensity even as the proximate triggers &mdash; Brent above $100/bbl on an unresolved US-Iran conflict, and a finely balanced 16 September FOMC &mdash; remain unresolved. With the index holding just above the 171,000 psychological floor, we'd stay defensive on broad beta into the FOMC while retaining selective exposure to banks and E&amp;P names geared to a firmer oil tape, alongside SWF-adjacent names positioned to benefit from tighter governance ahead of the IMF's review mission. All levels are indicative desk estimates, not recommendations.",
   "ticker_items": [
-    "<b>WED 09 SEP 2026 · LAST CLOSE TUE 08 SEP</b>",
-    "KSE-100 172,642 <span class=\"dn\">▼ 0.57%</span> (-994) Tue close",
-    "S&amp;P 500 7,673.52 <span class=\"dn\">▼ 0.58%</span>",
-    "Dow 52,786.07 <span class=\"dn\">▼ 1.18%</span>",
-    "Nasdaq 26,421.41 <span class=\"dn\">▼ 0.32%</span>",
-    "US 10Y 4.79% / 2Y 4.38%",
-    "Brent $97.4 · WTI $92.8",
-    "Gold $4,394 · Silver $65.7",
-    "USD/PKR 277.37 interbank",
-    "SBP rate 11.5% · CPI 11.1%",
-    "<b>Mood: Middle East risk, trade war widen; Fed decision a coin flip</b>",
+    "<b>THU 10 SEP 2026 · LAST CLOSE WED 09 SEP</b>",
+    "KSE-100 171,944 <span class=\"dn\">▼ 0.40%</span> (-699) Wed close",
+    "S&amp;P 500 7,636.46 <span class=\"dn\">▼ 0.48%</span>",
+    "Dow 52,381.02 <span class=\"dn\">▼ 0.77%</span>",
+    "Nasdaq 26,253.34 <span class=\"dn\">▼ 0.64%</span>",
+    "US 10Y 4.80% / 2Y 4.40%",
+    "Brent $100.7 · WTI $96.2",
+    "Gold $4,400 · Silver $66.58",
+    "USD/PKR 279.40 interbank",
+    "SBP rate 11.5% · CPI 11.15%",
+    "<b>Mood: Hormuz oil shock, hawkish Fed repricing weigh on risk assets</b>",
     "<b>Read today's Morning Brief →</b>"
   ],
   "news_items": [
-    "<b>09 SEP 2026</b>",
-    "📉 KSE-100 falls for second day, down 994 points to 172,642",
-    "🛢️ Brent, WTI hold near 3-month highs as Hormuz risk persists",
-    "🇨🇦 Canada's retaliatory tariffs on $20bn+ of US goods take effect",
-    "🇺🇸 Dow sheds 600+ points as oil, trade war weigh on Wall Street",
-    "🥇 Gold eases to $4,394 as 10Y yield briefly tops 4.8%",
-    "🏦 Fed's 16 September decision now a near coin-flip on FedWatch",
-    "📜 Pakistan's Sovereign Wealth Fund Amendment Bill before Senate committee",
-    "🇸🇦 OPEC+ holds October quotas steady; PIF advances Vision 2030 projects",
+    "<b>10 SEP 2026</b>",
+    "📉 KSE-100 falls a third day, down 699 points to 171,944",
+    "🛢️ Brent tops $100/bbl for first time since July on Hormuz strikes",
+    "🇺🇸 Wall Street extends slide as oil, yields pressure equities",
+    "🥇 Gold reclaims $4,400 as haven demand builds, silver at $66.58",
+    "🏦 Fed's 16 September decision a coin-flip under Chair Warsh",
+    "📜 Pakistan's Sovereign Wealth Fund Amendment Bill awaits Senate panel nod",
+    "🇸🇦 OPEC+ holds October quotas steady near 31.01m bpd",
+    "🇦🇪 UAE, Saudi non-oil PMIs hit multi-month highs despite war",
     "<b>More on contexai.org/insights →</b>"
   ],
-  "linkedin_text": "KSE-100 falls for a second day to 172,642 as an unresolved US-Iran conflict, a widening US-Canada trade war and a coin-flip Fed decision weigh on sentiment\n\nGood morning — here's the ContexAi Research desk's read on markets for Wednesday, 09 September 2026, covering Tuesday's close.\n\nTHE OVERNIGHT TAPE\nUS equities fell for a second straight session Tuesday: the S&P 500 slipped 0.58% to 7,673.52, the Dow dropped 1.18% (over 600 points) to 52,786.07 and the Nasdaq eased 0.32% to 26,421.41, as a firmer oil tape and an escalating US-Canada trade war outweighed any Fed relief. The 10-year Treasury briefly topped 4.8% before settling near 4.79%, with the 2-year flat at 4.38%. Gold eased to $4,394/oz and silver held near $65.7/oz. Brent settled near $97.4/bbl and WTI near $92.8/bbl, both close to three-month highs.\n\nPAKISTAN\nThe KSE-100 fell 993.92 points (0.57%) to close at 172,642.16 on Tuesday, extending its slide to almost 2,700 points over two sessions as the ongoing US-Iran conflict and firmer oil prices unsettled investors. Breadth stayed negative at 101 advancers to 359 decliners out of 496 names, with UBL, LUCK, MEBL, NBP and PPL the heaviest drags (~485 points) against a partial offset from PSEL, MCB and ATRL (~199 points); volume rose to 722.62 million shares worth Rs27.94bn. On policy, the government's Sovereign Wealth Fund (Amendment) Bill, 2026 is before the Senate Standing Committee on Finance and Revenue, a governance overhaul the IMF is expected to scrutinise during its fourth EFF/third RSF review mission this month. August CPI held at 11.1% y/y, the SBP's policy rate stays at 11.5%, 6-month KIBOR sits at 11.86%, and USD/PKR interbank held near 277.37.\n\nGCC\nGulf oil benchmarks held near three-month highs as the conflict kept traffic through the Strait of Hormuz severely restricted. OPEC+'s seven core producers — Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman, following the UAE's exit from the group in May — held October quotas unchanged at their 6 September meeting. Saudi's PIF is executing its board-approved 2026–2030 strategy, having launched the Gulf Coast Development Company on 7 September to build an integrated coastal destination at Al-Khafji, part of a broader Vision 2030 push into tourism, urban development and clean energy.\n\nGLOBAL\nCanada's retaliatory tariffs on roughly $20–27.6bn of US goods — spanning steel, aluminium (duties doubled to 50%), dairy, appliances and pulp and paper — took effect Tuesday, matching Washington's levies dollar-for-dollar; the Trump administration answered with fresh import bans on Canadian dairy, motorcycles and alcohol from 29 September. CME FedWatch odds of a 25bp hike at the 16 September FOMC have eased to roughly 50–56%, with Kalshi and Polymarket both pricing a near coin-flip outcome, as traders weigh Chair Warsh's hawkish tone against fiscal-risk concerns flagged by Treasury Secretary Scott Bessent.\n\nLEGISLATIVE TRACKER\n• Pakistan: The Sovereign Wealth Fund (Amendment) Bill, 2026 is before the Senate Standing Committee on Finance and Revenue, tightening governance ahead of the IMF's review mission.\n• GCC: OPEC+ held October quotas steady at its 6 September meeting, continuing its roadmap into year-end.\n• Global: Canada's retaliatory tariffs on $20–27.6bn of US goods took effect 8 September, doubling steel and aluminium duties to 50%.\n\nTHE DAY AHEAD\nKSE-100 — Support 171,500 (deeper support 170,000) · Pivot 172,642 (Tuesday's close) · Resistance 173,740 (Tuesday's intraday high, then 175,350).\n\nDesk stance: Tuesday's heavy-cap drag from UBL, LUCK, MEBL, NBP and PPL against a thin offsetting gain, rising volume and a roughly 3.5-to-1 negative breadth ratio suggest the two-day, nearly 2,700-point slide reflects sustained distribution. The proximate triggers — an unresolved US-Iran conflict, a widening US-Canada trade war, and a finely balanced FOMC — are unlikely to clear before 16 September. We'd stay defensive on broader beta into the decision while retaining selective exposure to banks and E&P names that benefit from firmer oil, alongside SWF-adjacent names positioned to benefit from tighter governance. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
-  "whatsapp_caption": "📊 Economic Vibes — Morning Brief, Wed 09 Sep 2026\n\n🇵🇰 KSE-100 ▼ 0.57% to 172,642 (-994 pts) — second straight day of losses\n🇺🇸 Dow sheds 600+ points as oil and US-Canada trade war weigh (S&P -0.58%, Nasdaq -0.32%)\n🛢️ Brent $97.4 · WTI $92.8 — near 3-month highs on Hormuz risk\n🥇 Gold $4,394 (−0.3%) · Silver $65.7\n💵 USD/PKR 277.37\n🏦 Fed's 16 Sep decision now a near coin-flip\n\nFull PDF attached 📎 — support/resistance levels, GCC &amp; global roundup, and the legislative tracker inside.\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "linkedin_text": "KSE-100 falls a third day to 171,944 as Brent tops $100/bbl on intensifying Hormuz strikes and Wall Street extends its slide\n\nGood morning — here's the ContexAi Research desk's read on markets for Thursday, 10 September 2026, covering Wednesday's close.\n\nTHE OVERNIGHT TAPE\nUS equities fell for a third straight session: the S&P 500 slipped 0.48% to 7,636.46, the Dow dropped 0.77% to 52,381.02 and the Nasdaq eased 0.64% to 26,253.34, as rising oil prices and firm Treasury yields pressured margins and growth names. The 10-year Treasury held near 4.80% and the 2-year near 4.40%, both close to multi-month highs, ahead of a coin-flip 16 September FOMC decision under Chair Kevin Warsh. Gold reclaimed $4,400/oz (+1.1%) and silver rose to $66.58/oz. Brent topped $100/bbl for the first time since July and WTI climbed to about $96.2.\n\nPAKISTAN\nThe KSE-100 shed 698.56 points (0.40%) to close at 171,943.60 on Wednesday, extending its slide to nearly 3,400 points over three sessions as the widening US-Iran conflict and surging oil prices drove broad-based selling in banks, E&P, cement, fertiliser and OMC names, led by UBL, OGDC, PPL, MCB, Fauji Fertiliser and Lucky Cement. Ready-market volume eased to 477.67 million shares from Tuesday's 722.62 million. On policy, the government's Sovereign Wealth Fund (Amendment) Bill, 2026 remains before the Senate Standing Committee on Finance and Revenue ahead of the IMF's fourth EFF/third RSF review mission this month. August CPI jumped to 11.15% y/y from July's four-month low of 9.2%, the SBP's policy rate stays at 11.5%, 6-month KIBOR sits at 11.86%, and USD/PKR interbank has drifted to roughly 279.40 from Tuesday's 277.37.\n\nGCC\nGulf oil benchmarks surged as the US-Iran conflict intensified around the Strait of Hormuz, with Brent topping $100/bbl for the first time since July even as OPEC+'s seven core producers held October quotas unchanged at their 6 September meeting, keeping the combined ceiling near 31.01m bpd. Non-oil momentum held up well despite the war premium: the UAE's PMI hit an August reading of 55.3, its best since December 2024, and Saudi Arabia's PMI rose to a six-month high of 53.8. Saudi's PIF launched the Gulf Coast Development Company on 7 September, part of its board-approved 2026–2030 strategy under Vision 2030.\n\nGLOBAL\nUS equities fell for a third consecutive session as oil and yields weighed on sentiment, while Congress continues negotiating a stopgap funding bill to avert a shutdown at the 30 September fiscal year-end. Traders are pricing a coin-flip 16 September FOMC decision under new Fed Chair Kevin Warsh, balancing hawkish jobs data against Governor Waller's dovish lean. Gold and silver extended their safe-haven bid against this hawkish-Fed, oil-shock backdrop.\n\nLEGISLATIVE TRACKER\n• Pakistan: The Sovereign Wealth Fund (Amendment) Bill, 2026 remains before the Senate Standing Committee on Finance and Revenue, tightening governance ahead of the IMF's review mission.\n• GCC: OPEC+ held October quotas steady at its 6 September meeting, prioritising stability as Brent trades above $100/bbl.\n• Global: US Congress works toward a stopgap funding bill ahead of the 30 September deadline, alongside a finely balanced 16 September FOMC.\n\nTHE DAY AHEAD\nKSE-100 — Support 171,000 (near Wednesday's intraday low of 171,802; deeper support 169,500) · Pivot 171,944 (Wednesday's close) · Resistance 173,174 (Wednesday's intraday high, then Tuesday's close near 172,642).\n\nDesk stance: Wednesday's thinner volume alongside a third consecutive loss suggests the three-day, nearly 3,400-point slide is losing some distribution intensity even as Brent above $100/bbl and a finely balanced FOMC remain unresolved. With the index holding just above the 171,000 psychological floor, we'd stay defensive on broad beta into the FOMC while retaining selective exposure to banks and E&P names geared to a firmer oil tape, alongside SWF-adjacent names positioned to benefit from tighter governance. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "whatsapp_caption": "📊 Economic Vibes — Morning Brief, Thu 10 Sep 2026\n\n🇵🇰 KSE-100 ▼ 0.40% to 171,944 (-699 pts) — third straight day of losses\n🇺🇸 Wall Street extends slide as oil, yields weigh (S&P -0.48%, Nasdaq -0.64%, Dow -0.77%)\n🛢️ Brent $100.7 · WTI $96.2 — Brent tops $100 for first time since July on Hormuz strikes\n🥇 Gold $4,400 (+1.1%) · Silver $66.58\n💵 USD/PKR 279.40\n🏦 Fed's 16 Sep decision a coin-flip under Chair Warsh\n\nFull PDF attached 📎 — support/resistance levels, GCC &amp; global roundup, and the legislative tracker inside.\n\nThis report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
   "sources": [
     {
-      "title": "Business Recorder — PSX: KSE-100 sheds nearly 1,000 points amid geopolitical uncertainty",
-      "url": "https://www.brecorder.com/news/40438433/psx-kse-100-sheds-nearly-1000-points-amid-geopolitical-uncertainty"
+      "title": "Business Recorder — PSX: Selling continues, KSE-100 settles nearly 700 points lower",
+      "url": "https://www.brecorder.com/news/40438618/psx-selling-continues-kse-100-settles-nearly-700-points-lower"
     },
     {
-      "title": "The Express Tribune — PSX loses 994 points as ME conflict dents trust",
-      "url": "https://tribune.com.pk/story/2628201/psx-loses-994-points-as-me-conflict-dents-trust"
+      "title": "The Nation — PSX stays bearish, loses 698 points",
+      "url": "https://www.nation.com.pk/10-Sep-2026/psx-stays-bearish-loses-698-points"
     },
     {
-      "title": "Yahoo Finance — Stock market today: Dow, S&P 500, Nasdaq fall as oil prices rise, US-Canada trade war escalates",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-8-dow-sp-500-nasdaq-080440338.html"
+      "title": "The Express Tribune — PSX falls 699 points as war jitters grip market",
+      "url": "https://tribune.com.pk/story/2628312/psx-swings-amid-us-iran-tensions"
     },
     {
-      "title": "CNBC — Dow closes 600 points lower in back-to-back losses as oil prices gain",
-      "url": "https://www.cnbc.com/2026/09/07/stock-market-tuesday-live-updates.html"
+      "title": "Investrade — Market Review: September 09, 2026",
+      "url": "https://investrade.com/market-review-september-09-2026/"
     },
     {
-      "title": "CNBC — 10-year Treasury yield briefly ticks back above 4.8% as oil prices climb",
+      "title": "CNBC — 10-year Treasury yield briefly ticks back above 4.8% as oil prices rise",
       "url": "https://www.cnbc.com/2026/09/08/us-treasury-yields-bonds.html"
     },
     {
-      "title": "CNBC — Markets see Warsh endorsing a rate hike in September. Not everyone is convinced",
-      "url": "https://www.cnbc.com/2026/08/31/markets-see-warsh-endorsing-a-rate-hike-in-september-not-everyone-is-convinced.html"
+      "title": "CNBC — Oil prices today: WTI, Brent, US-Iran Hormuz attacks",
+      "url": "https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html"
     },
     {
-      "title": "Gulf News — OPEC+ keeps October oil output quota unchanged from September levels",
-      "url": "https://gulfnews.com/business/energy/opec-keeps-october-oil-output-quota-unchanged-from-september-levels-1.500665366"
+      "title": "Al Jazeera — Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
+      "url": "https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz"
     },
     {
-      "title": "Trading Economics — Brent crude oil price",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      "title": "CNBC — The price of gold today, Sept 9, 2026",
+      "url": "https://www.cnbc.com/select/the-price-of-gold-today-sept-9-2026/"
     },
     {
-      "title": "Kitco — Gold spot price, 8 September 2026",
-      "url": "http://www.kitco.com/charts/gold"
+      "title": "Kitco — Silver price today",
+      "url": "https://www.kitco.com/charts/silver"
     },
     {
-      "title": "PIF — Chaired by HRH Crown Prince, PIF Board of Directors approves PIF 2026-2030 strategy",
-      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
+      "title": "Arab News — Saudi PMI rises to 6-month high as non-oil growth accelerates",
+      "url": "https://www.arabnews.com/business/saudi-pmi-rises-to-6-month-high-as-non-oil-growth-accelerates-3000302"
     },
     {
-      "title": "Al Jazeera — As Canada's retaliatory tariffs on US goods take effect, tensions soar",
-      "url": "https://www.aljazeera.com/news/2026/9/8/canadas-retaliatory-tariffs-on-20bn-of-us-goods-take-effect"
+      "title": "Arabian Business — UAE's non-oil sector growth in August was best since 2024",
+      "url": "https://www.arabianbusiness.com/finance/economy/uae-non-oil-sector-growth-august-2026"
     },
     {
-      "title": "Canada.ca — List of products from the United States subject to counter-tariffs effective September 8, 2026",
-      "url": "https://www.canada.ca/en/department-finance/news/2026/08/list-of-products-from-the-united-states-subject-to-counter-tariffs-effective-september-8-2026.html"
+      "title": "OPEC — Press release, 6 September 2026",
+      "url": "https://www.opec.org/pr-detail/1835613-6-september-2026.html"
     },
     {
-      "title": "Business Recorder — Rupee registers gain against US dollar",
-      "url": "https://www.brecorder.com/news/40438476/intra-day-update-rupee-records-gain-against-us-dollar"
+      "title": "Business Recorder — Pakistan's August inflation rises 11.15%, statistics bureau says",
+      "url": "https://www.brecorder.com/news/40437417/pakistans-august-inflation-rises-1115-statistics-bureau-says"
     },
     {
-      "title": "Business Recorder — August CPI-based inflation clocks in at 11.1pc YoY",
-      "url": "https://www.brecorder.com/news/40437517/august-cpi-based-inflation-clocks-in-at-111pc-yoy"
+      "title": "SBP — KIBOR Rates, 7 September 2026",
+      "url": "https://www.sbp.org.pk/assets/document/kibor-rates-07-september-2026.pdf"
     },
     {
       "title": "ProPakistani — Pakistan, IMF to Begin 4th Review of $7 Billion EFF in September",
@@ -206,16 +206,20 @@
       "url": "https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate"
     },
     {
-      "title": "SBP — KIBOR Rates, 4 September 2026",
-      "url": "https://www.sbp.org.pk/assets/document/kibor-rates-04-september-2026.pdf"
+      "title": "Daily Pakistan — Today currency rates in Pakistan, 10 September",
+      "url": "https://en.dailypakistan.com.pk/10-Sep-2026/today-currency-rates-in-pakistan-us-dollar-euro-pound-riyal-to-pkr-open-market-rates-10-september"
+    },
+    {
+      "title": "PIF — Chaired by HRH Crown Prince, PIF Board of Directors approves PIF 2026-2030 strategy",
+      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
     }
   ],
-  "iso_date": "2026-09-09",
-  "date_long": "Wednesday, 09 September 2026",
-  "last_close_long": "Tuesday, 08 September 2026",
-  "date_news": "09 SEP 2026",
-  "pdf_filename": "2026-09-09-Economic-Vibes-Morning-Brief.pdf",
-  "brief_html_filename": "2026-09-09-economic-vibes-morning-brief.html",
-  "docx_filename": "2026-09-09-Economic-Vibes-Morning-Brief.docx",
+  "iso_date": "2026-09-10",
+  "date_long": "Thursday, 10 September 2026",
+  "last_close_long": "Wednesday, 09 September 2026",
+  "date_news": "10 SEP 2026",
+  "pdf_filename": "2026-09-10-Economic-Vibes-Morning-Brief.pdf",
+  "brief_html_filename": "2026-09-10-economic-vibes-morning-brief.html",
+  "docx_filename": "2026-09-10-Economic-Vibes-Morning-Brief.docx",
   "disclaimer": "Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions."
 }
