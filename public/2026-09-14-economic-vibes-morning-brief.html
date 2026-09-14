@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Vibes — Morning Brief · Monday, 14 September 2026</title>
+<style>
+  @page { size:A4; margin:12mm 11mm 17mm 11mm; @bottom-center{ content:element(foot); } }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; font-size:14px; line-height:1.5;
+    color:#123; background:#EBFAFB; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page{ background:#EBFAFB; padding:0 14px; }
+  a{ color:#0A7E8C; text-decoration:none; border-bottom:1px solid #C6DA0B; font-weight:600; }
+  .masthead{ background:#FFFFFF; color:#0A2540; padding:14px 20px 12px; border-radius:8px 8px 0 0;
+    border:1px solid #D4EFF2; border-bottom:none; }
+  .mast-row{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .mast-lock{ display:flex; align-items:center; }
+  .mast-lock .logo{ height:38px; width:auto; display:block; }
+  .mast-lock .divider{ color:#C6D8DC; font-weight:400; padding:0 11px; font-size:26px; }
+  .mast-lock .pub{ color:#0A7E8C; font-weight:800; font-size:17.5px; white-space:nowrap; }
+  .masthead .sub{ margin:7px 0 0; font-size:11.5px; color:#5A7480; font-weight:500; letter-spacing:.2px; }
+  .mast-date{ text-align:right; font-size:11.5px; color:#0A7E8C; font-weight:700; line-height:1.4; white-space:nowrap; }
+  .mast-date b{ font-size:13px; color:#0A2540; }
+  .colorbar{ display:flex; height:8px; width:100%; overflow:hidden; }
+  .colorbar > i{ flex:1; display:block; height:100%; }
+  .foot{ position:running(foot); }
+  .foot .fbar{ display:flex; height:7px; width:100%; overflow:hidden; }
+  .foot .fbar i{ flex:1; display:block; height:100%; }
+  .foot .fstrip{ background:#0A7E8C; color:#EAFDFF; font-size:9px; text-align:center; padding:4px 6px; font-weight:600; }
+  .body{ padding:10px 6px 4px; }
+  h2.sec{ font-size:15px; color:#fff; background:#0FA3B0; margin:8px 0 6px; padding:5px 12px;
+    border-radius:5px; font-weight:700; letter-spacing:.2px; }
+  h2.sec .n{ color:#C6DA0B; font-weight:900; margin-right:8px; }
+  h3.sub{ font-size:13px; color:#08616C; margin:8px 0 3px; font-weight:800;
+    border-bottom:2px solid #C6DA0B; padding-bottom:3px; }
+  p{ margin:6px 0; text-align:justify; }
+  b,strong{ color:#08616C; }
+  .pos{ color:#0E9F6E; font-weight:700; } .neg{ color:#D8434E; font-weight:700; }
+  ul.five{ list-style:none; margin:5px 0; padding:0; }
+  ul.five li{ padding:6px 10px 6px 13px; margin:4.5px 0; background:#fff; border:1px solid #BDE9ED;
+    border-left:4px solid #0FA3B0; border-radius:0 7px 7px 0; text-align:justify; page-break-inside:avoid; }
+  .chip{ display:inline-block; background:#C6DA0B; color:#46520A; font-weight:800; font-size:10px;
+    padding:1px 8px; border-radius:3px; margin-right:6px; text-transform:uppercase; letter-spacing:.3px; }
+  .news{ margin:3px 0 2px; padding-left:16px; } .news li{ margin:3.5px 0; text-align:justify; }
+  .synth{ background:#fff; border:1px solid #BDE9ED; border-radius:7px; padding:6px 11px; margin:4px 0;
+    page-break-inside:avoid; }
+  .synth b{ color:#08616C; }
+  table{ width:100%; border-collapse:collapse; margin:5px 0 3px; table-layout:fixed; font-size:10.8px; page-break-inside:avoid; }
+  thead th{ background:#0A7E8C; color:#fff; font-weight:700; font-size:11px; text-align:left;
+    padding:5px 7px; vertical-align:bottom; white-space:normal; }
+  tbody td{ padding:4px 6px; border-bottom:1px solid #D4EFF2; vertical-align:top; line-height:1.35; }
+  tbody tr:nth-child(even){ background:#F4FCFD; }
+  .disc{ font-size:9.8px; line-height:1.42; color:#4A6068; background:#DFF6F8; border:1px solid #BDE9ED;
+    border-radius:6px; padding:7px 11px; margin-top:8px; text-align:justify; page-break-inside:avoid; }
+  .snap{ display:flex; gap:7px; margin:4px 0 2px; }
+  .snap .c2{ flex:1 1 0; min-width:0; background:#fff; border:1px solid #BDE9ED; border-top:4px solid #0FA3B0;
+    border-radius:7px; padding:7px 8px; }
+  .snap .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .snap .v{ font-size:15px; font-weight:800; color:#0A7E8C; white-space:nowrap; line-height:1.2; }
+  .snap .d{ font-size:9.5px; font-weight:700; margin-top:1px; }
+  .lvl{ display:flex; gap:7px; margin:6px 0 2px; }
+  .lvl .c3{ flex:1 1 0; background:#fff; border:1px solid #BDE9ED; border-left:4px solid #C6DA0B;
+    border-radius:0 7px 7px 0; padding:6px 9px; }
+  .lvl .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .lvl .v{ font-size:14px; font-weight:800; color:#0A7E8C; }
+  .lvl .d{ font-size:9.5px; margin-top:1px; }
+  .synth.flow{ page-break-inside:auto; }
+  .tag{ font-size:9px; font-weight:800; color:#0A7E8C; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="foot">
+    <div class="fbar">
+      <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+      <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+      <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+    </div>
+    <div class="fstrip">ContexAi — Economic Vibes · A ContexAi Research Product · contexai.org · Delivered ~06:30 AM PKT · WhatsApp Channel: Economic Vibes</div>
+  </div>
+
+  <div class="masthead">
+    <div class="mast-row">
+      <div class="mast-lock"><img class="logo" src="contexai_group_logo.png" alt="ContexAi Group"><span class="divider">|</span><span class="pub">Economic Vibes — Morning Brief</span></div>
+      <div class="mast-date"><b>Monday, 14 September 2026</b><br>Morning Edition · PKT</div>
+    </div>
+    <div class="sub">ContexAi Research Desk · Sourced via Reuters, CNBC, Business Recorder, Express Tribune, Mettis Global, AGBI, Gulf News, S&amp;P Global, Kitco, SBP &amp; Regulatory Trackers · For the C-Suite &amp; HNW Investor · <b>V</b> = verified vs licensed media/official portal · <b>EST.</b> = ContexAi desk estimate</div>
+  </div>
+  <div class="colorbar">
+    <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+    <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+    <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+  </div>
+
+  <div class="body">
+    <div class="snap">
+      <div class="c2"><div class="l">KSE-100 <span class="tag">V</span></div><div class="v">170,512</div><div class="d pos">▲ 0.98% Fri · +1,647 pts</div></div>
+      <div class="c2"><div class="l">S&amp;P 500 <span class="tag">V</span></div><div class="v">▲ 0.9%</div><div class="d pos">Nasdaq +1.0% · Dow +1.0%</div></div>
+      <div class="c2"><div class="l">US 10Y / 2Y <span class="tag">V</span></div><div class="v">4.95 / 4.63</div><div class="d neg">hike odds ~90% into FOMC</div></div>
+      <div class="c2"><div class="l">Brent / WTI <span class="tag">V</span></div><div class="v">$104.6 / $100.1</div><div class="d pos">Sat pipeline shut · Mon talks postponed</div></div>
+      <div class="c2"><div class="l">Gold <span class="tag">V</span></div><div class="v">$4,386</div><div class="d neg">flat Fri · silver $64.90 -2.6%</div></div>
+      <div class="c2"><div class="l">USD/PKR <span class="tag">V</span></div><div class="v">277.35</div><div class="d ">interbank · steady</div></div>
+      
+    </div>
+
+    <h2 class="sec"><span class="n">01</span>Five Things You Need To Know To Start Your Day</h2>
+    <ul class="five">
+      <li><span class="chip">KSE-100 Snaps Back On Hormuz Hopes</span> The benchmark surged <b>1,646.81 points (0.98%)</b> to close at 170,511.85 on Friday, recovering from an early slide to an intraday low of 166,141.17 after reports that Gulf states and Iran would meet in Oman to discuss reopening the Strait of Hormuz. Traded volume jumped to <b>687.47 million shares</b> (Rs33.70 billion) from Thursday's 628.67 million (Rs27.02 billion), with 248 of 500 names advancing against 210 decliners and 42 unchanged; heavyweights <b>Meezan Bank (MEBL), Fauji Fertilizer (FFC), Lucky Cement (LUCK), PPL and OGDC</b> together added 1,032 points even as autos, cement, banks, E&amp;P, OMCs and power lagged intraday. Cnergyico PK led volume with 104.27 million shares. Sources: <a href="https://www.brecorder.com/news/40439013/psx-buying-returns-kse-100-gains-nearly-1-on-hopes-of-easing-middle-east-tensions">Business Recorder</a>, <a href="https://tradingeconomics.com/pakistan/stock-market">Trading Economics</a>. Sentiment: <span class="pos">sharp relief rally</span>.</li>
+      <li><span class="chip">Wall Street Rebounds As Core CPI Cools</span> US equities snapped a four-day losing streak Friday: the S&amp;P 500 rose 0.9% (+65.28 pts) to 7,656.98, the Dow gained 1.0% (+509.19 pts) to 52,573.29 and the Nasdaq added 1.0% (+251.31 pts) to 26,333.04, as August headline CPI (+0.4% m/m, +3.4% y/y, unchanged from July) matched forecasts even as core inflation ticked up to +0.3% m/m. Fed funds futures still pushed the odds of a 25bp hike at next week's <b>15-16 September FOMC</b> meeting to roughly 86-90%, up sharply from about 70-72% a day earlier. The 10-year Treasury yield eased slightly to <b>4.95%</b> after nearing 5% mid-week, while the 2-year held near 4.63%. Sources: <a href="https://www.cnbc.com/2026/09/11/us-treasurys-bonds-yields.html">CNBC</a>, <a href="https://www.advisorperspectives.com/dshort/updates/2026/09/11/treasury-yields-snapshot-september-11-2026">Advisor Perspectives</a>. Sentiment: <span class="pos">relief rally, but hawkish Fed repricing intact</span>.</li>
+      <li><span class="chip">Oil Jumps Anew On Pipeline Shutdown, Postponed Talks</span> Brent had eased 2.8% to $104.61/bbl and WTI 2.4% to $100.05 on Friday as hopes built for Oman-hosted talks between Iran and the GCC on reopening the Strait of Hormuz &mdash; but that relief unwound over the weekend. Saudi Arabia kept its 7m-bpd <b>East-West pipeline</b> shut after 10-11 September drone strikes damaged pump stations near Riyadh and Medina, removing the kingdom's main Hormuz bypass for roughly 5m bpd of rerouted crude, and Oman late Sunday <b>postponed indefinitely</b> the Monday summit in Salalah after Bahrain declined to attend. Oil gapped higher in early Monday trade on the news. Sources: <a href="https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html">CNBC</a>, <a href="https://www.aljazeera.com/news/2026/9/13/iran-gcc-summit-whats-behind-the-meeting-why-is-bahrain-not-attending">Al Jazeera</a>. Sentiment: <span class="neg">renewed supply-risk premium building</span>.</li>
+      <li><span class="chip">Gold, Silver Soft Into Fed Week</span> Gold held roughly flat at <b>$4,385.61/oz</b> (+0.06%) and silver fell 2.6% to <b>$64.90/oz</b> on Friday as investors weighed in-line headline CPI against surging Fed hike odds; early Monday trade saw spot gold slip a further 0.3-0.8% toward the $4,334-4,375 band as the oil-driven inflation shock reinforced the case for a hike. Both metals remain well inside their 2026 uptrend despite the pullback. Sources: <a href="https://www.usagold.com/daily-precious-metals-market-report-september-11-2026/">USAGOLD</a>, <a href="https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-friday-september-11-2026-gold-opens-at-lowest-level-in-over-a-month-ahead-of-cpi-data-111016419.html">Yahoo Finance</a>. Sentiment: <span class="neg">consolidating, rate-hike odds capping the haven bid</span>.</li>
+      <li><span class="chip">SBP Decision, IMF Mission In Focus</span> The State Bank's Monetary Policy Committee meets <b>today</b>, with markets broadly expecting the policy rate to hold at <b>11.5%</b> for a fourth straight meeting, as August CPI at 11.15% y/y and a fresh oil-driven inflation risk limit room to ease; 6-month KIBOR sits near 11.87%. The government's Sovereign Wealth Fund (Amendment) Bill, 2026 remains before the Senate Standing Committee on Finance and Revenue ahead of an IMF mission for the fourth EFF/third RSF review expected in Karachi and Islamabad in the coming weeks, widely flagged around 22-23 September. Sources: <a href="https://www.brecorder.com/news/40438575/mpc-meeting-on-14th-policy-rate-expected-to-stay-unchanged">Business Recorder</a>, <a href="https://www.brecorder.com/news/40439040/imf-mission-to-visit-pakistan-in-coming-weeks-for-next-review">Business Recorder</a>. Sentiment: <span class="">policy hold expected, IMF scrutiny ahead</span>.</li>
+      
+    </ul>
+
+    <h2 class="sec"><span class="n">02</span>Regional Market &amp; Economic Matrix</h2>
+    <h3 class="sub">A. Local Market — Pakistan Focus</h3>
+    <div class="synth">The KSE-100 surged 1,646.81 points (0.98%) to close at 170,511.85 on Friday, clawing back roughly half of Thursday's 3,079-point rout after reports of a planned Iran-GCC meeting on the Strait of Hormuz lifted sentiment; volume jumped to 687.47 million shares (Rs33.70bn) with 248 of 500 names advancing. That relief now looks fragile: the State Bank's Monetary Policy Committee meets <b>today</b> and is widely expected to hold the policy rate at <b>11.5%</b> given August CPI at 11.15% y/y and 6-month KIBOR near 11.87%, while USD/PKR interbank was broadly steady around 277.35-277.55. On policy, the <b>Sovereign Wealth Fund (Amendment) Bill, 2026</b> remains before the Senate Standing Committee on Finance and Revenue ahead of the IMF's fourth EFF/third RSF review mission, expected in the coming weeks and widely flagged around 22-23 September. Sources: <a href="https://www.brecorder.com/news/40439013/psx-buying-returns-kse-100-gains-nearly-1-on-hopes-of-easing-middle-east-tensions">Business Recorder</a>, <a href="https://www.brecorder.com/news/40439040/imf-mission-to-visit-pakistan-in-coming-weeks-for-next-review">Business Recorder</a>.</div>
+    <h3 class="sub">B. GCC &amp; Middle East</h3>
+    <div class="synth">Gulf oil markets swung sharply into the weekend: Brent eased to $104.61/bbl and WTI to $100.05 on Friday as an Oman-hosted summit between Iran and the GCC on reopening the Strait of Hormuz raised de-escalation hopes, only for Oman to <b>postpone the talks indefinitely</b> late Sunday after Bahrain declined to attend. Compounding the supply risk, Saudi Arabia's 7m-bpd <b>East-West pipeline</b> &mdash; its main bypass for roughly 5m bpd of crude that would otherwise transit Hormuz &mdash; remains shut following 10-11 September drone strikes on pump stations near Riyadh and Medina, itself days after Houthi strikes wounded 73 and disrupted energy sites including the 400,000-bpd Jazan refinery. OPEC+'s seven core producers held October quotas unchanged near 31.01m bpd at their 6 September meeting. Away from the war premium, non-oil momentum held up: UAE and Saudi PMIs stood at 55.3 and 53.8 respectively in August, both multi-month highs. Sources: <a href="https://www.bloomberg.com/news/articles/2026-09-11/saudi-oil-pipeline-that-bypasses-hormuz-shut-after-attacks">Bloomberg</a>, <a href="https://www.aljazeera.com/news/2026/9/13/iran-gcc-summit-whats-behind-the-meeting-why-is-bahrain-not-attending">Al Jazeera</a>.</div>
+    <h3 class="sub">C. Global Intelligence</h3>
+    <div class="synth">US equities snapped a four-day losing streak Friday as August CPI matched forecasts: the S&amp;P 500 rose 0.9% to 7,656.98, the Dow gained 1.0% to 52,573.29 and the Nasdaq added 1.0% to 26,333.04. Even so, a firmer core reading pushed fed funds futures odds of a 25bp hike at next week's 15-16 September FOMC meeting to roughly 86-90%, up from about 70-72% a day earlier, as the 10-year Treasury yield held near 4.95% after nearing 5% mid-week and the 2-year sat near 4.63%. Congress's stopgap funding bill already extends federal funding through 11 December, removing near-term shutdown risk. Gold held near $4,386/oz and silver eased to $64.90/oz as the weekend's oil-driven inflation shock reinforced the case for a hike heading into Fed week. Sources: <a href="https://www.cnbc.com/2026/09/11/us-treasurys-bonds-yields.html">CNBC</a>, <a href="https://www.advisorperspectives.com/dshort/updates/2026/09/11/treasury-yields-snapshot-september-11-2026">Advisor Perspectives</a>.</div>
+
+    <h2 class="sec"><span class="n">03</span>Legislative &amp; Regulatory Tracker — Who Wins, Who Loses</h2>
+    <table>
+      <colgroup><col style="width:15%"><col style="width:29%"><col style="width:21%"><col style="width:35%"></colgroup>
+      <thead><tr><th>Jurisdiction</th><th>Legislation / Policy Change</th><th>Affected Sector(s)</th><th>Net Impact &amp; Strategic Outlook</th></tr></thead>
+      <tbody>
+        <tr><td><b>Local — Pakistan</b></td><td><a href="https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate">Sovereign Wealth Fund (Amendment) Bill, 2026</a> &mdash; still before the Senate Standing Committee on Finance and Revenue; the SBP's MPC decides on the policy rate today, with the IMF's fourth EFF/third RSF review mission expected in the coming weeks, widely flagged around 22-23 September.</td><td>Banks, state-owned enterprises, sovereign fund-held assets</td><td><b class="pos">Wins:</b> Investors and IMF stakeholders gain clearer governance and disclosure standards, supporting the case for the next EFF/RSF tranche. <b class="neg">Loses:</b> SWF-held state enterprises face tighter accountability and reporting obligations, raising near-term compliance costs.</td></tr>
+        <tr><td><b>Regional — GCC</b></td><td><a href="https://www.aljazeera.com/news/2026/9/13/iran-gcc-summit-whats-behind-the-meeting-why-is-bahrain-not-attending">Oman-hosted Iran-GCC talks</a> on reopening the Strait of Hormuz were postponed indefinitely on 13 September, while Saudi Arabia's East-West pipeline remains shut after 10-11 September drone strikes; OPEC+'s seven core producers held October quotas unchanged near 31.01m bpd at their 6 September meeting.</td><td>Oil &amp; gas majors, Gulf shipping/insurance, non-oil private sector</td><td><b class="pos">Wins:</b> Producers capturing higher realised prices without added supply, and Gulf non-oil sectors riding strong UAE and Saudi PMI momentum. <b class="neg">Loses:</b> Gulf shippers, insurers and energy importers exposed to a compounding Hormuz-and-pipeline risk premium.</td></tr>
+        <tr><td><b>Global</b></td><td>The Fed's <b>15-16 September FOMC meeting</b> under Chair Kevin Warsh now carries roughly 86-90% odds of a 25bp hike per fed funds futures, after a firmer core CPI print and a fresh oil-driven inflation shock; Congress's stopgap funding bill already extends federal funding through 11 December.</td><td>US equities, Treasuries, banks, technology</td><td><b class="pos">Wins:</b> Rate-sensitive value and financials if the Fed frames a hike as a one-and-done move. <b class="neg">Loses:</b> Growth and long-duration tech names if a hike lands alongside a persistent oil shock, reviving the risk-off tone from earlier in the week.</td></tr>
+        
+      </tbody>
+    </table>
+
+    <h2 class="sec"><span class="n">04</span>The Day Ahead — KSE-100 Levels &amp; Desk Stance</h2>
+    <div class="lvl">
+      <div class="c3"><div class="l">Support <span class="tag">EST.</span></div><div class="v">168,865</div><div class="d">Thursday's close, now first support; deeper support at Friday's intraday low 166,141</div></div>
+      <div class="c3"><div class="l">Pivot <span class="tag">EST.</span></div><div class="v">170,512</div><div class="d">Friday's close</div></div>
+      <div class="c3"><div class="l">Resistance <span class="tag">EST.</span></div><div class="v">170,765</div><div class="d">Friday's intraday high; then the psychological 172,000 level</div></div>
+    </div>
+    <div class="synth flow">Friday's rebound was constructive on the numbers &mdash; volume rose to 687.47 million shares and breadth flipped positive (248 advancers vs 210 decliners) &mdash; but the catalyst behind it, hopes for an Iran-GCC de-escalation on Hormuz, unravelled over the weekend as Oman postponed the talks and Saudi Arabia's East-West pipeline stayed shut. With oil gapping higher into Monday and the SBP's rate decision due today ahead of a near-coin-flip FOMC hike on 15-16 September, we'd trim broad-beta exposure into both events while retaining selective exposure to E&amp;P and refinery-adjacent names geared to a firmer oil tape, and to non-oil GCC plays benefiting from resilient UAE and Saudi PMIs. A close back below Thursday's 168,865 pivot would reopen risk toward Friday's 166,141 low. All levels are indicative desk estimates, not recommendations.</div>
+
+    <div class="disc"><b>Disclaimer:</b> Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.</div>
+  </div>
+</div>
+</body>
+</html>
