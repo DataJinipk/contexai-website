@@ -1,33 +1,29 @@
-KSE-100 rallies 1,647 points to 170,512 on Hormuz relief; oil jumps anew as Saudi pipeline stays shut and Iran-GCC talks are postponed into FOMC week
-
-Good morning — here's the ContexAi Research desk's read on markets for Monday, 14 September 2026, covering Friday's close.
+KSE-100 sheds 2,541 points as Hormuz escalation meets a near-5% Treasury yield — but Tuesday's record FX reserves print is already clawing back the losses.
 
 THE OVERNIGHT TAPE
-US equities snapped a four-day losing streak Friday: the S&P 500 rose 0.9% (+65.28 pts) to 7,656.98, the Dow gained 1.0% (+509.19 pts) to 52,573.29 and the Nasdaq added 1.0% (+251.31 pts) to 26,333.04, as August CPI (+0.4% m/m, +3.4% y/y) matched forecasts even as core inflation firmed. Fed funds futures still pushed the odds of a 25bp hike at next week's 15-16 September FOMC meeting to roughly 86-90%, up from about 70-72% a day earlier. The 10-year Treasury yield eased slightly to 4.95% after nearing 5% mid-week, while the 2-year held near 4.63%. Brent eased to $104.61/bbl and WTI to $100.05 on Friday's diplomatic hopes; gold held near $4,385.61/oz and silver fell 2.6% to $64.90/oz.
+Wall Street softened Monday: S&P 500 −0.48% to 7,619.98, Dow −0.29% to 52,421.20, Nasdaq −0.56% to 26,186.41. The real story was rates — the US 10-year briefly topped 5% intraday for the first time since 2023 before settling near 4.99%, while the 2-year climbed to 4.66%. Wednesday's FOMC decision is now a coin flip: J.P. Morgan expects a 25bp hike, Goldman Sachs calls one "very unlikely."
 
 PAKISTAN
-The KSE-100 surged 1,646.81 points (0.98%) to close at 170,511.85 on Friday, clawing back roughly half of Thursday's 3,079-point rout as reports of a planned Iran-GCC meeting on Hormuz lifted sentiment. Volume jumped to 687.47 million shares (Rs33.70bn) with 248 of 500 names advancing against 210 decliners; Meezan Bank, Fauji Fertilizer, Lucky Cement, PPL and OGDC together added 1,032 points. The State Bank's Monetary Policy Committee meets today and is widely expected to hold the policy rate at 11.5%, with August CPI at 11.15% y/y and 6-month KIBOR near 11.87%. USD/PKR interbank was steady around 277.35-277.55. The Sovereign Wealth Fund (Amendment) Bill, 2026 remains before the Senate Standing Committee on Finance and Revenue ahead of the IMF's fourth EFF/third RSF review mission, expected around 22-23 September.
+The KSE-100 fell 1.49% (−2,541 pts) to 167,970.66 on Monday as fresh Houthi and Iranian attacks in the Gulf triggered broad de-risking — only 83 of 492 names advanced. Tuesday opened with relief buying, up nearly 2,000 points, after the State Bank's FX reserves hit an all-time high of $21.4bn on Eurobond inflows. SBP holds its policy rate at 11.5% for a third straight meeting despite August CPI at 11.15% y/y. The IMF's fourth EFF review mission lands September 23, with roughly $1bn in tranche disbursement at stake.
 
 GCC
-Friday's oil relief unwound fast: Oman postponed indefinitely its Monday summit between Iran and the GCC on reopening the Strait of Hormuz after Bahrain declined to attend, while Saudi Arabia's 7m-bpd East-West pipeline — the kingdom's main Hormuz bypass for roughly 5m bpd of crude — remains shut after 10-11 September drone strikes on pump stations near Riyadh and Medina. That follows Houthi strikes that wounded 73 and disrupted Saudi energy sites including the 400,000-bpd Jazan refinery. OPEC+'s seven core producers held October quotas unchanged near 31.01m bpd. Non-oil momentum held up: UAE and Saudi PMIs stood at 55.3 and 53.8 in August, both multi-month highs.
+Brent settled at $108.15/bbl, a four-month high, and WTI at $102.64, after Oman postponed Gulf-Iran Hormuz talks and Saudi Arabia's drone-damaged East-West pipeline stayed shut. OPEC+ continues gradually restoring output even as the crisis lifts prices. Non-oil momentum holds — GCC composite PMI at 51.5, Saudi at 56.6, UAE at 54.2. Saudi's PIF approved its 2026-2030 strategy, pivoting from giga-project scale toward logistics, mining and AI infrastructure ahead of the September 28-30 Mega Projects Summit in Riyadh.
 
 GLOBAL
-US equities rebounded Friday as CPI matched forecasts, but a firmer core reading and the weekend's oil shock pushed Fed hike odds for next week's FOMC meeting to roughly 86-90%. Congress's stopgap funding bill already extends federal funding through 11 December, removing near-term shutdown risk. Oil gapped higher in early Monday trade as the Hormuz and pipeline risks compounded.
+Gold eased about 1% to $4,310/oz and silver slid to roughly $63.30 as rate-hike odds firmed and the dollar strengthened. In Washington, Congress returned from recess with funding secured through December 11 but no consensus on AI regulation, leaving a 29-state patchwork in place with just four legislative days left before the November 3 midterms.
 
 LEGISLATIVE TRACKER
-• Pakistan: The Sovereign Wealth Fund (Amendment) Bill, 2026 remains before the Senate Standing Committee on Finance and Revenue; the SBP decides on rates today ahead of the IMF's review mission expected around 22-23 September.
-• GCC: Oman postponed Iran-GCC Hormuz talks indefinitely on 13 September, while Saudi Arabia's East-West pipeline stays shut and OPEC+ holds October quotas steady.
-• Global: The Fed's 15-16 September FOMC meeting carries roughly 86-90% odds of a 25bp hike after a firmer core CPI print and a fresh oil shock, with a funding stopgap already passed through 11 December.
+• Pakistan: IMF's 4th EFF review (Sep 23) + Finance Bill 2026 tax reforms — wins for salaried taxpayers and banks; loses for importers facing a wider bill from the oil shock.
+• GCC: PIF's 2026-2030 strategy + OPEC+ output normalisation — wins for logistics/mining/AI allocations; loses for giga-project contractors facing write-downs.
+• Global: Congress punts on AI rules; FOMC decision Sep 16 — wins for AI incumbents facing no near-term guardrails; loses for rate-sensitive growth stocks if the Fed leans hawkish.
 
 THE DAY AHEAD
-KSE-100 — Support 168,865 (Thursday's close, now first support; deeper support at Friday's low 166,141) · Pivot 170,512 (Friday's close) · Resistance 170,765 (Friday's intraday high, then the psychological 172,000 level).
-
-Desk stance: Friday's rebound was constructive on the numbers, but the de-escalation hopes behind it unravelled over the weekend as talks were postponed and the Saudi pipeline stayed shut. With oil gapping higher and the SBP's rate decision due today ahead of a near-coin-flip FOMC hike, we'd trim broad-beta exposure into both events while retaining selective exposure to E&P and refinery-adjacent names geared to a firmer oil tape, and to non-oil GCC plays benefiting from resilient UAE and Saudi PMIs. A close back below 168,865 would reopen risk toward Friday's 166,141 low. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 167,442 (Monday's session low) · pivot 167,971 (Monday's close) · resistance 170,438 (Monday's intraday high). We'd fade strength into resistance and treat a close below support as confirmation Monday's selling has more room to run. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-This report is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.
+This material is for informational purposes only and does not constitute investment advice. ContexAi Group does not guarantee the accuracy of third-party market data. Consult a licensed advisor before making investment decisions.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
