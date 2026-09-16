@@ -1,24 +1,24 @@
-KSE-100 sheds 2,541 points as Hormuz escalation meets a near-5% Treasury yield — but Tuesday's record FX reserves print is already clawing back the losses.
+KSE-100 rebounds 1,422 points on record SBP reserves — but the real story today is the Fed, with hike odds surging past 85% and the 10-year Treasury at its highest since 2007.
 
 THE OVERNIGHT TAPE
-Wall Street softened Monday: S&P 500 −0.48% to 7,619.98, Dow −0.29% to 52,421.20, Nasdaq −0.56% to 26,186.41. The real story was rates — the US 10-year briefly topped 5% intraday for the first time since 2023 before settling near 4.99%, while the 2-year climbed to 4.66%. Wednesday's FOMC decision is now a coin flip: J.P. Morgan expects a 25bp hike, Goldman Sachs calls one "very unlikely."
+Wall Street softened into decision day: S&P 500 −0.45% to 7,585.73, Dow −0.63% to 52,093.11, Nasdaq −0.78% to 25,981.57. The 10-year Treasury yield briefly touched 5.04% intraday, its highest since 2007, before settling near 5.01%; the 2-year sits at 4.39%. CME FedWatch now prices roughly 87-90% odds of a 25bp hike at today's 2pm ET decision — a sharp swing from the coin-flip odds of just weeks ago, driven by hot inflation and a resilient jobs report.
 
 PAKISTAN
-The KSE-100 fell 1.49% (−2,541 pts) to 167,970.66 on Monday as fresh Houthi and Iranian attacks in the Gulf triggered broad de-risking — only 83 of 492 names advanced. Tuesday opened with relief buying, up nearly 2,000 points, after the State Bank's FX reserves hit an all-time high of $21.4bn on Eurobond inflows. SBP holds its policy rate at 11.5% for a third straight meeting despite August CPI at 11.15% y/y. The IMF's fourth EFF review mission lands September 23, with roughly $1bn in tranche disbursement at stake.
+The KSE-100 gained 1,421.67 points (+0.85%) on Tuesday to close at 169,392.33, recovering most of Monday's Hormuz-driven selloff. Breadth was strongly positive — 280 of 494 names advanced against 166 decliners — led by UBL, FFC, LUCK, BAFL and PSEL. The rally tracked the State Bank's FX reserves hitting an all-time high of $21.4bn on Eurobond inflows, already surpassing the December 2026 target. The rupee held steady at 277.30 interbank. SBP's policy rate stays at 11.5% despite August CPI at 11.15% y/y. Pakistan and the IMF open talks around September 22 on the fourth EFF and third RSF reviews plus the first Article IV consultation in two years, with roughly $1.2bn in combined disbursement at stake.
 
 GCC
-Brent settled at $108.15/bbl, a four-month high, and WTI at $102.64, after Oman postponed Gulf-Iran Hormuz talks and Saudi Arabia's drone-damaged East-West pipeline stayed shut. OPEC+ continues gradually restoring output even as the crisis lifts prices. Non-oil momentum holds — GCC composite PMI at 51.5, Saudi at 56.6, UAE at 54.2. Saudi's PIF approved its 2026-2030 strategy, pivoting from giga-project scale toward logistics, mining and AI infrastructure ahead of the September 28-30 Mega Projects Summit in Riyadh.
+Brent rose to about $107.50/bbl, a four-month high, and WTI to $102.69, after Saudi Arabia reportedly cancelled export shipments following drone strikes that shut its East-West pipeline. OPEC+ completed its rollback of voluntary output cuts, adding ~188,000 bpd in September before a planned Q4 pause. Non-oil momentum holds — GCC composite PMI at 51.5 for a 21st straight month above 50, Saudi at 56.6, UAE at 54.2. Saudi's PIF continues its 2026-2030 strategy pivot toward commercial returns ahead of the September 28-30 Mega Projects Summit in Riyadh, expected to showcase a $200bn+ pipeline.
 
 GLOBAL
-Gold eased about 1% to $4,310/oz and silver slid to roughly $63.30 as rate-hike odds firmed and the dollar strengthened. In Washington, Congress returned from recess with funding secured through December 11 but no consensus on AI regulation, leaving a 29-state patchwork in place with just four legislative days left before the November 3 midterms.
+Gold slipped about 1% to a six-week low near $4,270/oz and silver eased to roughly $62.82 as a firmer dollar and the looming Fed decision pulled traders to the sidelines. In Washington, Congress returned from recess with funding secured through December 11 but no consensus on AI regulation, leaving just a handful of legislative days before the November 3 midterms.
 
 LEGISLATIVE TRACKER
-• Pakistan: IMF's 4th EFF review (Sep 23) + Finance Bill 2026 tax reforms — wins for salaried taxpayers and banks; loses for importers facing a wider bill from the oil shock.
-• GCC: PIF's 2026-2030 strategy + OPEC+ output normalisation — wins for logistics/mining/AI allocations; loses for giga-project contractors facing write-downs.
-• Global: Congress punts on AI rules; FOMC decision Sep 16 — wins for AI incumbents facing no near-term guardrails; loses for rate-sensitive growth stocks if the Fed leans hawkish.
+• Pakistan: IMF's 4th EFF/3rd RSF review (~Sep 22) + FBR's Sep 30 filing deadline — wins for banks and sovereign credit on record reserves; loses for importers facing a wider oil bill.
+• GCC: PIF's 2026-2030 strategy + OPEC+ cut rollback complete — wins for logistics/mining/AI allocations and oil exporters; loses for giga-project contractors under PIF's commercial-return pivot.
+• Global: Fed's Sep 16 decision (hike priced ~87-90%) as Congress punts on AI rules — wins for AI incumbents facing no near-term guardrails; loses for rate-sensitive growth stocks and long-duration bonds if the hike is confirmed.
 
 THE DAY AHEAD
-KSE-100 support 167,442 (Monday's session low) · pivot 167,971 (Monday's close) · resistance 170,438 (Monday's intraday high). We'd fade strength into resistance and treat a close below support as confirmation Monday's selling has more room to run. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 169,189 (Tuesday's session low) · pivot 169,392 (Tuesday's close) · resistance 169,988 (Tuesday's intraday high). We'd fade strength into resistance and treat a close below support as confirmation Tuesday's rally lacks follow-through, especially if the Fed confirms a hike today. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
