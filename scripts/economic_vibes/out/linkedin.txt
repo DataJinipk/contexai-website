@@ -1,24 +1,24 @@
-KSE-100 rebounds 1,422 points on record SBP reserves — but the real story today is the Fed, with hike odds surging past 85% and the 10-year Treasury at its highest since 2007.
+KSE-100 slides 0.81% to 168,022 as the Fed delivers its first rate hike since 2023 — and oil, gold and the IMF calendar all move at once.
 
 THE OVERNIGHT TAPE
-Wall Street softened into decision day: S&P 500 −0.45% to 7,585.73, Dow −0.63% to 52,093.11, Nasdaq −0.78% to 25,981.57. The 10-year Treasury yield briefly touched 5.04% intraday, its highest since 2007, before settling near 5.01%; the 2-year sits at 4.39%. CME FedWatch now prices roughly 87-90% odds of a 25bp hike at today's 2pm ET decision — a sharp swing from the coin-flip odds of just weeks ago, driven by hot inflation and a resilient jobs report.
+The FOMC voted 12-0 to raise the fed funds target range 25bp to 3.75%-4.00%, its first hike since 2023, as Chair Kevin Warsh flagged persistent inflation. The updated dot plot now points to a median 4.1%-4.4% by year-end 2026, up from 3.6%-4.1% previously — a higher-for-longer signal. Wall Street sold off in response: the Dow fell 631.21 points (−1.21%) to 51,461.90, the S&P 500 dropped 0.45% to 7,551.81, and the Nasdaq slipped 0.01% to 25,978.42. The 10-year Treasury touched a fresh 5.04% high before settling near 4.97%; the 2-year sits near 4.64%.
 
 PAKISTAN
-The KSE-100 gained 1,421.67 points (+0.85%) on Tuesday to close at 169,392.33, recovering most of Monday's Hormuz-driven selloff. Breadth was strongly positive — 280 of 494 names advanced against 166 decliners — led by UBL, FFC, LUCK, BAFL and PSEL. The rally tracked the State Bank's FX reserves hitting an all-time high of $21.4bn on Eurobond inflows, already surpassing the December 2026 target. The rupee held steady at 277.30 interbank. SBP's policy rate stays at 11.5% despite August CPI at 11.15% y/y. Pakistan and the IMF open talks around September 22 on the fourth EFF and third RSF reviews plus the first Article IV consultation in two years, with roughly $1.2bn in combined disbursement at stake.
+The KSE-100 fell 1,370.52 points (−0.81%) on Wednesday to close at 168,021.80, giving back most of Tuesday's reserves-driven bounce. Breadth was sharply negative — 320 decliners against 121 advancers on 356.14m shares traded — with FFC, ENGRO, HBL and LUCK the heaviest drags while MLCF and PPL bucked the trend. The State Bank held its policy rate at 11.5% at its September 14 meeting despite August CPI at 11.15% y/y; 6-month KIBOR sits near 11.86%. The rupee held broadly steady near 277.70 interbank. Pakistan and the IMF open talks around September 22-23 on the fourth EFF and third RSF reviews plus the first Article IV consultation in two years, with ~$1.2bn in combined disbursement at stake.
 
 GCC
-Brent rose to about $107.50/bbl, a four-month high, and WTI to $102.69, after Saudi Arabia reportedly cancelled export shipments following drone strikes that shut its East-West pipeline. OPEC+ completed its rollback of voluntary output cuts, adding ~188,000 bpd in September before a planned Q4 pause. Non-oil momentum holds — GCC composite PMI at 51.5 for a 21st straight month above 50, Saudi at 56.6, UAE at 54.2. Saudi's PIF continues its 2026-2030 strategy pivot toward commercial returns ahead of the September 28-30 Mega Projects Summit in Riyadh, expected to showcase a $200bn+ pipeline.
+Brent settled at $105.83 (−2.7%) and WTI at $102.43 (−3.2%) as US officials signalled Saudi Arabia's damaged East-West pipeline would restart within days, easing the acute Hormuz-linked supply scare. OPEC+'s core seven nonetheless held October output unchanged at their September 6 meeting. Non-oil momentum stays firm — Saudi PMI hit a six-month high of 53.8, UAE's composite reading rebounded to 55.3 from 52.7. PIF advanced its 2026-2030 strategy, launching the Gulf Coast Development Company on September 7 for an Al-Khafji coastal project.
 
 GLOBAL
-Gold slipped about 1% to a six-week low near $4,270/oz and silver eased to roughly $62.82 as a firmer dollar and the looming Fed decision pulled traders to the sidelines. In Washington, Congress returned from recess with funding secured through December 11 but no consensus on AI regulation, leaving just a handful of legislative days before the November 3 midterms.
+Gold rallied 1.07% to about $4,338/oz and silver jumped 1.65% to roughly $64.70, as safe-haven demand outweighed the hawkish Fed. In Washington, Congress returned for a brief pre-midterm session with renewed pressure to regulate AI, but the legislative window is closing fast as the House adjourns and lawmakers turn to the November 3 midterms.
 
 LEGISLATIVE TRACKER
-• Pakistan: IMF's 4th EFF/3rd RSF review (~Sep 22) + FBR's Sep 30 filing deadline — wins for banks and sovereign credit on record reserves; loses for importers facing a wider oil bill.
-• GCC: PIF's 2026-2030 strategy + OPEC+ cut rollback complete — wins for logistics/mining/AI allocations and oil exporters; loses for giga-project contractors under PIF's commercial-return pivot.
-• Global: Fed's Sep 16 decision (hike priced ~87-90%) as Congress punts on AI rules — wins for AI incumbents facing no near-term guardrails; loses for rate-sensitive growth stocks and long-duration bonds if the hike is confirmed.
+• Pakistan: IMF's 4th EFF/3rd RSF review + first Article IV consultation (~Sep 22-23) — wins for banks/sovereign credit on the ~$1.2bn disbursement path; loses for importers on a still-elevated oil bill.
+• GCC: OPEC+ holds October output steady + PIF's Gulf Coast Development Company — wins for oil exporters and PIF-backed tourism/logistics; loses for oil-importing economies absorbing higher landed costs.
+• Global: Fed hikes to 3.75-4.00% as Congress's AI-regulation window closes — wins for the dollar and short-duration savers; loses for long-duration bonds and rate-sensitive growth/tech names.
 
 THE DAY AHEAD
-KSE-100 support 169,189 (Tuesday's session low) · pivot 169,392 (Tuesday's close) · resistance 169,988 (Tuesday's intraday high). We'd fade strength into resistance and treat a close below support as confirmation Tuesday's rally lacks follow-through, especially if the Fed confirms a hike today. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 166,500 (near Wednesday's session low) · pivot 168,022 (Wednesday's close) · resistance 169,392 (Tuesday's close ceiling). We'd fade strength into resistance and treat a close below support as confirmation that downside momentum is building, especially if the IMF talks stumble. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
