@@ -1,238 +1,255 @@
 {
-  "headline": "KSE-100 grinds 269 points higher to 171,153 in a volatile Rs20.1bn session as Wall Street's Nasdaq hits a record on an AI-led rally, oil slumps over 3-4% on Hormuz de-escalation signals, and the IMF mission lands in Islamabad today for the fourth EFF review",
-  "mood": "Risk-on tilt · Trump-Xi summit optimism eclipses oil's slide",
+  "headline": "KSE-100 edges 249 points higher to 171,402 on narrow breadth as the IMF mission lands for Pakistan's fourth EFF review, Wall Street closes mixed with the Nasdaq at a fresh record, oil slips over 1% on Trump-Iran diplomacy at the UN, and Xi Jinping arrives in Washington ahead of Thursday's summit with Trump",
+  "mood": "Cautiously constructive · IMF review and Trump-Xi summit in focus",
   "mood_class": "up",
   "snapshot": [
     {
       "label": "KSE-100",
       "tag": "V",
-      "value": "171,153",
-      "delta": "▲ 0.16% Mon · +269 pts",
+      "value": "171,402",
+      "delta": "▲ 0.15% Tue · +249 pts",
       "delta_class": "pos"
     },
     {
       "label": "S&amp;P 500",
       "tag": "V",
-      "value": "▲ 1.49%",
-      "delta": "Nasdaq +2.26% record · Dow +0.71%",
-      "delta_class": "pos"
+      "value": "7,764.64",
+      "delta": "Nasdaq +0.5% record · Dow −0.36%",
+      "delta_class": ""
     },
     {
       "label": "US 10Y / 2Y",
       "tag": "V",
       "value": "4.96 / 4.74",
-      "delta": "Fed hawkish hold at 3.75-4.00%",
+      "delta": "Fed hawkish hike to 3.75-4.00%",
       "delta_class": "neg"
     },
     {
       "label": "Brent / WTI",
       "tag": "V",
-      "value": "$100.06 / $95.59",
-      "delta": "▼ 3.7% / ▼ 4.7% · Hormuz signals",
+      "value": "$99.25 / $94.59",
+      "delta": "▼ 1.0% / ▼ 1.2% · Iran diplomacy",
       "delta_class": "neg"
     },
     {
       "label": "Gold",
       "tag": "V",
-      "value": "$4,360",
-      "delta": "−0.48% · silver $66.90",
+      "value": "$4,308",
+      "delta": "−0.8% · silver $65.30",
       "delta_class": "neg"
     },
     {
       "label": "USD/PKR",
       "tag": "V",
-      "value": "277.22",
-      "delta": "interbank · marginal gain",
+      "value": "277.21",
+      "delta": "interbank · marginal PKR gain",
       "delta_class": ""
     }
   ],
   "five_things": [
     {
-      "chip": "PSX Grinds Higher in Volatile Trade",
-      "html": "The <b>KSE-100</b> added 268.58 points (+0.16%) on Monday to close at 171,153.16, after an early rally toward 171,732.62 faded into the afternoon; turnover rose to 692.88 million shares worth Rs20.10 billion. Breadth was narrowly positive — 238 of 494 traded names advanced versus 213 declines and 43 unchanged — with LUCK, ATRL, FFC, MARI and EFERT the top index contributors, adding roughly 254 points combined, while automobile assemblers, cement, banks, E&amp;P and OMCs led sector buying. <a href=\"https://www.dailyindependent.com.pk/2026/09/21/psx-gains-268-points-as-kse-100-closes-above-171000/\">Daily Independent</a> and <a href=\"https://www.brecorder.com/news/40440469/psx-kse-100-ends-volatile-trading-session-on-a-positive-note\">Business Recorder</a> confirm the print.",
+      "chip": "KSE-100 Grinds Higher, Breadth Narrow",
+      "html": "The <b>KSE-100</b> added 248.92 points (+0.15%) on Tuesday to close at 171,402.08, after touching an intraday high of 171,680.74 before fading into the close; turnover eased to 641.83 million shares worth Rs18.47 billion from Monday's 692.88 million/Rs20.10 billion. Breadth stayed narrowly constructive — 226 of 494 traded names advanced against 221 declines and 47 unchanged — with automobile assemblers, cement, commercial banks and E&amp;P leading sector buying as market capitalisation rose to Rs19.093 trillion. <a href=\"https://www.brecorder.com/news/40440638/psx-buying-continues-kse-100-settles-with-nearly-250-points-gain\">Business Recorder</a> and <a href=\"https://www.app.com.pk/business/psx-gains-over-248-points/\">APP</a> confirm the print.",
       "sentiment": "grinding higher, narrow breadth",
       "sentiment_class": "pos"
     },
     {
-      "chip": "Nasdaq Sets Record on AI-Led Rally",
-      "html": "US equities posted their best session since early August: the <b>S&amp;P 500 jumped 1.49% to 7,765, the Nasdaq surged 2.26% to a record 27,122, and the Dow rose 0.71% to 52,049</b>, as AI and tech names — led by Meta — rallied on cooling oil prices and easing yields, with sentiment also lifted by optimism ahead of this week's Trump-Xi summit in Washington. <a href=\"https://www.cnbc.com/2026/09/20/stock-market-today-live-updates.html\">CNBC</a> and <a href=\"https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-21-2026\">TheStreet</a>.",
-      "sentiment": "risk-on, AI-led",
+      "chip": "Nasdaq Record, Dow Drags",
+      "html": "US equities closed mixed: the <b>Nasdaq rose 0.5% to a fresh record 27,244.28</b> on continued AI-trade strength, while the <b>S&amp;P 500 was flat at 7,764.64</b> and the <b>Dow fell 0.36% to 51,864</b>, dragged by Cisco (−4.5%), JPMorgan (−3.35%) and American Express (−2.62%); Amgen, Home Depot and Honeywell led gainers. <a href=\"https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-22-133900165.html\">Yahoo Finance</a> and <a href=\"https://krmg.com/2026/09/22/how-major-us-stock-indexes-fared-tuesday-9-22-2026/\">AP/KRMG</a> confirm.",
+      "sentiment": "mixed, tech-led",
       "sentiment_class": "pos"
     },
     {
-      "chip": "Yields Ease, Fed Stays Hawkish",
-      "html": "The <b>10-year Treasury yield eased four basis points to 4.96%</b> while the 2-year held near 4.74%, giving equities room to run even as the Fed's September 16 decision to raise its target range a quarter point to <b>3.75%-4.00%</b> — its first hike since 2023 — left markets pricing at least one more increase before year-end. <a href=\"https://tradingeconomics.com/united-states/government-bond-yield\">Trading Economics</a> and <a href=\"https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html\">CNBC</a>.",
-      "sentiment": "hawkish hold, yields drift lower",
+      "chip": "Oil Slips on Iran Diplomacy",
+      "html": "<b>Brent fell 1.0% to $99.25</b> and <b>WTI shed 1.2% to $94.59</b> a barrel Tuesday — both down over 4% for the week but still up more than 9% on the month — after President Trump told the UN General Assembly Iran would &quot;make a deal&quot; and confirmed a three-hour meeting with Iran's delegation on the sidelines. <a href=\"https://www.cnbc.com/2026/09/22/oil-iran-us-bessent-un-crude.html\">CNBC</a> reports the move; OPEC+ has already completed its unwind of voluntary cuts with a further 188,000 bpd September hike, per <a href=\"https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html\">CNBC</a>.",
+      "sentiment": "easing, diplomacy-driven",
       "sentiment_class": "neg"
     },
     {
-      "chip": "Crude Slumps on Hormuz Signals",
-      "html": "<b>Brent fell 3.67% to $100.06/bbl and WTI dropped 4.69% to $95.59</b>, the sharpest one-day slide in weeks, as traders read tentative signs of US-Iran de-escalation around the Strait of Hormuz even as the tanker war continues on the ground; <a href=\"https://www.energyconnects.com/news/oil/2026/september/opecplus-keeps-output-policy-unchanged-for-october\">OPEC+ is holding its October output target unchanged</a>, with its next review due October 4. Topline Securities credited the pullback, alongside cooling oil, with lifting Monday's PSX sentiment. <a href=\"https://www.dailyindependent.com.pk/2026/09/21/psx-gains-268-points-as-kse-100-closes-above-171000/\">Daily Independent</a> and <a href=\"https://tradingeconomics.com/commodity/brent-crude-oil\">Trading Economics</a>.",
-      "sentiment": "import-bill relief, geopolitics fluid",
+      "chip": "Gold, Silver Retreat as Dollar Firms",
+      "html": "<b>Gold slipped 0.8% to $4,307.63</b> and <b>silver eased around 1.1% to $65.30</b> an ounce in a second straight session of losses, as a firmer US dollar and hawkish Fed commentary pulled capital out of precious metals even as Treasury yields held steady. <a href=\"https://www.usagold.com/daily-precious-metals-market-report-september-22-2026/\">USAGOLD</a> and <a href=\"https://tradingeconomics.com/commodity/gold\">Trading Economics</a> confirm the pullback.",
+      "sentiment": "retreating on dollar strength",
+      "sentiment_class": "neg"
+    },
+    {
+      "chip": "IMF Mission Lands for 4th EFF Review",
+      "html": "An <b>IMF mission arrived in Pakistan on Tuesday</b> to open the fourth review of the $7 billion Extended Fund Facility alongside a first-in-two-years Article IV consultation, with talks expected to run roughly two weeks across Karachi and Islamabad; the mission is set to scrutinise the Sovereign Wealth Fund (Amendment) Bill now before the Senate and progress on the Governance and Anti-Corruption Diagnostic reform plan. A clean review could unlock up to $1.2 billion — a $1 billion EFF tranche plus $200 million in RSF climate financing. <a href=\"https://www.dailyindependent.com.pk/2026/09/22/pakistan-imf-talks-on-economic-review-likely-to-begin-this-week/\">Daily Independent</a> and <a href=\"https://propakistani.pk/2026/08/28/pakistan-imf-to-begin-4th-review-of-7-billion-eff-in-september/\">ProPakistani</a> confirm.",
+      "sentiment": "pivotal for external financing",
       "sentiment_class": "pos"
-    },
-    {
-      "chip": "Gold Eases as Risk Appetite Returns",
-      "html": "<b>Gold slipped 0.48% to $4,360/oz and silver held near $66.90</b>, giving back some of last week's safe-haven bid as equities rallied and yields eased; the gold/silver ratio sits near 65. In Islamabad, the <b>IMF mission lands today for the fourth EFF review, third RSF review and Pakistan's first Article IV consultation in two years</b>, a roughly two-week visit running into early October. <a href=\"https://fortune.com/article/current-price-of-gold-09-21-2026/\">Fortune</a> and <a href=\"https://pakistan.shafaqna.com/EN/335906\">Shafaqna Pakistan</a>.",
-      "sentiment": "safe-haven bid cools",
-      "sentiment_class": "neg"
     }
   ],
   "matrix": {
-    "local_html": "Monday's 0.16% PSX gain to 171,153.16 capped a volatile, low-conviction session — an early 800-point advance faded as profit-taking set in — on turnover of 692.88 million shares (Rs20.10bn), with breadth narrowly positive at 238 advancers versus 213 decliners. The <b>State Bank held its policy rate at 11.5%</b> at its September 14 MPC meeting even as <b>August CPI accelerated to 11.1% y/y</b> (urban 10.4%, rural 12.2%) from 9.2% in July, per <a href=\"https://www.brecorder.com/news/40437517/august-cpi-based-inflation-clocks-in-at-111pc-yoy\">Business Recorder</a>; 6-month KIBOR sits near 11.99% per <a href=\"https://www.sbp.org.pk/assets/document/kibor-rates-11-september-2026.pdf\">SBP</a>. The rupee edged firmer to 277.22 interbank, per <a href=\"https://www.brecorder.com/news/40440509/intra-day-update-rupee-records-gain-against-us-dollar\">Business Recorder</a>. The <b>IMF mission arrives today, September 22,</b> for the fourth EFF and third RSF reviews plus a first Article IV consultation in two years, with the government's Sovereign Wealth Fund (Amendment) Bill 2026 — now before the Senate Standing Committee on Finance &amp; Revenue — among the governance reforms under scrutiny, per <a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Business Recorder</a>.",
-    "gcc_html": "Oil fell sharply — Brent to $100.06 and WTI to $95.59 — on tentative signs of US-Iran de-escalation around the Strait of Hormuz, even as the tanker war continues; <a href=\"https://www.energyconnects.com/news/oil/2026/september/opecplus-keeps-output-policy-unchanged-for-october\">OPEC+ has held its combined output target unchanged for October</a>, with its next review set for October 4. Non-oil momentum remains mixed across the bloc: Saudi Arabia's PMI held at a six-month high of 53.8 in August, per <a href=\"https://www.arabnews.com/business/saudi-pmi-rises-to-6-month-high-as-non-oil-growth-accelerates-3000302\">Arab News</a>, while the UAE's non-oil gauge has cooled toward the 50-point break-even line amid war-related disruption, per <a href=\"https://www.semafor.com/article/07/06/2026/uaes-non-oil-economy-reaches-lowest-point-in-seven-years\">Semafor</a>. Saudi Arabia's Public Investment Fund has approved its <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">2026-2030 strategy</a>, chaired by the Crown Prince, prioritizing tourism, urban development, advanced manufacturing, logistics, clean energy and Neom as Vision 2030's diversification push continues.",
-    "global_html": "Wall Street posted its best session since early August: the S&amp;P 500 jumped 1.49% to 7,765, the Nasdaq hit a record 27,122 (+2.26%), and the Dow rose 0.71% to 52,049, per <a href=\"https://www.cnbc.com/2026/09/20/stock-market-today-live-updates.html\">CNBC</a>. The 10-year Treasury eased to 4.96% even as the Fed's September 16 hike to 3.75%-4.00% — its first since 2023 — keeps at least one more increase priced in for this year, per <a href=\"https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html\">CNBC</a>. <a href=\"https://www.thenationalnews.com/news/us/2026/09/21/trump-set-for-washington-summit-with-xi-focused-on-trade-taiwan-and-ai/\">Chinese President Xi Jinping arrives in Washington September 23-25</a> for talks on trade, Taiwan and AI, while Congress's stopgap funding law signed September 2 keeps federal agencies funded through December 11, removing near-term shutdown risk, per <a href=\"https://www.defenseone.com/policy/2026/09/shutdown-threat-lifted-house-passes-stopgap-spending-bill/415757/\">Defense One</a>."
+    "local_html": "Pakistan's macro narrative pivots on the IMF mission that landed in Karachi and Islamabad on Tuesday to open the fourth EFF review and a long-delayed Article IV consultation — talks that will run roughly two weeks and directly test the <b>Sovereign Wealth Fund (Amendment) Bill</b> now before the Senate Standing Committee on Finance, alongside the Governance and Anti-Corruption Diagnostic reform plan. <a href=\"https://www.dailyindependent.com.pk/2026/09/22/pakistan-imf-talks-on-economic-review-likely-to-begin-this-week/\">Daily Independent</a> notes up to $1.2 billion is riding on a clean review. Equities held a narrow positive bias — the <b>KSE-100 added 0.15% to 171,402.08</b> on breadth of 226 advancers to 221 decliners — as easing oil prices offset the external-account overhang from Pakistan's import bill, per <a href=\"https://www.brecorder.com/news/40440638/psx-buying-continues-kse-100-settles-with-nearly-250-points-gain\">Business Recorder</a>. The State Bank held its policy rate at 11.5% for a fourth straight meeting on 14 September, with 6-month KIBOR at 11.98% and August CPI still running near 11.15% y/y, well above the 5-7% target band, per <a href=\"https://tradingeconomics.com/pakistan/interest-rate/news/496324\">Trading Economics</a>. Separately, the FBR's September rule amendments cut the super tax on large exporters to 8% from 10%, targeted relief the textile lobby has sought since the budget cycle, per <a href=\"https://en.dailypakistan.com.pk/09-Sep-2026/big-relief-for-exporters-as-fbr-slashes-super-tax-rate-to-8\">Daily Pakistan</a>.",
+    "gcc_html": "Gulf markets are digesting two parallel tracks: energy policy normalising and non-oil diversification accelerating. OPEC+ has now completed its full unwind of the 2023 voluntary cuts with a further 188,000 bpd hike in September, per <a href=\"https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html\">CNBC</a>, and the group is expected to hold quotas steady for the rest of 2026 barring a fresh shock. On the ground, non-oil momentum remains firm — the UAE's seasonally adjusted PMI climbed to a seven-month high of 54.2 in September from 53.3 in August, per <a href=\"https://www.pmi.spglobal.com/Public/Home/PressRelease/5fd96601cb0a4b01835ab947b3f92dd3\">S&amp;P Global</a>. In Saudi Arabia, the <b>PIF board, chaired by Crown Prince Mohammed bin Salman, approved its 2026-2030 strategy</b> this month, restructuring holdings into Vision, Strategic and Financial portfolios and shifting emphasis from rapid deployment to return discipline, per <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF</a>; the fund has also launched the Gulf Coast Development Company (7 September) and the Tawrid supply-chain financing platform (20 September) as Vision 2030 delivery vehicles.",
+    "global_html": "Wall Street closed mixed Tuesday as the AI trade kept the <b>Nasdaq at a record 27,244</b> (+0.5%) even as the <b>Dow fell 0.36% to 51,864</b> and the <b>S&amp;P 500 was flat at 7,764.64</b>, per <a href=\"https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-22-133900165.html\">Yahoo Finance</a>. Treasury yields were little changed (10Y 4.96%, 2Y 4.74%) as markets digest the Fed's 16 September hawkish 25bp hike to 3.75-4.00% and await Governor Michael Barr's Wednesday remarks, per <a href=\"https://www.cnbc.com/2026/09/22/treasury-yield-us-bond-market-trump.html\">CNBC</a>. The dominant catalyst is Beijing: <b>Xi Jinping arrives in Washington Wednesday</b> for his first US visit since 2015, ahead of a Thursday summit with President Trump covering trade, AI, critical minerals, Iran and Taiwan; Washington is reportedly holding off on new excess-capacity tariffs until after the meeting, with a roughly $30 billion Chinese purchase pledge in play, per <a href=\"https://www.bloomberg.com/news/articles/2026-09-22/xi-trump-summit-agenda-ai-tariffs-critical-minerals-iran-war-taiwan\">Bloomberg</a>."
   },
   "legislative": [
     {
       "jur": "Local — Pakistan",
-      "policy_html": "<a href=\"https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate\">Sovereign Wealth Fund (Amendment) Bill 2026</a> referred to the Senate Standing Committee on Finance &amp; Revenue, ahead of the IMF's 4th EFF/3rd RSF review and first Article IV consultation in two years, mission arriving Sep 22",
-      "sectors": "Sovereign Wealth Fund, State-Owned Enterprises, Banks",
-      "impact_html": "<b class=\"pos\">Wins:</b> investors and SOEs gain clearer governance, disclosure and competitive-divestment rules, supporting the ~$1bn EFF tranche if the review clears <b class=\"neg\">Loses:</b> SWF-held entities face tighter oversight and compliance costs, with the tax-net broadening benchmark still unresolved"
+      "policy_html": "<a href=\"https://www.dailyindependent.com.pk/2026/09/22/pakistan-imf-talks-on-economic-review-likely-to-begin-this-week/\">Sovereign Wealth Fund (Amendment) Bill, 2026</a> — under IMF scrutiny as the 4th EFF review opens",
+      "sectors": "SOEs, Banks, Sovereign fund portfolio cos",
+      "impact_html": "<b class=\"pos\">Wins:</b> governance-compliant SOEs, IMF programme continuity, bondholders eyeing the next $1.2bn tranche. <b class=\"neg\">Loses:</b> SOE managements facing tighter disclosure, and the programme itself if the review slips."
     },
     {
-      "jur": "Regional — GCC",
-      "policy_html": "<a href=\"https://www.energyconnects.com/news/oil/2026/september/opecplus-keeps-output-policy-unchanged-for-october\">OPEC+ holds its October output target unchanged</a>, maintaining the group's combined policy amid Strait of Hormuz disruption; next review Oct 4",
-      "sectors": "Energy, Oil Exporters, Sovereign Investment",
-      "impact_html": "<b class=\"pos\">Wins:</b> Gulf producers defend price levels and PIF's 2026-2030 diversification strategy gains a funding runway <b class=\"neg\">Loses:</b> oil-importing economies including Pakistan face a firmer, more volatile crude floor than a full Hormuz ceasefire would deliver"
+      "jur": "GCC",
+      "policy_html": "<a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF 2026-2030 Strategy</a> — portfolio restructured into Vision, Strategic and Financial arms",
+      "sectors": "Tourism, giga-projects, PIF portfolio cos",
+      "impact_html": "<b class=\"pos\">Wins:</b> Vision Portfolio giga-projects (Gulf Coast Development Co., Tawrid, Soudah Peaks), private co-investors. <b class=\"neg\">Loses:</b> sub-scale or legacy holdings facing rationalisation under the new return-discipline mandate."
     },
     {
       "jur": "Global",
-      "policy_html": "<a href=\"https://www.thenationalnews.com/news/us/2026/09/21/trump-set-for-washington-summit-with-xi-focused-on-trade-taiwan-and-ai/\">Trump hosts Xi Jinping in Washington Sep 23-25</a> for trade, Taiwan and AI talks, days after the Fed's Sep 16 hike to 3.75%-4.00% and a stopgap funding law through Dec 11",
-      "sectors": "US-China Trade, Technology/AI, Rate-Sensitive Equities",
-      "impact_html": "<b class=\"pos\">Wins:</b> risk assets and AI/tech names rallying into summit optimism, with government funded through year-end reducing fiscal-cliff risk <b class=\"neg\">Loses:</b> rate-sensitive sectors facing a hawkish Fed path with at least one more 2026 hike priced in"
+      "policy_html": "<a href=\"https://www.bloomberg.com/news/articles/2026-09-22/xi-trump-summit-agenda-ai-tariffs-critical-minerals-iran-war-taiwan\">Trump-Xi Summit</a> — Washington delays excess-capacity tariffs until after Thursday's meeting",
+      "sectors": "China exporters, US agriculture, aircraft, steel/metals",
+      "impact_html": "<b class=\"pos\">Wins:</b> Chinese exporters, US soybean and aircraft/Boeing sectors eyeing a roughly $30bn purchase pledge. <b class=\"neg\">Loses:</b> US steel and metals producers awaiting tariff protection now pushed further out."
     }
   ],
   "levels": {
-    "support": "170,900",
-    "support_note": "Monday's session low; deeper support at 170,000",
-    "pivot": "171,153",
-    "pivot_note": "Monday's close",
-    "resistance": "171,730",
-    "resistance_note": "Monday's intraday high; then 172,500"
+    "support": "170,867",
+    "support_note": "Tuesday's intraday low; deeper support near 169,500",
+    "pivot": "171,402",
+    "pivot_note": "Tuesday's close",
+    "resistance": "171,681",
+    "resistance_note": "Tuesday's intraday high; then 172,500"
   },
-  "desk_stance_html": "The KSE-100's 0.16% gain to 171,153.16 masked a volatile session in which an early 800-point advance largely evaporated by the close, underscoring thin conviction on turnover of 692.88 million shares. With the IMF mission landing today for the fourth EFF review, third RSF review and a first Article IV consultation in two years, headline risk dominates the week, while softer oil offers a partial offset to the import bill even as the Fed's hawkish 3.75%-4.00% hold and one more priced-in 2026 increase cap the tape globally. Our desk favors selective accumulation near support on IMF-review clarity, with tight stops given the unresolved Hormuz standoff and tax-net benchmark. <b>All levels are indicative desk estimates, not recommendations.</b>",
+  "desk_stance_html": "The desk reads the tape as <b>cautiously constructive</b>: breadth is narrow (226 advancers to 221 decliners) but sector rotation into banks, cement and E&amp;P suggests positioning ahead of the IMF's 4th EFF review outcome rather than broad conviction. A clean signal from the Karachi/Islamabad talks — particularly on the Sovereign Wealth Fund bill and governance benchmarks — is the key near-term catalyst; a stumble there, or a re-escalation in oil, would quickly pressure the rupee and reopen downside toward support. Offshore, a hawkish Fed and a still-undetermined Trump-Xi outcome argue for hedged sizing into Thursday. All levels are indicative desk estimates, not recommendations.",
   "ticker_items": [
-    "<b>TUE 22 SEP 2026 · LAST CLOSE MON 21 SEP</b>",
-    "KSE-100 171,153 <span class=\"up\">▲ 0.16%</span> (+269) Mon close",
-    "S&amp;P 500 7,765 <span class=\"up\">▲ 1.49%</span>",
-    "Dow 52,049 <span class=\"up\">▲ 0.71%</span>",
-    "Nasdaq 27,122 <span class=\"up\">▲ 2.26%</span> record close",
+    "<b>WED 23 SEP 2026 · LAST CLOSE TUE 22 SEP</b>",
+    "KSE-100 171,402 <span class=\"up\">▲ 0.15%</span> (+249) Tue close",
+    "S&amp;P 500 7,764.64 <span class=\"flat\">▬ 0.0%</span>",
+    "Dow 51,864 <span class=\"down\">▼ 0.36%</span>",
+    "Nasdaq 27,244 <span class=\"up\">▲ 0.5%</span> record",
     "US 10Y 4.96% / 2Y 4.74%",
-    "Brent $100.06 <span class=\"dn\">▼ 3.67%</span>",
-    "WTI $95.59 <span class=\"dn\">▼ 4.69%</span>",
-    "Gold $4,360 <span class=\"dn\">▼ 0.48%</span> · Silver $66.90",
-    "USD/PKR 277.22 interbank",
-    "SBP 11.5% hold · CPI 11.1%",
-    "Mood: Risk-on · Trump-Xi summit optimism",
+    "Brent $99.25 <span class=\"down\">▼ 1.0%</span>",
+    "WTI $94.59 <span class=\"down\">▼ 1.2%</span>",
+    "Gold $4,308 <span class=\"down\">▼ 0.8%</span>",
+    "USD/PKR 277.21 interbank",
+    "SBP 11.5% · KIBOR 6M 11.98%",
+    "Mood: Cautiously constructive · IMF review and Trump-Xi summit in focus",
     "<b>Read today's Morning Brief →</b>"
   ],
   "news_items": [
-    "<b>22 SEP 2026</b>",
-    "📈 KSE-100 grinds 269pts higher to 171,153 in volatile Rs20.1bn session",
-    "🇺🇸 Nasdaq notches record close, S&amp;P +1.49% as AI rally powers Wall Street",
-    "💵 10Y eases to 4.96% even as Fed holds hawkish line after 3.75-4.00% hike",
-    "🛢️ Brent, WTI slump over 3-4% on signs of Hormuz de-escalation; OPEC+ holds October output",
-    "🥇 Gold slips to $4,360, silver near $67 as risk appetite returns",
-    "🇵🇰 IMF mission lands today for 4th EFF review, 3rd RSF review and first Article IV in two years",
-    "🇸🇦 Saudi PIF approves 2026-2030 strategy as Gulf non-oil PMI momentum diverges",
-    "🇨🇳 Trump hosts Xi in Washington Sep 23-25 for trade, Taiwan, AI talks",
+    "<b>23 SEP 2026</b>",
+    "📈 KSE-100 adds 249 points to 171,402 as breadth stays narrow",
+    "🏛️ IMF mission lands for Pakistan's 4th EFF review, Article IV talks",
+    "💰 FBR cuts exporter super tax to 8% from 10%",
+    "🛢️ Brent, WTI slip over 1% on Trump-Iran diplomacy at the UN",
+    "🇺🇸 Nasdaq hits fresh record 27,244; Dow drags on Cisco, JPMorgan",
+    "🏦 Fed's hawkish September hike to 3.75-4.00% keeps yields elevated",
+    "🇸🇦 PIF board approves 2026-2030 strategy under Crown Prince MBS",
+    "🇦🇪 UAE non-oil PMI hits seven-month high of 54.2",
+    "🇨🇳 Xi arrives in Washington ahead of Thursday's summit with Trump",
     "<b>More on contexai.org/insights →</b>"
   ],
-  "linkedin_text": "KSE-100 grinds higher, Wall Street hits a record, and oil slumps on Hormuz signals — your Tuesday, 22 September 2026 Economic Vibes brief.\n\nTHE OVERNIGHT TAPE\nS&P 500 +1.49% to 7,765, Nasdaq +2.26% to a record 27,122, Dow +0.71% to 52,049 — Wall Street's best session since early August on an AI-led rally. The 10-year Treasury eased to 4.96% (2-year 4.74%) even as the Fed's September 16 hike to 3.75%-4.00% — its first since 2023 — keeps markets pricing at least one more increase this year. Brent fell 3.67% to $100.06 and WTI dropped 4.69% to $95.59 on tentative signs of US-Iran de-escalation around the Strait of Hormuz. Gold eased 0.48% to $4,360; silver held near $66.90.\n\nPAKISTAN\nThe KSE-100 added 268.58 points (+0.16%) to close at 171,153.16 in a volatile session — an early 800-point advance faded by the close — on turnover of 692.88 million shares (Rs20.10bn) and narrowly positive breadth (238 advancers vs 213 decliners). LUCK, ATRL, FFC, MARI and EFERT led index contributors. The SBP held its policy rate at 11.5% on September 14 even as August CPI accelerated to 11.1% y/y; the rupee held firm at 277.22 interbank. The IMF mission lands in Islamabad today for the fourth EFF review, third RSF review and a first Article IV consultation in two years, with the Senate reviewing a Sovereign Wealth Fund (Amendment) Bill 2026.\n\nGCC\nOPEC+ has held its October output target unchanged amid Strait of Hormuz disruption, with the next review due October 4. Saudi Arabia's non-oil PMI held at a six-month high of 53.8 in August while the UAE's gauge has cooled toward breakeven. Saudi Arabia's PIF has approved its 2026-2030 strategy, prioritizing tourism, urban development, advanced manufacturing, logistics, clean energy and Neom.\n\nGLOBAL\nChinese President Xi Jinping arrives in Washington September 23-25 for talks on trade, Taiwan and AI with President Trump. Congress's stopgap funding law signed September 2 keeps federal agencies funded through December 11, removing near-term shutdown risk.\n\nLEGISLATIVE TRACKER\nPakistan: Sovereign Wealth Fund (Amendment) Bill 2026 before the Senate Finance Committee — wins for governance/transparency, added oversight costs for SWF-held entities.\nGCC: OPEC+ holds October output steady — wins for Gulf producers and PIF's funding runway, loses for oil-importing economies.\nGlobal: Trump-Xi Washington summit and a hawkish Fed — wins for risk assets into the summit, loses for rate-sensitive sectors.\n\nTHE DAY AHEAD\nKSE-100 support 170,900 (Monday's session low; deeper support at 170,000), pivot 171,153 (Monday's close), resistance 171,730 (Monday's intraday high; then 172,500). Our desk favors selective accumulation near support on IMF-review clarity, with tight stops given the unresolved Hormuz standoff. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis material is for informational purposes only and does not constitute investment advice, an offer, or a solicitation. ContexAi Group does not guarantee the accuracy or completeness of third-party data cited herein.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
-  "whatsapp_caption": "📊 Economic Vibes — Tuesday, 22 September 2026\n\n📈 KSE-100 +0.16% to 171,153 in a volatile session\n🇺🇸 Nasdaq record close, S&P +1.49%\n🛢️ Brent/WTI slump 3-4% on Hormuz signals\n🥇 Gold $4,360 · Silver $66.90\n🇵🇰 IMF mission lands today for 4th EFF review\n\nFull PDF Morning Brief attached 📎\n\nThis material is for informational purposes only and does not constitute investment advice, an offer, or a solicitation. ContexAi Group does not guarantee the accuracy or completeness of third-party data cited herein.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "linkedin_text": "KSE-100 grinds higher on narrow breadth as the IMF lands in Islamabad and Xi lands in Washington — 23 September 2026\n\nTHE OVERNIGHT TAPE\nWall Street closed mixed: the S&P 500 was flat at 7,764.64, the Dow fell 0.36% to 51,864 on drag from Cisco, JPMorgan and American Express, while the Nasdaq notched a fresh record at 27,244 (+0.5%) on continued AI-trade strength. Treasury yields held steady (10Y 4.96%, 2Y 4.74%) as markets digest the Fed's hawkish 16 September hike to 3.75-4.00%. Brent (-1.0% to $99.25) and WTI (-1.2% to $94.59) eased after Trump told the UN Iran would \"make a deal.\" Gold slipped 0.8% to $4,307.63 and silver eased to $65.30 on dollar strength.\n\nPAKISTAN\nThe KSE-100 added 248.92 points (+0.15%) to close at 171,402.08 on narrow breadth (226 advancers, 221 decliners) and lighter turnover of 641.83m shares (Rs18.47bn). Banks, cement, autos and E&P led sector buying. The headline event: an IMF mission landed in Karachi and Islamabad to open the 4th EFF review and a first-in-two-years Article IV consultation, with the Sovereign Wealth Fund (Amendment) Bill and governance benchmarks under scrutiny — up to $1.2bn is riding on a clean outcome. SBP held its policy rate at 11.5% for a fourth straight meeting; August CPI ran near 11.15% y/y, still well above the 5-7% target band; 6-month KIBOR sits at 11.98%. The FBR's September rule change also cut the exporter super tax to 8% from 10%.\n\nGCC\nOPEC+ has completed its unwind of 2023's voluntary output cuts with a further 188,000 bpd September hike and is expected to hold quotas steady into year-end. UAE non-oil PMI climbed to a seven-month high of 54.2. Saudi Arabia's PIF board, chaired by Crown Prince Mohammed bin Salman, approved its 2026-2030 strategy, restructuring into Vision, Strategic and Financial portfolios, with the Gulf Coast Development Company and Tawrid supply-chain platform launched this month as delivery vehicles.\n\nGLOBAL\nXi Jinping arrives in Washington Wednesday — his first US visit since 2015 — ahead of Thursday's summit with President Trump on trade, AI, critical minerals, Iran and Taiwan. Washington is reportedly holding new excess-capacity tariffs until after the meeting, with a roughly $30bn Chinese purchase pledge in play.\n\nLEGISLATIVE TRACKER\nLocal — Pakistan: Sovereign Wealth Fund (Amendment) Bill under IMF review. Wins: governance-compliant SOEs, bondholders. Loses: SOE managements facing tighter disclosure.\nGCC: PIF 2026-2030 strategy. Wins: Vision Portfolio giga-projects, private co-investors. Loses: legacy holdings facing rationalisation.\nGlobal: Trump-Xi summit tariff delay. Wins: Chinese exporters, US agriculture/aircraft. Loses: US steel and metals producers.\n\nTHE DAY AHEAD\nKSE-100 support 170,867 (Tuesday's intraday low; deeper support near 169,500) · pivot 171,402 (Tuesday's close) · resistance 171,681 (Tuesday's intraday high, then 172,500). The desk reads the tape as cautiously constructive: narrow breadth argues for positioning ahead of the IMF review outcome rather than broad conviction. A clean signal from Karachi/Islamabad is the key near-term catalyst; a stumble there, or renewed oil volatility, would quickly pressure the rupee. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nDisclaimer: This brief is for informational purposes only and does not constitute investment advice. All figures are sourced from licensed financial media and are believed accurate at time of publication; ContexAi Group accepts no liability for decisions made on this basis.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "whatsapp_caption": "📊 Economic Vibes — Morning Brief · Wed 23 Sep 2026\n\n🇵🇰 KSE-100 ▲ 0.15% to 171,402 as the IMF mission lands for the 4th EFF review\n🇺🇸 Nasdaq record 27,244 · Dow ▼0.36% · S&P flat\n🛢️ Brent $99.25 / WTI $94.59, both ▼ over 1% on Iran diplomacy\n🥇 Gold $4,308 · Silver $65.30\n🇸🇦 PIF approves 2026-2030 strategy\n🇨🇳 Xi lands in DC ahead of Thursday's Trump summit\n\nFull PDF attached 📎\n\nDisclaimer: For informational purposes only — not investment advice. Figures sourced from licensed financial media.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
   "sources": [
     {
-      "title": "Business Recorder — PSX: KSE-100 ends volatile trading session on a positive note",
-      "url": "https://www.brecorder.com/news/40440469/psx-kse-100-ends-volatile-trading-session-on-a-positive-note"
+      "title": "PSX: Buying continues, KSE-100 settles with nearly 250 points gain - Business Recorder",
+      "url": "https://www.brecorder.com/news/40440638/psx-buying-continues-kse-100-settles-with-nearly-250-points-gain"
     },
     {
-      "title": "Daily Independent — PSX gains 268 points as KSE-100 closes above 171,000",
-      "url": "https://www.dailyindependent.com.pk/2026/09/21/psx-gains-268-points-as-kse-100-closes-above-171000/"
+      "title": "PSX gains over 248 points - APP",
+      "url": "https://www.app.com.pk/business/psx-gains-over-248-points/"
     },
     {
-      "title": "CNBC — Stock market today live updates",
-      "url": "https://www.cnbc.com/2026/09/20/stock-market-today-live-updates.html"
+      "title": "PSX pares early gains on profit-taking - Express Tribune",
+      "url": "https://tribune.com.pk/story/2630757/psx-pares-early-gains-on-profit-taking"
     },
     {
-      "title": "TheStreet — Stock market today Sept 21 2026",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-21-2026"
+      "title": "Stock Market News for Sep 22, 2026 - Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-22-133900165.html"
     },
     {
-      "title": "Trading Economics — US 10-Year Treasury yield",
-      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+      "title": "How major US stock indexes fared Tuesday 9/22/2026 - AP/KRMG",
+      "url": "https://krmg.com/2026/09/22/how-major-us-stock-indexes-fared-tuesday-9-22-2026/"
     },
     {
-      "title": "CNBC — Fed rate decision September 2026",
+      "title": "Treasury yields are little changed as traders await Fed comments - CNBC",
+      "url": "https://www.cnbc.com/2026/09/22/treasury-yield-us-bond-market-trump.html"
+    },
+    {
+      "title": "Fed rate decision September 2026: Rates rise to 3.75%-4% - CNBC",
       "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
     },
     {
-      "title": "Fortune — Current price of gold: September 21, 2026",
-      "url": "https://fortune.com/article/current-price-of-gold-09-21-2026/"
+      "title": "Oil little changed after Trump tells UN that Iran will make a deal - CNBC",
+      "url": "https://www.cnbc.com/2026/09/22/oil-iran-us-bessent-un-crude.html"
     },
     {
-      "title": "Kitco — Silver price chart",
-      "url": "https://www.kitco.com/charts/silver"
+      "title": "OPEC+ agrees September oil hike, completing rollback of voluntary cuts - CNBC",
+      "url": "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html"
     },
     {
-      "title": "EnergyConnects — OPEC+ keeps output policy unchanged for October",
-      "url": "https://www.energyconnects.com/news/oil/2026/september/opecplus-keeps-output-policy-unchanged-for-october"
+      "title": "Daily Precious Metals Market Report, September 22, 2026 - USAGOLD",
+      "url": "https://www.usagold.com/daily-precious-metals-market-report-september-22-2026/"
     },
     {
-      "title": "Trading Economics — Brent crude oil",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      "title": "Gold - Price - Chart - Historical Data - Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/gold"
     },
     {
-      "title": "Business Recorder — Rupee records gain against US dollar",
-      "url": "https://www.brecorder.com/news/40440509/intra-day-update-rupee-records-gain-against-us-dollar"
+      "title": "Rupee records gain against US dollar - Business Recorder",
+      "url": "https://www.brecorder.com/news/40440673"
     },
     {
-      "title": "SBP — KIBOR rates 11 September 2026",
-      "url": "https://www.sbp.org.pk/assets/document/kibor-rates-11-september-2026.pdf"
+      "title": "PKR strengthens marginally against USD - Mettis Global",
+      "url": "https://mettisglobal.news/PKR-strengthens-marginally-against-USD-63634"
     },
     {
-      "title": "Business Recorder — August CPI-based inflation clocks in at 11.1pc YoY",
-      "url": "https://www.brecorder.com/news/40437517/august-cpi-based-inflation-clocks-in-at-111pc-yoy"
+      "title": "Pakistan Holds Key Rate Steady for 4th Straight Meeting - Trading Economics",
+      "url": "https://tradingeconomics.com/pakistan/interest-rate/news/496324"
     },
     {
-      "title": "Shafaqna Pakistan — IMF mission to begin fourth EFF review in Pakistan on Sept 22",
-      "url": "https://pakistan.shafaqna.com/EN/335906"
+      "title": "SBP Holds Policy Rate at 11.5% in September 2026 - Pakera",
+      "url": "https://pakera.pk/sbp-holds-rate-11-5-september-2026/"
     },
     {
-      "title": "Business Recorder — Govt tables sovereign wealth fund bill in Senate",
-      "url": "https://www.brecorder.com/news/40420351/govt-tables-sovereign-wealth-fund-bill-in-senate"
+      "title": "Kibor Rates - Pakistan & Gulf Economist",
+      "url": "https://www.pakistangulfeconomist.com/2026/09/14/kibor-rates-36-37-26"
     },
     {
-      "title": "Arab News — Saudi PMI rises to 6-month high as non-oil growth accelerates",
-      "url": "https://www.arabnews.com/business/saudi-pmi-rises-to-6-month-high-as-non-oil-growth-accelerates-3000302"
+      "title": "Pakistan, IMF talks on economic review likely to begin this week - Daily Independent",
+      "url": "https://www.dailyindependent.com.pk/2026/09/22/pakistan-imf-talks-on-economic-review-likely-to-begin-this-week/"
     },
     {
-      "title": "Semafor — UAE's non-oil economy reaches lowest point in years",
-      "url": "https://www.semafor.com/article/07/06/2026/uaes-non-oil-economy-reaches-lowest-point-in-seven-years"
+      "title": "Pakistan, IMF to Begin 4th Review of $7 Billion EFF in September - ProPakistani",
+      "url": "https://propakistani.pk/2026/08/28/pakistan-imf-to-begin-4th-review-of-7-billion-eff-in-september/"
     },
     {
-      "title": "PIF — Board of Directors approves PIF 2026-2030 strategy",
+      "title": "Big relief for exporters as FBR slashes super tax rate to 8% - Daily Pakistan",
+      "url": "https://en.dailypakistan.com.pk/09-Sep-2026/big-relief-for-exporters-as-fbr-slashes-super-tax-rate-to-8"
+    },
+    {
+      "title": "S&P Global UAE PMI News Release",
+      "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/5fd96601cb0a4b01835ab947b3f92dd3"
+    },
+    {
+      "title": "UAE business activity rises to seven-month high as new orders surge - Gulf News",
+      "url": "https://gulfnews.com/business/economy/uae-business-activity-rises-to-seven-month-high-as-new-orders-surge-1.500295041"
+    },
+    {
+      "title": "Chaired by HRH Crown Prince, PIF Board of Directors approves PIF 2026-2030 strategy",
       "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
     },
     {
-      "title": "The National — Trump set for Washington summit with Xi",
-      "url": "https://www.thenationalnews.com/news/us/2026/09/21/trump-set-for-washington-summit-with-xi-focused-on-trade-taiwan-and-ai/"
+      "title": "PIF board approves 2026-2030 strategy chaired by crown prince - Arab News",
+      "url": "https://www.arabnews.com/node/2640013/business-economy"
     },
     {
-      "title": "Defense One — House passes stopgap spending bill",
-      "url": "https://www.defenseone.com/policy/2026/09/shutdown-threat-lifted-house-passes-stopgap-spending-bill/415757/"
+      "title": "Xi-Trump Summit Agenda: AI, Tariffs, Critical Minerals, Iran War, Taiwan - Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-22/xi-trump-summit-agenda-ai-tariffs-critical-minerals-iran-war-taiwan"
     },
     {
-      "title": "Al Jazeera — US-Iran engaged in tanker war",
-      "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed"
+      "title": "Trump, Xi seek trade stability and deals - CNBC",
+      "url": "https://www.cnbc.com/2026/09/21/trump-xi-china-summit-trade-tariffs.html"
     }
   ],
-  "iso_date": "2026-09-22",
-  "date_long": "Tuesday, 22 September 2026",
-  "last_close_long": "Monday, 21 September 2026",
-  "date_news": "22 SEP 2026",
-  "pdf_filename": "2026-09-22-Economic-Vibes-Morning-Brief.pdf",
-  "brief_html_filename": "2026-09-22-economic-vibes-morning-brief.html",
-  "docx_filename": "2026-09-22-Economic-Vibes-Morning-Brief.docx",
+  "iso_date": "2026-09-23",
+  "date_long": "Wednesday, 23 September 2026",
+  "last_close_long": "Tuesday, 22 September 2026",
+  "date_news": "23 SEP 2026",
+  "pdf_filename": "2026-09-23-Economic-Vibes-Morning-Brief.pdf",
+  "brief_html_filename": "2026-09-23-economic-vibes-morning-brief.html",
+  "docx_filename": "2026-09-23-Economic-Vibes-Morning-Brief.docx",
   "disclaimer": "Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions."
 }

@@ -1,29 +1,29 @@
-KSE-100 grinds higher, Wall Street hits a record, and oil slumps on Hormuz signals — your Tuesday, 22 September 2026 Economic Vibes brief.
+KSE-100 grinds higher on narrow breadth as the IMF lands in Islamabad and Xi lands in Washington — 23 September 2026
 
 THE OVERNIGHT TAPE
-S&P 500 +1.49% to 7,765, Nasdaq +2.26% to a record 27,122, Dow +0.71% to 52,049 — Wall Street's best session since early August on an AI-led rally. The 10-year Treasury eased to 4.96% (2-year 4.74%) even as the Fed's September 16 hike to 3.75%-4.00% — its first since 2023 — keeps markets pricing at least one more increase this year. Brent fell 3.67% to $100.06 and WTI dropped 4.69% to $95.59 on tentative signs of US-Iran de-escalation around the Strait of Hormuz. Gold eased 0.48% to $4,360; silver held near $66.90.
+Wall Street closed mixed: the S&P 500 was flat at 7,764.64, the Dow fell 0.36% to 51,864 on drag from Cisco, JPMorgan and American Express, while the Nasdaq notched a fresh record at 27,244 (+0.5%) on continued AI-trade strength. Treasury yields held steady (10Y 4.96%, 2Y 4.74%) as markets digest the Fed's hawkish 16 September hike to 3.75-4.00%. Brent (-1.0% to $99.25) and WTI (-1.2% to $94.59) eased after Trump told the UN Iran would "make a deal." Gold slipped 0.8% to $4,307.63 and silver eased to $65.30 on dollar strength.
 
 PAKISTAN
-The KSE-100 added 268.58 points (+0.16%) to close at 171,153.16 in a volatile session — an early 800-point advance faded by the close — on turnover of 692.88 million shares (Rs20.10bn) and narrowly positive breadth (238 advancers vs 213 decliners). LUCK, ATRL, FFC, MARI and EFERT led index contributors. The SBP held its policy rate at 11.5% on September 14 even as August CPI accelerated to 11.1% y/y; the rupee held firm at 277.22 interbank. The IMF mission lands in Islamabad today for the fourth EFF review, third RSF review and a first Article IV consultation in two years, with the Senate reviewing a Sovereign Wealth Fund (Amendment) Bill 2026.
+The KSE-100 added 248.92 points (+0.15%) to close at 171,402.08 on narrow breadth (226 advancers, 221 decliners) and lighter turnover of 641.83m shares (Rs18.47bn). Banks, cement, autos and E&P led sector buying. The headline event: an IMF mission landed in Karachi and Islamabad to open the 4th EFF review and a first-in-two-years Article IV consultation, with the Sovereign Wealth Fund (Amendment) Bill and governance benchmarks under scrutiny — up to $1.2bn is riding on a clean outcome. SBP held its policy rate at 11.5% for a fourth straight meeting; August CPI ran near 11.15% y/y, still well above the 5-7% target band; 6-month KIBOR sits at 11.98%. The FBR's September rule change also cut the exporter super tax to 8% from 10%.
 
 GCC
-OPEC+ has held its October output target unchanged amid Strait of Hormuz disruption, with the next review due October 4. Saudi Arabia's non-oil PMI held at a six-month high of 53.8 in August while the UAE's gauge has cooled toward breakeven. Saudi Arabia's PIF has approved its 2026-2030 strategy, prioritizing tourism, urban development, advanced manufacturing, logistics, clean energy and Neom.
+OPEC+ has completed its unwind of 2023's voluntary output cuts with a further 188,000 bpd September hike and is expected to hold quotas steady into year-end. UAE non-oil PMI climbed to a seven-month high of 54.2. Saudi Arabia's PIF board, chaired by Crown Prince Mohammed bin Salman, approved its 2026-2030 strategy, restructuring into Vision, Strategic and Financial portfolios, with the Gulf Coast Development Company and Tawrid supply-chain platform launched this month as delivery vehicles.
 
 GLOBAL
-Chinese President Xi Jinping arrives in Washington September 23-25 for talks on trade, Taiwan and AI with President Trump. Congress's stopgap funding law signed September 2 keeps federal agencies funded through December 11, removing near-term shutdown risk.
+Xi Jinping arrives in Washington Wednesday — his first US visit since 2015 — ahead of Thursday's summit with President Trump on trade, AI, critical minerals, Iran and Taiwan. Washington is reportedly holding new excess-capacity tariffs until after the meeting, with a roughly $30bn Chinese purchase pledge in play.
 
 LEGISLATIVE TRACKER
-Pakistan: Sovereign Wealth Fund (Amendment) Bill 2026 before the Senate Finance Committee — wins for governance/transparency, added oversight costs for SWF-held entities.
-GCC: OPEC+ holds October output steady — wins for Gulf producers and PIF's funding runway, loses for oil-importing economies.
-Global: Trump-Xi Washington summit and a hawkish Fed — wins for risk assets into the summit, loses for rate-sensitive sectors.
+Local — Pakistan: Sovereign Wealth Fund (Amendment) Bill under IMF review. Wins: governance-compliant SOEs, bondholders. Loses: SOE managements facing tighter disclosure.
+GCC: PIF 2026-2030 strategy. Wins: Vision Portfolio giga-projects, private co-investors. Loses: legacy holdings facing rationalisation.
+Global: Trump-Xi summit tariff delay. Wins: Chinese exporters, US agriculture/aircraft. Loses: US steel and metals producers.
 
 THE DAY AHEAD
-KSE-100 support 170,900 (Monday's session low; deeper support at 170,000), pivot 171,153 (Monday's close), resistance 171,730 (Monday's intraday high; then 172,500). Our desk favors selective accumulation near support on IMF-review clarity, with tight stops given the unresolved Hormuz standoff. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 170,867 (Tuesday's intraday low; deeper support near 169,500) · pivot 171,402 (Tuesday's close) · resistance 171,681 (Tuesday's intraday high, then 172,500). The desk reads the tape as cautiously constructive: narrow breadth argues for positioning ahead of the IMF review outcome rather than broad conviction. A clean signal from Karachi/Islamabad is the key near-term catalyst; a stumble there, or renewed oil volatility, would quickly pressure the rupee. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-This material is for informational purposes only and does not constitute investment advice, an offer, or a solicitation. ContexAi Group does not guarantee the accuracy or completeness of third-party data cited herein.
+Disclaimer: This brief is for informational purposes only and does not constitute investment advice. All figures are sourced from licensed financial media and are believed accurate at time of publication; ContexAi Group accepts no liability for decisions made on this basis.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
