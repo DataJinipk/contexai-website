@@ -1,29 +1,29 @@
-KSE-100 grinds higher on narrow breadth as the IMF lands in Islamabad and Xi lands in Washington — 23 September 2026
+KSE-100 extends its winning streak to five sessions — but the real story today is in the bond market.
 
 THE OVERNIGHT TAPE
-Wall Street closed mixed: the S&P 500 was flat at 7,764.64, the Dow fell 0.36% to 51,864 on drag from Cisco, JPMorgan and American Express, while the Nasdaq notched a fresh record at 27,244 (+0.5%) on continued AI-trade strength. Treasury yields held steady (10Y 4.96%, 2Y 4.74%) as markets digest the Fed's hawkish 16 September hike to 3.75-4.00%. Brent (-1.0% to $99.25) and WTI (-1.2% to $94.59) eased after Trump told the UN Iran would "make a deal." Gold slipped 0.8% to $4,307.63 and silver eased to $65.30 on dollar strength.
+Wall Street slid Wednesday as the 10-year Treasury yield rocketed to 5.10%, a 19-year high, on hawkish Fed commentary and a weak five-year auction. S&P 500 -0.76% to 7,706.03, Dow -1.03% to 51,511.59, Nasdaq -0.69% to 26,936.04. Oil snapped a five-day losing streak — Brent +3.9% to $103.08, WTI +1.8% to $92.16 — after Iran's president vowed at the UN that Tehran "will not surrender," dimming hopes of a Hormuz reopening. Gold fell to $4,290 (-1.5%) and silver dropped 3.1% to $65.06 as the dollar firmed.
 
 PAKISTAN
-The KSE-100 added 248.92 points (+0.15%) to close at 171,402.08 on narrow breadth (226 advancers, 221 decliners) and lighter turnover of 641.83m shares (Rs18.47bn). Banks, cement, autos and E&P led sector buying. The headline event: an IMF mission landed in Karachi and Islamabad to open the 4th EFF review and a first-in-two-years Article IV consultation, with the Sovereign Wealth Fund (Amendment) Bill and governance benchmarks under scrutiny — up to $1.2bn is riding on a clean outcome. SBP held its policy rate at 11.5% for a fourth straight meeting; August CPI ran near 11.15% y/y, still well above the 5-7% target band; 6-month KIBOR sits at 11.98%. The FBR's September rule change also cut the exporter super tax to 8% from 10%.
+The KSE-100 rose 830 points (+0.48%) to 172,232.51 — a fifth straight gain and the heaviest volume since 4 September — led by refineries and select banks on easing oil prices and improving US-Iran diplomatic signals. The backdrop is more mixed: August CPI accelerated to 11.15% y/y, the SBP held its policy rate at 11.5%, and the IMF has begun talks on the fourth EFF review, with up to $1.2bn potentially unlocked pending energy-sector and Sovereign Wealth Fund reforms.
 
 GCC
-OPEC+ has completed its unwind of 2023's voluntary output cuts with a further 188,000 bpd September hike and is expected to hold quotas steady into year-end. UAE non-oil PMI climbed to a seven-month high of 54.2. Saudi Arabia's PIF board, chaired by Crown Prince Mohammed bin Salman, approved its 2026-2030 strategy, restructuring into Vision, Strategic and Financial portfolios, with the Gulf Coast Development Company and Tawrid supply-chain platform launched this month as delivery vehicles.
+Saudi Arabia's non-oil PMI held at 56.6 (25th straight month of growth) and the UAE's hit 55.3, its fastest pace since December 2024 — both outrunning a Hormuz-driven disruption that has over 10 mb/d of Gulf oil output still shut in. PIF's board has approved its 2026-2030 strategy, shifting focus toward private-capital mobilisation as Vision 2030 matures.
 
 GLOBAL
-Xi Jinping arrives in Washington Wednesday — his first US visit since 2015 — ahead of Thursday's summit with President Trump on trade, AI, critical minerals, Iran and Taiwan. Washington is reportedly holding new excess-capacity tariffs until after the meeting, with a roughly $30bn Chinese purchase pledge in play.
+The Fed's hawkish tilt (25bp hike to 3.75-4.00% in September, more flagged by Governor Barr) is repricing the yield curve just as Washington widens its tariff agenda — a 100% duty on patented pharmaceuticals and expanded Section 338 tariffs on Canadian goods both take effect 29 September.
 
 LEGISLATIVE TRACKER
-Local — Pakistan: Sovereign Wealth Fund (Amendment) Bill under IMF review. Wins: governance-compliant SOEs, bondholders. Loses: SOE managements facing tighter disclosure.
-GCC: PIF 2026-2030 strategy. Wins: Vision Portfolio giga-projects, private co-investors. Loses: legacy holdings facing rationalisation.
-Global: Trump-Xi summit tariff delay. Wins: Chinese exporters, US agriculture/aircraft. Loses: US steel and metals producers.
+🇵🇰 Sovereign Wealth Fund (Amendment) Bill before the Senate — governance wins, SOE oversight losses.
+🌍 PIF's 2026-2030 strategy — non-oil diversification wins, Hormuz-exposed producers lose.
+🌐 US pharma/Canada tariffs — domestic manufacturers win, import-reliant drugmakers and Canadian exporters lose.
 
 THE DAY AHEAD
-KSE-100 support 170,867 (Tuesday's intraday low; deeper support near 169,500) · pivot 171,402 (Tuesday's close) · resistance 171,681 (Tuesday's intraday high, then 172,500). The desk reads the tape as cautiously constructive: narrow breadth argues for positioning ahead of the IMF review outcome rather than broad conviction. A clean signal from Karachi/Islamabad is the key near-term catalyst; a stumble there, or renewed oil volatility, would quickly pressure the rupee. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 171,850 / pivot 172,232 / resistance 172,760, then 173,500. The desk stays constructively biased locally while watching Hormuz headlines and the US yield curve as the dominant global risk. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-Disclaimer: This brief is for informational purposes only and does not constitute investment advice. All figures are sourced from licensed financial media and are believed accurate at time of publication; ContexAi Group accepts no liability for decisions made on this basis.
+This material is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
