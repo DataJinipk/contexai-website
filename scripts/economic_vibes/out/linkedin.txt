@@ -1,29 +1,29 @@
-KSE-100 extends its winning streak to five sessions — but the real story today is in the bond market.
+KSE-100 snaps its rally — down 1,733 points (−1.01%) to 170,498.94 — as global yields hit a 19-year high and oil holds above $106 on the still-shut Strait of Hormuz.
 
 THE OVERNIGHT TAPE
-Wall Street slid Wednesday as the 10-year Treasury yield rocketed to 5.10%, a 19-year high, on hawkish Fed commentary and a weak five-year auction. S&P 500 -0.76% to 7,706.03, Dow -1.03% to 51,511.59, Nasdaq -0.69% to 26,936.04. Oil snapped a five-day losing streak — Brent +3.9% to $103.08, WTI +1.8% to $92.16 — after Iran's president vowed at the UN that Tehran "will not surrender," dimming hopes of a Hormuz reopening. Gold fell to $4,290 (-1.5%) and silver dropped 3.1% to $65.06 as the dollar firmed.
+US equities were mixed-to-lower Thursday: S&amp;P 500 ▼0.06% to 7,704.23, Dow ▼0.31% to 51,349.89, Nasdaq ▼1.1% to 26,936.04. The 10-year Treasury yield climbed to roughly 5.11-5.12%, its highest since 2007, while the 2-year rose to 4.94%, as Fed Governor Barr and President Williams flagged further tightening under Chair Kevin Warsh. October rate-hike odds jumped to 70-77% on CME FedWatch.
 
 PAKISTAN
-The KSE-100 rose 830 points (+0.48%) to 172,232.51 — a fifth straight gain and the heaviest volume since 4 September — led by refineries and select banks on easing oil prices and improving US-Iran diplomatic signals. The backdrop is more mixed: August CPI accelerated to 11.15% y/y, the SBP held its policy rate at 11.5%, and the IMF has begun talks on the fourth EFF review, with up to $1.2bn potentially unlocked pending energy-sector and Sovereign Wealth Fund reforms.
+The KSE-100 fell 1,733.57 points (−1.01%) to 170,498.94, ending a three-session rally, on broad-based selling (358 decliners vs 101 advancers) across autos, cement, banks, E&amp;P and OMCs. Volume eased to 759.97m shares but value rose to Rs27.54bn. The pullback came as an IMF mission opened talks on the next EFF/RSF review and PM Shehbaz Sharif met MD Kristalina Georgieva at UNGA. August CPI held at 11.15% y/y (still above the SBP's 5-7% band); the SBP kept its policy rate at 11.5% on 14 September; 6-month KIBOR sits at 11.72/11.97%. The Senate Standing Committee on Finance and Revenue deferred the Sovereign Wealth Fund (Amendment) Bill, 2026, seeking a clause-by-clause justification.
 
 GCC
-Saudi Arabia's non-oil PMI held at 56.6 (25th straight month of growth) and the UAE's hit 55.3, its fastest pace since December 2024 — both outrunning a Hormuz-driven disruption that has over 10 mb/d of Gulf oil output still shut in. PIF's board has approved its 2026-2030 strategy, shifting focus toward private-capital mobilisation as Vision 2030 matures.
+Saudi Arabia's PMI rose to a six-month high of 53.8 in August (from 53.1); the UAE's non-oil PMI jumped to 55.3 (from 52.7), its fastest pace since December 2024 — both resilient despite the Strait of Hormuz remaining effectively closed to routine shipping (IMF PortWatch: 1 transit on 20 September vs an 85/day baseline). PIF continued rolling out its 2026-2030 strategy, with CEER's flagship vehicle launch on 21 September. OPEC+'s JMMC meets 4 October to review production policy.
 
 GLOBAL
-The Fed's hawkish tilt (25bp hike to 3.75-4.00% in September, more flagged by Governor Barr) is repricing the yield curve just as Washington widens its tariff agenda — a 100% duty on patented pharmaceuticals and expanded Section 338 tariffs on Canadian goods both take effect 29 September.
+Brent rose 3.2% to $106.39 and WTI gained 2.8% to $94.76, up roughly 22% over the past month, on the ongoing Hormuz disruption. Gold eased 0.3% to $4,273 and silver fell 1.7% to $63.36 as a firmer dollar and hawkish Fed repricing pressured metals. Washington's tariff agenda widens 29 September: 100% Section 232 duties on patented pharmaceuticals extend to all remaining importers, alongside expanded Section 338 tariffs on Canadian goods.
 
 LEGISLATIVE TRACKER
-🇵🇰 Sovereign Wealth Fund (Amendment) Bill before the Senate — governance wins, SOE oversight losses.
-🌍 PIF's 2026-2030 strategy — non-oil diversification wins, Hormuz-exposed producers lose.
-🌐 US pharma/Canada tariffs — domestic manufacturers win, import-reliant drugmakers and Canadian exporters lose.
+Pakistan: Sovereign Wealth Fund (Amendment) Bill deferred in Senate committee — wins: institutional investors, IMF compliance; loses: SOE management facing tighter oversight.
+GCC: OPEC+ JMMC meets 4 October amid Hormuz shut-ins — wins: non-oil diversification plays; loses: export-constrained Gulf energy exporters.
+Global: Section 232/338 tariffs widen from 29 September — wins: onshoring pharma manufacturers, generics; loses: mid-size branded importers, Canadian exporters.
 
 THE DAY AHEAD
-KSE-100 support 171,850 / pivot 172,232 / resistance 172,760, then 173,500. The desk stays constructively biased locally while watching Hormuz headlines and the US yield curve as the dominant global risk. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 169,500 (deeper support 168,700), pivot 170,499 (Thursday's close), resistance 171,700 (then Thursday's intraday high of 172,491). The desk reads Thursday's move as profit-taking after a three-session rally rather than a reversal, though a 19-year-high 10-year yield, surging October hike odds and Brent above $106 argue for a cautious open. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-This material is for informational purposes only and does not constitute investment advice. ContexAi Group accepts no liability for decisions made based on this content.
+This material is for informational purposes only and does not constitute investment advice. ContexAi Group does not guarantee the accuracy of third-party data cited herein.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
