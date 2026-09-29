@@ -1,29 +1,33 @@
-KSE-100 notches a third straight gain to 170,765.22 as Wall Street closes out a strong week, even as the 10-year Treasury yield hits a 19-year high and oil snaps back above $105 after Trump rejects Iran's Hormuz offer.
+KSE-100 slips as Hormuz tension flares and the Fed stays hawkish — Economic Vibes, 29 September 2026
+
+Monday's tape was a reminder that the biggest swing factor for Pakistani markets right now isn't local — it's oil and US rates.
 
 THE OVERNIGHT TAPE
-US equities finished Friday higher across the board: S&amp;P 500 +0.51% to 7,743.41, Dow +0.93% to 51,828.62, Nasdaq +0.5% to 27,068.72, all three posting weekly gains on fresh tech optimism. The 10-year Treasury yield closed at 5.17%, its highest since 2007, with the 2-year at 4.81%, as markets price roughly 70% odds of an October Fed hike under Chair Kevin Warsh.
+The KSE-100 opened the week up as much as 273 points before fading to close at 170,425.62, down 339.60 points (−0.20%), as selling in autos, cement, banks, fertiliser, E&P and OMCs offset the early rally. Breadth turned negative (267 decliners vs 181 advancers) on volume of 421.01m shares and Rs17.74bn traded value.
+
+Wall Street opened lower too: S&P 500 −0.77% to 7,683.69, Dow −0.70% to 51,481.51, Nasdaq −0.92% to 26,820.38, as the 10-year Treasury yield hit a fresh 19-year high near 5.21% and the 2-year touched 4.94%. Gold and silver each fell over 3% — even havens aren't immune to a rate shock.
 
 PAKISTAN
-The KSE-100 added 266.28 points (+0.16%) to 170,765.22, a third consecutive positive session, on narrowing breadth (57 up, 41 down) as banks, OMCs and cement led (HBL, UBL, BAFL, BAHL, PSO) against declines in tech, power and pharma names (MEBL, FFC, HUBC). Volume eased to 212.46m shares on Rs19.28bn traded value; PSO confirmed a Rs10/share dividend alongside lower earnings. The IMF's fourth EFF / third RSF review mission, led by Iva Petrova, is in Islamabad through early October examining fiscal performance and the Sovereign Wealth Fund (Amendment) Bill still before the Senate Standing Committee on Finance and Revenue; wheat and sugar market intervention was flagged as a policy slippage. August CPI held at 11.15% y/y; the SBP kept its policy rate at 11.5% on 14 September; 6-month KIBOR sits at 11.72/11.97%.
+SBP held its policy rate at 11.5% for a third straight meeting even as CPI inflation returned to double digits at 11.1% YoY in August. The IMF has begun its fourth EFF review and third RSF review, with roughly $1.1bn riding on the Sovereign Wealth Fund (Amendment) Bill now before the Senate.
 
 GCC
-Saudi Arabia's PMI held at a six-month high of 53.8 in August; the UAE's non-oil PMI hit 55.3, its fastest pace since December 2024 — both resilient even as Trump rejected Iran's latest proposal to reopen the Strait of Hormuz within seven days, sending Brent back above $105 on Monday. The region is also absorbing the fallout from Houthi strikes on Saudi energy infrastructure earlier this month. OPEC+'s JMMC meets 4 October to review production policy, while PIF continues executing its 2026-2030 strategy across tourism, NEOM and advanced manufacturing.
+OPEC+'s core members held October output at September levels after unwinding the 1.65mn bpd voluntary cut tranche. Non-oil PMIs stayed strong into August (Saudi 53.8, UAE 55.3), and PIF kept deploying Vision 2030 capital — Tawrid supply-chain financing, CEER's flagship vehicles, and the Gulf Coast Development Company in Al-Khafji.
 
 GLOBAL
-Brent settled Friday at $104.32 and WTI at $92.41, both down on brief US-Iran truce hopes, before reversing Monday to roughly $105.8/$94.1 (EST.) on Trump's rejection of Iran's Hormuz offer. Gold edged up 0.12% to $4,280.19 and silver gained 0.33% to $64.04. Washington's tariff agenda widens 29 September: the 100% Section 232 duty on patented pharmaceuticals and APIs extends to all remaining importers, having applied to large Annex III firms since 31 July; generics and biosimilars stay exempt pending a mandated one-year review.
+A stopgap bill signed 2 September funds the US government through 11 December, averting an October 1 shutdown — but the real story is oil: Brent's jump toward $105 after Trump rejected Iran's Hormuz proposal revived inflation fears just as the Fed, under Chair Kevin Warsh, leans toward another hike on 28 October.
 
 LEGISLATIVE TRACKER
-Pakistan: Sovereign Wealth Fund (Amendment) Bill remains in Senate committee under IMF scrutiny — wins: institutional investors, IMF compliance; loses: SOE management facing tighter oversight.
-GCC: OPEC+ JMMC meets 4 October amid renewed Hormuz tension — wins: non-oil diversification plays; loses: export-constrained Gulf energy exporters.
-Global: Section 232 pharma tariff widens from 29 September — wins: onshoring pharma majors, generics; loses: mid-size branded importers newly exposed.
+🇵🇰 Pakistan: SWF Amendment Bill — wins: governance/IMF credibility; loses: discretionary control over SOE assets.
+🌍 GCC: 15% Pillar Two top-up tax — wins: GCC treasuries; loses: in-scope multinationals.
+🇺🇸 Global: US funding stopgap to 11 Dec — wins: federal contractors; loses: duration-sensitive equities facing another Fed hike.
 
 THE DAY AHEAD
-KSE-100 support 169,900 (deeper support 168,700), pivot 170,765 (Friday's close), resistance 171,160 (then Thursday's 172,491 high). The desk reads Friday's move as a continuation of the three-session recovery rather than a breakout, with Monday's oil reversal, a 19-year-high 10-year yield and roughly 70% October hike odds arguing for a cautious, rate- and energy-sensitive session. All levels are indicative desk estimates, not recommendations.
+KSE-100 support at 169,500 (deeper at 168,000), pivot at 170,425, resistance at 171,150. The desk reads Monday's dip as risk-off driven by oil and rates, not a local growth story — but a hawkish Fed and a Hormuz-driven oil spike are the levels to watch. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-This material is for informational purposes only and does not constitute investment advice. ContexAi Group does not guarantee the accuracy of third-party data cited herein.
+This material is for informational purposes only and does not constitute investment advice, a recommendation, or an offer to buy or sell any security. ContexAi Group accepts no liability for reliance on this content; verify all figures independently.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
