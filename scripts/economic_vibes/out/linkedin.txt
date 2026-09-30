@@ -1,33 +1,31 @@
-KSE-100 slips as Hormuz tension flares and the Fed stays hawkish — Economic Vibes, 29 September 2026
+KSE-100 sheds 825 points as the Hormuz risk premium widens — and the IMF just heard about it directly.
 
-Monday's tape was a reminder that the biggest swing factor for Pakistani markets right now isn't local — it's oil and US rates.
+Economic Vibes · Wednesday, 30 September 2026
 
 THE OVERNIGHT TAPE
-The KSE-100 opened the week up as much as 273 points before fading to close at 170,425.62, down 339.60 points (−0.20%), as selling in autos, cement, banks, fertiliser, E&P and OMCs offset the early rally. Breadth turned negative (267 decliners vs 181 advancers) on volume of 421.01m shares and Rs17.74bn traded value.
-
-Wall Street opened lower too: S&P 500 −0.77% to 7,683.69, Dow −0.70% to 51,481.51, Nasdaq −0.92% to 26,820.38, as the 10-year Treasury yield hit a fresh 19-year high near 5.21% and the 2-year touched 4.94%. Gold and silver each fell over 3% — even havens aren't immune to a rate shock.
+Wall Street drifted lower as the bond selloff extended: S&P 500 -0.17% to 7,671, Dow -0.25% to 51,350, Nasdaq -0.09% to 26,797. The 10-year Treasury yield climbed to 5.28% and the 30-year touched its highest level since 2002 at 5.61%. Losses were cushioned after NY Fed President John Williams floated a December pause, though futures still price 68% odds of an October hike and 95% for December. Gold (+1.42% to $4,172.40) and silver (+1.23% to $61.27) rebounded from Monday's selloff.
 
 PAKISTAN
-SBP held its policy rate at 11.5% for a third straight meeting even as CPI inflation returned to double digits at 11.1% YoY in August. The IMF has begun its fourth EFF review and third RSF review, with roughly $1.1bn riding on the Sovereign Wealth Fund (Amendment) Bill now before the Senate.
+The KSE-100 fell 0.48% (-825.22 pts) to 169,600.40 as reports that Washington rejected an Iranian ceasefire proposal on the Strait of Hormuz drove broad-based selling across autos, cement, banks, fertiliser, E&P and OMCs. Breadth was deeply negative: 305 decliners vs 154 advancers. The government briefed the IMF that Gulf-conflict disruptions have already caused revenue losses and slowed economic activity. SBP holds its policy rate at 11.5% for a third straight meeting; CPI stayed in double digits at 11.15% YoY in August. Today is also the FBR's final tax return deadline for salaried individuals — no extension granted, penalties jumping to Rs25,000.
 
 GCC
-OPEC+'s core members held October output at September levels after unwinding the 1.65mn bpd voluntary cut tranche. Non-oil PMIs stayed strong into August (Saudi 53.8, UAE 55.3), and PIF kept deploying Vision 2030 capital — Tawrid supply-chain financing, CEER's flagship vehicles, and the Gulf Coast Development Company in Al-Khafji.
+Brent held near $105.31 on the Hormuz premium while WTI eased 3.48% to $89.38 on SPR tapping. OPEC+'s seven core producers held October output at September levels, with Saudi near 9.89mn bpd and the next meeting set for 4 October. Saudi Arabia's non-oil PMI cooled to 56.6 from 57.7 — still a 25th straight month of growth, but decelerating.
 
 GLOBAL
-A stopgap bill signed 2 September funds the US government through 11 December, averting an October 1 shutdown — but the real story is oil: Brent's jump toward $105 after Trump rejected Iran's Hormuz proposal revived inflation fears just as the Fed, under Chair Kevin Warsh, leans toward another hike on 28 October.
+New Section 338 tariff revisions and Canadian import restrictions took effect 29 September. Congress's August stopgap funding bill keeps federal agencies funded through 11 December, averting a shutdown at today's fiscal year-end — but the fiscal cliff is deferred, not resolved.
 
 LEGISLATIVE TRACKER
-🇵🇰 Pakistan: SWF Amendment Bill — wins: governance/IMF credibility; loses: discretionary control over SOE assets.
-🌍 GCC: 15% Pillar Two top-up tax — wins: GCC treasuries; loses: in-scope multinationals.
-🇺🇸 Global: US funding stopgap to 11 Dec — wins: federal contractors; loses: duration-sensitive equities facing another Fed hike.
+• Pakistan: FBR tax deadline today — wins: compliant filers, revenue documentation. Loses: IRIS-delayed and late filers facing a 25x penalty jump.
+• GCC: OPEC+ output hold — wins: Gulf oil exporters on a firmer Brent floor. Loses: oil-importing economies including Pakistan.
+• Global: US funding bill through 11 Dec — wins: federal contractors. Loses: Canadian exporters, duration-sensitive equities.
 
 THE DAY AHEAD
-KSE-100 support at 169,500 (deeper at 168,000), pivot at 170,425, resistance at 171,150. The desk reads Monday's dip as risk-off driven by oil and rates, not a local growth story — but a hawkish Fed and a Hormuz-driven oil spike are the levels to watch. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 169,000 (deeper at 168,200) · pivot 169,600 (Tuesday's close) · resistance 170,900 (Tuesday's open), then 171,700. The desk reads this as an external, oil-and-rates-driven risk-off move rather than a local growth story. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
 
-This material is for informational purposes only and does not constitute investment advice, a recommendation, or an offer to buy or sell any security. ContexAi Group accepts no liability for reliance on this content; verify all figures independently.
+Disclaimer: This brief is for general informational purposes only and does not constitute investment advice, a recommendation, or an offer or solicitation to buy or sell any security. ContexAi Group does not guarantee the accuracy or completeness of third-party data cited herein. Read the full disclaimer at contexai.org/disclaimer.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
