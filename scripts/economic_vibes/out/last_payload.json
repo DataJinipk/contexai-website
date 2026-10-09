@@ -1,229 +1,227 @@
 {
-  "headline": "KSE-100 grinds to a third straight gain near 168,580 as Wall Street retreats from records and gold slumps to a two-month low on hawkish Fed minutes",
-  "mood": "Grinding higher locally · yields and a firmer dollar the global swing factor",
-  "mood_class": "up",
+  "headline": "KSE-100 sheds 1,138 points on profit-taking as Hormuz tanker attacks spike oil and rattle Wall Street, even as Pakistan locks in a $1.2bn IMF staff-level deal",
+  "mood": "Risk-off tape · Hormuz oil spike and a hawkish Fed collide with local profit-taking",
+  "mood_class": "dn",
   "snapshot": [
     {
       "label": "KSE-100",
       "tag": "V",
-      "value": "168,580.40",
-      "delta": "▲ 0.07% Wed · +120.30 pts",
-      "delta_class": "pos"
+      "value": "167,441.90",
+      "delta": "▼ 0.68% Thu · −1,138.50 pts",
+      "delta_class": "neg"
     },
     {
       "label": "S&amp;P 500",
       "tag": "V",
-      "value": "▼ 0.22%",
-      "delta": "Nasdaq −0.22% · Dow −0.66%",
+      "value": "▼ 0.47%",
+      "delta": "Nasdaq −1.25% · Dow +0.10%",
       "delta_class": "neg"
     },
     {
       "label": "US 10Y / 2Y",
       "tag": "V",
-      "value": "5.32 / 4.80",
-      "delta": "yields climb · 51bp spread",
+      "value": "5.23 / 4.77",
+      "delta": "hawkish hold · ~46bp spread",
       "delta_class": "neg"
     },
     {
       "label": "Brent / WTI",
       "tag": "V",
-      "value": "$100.87 / $90.09",
-      "delta": "both firm · OPEC+ Nov hold",
+      "value": "$104.28 / $91.49",
+      "delta": "+4.0% / +3.6% · Hormuz tanker attacks",
       "delta_class": "pos"
     },
     {
       "label": "Gold",
       "tag": "V",
-      "value": "$4,110",
-      "delta": "−1.3% · 2-mo low · silver $60.68",
-      "delta_class": "neg"
+      "value": "$4,128",
+      "delta": "+0.45% · silver $59.05 (−1.0%)",
+      "delta_class": "pos"
     },
     {
       "label": "USD/PKR",
       "tag": "V",
-      "value": "277.02",
-      "delta": "interbank · rupee firms marginally",
+      "value": "277.01",
+      "delta": "interbank · +Re0.01, broadly steady",
       "delta_class": ""
     }
   ],
   "five_things": [
     {
-      "chip": "KSE-100 Grinds to a Third Straight Gain",
-      "html": "The <b>KSE-100</b> edged up <b>120.30 points (+0.07%) to close at 168,580.40</b> on Wednesday, a narrow, choppy session that swung between an intraday high of 169,271.98 and a low of 168,065.86. Overall market volume rose to roughly 586.86 million shares worth Rs22.37 billion across 304,709 trades in 501 companies, with advancers outnumbering decliners 272 to 184 (114 unchanged) across 570 names. United Bank (+97.41 index points), Systems Limited (+65.08), Pakistan State Oil (+48.44), PTCL (+45.78) and K-Electric (+43.98) led the index higher, while Mari Energies (−64.25), Meezan Bank (−35.05), Lucky Cement (−32.67), Hub Power (−28.92) and OGDC (−26.03) capped the gains. <a href=\"https://www.brecorder.com/news/40443072/psx-kse-100-gains-120-points-after-volatile-trading\">Business Recorder</a> and <a href=\"https://pakera.pk/kse-100-7-october-2026-close/\">Pakera</a> confirm the levels.",
-      "sentiment": "narrow, choppy third straight advance",
-      "sentiment_class": "pos"
-    },
-    {
-      "chip": "Wall Street Retreats From Records on Yields, Fed Minutes",
-      "html": "US equities pulled back Wednesday after Tuesday's records: the <b>S&amp;P 500 fell 0.22% to 7,801.77</b>, the <b>Dow lost 0.66% (−341.41 pts) to 51,179.87</b>, and the <b>Nasdaq slipped 0.22% to 27,538.69</b> as long-dated Treasury yields climbed back up (10-year near 5.32%, 2-year near 4.80%) and the dollar firmed. Minutes from the Fed's 15–16 September meeting — where the FOMC delivered its first hike since 2023 to 3.75–4.00% — were released at 2:00pm ET and kept a further 2026 move on the table, even as prediction markets price roughly 83–84% odds the Fed holds at the 28 October meeting following a soft September payrolls print (+29,000 vs. +80,000 expected). <a href=\"https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html\">Yahoo Finance</a> and <a href=\"https://money.usnews.com/investing/news/articles/2026-10-07/fed-minutes-could-detail-rate-hike-decision-policy-path\">U.S. News</a> confirm the levels.",
-      "sentiment": "records give way to a yields-driven pullback",
+      "chip": "KSE-100 Retreats From Record Highs on Profit-Taking",
+      "html": "The <b>KSE-100</b> shed <b>1,138.50 points (−0.68%) to close at 167,441.90</b> on Thursday, reversing from an intraday high of 169,486.60 as banking and fertiliser heavyweights led late selling. Traded volume fell to roughly 152.07 million shares worth Rs17.72 billion (from 244.16 million shares/Rs22.37 billion on Wednesday), with decliners thumping advancers 81 to 18 (1 unchanged) among index constituents. <b>United Bank (−152.76 index points)</b>, <b>Fauji Fertilizer (−85.51)</b>, <b>Systems Limited (−54.28)</b>, <b>Engro Fertilizers (−54.06)</b> and <b>Pakistan Oilfields (−47.84)</b> capped the index, while <b>Pakistan State Oil (+32.84)</b>, Lotte Chemical (+13.54) and Abbott Laboratories (+7.18) were the lone bright spots as refiners rode the crude spike. <a href=\"https://www.brecorder.com/news/40443237/psx-kse-100-sheds-over-1100-points-on-selling-pressure\">Business Recorder</a> and <a href=\"https://pakera.pk/kse-100-8-october-2026-close/\">Pakera</a> confirm the levels.",
+      "sentiment": "sharp pullback despite an IMF relief headline",
       "sentiment_class": "neg"
     },
     {
-      "chip": "Oil Firms as OPEC+ Holds November Output, PIF Unveils 2026–2030 Strategy",
-      "html": "Crude firmed Wednesday — <b>Brent at $100.87 (+0.29%)</b> and <b>WTI at $90.09</b> — after OPEC+'s seven core producers (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria and Oman) agreed on 4 October to hold <b>November output targets unchanged</b>, extending the pause as Hormuz- and Red Sea-linked disruptions keep actual flows below quota. Separately, Saudi Arabia's <b>PIF</b>, chaired by Crown Prince Mohammed bin Salman, approved its <b>2026–2030 strategy</b>, pivoting from rapid expansion toward value creation across tourism, NEOM, advanced manufacturing and clean energy as the kingdom's non-oil growth engine under Vision 2030. <a href=\"https://www.cnbc.com/2026/10/04/opec-agrees-to-keep-november-oil-output-targets-steady.html\">CNBC</a> and <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF</a> confirm the details.",
-      "sentiment": "supply discipline and Gulf diversification support the tape",
+      "chip": "Pakistan, IMF Reach Staff-Level Deal, Unlocking $1.2bn",
+      "html": "The <b>IMF</b> and Islamabad reached a <b>staff-level agreement</b> on 7 October completing the 2026 Article IV consultation alongside the <b>fourth EFF review and third RSF review</b>, clearing the way for roughly <b>$1.2 billion</b> (about $1.0bn/SDR 760mn under the EFF and $210mn/SDR 154mn under the RSF) once the Executive Board signs off. The Fund's mission, led by Iva Petrova, held talks in Karachi and Islamabad from 23 September to 7 October, and continues to press for <b>exchange-rate flexibility</b> as a shock absorber even as the rupee held broadly steady at 277.01 interbank. <a href=\"https://propakistani.pk/2026/10/08/imf-reaches-staff-level-agreement-with-pakistan-on-4th-eff-review-unlocking-1-2-billion-loan/\">ProPakistani</a> and the <a href=\"https://www.imf.org/en/news/articles/2026/10/07/pr26326-pakistan-imf-complete-2026-aiv-consultation-reaches-sla-on-4th-review-eff-3rd-review-for-rsf\">IMF</a> confirm the terms.",
+      "sentiment": "policy win, tranche release still pending board approval",
       "sentiment_class": "pos"
     },
     {
-      "chip": "Gold Slumps to Two-Month Low as Fed Minutes, Firm Dollar Bite",
-      "html": "Bullion sold off Wednesday as the Fed minutes kept a December hike risk alive alongside elevated long-end yields and a stronger dollar: <b>spot gold fell roughly 1.3% to near $4,110</b>, its lowest in about two months, while <b>spot silver dropped about 1.1% to $60.68</b>. <a href=\"http://www.kitco.com/news/article/2026-10-07/gold-silver-slump-fed-minutes-keep-december-hike-risk-alive-kitco-pm-report\">Kitco</a> and <a href=\"https://www.tmgm.com/en/analysis/market-news/article/gold-falls-to-two-month-low-near-4-100-on-stronger-us-dollar-202610072325\">TMGM</a> confirm the levels.",
-      "sentiment": "yields and the dollar pressure non-yielding metals",
+      "chip": "Crude Spikes on Hormuz Tanker Attacks, Hits US Tech",
+      "html": "<b>Brent rose 4.0% to settle at $104.28</b> and <b>WTI gained 3.6% to $91.49</b> on Thursday after Iran escalated attacks on tankers transiting the <b>Strait of Hormuz</b>, with a Gulf of Mexico storm threat adding a secondary squeeze; prices eased off session highs after President Trump said Washington would not strike Iran before the November midterms. The inflation scare helped drag the <b>Nasdaq down 1.25% to 27,193.34</b> and the <b>S&amp;P 500 down 0.47% to 7,765.36</b>, while the <b>Dow eked out a 0.10% gain to 51,231.64</b> as energy names offset tech weakness; a Financial Times report trimming OpenAI's revenue estimate added separate pressure on semiconductors. <a href=\"https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html\">CNBC</a> and <a href=\"https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html\">Yahoo Finance</a> confirm the levels.",
+      "sentiment": "geopolitical supply risk revives inflation jitters",
       "sentiment_class": "neg"
     },
     {
-      "chip": "SBP Holds at 11.5% as IMF Pushes Market-Based Rupee",
-      "html": "Pakistan's <b>SBP</b> told the IMF its <b>11.5% policy rate</b> remains appropriate, as <b>September CPI eased to 10.3% y/y</b> (from 11.1% in August) — still above the 5–7% target band — while three-month <b>KIBOR</b> sat near 11.97% and six-month near 12.39% as of 5 October. The <b>IMF</b> mission has shared a first draft of the Memorandum of Economic and Financial Policies toward a staff-level agreement, but Islamabad and the Fund remain split on exchange-rate policy — the government favouring rupee stability versus the IMF's push for a fully market-based rate — even as the <b>rupee</b> firmed marginally to 277.02 interbank and the current account deficit narrowed 36% y/y to $543 million in July–August FY27. <a href=\"https://propakistani.pk/2026/10/01/imf-wants-market-based-rupee-higher-sbp-rate/\">ProPakistani</a> and <a href=\"https://tradingeconomics.com/pakistan/inflation-cpi\">Trading Economics</a> confirm the details.",
-      "sentiment": "policy continuity, exchange-rate dispute the key swing factor",
-      "sentiment_class": ""
+      "chip": "Fed Keeps Hike Door Open as Waller Flags More Tightening",
+      "html": "Fed Governor Christopher Waller said <b>additional rate hikes will probably be necessary</b>, though the timing remains flexible, keeping alive the hawkish path set by September's first hike since 2023 to 3.75–4.00%. Futures markets price roughly <b>81–83% odds of a hold</b> at the 28 October FOMC meeting but still assign <b>better-than-75% odds of a hike</b> at the 9 December meeting, consistent with 16 of 18 FOMC members' dot-plot projections for at least one more 2026 move; the <b>10-year Treasury yield sat near 5.23%</b> and the <b>2-year near 4.77%</b>. <a href=\"https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html\">CNBC</a> and <a href=\"https://www.schwab.com/learn/story/fomc-meeting\">Schwab</a> confirm the stance.",
+      "sentiment": "higher-for-longer narrative intact, oil the new catalyst",
+      "sentiment_class": "neg"
+    },
+    {
+      "chip": "Gulf Non-Oil Engines Accelerate as PIF Unveils 2026–30 Plan",
+      "html": "Gulf diversification kept outrunning the headlines: the <b>S&amp;P Global UAE PMI held at 55.3</b> in September on the fastest output growth since February, while <b>Saudi Arabia's non-oil PMI jumped to 55.3 from 53.8</b> in August, a seven-month high, even as business expectations softened on regional-tension risk. Separately, Saudi Arabia's <b>PIF</b> approved its <b>2026–2030 strategy</b>, directing roughly <b>80% of capital into domestic investments</b> (scaled back from a 30% foreign-allocation peak to 20%) across three portfolios anchored by tourism, NEOM and advanced manufacturing. <a href=\"https://www.agbi.com/economy/2026/10/uae-private-sector-moves-past-mid-year-slowdown/\">AGBI</a> and <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF</a> confirm the details.",
+      "sentiment": "diversification momentum offsets oil-driven jitters",
+      "sentiment_class": "pos"
     }
   ],
   "matrix": {
-    "local_html": "Pakistan's tape ground out a third straight gain: the <b>KSE-100</b> added 120.30 points (+0.07%) Wednesday to close at <b>168,580.40</b>, a choppy session bounded by an intraday high of 169,271.98 and a low of 168,065.86. Overall volume rose to roughly 586.86 million shares worth Rs22.37 billion, with advancers beating decliners 272 to 184 across 570 names; UBL, Systems Limited, PSO, PTCL and K-Electric led, while Mari Energies, Meezan Bank, Lucky Cement, Hub Power and OGDC lagged. The <b>SBP</b> told the IMF its 11.5% policy rate remains appropriate as September CPI eased to 10.3% y/y, but Islamabad and the Fund remain split on exchange-rate policy as the <b>IMF</b> mission works toward a staff-level agreement on the fourth review — the key swing factor for the rupee, which firmed marginally to 277.02 interbank. <a href=\"https://www.brecorder.com/news/40443072/psx-kse-100-gains-120-points-after-volatile-trading\">Business Recorder</a> and <a href=\"https://propakistani.pk/2026/10/01/imf-wants-market-based-rupee-higher-sbp-rate/\">ProPakistani</a>.",
-    "gcc_html": "Gulf fundamentals stayed firm as oil prices edged higher: <b>Brent settled at $100.87 (+0.29%)</b> and <b>WTI at $90.09</b> after OPEC+'s seven core producers held <b>November output targets unchanged</b> at their 4 October meeting, extending the pause that began in October as Hormuz- and Red Sea-linked disruptions keep real flows below quota. Saudi Arabia's <b>PIF</b>, chaired by Crown Prince Mohammed bin Salman, approved its <b>2026–2030 strategy</b>, shifting from rapid asset growth toward sustained value creation across tourism, NEOM, advanced manufacturing, logistics and clean energy — continuing to lean on non-oil diversification under <b>Vision 2030</b> even as the security backdrop around regional shipping lanes stays fragile. <a href=\"https://www.cnbc.com/2026/10/04/opec-agrees-to-keep-november-oil-output-targets-steady.html\">CNBC</a> and <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF</a>.",
-    "global_html": "Wall Street gave back Tuesday's records on Wednesday — <b>S&amp;P 500 −0.22%</b> to 7,801.77, <b>Dow −0.66%</b> (−341.41 pts) to 51,179.87, and <b>Nasdaq −0.22%</b> to 27,538.69 — as long-dated Treasury yields climbed back toward 5.32% on the 10-year and 4.80% on the 2-year, and the dollar firmed. Minutes from the Fed's hawkish 15–16 September hike to 3.75–4.00% were released at 2:00pm ET and kept a further 2026 move on the table, though prediction markets still price roughly 83–84% odds of a hold at the 28 October FOMC meeting after a soft September payrolls print. A bipartisan continuing resolution signed 2 September keeps Washington funded through 11 December, with forecasters pricing roughly a 24% chance of a fresh shutdown once that stopgap expires. <a href=\"https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html\">Yahoo Finance</a> and <a href=\"https://www.thepoliticalgroup.com/forecasts/will-the-government-shut-down-in-december-2026\">The Political Group</a>."
+    "local_html": "Pakistan's tape gave back Wednesday's gains: the <b>KSE-100</b> fell 1,138.50 points (−0.68%) Thursday to close at <b>167,441.90</b>, reversing from an intraday high of 169,486.60 as profit-taking hit banks and fertilisers — <b>United Bank, Fauji Fertilizer, Systems Limited and Engro Fertilizers</b> were the heaviest drags, while <b>Pakistan State Oil</b> rode the crude spike to a rare gain. Volume thinned to 152.07 million shares (Rs17.72bn), with decliners beating advancers 81 to 18. The session came even as Islamabad and the <b>IMF</b> reached a staff-level agreement on the fourth EFF and third RSF reviews on 7 October, unlocking roughly $1.2 billion pending Executive Board approval, while the rupee held broadly steady at 277.01 interbank, September CPI eased to 10.3% y/y and the SBP's 11.5% policy rate stayed on hold. <a href=\"https://www.brecorder.com/news/40443237/psx-kse-100-sheds-over-1100-points-on-selling-pressure\">Business Recorder</a> and <a href=\"https://propakistani.pk/2026/10/08/imf-reaches-staff-level-agreement-with-pakistan-on-4th-eff-review-unlocking-1-2-billion-loan/\">ProPakistani</a>.",
+    "gcc_html": "Gulf fundamentals strengthened on two fronts Thursday. Oil jumped as Iran escalated attacks on tankers in the <b>Strait of Hormuz</b> — <b>Brent settled up 4.0% at $104.28</b> and <b>WTI up 3.6% at $91.49</b> — a tailwind for Gulf budgets even as shippers and insurers price a heavier risk premium. Non-oil momentum held firm regardless: the <b>UAE's S&amp;P Global PMI stayed at 55.3</b> in September on the fastest output growth since February, and <b>Saudi Arabia's non-oil PMI rose to a seven-month high of 55.3</b> from 53.8 in August. Saudi's <b>PIF</b> approved its <b>2026–2030 strategy</b>, tilting 80% of capital toward domestic sectors — tourism, NEOM, advanced manufacturing — as Vision 2030's diversification drive outpaces the oil-price swings. <a href=\"https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html\">CNBC</a> and <a href=\"https://www.icis.com/explore/resources/news/2026/10/05/11236071/saudi-arabia-sept-non-oil-pmi-hits-7-month-high-exports-a-weak-spot/\">ICIS</a>.",
+    "global_html": "Wall Street wobbled Thursday as the Hormuz-driven oil spike revived inflation fears and a Financial Times report trimming OpenAI's revenue estimate hit chipmakers: the <b>S&amp;P 500 fell 0.47%</b> to 7,765.36 and the <b>Nasdaq tumbled 1.25%</b> to 27,193.34, while the <b>Dow eked out a 0.10% gain</b> to 51,231.64 on energy-stock strength. Treasury yields held near multi-decade highs (10-year ~5.23%, 2-year ~4.77%) after Fed Governor Christopher Waller said further hikes are <b>\"probably necessary,\"</b> with futures pricing roughly 81–83% odds of an October hold but better-than-75% odds of a December hike, consistent with 16 of 18 FOMC members' dot-plot projections. Washington's funding risk is parked for now — the continuing resolution signed 2 September keeps the government funded through 11 December. <a href=\"https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html\">Yahoo Finance</a> and <a href=\"https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html\">CNBC</a>."
   },
   "legislative": [
     {
       "jur": "Local — Pakistan",
-      "policy_html": "<a href=\"https://propakistani.pk/2026/10/01/imf-wants-market-based-rupee-higher-sbp-rate/\">IMF's push for a market-based rupee</a> and a tighter SBP stance, as the Fund's draft Memorandum of Economic and Financial Policies moves toward a staff-level agreement on the fourth EFF/third RSF review.",
-      "sectors": "Banks, FX, External Sector, Importers",
-      "impact_html": "<b class=\"pos\">Wins:</b> banks and FX reserves if a staff-level agreement unlocks the next tranche, reinforced by a current account deficit that narrowed 36% y/y in July–August FY27. <b class=\"neg\">Loses:</b> importers and consumers if a fully market-based exchange rate triggers rupee depreciation, and borrowers if the SBP is pressed to keep rates tighter for longer."
+      "policy_html": "<a href=\"https://www.imf.org/en/news/articles/2026/10/07/pr26326-pakistan-imf-complete-2026-aiv-consultation-reaches-sla-on-4th-review-eff-3rd-review-for-rsf\">IMF–Pakistan staff-level agreement</a> on the fourth EFF review and third RSF review, reached 7 October, releasing roughly $1.2bn pending Executive Board approval.",
+      "sectors": "Banks, FX Reserves, External Sector, Sovereign Bonds",
+      "impact_html": "<b class=\"pos\">Wins:</b> banks and FX reserves once the Executive Board clears the tranche, and sovereign bondholders on reduced near-term default risk. <b class=\"neg\">Loses:</b> importers and consumers if the IMF's push for continued exchange-rate flexibility weighs on the rupee, and rate-sensitive borrowers given the SBP's 11.5% hold."
     },
     {
-      "jur": "GCC — Saudi Arabia/OPEC+",
-      "policy_html": "<a href=\"https://www.cnbc.com/2026/10/04/opec-agrees-to-keep-november-oil-output-targets-steady.html\">OPEC+'s November output hold</a> at current quotas alongside the <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF's newly approved 2026–2030 strategy</a>.",
-      "sectors": "Energy, Tourism/NEOM, Sovereign Investment, Shipping/Insurance",
-      "impact_html": "<b class=\"pos\">Wins:</b> Gulf oil exporters and budget balances from firmer prices and OPEC+ discipline; PIF-backed tourism, NEOM and advanced-manufacturing assets riding the new five-year strategy. <b class=\"neg\">Loses:</b> shippers and insurers still pricing a persistent Hormuz/Red Sea risk premium that keeps real OPEC+ output below quota."
+      "jur": "GCC — UAE/Saudi Arabia",
+      "policy_html": "<a href=\"https://www.arabianbusiness.com/business/uae-new-tax-rules\">UAE's 1 October VAT-refund and tax-evasion compliance rules</a> alongside Saudi Arabia's <a href=\"https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/\">PIF 2026–2030 strategy</a> reallocating capital toward domestic sectors.",
+      "sectors": "Banks, Corporates/SMEs, Tourism, Sovereign Investment",
+      "impact_html": "<b class=\"pos\">Wins:</b> large compliant corporates and banks absorbing new data-driven audits, and PIF-backed domestic tourism, NEOM and manufacturing assets. <b class=\"neg\">Loses:</b> SMEs facing heavier VAT-chain verification costs, and foreign asset managers as PIF trims its foreign-allocation ceiling to 20% from a 30% peak."
     },
     {
       "jur": "Global",
-      "policy_html": "The <a href=\"https://www.thepoliticalgroup.com/forecasts/will-the-government-shut-down-in-december-2026\">11 December funding deadline</a> following September's continuing resolution, alongside Wednesday's release of hawkish Fed minutes ahead of the 28 October FOMC decision.",
-      "sectors": "Federal Contractors, Rate-Sensitive Equities, Housing, Small-Caps",
-      "impact_html": "<b class=\"pos\">Wins:</b> federal agencies and contractors with funding certainty into December; markets that keep pricing an 83–84% odds Fed hold on 28 October. <b class=\"neg\">Loses:</b> rate-sensitive housing and small-cap names as yields climb back up, and sectors exposed if the roughly 24%-priced December shutdown risk materialises."
+      "policy_html": "<a href=\"https://breakingdefense.com/2026/09/house-passes-funding-stopgap-averting-government-shutdown-in-october/\">US continuing resolution</a> funding the government through 11 December, alongside the Fed's hawkish dot-plot signalling a likely December hike.",
+      "sectors": "Rate-Sensitive Equities, Treasuries, Government Contractors",
+      "impact_html": "<b class=\"pos\">Wins:</b> government contractors and bond-market stability from near-term funding certainty. <b class=\"neg\">Loses:</b> growth and tech equities facing a higher-for-longer rate path, with a fresh shutdown fight looming once the stopgap expires in December."
     }
   ],
   "levels": {
-    "support": "168,066",
-    "support_note": "Wednesday's intraday low; deeper support at 166,500",
-    "pivot": "168,580",
-    "pivot_note": "Wednesday's close",
-    "resistance": "169,272",
-    "resistance_note": "Wednesday's intraday high; then 170,000 psychological resistance"
+    "support": "166,500",
+    "support_note": "first floor; deeper support at 165,000",
+    "pivot": "167,442",
+    "pivot_note": "Thursday's close",
+    "resistance": "168,580",
+    "resistance_note": "Wednesday's close; then Thursday's intraday high of 169,490"
   },
-  "desk_stance_html": "The desk reads Wednesday's narrow +0.07% gain as consolidation rather than momentum: a third straight advance on rising overall volume, but a choppy 1,200-point intraday range and a breadth ratio of roughly 3-to-2 in favour of advancers suggest the market is digesting recent gains rather than extending them with conviction. Direction into Thursday hinges on three swing factors — whether the IMF and Islamabad narrow their exchange-rate gap enough to firm up a staff-level agreement, whether Wednesday's hawkish Fed minutes further dent the 83–84% odds of an October hold and spill into risk appetite, and whether firmer Brent/WTI levels keep OMCs and E&amp;Ps supported. We would treat a daily close above <b>169,272</b> as confirmation the grind extends toward 170,000, and a break below <b>168,066</b> as a sign of renewed profit-taking toward 166,500. All levels are indicative desk estimates, not recommendations.",
+  "desk_stance_html": "Thursday's reversal — a 2,045-point swing from intraday high to close — argues for a defensive bias into Friday: banks and fertilisers absorbed the bulk of the profit-taking, and with volume thinning to Rs17.72bn, we'd want to see participation rebuild before trusting a bounce back above 168,580. The IMF staff-level agreement is a genuine medium-term positive once the Executive Board ratifies it, but near-term price action is being set by the Hormuz-driven oil spike and a Fed that still leans toward a December hike. <b>Our stance: hold core positions, avoid chasing strength into resistance, and watch Brent/WTI and Hormuz headlines as the swing factor for both the rupee and risk appetite.</b> All levels are indicative desk estimates, not recommendations.",
   "ticker_items": [
-    "<b>THU 08 OCT 2026 · LAST CLOSE WED 07 OCT</b>",
-    "KSE-100 168,580.40 <span class=\"up\">▲ 0.07%</span> (+120.30) Wed close",
-    "S&amp;P 500 7,801.77 <span class=\"down\">▼ 0.22%</span>",
-    "Dow 51,179.87 <span class=\"down\">▼ 0.66%</span>",
-    "Nasdaq 27,538.69 <span class=\"down\">▼ 0.22%</span>",
-    "US 10Y 5.32% / 2Y 4.80%",
-    "Brent $100.87 · WTI $90.09",
-    "Gold $4,110 <span class=\"down\">▼ 1.3%</span> · Silver $60.68",
-    "USD/PKR 277.02 interbank",
-    "SBP policy rate 11.5% · held",
-    "Mood: Grinding higher locally, yields and the dollar the global swing factor",
+    "<b>FRI 09 OCT 2026 · LAST CLOSE THU 08 OCT</b>",
+    "KSE-100 167,441.90 <span class=\"dn\">▼ 0.68%</span> (−1,138.50 pts) Thu close",
+    "S&amp;P 500 <span class=\"dn\">▼ 0.47%</span> · Nasdaq <span class=\"dn\">▼ 1.25%</span> · Dow <span class=\"up\">▲ 0.10%</span>",
+    "US 10Y 5.23% / 2Y 4.77% · hawkish Fed hold expected 28 Oct",
+    "Brent $104.28 <span class=\"up\">▲ 4.0%</span> · WTI $91.49 <span class=\"up\">▲ 3.6%</span> · Hormuz tanker attacks",
+    "Gold $4,128 <span class=\"up\">▲ 0.45%</span> · Silver $59.05 <span class=\"dn\">▼ 1.0%</span>",
+    "USD/PKR 277.01 interbank · steady",
+    "SBP policy rate 11.5% · Sept CPI 10.3% y/y · IMF staff-level deal unlocks $1.2bn",
+    "Mood: Risk-off · oil the swing factor",
     "<b>Read today's Morning Brief →</b>"
   ],
   "news_items": [
-    "<b>08 OCT 2026</b>",
-    "📈 KSE-100 grinds out a third straight gain, up 0.07% to 168,580 in a choppy session",
-    "🇺🇸 S&amp;P 500, Dow, Nasdaq retreat from records as yields climb and Fed minutes stay hawkish",
-    "🏦 SBP tells IMF its 11.5% policy rate remains appropriate; September CPI eases to 10.3% y/y",
-    "💵 Rupee firms marginally to 277.02 against the dollar; IMF presses for market-based rate",
-    "🛢️ Brent, WTI firm as OPEC+ holds November output steady at current quotas",
-    "🇸🇦 Saudi PIF approves 2026–2030 strategy, leaning further into tourism, NEOM and Vision 2030",
-    "🥇 Gold slumps to a two-month low near $4,110 as Fed minutes, firm dollar weigh",
-    "🏛️ Pakistan, IMF trade drafts of Memorandum of Economic and Financial Policies amid rate dispute",
+    "<b>09 OCT 2026</b>",
+    "📉 KSE-100 sheds 1,138 points on bank/fertiliser profit-taking",
+    "🤝 Pakistan, IMF reach staff-level deal unlocking $1.2bn",
+    "💱 Rupee holds steady at 277.01 interbank",
+    "🛢️ Brent +4.0%, WTI +3.6% as Iran escalates Hormuz tanker attacks",
+    "📊 US stocks mixed: Nasdaq −1.25%, Dow +0.10% on oil-driven inflation fears",
+    "🏦 Fed's Waller: more rate hikes \"probably necessary\"",
+    "🏗️ UAE, Saudi non-oil PMIs hold near multi-month highs",
+    "💰 Saudi PIF approves 2026–2030 strategy, tilts capital domestic",
     "<b>More on contexai.org/insights →</b>"
   ],
-  "linkedin_text": "KSE-100 grinds to a third straight gain near 168,580 in a choppy session, as Wall Street retreats from Tuesday's records and gold slumps to a two-month low on hawkish Fed minutes.\n\nTHE OVERNIGHT TAPE\nUS equities pulled back Wednesday after Tuesday's records: the S&P 500 fell 0.22% to 7,801.77, the Dow lost 0.66% (-341.41 pts) to 51,179.87, and the Nasdaq slipped 0.22% to 27,538.69, as long-dated Treasury yields climbed back toward 5.32% on the 10-year and 4.80% on the 2-year, and the dollar firmed. Minutes from the Fed's hawkish 15-16 September meeting, where the FOMC hiked to 3.75-4.00%, were released at 2:00pm ET and kept a further 2026 move on the table, even as prediction markets still price roughly 83-84% odds of a hold at the 28 October meeting after a soft September payrolls print (+29,000 vs. +80,000 expected). Gold slumped about 1.3% to near $4,110, a two-month low, and silver fell about 1.1% to $60.68, as yields and the dollar pressured metals. Brent firmed to $100.87 and WTI to $90.09 after OPEC+ held November output steady.\n\nPAKISTAN\nThe KSE-100 edged up 120.30 points (+0.07%) Wednesday to close at 168,580.40, a choppy session bounded by an intraday high of 169,271.98 and a low of 168,065.86. Overall volume rose to roughly 586.86 million shares worth Rs22.37 billion, with advancers beating decliners 272 to 184 across 570 names; UBL, Systems Limited, PSO, PTCL and K-Electric led the index higher, while Mari Energies, Meezan Bank, Lucky Cement, Hub Power and OGDC lagged. The SBP told the IMF its 11.5% policy rate remains appropriate as September CPI eased to 10.3% y/y (from 11.1% in August), while three-month KIBOR sat near 11.97% and six-month near 12.39%. Islamabad and the Fund remain split on exchange-rate policy as the IMF's review mission works a draft Memorandum of Economic and Financial Policies toward a staff-level agreement; the rupee firmed marginally to 277.02 interbank and the current account deficit narrowed 36% y/y to $543 million in July-August FY27.\n\nGCC\nOPEC+'s seven core producers held November output targets unchanged at their 4 October meeting, extending the pause as Hormuz- and Red Sea-linked disruptions keep real flows below quota. Saudi Arabia's PIF, chaired by Crown Prince Mohammed bin Salman, approved its 2026-2030 strategy, pivoting from rapid asset growth toward sustained value creation across tourism, NEOM, advanced manufacturing, logistics and clean energy as the kingdom leans further into non-oil diversification under Vision 2030.\n\nGLOBAL\nWall Street's pullback came alongside rising yields and the Fed's hawkish September minutes, while a bipartisan continuing resolution signed 2 September keeps Washington funded through 11 December, with forecasters pricing roughly a 24% chance of a fresh shutdown once that stopgap expires.\n\nLEGISLATIVE TRACKER\nPakistan: IMF's push for a market-based rupee + draft MEFP toward a staff-level agreement - wins for banks and FX reserves if the next tranche unlocks, risk for importers and consumers if the rupee depreciates under a market-based regime.\nGCC: OPEC+ November output hold + PIF's new 2026-2030 strategy - wins for Gulf exporters and PIF-backed tourism/NEOM assets, risk for shippers and insurers still pricing Hormuz/Red Sea threats.\nGlobal: 11 December funding deadline + hawkish Fed minutes ahead of 28 October FOMC - wins for federally funded contractors and markets pricing an October hold, risk for rate-sensitive housing/small-caps and a ~24%-priced December shutdown.\n\nTHE DAY AHEAD\nKSE-100 support 168,066 (deeper support at 166,500) - pivot 168,580 - resistance 169,272 (then 170,000 psychological). Desk stance: Wednesday's narrow gain looks like consolidation rather than fresh momentum - watch the IMF-Islamabad exchange-rate gap, the Fed's hawkish tone into 28 October, and whether firmer oil keeps OMCs and E&Ps supported. A close above 169,272 would confirm the grind extends toward 170,000; a break below 168,066 would signal renewed profit-taking toward 166,500. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
-  "whatsapp_caption": "📊 *Economic Vibes — Morning Brief* 📊\n🗓️ Thursday, 08 October 2026\n\n📈 KSE-100 grinds to a third straight gain, up 0.07% to 168,580\n🇺🇸 S&amp;P 500, Dow, Nasdaq retreat from records as yields climb, Fed minutes stay hawkish\n🛢️ Brent $100.87 · WTI $90.09 as OPEC+ holds November output steady\n🥇 Gold $4,110 (2-mo low) · Silver $60.68\n💵 USD/PKR 277.02 · SBP holds at 11.5%\n\n📎 Full PDF brief attached — markets, GCC, legislative tracker &amp; today's KSE-100 levels inside.\n\n⚠️ For general information only; not investment advice. Full disclaimer at contexai.org/disclaimer.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "linkedin_text": "KSE-100 sheds 1,138 points as Hormuz tanker attacks spike oil and rattle Wall Street — even as Pakistan locks in a $1.2bn IMF deal.\n\nTHE OVERNIGHT TAPE\nUS stocks closed mixed Thursday as Iran's escalating attacks on tankers in the Strait of Hormuz sent Brent up 4.0% to $104.28 and WTI up 3.6% to $91.49, reviving inflation fears. The Nasdaq fell 1.25% to 27,193.34 and the S&P 500 lost 0.47% to 7,765.36, while the Dow edged up 0.10% to 51,231.64 on energy strength. Treasury yields held near multi-decade highs (10Y ~5.23%, 2Y ~4.77%) after Fed Governor Christopher Waller said further hikes are \"probably necessary\" — futures price ~81-83% odds of an October hold but better-than-75% odds of a December hike.\n\nPAKISTAN\nThe KSE-100 fell 1,138.50 points (-0.68%) to 167,441.90, reversing from an intraday high of 169,486.60 as United Bank, Fauji Fertilizer, Systems Limited and Engro Fertilizers led the selling; Pakistan State Oil was a rare gainer on the crude spike. Volume thinned to 152.07m shares (Rs17.72bn). The pullback came despite genuine good news: Islamabad and the IMF reached a staff-level agreement on 7 October on the fourth EFF and third RSF reviews, unlocking roughly $1.2bn pending Executive Board approval. The rupee held steady at 277.01 interbank, September CPI eased to 10.3% y/y, and the SBP's policy rate stayed on hold at 11.5%.\n\nGCC\nGulf budgets caught a tailwind from the oil spike, while diversification kept humming: the UAE's S&P Global PMI held at 55.3 in September and Saudi Arabia's non-oil PMI jumped to a seven-month high of 55.3 from 53.8. Saudi's PIF approved its 2026-2030 strategy, directing 80% of capital into domestic sectors — tourism, NEOM, advanced manufacturing — as foreign allocation is trimmed to 20% from a 30% peak.\n\nGLOBAL\nWashington's funding risk is on ice for now — the continuing resolution signed 2 September funds the government through 11 December — but the Fed's hawkish dot plot (16 of 18 members projecting a further 2026 hike) keeps rate-sensitive equities exposed, and a fresh shutdown fight looms once the stopgap lapses.\n\nLEGISLATIVE TRACKER\n• Pakistan: IMF staff-level deal unlocks ~$1.2bn — banks and FX reserves win; importers and borrowers face exchange-rate and rate risk.\n• GCC: UAE VAT-compliance crackdown + Saudi PIF's domestic tilt — large compliant corporates and PIF-backed tourism/NEOM win; SMEs and foreign asset managers lose ground.\n• Global: US funding certainty through 11 December vs. a likely December Fed hike — contractors and bonds stabilise; growth and tech equities stay exposed.\n\nTHE DAY AHEAD\nKSE-100 support 166,500 (deeper support 165,000), pivot 167,442 (Thursday's close), resistance 168,580 then 169,490. Our stance: hold core positions, avoid chasing strength into resistance, and watch Brent/WTI and Hormuz headlines as the swing factor for both the rupee and risk appetite. All levels are indicative desk estimates, not recommendations.\n\nFull brief → contexai.org/economic-vibes\n\n#EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief\n\nThis brief is for informational purposes only and does not constitute investment advice. All figures are sourced and verified where marked V; estimates are marked EST.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
+  "whatsapp_caption": "📊 Economic Vibes — Friday, 09 October 2026\n\n📉 KSE-100 −0.68% (−1,138 pts) to 167,441.90 as banks/fertilisers lead profit-taking\n🤝 Pakistan–IMF staff-level deal unlocks $1.2bn\n🛢️ Brent +4.0%/WTI +3.6% on Hormuz tanker attacks\n📈 US stocks mixed: Nasdaq −1.25%, Dow +0.10%\n🏦 Fed's Waller: more hikes \"probably necessary\"\n💱 USD/PKR steady at 277.01\n\nFull PDF brief attached 📎\n\nThis brief is for informational purposes only and does not constitute investment advice. All figures are sourced and verified where marked V; estimates are marked EST.\n\nDisclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.",
   "sources": [
     {
-      "title": "Business Recorder — PSX: KSE-100 gains 120 points after volatile trading",
-      "url": "https://www.brecorder.com/news/40443072/psx-kse-100-gains-120-points-after-volatile-trading"
+      "title": "Business Recorder — PSX: KSE-100 sheds over 1,100 points on selling pressure",
+      "url": "https://www.brecorder.com/news/40443237/psx-kse-100-sheds-over-1100-points-on-selling-pressure"
     },
     {
-      "title": "Pakera — KSE-100 Closes at 168,580 on 7 October 2026, Up 120 Points",
-      "url": "https://pakera.pk/kse-100-7-october-2026-close/"
+      "title": "Pakera — KSE-100 Closes at 167,442 on 8 October 2026",
+      "url": "https://pakera.pk/kse-100-8-october-2026-close/"
     },
     {
-      "title": "Bloom Pakistan — KSE-100 Gains 120 Points as Tech, Banks Lift PSX",
-      "url": "https://bloompakistan.com/kse-100-index-gains-120-points-psx-october-7-2026/"
+      "title": "ProPakistani — IMF Reaches Staff-Level Agreement With Pakistan on 4th EFF Review",
+      "url": "https://propakistani.pk/2026/10/08/imf-reaches-staff-level-agreement-with-pakistan-on-4th-eff-review-unlocking-1-2-billion-loan/"
     },
     {
-      "title": "Yahoo Finance — Stock market today: Dow falls, S&P 500 and Nasdaq retreat from records amid bond market jitters",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html"
-    },
-    {
-      "title": "U.S. News — Fed Minutes Could Detail Rate-Hike Decision, Policy Path",
-      "url": "https://money.usnews.com/investing/news/articles/2026-10-07/fed-minutes-could-detail-rate-hike-decision-policy-path"
-    },
-    {
-      "title": "CNBC — Fed rate hike odds decline after September jobs report",
-      "url": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html"
-    },
-    {
-      "title": "CNBC — OPEC+ agrees to keep November oil output targets steady",
-      "url": "https://www.cnbc.com/2026/10/04/opec-agrees-to-keep-november-oil-output-targets-steady.html"
-    },
-    {
-      "title": "PIF — Chaired by HRH Crown Prince, PIF Board of Directors approves PIF 2026-2030 strategy",
-      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
-    },
-    {
-      "title": "Kitco — Gold, silver slump as Fed minutes keep December hike risk alive (PM Report)",
-      "url": "http://www.kitco.com/news/article/2026-10-07/gold-silver-slump-fed-minutes-keep-december-hike-risk-alive-kitco-pm-report"
-    },
-    {
-      "title": "TMGM — Gold falls to two-month low near $4,100 on stronger US Dollar",
-      "url": "https://www.tmgm.com/en/analysis/market-news/article/gold-falls-to-two-month-low-near-4-100-on-stronger-us-dollar-202610072325"
-    },
-    {
-      "title": "Trading Economics — Gold",
-      "url": "https://tradingeconomics.com/commodity/gold"
-    },
-    {
-      "title": "Trading Economics — US 10 Year Treasury Note Yield",
-      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
-    },
-    {
-      "title": "Business Recorder — Rupee registers gain against US dollar",
-      "url": "https://www.brecorder.com/news/40443096/intra-day-update-rupee-records-gain-against-us-dollar"
-    },
-    {
-      "title": "ProPakistani — IMF Wants Market-Based Rupee, Higher SBP Rate",
-      "url": "https://propakistani.pk/2026/10/01/imf-wants-market-based-rupee-higher-sbp-rate/"
-    },
-    {
-      "title": "ProPakistani — Pakistan Faces New IMF Conditions as Talks Enter Crucial Stage",
-      "url": "https://propakistani.pk/2026/10/03/pakistan-faces-new-imf-conditions-as-talks-enter-crucial-stage/"
+      "title": "IMF — Pakistan Completes 2026 Article IV Consultation, Reaches SLA on 4th EFF/3rd RSF Review",
+      "url": "https://www.imf.org/en/news/articles/2026/10/07/pr26326-pakistan-imf-complete-2026-aiv-consultation-reaches-sla-on-4th-review-eff-3rd-review-for-rsf"
     },
     {
       "title": "Trading Economics — Pakistan Inflation Rate",
       "url": "https://tradingeconomics.com/pakistan/inflation-cpi"
     },
     {
-      "title": "Pakera — KIBOR Rate Today in Pakistan",
-      "url": "https://pakera.pk/kibor-rate-today-pakistan/"
+      "title": "Dawn — SBP seen holding rates steady as oil surge threatens inflation trajectory",
+      "url": "https://www.dawn.com/news/1978691"
     },
     {
-      "title": "The Political Group — Will the U.S. government shut down in December 2026?",
-      "url": "https://www.thepoliticalgroup.com/forecasts/will-the-government-shut-down-in-december-2026"
+      "title": "Yahoo Finance — Stock market today: S&P 500, Nasdaq fall for second day in a row as AI trade takes a hit",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html"
     },
     {
-      "title": "CREFC — Congress Funds Government Through December 11",
-      "url": "https://www.crefc.org/cre/cre/content/News/Items/advocacy-items/2026/Congress_Funds_Government_Through_December_1_1.aspx"
+      "title": "Star Advertiser (AP) — S&P 500, Nasdaq end lower as crude prices jump",
+      "url": "https://www.staradvertiser.com/2026/10/08/breaking-news/sp-500-nasdaq-end-lower-as-crude-prices-jump/"
+    },
+    {
+      "title": "CNBC — Oil prices today: Brent, WTI gain on Middle East tensions",
+      "url": "https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html"
+    },
+    {
+      "title": "CNBC — Traders now see little chance of a Fed rate hike in October after weak jobs report",
+      "url": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html"
+    },
+    {
+      "title": "Schwab — Fed Hikes in 12-0 Vote, Commits to Inflation Fight",
+      "url": "https://www.schwab.com/learn/story/fomc-meeting"
+    },
+    {
+      "title": "Kitco — Gold rises, silver falls as strong bond auction tempers yield pressure (PM Report)",
+      "url": "https://www.kitco.com/news/article/2026-10-08/gold-rises-silver-falls-strong-bond-auction-tempers-yield-pressure-kitco-pm"
+    },
+    {
+      "title": "Kitco — Gold firms, silver slides as oil surge revives inflation pressure (AM Report)",
+      "url": "https://www.kitco.com/news/article/2026-10-08/gold-firms-silver-slides-oil-surge-revives-inflation-pressure-kitco-am"
+    },
+    {
+      "title": "Business Recorder — Intra-day update: rupee records gain against US dollar",
+      "url": "https://www.brecorder.com/news/40443272/intra-day-update-rupee-records-gain-against-us-dollar"
+    },
+    {
+      "title": "AGBI — UAE private sector moves past mid-year slowdown",
+      "url": "https://www.agbi.com/economy/2026/10/uae-private-sector-moves-past-mid-year-slowdown/"
+    },
+    {
+      "title": "ICIS — Saudi Arabia Sept non-oil PMI hits 7-month high; exports a weak spot",
+      "url": "https://www.icis.com/explore/resources/news/2026/10/05/11236071/saudi-arabia-sept-non-oil-pmi-hits-7-month-high-exports-a-weak-spot/"
+    },
+    {
+      "title": "PIF — Chaired by HRH Crown Prince, PIF Board of Directors approves PIF 2026-2030 strategy",
+      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
+    },
+    {
+      "title": "Arabian Business — UAE announces major new rules for businesses starting from October 1",
+      "url": "https://www.arabianbusiness.com/business/uae-new-tax-rules"
+    },
+    {
+      "title": "Breaking Defense — House passes funding stopgap, averting government shutdown in October",
+      "url": "https://breakingdefense.com/2026/09/house-passes-funding-stopgap-averting-government-shutdown-in-october/"
     }
   ],
-  "iso_date": "2026-10-08",
-  "date_long": "Thursday, 08 October 2026",
-  "last_close_long": "Wednesday, 07 October 2026",
-  "date_news": "08 OCT 2026",
-  "pdf_filename": "2026-10-08-Economic-Vibes-Morning-Brief.pdf",
-  "brief_html_filename": "2026-10-08-economic-vibes-morning-brief.html",
-  "docx_filename": "2026-10-08-Economic-Vibes-Morning-Brief.docx",
+  "iso_date": "2026-10-09",
+  "date_long": "Friday, 09 October 2026",
+  "last_close_long": "Thursday, 08 October 2026",
+  "date_news": "09 OCT 2026",
+  "pdf_filename": "2026-10-09-Economic-Vibes-Morning-Brief.pdf",
+  "brief_html_filename": "2026-10-09-economic-vibes-morning-brief.html",
+  "docx_filename": "2026-10-09-Economic-Vibes-Morning-Brief.docx",
   "disclaimer": "Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions."
 }

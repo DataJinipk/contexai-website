@@ -1,27 +1,29 @@
-KSE-100 grinds to a third straight gain near 168,580 in a choppy session, as Wall Street retreats from Tuesday's records and gold slumps to a two-month low on hawkish Fed minutes.
+KSE-100 sheds 1,138 points as Hormuz tanker attacks spike oil and rattle Wall Street — even as Pakistan locks in a $1.2bn IMF deal.
 
 THE OVERNIGHT TAPE
-US equities pulled back Wednesday after Tuesday's records: the S&P 500 fell 0.22% to 7,801.77, the Dow lost 0.66% (-341.41 pts) to 51,179.87, and the Nasdaq slipped 0.22% to 27,538.69, as long-dated Treasury yields climbed back toward 5.32% on the 10-year and 4.80% on the 2-year, and the dollar firmed. Minutes from the Fed's hawkish 15-16 September meeting, where the FOMC hiked to 3.75-4.00%, were released at 2:00pm ET and kept a further 2026 move on the table, even as prediction markets still price roughly 83-84% odds of a hold at the 28 October meeting after a soft September payrolls print (+29,000 vs. +80,000 expected). Gold slumped about 1.3% to near $4,110, a two-month low, and silver fell about 1.1% to $60.68, as yields and the dollar pressured metals. Brent firmed to $100.87 and WTI to $90.09 after OPEC+ held November output steady.
+US stocks closed mixed Thursday as Iran's escalating attacks on tankers in the Strait of Hormuz sent Brent up 4.0% to $104.28 and WTI up 3.6% to $91.49, reviving inflation fears. The Nasdaq fell 1.25% to 27,193.34 and the S&P 500 lost 0.47% to 7,765.36, while the Dow edged up 0.10% to 51,231.64 on energy strength. Treasury yields held near multi-decade highs (10Y ~5.23%, 2Y ~4.77%) after Fed Governor Christopher Waller said further hikes are "probably necessary" — futures price ~81-83% odds of an October hold but better-than-75% odds of a December hike.
 
 PAKISTAN
-The KSE-100 edged up 120.30 points (+0.07%) Wednesday to close at 168,580.40, a choppy session bounded by an intraday high of 169,271.98 and a low of 168,065.86. Overall volume rose to roughly 586.86 million shares worth Rs22.37 billion, with advancers beating decliners 272 to 184 across 570 names; UBL, Systems Limited, PSO, PTCL and K-Electric led the index higher, while Mari Energies, Meezan Bank, Lucky Cement, Hub Power and OGDC lagged. The SBP told the IMF its 11.5% policy rate remains appropriate as September CPI eased to 10.3% y/y (from 11.1% in August), while three-month KIBOR sat near 11.97% and six-month near 12.39%. Islamabad and the Fund remain split on exchange-rate policy as the IMF's review mission works a draft Memorandum of Economic and Financial Policies toward a staff-level agreement; the rupee firmed marginally to 277.02 interbank and the current account deficit narrowed 36% y/y to $543 million in July-August FY27.
+The KSE-100 fell 1,138.50 points (-0.68%) to 167,441.90, reversing from an intraday high of 169,486.60 as United Bank, Fauji Fertilizer, Systems Limited and Engro Fertilizers led the selling; Pakistan State Oil was a rare gainer on the crude spike. Volume thinned to 152.07m shares (Rs17.72bn). The pullback came despite genuine good news: Islamabad and the IMF reached a staff-level agreement on 7 October on the fourth EFF and third RSF reviews, unlocking roughly $1.2bn pending Executive Board approval. The rupee held steady at 277.01 interbank, September CPI eased to 10.3% y/y, and the SBP's policy rate stayed on hold at 11.5%.
 
 GCC
-OPEC+'s seven core producers held November output targets unchanged at their 4 October meeting, extending the pause as Hormuz- and Red Sea-linked disruptions keep real flows below quota. Saudi Arabia's PIF, chaired by Crown Prince Mohammed bin Salman, approved its 2026-2030 strategy, pivoting from rapid asset growth toward sustained value creation across tourism, NEOM, advanced manufacturing, logistics and clean energy as the kingdom leans further into non-oil diversification under Vision 2030.
+Gulf budgets caught a tailwind from the oil spike, while diversification kept humming: the UAE's S&P Global PMI held at 55.3 in September and Saudi Arabia's non-oil PMI jumped to a seven-month high of 55.3 from 53.8. Saudi's PIF approved its 2026-2030 strategy, directing 80% of capital into domestic sectors — tourism, NEOM, advanced manufacturing — as foreign allocation is trimmed to 20% from a 30% peak.
 
 GLOBAL
-Wall Street's pullback came alongside rising yields and the Fed's hawkish September minutes, while a bipartisan continuing resolution signed 2 September keeps Washington funded through 11 December, with forecasters pricing roughly a 24% chance of a fresh shutdown once that stopgap expires.
+Washington's funding risk is on ice for now — the continuing resolution signed 2 September funds the government through 11 December — but the Fed's hawkish dot plot (16 of 18 members projecting a further 2026 hike) keeps rate-sensitive equities exposed, and a fresh shutdown fight looms once the stopgap lapses.
 
 LEGISLATIVE TRACKER
-Pakistan: IMF's push for a market-based rupee + draft MEFP toward a staff-level agreement - wins for banks and FX reserves if the next tranche unlocks, risk for importers and consumers if the rupee depreciates under a market-based regime.
-GCC: OPEC+ November output hold + PIF's new 2026-2030 strategy - wins for Gulf exporters and PIF-backed tourism/NEOM assets, risk for shippers and insurers still pricing Hormuz/Red Sea threats.
-Global: 11 December funding deadline + hawkish Fed minutes ahead of 28 October FOMC - wins for federally funded contractors and markets pricing an October hold, risk for rate-sensitive housing/small-caps and a ~24%-priced December shutdown.
+• Pakistan: IMF staff-level deal unlocks ~$1.2bn — banks and FX reserves win; importers and borrowers face exchange-rate and rate risk.
+• GCC: UAE VAT-compliance crackdown + Saudi PIF's domestic tilt — large compliant corporates and PIF-backed tourism/NEOM win; SMEs and foreign asset managers lose ground.
+• Global: US funding certainty through 11 December vs. a likely December Fed hike — contractors and bonds stabilise; growth and tech equities stay exposed.
 
 THE DAY AHEAD
-KSE-100 support 168,066 (deeper support at 166,500) - pivot 168,580 - resistance 169,272 (then 170,000 psychological). Desk stance: Wednesday's narrow gain looks like consolidation rather than fresh momentum - watch the IMF-Islamabad exchange-rate gap, the Fed's hawkish tone into 28 October, and whether firmer oil keeps OMCs and E&Ps supported. A close above 169,272 would confirm the grind extends toward 170,000; a break below 168,066 would signal renewed profit-taking toward 166,500. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 166,500 (deeper support 165,000), pivot 167,442 (Thursday's close), resistance 168,580 then 169,490. Our stance: hold core positions, avoid chasing strength into resistance, and watch Brent/WTI and Hormuz headlines as the swing factor for both the rupee and risk appetite. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
 #EconomicVibes #ContexAiGroup #PSX #KSE100 #GCC #MarketBrief
+
+This brief is for informational purposes only and does not constitute investment advice. All figures are sourced and verified where marked V; estimates are marked EST.
 
 Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.
