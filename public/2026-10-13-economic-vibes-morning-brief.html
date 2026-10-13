@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Vibes — Morning Brief · Tuesday, 13 October 2026</title>
+<style>
+  @page { size:A4; margin:12mm 11mm 17mm 11mm; @bottom-center{ content:element(foot); } }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; font-size:14px; line-height:1.5;
+    color:#123; background:#EBFAFB; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page{ background:#EBFAFB; padding:0 14px; }
+  a{ color:#0A7E8C; text-decoration:none; border-bottom:1px solid #C6DA0B; font-weight:600; }
+  .masthead{ background:#FFFFFF; color:#0A2540; padding:14px 20px 12px; border-radius:8px 8px 0 0;
+    border:1px solid #D4EFF2; border-bottom:none; }
+  .mast-row{ display:flex; justify-content:space-between; align-items:flex-end; }
+  .mast-lock{ display:flex; align-items:center; }
+  .mast-lock .logo{ height:38px; width:auto; display:block; }
+  .mast-lock .divider{ color:#C6D8DC; font-weight:400; padding:0 11px; font-size:26px; }
+  .mast-lock .pub{ color:#0A7E8C; font-weight:800; font-size:17.5px; white-space:nowrap; }
+  .masthead .sub{ margin:7px 0 0; font-size:11.5px; color:#5A7480; font-weight:500; letter-spacing:.2px; }
+  .mast-date{ text-align:right; font-size:11.5px; color:#0A7E8C; font-weight:700; line-height:1.4; white-space:nowrap; }
+  .mast-date b{ font-size:13px; color:#0A2540; }
+  .colorbar{ display:flex; height:8px; width:100%; overflow:hidden; }
+  .colorbar > i{ flex:1; display:block; height:100%; }
+  .foot{ position:running(foot); }
+  .foot .fbar{ display:flex; height:7px; width:100%; overflow:hidden; }
+  .foot .fbar i{ flex:1; display:block; height:100%; }
+  .foot .fstrip{ background:#0A7E8C; color:#EAFDFF; font-size:9px; text-align:center; padding:4px 6px; font-weight:600; }
+  .body{ padding:10px 6px 4px; }
+  h2.sec{ font-size:15px; color:#fff; background:#0FA3B0; margin:8px 0 6px; padding:5px 12px;
+    border-radius:5px; font-weight:700; letter-spacing:.2px; }
+  h2.sec .n{ color:#C6DA0B; font-weight:900; margin-right:8px; }
+  h3.sub{ font-size:13px; color:#08616C; margin:8px 0 3px; font-weight:800;
+    border-bottom:2px solid #C6DA0B; padding-bottom:3px; }
+  p{ margin:6px 0; text-align:justify; }
+  b,strong{ color:#08616C; }
+  .pos{ color:#0E9F6E; font-weight:700; } .neg{ color:#D8434E; font-weight:700; }
+  ul.five{ list-style:none; margin:5px 0; padding:0; }
+  ul.five li{ padding:6px 10px 6px 13px; margin:4.5px 0; background:#fff; border:1px solid #BDE9ED;
+    border-left:4px solid #0FA3B0; border-radius:0 7px 7px 0; text-align:justify; page-break-inside:avoid; }
+  .chip{ display:inline-block; background:#C6DA0B; color:#46520A; font-weight:800; font-size:10px;
+    padding:1px 8px; border-radius:3px; margin-right:6px; text-transform:uppercase; letter-spacing:.3px; }
+  .news{ margin:3px 0 2px; padding-left:16px; } .news li{ margin:3.5px 0; text-align:justify; }
+  .synth{ background:#fff; border:1px solid #BDE9ED; border-radius:7px; padding:6px 11px; margin:4px 0;
+    page-break-inside:avoid; }
+  .synth b{ color:#08616C; }
+  table{ width:100%; border-collapse:collapse; margin:5px 0 3px; table-layout:fixed; font-size:10.8px; page-break-inside:avoid; }
+  thead th{ background:#0A7E8C; color:#fff; font-weight:700; font-size:11px; text-align:left;
+    padding:5px 7px; vertical-align:bottom; white-space:normal; }
+  tbody td{ padding:4px 6px; border-bottom:1px solid #D4EFF2; vertical-align:top; line-height:1.35; }
+  tbody tr:nth-child(even){ background:#F4FCFD; }
+  .disc{ font-size:9.8px; line-height:1.42; color:#4A6068; background:#DFF6F8; border:1px solid #BDE9ED;
+    border-radius:6px; padding:7px 11px; margin-top:8px; text-align:justify; page-break-inside:avoid; }
+  .snap{ display:flex; gap:7px; margin:4px 0 2px; }
+  .snap .c2{ flex:1 1 0; min-width:0; background:#fff; border:1px solid #BDE9ED; border-top:4px solid #0FA3B0;
+    border-radius:7px; padding:7px 8px; }
+  .snap .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .snap .v{ font-size:15px; font-weight:800; color:#0A7E8C; white-space:nowrap; line-height:1.2; }
+  .snap .d{ font-size:9.5px; font-weight:700; margin-top:1px; }
+  .lvl{ display:flex; gap:7px; margin:6px 0 2px; }
+  .lvl .c3{ flex:1 1 0; background:#fff; border:1px solid #BDE9ED; border-left:4px solid #C6DA0B;
+    border-radius:0 7px 7px 0; padding:6px 9px; }
+  .lvl .l{ font-size:9.5px; color:#5F7400; text-transform:uppercase; font-weight:800; letter-spacing:.3px; }
+  .lvl .v{ font-size:14px; font-weight:800; color:#0A7E8C; }
+  .lvl .d{ font-size:9.5px; margin-top:1px; }
+  .synth.flow{ page-break-inside:auto; }
+  .tag{ font-size:9px; font-weight:800; color:#0A7E8C; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="foot">
+    <div class="fbar">
+      <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+      <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+      <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+    </div>
+    <div class="fstrip">ContexAi — Economic Vibes · A ContexAi Research Product · contexai.org · Delivered ~06:30 AM PKT · WhatsApp Channel: Economic Vibes</div>
+  </div>
+
+  <div class="masthead">
+    <div class="mast-row">
+      <div class="mast-lock"><img class="logo" src="contexai_group_logo.png" alt="ContexAi Group"><span class="divider">|</span><span class="pub">Economic Vibes — Morning Brief</span></div>
+      <div class="mast-date"><b>Tuesday, 13 October 2026</b><br>Morning Edition · PKT</div>
+    </div>
+    <div class="sub">ContexAi Research Desk · Sourced via Reuters, CNBC, Business Recorder, Express Tribune, Mettis Global, AGBI, Gulf News, S&amp;P Global, Kitco, SBP &amp; Regulatory Trackers · For the C-Suite &amp; HNW Investor · <b>V</b> = verified vs licensed media/official portal · <b>EST.</b> = ContexAi desk estimate</div>
+  </div>
+  <div class="colorbar">
+    <i style="background:#0040D9;"></i><i style="background:#00838F;"></i><i style="background:#00BCD4;"></i>
+    <i style="background:#AEEA00;"></i><i style="background:#FDD835;"></i><i style="background:#FFC400;"></i>
+    <i style="background:#F26122;"></i><i style="background:#D81B60;"></i><i style="background:#9C27B0;"></i>
+  </div>
+
+  <div class="body">
+    <div class="snap">
+      <div class="c2"><div class="l">KSE-100 <span class="tag">V</span></div><div class="v">165,124.41</div><div class="d neg">▼ 1.18% Mon · −1,964.86 pts</div></div>
+      <div class="c2"><div class="l">S&amp;P 500 <span class="tag">V</span></div><div class="v">▼ 0.06%</div><div class="d neg">Nasdaq −0.44% · Dow +0.38%</div></div>
+      <div class="c2"><div class="l">US 10Y / 2Y <span class="tag">V</span></div><div class="v">5.24 / 4.80</div><div class="d neg">hawkish hold · Dec hike ~88% priced</div></div>
+      <div class="c2"><div class="l">Brent / WTI <span class="tag">V</span></div><div class="v">$106.65 / $93.74</div><div class="d pos">+1.8% / +2.0% · Houthi strike on Riyadh airport</div></div>
+      <div class="c2"><div class="l">Gold <span class="tag">V</span></div><div class="v">$4,168.90</div><div class="d neg">−0.59% · silver $60.12 (−0.96%)</div></div>
+      <div class="c2"><div class="l">USD/PKR <span class="tag">V</span></div><div class="v">276.97</div><div class="d ">interbank · +Re0.03, broadly steady</div></div>
+      
+    </div>
+
+    <h2 class="sec"><span class="n">01</span>Five Things You Need To Know To Start Your Day</h2>
+    <ul class="five">
+      <li><span class="chip">KSE-100 Sheds 1,965 Points as Islamabad Imposes KP Emergency</span> The <b>KSE-100</b> fell <b>1,964.86 points (−1.18%) to close at 165,124.41</b> on Monday, reversing from an intraday high of 166,988.32 after President <b>Asif Ali Zardari</b> approved Governor's Rule/emergency in <b>Khyber Pakhtunkhwa</b> on Sunday, with a joint sitting of parliament called for today to ratify the move following the collapse of government–PTI talks over counterterrorism policy. Breadth was lopsided at 85 decliners to 13 advancers (2 unchanged) on thinned volume of 104.27 million index shares (Rs14.5bn market-wide), with <b>United Bank (−186.93 pts), Oil &amp; Gas Development (−131.40), Habib Bank (−114.71)</b> and <b>Meezan Bank (−114.08)</b> leading the rout — the 14-bank sub-index alone cost 734 points, 37% of the day's fall — while <b>Colgate-Palmolive (+16.08)</b> and Pakistan Tobacco bucked the trend. <a href="https://pakera.pk/kse-100-12-october-2026-close/">Pakera</a> and <a href="https://www.nation.com.pk/13-Oct-2026/psx-witnesses-bearish-trend-loses-1964-points">The Nation</a> confirm the levels. Sentiment: <span class="neg">sharp political risk-off</span>.</li>
+      <li><span class="chip">Deadly Houthi Strike on Riyadh Airport Jolts Gulf Markets</span> A Houthi missile attack on Riyadh's <b>King Khalid International Airport</b> over the weekend killed more than a dozen people and injured over 300, prompting airlines to cancel flights and sending Gulf equities lower even as oil climbed: the <b>Tadawul All-Share Index closed 0.2% lower at 10,361</b> (Saudi National Bank −1.1%, Aramco −0.2%) and Qatar's index fell 1.5% to its lowest since May 2020. <b>Brent rose 1.8% to settle at $106.65</b> and <b>WTI gained 2.0% to $93.74</b> as traders priced a fresh supply-risk premium on top of ongoing Bab al-Mandeb clashes. <a href="https://www.brecorder.com/news/40443733/most-gulf-stocks-in-red-after-attack-on-riyadh-airport">Business Recorder</a> and <a href="https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html">CNBC</a> confirm the moves. Sentiment: <span class="neg">security shock outweighs the oil windfall</span>.</li>
+      <li><span class="chip">Fed December Hike Odds Climb Near 88%, Pressuring Gold</span> Fed-funds futures now price roughly <b>88% odds of a December rate hike</b> (versus just ~17% for the 28 October meeting), consistent with 16 of 19 FOMC members' dot-plot calls for at least one more 2026 move; the <b>10-year Treasury yield held near 5.24%</b> and the <b>2-year near 4.80%</b>. The repricing, alongside a firmer dollar and the oil-driven inflation scare, pulled <b>gold down 0.59% to $4,168.90</b> and <b>silver down 0.96% to $60.12</b>. <a href="https://www.kitco.com/news/article/2026-10-12/gold-silver-soften-markets-price-december-fed-hike-risk-kitco-pm-report">Kitco</a> and <a href="https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html">CNBC</a> confirm the pricing. Sentiment: <span class="neg">higher-for-longer tightens its grip</span>.</li>
+      <li><span class="chip">Pakistan's $1.2bn IMF Tranche Awaits Board Nod as SBP Holds at 11.5%</span> Islamabad's <b>$1.2 billion</b> staff-level agreement with the <b>IMF</b> on the fourth EFF and third RSF reviews — reached 7–8 October — remains pending <b>Executive Board</b> approval, which would lift cumulative programme inflows to $5.7bn. The <b>SBP held its policy rate at 11.5%</b> for a third straight meeting on 14 September, <b>September CPI eased to 10.3% y/y</b> from 11.1% in August, and 3-month <b>KIBOR</b> sat near 11.5–11.75%, while <b>USD/PKR</b> held broadly steady at 276.97 interbank. <a href="https://www.dawn.com/news/2035602">Dawn</a> and <a href="https://tradingeconomics.com/pakistan/inflation-cpi">Trading Economics</a> confirm the figures. Sentiment: <span class="pos">genuine policy progress, overshadowed by politics</span>.</li>
+      <li><span class="chip">US Stocks Mixed as Memory-Chip Slide Offsets Dow's Gain</span> Wall Street closed mixed Monday: the <b>Dow added 0.38% to 51,850.55</b> while the <b>S&amp;P 500 slipped 0.06% to 7,807.24</b> and the <b>Nasdaq fell 0.44% to 27,245.90</b> as memory-chip names sold off on valuation jitters and the oil spike revived inflation concerns; separately, <b>OPEC+ held November output quotas steady</b> on 4 October, keeping Saudi Arabia at 10.5mb/d and Russia at 9.9mb/d as the group manages a market caught between improving physical supply and persistent geopolitical risk. <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-12-212311190.html">Yahoo Finance</a> and <a href="https://www.cnbc.com/2026/10/04/opec-agrees-to-keep-november-oil-output-targets-steady.html">CNBC</a> confirm the details. Sentiment: <span class="neg">cautious rotation, no clear direction</span>.</li>
+      
+    </ul>
+
+    <h2 class="sec"><span class="n">02</span>Regional Market &amp; Economic Matrix</h2>
+    <h3 class="sub">A. Local Market — Pakistan Focus</h3>
+    <div class="synth">Pakistan's tape absorbed a fresh political shock: the <b>KSE-100</b> fell 1,964.86 points (−1.18%) Monday to close at <b>165,124.41</b>, reversing from an intraday high of 166,988.32 after President <b>Asif Ali Zardari</b> approved Governor's Rule/emergency in <b>Khyber Pakhtunkhwa</b> on Sunday under Articles 232/234, following the collapse of government–PTI talks over counterterrorism policy and access to Imran Khan; a joint sitting of parliament is called for today to ratify the move. Breadth was lopsided 85 decliners to 13 advancers on thinned volume (104.27m index shares, Rs14.5bn market-wide), with <b>banks and OGDC</b> — United Bank, Habib Bank, Meezan Bank — leading the rout (the 14-bank sub-index alone cost 734 points, 37% of the fall). The selloff overshadowed genuine progress on the macro front: the <b>IMF's $1.2bn staff-level deal</b> awaits Executive Board approval, the <b>SBP held its policy rate at 11.5%</b>, September CPI eased to <b>10.3% y/y</b>, and the rupee held steady at <b>276.97 interbank</b>. <a href="https://pakera.pk/kse-100-12-october-2026-close/">Pakera</a> and <a href="https://www.dawn.com/news/2035602">Dawn</a>.</div>
+    <h3 class="sub">B. GCC &amp; Middle East</h3>
+    <div class="synth">Gulf markets absorbed a security shock of their own: a Houthi missile strike on Riyadh's <b>King Khalid International Airport</b> over the weekend killed more than a dozen people and injured over 300, grounding flights and sending the <b>Tadawul All-Share Index down 0.2% to 10,361</b> (Saudi National Bank −1.1%, Aramco −0.2%) while Qatar's index slid 1.5% to a post-May-2020 low — a reminder that security risk can outweigh the benefit of pricier crude for Gulf economies. <b>Brent settled up 1.8% at $106.65</b> and <b>WTI up 2.0% at $93.74</b>, and <b>OPEC+ held November quotas steady</b> on 4 October as the group manages a market still caught between improving physical supply and persistent geopolitical risk. Diversification momentum held firm regardless: <b>Saudi Arabia's non-oil PMI</b> sat near a seven-month high of 55.3 in September and the <b>UAE's matched that 55.3</b> reading, underscoring how domestic demand keeps absorbing external shocks. <a href="https://www.brecorder.com/news/40443733/most-gulf-stocks-in-red-after-attack-on-riyadh-airport">Business Recorder</a> and <a href="https://www.cnbc.com/2026/10/04/opec-agrees-to-keep-november-oil-output-targets-steady.html">CNBC</a>.</div>
+    <h3 class="sub">C. Global Intelligence</h3>
+    <div class="synth">Wall Street closed mixed Monday as the oil-driven inflation scare and a slide in memory-chip names offset a rotation into value: the <b>Dow rose 0.38% to 51,850.55</b>, while the <b>S&amp;P 500 eased 0.06% to 7,807.24</b> and the <b>Nasdaq fell 0.44% to 27,245.90</b>. Treasury yields held near multi-decade highs (<b>10-year 5.24%, 2-year 4.80%</b>) as Fed-funds futures now price roughly <b>88% odds of a December hike</b> versus just ~17% for the 28 October meeting, consistent with 16 of 19 FOMC members' dot-plot calls for at least one more 2026 move; the same repricing pulled <b>gold down 0.59% to $4,168.90</b> and <b>silver down 0.96% to $60.12</b>. Washington's funding fight stays parked under the continuing resolution through 11 December, though a narrower <b>DHS funding lapse</b> persists separately. <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-12-212311190.html">Yahoo Finance</a> and <a href="https://www.kitco.com/news/article/2026-10-12/gold-silver-soften-markets-price-december-fed-hike-risk-kitco-pm-report">Kitco</a>.</div>
+
+    <h2 class="sec"><span class="n">03</span>Legislative &amp; Regulatory Tracker — Who Wins, Who Loses</h2>
+    <table>
+      <colgroup><col style="width:15%"><col style="width:29%"><col style="width:21%"><col style="width:35%"></colgroup>
+      <thead><tr><th>Jurisdiction</th><th>Legislation / Policy Change</th><th>Affected Sector(s)</th><th>Net Impact &amp; Strategic Outlook</th></tr></thead>
+      <tbody>
+        <tr><td><b>Local — Pakistan</b></td><td><a href="https://www.arabnews.pk/pakistan/pakistan-president-imposes-emergency-in-opposition-ruled-khyber-pakhtunkhwa-province-3003824">Governor's Rule imposed in Khyber Pakhtunkhwa</a> under Articles 232/234 after President Zardari's nod on 11 October; a joint sitting of parliament is called for 13 October to ratify the move.</td><td>Banks, Equities, Political-Risk Premium, Defense</td><td><b class="pos">Wins:</b> the federal government and security apparatus gain direct administrative control to pursue counterterrorism operations, and defense-linked names could see a sentiment lift. <b class="neg">Loses:</b> banks and broader equities, which absorbed 37% of Monday's 1,965-point KSE-100 decline as investors price a higher political-risk premium ahead of today's parliamentary vote.</td></tr>
+        <tr><td><b>GCC — Saudi Arabia/UAE</b></td><td><a href="https://www.pwc.com/m1/en/services/tax/middle-east-tax-news-alerts/2026/uae-tax-procedures-law-executive-regulations-amendments.html">UAE's VAT Executive Regulation amendments</a> (Cabinet Decision No. 149, effective 1 October) revising input-tax apportionment, alongside <a href="https://www.cnbc.com/2026/10/04/opec-agrees-to-keep-november-oil-output-targets-steady.html">OPEC+'s decision to hold November output quotas steady</a>.</td><td>Banks, Corporates/SMEs, Energy, Oil Producers</td><td><b class="pos">Wins:</b> large compliant UAE corporates and banks adapting to the new apportionment rules, and Gulf oil producers/energy equities benefiting from supply discipline plus a fresh geopolitical risk premium. <b class="neg">Loses:</b> SMEs facing heavier VAT-compliance costs, and broader Gulf equities (Tadawul −0.2%, Qatar −1.5% Monday) as the Riyadh airport attack adds a security discount that oil-price gains don't offset.</td></tr>
+        <tr><td><b>Global</b></td><td>The Fed's hawkish dot-plot (16 of 19 members projecting a further 2026 hike) now has <a href="https://www.kitco.com/news/article/2026-10-12/gold-silver-soften-markets-price-december-fed-hike-risk-kitco-pm-report">futures pricing ~88% odds of a December hike</a>, alongside the US continuing resolution funding the government through 11 December.</td><td>Rate-Sensitive Equities, Treasuries, Precious Metals</td><td><b class="pos">Wins:</b> near-term government-funding certainty for contractors and bond markets, and energy equities riding the Hormuz/Riyadh risk premium. <b class="neg">Loses:</b> growth and tech equities (Nasdaq −0.44% Monday) and precious metals (gold −0.59%, silver −0.96%) as a December hike firms up and yields stay elevated.</td></tr>
+        
+      </tbody>
+    </table>
+
+    <h2 class="sec"><span class="n">04</span>The Day Ahead — KSE-100 Levels &amp; Desk Stance</h2>
+    <div class="lvl">
+      <div class="c3"><div class="l">Support <span class="tag">EST.</span></div><div class="v">164,000</div><div class="d">first floor; deeper support at 162,500</div></div>
+      <div class="c3"><div class="l">Pivot <span class="tag">EST.</span></div><div class="v">165,124</div><div class="d">Monday's close</div></div>
+      <div class="c3"><div class="l">Resistance <span class="tag">EST.</span></div><div class="v">167,089</div><div class="d">Friday's close; then 168,580 if the KP crisis de-escalates</div></div>
+    </div>
+    <div class="synth flow">Monday's 1,965-point drop was a political-risk event, not a fundamentals one — the SBP's steady 11.5% rate, cooling CPI and the pending IMF tranche all argue for a floor, but today's parliamentary vote on the KP emergency is the near-term swing factor, and banks (37% of the fall) need to stabilise before we'd trust a bounce back above 167,089. Globally, the Riyadh airport attack and a firming ~88% probability of a December Fed hike are a reminder that geopolitical and rate risk can both bite at once, even as oil's rise is a mixed blessing for Gulf-linked flows into Pakistan. <b>Our stance: trim leverage into the parliamentary vote, avoid chasing a dead-cat bounce in banks, and watch Brent/WTI and KP headlines as the swing factors for both the rupee and risk appetite.</b> All levels are indicative desk estimates, not recommendations.</div>
+
+    <div class="disc"><b>Disclaimer:</b> Disclaimer: Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.</div>
+  </div>
+</div>
+</body>
+</html>
