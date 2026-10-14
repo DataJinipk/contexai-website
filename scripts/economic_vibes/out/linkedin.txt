@@ -1,24 +1,24 @@
-KSE-100 sheds 1,965 points as Islamabad imposes emergency in KP — while a deadly Houthi strike on Riyadh's airport jolts Gulf markets and sends Brent above $106.
+KSE-100 slips 348 points as the KP ratification vote slides to Thursday, while Tadawul rebounds above 10,300 and Fed December-hike odds ease to roughly 72%.
 
 THE OVERNIGHT TAPE
-US stocks closed mixed Monday as an oil-driven inflation scare and a slide in memory-chip names offset a rotation into value: the Dow added 0.38% to 51,850.55, while the S&P 500 eased 0.06% to 7,807.24 and the Nasdaq fell 0.44% to 27,245.90. Treasury yields held near multi-decade highs (10Y 5.24%, 2Y 4.80%) as Fed-funds futures now price roughly 88% odds of a December hike versus just ~17% for the 28 October meeting, consistent with 16 of 19 FOMC members' dot-plot calls for a further 2026 move. The same repricing pulled gold down 0.59% to $4,168.90 and silver down 0.96% to $60.12.
+US stocks closed lower Tuesday as memory-chip weakness and mixed bank earnings outweighed an otherwise resilient tape: the Dow fell 0.35% to 51,670.10, the S&P 500 eased 0.02% to 7,805.45 and the Nasdaq lost 0.15% to 27,204.38, with traders cautious ahead of Wednesday's US CPI print. Treasury yields stayed elevated (10Y 5.21%, 2Y 4.81%) even as Fed-funds futures trimmed December hike odds to roughly 72% from ~88% a week earlier; the same mix of a softer dollar and persistent geopolitical risk pulled gold down 0.24% to $4,160.80 and silver down 1.82% to $59.09.
 
 PAKISTAN
-The KSE-100 fell 1,964.86 points (-1.18%) to close at 165,124.41, reversing from an intraday high of 166,988.32 after President Asif Ali Zardari approved Governor's Rule/emergency in Khyber Pakhtunkhwa on Sunday, with a joint sitting of parliament called for today to ratify the move following the collapse of government-PTI talks over counterterrorism policy. Breadth was lopsided 85 decliners to 13 advancers on thinned volume (104.27m index shares, Rs14.5bn market-wide); United Bank, Oil & Gas Development, Habib Bank and Meezan Bank led the rout, with the 14-bank sub-index alone costing 734 points (37% of the fall). The selloff overshadowed real progress: the IMF's $1.2bn staff-level deal awaits Executive Board approval, the SBP held its policy rate at 11.5%, September CPI eased to 10.3% y/y, and the rupee held steady at 276.97 interbank.
+The KSE-100 opened over 900 points higher on hopes of a quick KP resolution, but late selling flipped the session to a close of 164,776.44, down 347.97 points (-0.21%), after Tuesday's NA/Senate sessions failed to ratify the KP Governor's Rule as expected — a joint sitting is now set for Thursday, 15 October. Index-heavy banks, cement and energy names traded green intraday before profit-taking reasserted itself; market-wide volume rose to 383.75m shares from 362.95m. September CPI was confirmed at 10.3% y/y, the SBP held its rate at 11.5% for a third straight meeting, and the rupee held flat at 276.96 interbank; the $1.2bn IMF tranche still awaits Executive Board approval.
 
 GCC
-A Houthi missile strike on Riyadh's King Khalid International Airport over the weekend killed more than a dozen people and injured over 300, grounding flights and sending the Tadawul All-Share Index down 0.2% to 10,361 while Qatar's index slid 1.5% to a post-May-2020 low. Brent settled up 1.8% at $106.65 and WTI up 2.0% at $93.74, and OPEC+ held November quotas steady on 4 October. Diversification momentum held firm regardless: Saudi Arabia's non-oil PMI sat near a seven-month high of 55.3 in September and the UAE's matched that reading.
+Saudi Arabia's Tadawul All-Share Index rebounded 0.33% to close at 10,318.14 on SR3.28bn turnover, recovering from Monday's attack-driven dip even as breadth stayed soft (104 advancers vs 146 decliners) and the Hormuz/tanker-attack risk overhang persisted. Brent held near $105.67 and WTI near $94.14 after OPEC+ kept November quotas unchanged. Saudi Arabia's non-oil PMI climbed to 55.3 in September, a six-month high, while the UAE's non-oil PMI held at the same level.
 
 GLOBAL
-Washington's funding fight stays parked under the continuing resolution through 11 December, though a narrower DHS funding lapse persists separately. The Fed's hawkish dot-plot keeps rate-sensitive equities and precious metals exposed as a December hike firms up.
+Washington's funding picture stays parked under the continuing resolution through 11 December, though the narrower DHS funding lapse remains unresolved. Easing (but still elevated) Fed hike odds offered modest relief to rate-sensitive assets, while precious metals stayed under pressure from firm yields.
 
 LEGISLATIVE TRACKER
-• Pakistan: KP Governor's Rule heads to a parliamentary vote today — federal government/security apparatus wins administrative control; banks and equities absorb a political-risk discount.
-• GCC: UAE VAT-rule overhaul + OPEC+ holding November output steady — compliant corporates and oil producers win; SMEs and broader Gulf equities lose ground after the Riyadh attack.
-• Global: US funding certainty through 11 December vs. a ~88%-priced December Fed hike — contractors and bonds stabilise; tech equities and precious metals stay exposed.
+- Pakistan: KP Governor's Rule ratification pushed to Thursday's joint sitting — the federal government/security apparatus retains control; banks and equities absorb two more days of political-risk premium.
+- GCC: OPEC+ holding November output steady + UAE VAT rules now in force — oil producers and compliant corporates win; UAE SMEs and broader Gulf sentiment lag.
+- Global: US funding certainty through 11 December vs. cooling-but-still-elevated Fed hike odds — bonds and the broader government stabilise; precious metals and DHS-linked contractors stay exposed.
 
 THE DAY AHEAD
-KSE-100 support 164,000 (deeper support 162,500), pivot 165,124 (Monday's close), resistance 167,089 then 168,580 if the KP crisis de-escalates. Our stance: trim leverage into the parliamentary vote, avoid chasing a dead-cat bounce in banks, and watch Brent/WTI and KP headlines as the swing factors for both the rupee and risk appetite. All levels are indicative desk estimates, not recommendations.
+KSE-100 support 164,000 (deeper support 162,500 if Thursday's vote disappoints), pivot 164,776 (Tuesday's close), resistance 166,070 then 167,089 if the KP vote clears cleanly. Our stance: stay selective into Thursday's vote, favour index-heavy banks and energy names only on confirmed breadth, and treat a push through 166,070 as a signal to watch rather than a reason to chase. All levels are indicative desk estimates, not recommendations.
 
 Full brief → contexai.org/economic-vibes
 
