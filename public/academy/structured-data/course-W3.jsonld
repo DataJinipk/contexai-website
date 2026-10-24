@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Engines, Durable Execution and the Event Substrate",
+  "courseCode": "W3",
+  "description": "A worker that loses its place after a crash is not a worker. Checkpointing, idempotency, at-least-once delivery and the discipline that makes retries safe.",
+  "url": "https://contexai.org/academy/courses/w3-engines-durability-event-substrate/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Advanced",
+  "teaches": [
+    "On successful completion, you will be able to explain why at-least-once delivery makes idempotency mandatory.",
+    "On successful completion, you will be able to implement an idempotency key that makes a retried action safe.",
+    "On successful completion, you will be able to design a checkpointing scheme that keeps a resumed agent run consistent with the run it continues."
+  ],
+  "timeRequired": "PT5H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Engineers building workers that must survive failure"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT5H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "The Invariant Architecture: Principal, Delegate, Management Layer"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

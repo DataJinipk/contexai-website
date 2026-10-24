@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Capstone: An Autonomous System with a Safety Case",
+  "courseCode": "A5",
+  "description": "Build an autonomous system and write the safety case for it: what it may do, what stops it, what evidence shows the controls work. Assessed by oral defence.",
+  "url": "https://contexai.org/academy/courses/a5-capstone-autonomous-system/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Advanced",
+  "teaches": [
+    "On successful completion, you will be able to compose a safety case linking claims to evidence for an autonomous system.",
+    "On successful completion, you will be able to justify the placement of every human-approval gate in a design."
+  ],
+  "timeRequired": "PT7H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Students completing the Advanced Certificate in Agentic Systems"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT7H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Agent Architectures: Planning, Tools and Memory",
+    "Multi-Agent Orchestration and Protocols",
+    "Long-Horizon Evaluation",
+    "Adversarial AI: Injection, Exfiltration and Red-Teaming"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

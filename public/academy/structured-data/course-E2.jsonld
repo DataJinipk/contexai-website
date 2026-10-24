@@ -1,0 +1,74 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Evaluation Engineering",
+  "courseCode": "E2",
+  "description": "The discipline that separates a working AI system from a demo. Most curricula treat evaluation as a subsection of machine learning; here it is a course, because it is the capability employers report is missing.",
+  "url": "https://contexai.org/academy/courses/e2-evaluation-engineering/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Intermediate",
+  "teaches": [
+    "On successful completion, you will be able to calculate a confidence interval for an evaluation score.",
+    "On successful completion, you will be able to critique an evaluation report that presents point estimates without uncertainty.",
+    "On successful completion, you will be able to explain the known biases of model-based grading.",
+    "On successful completion, you will be able to design a judging protocol that controls for position and verbosity bias."
+  ],
+  "timeRequired": "PT9H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Engineers building AI features that must work in production"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT9H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Deep Learning Architectures and Transformers"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

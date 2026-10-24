@@ -1,0 +1,69 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "The Regulatory Landscape: EU AI Act, NIST AI RMF, ISO/IEC 42001",
+  "courseCode": "G1",
+  "description": "What actually applies to a given system, when, and what evidence a regulator will ask for. Taught as applied classification, not as a summary of statutes.",
+  "url": "https://contexai.org/academy/courses/g1-regulatory-landscape/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Professional",
+  "teaches": [
+    "On successful completion, you will be able to evaluate an AI system against the EU AI Act risk tiers.",
+    "On successful completion, you will be able to justify a classification decision to a sceptical reviewer."
+  ],
+  "timeRequired": "PT6H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Senior practitioners accountable for AI systems in regulated contexts"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT6H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

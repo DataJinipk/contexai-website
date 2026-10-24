@@ -1,0 +1,76 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Search, State Spaces and Why Symbolic Methods Survive",
+  "courseCode": "F2",
+  "description": "Search is the oldest idea in AI and the one most often written off as obsolete. It is not: planning loops, constraint solving and verifier-based reasoning are all search, and CS2023 deliberately retains it. You will implement the algorithms rather than read about them.",
+  "url": "https://contexai.org/academy/courses/f2-search-and-state-spaces/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Beginner",
+  "teaches": [
+    "On successful completion, you will be able to construct a state-space representation of an informal problem.",
+    "On successful completion, you will be able to explain why the choice of state representation dominates performance.",
+    "On successful completion, you will be able to implement breadth-first search over a state space.",
+    "On successful completion, you will be able to compare BFS, DFS and uniform-cost search on completeness and optimality.",
+    "On successful completion, you will be able to explain what makes a heuristic admissible and why it matters.",
+    "On successful completion, you will be able to evaluate whether a proposed heuristic preserves optimality."
+  ],
+  "timeRequired": "PT8H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Developers who have completed F1"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT8H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "Free in your first month, then $10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "How Intelligent Systems Behave"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "Free in your first month, then $10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Capstone: A Graded, Evaluated AI Product",
+  "courseCode": "E5",
+  "description": "Build one thing properly, end to end, and defend it. The capstone is assessed on evidence — your evaluation report and your cost model — not on whether the demo worked once.",
+  "url": "https://contexai.org/academy/courses/e5-capstone-evaluated-ai-product/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Intermediate",
+  "teaches": [
+    "On successful completion, you will be able to compose a specification stating scope, non-goals and acceptance evidence.",
+    "On successful completion, you will be able to justify a chosen performance measure against its perverse incentives."
+  ],
+  "timeRequired": "PT6H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Engineers completing the Professional Certificate"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT6H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Deep Learning Architectures and Transformers",
+    "Evaluation Engineering",
+    "Retrieval, Grounding and Attribution",
+    "Serving, Quantisation and Cost"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

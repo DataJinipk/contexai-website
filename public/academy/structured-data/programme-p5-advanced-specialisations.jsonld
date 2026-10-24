@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Advanced Specialisations",
+  "description": "Frontier and adjacent-discipline tracks: quantum computing assessed honestly, actuarial and credit-risk modelling, robotics and embodied AI, and industrial automation. Taken alongside or after P3.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Specialist Award",
+  "timeToComplete": "PT27H",
+  "programPrerequisites": "See each course's prerequisites"
+}

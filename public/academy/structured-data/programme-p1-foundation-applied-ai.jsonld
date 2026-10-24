@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Foundation Certificate in Applied AI",
+  "description": "Characterise an AI problem, implement a simple learning system, and evaluate it without fooling yourself. The entry point to the ladder.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Foundation Certificate",
+  "timeToComplete": "PT30H",
+  "programPrerequisites": "None"
+}

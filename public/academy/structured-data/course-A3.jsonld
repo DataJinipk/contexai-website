@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Long-Horizon Evaluation",
+  "courseCode": "A3",
+  "description": "Evaluating a trajectory, not an answer. Task-completion time horizons, benchmark contamination and saturation, and why an agent can score well on every step and still fail the task.",
+  "url": "https://contexai.org/academy/courses/a3-long-horizon-evaluation/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Advanced",
+  "teaches": [
+    "On successful completion, you will be able to differentiate outcome, process and efficiency measures for an agent run.",
+    "On successful completion, you will be able to critique a benchmark for contamination and saturation."
+  ],
+  "timeRequired": "PT5H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Engineers evaluating agents rather than single outputs"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT5H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Evaluation Engineering",
+    "Agent Architectures: Planning, Tools and Memory"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

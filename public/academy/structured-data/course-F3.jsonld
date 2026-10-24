@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Your First Learning System",
+  "courseCode": "F3",
+  "description": "Build a working supervised model and — more importantly — learn to measure it in a way that will not embarrass you later. The evaluation discipline taught here is what every subsequent course depends on.",
+  "url": "https://contexai.org/academy/courses/f3-your-first-learning-system/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Beginner",
+  "teaches": [
+    "On successful completion, you will be able to distinguish supervised, unsupervised and reinforcement learning by what each requires.",
+    "On successful completion, you will be able to select an appropriate learning framing for a stated business problem.",
+    "On successful completion, you will be able to explain overfitting in terms of memorisation versus generalisation.",
+    "On successful completion, you will be able to diagnose an implausibly high score by examining the evaluation setup."
+  ],
+  "timeRequired": "PT8H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Developers who can write basic Python; F1 is recommended preparation"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT8H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "Free in your first month, then $10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "Free in your first month, then $10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

@@ -1,264 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="robots" content="noindex,follow">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ContexAi Academy — Advanced AI training, coming soon. Subscribe to be notified when enrolment opens.">
-<meta name="theme-color" content="#0E7E76">
-<title>ContexAi Academy — Coming Soon</title>
-<link rel="canonical" href="https://contexai.org/academy">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="ContexAi Group">
-<meta property="og:title" content="ContexAi Academy — Coming Soon">
-<meta property="og:description" content="A 5-level hands-on AI training programme. Subscribe to be notified when enrolment opens.">
-<meta property="og:url" content="https://contexai.org/academy">
-<meta name="twitter:card" content="summary_large_image">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
-
+<meta name="theme-color" content="#0A3E40">
+<title>Where should I start? | ContexAi Academy</title>
+<meta name="description" content="Answer five quick questions and get the right first course — from complete beginner to professional AI, quantum and robotics.">
+<link rel="canonical" href="https://contexai.org/academy/start/">
 <style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --ink:#0E7E76;--ink-deep:#0A3E40;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;
-  --cream:#F6F5F1;--aqua:#14B8A6;--cyan:#5EEAD4;
-  --max:1180px;--serif:"Instrument Serif",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;
-}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink3);line-height:1.65;-webkit-font-smoothing:antialiased;background:#fff}
-a{color:#0C6E66;text-decoration:none}
+:root{--deep:#0A3E40;--mid:#12676A;--bright:#1E9B9F;--lift:#7FD3D6;--mist:#D6E8E8;
+--gold:#C9A227;--goldsoft:#F3E6BF;--ink:#0B1F21;--dim:#48595A;--sand:#F5F2EA;--line:#DDE5E4}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background:var(--sand);color:var(--ink);line-height:1.6}
+.bar{height:5px;background:linear-gradient(90deg,var(--deep),var(--mid),var(--bright),var(--gold))}
+header{background:var(--deep);color:#fff;padding:2.6rem 1.25rem 2.2rem}
+.wrap{max-width:60rem;margin:0 auto}
+.eyebrow{color:var(--lift);letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;
+font-weight:700;margin:0 0 .5rem}
+h1{margin:0 0 .7rem;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2}
+header p{margin:0;color:#DCEBEB;max-width:46rem;font-size:1.05rem}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);
+padding:.3rem .8rem;border-radius:999px;font-size:.85rem}
+main{padding:2rem 1.25rem 3rem}
+h2{color:var(--deep);font-size:1.3rem;margin:2.2rem 0 .7rem}
+ul.outcomes{padding-left:1.2rem}ul.outcomes li{margin:.35rem 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem}
+.cta{display:inline-block;background:var(--deep);color:#fff;text-decoration:none;
+padding:.8rem 1.4rem;border-radius:10px;font-weight:600;margin:.4rem .6rem .4rem 0;
+min-height:44px}
+.cta.alt{background:#fff;color:var(--deep);border:1px solid var(--deep)}
+.cta:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--deep);
+outline-offset:2px}
+.note{color:var(--dim);font-size:.9rem}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;
+padding:.8rem 1rem;margin:.5rem 0}
+summary{cursor:pointer;font-weight:600;color:var(--deep)}
+footer{max-width:60rem;margin:0 auto;padding:0 1.25rem 3rem;color:var(--dim);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
-/* === Site-wide top nav (unified teal style — Worker rewrites this on every request) === */
-.topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
-.topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
-.topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
-.topnav__logo .ai{color:#14B8A6}
-.topnav__logo .badge{font-size:.62rem;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-left:4px;color:#fff}
-.topnav__links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
-.topnav__links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .15s;white-space:nowrap}
-.topnav__links a:hover{color:#fff}
-.topnav__links a.current{color:#fff;border-bottom:2px solid #FFC400;padding-bottom:2px}
-.topnav__links a.cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
-.topnav__links a.cta:hover{background:#14B8A6;color:#0A3E40}
-.topnav__burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
-.topnav__burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
-@media(max-width:980px){
-  .topnav__links{display:none;width:100%}
-  .topnav__burger{display:block}
-  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E7E76;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
-  .topnav__in{position:relative;flex-wrap:wrap}
-}
-
-/* Hero — Under Construction */
-.coming{padding:96px 32px 120px;background:linear-gradient(180deg, #F6F5F1 0%, #fff 100%);min-height:calc(100vh - 120px);display:flex;align-items:center;justify-content:center}
-.coming__in{max-width:760px;margin:0 auto;text-align:center}
-.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--aqua);background:rgba(20,184,166,.10);padding:8px 18px;border-radius:30px;margin-bottom:28px}
-.coming h1{font-family:var(--serif);font-size:clamp(2.5rem,5vw,3.6rem);line-height:1.1;color:var(--ink-deep);margin-bottom:20px;letter-spacing:-.01em}
-.coming p.lead{font-size:1.12rem;color:var(--ink4);max-width:620px;margin:0 auto 36px;font-weight:300}
-.coming p.note{font-size:.95rem;color:var(--ink5);max-width:540px;margin:30px auto 0}
-
-/* Progress indicator */
-.progress{display:flex;align-items:center;gap:14px;justify-content:center;margin:36px auto;flex-wrap:wrap}
-.progress__step{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--ink4)}
-.progress__dot{width:10px;height:10px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 4px rgba(20,184,166,.18)}
-.progress__dot--pending{background:var(--ink5);box-shadow:none}
-.progress__line{height:2px;width:38px;background:linear-gradient(90deg, var(--aqua) 0%, var(--ink5) 100%)}
-
-/* Notify form */
-.notify{margin-top:18px;display:inline-flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;background:#fff;padding:8px;border-radius:50px;box-shadow:0 4px 18px rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.06)}
-.notify input{font-family:inherit;font-size:.95rem;padding:12px 18px;border:none;background:transparent;outline:none;min-width:240px;color:var(--ink-deep)}
-.notify input::placeholder{color:var(--ink5)}
-.notify button{font-family:inherit;font-size:.92rem;font-weight:700;padding:12px 26px;background:var(--ink);color:#fff;border:none;border-radius:50px;cursor:pointer;transition:background .15s}
-.notify button:hover{background:var(--aqua);color:var(--ink-deep)}
-
-/* What's coming preview */
-.preview{margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:14px;max-width:680px;margin-left:auto;margin-right:auto}
-.preview__pill{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:20px 16px;font-size:.88rem;color:var(--ink-deep);text-align:center;font-weight:500;border-top:4px solid var(--c, var(--aqua));transition:transform .2s,box-shadow .2s}
-.preview__pill:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
-.preview__pill[data-theme="prompting"]{--c:#0040D9}
-.preview__pill[data-theme="llms"]{--c:#00838F}
-.preview__pill[data-theme="mcp"]{--c:#D81B60}
-.preview__pill[data-theme="agentic"]{--c:#F26122}
-.preview__pill[data-theme="product"]{--c:#00C853}
-.preview__pill::before{content:'';display:block;width:34px;height:34px;border-radius:50%;background:var(--c, linear-gradient(135deg, var(--aqua), var(--cyan)));margin:0 auto 12px;opacity:.88}
-
-/* Back link */
-.back{display:inline-block;margin-top:48px;font-size:.92rem;color:var(--ink4);font-weight:500}
-.back:hover{color:var(--ink-deep)}
-.back::before{content:'← '}
-
-/* Simple footer */
-.foot{background:var(--ink-deep);color:rgba(255,255,255,.55);text-align:center;padding:24px;font-size:.88rem}
-.foot a{color:rgba(255,255,255,.85)}
-
-/* === Dropdown nav (brand colour accents on hover) === */
-.topnav__dd{position:relative}
-.topnav__dd-trigger{display:flex;align-items:center;gap:6px;cursor:pointer;color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;white-space:nowrap;transition:color .15s}
-.topnav__dd-trigger:hover{color:#fff}
-.topnav__caret{font-size:.7em;transition:transform .2s;opacity:.7;color:#FFC400}
-.topnav__dd:hover .topnav__caret{transform:rotate(180deg);opacity:1}
-.topnav__dd-panel{position:absolute;top:100%;left:-12px;background:#0E7E76;border-radius:0 0 14px 14px;padding:12px 0 8px;min-width:230px;box-shadow:0 12px 28px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .15s,visibility .15s,transform .15s;z-index:200;border-top:3px solid #FFC400}.topnav__dd-panel::before{content:"";position:absolute;top:-6px;left:0;right:0;height:6px;background:transparent}
-.topnav__dd:hover .topnav__dd-panel,.topnav__dd:focus-within .topnav__dd-panel{opacity:1;visibility:visible;transform:translateY(0)}
-.topnav__dd-panel a{display:block;padding:11px 22px 11px 18px;font-size:.91rem;color:rgba(255,255,255,.88);white-space:nowrap;font-weight:500;text-decoration:none;border-left:4px solid transparent;transition:all .15s}
-.topnav__dd-panel a:hover{background:rgba(255,255,255,.10);color:#fff;padding-left:22px}
-.topnav__dd-panel a[href="/#about"]:hover{border-left-color:#14B8A6}
-.topnav__dd-panel a[href="/team"]:hover{border-left-color:#D81B60}
-.topnav__dd-panel a[href="/case-studies"]:hover{border-left-color:#FDD835}
-.topnav__dd-panel a[href="/#services"]:hover{border-left-color:#0040D9}
-.topnav__dd-panel a[href="/#agentic"]:hover{border-left-color:#D81B60}
-.topnav__dd-panel a[href="/insights"]:hover{border-left-color:#F26122}
-.topnav__dd-panel a[href="/economy"]:hover{border-left-color:#AEEA00}
-.topnav__dd-panel a[href="/research"]:hover{border-left-color:#9C27B0}
-@media(max-width:980px){
-  .topnav__dd{width:100%}
-  .topnav__dd-trigger{display:flex;width:100%;padding:10px 0 4px;font-weight:700;color:#FFC400;font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;border-top:1px solid rgba(255,255,255,.10);margin-top:6px}
-  .topnav__caret{display:none}
-  .topnav__dd-panel{position:static;background:transparent;box-shadow:none;border-radius:0;opacity:1;visibility:visible;transform:none;margin:0;padding:0;border-top:none;min-width:0}
-  .topnav__dd-panel a{padding:7px 0 7px 12px;font-size:.95rem;color:rgba(255,255,255,.92);border-left:3px solid rgba(255,255,255,.15)}
-  .topnav__dd-panel a:hover{padding-left:16px}
-}
-/* CRITICAL fix — prevent topnav links from wrapping to two rows */
-.topnav__links{flex-wrap:nowrap;gap:18px}
-
-
-.topnav__links a.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
-.topnav__links a.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
+fieldset{border:1px solid var(--line);border-radius:12px;background:#fff;margin:1rem 0;padding:1rem 1.2rem}
+legend{font-weight:600;color:var(--deep);padding:0 .3rem}
+label.opt{display:flex;gap:.6rem;align-items:flex-start;padding:.45rem .2rem;cursor:pointer;min-height:32px}
+#result{display:none} input[type=email]{width:100%;max-width:24rem;padding:.6rem;border:1px solid var(--line);border-radius:8px;font:inherit;display:block;margin:.3rem 0 .8rem}
 </style>
 </head>
 <body>
+<div class="bar"></div>
+<header><div class="wrap">
+<p class="eyebrow">ContexAi Academy</p>
+<h1>Where should I start?</h1>
+<p>Five questions. One recommendation. It takes about a minute.</p>
+</div></header>
+<main><div class="wrap">
+<p class="note">This is a guide to choosing your first course, not a test. Inside the
+Academy, a short diagnostic confirms your level and skips anything you can already do.</p>
+<form id="quiz">
+<fieldset><legend>1. Have you written code before?</legend>
+<label class="opt"><input type="radio" name="code" value="none" required> Never</label>
+<label class="opt"><input type="radio" name="code" value="some"> A little — tutorials, small scripts</label>
+<label class="opt"><input type="radio" name="code" value="yes"> Yes, I program regularly</label>
+</fieldset>
+<fieldset><legend>2. Do you want to build software, or use AI in your work?</legend>
+<label class="opt"><input type="radio" name="goal" value="use" required> Use AI well in my job</label>
+<label class="opt"><input type="radio" name="goal" value="build"> Build AI systems myself</label>
+<label class="opt"><input type="radio" name="goal" value="govern"> Oversee, audit or govern AI</label>
+</fieldset>
+<fieldset><legend>3. How familiar are you with machine learning?</legend>
+<label class="opt"><input type="radio" name="ml" value="none" required> Not at all</label>
+<label class="opt"><input type="radio" name="ml" value="basics"> I know the basic ideas</label>
+<label class="opt"><input type="radio" name="ml" value="built"> I have trained or deployed models</label>
+</fieldset>
+<fieldset><legend>4. Have you built anything with large language models?</legend>
+<label class="opt"><input type="radio" name="llm" value="no" required> No</label>
+<label class="opt"><input type="radio" name="llm" value="yes"> Yes — apps, retrieval, prompts in production</label>
+</fieldset>
+<fieldset><legend>5. Which best describes your field?</legend>
+<label class="opt"><input type="radio" name="field" value="tech" required> Technology / engineering</label>
+<label class="opt"><input type="radio" name="field" value="finance"> Finance, banking or accounting</label>
+<label class="opt"><input type="radio" name="field" value="other"> Something else</label>
+</fieldset>
+<button type="submit" class="cta">Show my starting point</button>
+</form>
+<section id="result" aria-live="polite">
+<h2>Start here: <span id="rTitle"></span></h2>
+<p id="rWhy"></p>
+<p id="rPrice" class="note"></p>
+<a class="cta" id="rLink" href="#">See the course</a>
 
-<!-- ─── BRAND COLOR BAR ─── -->
-<div aria-hidden="true" title="ContexAi Brand Palette v2" style="display:flex;height:8px;width:100%;line-height:0;box-shadow:0 2px 6px rgba(0,0,0,.10);position:relative;z-index:101">
-  <span style="display:block;flex:1;background:#0D1B3F"></span>
-  <span style="display:block;flex:1;background:#0040D9"></span>
-  <span style="display:block;flex:1;background:#00838F"></span>
-  <span style="display:block;flex:1;background:#00BCD4"></span>
-  <span style="display:block;flex:1;background:#AEEA00"></span>
-  <span style="display:block;flex:1;background:#FDD835"></span>
-  <span style="display:block;flex:1;background:#FFC400"></span>
-  <span style="display:block;flex:1;background:#F26122"></span>
-  <span style="display:block;flex:1;background:#D81B60"></span>
-  <span style="display:block;flex:1;background:#9C27B0"></span>
-  <span style="display:block;flex:1;background:#00C853"></span>
-</div>
-
-<!-- ─── TOP NAV (Worker will rewrite this with canonical TOPNAV_HTML) ─── -->
-<nav class="topnav">
-  <div class="topnav__in">
-    <a href="/" class="topnav__logo">Contex<span class="ai">Ai</span> <span class="badge">Group</span></a>
-    <div class="topnav__links" id="topnav-links">
-
-      <div class="topnav__dd">
-        <a href="/" class="topnav__dd-trigger">Home <span class="topnav__caret">&#9662;</span></a>
-        <div class="topnav__dd-panel">
-          <a href="/#about">About</a>
-          <a href="/team">Team</a>
-        </div>
-      </div>
-
-      <div class="topnav__dd">
-        <a href="/practices" class="topnav__dd-trigger">Practice <span class="topnav__caret">&#9662;</span></a>
-        <div class="topnav__dd-panel">
-          <a href="/case-studies">Case Studies</a>
-          <a href="/#services">Services</a>
-          <a href="/#agentic">Agentic AI</a>
-        </div>
-      </div>
-
-      <div class="topnav__dd">
-        <a href="/insights" class="topnav__dd-trigger">Market Intelligence <span class="topnav__caret">&#9662;</span></a>
-        <div class="topnav__dd-panel">
-          <a href="/insights">Insights</a>
-          <a href="/economy">Economy &amp; Fiscal</a>
-          <a href="/economic-vibes">Economic Vibes</a>
-          <a href="/research">Research</a>
-        </div>
-      </div>
-
-      <a href="/academy">Academy</a>
-      <a href="/positions">Positions</a>
-      <a href="/contact" class="topnav__cta">Contact Us</a>
-
-    </div>
-    <button class="topnav__burger" aria-label="Menu" onclick="document.getElementById('topnav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-
-<!-- ─── UNDER CONSTRUCTION HERO ─── -->
-<main>
-  <section class="coming">
-    <div class="coming__in">
-      <span class="eyebrow">ContexAi Academy</span>
-      <h1>Coming soon.</h1>
-      <p class="lead">
-        A hands-on, project-driven AI training programme — from advanced prompting and local LLMs, to MCP &amp; voice agents, to shipping a real AI product. Enrolment isn't open yet, but the curriculum is in active build.
-      </p>
-
-      <div class="progress" aria-label="Build progress">
-        <div class="progress__step"><span class="progress__dot"></span> Curriculum</div>
-        <div class="progress__line"></div>
-        <div class="progress__step"><span class="progress__dot"></span> Cohort design</div>
-        <div class="progress__line"></div>
-        <div class="progress__step"><span class="progress__dot progress__dot--pending"></span> Platform</div>
-        <div class="progress__line"></div>
-        <div class="progress__step"><span class="progress__dot progress__dot--pending"></span> First cohort</div>
-      </div>
-
-      <form class="notify" action="/api/newsletter" method="POST">
-        <input type="hidden" name="source" value="academy-waitlist">
-        <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address">
-        <button type="submit">Notify me when it launches</button>
-      </form>
-
-      <p class="note">No spam. We'll only email you when enrolment opens.</p>
-
-      <div class="preview" aria-label="What's coming">
-        <div class="preview__pill" data-theme="prompting">Advanced prompting</div>
-        <div class="preview__pill" data-theme="llms">Local LLMs</div>
-        <div class="preview__pill" data-theme="mcp">MCP &amp; voice agents</div>
-        <div class="preview__pill" data-theme="agentic">Agentic workflows</div>
-        <div class="preview__pill" data-theme="product">Shipping AI products</div>
-      </div>
-
-      <a href="/" class="back">Back to ContexAi Group</a>
-    </div>
-  </section>
-</main>
-
-<!-- ─── FOOTER ─── -->
-<footer class="foot">
-  <p>&copy; 2026 ContexAi Group · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/contact">Contact</a></p>
-</footer>
-
+</section>
+</div></main>
+<footer>ContexAi Academy is part of ContexAi Consultancy.</footer>
 <script>
-(function(){
-  document.querySelectorAll('form.notify, form[action="/api/newsletter"]').forEach(function(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var fd = new FormData(form);
-      var btn = form.querySelector('button[type="submit"]');
-      var original = btn ? btn.textContent : '';
-      if (btn) { btn.disabled = true; btn.textContent = 'Submitting…'; }
-      fetch('/api/newsletter', { method: 'POST', body: fd })
-        .then(function(r){ return r.json().catch(function(){ return {ok:r.ok}; }); })
-        .then(function(json){
-          var msg = document.createElement('div');
-          msg.style.cssText = 'margin-top:18px;padding:14px 22px;background:rgba(20,184,166,.12);border:1px solid rgba(20,184,166,.3);border-radius:30px;color:#0A3E40;font-weight:600;font-size:.95rem;text-align:center;animation:fadeIn .3s ease';
-          msg.textContent = json && json.ok ? "You\u2019re on the list. We\u2019ll email you when it launches." : "Something went wrong \u2014 try again or email amir.wahmed@contexai.org";
-          form.parentNode.insertBefore(msg, form.nextSibling);
-          form.style.display = 'none';
-        })
-        .catch(function(){
-          if (btn) { btn.disabled = false; btn.textContent = original; }
-          alert('Network error. Please email amir.wahmed@contexai.org');
-        });
-    });
-  });
-})();
+const ROUTES = {"no-code": {"code": "B1", "title": "AI at Work: A Practical Introduction for Non-Programmers", "why": "you want to use AI well at work without learning to code", "url": "https://contexai.org/academy/courses/b1-ai-at-work/", "price": "Free in your first month, then $10 a month for any 2 courses"}, "new-to-code": {"code": "B2", "title": "Python from Zero, with AI as Your Assistant", "why": "you want to build things and have not programmed before", "url": "https://contexai.org/academy/courses/b2-python-from-zero/", "price": "Free in your first month, then $10 a month for any 2 courses"}, "codes-new-to-ai": {"code": "F1", "title": "How Intelligent Systems Behave", "why": "you can program and want the foundations of AI", "url": "https://contexai.org/academy/courses/f1-how-intelligent-systems-behave/", "price": "Free in your first month, then $10 a month for any 2 courses"}, "ml-known": {"code": "E1", "title": "Deep Learning Architectures and Transformers", "why": "you know the basics of machine learning and want to build with modern models", "url": "https://contexai.org/academy/courses/e1-deep-learning-and-transformers/", "price": "$10 a month for any 2 courses"}, "builds-llm-apps": {"code": "A1", "title": "Agent Architectures: Planning, Tools and Memory", "why": "you already build with language models and want to build agents", "url": "https://contexai.org/academy/courses/a1-agent-architectures/", "price": "$10 a month for any 2 courses"}, "governance": {"code": "G1", "title": "The Regulatory Landscape: EU AI Act, NIST AI RMF, ISO/IEC 42001", "why": "your interest is risk, compliance and assurance of AI", "url": "https://contexai.org/academy/courses/g1-regulatory-landscape/", "price": "$10 a month for any 2 courses"}, "finance": {"code": "Q2", "title": "Actuarial and Predictive Risk Models", "why": "you work in finance or banking and want AI applied to it", "url": "https://contexai.org/academy/courses/q2-actuarial-and-predictive-risk-models/", "price": "$10 a month for any 2 courses"}};
+/* The routing is deliberately simple and visible: the earliest point at which
+   the answers say the student can enter. Over-placing someone is the expensive
+   error — a stranger who hits a wall in their first hour does not come back. */
+function place(a){
+  if(a.goal==='govern' && ROUTES.governance) return 'governance';
+  if(a.field==='finance' && a.goal==='use' && ROUTES.finance && a.code!=='none') return 'finance';
+  if(a.goal==='use' && a.code!=='yes') return 'no-code';
+  if(a.code==='none') return a.goal==='build' ? 'new-to-code' : 'no-code';
+  if(a.code==='some') return 'new-to-code';
+  if(a.llm==='yes' && ROUTES['builds-llm-apps']) return 'builds-llm-apps';
+  if(a.ml!=='none' && ROUTES['ml-known']) return 'ml-known';
+  return 'codes-new-to-ai';
+}
+document.getElementById('quiz').addEventListener('submit', ev => {
+  ev.preventDefault();
+  const a = Object.fromEntries(new FormData(ev.target));
+  let key = place(a);
+  if(!ROUTES[key]) key = Object.keys(ROUTES)[0];
+  const r = ROUTES[key];
+  document.getElementById('rTitle').textContent = r.code + ' — ' + r.title;
+  document.getElementById('rWhy').textContent = 'Because ' + r.why + '.';
+  document.getElementById('rLink').href = r.url;
+  document.getElementById('rPrice').textContent = r.price ? 'Fees: ' + r.price + '.' : '';
+  const f = document.getElementById('routeField'); if(f) f.value = r.code;
+  const s = document.getElementById('result'); s.style.display = 'block';
+  s.scrollIntoView({behavior:'smooth', block:'start'});
+  document.getElementById('rTitle').focus && s.querySelector('h2').setAttribute('tabindex','-1');
+  s.querySelector('h2').focus();
+});
 </script>
 </body>
 </html>

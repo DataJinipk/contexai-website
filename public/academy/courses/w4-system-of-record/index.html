@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0A3E40">
+<title>System of Record: Postgres, Vectors and Searchable Context</title>
+<meta name="description" content="Consolidate by default, specialise deliberately. Where worker state lives, why relational plus vector in one store beats a constellation of specialised…">
+<link rel="canonical" href="https://contexai.org/academy/courses/w4-system-of-record/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="System of Record: Postgres, Vectors and Searchable Context">
+<meta property="og:description" content="Consolidate by default, specialise deliberately. Where worker state lives, why relational plus vector in one store beats a constellation of specialised…">
+<meta property="og:url" content="https://contexai.org/academy/courses/w4-system-of-record/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--deep:#0A3E40;--mid:#12676A;--bright:#1E9B9F;--lift:#7FD3D6;--mist:#D6E8E8;
+--gold:#C9A227;--goldsoft:#F3E6BF;--ink:#0B1F21;--dim:#48595A;--sand:#F5F2EA;--line:#DDE5E4}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background:var(--sand);color:var(--ink);line-height:1.6}
+.bar{height:5px;background:linear-gradient(90deg,var(--deep),var(--mid),var(--bright),var(--gold))}
+header{background:var(--deep);color:#fff;padding:2.6rem 1.25rem 2.2rem}
+.wrap{max-width:60rem;margin:0 auto}
+.eyebrow{color:var(--lift);letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;
+font-weight:700;margin:0 0 .5rem}
+h1{margin:0 0 .7rem;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2}
+header p{margin:0;color:#DCEBEB;max-width:46rem;font-size:1.05rem}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);
+padding:.3rem .8rem;border-radius:999px;font-size:.85rem}
+main{padding:2rem 1.25rem 3rem}
+h2{color:var(--deep);font-size:1.3rem;margin:2.2rem 0 .7rem}
+ul.outcomes{padding-left:1.2rem}ul.outcomes li{margin:.35rem 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem}
+.cta{display:inline-block;background:var(--deep);color:#fff;text-decoration:none;
+padding:.8rem 1.4rem;border-radius:10px;font-weight:600;margin:.4rem .6rem .4rem 0;
+min-height:44px}
+.cta.alt{background:#fff;color:var(--deep);border:1px solid var(--deep)}
+.cta:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--deep);
+outline-offset:2px}
+.note{color:var(--dim);font-size:.9rem}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;
+padding:.8rem 1rem;margin:.5rem 0}
+summary{cursor:pointer;font-weight:600;color:var(--deep)}
+footer{max-width:60rem;margin:0 auto;padding:0 1.25rem 3rem;color:var(--dim);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "System of Record: Postgres, Vectors and Searchable Context", "courseCode": "W4", "description": "Consolidate by default, specialise deliberately. Where worker state lives, why relational plus vector in one store beats a constellation of specialised ones for most teams, and what consistency you are giving up when it does not.", "url": "https://contexai.org/academy/courses/w4-system-of-record/", "provider": {"@type": "EducationalOrganization", "name": "ContexAi Academy", "sameAs": "https://contexai.org"}, "educationalLevel": "Advanced", "teaches": ["On successful completion, you will be able to justify a consolidation-first approach to worker state.", "On successful completion, you will be able to assess when a specialised store is genuinely warranted."], "timeRequired": "PT5H", "inLanguage": "en", "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion", "audience": {"@type": "EducationalAudience", "audienceType": "Engineers designing the state layer for AI workers"}, "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "PT5H", "offers": {"@type": "Offer", "category": "Subscription", "price": "10.00", "priceCurrency": "USD", "description": "$10 a month for any 2 courses", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "10.00", "priceCurrency": "USD", "unitText": "month", "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}}, "validFrom": "2026-10-18"}}, "coursePrerequisites": ["The Invariant Architecture: Principal, Delegate, Management Layer", "Retrieval, Grounding and Attribution"], "offers": {"@type": "Offer", "category": "Subscription", "price": "10.00", "priceCurrency": "USD", "description": "$10 a month for any 2 courses", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "10.00", "priceCurrency": "USD", "unitText": "month", "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}}, "validFrom": "2026-10-18"}, "isAccessibleForFree": false}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged."}}, {"@type": "Question", "name": "Who is this course for?", "acceptedAnswer": {"@type": "Answer", "text": "Engineers designing the state layer for AI workers"}}, {"@type": "Question", "name": "Do I need any prior knowledge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: The Invariant Architecture: Principal, Delegate, Management Layer; Retrieval, Grounding and Attribution. If you can already do what those cover, the placement guide will take you straight here."}}, {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "About 5 hours of study in total, including the narrated lessons, reading and practice. You set your own pace."}}, {"@type": "Question", "name": "What do I receive at the end?", "acceptedAnswer": {"@type": "Answer", "text": "A ContexAi Academy Certificate of Completion, issued when you have passed the course's assessment. It records what you can demonstrably do; it is not an accredited qualification."}}, {"@type": "Question", "name": "How is it assessed?", "acceptedAnswer": {"@type": "Answer", "text": "By applied written tasks marked against the course's stated outcomes."}}]}</script>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="wrap">
+<p class="eyebrow">ContexAi Academy · Course code W4 · Advanced</p>
+<h1>System of Record: Postgres, Vectors and Searchable Context</h1>
+<p>Consolidate by default, specialise deliberately. Where worker state lives, why relational plus vector in one store beats a constellation of specialised ones for most teams, and what consistency you are giving up when it does not.</p>
+<div class="facts"><span class="fact">Advanced</span><span class="fact">$10 a month for any 2 courses</span><span class="fact">~5 hours</span><span class="fact">1 narrated module</span><span class="fact">Certificate in AI Workforce Engineering</span></div>
+</div></header>
+<main><div class="wrap">
+<a class="cta" href="https://contexai.org/academy/start/">Find your starting point</a>
+
+
+<h2>What you will be able to do</h2>
+<p>On successful completion, you will be able to:</p>
+<ul class="outcomes"><li>Justify a consolidation-first approach to worker state.</li><li>Assess when a specialised store is genuinely warranted.</li></ul>
+
+<h2>Who it is for</h2>
+<p>Engineers designing the state layer for AI workers</p>
+
+<h2>Before you start</h2>
+<ul><li><a href="https://contexai.org/academy/courses/w2-invariant-architecture/">The Invariant Architecture: Principal, Delegate, Management Layer</a></li><li><a href="https://contexai.org/academy/courses/e3-retrieval-grounding-attribution/">Retrieval, Grounding and Attribution</a></li></ul><p class='note'>Already able to do what these cover? The placement guide will recognise it and send you straight here.</p>
+
+<h2>How it works</h2>
+<div class="card">
+<p>Every module is taught aloud, one line at a time, with a pause after each line so
+it lands before the next one arrives — and you can go back, skip or replay at any point.
+Each module ends with an applied written task marked against what the module set out to teach.</p>
+<p class="note">On completion you receive a ContexAi Academy Certificate of Completion. It records what you can
+demonstrably do; it is not an accredited qualification.</p>
+</div>
+
+<h2>Fees</h2>
+<div class="card"><p><strong>$10 a month for any 2 courses.</strong></p><p>A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged.</p></div>
+
+<h2>Questions</h2>
+<details><summary>How much does it cost?</summary><p>A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged.</p></details><details><summary>Who is this course for?</summary><p>Engineers designing the state layer for AI workers</p></details><details><summary>Do I need any prior knowledge?</summary><p>Yes: The Invariant Architecture: Principal, Delegate, Management Layer; Retrieval, Grounding and Attribution. If you can already do what those cover, the placement guide will take you straight here.</p></details><details><summary>How long does it take?</summary><p>About 5 hours of study in total, including the narrated lessons, reading and practice. You set your own pace.</p></details><details><summary>What do I receive at the end?</summary><p>A ContexAi Academy Certificate of Completion, issued when you have passed the course&#x27;s assessment. It records what you can demonstrably do; it is not an accredited qualification.</p></details><details><summary>How is it assessed?</summary><p>By applied written tasks marked against the course&#x27;s stated outcomes.</p></details>
+</div></main>
+<footer>ContexAi Academy is part of ContexAi Consultancy.</footer>
+</body>
+</html>

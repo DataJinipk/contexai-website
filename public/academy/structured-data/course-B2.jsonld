@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Python from Zero, with AI as Your Assistant",
+  "courseCode": "B2",
+  "description": "Write your first real Python: values and types, decisions, lists and dictionaries, and reading errors. Use an AI assistant the way a good student uses a tutor — to explain, quiz and check your thinking, never to do the work for you — and finish by finding the bugs in code an AI wrote. Completing this course prepares you for F1, How Intelligent Systems Behave.",
+  "url": "https://contexai.org/academy/courses/b2-python-from-zero/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Beginner",
+  "teaches": [
+    "On successful completion, you will be able to explain why a value's type determines which operations Python allows on it.",
+    "On successful completion, you will be able to implement a function that converts, computes and formats values.",
+    "On successful completion, you will be able to trace which branch of an if, elif and else chain runs for a given value.",
+    "On successful completion, you will be able to implement a function that classifies a value using ordered conditions and correct boundaries.",
+    "On successful completion, you will be able to use a loop to accumulate a total over a list of records.",
+    "On successful completion, you will be able to use a dictionary to combine values that share a key.",
+    "On successful completion, you will be able to interpret a Python traceback to locate the line and the cause of an error.",
+    "On successful completion, you will be able to detect and correct defects in AI-generated code using failing tests.",
+    "On successful completion, you will be able to trace a function call by matching each argument to its parameter, including default and keyword arguments.",
+    "On successful completion, you will be able to predict which names a function can read and which it changes, telling local names from global ones.",
+    "On successful completion, you will be able to implement a task as small functions that each do one job, reusing one function instead of copying its code.",
+    "On successful completion, you will be able to read a text file line by line inside a with block, and write results to a new file in the right mode.",
+    "On successful completion, you will be able to clean and split each line of text with strip, split and splitlines, skipping blank lines and counting malformed ones.",
+    "On successful completion, you will be able to implement file processing as functions that take text and return text, keeping the file reading and writing at the edges."
+  ],
+  "timeRequired": "PT23H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Complete beginners who have never written a line of code"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT23H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "Free in your first month, then $10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "Free in your first month, then $10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

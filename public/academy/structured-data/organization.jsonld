@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "ContexAi Academy",
+  "url": "https://contexai.org/academy/",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "ContexAi Consultancy",
+    "url": "https://contexai.org"
+  },
+  "sameAs": [
+    "https://contexai.org"
+  ],
+  "description": "Online technology courses from first principles to professional AI, quantum computing, automation and robotics — each assessed against stated outcomes."
+}

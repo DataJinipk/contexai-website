@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "The Agentic Enterprise: Operations, People and Innovation",
+  "courseCode": "S3",
+  "description": "Take agents beyond finance into the rest of the enterprise. Run a three-way match in accounts payable, design an onboarding agent that knows which steps are not its to take, write a contract of success with a baseline, a target and acceptance criteria before any work starts, orchestrate agents across departments, and test a new venture inside the firm with a falsifiable hypothesis. Each module ends in a graded task that encodes the operating rule. S1 is the recommended starting point.",
+  "url": "https://contexai.org/academy/courses/s3-agentic-enterprise-operations-people-innovation/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Intermediate",
+  "teaches": [
+    "On successful completion, you will be able to apply a three-way match with a price tolerance to decide whether a supplier invoice may be paid.",
+    "On successful completion, you will be able to explain why exceptions go to a queue for a person rather than being resolved by the agent.",
+    "On successful completion, you will be able to classify onboarding tasks as agent work, agent work with approval, or human-only work.",
+    "On successful completion, you will be able to justify the least-privilege principle when an agent requests system access for a new hire.",
+    "On successful completion, you will be able to evaluate whether a contract of success states a measurable baseline, target and acceptance criteria.",
+    "On successful completion, you will be able to calculate how much of the promised improvement a deployment has delivered.",
+    "On successful completion, you will be able to explain why every step in a cross-departmental agent workflow needs a single named owner.",
+    "On successful completion, you will be able to apply a pre-registered decision rule to judge an internal venture experiment as pivot, persevere or inconclusive."
+  ],
+  "timeRequired": "PT11H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "COOs, procurement and supply-chain leads, HR and people-operations leaders, transformation directors, product managers and intrapreneurs"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT11H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

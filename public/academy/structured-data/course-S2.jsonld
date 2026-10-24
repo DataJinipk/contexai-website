@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Agents in the Office of the CFO, Banking and Compliance",
+  "courseCode": "S2",
+  "description": "Put agents to work in the highest-consequence functions of a firm without giving up the professional's judgement. Build finance skill libraries over a unified financial data model, compute an IFRS 9 expected credit loss and a capital adequacy ratio, flag AML threshold breaches and structuring, apply an Islamic finance overlay, and triage an NDA with the human gate in the right place. Each module ends in a graded task that encodes the professional rule. S1 is the recommended starting point; Q2 goes deeper on the credit-risk modelling for those who want it.",
+  "url": "https://contexai.org/academy/courses/s2-agents-cfo-banking-compliance/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Intermediate",
+  "teaches": [
+    "On successful completion, you will be able to explain how a unified financial data model lets one agent work across different accounting systems.",
+    "On successful completion, you will be able to apply a mapping rule that converts records from three accounting systems into one common shape.",
+    "On successful completion, you will be able to calculate a probability-weighted expected credit loss from scenario estimates.",
+    "On successful completion, you will be able to calculate a capital adequacy ratio and check it against a stated minimum.",
+    "On successful completion, you will be able to apply threshold and aggregation rules to flag cash transactions for review.",
+    "On successful completion, you will be able to explain how a Shariah overlay changes the rules an agent follows without replacing the base skill.",
+    "On successful completion, you will be able to apply a negotiation playbook to sort an NDA into standard or escalate.",
+    "On successful completion, you will be able to justify why an agent may route a contract for signature but never sign it."
+  ],
+  "timeRequired": "PT12H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "CFOs, financial controllers, chartered accountants, bank finance, risk and compliance staff, Islamic banking professionals and in-house lawyers"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT12H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

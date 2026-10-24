@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Professional Certificate in AI Engineering",
+  "description": "Build, evaluate and deploy a grounded AI application within a defended cost and latency budget.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Professional Certificate",
+  "timeToComplete": "PT35H",
+  "programPrerequisites": "See each course's prerequisites"
+}
