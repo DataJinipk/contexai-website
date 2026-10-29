@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Deep Learning Architectures and Transformers",
+  "courseCode": "E1",
+  "description": "How the architecture behind every current language model actually works — attention, tokenisation, embeddings — at the level where you can reason about cost, context limits and failure rather than recite a diagram.",
+  "url": "https://contexai.pk/courses/e1-deep-learning-and-transformers/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Intermediate",
+  "teaches": [
+    "On successful completion, you will be able to explain how subword tokenisation affects cost, context and behaviour.",
+    "On successful completion, you will be able to calculate the token cost of a workload from its character volume.",
+    "On successful completion, you will be able to explain attention as a weighted lookup over a sequence.",
+    "On successful completion, you will be able to analyse why attention cost grows quadratically with sequence length."
+  ],
+  "timeRequired": "PT9H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Developers who have completed the courses of programme P1"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT9H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Your First Learning System",
+    "Working with Data: Cleaning, Encoding and Leakage"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

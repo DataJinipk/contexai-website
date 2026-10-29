@@ -1,0 +1,4 @@
+# Written by scripts/export_growth.py. Wrangler does not upload these files.
+# growth/*.md (the demand ranking) is internal and never goes on the website.
+*.md
+.assetsignore

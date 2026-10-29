@@ -1,0 +1,51 @@
+User-agent: *
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /learn/
+Disallow: /admin/
+
+Sitemap: https://contexai.pk/sitemap.xml

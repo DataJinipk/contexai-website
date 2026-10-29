@@ -1,0 +1,87 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "AI at Work: A Practical Introduction for Non-Programmers",
+  "courseCode": "B1",
+  "description": "What generative AI actually does, where it fails, and how to use it at work without being misled by it. No coding. You leave able to decide what may go into an AI tool, how to make its output checkable, and whether a given output is fit to use, needs revising, or should be thrown away.",
+  "url": "https://contexai.pk/courses/b1-ai-at-work/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Beginner",
+  "teaches": [
+    "On successful completion, you will be able to explain how a language model produces text by predicting likely continuations.",
+    "On successful completion, you will be able to distinguish tasks where a generative model is reliable from tasks where it is not.",
+    "On successful completion, you will be able to describe hallucination, data leakage and overconfidence with a workplace example of each.",
+    "On successful completion, you will be able to classify a piece of work information by whether it may be entered into an AI tool.",
+    "On successful completion, you will be able to apply a task, context, constraints and format structure to a workplace prompt.",
+    "On successful completion, you will be able to use source-grounding so that every claim in an AI output can be checked.",
+    "On successful completion, you will be able to evaluate an AI-generated output against its sources using a verification checklist.",
+    "On successful completion, you will be able to justify a decision to use, revise or discard an AI output in proportion to its stakes.",
+    "On successful completion, you will be able to construct a reusable prompt template for a recurring work task that names the reader, an invented example and a checkable output format.",
+    "On successful completion, you will be able to plan a chain of smaller prompts for a multi-step work task, with a check between each step.",
+    "On successful completion, you will be able to critique a prompt that produced an unusable output and revise it to remove the cause.",
+    "On successful completion, you will be able to construct a summary prompt that makes the tool quote its source for every point, and verify each point against the original.",
+    "On successful completion, you will be able to extract names, dates and amounts from a document into a table in which every value is traced to its source line, with any arithmetic done outside the tool.",
+    "On successful completion, you will be able to evaluate an AI-drafted email built from checked data and justify a decision to use, revise or discard it.",
+    "On successful completion, you will be able to construct a tool scorecard for one team task in which data-terms, permission and control checks must pass before quality, fit and cost are compared.",
+    "On successful completion, you will be able to test two or more candidate tools on the same set of invented or public cases and record the results on a fixed checklist, with counts.",
+    "On successful completion, you will be able to calculate the full monthly cost of each tool from its price, the team's volume and the time spent checking, and justify a recommendation to adopt, trial or reject it.",
+    "On successful completion, you will be able to design a written workflow for one recurring task that states the reader, the data class, the approved tool with where its approval is recorded, the steps from input to a checked output, and an owner.",
+    "On successful completion, you will be able to check two or more outputs of the workflow's saved template on invented or public cases with the verification checklist, and record the results with counts and a use, revise or discard decision.",
+    "On successful completion, you will be able to calculate the time per run with and without the workflow, including checking, and set stop rules and a review trigger that follow from the results."
+  ],
+  "timeRequired": "PT26H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Professionals with no coding background, including finance, banking, SME and public-sector staff in Pakistan and the GCC"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT26H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "Free in your first month, then $10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "Free in your first month, then $10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

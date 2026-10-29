@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0A3E40">
+<title>Where should I start? | ContexAi Academy</title>
+<meta name="description" content="Answer five quick questions and get the right first course — from complete beginner to professional AI, quantum and robotics.">
+<link rel="canonical" href="https://contexai.pk/start/">
+<style>
+:root{--deep:#0A3E40;--mid:#12676A;--bright:#1E9B9F;--lift:#7FD3D6;--mist:#D6E8E8;
+--gold:#C9A227;--goldsoft:#F3E6BF;--ink:#0B1F21;--dim:#48595A;--sand:#F5F2EA;--line:#DDE5E4}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background:var(--sand);color:var(--ink);line-height:1.6}
+.bar{height:5px;background:linear-gradient(90deg,var(--deep),var(--mid),var(--bright),var(--gold))}
+header{background:var(--deep);color:#fff;padding:2.6rem 1.25rem 2.2rem}
+.wrap{max-width:60rem;margin:0 auto}
+.eyebrow{color:var(--lift);letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;
+font-weight:700;margin:0 0 .5rem}
+h1{margin:0 0 .7rem;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2}
+header p{margin:0;color:#DCEBEB;max-width:46rem;font-size:1.05rem}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);
+padding:.3rem .8rem;border-radius:999px;font-size:.85rem}
+main{padding:2rem 1.25rem 3rem}
+h2{color:var(--deep);font-size:1.3rem;margin:2.2rem 0 .7rem}
+ul.outcomes{padding-left:1.2rem}ul.outcomes li{margin:.35rem 0}
+ol.modules{padding-left:1.4rem}ol.modules li{margin:.5rem 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem}
+.cta{display:inline-block;background:var(--deep);color:#fff;text-decoration:none;
+padding:.8rem 1.4rem;border-radius:10px;font-weight:600;margin:.4rem .6rem .4rem 0;
+min-height:44px}
+.cta.alt{background:#fff;color:var(--deep);border:1px solid var(--deep)}
+.cta:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--deep);
+outline-offset:2px}
+.note{color:var(--dim);font-size:.9rem}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;
+padding:.8rem 1rem;margin:.5rem 0}
+summary{cursor:pointer;font-weight:600;color:var(--deep)}
+footer{max-width:60rem;margin:0 auto;padding:0 1.25rem 3rem;color:var(--dim);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+fieldset{border:1px solid var(--line);border-radius:12px;background:#fff;margin:1rem 0;padding:1rem 1.2rem}
+legend{font-weight:600;color:var(--deep);padding:0 .3rem}
+label.opt{display:flex;gap:.6rem;align-items:flex-start;padding:.45rem .2rem;cursor:pointer;min-height:32px}
+#result{display:none} input[type=email]{width:100%;max-width:24rem;padding:.6rem;border:1px solid var(--line);border-radius:8px;font:inherit;display:block;margin:.3rem 0 .8rem}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="wrap">
+<p class="eyebrow">ContexAi Academy</p>
+<h1>Where should I start?</h1>
+<p>Five questions. One recommendation. It takes about a minute.</p>
+</div></header>
+<main><div class="wrap">
+<p class="note">This is a guide to choosing your first course, not a test. Inside the
+Academy, a short diagnostic confirms your level and skips anything you can already do.</p>
+<form id="quiz">
+<fieldset><legend>1. Have you written code before?</legend>
+<label class="opt"><input type="radio" name="code" value="none" required> Never</label>
+<label class="opt"><input type="radio" name="code" value="some"> A little — tutorials, small scripts</label>
+<label class="opt"><input type="radio" name="code" value="yes"> Yes, I program regularly</label>
+</fieldset>
+<fieldset><legend>2. Do you want to build software, or use AI in your work?</legend>
+<label class="opt"><input type="radio" name="goal" value="use" required> Use AI well in my job</label>
+<label class="opt"><input type="radio" name="goal" value="build"> Build AI systems myself</label>
+<label class="opt"><input type="radio" name="goal" value="govern"> Oversee, audit or govern AI</label>
+</fieldset>
+<fieldset><legend>3. How familiar are you with machine learning?</legend>
+<label class="opt"><input type="radio" name="ml" value="none" required> Not at all</label>
+<label class="opt"><input type="radio" name="ml" value="basics"> I know the basic ideas</label>
+<label class="opt"><input type="radio" name="ml" value="built"> I have trained or deployed models</label>
+</fieldset>
+<fieldset><legend>4. Have you built anything with large language models?</legend>
+<label class="opt"><input type="radio" name="llm" value="no" required> No</label>
+<label class="opt"><input type="radio" name="llm" value="yes"> Yes — apps, retrieval, prompts in production</label>
+</fieldset>
+<fieldset><legend>5. Which best describes your field?</legend>
+<label class="opt"><input type="radio" name="field" value="tech" required> Technology / engineering</label>
+<label class="opt"><input type="radio" name="field" value="finance"> Finance, banking or accounting</label>
+<label class="opt"><input type="radio" name="field" value="other"> Something else</label>
+</fieldset>
+<button type="submit" class="cta">Show my starting point</button>
+</form>
+<section id="result" aria-live="polite">
+<h2>Start here: <span id="rTitle"></span></h2>
+<p id="rWhy"></p>
+<p id="rPrice" class="note"></p>
+<a class="cta" id="rLink" href="#">See the course</a>
+
+</section>
+</div></main>
+<footer>ContexAi Academy is part of ContexAi Consultancy.</footer>
+<script>
+const ROUTES = {"no-code": {"code": "B1", "title": "AI at Work: A Practical Introduction for Non-Programmers", "why": "you want to use AI well at work without learning to code", "url": "https://contexai.pk/courses/b1-ai-at-work/", "price": "Free in your first month, then $10 a month for any 2 courses"}, "new-to-code": {"code": "B2", "title": "Python from Zero, with AI as Your Assistant", "why": "you want to build things and have not programmed before", "url": "https://contexai.pk/courses/b2-python-from-zero/", "price": "Free in your first month, then $10 a month for any 2 courses"}, "codes-new-to-ai": {"code": "F1", "title": "How Intelligent Systems Behave", "why": "you can program and want the foundations of AI", "url": "https://contexai.pk/courses/f1-how-intelligent-systems-behave/", "price": "Free in your first month, then $10 a month for any 2 courses"}, "ml-known": {"code": "E1", "title": "Deep Learning Architectures and Transformers", "why": "you know the basics of machine learning and want to build with modern models", "url": "https://contexai.pk/courses/e1-deep-learning-and-transformers/", "price": "$10 a month for any 2 courses"}, "builds-llm-apps": {"code": "A1", "title": "Agent Architectures: Planning, Tools and Memory", "why": "you already build with language models and want to build agents", "url": "https://contexai.pk/courses/a1-agent-architectures/", "price": "$10 a month for any 2 courses"}, "governance": {"code": "G1", "title": "The Regulatory Landscape: EU AI Act, NIST AI RMF, ISO/IEC 42001", "why": "your interest is risk, compliance and assurance of AI", "url": "https://contexai.pk/courses/g1-regulatory-landscape/", "price": "$10 a month for any 2 courses"}, "finance": {"code": "Q2", "title": "Actuarial and Predictive Risk Models", "why": "you work in finance or banking and want AI applied to it", "url": "https://contexai.pk/courses/q2-actuarial-and-predictive-risk-models/", "price": "$10 a month for any 2 courses"}};
+/* The routing is deliberately simple and visible: the earliest point at which
+   the answers say the student can enter. Over-placing someone is the expensive
+   error — a stranger who hits a wall in their first hour does not come back. */
+function place(a){
+  if(a.goal==='govern' && ROUTES.governance) return 'governance';
+  if(a.field==='finance' && a.goal==='use' && ROUTES.finance && a.code!=='none') return 'finance';
+  if(a.goal==='use' && a.code!=='yes') return 'no-code';
+  if(a.code==='none') return a.goal==='build' ? 'new-to-code' : 'no-code';
+  if(a.code==='some') return 'new-to-code';
+  if(a.llm==='yes' && ROUTES['builds-llm-apps']) return 'builds-llm-apps';
+  if(a.ml!=='none' && ROUTES['ml-known']) return 'ml-known';
+  return 'codes-new-to-ai';
+}
+document.getElementById('quiz').addEventListener('submit', ev => {
+  ev.preventDefault();
+  const a = Object.fromEntries(new FormData(ev.target));
+  let key = place(a);
+  if(!ROUTES[key]) key = Object.keys(ROUTES)[0];
+  const r = ROUTES[key];
+  document.getElementById('rTitle').textContent = r.code + ' — ' + r.title;
+  document.getElementById('rWhy').textContent = 'Because ' + r.why + '.';
+  document.getElementById('rLink').href = r.url;
+  document.getElementById('rPrice').textContent = r.price ? 'Fees: ' + r.price + '.' : '';
+  const f = document.getElementById('routeField'); if(f) f.value = r.code;
+  const s = document.getElementById('result'); s.style.display = 'block';
+  s.scrollIntoView({behavior:'smooth', block:'start'});
+  document.getElementById('rTitle').focus && s.querySelector('h2').setAttribute('tabindex','-1');
+  s.querySelector('h2').focus();
+});
+</script>
+</body>
+</html>

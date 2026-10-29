@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Certificate in AI Workforce Engineering",
+  "description": "Manufacture, govern and retire persistent AI Workers that deliver outcomes rather than assist with tasks. Includes the Forward Deployed Engineer role.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Specialist Certificate",
+  "timeToComplete": "PT32H",
+  "programPrerequisites": "See each course's prerequisites"
+}

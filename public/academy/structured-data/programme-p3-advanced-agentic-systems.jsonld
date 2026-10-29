@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Advanced Certificate in Agentic Systems",
+  "description": "Design, secure and evaluate autonomous multi-agent systems, and write the safety case for them.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Advanced Certificate",
+  "timeToComplete": "PT25H",
+  "programPrerequisites": "See each course's prerequisites"
+}

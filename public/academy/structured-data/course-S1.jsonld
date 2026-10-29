@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Thinking Clearly in the AI Era and Agent Foundations",
+  "courseCode": "S1",
+  "description": "How to work with AI agents without being worked by them. Judge an agent's output, run work on the 10-80-10 rhythm, choose between a general agent, a custom-built one and a pre-built one, turn what you know into a SKILL.md an agent can follow, and recognise the work an agent should not touch. Every module ends in a short graded task that encodes a professional judgement rule; no programming background is needed.",
+  "url": "https://contexai.pk/courses/s1-thinking-clearly-agent-foundations/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Beginner",
+  "teaches": [
+    "On successful completion, you will be able to explain why the fluency of an agent's output is not evidence that it is correct.",
+    "On successful completion, you will be able to apply the 10-80-10 rhythm to divide a piece of work between the professional and the agent.",
+    "On successful completion, you will be able to distinguish a general agent, a custom-built agent and a pre-built agent by who designs the workflow.",
+    "On successful completion, you will be able to classify a business task as consultant, build or buy work using stated decision rules.",
+    "On successful completion, you will be able to describe the parts of a SKILL.md file and what each tells an agent.",
+    "On successful completion, you will be able to apply a structural checklist to judge whether a SKILL.md is ready to deploy.",
+    "On successful completion, you will be able to identify the conditions under which a task should not be handed to an agent.",
+    "On successful completion, you will be able to apply graduation criteria to decide whether an agent may leave shadow mode."
+  ],
+  "timeRequired": "PT11H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Business professionals who decide rather than code: CFOs, chartered accountants, bankers, compliance officers, lawyers, operations and HR leaders, in Pakistan, the GCC and beyond"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT11H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "Free in your first month, then $10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "Free in your first month, then $10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

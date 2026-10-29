@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Agentic AI for Business Professionals",
+  "description": "For professionals who decide rather than code. Judge an agent's output, choose between a general, a custom-built and a pre-built agent, and turn your expertise into skills an agent can follow. Then put agents to work in finance, banking, compliance, legal, operations and HR with the human judgement kept where it belongs. No programming background needed.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate in Agentic AI Business Strategy",
+  "timeToComplete": "PT33H",
+  "programPrerequisites": "See each course's prerequisites"
+}

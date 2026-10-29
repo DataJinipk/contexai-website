@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0A3E40">
+<title>How Intelligent Systems Behave | ContexAi Academy</title>
+<meta name="description" content="Before you build anything, learn to characterise the problem. This course gives you the vocabulary that every later decision depends on: what an agent…">
+<link rel="canonical" href="https://contexai.pk/courses/f1-how-intelligent-systems-behave/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How Intelligent Systems Behave">
+<meta property="og:description" content="Before you build anything, learn to characterise the problem. This course gives you the vocabulary that every later decision depends on: what an agent…">
+<meta property="og:url" content="https://contexai.pk/courses/f1-how-intelligent-systems-behave/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--deep:#0A3E40;--mid:#12676A;--bright:#1E9B9F;--lift:#7FD3D6;--mist:#D6E8E8;
+--gold:#C9A227;--goldsoft:#F3E6BF;--ink:#0B1F21;--dim:#48595A;--sand:#F5F2EA;--line:#DDE5E4}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background:var(--sand);color:var(--ink);line-height:1.6}
+.bar{height:5px;background:linear-gradient(90deg,var(--deep),var(--mid),var(--bright),var(--gold))}
+header{background:var(--deep);color:#fff;padding:2.6rem 1.25rem 2.2rem}
+.wrap{max-width:60rem;margin:0 auto}
+.eyebrow{color:var(--lift);letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;
+font-weight:700;margin:0 0 .5rem}
+h1{margin:0 0 .7rem;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2}
+header p{margin:0;color:#DCEBEB;max-width:46rem;font-size:1.05rem}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);
+padding:.3rem .8rem;border-radius:999px;font-size:.85rem}
+main{padding:2rem 1.25rem 3rem}
+h2{color:var(--deep);font-size:1.3rem;margin:2.2rem 0 .7rem}
+ul.outcomes{padding-left:1.2rem}ul.outcomes li{margin:.35rem 0}
+ol.modules{padding-left:1.4rem}ol.modules li{margin:.5rem 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem}
+.cta{display:inline-block;background:var(--deep);color:#fff;text-decoration:none;
+padding:.8rem 1.4rem;border-radius:10px;font-weight:600;margin:.4rem .6rem .4rem 0;
+min-height:44px}
+.cta.alt{background:#fff;color:var(--deep);border:1px solid var(--deep)}
+.cta:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--deep);
+outline-offset:2px}
+.note{color:var(--dim);font-size:.9rem}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;
+padding:.8rem 1rem;margin:.5rem 0}
+summary{cursor:pointer;font-weight:600;color:var(--deep)}
+footer{max-width:60rem;margin:0 auto;padding:0 1.25rem 3rem;color:var(--dim);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "How Intelligent Systems Behave", "courseCode": "F1", "description": "Before you build anything, learn to characterise the problem. This course gives you the vocabulary that every later decision depends on: what an agent is, what makes an environment hard, and why the same technique succeeds in one setting and fails in another.", "url": "https://contexai.pk/courses/f1-how-intelligent-systems-behave/", "provider": {"@type": "EducationalOrganization", "name": "ContexAi Academy", "sameAs": "https://contexai.org"}, "educationalLevel": "Beginner", "teaches": ["On successful completion, you will be able to define an agent in terms of perception, action and environment.", "On successful completion, you will be able to distinguish reflex, goal-based and utility-based agents.", "On successful completion, you will be able to classify an environment by observability, determinism and dynamics.", "On successful completion, you will be able to predict which problem characteristics make a technique unsuitable.", "On successful completion, you will be able to explain what rationality means for an agent with limited resources.", "On successful completion, you will be able to identify where a performance measure creates perverse incentives.", "On successful completion, you will be able to describe three deployment domains and the failure mode characteristic of each.", "On successful completion, you will be able to assess a proposed AI application for its most likely failure mode.", "On successful completion, you will be able to implement a review that lists which of a proposal's likely failures still lack evidence, an owner and a date.", "On successful completion, you will be able to identify the performance element, critic, learning element and problem generator in a described learning agent.", "On successful completion, you will be able to diagnose which part of a learning agent is at fault when it stops improving or improves at the wrong thing.", "On successful completion, you will be able to implement an epsilon-greedy choice that tries untried options first and explores at a set rate.", "On successful completion, you will be able to label each step of a tool-using agent's trace as a percept or an action, and place the agent boundary.", "On successful completion, you will be able to classify how another agent changes an environment along Module 2's axes, and name the failure it causes.", "On successful completion, you will be able to implement a check that refuses a reply that answers another request, has failed or is too old.", "On successful completion, you will be able to identify, from a problem description, the five properties that decide an approach.", "On successful completion, you will be able to choose fixed rules, search, planning under uncertainty or learning for a described problem, and reject the others by a named property.", "On successful completion, you will be able to implement an ordered rule that recommends an approach from a problem's properties, and says when none fits yet.", "On successful completion, you will be able to characterise an unfamiliar problem by the five properties and the dynamic axis, recommend an approach by Module 7's rule, and reject the others by a named property.", "On successful completion, you will be able to state what a proposal still lacks before it is a plan: a measure when no approach fits, a replanning trigger when search or planning under uncertainty meets a dynamic world, and a complete check for each likely failure.", "On successful completion, you will be able to implement a review that runs a proposal end to end, from its properties to its verdict and the list of what is still missing."], "timeRequired": "PT25H", "inLanguage": "en", "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion", "audience": {"@type": "EducationalAudience", "audienceType": "Developers with basic Python and no prior AI background"}, "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "PT25H", "offers": {"@type": "Offer", "category": "Subscription", "price": "10.00", "priceCurrency": "USD", "description": "Free in your first month, then $10 a month for any 2 courses", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "10.00", "priceCurrency": "USD", "unitText": "month", "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}}, "validFrom": "2026-10-18"}}, "coursePrerequisites": ["Python from Zero, with AI as Your Assistant"], "offers": {"@type": "Offer", "category": "Subscription", "price": "10.00", "priceCurrency": "USD", "description": "Free in your first month, then $10 a month for any 2 courses", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "10.00", "priceCurrency": "USD", "unitText": "month", "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}}, "validFrom": "2026-10-18"}, "isAccessibleForFree": false}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Your first month with the Academy is free for up to 2 Beginner (Level 1) courses. After that: A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged."}}, {"@type": "Question", "name": "Who is this course for?", "acceptedAnswer": {"@type": "Answer", "text": "Developers with basic Python and no prior AI background"}}, {"@type": "Question", "name": "Do I need any prior knowledge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: Python from Zero, with AI as Your Assistant. If you can already do what that course covers, the placement guide will take you straight here."}}, {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "About 24.1 hours of study in total, including the narrated lessons, reading and practice. You set your own pace. Full Course: 8 modules and 24.1 notional hours (a Full Course has at least 6 modules and 10 hours)."}}, {"@type": "Question", "name": "What do I receive at the end?", "acceptedAnswer": {"@type": "Answer", "text": "A ContexAi Academy Certificate of Completion, issued when you have passed the course's assessment. It records what you can demonstrably do; it is not an accredited qualification. This course is one part of the programme Foundation Certificate in Applied AI. Its certificate covers this course alone, not the whole programme."}}, {"@type": "Question", "name": "How is it assessed?", "acceptedAnswer": {"@type": "Answer", "text": "By graded coding exercises run against automated tests."}}]}</script>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="wrap">
+<p class="eyebrow">ContexAi Academy · Course code F1 · Beginner</p>
+<h1>How Intelligent Systems Behave</h1>
+<p>Before you build anything, learn to characterise the problem. This course gives you the vocabulary that every later decision depends on: what an agent is, what makes an environment hard, and why the same technique succeeds in one setting and fails in another.</p>
+<div class="facts"><span class="fact">Beginner</span><span class="fact">Free in your first month, then $10 a month for any 2 courses</span><span class="fact">Full Course</span><span class="fact">~24.1 hours</span><span class="fact">8 narrated modules</span><span class="fact">8 graded exercises</span><span class="fact">Programme: Foundation Certificate in Applied AI</span></div>
+</div></header>
+<main><div class="wrap">
+<a class="cta" href="https://contexai.pk/start/">Find your starting point</a>
+
+
+<h2>What you will be able to do</h2>
+<p>On successful completion, you will be able to:</p>
+<ul class="outcomes"><li>Define an agent in terms of perception, action and environment.</li><li>Distinguish reflex, goal-based and utility-based agents.</li><li>Classify an environment by observability, determinism and dynamics.</li><li>Predict which problem characteristics make a technique unsuitable.</li><li>Explain what rationality means for an agent with limited resources.</li><li>Identify where a performance measure creates perverse incentives.</li><li>Describe three deployment domains and the failure mode characteristic of each.</li><li>Assess a proposed AI application for its most likely failure mode.</li><li>Implement a review that lists which of a proposal&#x27;s likely failures still lack evidence, an owner and a date.</li><li>Identify the performance element, critic, learning element and problem generator in a described learning agent.</li><li>Diagnose which part of a learning agent is at fault when it stops improving or improves at the wrong thing.</li><li>Implement an epsilon-greedy choice that tries untried options first and explores at a set rate.</li><li>Label each step of a tool-using agent&#x27;s trace as a percept or an action, and place the agent boundary.</li><li>Classify how another agent changes an environment along Module 2&#x27;s axes, and name the failure it causes.</li><li>Implement a check that refuses a reply that answers another request, has failed or is too old.</li><li>Identify, from a problem description, the five properties that decide an approach.</li><li>Choose fixed rules, search, planning under uncertainty or learning for a described problem, and reject the others by a named property.</li><li>Implement an ordered rule that recommends an approach from a problem&#x27;s properties, and says when none fits yet.</li><li>Characterise an unfamiliar problem by the five properties and the dynamic axis, recommend an approach by Module 7&#x27;s rule, and reject the others by a named property.</li><li>State what a proposal still lacks before it is a plan: a measure when no approach fits, a replanning trigger when search or planning under uncertainty meets a dynamic world, and a complete check for each likely failure.</li><li>Implement a review that runs a proposal end to end, from its properties to its verdict and the list of what is still missing.</li></ul>
+
+<h2>Who it is for</h2>
+<p>Developers with basic Python and no prior AI background</p>
+
+<h2>Modules and time</h2>
+<ol class="modules"><li><strong>What we actually mean by an agent</strong><br><span class="note">~8 min spoken teaching · 40 min reading · 60 min practice · 60 min graded task and reflection · about 2.9 h</span></li><li><strong>What makes an environment hard</strong><br><span class="note">~7 min spoken teaching · 40 min reading · 70 min practice · 60 min graded task and reflection · about 3 h</span></li><li><strong>Rational behaviour and its limits</strong><br><span class="note">~8 min spoken teaching · 40 min reading · 80 min practice · 60 min graded task and reflection · about 3.2 h</span></li><li><strong>Where AI actually gets deployed — and what goes wrong</strong><br><span class="note">~10 min spoken teaching · 55 min reading · 45 min practice · 60 min graded task and reflection · about 2.9 h</span></li><li><strong>Learning agents: improving from feedback, and what to try next</strong><br><span class="note">~12 min spoken teaching · 40 min reading · 70 min practice · 60 min graded task and reflection · about 3.1 h</span></li><li><strong>Agents that use tools and other agents</strong><br><span class="note">~13 min spoken teaching · 40 min reading · 70 min practice · 60 min graded task and reflection · about 3.1 h</span></li><li><strong>Choosing an approach from a problem&#x27;s properties</strong><br><span class="note">~12 min spoken teaching · 40 min reading · 70 min practice · 60 min graded task and reflection · about 3.1 h</span></li><li><strong>Capstone: from a problem&#x27;s properties to a plan</strong><br><span class="note">~15 min spoken teaching · 35 min reading · 50 min practice · 60 min graded task and reflection · about 2.8 h</span></li></ol>
+
+<h2>Before you start</h2>
+<ul><li><a href="https://contexai.pk/courses/b2-python-from-zero/">Python from Zero, with AI as Your Assistant</a></li></ul><p class='note'>Already able to do what this course covers? The placement guide will recognise it and send you straight here.</p>
+
+<h2>How it works</h2>
+<div class="card">
+<p>Every module is taught aloud, one line at a time, with a pause after each line so
+it lands before the next one arrives — and you can go back, skip or replay at any point.
+Each module ends with a coding exercise graded by automated tests: you pass when your code passes its tests.</p>
+<p class="note">On completion you receive a ContexAi Academy Certificate of Completion. It records what you can
+demonstrably do; it is not an accredited qualification.</p>
+</div>
+
+<h2>Fees</h2>
+<div class="card"><p><strong>Free in your first month, then $10 a month for any 2 courses.</strong></p><p>Your first month with the Academy is free for up to 2 Beginner (Level 1) courses. After that: A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged.</p></div>
+
+<h2>Questions</h2>
+<details><summary>How much does it cost?</summary><p>Your first month with the Academy is free for up to 2 Beginner (Level 1) courses. After that: A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged.</p></details><details><summary>Who is this course for?</summary><p>Developers with basic Python and no prior AI background</p></details><details><summary>Do I need any prior knowledge?</summary><p>Yes: Python from Zero, with AI as Your Assistant. If you can already do what that course covers, the placement guide will take you straight here.</p></details><details><summary>How long does it take?</summary><p>About 24.1 hours of study in total, including the narrated lessons, reading and practice. You set your own pace. Full Course: 8 modules and 24.1 notional hours (a Full Course has at least 6 modules and 10 hours).</p></details><details><summary>What do I receive at the end?</summary><p>A ContexAi Academy Certificate of Completion, issued when you have passed the course&#x27;s assessment. It records what you can demonstrably do; it is not an accredited qualification. This course is one part of the programme Foundation Certificate in Applied AI. Its certificate covers this course alone, not the whole programme.</p></details><details><summary>How is it assessed?</summary><p>By graded coding exercises run against automated tests.</p></details>
+</div></main>
+<footer>ContexAi Academy is part of ContexAi Consultancy.</footer>
+</body>
+</html>
