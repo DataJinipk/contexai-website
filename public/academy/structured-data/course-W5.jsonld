@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Eval-Driven Development for Workers",
+  "courseCode": "W5",
+  "description": "Test-driven development for systems that are not deterministic. The eval is the specification: written first, run in CI, and the gate on deployment.",
+  "url": "https://contexai.pk/courses/w5-eval-driven-development/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Advanced",
+  "teaches": [
+    "On successful completion, you will be able to construct a regression suite that gates a worker's deployment.",
+    "On successful completion, you will be able to evaluate a change using a threshold that accounts for run-to-run variance."
+  ],
+  "timeRequired": "PT5H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Engineers responsible for worker reliability over time"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT5H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Evaluation Engineering",
+    "Engines, Durable Execution and the Event Substrate"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

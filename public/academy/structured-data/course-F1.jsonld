@@ -1,0 +1,91 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "How Intelligent Systems Behave",
+  "courseCode": "F1",
+  "description": "Before you build anything, learn to characterise the problem. This course gives you the vocabulary that every later decision depends on: what an agent is, what makes an environment hard, and why the same technique succeeds in one setting and fails in another.",
+  "url": "https://contexai.pk/courses/f1-how-intelligent-systems-behave/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Beginner",
+  "teaches": [
+    "On successful completion, you will be able to define an agent in terms of perception, action and environment.",
+    "On successful completion, you will be able to distinguish reflex, goal-based and utility-based agents.",
+    "On successful completion, you will be able to classify an environment by observability, determinism and dynamics.",
+    "On successful completion, you will be able to predict which problem characteristics make a technique unsuitable.",
+    "On successful completion, you will be able to explain what rationality means for an agent with limited resources.",
+    "On successful completion, you will be able to identify where a performance measure creates perverse incentives.",
+    "On successful completion, you will be able to describe three deployment domains and the failure mode characteristic of each.",
+    "On successful completion, you will be able to assess a proposed AI application for its most likely failure mode.",
+    "On successful completion, you will be able to implement a review that lists which of a proposal's likely failures still lack evidence, an owner and a date.",
+    "On successful completion, you will be able to identify the performance element, critic, learning element and problem generator in a described learning agent.",
+    "On successful completion, you will be able to diagnose which part of a learning agent is at fault when it stops improving or improves at the wrong thing.",
+    "On successful completion, you will be able to implement an epsilon-greedy choice that tries untried options first and explores at a set rate.",
+    "On successful completion, you will be able to label each step of a tool-using agent's trace as a percept or an action, and place the agent boundary.",
+    "On successful completion, you will be able to classify how another agent changes an environment along Module 2's axes, and name the failure it causes.",
+    "On successful completion, you will be able to implement a check that refuses a reply that answers another request, has failed or is too old.",
+    "On successful completion, you will be able to identify, from a problem description, the five properties that decide an approach.",
+    "On successful completion, you will be able to choose fixed rules, search, planning under uncertainty or learning for a described problem, and reject the others by a named property.",
+    "On successful completion, you will be able to implement an ordered rule that recommends an approach from a problem's properties, and says when none fits yet.",
+    "On successful completion, you will be able to characterise an unfamiliar problem by the five properties and the dynamic axis, recommend an approach by Module 7's rule, and reject the others by a named property.",
+    "On successful completion, you will be able to state what a proposal still lacks before it is a plan: a measure when no approach fits, a replanning trigger when search or planning under uncertainty meets a dynamic world, and a complete check for each likely failure.",
+    "On successful completion, you will be able to implement a review that runs a proposal end to end, from its properties to its verdict and the list of what is still missing."
+  ],
+  "timeRequired": "PT25H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Developers with basic Python and no prior AI background"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT25H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "Free in your first month, then $10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Python from Zero, with AI as Your Assistant"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "Free in your first month, then $10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

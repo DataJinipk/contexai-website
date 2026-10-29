@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Agent Architectures: Planning, Tools and Memory",
+  "courseCode": "A1",
+  "description": "An agent is a loop with a budget. This course is about what goes in the loop, what stops it, and the failure modes — goal drift, loop divergence, premature commitment — that only appear once a system acts rather than answers.",
+  "url": "https://contexai.pk/courses/a1-agent-architectures/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Advanced",
+  "teaches": [
+    "On successful completion, you will be able to analyse an agent loop for its termination conditions.",
+    "On successful completion, you will be able to design a budget that bounds cost, steps and wall-clock time."
+  ],
+  "timeRequired": "PT5H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Engineers who have completed the courses of programme P2"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT5H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "coursePrerequisites": [
+    "Evaluation Engineering",
+    "Retrieval, Grounding and Attribution"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

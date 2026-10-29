@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Actuarial and Predictive Risk Models",
+  "courseCode": "Q2",
+  "description": "The statistical machinery behind credit and insurance risk — survival analysis, GLMs, PD/LGD/EAD and expected loss — and the model-risk discipline that governs it. This is where machine learning meets a regulator who will ask you to justify every parameter.",
+  "url": "https://contexai.pk/courses/q2-actuarial-and-predictive-risk-models/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Professional",
+  "teaches": [
+    "On successful completion, you will be able to compute expected credit loss from its probability, severity and exposure components.",
+    "On successful completion, you will be able to explain why the three components must be modelled and validated separately.",
+    "On successful completion, you will be able to validate a PD model on both discrimination and calibration, and judge which failure matters for provisioning.",
+    "On successful completion, you will be able to explain why censored observations cannot be discarded or treated as non-events.",
+    "On successful completion, you will be able to compute a survival curve from censored duration data."
+  ],
+  "timeRequired": "PT11H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Practitioners building or validating risk models in regulated financial contexts"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT11H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}

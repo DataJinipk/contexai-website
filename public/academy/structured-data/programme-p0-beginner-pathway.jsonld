@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Beginner Pathway in Technology",
+  "description": "Start from zero. Use generative AI at work without being misled by it, then write your first Python with an AI assistant as a tutor rather than a ghostwriter. Leads into the Foundation Certificate in Applied AI.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "timeToComplete": "PT57H",
+  "programPrerequisites": "None"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Expert Certificate in AI Governance & Assurance",
+  "description": "Assure an AI system against regulatory and organisational requirements, and defend that judgement to a board or a regulator.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy"
+  },
+  "educationalProgramMode": "online",
+  "educationalCredentialAwarded": "ContexAi Academy Expert Certificate",
+  "timeToComplete": "PT23H",
+  "programPrerequisites": "See each course's prerequisites"
+}

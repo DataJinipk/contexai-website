@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0A3E40">
+<title>Working with Data: Cleaning, Encoding and Leakage</title>
+<meta name="description" content="The work that consumes most of a real project and appears in almost no course: missing values, encoding, imbalance and provenance. CS2023 added this to…">
+<link rel="canonical" href="https://contexai.pk/courses/f4-working-with-data/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Working with Data: Cleaning, Encoding and Leakage">
+<meta property="og:description" content="The work that consumes most of a real project and appears in almost no course: missing values, encoding, imbalance and provenance. CS2023 added this to…">
+<meta property="og:url" content="https://contexai.pk/courses/f4-working-with-data/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--deep:#0A3E40;--mid:#12676A;--bright:#1E9B9F;--lift:#7FD3D6;--mist:#D6E8E8;
+--gold:#C9A227;--goldsoft:#F3E6BF;--ink:#0B1F21;--dim:#48595A;--sand:#F5F2EA;--line:#DDE5E4}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background:var(--sand);color:var(--ink);line-height:1.6}
+.bar{height:5px;background:linear-gradient(90deg,var(--deep),var(--mid),var(--bright),var(--gold))}
+header{background:var(--deep);color:#fff;padding:2.6rem 1.25rem 2.2rem}
+.wrap{max-width:60rem;margin:0 auto}
+.eyebrow{color:var(--lift);letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;
+font-weight:700;margin:0 0 .5rem}
+h1{margin:0 0 .7rem;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2}
+header p{margin:0;color:#DCEBEB;max-width:46rem;font-size:1.05rem}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.fact{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);
+padding:.3rem .8rem;border-radius:999px;font-size:.85rem}
+main{padding:2rem 1.25rem 3rem}
+h2{color:var(--deep);font-size:1.3rem;margin:2.2rem 0 .7rem}
+ul.outcomes{padding-left:1.2rem}ul.outcomes li{margin:.35rem 0}
+ol.modules{padding-left:1.4rem}ol.modules li{margin:.5rem 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem}
+.cta{display:inline-block;background:var(--deep);color:#fff;text-decoration:none;
+padding:.8rem 1.4rem;border-radius:10px;font-weight:600;margin:.4rem .6rem .4rem 0;
+min-height:44px}
+.cta.alt{background:#fff;color:var(--deep);border:1px solid var(--deep)}
+.cta:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--deep);
+outline-offset:2px}
+.note{color:var(--dim);font-size:.9rem}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;
+padding:.8rem 1rem;margin:.5rem 0}
+summary{cursor:pointer;font-weight:600;color:var(--deep)}
+footer{max-width:60rem;margin:0 auto;padding:0 1.25rem 3rem;color:var(--dim);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "Working with Data: Cleaning, Encoding and Leakage", "courseCode": "F4", "description": "The work that consumes most of a real project and appears in almost no course: missing values, encoding, imbalance and provenance. CS2023 added this to the core precisely because its absence was doing damage.", "url": "https://contexai.pk/courses/f4-working-with-data/", "provider": {"@type": "EducationalOrganization", "name": "ContexAi Academy", "sameAs": "https://contexai.org"}, "educationalLevel": "Beginner", "teaches": ["On successful completion, you will be able to differentiate the three missingness mechanisms and their consequences.", "On successful completion, you will be able to implement an imputation that preserves the fact of missingness."], "timeRequired": "PT4H", "inLanguage": "en", "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion", "audience": {"@type": "EducationalAudience", "audienceType": "Developers who can write basic Python and want to prepare data properly; F3 is recommended preparation"}, "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "PT4H", "offers": {"@type": "Offer", "category": "Subscription", "price": "10.00", "priceCurrency": "USD", "description": "Free in your first month, then $10 a month for any 2 courses", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "10.00", "priceCurrency": "USD", "unitText": "month", "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}}, "validFrom": "2026-10-18"}}, "offers": {"@type": "Offer", "category": "Subscription", "price": "10.00", "priceCurrency": "USD", "description": "Free in your first month, then $10 a month for any 2 courses", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "10.00", "priceCurrency": "USD", "unitText": "month", "referenceQuantity": {"@type": "QuantitativeValue", "value": 1, "unitCode": "MON"}}, "validFrom": "2026-10-18"}, "isAccessibleForFree": false}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Your first month with the Academy is free for up to 2 Beginner (Level 1) courses. After that: A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged."}}, {"@type": "Question", "name": "Who is this course for?", "acceptedAnswer": {"@type": "Answer", "text": "Developers who can write basic Python and want to prepare data properly; F3 is recommended preparation"}}, {"@type": "Question", "name": "Do I need any prior knowledge?", "acceptedAnswer": {"@type": "Answer", "text": "No prerequisites — you can start today. The course does assume some background, and these are recommended if it is new to you: Your First Learning System."}}, {"@type": "Question", "name": "How long does it take?", "acceptedAnswer": {"@type": "Answer", "text": "About 3.7 hours of study in total, including the narrated lessons, reading and practice. You set your own pace. Short Course: 1 module and 3.7 notional hours (any course under 6 modules or 10 hours is a Short Course)."}}, {"@type": "Question", "name": "What do I receive at the end?", "acceptedAnswer": {"@type": "Answer", "text": "A ContexAi Academy Certificate of Completion, issued when you have passed the course's assessment. It records what you can demonstrably do; it is not an accredited qualification. This course is one part of the programme Foundation Certificate in Applied AI. Its certificate covers this course alone, not the whole programme."}}, {"@type": "Question", "name": "How is it assessed?", "acceptedAnswer": {"@type": "Answer", "text": "By graded coding exercises run against automated tests."}}]}</script>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="wrap">
+<p class="eyebrow">ContexAi Academy · Course code F4 · Beginner</p>
+<h1>Working with Data: Cleaning, Encoding and Leakage</h1>
+<p>The work that consumes most of a real project and appears in almost no course: missing values, encoding, imbalance and provenance. CS2023 added this to the core precisely because its absence was doing damage.</p>
+<div class="facts"><span class="fact">Beginner</span><span class="fact">Free in your first month, then $10 a month for any 2 courses</span><span class="fact">Short Course</span><span class="fact">~3.7 hours</span><span class="fact">1 narrated module</span><span class="fact">1 graded exercise</span><span class="fact">Programme: Foundation Certificate in Applied AI</span></div>
+</div></header>
+<main><div class="wrap">
+<a class="cta" href="https://contexai.pk/start/">Find your starting point</a>
+
+
+<h2>What you will be able to do</h2>
+<p>On successful completion, you will be able to:</p>
+<ul class="outcomes"><li>Differentiate the three missingness mechanisms and their consequences.</li><li>Implement an imputation that preserves the fact of missingness.</li></ul>
+
+<h2>Who it is for</h2>
+<p>Developers who can write basic Python and want to prepare data properly; F3 is recommended preparation</p>
+
+<h2>Modules and time</h2>
+<ol class="modules"><li><strong>Missing values carry information</strong><br><span class="note">~2 min spoken teaching · 40 min reading · 120 min practice · 60 min graded task and reflection · about 3.7 h</span></li></ol>
+
+<h2>Before you start</h2>
+<p><strong>No prerequisites — you can start today.</strong> The course assumes some background; if it is new to you, these are recommended first:</p><ul><li><a href="https://contexai.pk/courses/f3-your-first-learning-system/">Your First Learning System</a></li></ul>
+
+<h2>How it works</h2>
+<div class="card">
+<p>Every module is taught aloud, one line at a time, with a pause after each line so
+it lands before the next one arrives — and you can go back, skip or replay at any point.
+Each module ends with a coding exercise graded by automated tests: you pass when your code passes its tests.</p>
+<p class="note">On completion you receive a ContexAi Academy Certificate of Completion. It records what you can
+demonstrably do; it is not an accredited qualification.</p>
+</div>
+
+<h2>Fees</h2>
+<div class="card"><p><strong>Free in your first month, then $10 a month for any 2 courses.</strong></p><p>Your first month with the Academy is free for up to 2 Beginner (Level 1) courses. After that: A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged.</p></div>
+
+<h2>Questions</h2>
+<details><summary>How much does it cost?</summary><p>Your first month with the Academy is free for up to 2 Beginner (Level 1) courses. After that: A study plan is $10 a month and lets you take any 2 courses at a time, at any level. Finish one and the slot is free for your next course. Want more than 2 at once? Each extra plan adds 2 more courses for $10 a month. Leave your courses at any point and no further months are charged.</p></details><details><summary>Who is this course for?</summary><p>Developers who can write basic Python and want to prepare data properly; F3 is recommended preparation</p></details><details><summary>Do I need any prior knowledge?</summary><p>No prerequisites — you can start today. The course does assume some background, and these are recommended if it is new to you: Your First Learning System.</p></details><details><summary>How long does it take?</summary><p>About 3.7 hours of study in total, including the narrated lessons, reading and practice. You set your own pace. Short Course: 1 module and 3.7 notional hours (any course under 6 modules or 10 hours is a Short Course).</p></details><details><summary>What do I receive at the end?</summary><p>A ContexAi Academy Certificate of Completion, issued when you have passed the course&#x27;s assessment. It records what you can demonstrably do; it is not an accredited qualification. This course is one part of the programme Foundation Certificate in Applied AI. Its certificate covers this course alone, not the whole programme.</p></details><details><summary>How is it assessed?</summary><p>By graded coding exercises run against automated tests.</p></details>
+</div></main>
+<footer>ContexAi Academy is part of ContexAi Consultancy.</footer>
+</body>
+</html>

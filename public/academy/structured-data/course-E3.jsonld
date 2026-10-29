@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Retrieval, Grounding and Attribution",
+  "courseCode": "E3",
+  "description": "Retrieval past the naive stage: chunking as a decision with consequences, hybrid dense and sparse search, reranking, and attribution you can verify. Naive top-k RAG is where this subject starts, not where it ends.",
+  "url": "https://contexai.pk/courses/e3-retrieval-grounding-attribution/",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "ContexAi Academy",
+    "sameAs": "https://contexai.org"
+  },
+  "educationalLevel": "Intermediate",
+  "teaches": [
+    "On successful completion, you will be able to explain how chunk size and overlap trade recall against precision.",
+    "On successful completion, you will be able to implement a chunker that preserves semantic boundaries.",
+    "On successful completion, you will be able to explain why dense and sparse retrieval fail on different queries.",
+    "On successful completion, you will be able to implement reciprocal rank fusion to combine two rankings."
+  ],
+  "timeRequired": "PT9H",
+  "inLanguage": "en",
+  "educationalCredentialAwarded": "ContexAi Academy Certificate of Completion",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Engineers building systems that must answer from a body of documents"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT9H",
+    "offers": {
+      "@type": "Offer",
+      "category": "Subscription",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "description": "$10 a month for any 2 courses",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "10.00",
+        "priceCurrency": "USD",
+        "unitText": "month",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "MON"
+        }
+      },
+      "validFrom": "2026-10-18"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Subscription",
+    "price": "10.00",
+    "priceCurrency": "USD",
+    "description": "$10 a month for any 2 courses",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "10.00",
+      "priceCurrency": "USD",
+      "unitText": "month",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": 1,
+        "unitCode": "MON"
+      }
+    },
+    "validFrom": "2026-10-18"
+  },
+  "isAccessibleForFree": false
+}
