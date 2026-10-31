@@ -14,12 +14,12 @@
 <style>
   :root {
     color-scheme: light;
-    --ink: #0A3E40;
+    --ink: #005C54;
     --ink-soft: #3F4756;
     --line: #E2E5EB;
     --bg: #F7F8FA;
     --card: #FFFFFF;
-    --blue: #0E7E76;
+    --blue: #008075;
     --blue-soft: #EEF2FF;
     --green: #16A34A;
     --amber: #D97706;
@@ -126,8 +126,8 @@
   .muted { color: var(--ink-soft); }
   .right { text-align: right; }
 
-.topnav__links a.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
-.topnav__links a.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__links a.topnav__cta{background:#fff;color:#008075;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
+.topnav__links a.topnav__cta:hover{background:#14B8A6;color:#002E2A}
 </style>
 </head>
 <body>
@@ -663,7 +663,7 @@ function drawTimeseries(canvasId, buckets, chartKey, opts = {}) {
 
   const days = Object.keys(buckets).sort();
   const groups = Array.from(new Set(days.flatMap(d => Object.keys(buckets[d]))));
-  const palette = ['#0E7E76', '#16A34A', '#D97706', '#9333EA', '#DC2626'];
+  const palette = ['#008075', '#16A34A', '#D97706', '#9333EA', '#DC2626'];
 
   const datasets = groups.map((g, i) => ({
     label: g,

@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--teal:#0E8A9C;--turq:#14B8A6;--turq2:#10C9B0;--deep:#0B6E72;--ink:#0A3E40;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;--cream:#F2FBFA}
+:root{--teal:#0E8A9C;--turq:#14B8A6;--turq2:#10C9B0;--deep:#0B6E72;--ink:#005C54;--ink3:#3D4F6B;--ink4:#6B7FA0;--ink5:#9AAAC4;--cream:#F2FBFA}
 body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink3);line-height:1.7;background:#fff}
 a{color:var(--teal);text-decoration:none}
 .bar{background:var(--deep);padding:18px 32px;position:sticky;top:0;z-index:10}
@@ -76,7 +76,7 @@ main{max-width:1080px;margin:0 auto;padding:48px 32px 24px}
 .foot{background:var(--deep);color:rgba(255,255,255,.7);text-align:center;padding:24px;font-size:.88rem}
 .foot a{color:#fff}
 /* === Site-wide top nav (Phase 1.7+) === */
-.topnav{background:#0E7E76;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.topnav{background:#008075;padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.12)}
 .topnav__in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 32px}
 .topnav__logo{color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:6px}
 .topnav__logo .ai{color:#14B8A6}
@@ -85,14 +85,14 @@ main{max-width:1080px;margin:0 auto;padding:48px 32px 24px}
 .topnav__links a{color:rgba(255,255,255,.85);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .15s;white-space:nowrap}
 .topnav__links a:hover{color:#fff}
 .topnav__links a.current{color:#fff;border-bottom:2px solid #FFC400;padding-bottom:2px}
-.topnav__links a.cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
-.topnav__links a.cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__links a.cta{background:#fff;color:#008075;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem}
+.topnav__links a.cta:hover{background:#14B8A6;color:#002E2A}
 .topnav__burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
 .topnav__burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px}
 @media(max-width:980px){
   .topnav__links{display:none;width:100%}
   .topnav__burger{display:block}
-  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E7E76;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+  .topnav__links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#008075;padding:14px 32px 18px;gap:14px;align-items:flex-start;box-shadow:0 8px 20px rgba(0,0,0,.18)}
   .topnav__in{position:relative;flex-wrap:wrap}
 }
 
@@ -103,7 +103,7 @@ main{max-width:1080px;margin:0 auto;padding:48px 32px 24px}
 .topnav__dd-trigger:hover{color:#fff}
 .topnav__caret{font-size:.7em;transition:transform .2s;opacity:.7;color:#FFC400}
 .topnav__dd:hover .topnav__caret{transform:rotate(180deg);opacity:1}
-.topnav__dd-panel{position:absolute;top:100%;left:-12px;background:#0E7E76;border-radius:0 0 14px 14px;padding:12px 0 8px;min-width:230px;box-shadow:0 12px 28px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .15s,visibility .15s,transform .15s;z-index:200;border-top:3px solid #FFC400}.topnav__dd-panel::before{content:"";position:absolute;top:-6px;left:0;right:0;height:6px;background:transparent}
+.topnav__dd-panel{position:absolute;top:100%;left:-12px;background:#008075;border-radius:0 0 14px 14px;padding:12px 0 8px;min-width:230px;box-shadow:0 12px 28px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .15s,visibility .15s,transform .15s;z-index:200;border-top:3px solid #FFC400}.topnav__dd-panel::before{content:"";position:absolute;top:-6px;left:0;right:0;height:6px;background:transparent}
 .topnav__dd:hover .topnav__dd-panel,.topnav__dd:focus-within .topnav__dd-panel{opacity:1;visibility:visible;transform:translateY(0)}
 .topnav__dd-panel a{display:block;padding:11px 22px 11px 18px;font-size:.91rem;color:rgba(255,255,255,.88);white-space:nowrap;font-weight:500;text-decoration:none;border-left:4px solid transparent;transition:all .15s}
 .topnav__dd-panel a:hover{background:rgba(255,255,255,.10);color:#fff;padding-left:22px}
@@ -127,8 +127,8 @@ main{max-width:1080px;margin:0 auto;padding:48px 32px 24px}
 .topnav__links{flex-wrap:nowrap;gap:18px}
 
 
-.topnav__links a.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
-.topnav__links a.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__links a.topnav__cta{background:#fff;color:#008075;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}
+.topnav__links a.topnav__cta:hover{background:#14B8A6;color:#002E2A}
 </style>
 </head>
 <body>
