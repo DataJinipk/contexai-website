@@ -182,7 +182,7 @@ const TOPNAV_DROPDOWN_CSS = `<style id="contexai-dropdown-css">
 .topnav__caret{font-size:.7em;transition:transform .2s;opacity:.7;color:#FFC400}
 .topnav__dd:hover .topnav__caret{transform:rotate(180deg);opacity:1}
 
-.topnav__dd-panel{position:absolute;top:100%;left:-12px;background:#0E7E76;border-radius:0 0 14px 14px;padding:12px 0 8px;min-width:230px;box-shadow:0 12px 28px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .15s,visibility .15s,transform .15s;z-index:200;border-top:3px solid #FFC400}.topnav__dd-panel::before{content:"";position:absolute;top:-6px;left:0;right:0;height:6px;background:transparent}
+.topnav__dd-panel{position:absolute;top:100%;left:-12px;background:#008075;border-radius:0 0 14px 14px;padding:12px 0 8px;min-width:230px;box-shadow:0 12px 28px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .15s,visibility .15s,transform .15s;z-index:200;border-top:3px solid #FFC400}.topnav__dd-panel::before{content:"";position:absolute;top:-6px;left:0;right:0;height:6px;background:transparent}
 .topnav__dd:hover .topnav__dd-panel,.topnav__dd:focus-within .topnav__dd-panel{opacity:1;visibility:visible;transform:translateY(0)}
 
 .topnav__dd-panel a{display:block;padding:11px 22px 11px 18px;font-size:.91rem;color:rgba(255,255,255,.88);white-space:nowrap;font-weight:500;text-decoration:none;border-left:4px solid transparent;transition:all .15s}
@@ -206,7 +206,7 @@ const TOPNAV_DROPDOWN_CSS = `<style id="contexai-dropdown-css">
   .topnav__dd-panel a{padding:7px 0 7px 12px;font-size:.95rem;color:rgba(255,255,255,.92);border-left:3px solid rgba(255,255,255,.15)}
   .topnav__dd-panel a:hover{padding-left:16px}
 }
-.topnav__links a.topnav__cta{background:#fff;color:#0E7E76;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}.topnav__links a.topnav__cta:hover{background:#14B8A6;color:#0A3E40}
+.topnav__links a.topnav__cta{background:#fff;color:#008075;padding:8px 18px;border-radius:18px;font-weight:700;font-size:.88rem;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}.topnav__links a.topnav__cta:hover{background:#14B8A6;color:#002E2A}
 </style>`;
 
 // ─── Security headers ───────────────────────────────────────────────────────
