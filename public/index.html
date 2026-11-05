@@ -1433,6 +1433,12 @@ document.addEventListener('click', function(e){
     if ((m = t.match(/Mood: [^•]{1,40}/))) out.push(m[0].trim());
     return out;
   }
+  // KSE-100 has no free live feed that accepts automated requests, so when the API has none,
+  // the morning brief's figure is shown, labelled as such.
+  function snapshotKse(track){
+    var m = (track.textContent || '').replace(/\s+/g,' ').match(/KSE-100 ([0-9,]+) ([▲▼]) ([0-9.]+)%/);
+    return m ? { value: m[1], up: m[2] === '▲', pct: m[3] } : null;
+  }
   function render(track, parts){
     var make = function(hidden){
       var item = el('span','ev-ticker__item');
@@ -1446,6 +1452,14 @@ document.addEventListener('click', function(e){
   }
   function marketParts(data, extras){
     var parts = [function(){ return el('b',null,(data.stale?'LAST UPDATE ':'UPDATED ') + pkt(data.asOf) + ' · DELAYED QUOTES'); }];
+    var hasKse = data.items.some(function(it){ return it.key === 'kse100'; });
+    if (!hasKse && kse) parts.push(function(){
+      var f = el('span');
+      f.appendChild(document.createTextNode('KSE-100 ' + kse.value + ' '));
+      f.appendChild(el('span', kse.up?'up':'dn', (kse.up?'▲ ':'▼ ') + kse.pct + '%'));
+      f.appendChild(document.createTextNode(' (morning brief)'));
+      return f;
+    });
     data.items.forEach(function(it){
       parts.push(function(){
         var f = el('span');   // one inline box, so flex layout keeps the space before the arrow
@@ -1472,6 +1486,7 @@ document.addEventListener('click', function(e){
   var marketTrack = document.querySelector('.ev-ticker--market .ev-ticker__track');
   var newsTrack = document.querySelector('.ev-ticker--news .ev-ticker__track');
   var extras = marketTrack ? snapshotExtras(marketTrack) : [];
+  var kse = marketTrack ? snapshotKse(marketTrack) : null;
   function load(kind, track, build){
     if (!track) return;
     fetch('/api/ticker/' + kind, {headers:{Accept:'application/json'}})
