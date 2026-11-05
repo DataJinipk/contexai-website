@@ -51,7 +51,7 @@ jobs:
       - name: Setup Node (for Claude Code)
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install Claude Code
         run: npm install -g @anthropic-ai/claude-code
@@ -81,7 +81,7 @@ jobs:
             --output-format stream-json \
             --dangerously-skip-permissions
           test -f scripts/economic_vibes/out/payload.json \
-            || (echo "Claude Code did not write payload.json" && exit 1)
+            || (echo "::error::Claude Code did not write payload.json. If the log above says 'OAuth access token has been revoked', run 'claude setup-token' and update the CLAUDE_CODE_OAUTH_TOKEN secret." && exit 1)
 
       - name: Render PDF + update site files
         run: python scripts/economic_vibes/build_brief.py render
@@ -101,6 +101,20 @@ jobs:
             git commit -m "Economic Vibes — $(date +'%A, %d %B %Y') [auto]"
             git push
           fi
+
+      - name: Deploy contexai.org (Cloudflare Worker)
+        # Publishes the refreshed brief + ticker snapshot. Needs two repo secrets that only
+        # Amir can create: CLOUDFLARE_API_TOKEN ("Edit Cloudflare Workers" template) and
+        # CLOUDFLARE_ACCOUNT_ID. Without them this step warns and skips, it never fails the run.
+        env:
+          CLOUDFLARE_API_TOKEN:  ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "${CLOUDFLARE_API_TOKEN}" ]; then
+            echo "::warning::CLOUDFLARE_API_TOKEN is not set, so contexai.org was not redeployed."
+            exit 0
+          fi
+          npx --yes wrangler@4.152.0 deploy
 
       - name: Post to LinkedIn (ContexAi Group page)
         if: ${{ github.event_name == 'schedule' || inputs.dry_run == false }}

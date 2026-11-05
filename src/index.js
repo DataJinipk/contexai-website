@@ -1,6 +1,11 @@
 // ContexAi Worker — static asset routing + form submissions + Stripe payments.
+
+import { handleTicker } from './ticker.js';
+
 //
 // Endpoints:
+//   GET  /api/ticker/markets  — live market prices for the Economic Vibes ticker (edge-cached 5 min)
+//   GET  /api/ticker/news     — latest headlines for the ContexAi News ticker (edge-cached 15 min)
 //   POST /api/apply           — Subject Matter Expert / AI Builder applications
 //   POST /api/post-position   — Employer position postings (gated by quota)
 //   POST /api/checkout-session — Create Stripe Checkout session for paid packages
@@ -88,6 +93,10 @@ export default {
 
     if (url.pathname === '/api/quota' && request.method === 'GET') {
       return handleQuotaCheck(request, env);
+    }
+
+    if ((url.pathname === '/api/ticker/markets' || url.pathname === '/api/ticker/news') && request.method === 'GET') {
+      return handleTicker(request, env, ctx, url.pathname.endsWith('markets') ? 'markets' : 'news');
     }
 
     // ─── Admin endpoints (dashboard) ──────────────────────────────────────
