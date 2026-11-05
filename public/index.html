@@ -1413,5 +1413,81 @@ document.addEventListener('click', function(e){
   });
 })();
 </script>
+<!-- ─── LIVE TICKERS: refresh both tickers from /api/ticker/* (keeps the morning snapshot if the API is unavailable) ─── -->
+<script>
+(function(){'use strict';
+  if (!window.fetch || !document.querySelector) return;
+  var REFRESH_MS = 5 * 60 * 1000;
+  var pkt = function(iso){
+    try { return new Date(iso).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Karachi'}) + ' PKT'; }
+    catch(e){ return ''; }
+  };
+  var fmt = function(v, d){ return Number(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d}); };
+  function el(tag, cls, text){ var n=document.createElement(tag); if(cls) n.className=cls; if(text!=null) n.textContent=text; return n; }
+  function sep(){ return el('span','ev-ticker__sep','•'); }
+  // Snapshot facts that are not market prices (policy rate, CPI, mood) are kept from the morning brief.
+  function snapshotExtras(track){
+    var t = (track.textContent || '').replace(/\s+/g,' ');
+    var out = [], m;
+    if ((m = t.match(/SBP [0-9.]+% · CPI [0-9.]+%/))) out.push(m[0]);
+    if ((m = t.match(/Mood: [^•]{1,40}/))) out.push(m[0].trim());
+    return out;
+  }
+  function render(track, parts){
+    var make = function(hidden){
+      var item = el('span','ev-ticker__item');
+      if (hidden) item.setAttribute('aria-hidden','true');
+      parts.forEach(function(p){ item.appendChild(p()); item.appendChild(sep()); });
+      return item;
+    };
+    while (track.firstChild) track.removeChild(track.firstChild);
+    track.appendChild(make(false));
+    track.appendChild(make(true));   // second copy keeps the marquee seamless
+  }
+  function marketParts(data, extras){
+    var parts = [function(){ return el('b',null,(data.stale?'LAST UPDATE ':'UPDATED ') + pkt(data.asOf) + ' · DELAYED QUOTES'); }];
+    data.items.forEach(function(it){
+      parts.push(function(){
+        var f = el('span');   // one inline box, so flex layout keeps the space before the arrow
+        f.appendChild(document.createTextNode(it.label + ' ' + (it.prefix||'') + fmt(it.value, it.decimals) + (it.suffix||'') + ' '));
+        if (it.changePct != null){
+          var up = it.changePct >= 0;
+          f.appendChild(el('span', up?'up':'dn', (up?'▲ ':'▼ ') + Math.abs(it.changePct).toFixed(2) + '%'));
+        }
+        return f;
+      });
+    });
+    extras.forEach(function(x){ parts.push(function(){ return document.createTextNode(x); }); });
+    parts.push(function(){ return el('b',null,'Read the Brief →'); });
+    return parts;
+  }
+  function newsParts(data){
+    var parts = [function(){ return el('b',null,'LATEST · ' + pkt(data.asOf)); }];
+    data.items.forEach(function(it){
+      parts.push(function(){ return document.createTextNode(it.title + ' — ' + it.source); });
+    });
+    parts.push(function(){ return el('b',null,'More on contexai.org/insights →'); });
+    return parts;
+  }
+  var marketTrack = document.querySelector('.ev-ticker--market .ev-ticker__track');
+  var newsTrack = document.querySelector('.ev-ticker--news .ev-ticker__track');
+  var extras = marketTrack ? snapshotExtras(marketTrack) : [];
+  function load(kind, track, build){
+    if (!track) return;
+    fetch('/api/ticker/' + kind, {headers:{Accept:'application/json'}})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){ if (d && d.ok && d.items && d.items.length >= 3) render(track, build(d)); })
+      .catch(function(){ /* keep whatever is showing */ });
+  }
+  function refresh(){
+    if (document.hidden) return;
+    load('markets', marketTrack, function(d){ return marketParts(d, extras); });
+    load('news', newsTrack, newsParts);
+  }
+  refresh();
+  setInterval(refresh, REFRESH_MS);
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden) refresh(); });
+})();
+</script>
 </body>
 </html>
