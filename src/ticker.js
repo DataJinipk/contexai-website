@@ -91,38 +91,26 @@ export async function fetchYahoo(fetchImpl, inst) {
   return { value, prev, ts: Number(meta.regularMarketTime) * 1000 || null };
 }
 
-/** KSE-100 from the PSX data portal: latest intraday print vs the previous session's close. */
+/** KSE-100 from the PSX portal home page. Its /timeseries API 403s automated clients,
+    but the home page serves the index live in a static `topIndices` block (value + %). */
 export async function fetchKse100(fetchImpl) {
-  const headers = { 'User-Agent': UA, Accept: 'application/json', 'X-Requested-With': 'XMLHttpRequest' };
-  const [intRes, eodRes] = await Promise.all([
-    fetchWithTimeout(fetchImpl, 'https://dps.psx.com.pk/timeseries/int/KSE100', { headers }),
-    fetchWithTimeout(fetchImpl, 'https://dps.psx.com.pk/timeseries/eod/KSE100', { headers }),
-  ]);
-  if (!eodRes.ok) return null;
-  const eod = await eodRes.json();
-  const eodRows = (eod && Array.isArray(eod.data) ? eod.data : [])
-    .filter((r) => Array.isArray(r) && Number.isFinite(Number(r[0])) && Number.isFinite(Number(r[1])))
-    .map((r) => ({ ts: Number(r[0]) * 1000, close: Number(r[1]) }))
-    .sort((a, b) => b.ts - a.ts);
-  if (!eodRows.length) return null;
-
-  let latest = null;
-  if (intRes.ok) {
-    const intra = await intRes.json().catch(() => null);
-    const rows = (intra && Array.isArray(intra.data) ? intra.data : [])
-      .filter((r) => Array.isArray(r) && Number.isFinite(Number(r[0])) && Number.isFinite(Number(r[1])))
-      .map((r) => ({ ts: Number(r[0]) * 1000, value: Number(r[1]) }))
-      .sort((a, b) => b.ts - a.ts);
-    if (rows.length) latest = rows[0];
-  }
-  const pkDay = (ms) => new Date(ms + 5 * 3600 * 1000).toISOString().slice(0, 10); // PKT calendar day
-  if (latest) {
-    const day = pkDay(latest.ts);
-    const prevRow = eodRows.find((r) => pkDay(r.ts) < day);
-    return { value: latest.value, prev: prevRow ? prevRow.close : null, ts: latest.ts };
-  }
-  // No intraday data (weekend / holiday): last close vs the one before it.
-  return { value: eodRows[0].close, prev: eodRows[1] ? eodRows[1].close : null, ts: eodRows[0].ts };
+  const res = await fetchWithTimeout(fetchImpl, 'https://dps.psx.com.pk/', {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36',
+      Accept: 'text/html',
+    },
+  });
+  if (!res.ok) return null;
+  const html = await res.text();
+  // ...name">KSE100</div> ...__val">179,083.80 ...__changep">(-0.14%)  (KSE100PR etc. don't match "KSE100<")
+  const m = html.match(
+    /topIndices__item__name">\s*KSE100\s*<\/div>[\s\S]{0,600}?topIndices__item__val">\s*([\d,]+(?:\.\d+)?)[\s\S]{0,600}?topIndices__item__changep">\s*\(\s*([-+]?[\d.]+)\s*%\s*\)/,
+  );
+  if (!m) return null;
+  const value = Number(m[1].replace(/,/g, ''));
+  const changePct = Number(m[2]);
+  if (!Number.isFinite(value) || !Number.isFinite(changePct)) return null;
+  return { value, prev: value / (1 + changePct / 100), ts: Date.now() };
 }
 
 /** Fetch every instrument in parallel; failed or implausible ones are skipped. */
