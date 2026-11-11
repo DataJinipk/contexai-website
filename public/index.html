@@ -1489,7 +1489,7 @@ document.addEventListener('click', function(e){
   var kse = marketTrack ? snapshotKse(marketTrack) : null;
   function load(kind, track, build){
     if (!track) return;
-    fetch('/api/ticker/' + kind, {headers:{Accept:'application/json'}})
+    fetch('/api/ticker/' + kind + '?t=' + Date.now(), {headers:{Accept:'application/json'}})
       .then(function(r){ return r.ok ? r.json() : null; })
       .then(function(d){ if (d && d.ok && d.items && d.items.length >= 3) render(track, build(d)); })
       .catch(function(){ /* keep whatever is showing */ });
