@@ -56,6 +56,25 @@
   .disc{ font-size:12.5px; color:var(--muted); background:var(--tqbg); border:1px solid #cfeef1;
     border-radius:8px; padding:12px 16px; margin-top:24px; text-align:justify; }
   .foot{ background:var(--tqd); color:#eafdff; text-align:center; font-size:12px; padding:12px; }
+  /* Economic Vibes Reports Archive */
+  .ev-rep-wrap{ margin:28px 0 12px; }
+  .ev-rep-note{ font-size:13.5px; color:var(--muted); margin:0 0 12px; }
+  .ev-rep-tabs{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 14px; }
+  .ev-rep-tab{ background:var(--tqbg); color:var(--tqd); border:1px solid #bde9ed; border-radius:20px;
+    padding:6px 14px; font-size:13px; font-weight:700; cursor:pointer; font-family:inherit; }
+  .ev-rep-tab.active{ background:var(--tqd); color:#fff; border-color:var(--tqd); }
+  .ev-rep-group{ margin:14px 0 18px; }
+  .ev-rep-group.hidden{ display:none; }
+  .ev-rep-sub{ font-size:12.5px; color:var(--muted); margin:2px 0 10px; }
+  .ev-rep-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:10px; }
+  .ev-rep-grid.scroll{ max-height:360px; overflow-y:auto; padding-right:4px; }
+  .ev-rep-card{ display:block; text-decoration:none; background:#fff; border:1px solid #cfeef1; border-left:4px solid var(--tq);
+    border-radius:0 8px 8px 0; padding:10px 12px; transition:border-color .15s, box-shadow .15s; }
+  .ev-rep-card:hover{ border-color:var(--tqd); box-shadow:0 2px 8px rgba(10,126,140,.12); }
+  .ev-rep-badge{ display:inline-block; background:var(--lemon); color:var(--lemontx); font-weight:800; font-size:10.5px;
+    padding:2px 7px; border-radius:4px; text-transform:uppercase; letter-spacing:.3px; margin-bottom:5px; }
+  .ev-rep-title{ color:var(--ink); font-weight:700; font-size:13.5px; line-height:1.35; }
+  .ev-rep-meta{ color:var(--muted); font-size:11.5px; margin-top:4px; }
 </style>
 </head>
 <body>
@@ -68,22 +87,23 @@
   </div>
 
   <div class="hero">
-    <div class="eyebrow">Daily Brief · Wednesday, 18 November 2026 · Nvidia Beat & Macro Cushion Edition</div>
-    <h2>KSE-100 sheds 665 points (−0.37%) to 177,518 after erasing early 1,900-point rally; Nvidia smashes Q3 estimates ($115.8bn rev, +103% YoY) lifting US tech futures; Pakistan posts surprise $39m October current account surplus; Brent rebounds to $93.14; Asia choppy/soft</h2>
-    <p>A C-suite read across Global, GCC and Pakistan — sourced via Business Recorder, Dawn, Investify, Mettis Global, State Bank of Pakistan, AP, Yahoo Finance, Benzinga, TradingKey, Cboe, Rigzone, Kitco, USAGold, Arab News, Saudi Gazette, TechCrunch and Adherent. <b>V</b> = verified · <b>EST.</b> = desk estimate. <b>Data as of:</b> PSX (KSE-100) and USD/PKR interbank: Tuesday 17 Nov close, Karachi · US stocks, VIX and Treasury yields: Tuesday 17 Nov close, New York · Brent and WTI: Tuesday 17 Nov settlement · Gold and silver: Tuesday 17 Nov spot, New York · Saudi TASI: Tuesday 17 Nov close · Asian markets, US stock futures, Nvidia Q3 earnings and This Morning news: Wednesday 18 Nov, up to about 08:00 PKT.</p>
+    <div class="eyebrow">Daily Brief · Thursday, 19 November 2026 · Hawkish Fed & Gold Slide Edition</div>
+    <h2>KSE-100 drops 1,223 points (−0.69%) to 176,294 amid broad sector selling; hawkish FOMC minutes drag S&amp;P 500 to 5th straight loss and sink gold 3.1% to $3,737; Nvidia reverses −2.89% post-beat; SBP Governor urges export-led growth</h2>
+    <p>Markets digested hawkish October Federal Reserve minutes flagging lingering inflation risks and keeping rate hikes on the table. On Wall Street, the Dow fell 1.11% on a managed-care rout (UNH −10%+, Humana ~−13%), S&amp;P 500 slipped 0.23%, and Nasdaq edged up 0.42% even as Nvidia reversed −2.89% despite its Q3 beat. Commodities sold off sharply on a firmer dollar (Brent $91.95, WTI $83.26, Gold $3,736.80, Silver $45.00). Domestically, USD/PKR firmed marginally to 276.55 while SBP Governor Jameel Ahmad highlighted rebuilt FX buffers above $18bn.</p>
+    <a class="hero-cta" href="2026-11-19-Economic-Vibes-Morning-Brief.pdf" download>Download Morning Brief (PDF)</a>
   </div>
 
   <div class="content">
     <div class="snap">
-      <div class="c2"><div class="l">KSE-100 <span style="font-size:9px">V</span></div><div class="v neg">177,517.74</div><div class="d neg">▼ 0.37% (−665.21) Tue close</div><div class="d">H 179,451 · L 177,371 · 164 up / 251 down · 837.1m shares</div></div>
-      <div class="c2"><div class="l">S&amp;P 500 <span style="font-size:9px">V</span></div><div class="v neg">7,340.53</div><div class="d neg">▼ 1.03% Tue · Nasdaq ▼ 0.74% · Dow ▼ 1.64%</div><div class="d">VIX 25.46 (+11.1%) · Wed AM: US futures rally on Nvidia beat</div></div>
-      <div class="c2"><div class="l">US 10Y/2Y <span style="font-size:9px">V / EST.</span></div><div class="v" style="white-space:nowrap">~5.10% / ~4.83%</div><div class="d">Tue close; 10Y range 5.09–5.15% · Dec 25bp hike expectation solid</div></div>
-      <div class="c2"><div class="l">Brent / WTI <span style="font-size:9px">V</span></div><div class="v pos" style="white-space:nowrap">$93.14 / $86.01</div><div class="d pos">Tue settle ▲ 0.8% / ▲ 0.3%</div><div class="d">Geopolitics offsets supply glut worries</div></div>
-      <div class="c2"><div class="l">Gold/Silver <span style="font-size:9px">V</span></div><div class="v" style="white-space:nowrap">$3,845 / $47.35</div><div class="d">spot Tue: Gold −0.3% / Silver +0.8%</div><div class="d">Gold soft on strong USD; Silver rebounds</div></div>
-      <div class="c2"><div class="l">USD/PKR <span style="font-size:9px">V</span></div><div class="v">276.56</div><div class="d">interbank Tue close (Re0.01 firmer) · SBP 12.0% · Oct CA +$39m</div></div>
+      <div class="c2"><div class="l">KSE-100 <span style="font-size:9px">V</span></div><div class="v neg">176,294.33</div><div class="d neg">▼ 0.69% (−1,223.41) Wed</div><div class="d">H 177,719 · L 176,054 · 179 up / 285 down · 742.1m shares</div></div>
+      <div class="c2"><div class="l">S&amp;P 500 <span style="font-size:9px">V</span></div><div class="v neg">7,323.63</div><div class="d neg">▼ 0.23% Wed · Dow ▼ 1.11% · Nas ▲ 0.42%</div><div class="d">VIX 25.17 (−1.1%) · Thu AM: US futures +0.3–0.5%</div></div>
+      <div class="c2"><div class="l">US 10Y/2Y <span style="font-size:9px">V</span></div><div class="v" style="white-space:nowrap">5.065% / 4.798%</div><div class="d">Wed close (10Y −3.6bp · 2Y +1.1bp)</div><div class="d">Hawkish FOMC minutes keep hikes on table</div></div>
+      <div class="c2"><div class="l">Brent / WTI <span style="font-size:9px">V</span></div><div class="v neg" style="white-space:nowrap">$91.95 / $83.26</div><div class="d neg">Wed settle ▼ 1.3% / ▼ 3.2%</div><div class="d">Stronger USD &amp; rising US inventories</div></div>
+      <div class="c2"><div class="l">Gold/Silver <span style="font-size:9px">V</span></div><div class="v neg" style="white-space:nowrap">$3,737 / $45.00</div><div class="d neg">COMEX Wed: Gold ▼ 3.1% / Silver ▼ 4.8%</div><div class="d">Multi-month low on hawkish Fed &amp; USD</div></div>
+      <div class="c2"><div class="l">USD/PKR <span style="font-size:9px">V</span></div><div class="v">276.55</div><div class="d">interbank Wed close (1.18p firmer) · SBP 12.0% · Oct CA +$39m</div></div>
     </div>
 
-    <a class="dl" href="2026-11-18-Economic-Vibes-Morning-Brief.pdf">📄 Download today's one-page PDF brief</a>
+    <a class="dl" href="2026-11-19-Economic-Vibes-Morning-Brief.pdf">📄 Download today's one-page PDF brief</a>
 
     <!-- EV-LINKS:START -->
     <p class="dl" style="background:none;border:0;padding:0">Today's desk notes: <a data-kind="flash" href="/trading-flash">ContexAi Trading Flash (PSX pre-open) — 2026-11-17</a> · <a data-kind="wrap" href="/market-wrap">ContexAi Daily Market Wrap (PSX) — 2026-11-16</a> · <a data-kind="autopolicy" href="/auto-policy">Economic Vibes — Auto Policy Desk Update — 2026-11-13</a></p>
@@ -91,34 +111,474 @@
 
     <h3 class="sec"><span class="n">01</span>Five Things You Need To Know To Start Your Day</h3>
     <ul class="five">
-      <li><span class="chip">This Morning: Nvidia Blowout &amp; US Futures Rally</span>Nvidia reported blockbuster fiscal Q3 results after the US close, beating estimates with <b>$115.8bn revenue (+103% YoY)</b> and issuing stellar Q4 guidance of ~$130bn. The blowout sparked a strong rally in US stock futures (Nasdaq 100 futures up ~1.0%), providing a vital circuit breaker after consecutive down days. In Asia, markets traded choppy and mixed to lower (Nikkei −0.3% to −0.6%, Hang Seng −0.5%, Kospi volatile). <a href="https://www.benzinga.com/news/earnings/26/11/41890210/nvidia-q3-earnings-smash-estimates-revenue-surges-103-percent">Benzinga</a> · <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-2026.html">Yahoo Finance</a> · V</li>
-      <li><span class="chip">KSE-100 Retreats Below Pivot</span>The KSE-100 index fell <b>665.21 points (−0.37%) to close at 177,517.74</b> on Tuesday, succumbing to afternoon profit-taking after touching an intraday high of 179,450.96. Market breadth tilted negative with <b>251 decliners against 164 advancers</b>, while total market volume contracted to 837.1 million shares. <a href="https://www.brecorder.com/news/40449520/psx-kse-100-falls-amid-late-selling-pressure">Business Recorder</a> · <a href="https://www.dawn.com/news/2045230/equities-shed-gains-as-selling-resumes">Dawn</a> · <a href="https://www.investify.pk/news/100000161400/kse-100-index-slips-665-points-as-market-gives-up-intraday-gains">Investify</a> · V</li>
-      <li><span class="chip">Pakistan Oct Current Account Surplus</span>State Bank of Pakistan data revealed that Pakistan's <b>current account posted an unexpected surplus of $39 million for October 2026</b>, supported by robust workers' remittances and stable export inflows. The surplus provides welcome macro cushion alongside stable SBP reserves at $21.57bn and petrol/diesel price cuts of Rs2 per litre effective 17 Nov. <a href="https://www.brecorder.com/news/40449480/pakistans-october-current-account-posts-39m-surplus">Business Recorder</a> · <a href="https://mettisglobal.news/interbank-currency-closing-17-nov-2026">Mettis Global</a> · V</li>
-      <li><span class="chip">Wall St Tech Rout Before Bell Beat</span>Tuesday regular session: <b>S&amp;P 500 7,340.53 (−1.03%), Dow 50,759.42 (−1.64%), Nasdaq 24,328.38 (−0.74%)</b>; the Cboe VIX surged 11.13% to 25.46 as investors defensively trimmed tech holdings ahead of earnings. The 10-year Treasury yield held firm near <b>5.10%</b>, while traders eyed upcoming FOMC minutes and Anthropic's Thursday IPO trading debut. <a href="https://apnews.com/article/financial-markets-stocks-tuesday-11-17-2026">AP</a> · <a href="https://www.cboe.com/tradable_products/vix/">Cboe</a> · <a href="https://tradingeconomics.com/united-states/government-bond-yield">Trading Economics</a> · V</li>
-      <li><span class="chip">Commodities &amp; GCC Tone</span>Crude oil rebounded slightly from Monday's slide: <b>Brent settled at $93.14 (+0.8%)</b> and <b>WTI at $86.01 (+0.3%)</b> as Middle East risk premia countered surplus projections. Spot gold remained subdued around <b>$3,845/oz</b> on a firm US dollar. In the Gulf, <b>Saudi TASI slipped 0.11% to 10,253.20</b> in muted trading, while the UAE enacted binding energy efficiency standards for commercial air conditioning units. <a href="https://www.rigzone.com/news/oil_rises_on_middle_east_geopolitics-17-nov-2026-185120-article">Rigzone</a> · <a href="https://www.kitco.com/news/article/2026-11-17/gold-silver-price-update-november-17-2026">Kitco</a> · <a href="https://www.arabnews.com/finance/closing-bell-saudi-market-slips-10253-points">Arab News</a> · <a href="https://www.adherent.com/uae-energy-efficiency-standards-ac-nov-2026">Adherent</a> · V</li>
+      <li><span class="chip">This Morning: Asia Mixed &amp; Futures Firm</span>Asian equities traded mixed on Thursday morning: <b>Nikkei 225 edged up +0.3% to +0.5%</b> (near 58,850–59,025), while <b>Hang Seng fell 1.05% to 1.6%</b> (~22,917–23,049) on tech caution. US stock futures rebounded modestly (<b>S&amp;P +0.49%, Dow +0.33%</b>) ahead of Anthropic's high-profile IPO pricing later this week. <a href="https://www.business-standard.com/">Business Standard</a> · <a href="https://www.thestandard.com.hk/">The Standard HK</a> · V</li>
+      <li><span class="chip">KSE-100 Extends Pullback</span>The KSE-100 index dropped <b>1,223.41 points (−0.69%) to close at 176,294.33</b> on Wednesday (intraday high 177,719.05, low 176,053.64) on broad selling across banks, cement and E&amp;Ps (UBL, LUCK, MEBL dragged). Breadth stayed negative (<b>179 advancers vs 285 decliners</b>, 103 unchanged) as volume eased to <b>742.12m shares</b> (Rs 25.97bn). <a href="https://www.psx.com.pk/">PSX</a> · <a href="https://www.investify.pk/">Investify</a> · <a href="https://www.pakistantoday.com.pk/">Pakistan Today</a> · V</li>
+      <li><span class="chip">SBP Resilience &amp; SME Financing Push</span>SBP Governor Jameel Ahmad urged breaking boom-and-bust cycles via export-led growth and deeper financial markets, noting rebuilt FX buffers above $18bn ($21.57bn current). Meanwhile in Singapore, Finance Minister Muhammad Aurangzeb targeted <b>Rs2 trillion in SME financing by June 2028</b> via the SME Connect Portal, while FY26 outward direct investment rebounded to $342m. <a href="https://mettisglobal.news/">Mettis Global</a> · <a href="https://www.pakistantoday.com.pk/">Pakistan Today</a> · V</li>
+      <li><span class="chip">Hawkish Fed, NVDA Reversal &amp; Healthcare Rout</span>Wednesday Wall Street closed mixed: <b>S&amp;P 500 7,323.63 (−0.23%, 5th straight loss), Dow 50,198.17 (−1.11%), Nasdaq 24,429.89 (+0.42%)</b>; VIX eased 1.14% to 25.17. October FOMC minutes flagged lingering inflation risks and potential further hikes. Managed-care giants plunged (UNH −10%+, Humana ~−13%) on a proposed Medicare Advantage audit rule, while Nvidia reversed −2.89% ($150.96) despite its Q3 beat. <a href="https://apnews.com/">AP</a> · <a href="https://www.cboe.com/tradable_products/vix/">Cboe</a> · <a href="https://www.morningstar.com/">Morningstar</a> · V</li>
+      <li><span class="chip">Commodities Sell-Off &amp; GCC</span>A stronger dollar and rising US inventories sank commodities on Wednesday: <b>Brent settled at $91.95 (−1.28%), WTI at $83.26 (−3.2%)</b>, while COMEX <b>gold plunged 3.1% to $3,736.80/oz</b> and <b>silver fell 4.84% to $45.00/oz</b>. In the Gulf, <b>Saudi TASI slipped 0.52% to 10,200.16</b> (turnover SAR 3.24bn), while the IMF upgraded the UAE's macro outlook. <a href="https://www.ndtvprofit.com/">NDTV Profit</a> · <a href="https://www.kitco.com/">Kitco</a> · <a href="https://www.arabnews.com/">Arab News</a> · <a href="https://www.arabianbusiness.com/">Arabian Business</a> · V</li>
     </ul>
 
     <h3 class="sec"><span class="n">02</span>Regional Market &amp; Economic Matrix</h3>
     <h4>A. Local Market — Pakistan Focus</h4>
-    <p><b>Intraday gains evaporated as profit-taking dragged the KSE-100 below 178,000.</b> The KSE-100 closed Tuesday at <b>177,517.74</b> (−665.21, −0.37%; previous close 178,182.95) after climbing to an intraday high of 179,450.96 and touching a low of 177,371.14 (<a href="https://www.brecorder.com/news/40449520/psx-kse-100-falls-amid-late-selling-pressure">Business Recorder</a>, <a href="https://www.dawn.com/news/2045230/equities-shed-gains-as-selling-resumes">Dawn</a>) <b>[V]</b>. Market volume stood at 837.1m shares with negative breadth (164 advancers, 251 decliners) <b>[V]</b>. <b>Macro Support:</b> SBP data showed Pakistan's current account posted a <b>surplus of $39m in October 2026</b>, bolstered by worker remittances (<a href="https://www.brecorder.com/news/40449480/pakistans-october-current-account-posts-39m-surplus">BR</a>) <b>[V]</b>. Fuel prices cut by Rs2/litre (petrol Rs328, diesel Rs358) are now active (<a href="https://www.brecorder.com/news/40449201/govt-cuts-petrol-diesel-prices-by-rs2-per-litre">BR</a>) <b>[V]</b>. <b>FX &amp; Money:</b> USD/PKR closed at <b>276.56</b> interbank (Re0.01 firmer) (<a href="https://www.brecorder.com/news/40449410/rupee-gains-marginal-ground-against-us-dollar">BR</a>, <a href="https://mettisglobal.news/interbank-currency-closing-17-nov-2026">Mettis</a>) <b>[V]</b>; open market ~277.00/279.50. SBP policy rate remains <b>12.0%</b>; foreign exchange reserves stand at $21.57bn <b>[V, carried]</b>. October CPI at 9.6% (<a href="https://english.aaj.tv/news/330479019/pakistans-inflation-eases-to-96-in-october">Aaj</a>) <b>[V, carried]</b>.</p>
+    <p><b>Broad-based institutional selling pushed the KSE-100 closer to 176,000.</b> The KSE-100 closed Wednesday at <b>176,294.33</b> (−1,223.41, −0.69%; previous close 177,517.74) after touching an intraday high of 177,719.05 and low of 176,053.64 (<a href="https://www.psx.com.pk/">PSX</a>, <a href="https://www.investify.pk/">Investify</a>) <b>[V]</b>. Volume contracted to 742.12m shares (Rs 25.97bn traded value, 392,180 trades) with negative breadth (179 advancers, 285 decliners, 103 unchanged); UBL, LUCK and MEBL led index drags while WTL topped volumes <b>[V]</b>. <b>Macro &amp; Policy:</b> SBP Governor Jameel Ahmad stressed export-led growth and structural reform, noting FX buffers exceed $18bn; Finance Minister Aurangzeb outlined a Rs2trn SME financing goal by June 2028 (<a href="https://mettisglobal.news/">Mettis</a>, <a href="https://www.pakistantoday.com.pk/">Pakistan Today</a>) <b>[V]</b>. Energy moves include transitioning Thar coal mines to the national grid ($30m/yr savings) and receiving a record 15,000-tonne LPG cargo <b>[V]</b>. <b>FX &amp; Money:</b> USD/PKR closed at <b>276.55</b> interbank (1.18 paisa firmer) (<a href="https://mettisglobal.news/">Mettis</a>) <b>[V]</b>; open market ~277.20/279.75. SBP policy rate <b>12.0%</b>; reserves $21.57bn; Oct CPI 9.6% <b>[V, carried]</b>.</p>
     <h4>B. GCC &amp; Middle East</h4>
-    <p><b>Gulf bourses track regional pause; Saudi edges down.</b> The Saudi Tadawul All Share Index (TASI) closed Tuesday down <b>11.16 points (−0.11%) at 10,253.20</b> with 93 gainers and 165 decliners on turnover of SAR 3.52bn (<a href="https://www.arabnews.com/finance/closing-bell-saudi-market-slips-10253-points">Arab News</a>) <b>[V]</b>; Nomu fell 0.93% to 21,696. Regional attention remains on Gulf energy flows and defense coordination after recent intercepts, while OPEC+ prepares for its 29 Nov meeting on 2027 output quotas <b>[V]</b>. <b>Regulatory:</b> UAE's mandatory energy efficiency standard for low- and large-capacity commercial air conditioners came into operational enforcement, mandating RFID tagging and higher performance thresholds (<a href="https://www.adherent.com/uae-energy-efficiency-standards-ac-nov-2026">Adherent</a>) <b>[V]</b>.</p>
-    <h4>C. Global Intelligence — USA &amp; Oil</h4>
-    <p><b>Nvidia beats the whisper numbers; relief rally sweeps futures.</b> Tuesday regular session closed defensively: <b>S&amp;P 500 7,340.53 (−1.03%), Dow 50,759.42 (−1.64%), Nasdaq 24,328.38 (−0.74%)</b> with the VIX spiking 11.13% to 25.46 (<a href="https://apnews.com/article/financial-markets-stocks-tuesday-11-17-2026">AP</a>, <a href="https://www.cboe.com/tradable_products/vix/">Cboe</a>) <b>[V]</b>. However, post-market trade was dominated by <b>Nvidia's stellar Q3 report</b>: revenue of $115.8bn (+103% YoY) crushed estimates, alongside $130bn Q4 guidance, driving Nasdaq 100 futures up ~1.0% in early Asian trade (<a href="https://www.benzinga.com/news/earnings/26/11/41890210/nvidia-q3-earnings-smash-estimates-revenue-surges-103-percent">Benzinga</a>) <b>[V]</b>. The 10-year Treasury yield held at <b>5.10%</b> (range 5.09–5.15%) (<a href="https://tradingeconomics.com/united-states/government-bond-yield">Trading Economics</a>) <b>[V]</b>. <b>Oil:</b> Brent crude settled at <b>$93.14 (+0.8%)</b> and WTI at <b>$86.01 (+0.3%)</b> on Middle East tensions offsetting supply surplus projections (<a href="https://www.rigzone.com/news/oil_rises_on_middle_east_geopolitics-17-nov-2026-185120-article">Rigzone</a>) <b>[V]</b>. <b>Gold:</b> Spot gold was subdued at <b>~$3,845/oz</b> on a resilient US dollar (<a href="https://www.kitco.com/news/article/2026-11-17/gold-silver-price-update-november-17-2026">Kitco</a>, <a href="https://www.usagold.com/daily-precious-metals-market-report-november-17-2026/">USAGold</a>) <b>[V]</b>.</p>
+    <p><b>Saudi TASI softens past 10,200; IMF upgrades UAE outlook.</b> The Saudi Tadawul All Share Index (TASI) closed Wednesday down <b>53.04 points (−0.52%) at 10,200.16</b> on turnover of SAR 3.24bn (<a href="https://www.arabnews.com/">Arab News</a>) <b>[V]</b>. Despite maritime trade friction near the Strait of Hormuz, the IMF upgraded the UAE's economic outlook citing robust fiscal buffers and banking capitalization (<a href="https://www.arabianbusiness.com/">Arabian Business</a>) <b>[V]</b>. <b>Regional Integration:</b> GCC states are finalizing common customs and transit standards for the 1,768 km regional railway network (targeted for Dec 2030), alongside Saudi IPO underwriting and disclosure reforms <b>[V]</b>.</p>
+    <h4>C. Global Intelligence — USA, Fed &amp; Commodities</h4>
+    <p><b>Hawkish FOMC minutes &amp; healthcare sell-off keep S&amp;P 500 in the red; gold &amp; oil slide.</b> Wednesday Wall Street closed mixed: <b>S&amp;P 500 7,323.63 (−0.23%, 5th straight loss, below 200-day MA), Dow 50,198.17 (−1.11%), Nasdaq 24,429.89 (+0.42%)</b>; VIX dipped 1.14% to 25.17 (<a href="https://apnews.com/">AP</a>, <a href="https://www.cboe.com/tradable_products/vix/">Cboe</a>) <b>[V]</b>. October FOMC minutes revealed hawkish concern over sticky inflation, while proposed federal Medicare Advantage audit rules hammered UNH (−10%+) and Humana (~−13%). Nvidia reversed an early pop to close <b>−2.89% ($150.96)</b> despite its Q3 beat, while AMZN (+3.82%) and TJX (+8%+) gained ahead of Anthropic's IPO <b>[V]</b>. Yields: <b>10Y 5.065% (−3.6 bps), 2Y 4.798% (+1.1 bps)</b> (<a href="https://www.morningstar.com/">Morningstar</a>) <b>[V]</b>. <b>Commodities:</b> Stronger USD and rising US inventories drove <b>Brent to $91.95 (−1.28%), WTI to $83.26 (−3.2%)</b>, COMEX <b>gold to $3,736.80 (−3.1%)</b> and <b>silver to $45.00 (−4.84%)</b> (<a href="https://www.ndtvprofit.com/">NDTV Profit</a>, <a href="https://www.kitco.com/">Kitco</a>) <b>[V]</b>.</p>
 
     <h3 class="sec"><span class="n">03</span>Legislative &amp; Regulatory Tracker — Who Wins, Who Loses</h3>
     <table>
       <tr><th>Jurisdiction</th><th>Policy Change</th><th>Sectors</th><th>Net Impact</th></tr>
-      <tr><td><b>Local — Pakistan</b></td><td>OGRA <a href="https://www.brecorder.com/news/40449201/govt-cuts-petrol-diesel-prices-by-rs2-per-litre">fuel price reduction</a> of Rs2/litre (petrol Rs328, diesel Rs358) in effect from 17 Nov under fortnightly review mechanism.</td><td>Transport, logistics, retail consumers, oil marketing companies</td><td><b>Wins:</b> <b>freight transport, commuter wallets</b>; supportive of disinflation <b>[EST.]</b>. <b>Loses:</b> <b>OMCs</b> (minor inventory adjustments) <b>[EST.]</b>. <b>Net:</b> disinflationary impulse supported by lower landed costs <b>[EST.]</b>.</td></tr>
-      <tr><td><b>GCC — UAE</b></td><td>Federal environmental authority <a href="https://www.adherent.com/uae-energy-efficiency-standards-ac-nov-2026">mandates binding energy efficiency rules</a> for air conditioning units (effective Nov 2026), incorporating RFID tracking and stricter seasonal performance factors.</td><td>HVAC manufacturers, commercial real estate, utility operators</td><td><b>Wins:</b> <b>high-efficiency HVAC manufacturers and green developers</b> <b>[EST.]</b>. <b>Loses:</b> <b>low-tier appliance importers</b> facing compliance phase-outs <b>[EST.]</b>. <b>Net:</b> accelerates UAE national energy efficiency targets <b>[EST.]</b>.</td></tr>
-      <tr><td><b>Global — USA</b></td><td>Commerce Department <a href="https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/">tightens AI chip export controls</a> targeting third-country data centre re-export risks to restricted entities.</td><td>Semiconductor design, global hyperscale data centres, cloud vendors</td><td><b>Wins:</b> <b>onshore US AI cloud providers</b> <b>[EST.]</b>. <b>Loses:</b> <b>overseas data centre operators</b> facing licensing hurdles <b>[EST.]</b>. <b>Net:</b> elevated regulatory compliance friction for global AI compute <b>[EST.]</b>.</td></tr>
+      <tr><td><b>Local — Pakistan</b></td><td>Thar coal grid-transition directive &amp; revised LPG import policy (record 15,000t cargo received; ~$30m/yr diesel import savings).</td><td>Power generation, coal mining, LPG distributors, industrial fuel users</td><td><b>Wins:</b> <b>grid-connected coal power &amp; LPG supply chains</b> <b>[EST.]</b>. <b>Loses:</b> <b>off-grid diesel genset suppliers</b> <b>[EST.]</b>. <b>Net:</b> lowers FX fuel import bill and eases winter gas bottlenecks <b>[EST.]</b>.</td></tr>
+      <tr><td><b>GCC — Regional</b></td><td>GCC finalizing unified customs, logistics &amp; transit standards for the 1,768 km GCC Railway network (Dec 2030 target).</td><td>Freight logistics, rail infrastructure, cross-border manufacturing</td><td><b>Wins:</b> <b>GCC logistics hubs, industrial exporters &amp; rail contractors</b> <b>[EST.]</b>. <b>Loses:</b> <b>fragmented regional trucking intermediaries</b> <b>[EST.]</b>. <b>Net:</b> lowers intra-GCC trade friction and non-oil supply costs <b>[EST.]</b>.</td></tr>
+      <tr><td><b>Global — USA</b></td><td>Proposed federal Medicare Advantage audit rule targeting retroactive improper payments across US managed-care insurers.</td><td>US managed healthcare, health insurance, hospital networks</td><td><b>Wins:</b> <b>federal Medicare fiscal oversight</b> <b>[EST.]</b>. <b>Loses:</b> <b>managed-care insurers (UNH, Humana)</b> facing margin &amp; clawback risk <b>[EST.]</b>. <b>Net:</b> sharp near-term valuation compression in US healthcare <b>[EST.]</b>.</td></tr>
     </table>
 
     <h3 class="sec"><span class="n">04</span>The Day Ahead — KSE-100 Levels &amp; Desk Stance</h3>
-    <p><b>Desk reference levels (estimates):</b> support <b>176,776</b> — S1; then 176,033 · pivot <b>178,113</b> — classic pivot off Tuesday's high 179,451, low 177,371 and close 177,518 · resistance <b>178,855</b> — R1; then 180,193.</p>
-    <p><b>Desk stance — Cautious; 176,776 is the first floor and a close above 178,113 is needed to resume the advance.</b> Tuesday's session saw early 1,900-point gains erased by afternoon profit-taking as breadth turned negative (164 advancers, 251 decliners) and volume compressed to 837.1m shares. However, Nvidia's blockbuster post-market Q3 results ($115.8bn rev, +103% YoY) sparked a rally in US tech futures, while Pakistan's surprise $39m October current account surplus provides valuable domestic macroeconomic cushioning. S1 at 176,776 marks the immediate floor; a decisive reclaim of pivot 178,113 reopens 178,855 toward 180,193. <b>Mood: Cautious — PSX closed near Tuesday's session low after giving up a 1,900-point early advance, but Nvidia's post-market blowout lifts US futures and Pakistan's $39M October current account surplus cushions sentiment. 176,776 is the first floor; a reclaim of 178,113 is needed to resume the upward track.</b></p>
+    <p><b>Desk reference levels (estimates):</b> support <b>175,659</b> — S1; then 175,024 · pivot <b>176,689</b> — classic pivot off Wednesday's high 177,719, low 176,054 and close 176,294 · resistance <b>177,324</b> — R1; then 178,354.</p>
+    <p><b>Desk stance — Cautious; 175,659 is the first floor and a close above 176,689 is needed to stabilize.</b> Wednesday's 1,223-point decline pushed the KSE-100 closer to 176,000 on lighter volume (742.1m shares) and negative breadth (179 advancers, 285 decliners). Externally, hawkish October FOMC minutes and a firmer US dollar pressured gold (−3.1%) and Brent (−1.3% to $91.95), though US futures are rebounding modestly ahead of Anthropic's IPO. Domestically, FX stability (276.55) and SBP's rebuilt reserve buffers provide underlying support. S1 at 175,659 marks immediate support; reclaiming pivot 176,689 reopens 177,324 toward 178,354. <b>Mood: Cautious — PSX extended its pullback to 176,294 (−0.69%) on broad-based selling across banks, cement and E&Ps, while hawkish October FOMC minutes pushed gold down 3.1% and Brent under $92. 175,659 is the first support floor; a reclaim of 176,689 is needed to stabilize.</b></p>
 
-    <a class="dl" href="2026-11-18-Economic-Vibes-Morning-Brief.pdf">📄 Download the full one-page PDF brief</a>
+    <a class="dl" href="2026-11-19-Economic-Vibes-Morning-Brief.pdf">📄 Download the full one-page PDF brief</a>
+
+    <!-- EV-REPORTS:START -->
+    <div class="ev-rep-wrap" id="reports">
+      <h3 class="sec"><span class="n">05</span>Economic Vibes Reports &amp; Research Archive</h3>
+      <p class="ev-rep-note">Complete archive of ContexAi Economic Vibes publications across <b>Daily Morning Briefs</b>, <b>PSX Coverage</b>, <b>Special Sector Coverage</b> (including our weekly sector-wise feature series), and <b>Post Budget &amp; Economic Survey Reviews</b>.</p>
+      <div class="ev-rep-tabs">
+        <button type="button" class="ev-rep-tab active" data-filter="all">All Reports (77)</button>
+        <button type="button" class="ev-rep-tab" data-filter="daily">Daily Briefs (66)</button>
+        <button type="button" class="ev-rep-tab" data-filter="psx">PSX Coverage (6)</button>
+        <button type="button" class="ev-rep-tab" data-filter="sector">Special Sector Coverage (2)</button>
+        <button type="button" class="ev-rep-tab" data-filter="budget">Post Budget &amp; Economic Survey (3)</button>
+      </div>
+
+      <div class="ev-rep-group" data-group="budget">
+        <h4>Post Budget &amp; Economic Survey Review</h4>
+        <div class="ev-rep-grid">
+        <a class="ev-rep-card" data-cat="budget" href="economy/ContexAi_Budget_FY2026-27_Summary_Deck.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Budget &amp; Survey</span>
+          <div class="ev-rep-title">Pakistan Federal Budget FY2026-27 — Summary Deck</div>
+          <div class="ev-rep-meta">FY2026-27 · Post-Budget Review</div>
+        </a>
+        <a class="ev-rep-card" data-cat="budget" href="economy/ContexAi_Economic_Tax_Memorandum_FY2026-27.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Budget &amp; Survey</span>
+          <div class="ev-rep-title">ContexAi Economic &amp; Tax Memorandum FY2026-27</div>
+          <div class="ev-rep-meta">FY2026-27 · Fiscal &amp; Tax Analysis</div>
+        </a>
+        <a class="ev-rep-card" data-cat="budget" href="insights/reit-budget-2026-secp-structuring.html" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Budget &amp; Survey</span>
+          <div class="ev-rep-title">REIT &amp; SECP Structuring — Post-Budget 2026 Note</div>
+          <div class="ev-rep-meta">FY2026-27 · Capital Markets &amp; Tax</div>
+        </a>
+        </div>
+      </div>
+
+      <div class="ev-rep-group" data-group="sector">
+        <h4>Special Sector Coverage</h4>
+        <p class="ev-rep-sub">Weekly special sector-wise feature coverage launching going forward.</p>
+        <div class="ev-rep-grid">
+        <a class="ev-rep-card" data-cat="sector" href="economy/ContexAi_Sector_Scorecard_FY2026-27.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Sector Coverage</span>
+          <div class="ev-rep-title">Pakistan Sector Scorecard FY2026-27</div>
+          <div class="ev-rep-meta">FY2026-27 · Cross-Sector Benchmark</div>
+        </a>
+        <a class="ev-rep-card" data-cat="sector" href="2026-11-13-Economic-Vibes-Auto-Policy-Update.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Sector Coverage</span>
+          <div class="ev-rep-title">Economic Vibes — Auto Policy Update</div>
+          <div class="ev-rep-meta">2026-11-13 · Special Sector Note</div>
+        </a>
+        </div>
+      </div>
+
+      <div class="ev-rep-group" data-group="psx">
+        <h4>PSX Coverage — Trading Flash &amp; Daily Market Wrap</h4>
+        <div class="ev-rep-grid">
+        <a class="ev-rep-card" data-cat="psx" href="2026-11-17-contexai-trading-flash.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">PSX · Trading Flash</span>
+          <div class="ev-rep-title">ContexAi Trading Flash (PSX Pre-Open) — 2026-11-17</div>
+          <div class="ev-rep-meta">2026-11-17 · KSE-100 Levels &amp; Pulse</div>
+        </a>
+        <a class="ev-rep-card" data-cat="psx" href="2026-11-16-contexai-trading-flash.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">PSX · Trading Flash</span>
+          <div class="ev-rep-title">ContexAi Trading Flash (PSX Pre-Open) — 2026-11-16</div>
+          <div class="ev-rep-meta">2026-11-16 · KSE-100 Levels &amp; Pulse</div>
+        </a>
+        <a class="ev-rep-card" data-cat="psx" href="2026-11-13-contexai-trading-flash.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">PSX · Trading Flash</span>
+          <div class="ev-rep-title">ContexAi Trading Flash (PSX Pre-Open) — 2026-11-13</div>
+          <div class="ev-rep-meta">2026-11-13 · KSE-100 Levels &amp; Pulse</div>
+        </a>
+        <a class="ev-rep-card" data-cat="psx" href="2026-11-16-contexai-daily-market-wrap.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">PSX · Market Wrap</span>
+          <div class="ev-rep-title">ContexAi Daily Market Wrap (PSX Close) — 2026-11-16</div>
+          <div class="ev-rep-meta">2026-11-16 · Session Summary</div>
+        </a>
+        <a class="ev-rep-card" data-cat="psx" href="2026-11-13-contexai-daily-market-wrap.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">PSX · Market Wrap</span>
+          <div class="ev-rep-title">ContexAi Daily Market Wrap (PSX Close) — 2026-11-13</div>
+          <div class="ev-rep-meta">2026-11-13 · Session Summary</div>
+        </a>
+        <a class="ev-rep-card" data-cat="psx" href="2026-11-12-contexai-daily-market-wrap.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">PSX · Market Wrap</span>
+          <div class="ev-rep-title">ContexAi Daily Market Wrap (PSX Close) — 2026-11-12</div>
+          <div class="ev-rep-meta">2026-11-12 · Session Summary</div>
+        </a>
+        </div>
+      </div>
+
+      <div class="ev-rep-group" data-group="daily">
+        <h4>Daily Morning Briefs Archive (66 editions)</h4>
+        <div class="ev-rep-grid scroll">
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-19-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-19</div>
+          <div class="ev-rep-meta">2026-11-19 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-18-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-18</div>
+          <div class="ev-rep-meta">2026-11-18 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-17-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-17</div>
+          <div class="ev-rep-meta">2026-11-17 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-16-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-16</div>
+          <div class="ev-rep-meta">2026-11-16 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-13-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-13</div>
+          <div class="ev-rep-meta">2026-11-13 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-12-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-12</div>
+          <div class="ev-rep-meta">2026-11-12 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-11-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-11</div>
+          <div class="ev-rep-meta">2026-11-11 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-09-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-09</div>
+          <div class="ev-rep-meta">2026-11-09 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-06-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-06</div>
+          <div class="ev-rep-meta">2026-11-06 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-05-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-05</div>
+          <div class="ev-rep-meta">2026-11-05 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-11-02-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-11-02</div>
+          <div class="ev-rep-meta">2026-11-02 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-30-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-30</div>
+          <div class="ev-rep-meta">2026-10-30 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-16-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-16</div>
+          <div class="ev-rep-meta">2026-10-16 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-15-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-15</div>
+          <div class="ev-rep-meta">2026-10-15 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-14-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-14</div>
+          <div class="ev-rep-meta">2026-10-14 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-13-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-13</div>
+          <div class="ev-rep-meta">2026-10-13 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-09-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-09</div>
+          <div class="ev-rep-meta">2026-10-09 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-08-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-08</div>
+          <div class="ev-rep-meta">2026-10-08 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-07-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-07</div>
+          <div class="ev-rep-meta">2026-10-07 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-05-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-05</div>
+          <div class="ev-rep-meta">2026-10-05 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-10-01-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-10-01</div>
+          <div class="ev-rep-meta">2026-10-01 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-30-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-30</div>
+          <div class="ev-rep-meta">2026-09-30 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-29-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-29</div>
+          <div class="ev-rep-meta">2026-09-29 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-28-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-28</div>
+          <div class="ev-rep-meta">2026-09-28 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-25-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-25</div>
+          <div class="ev-rep-meta">2026-09-25 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-24-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-24</div>
+          <div class="ev-rep-meta">2026-09-24 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-23-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-23</div>
+          <div class="ev-rep-meta">2026-09-23 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-22-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-22</div>
+          <div class="ev-rep-meta">2026-09-22 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-21-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-21</div>
+          <div class="ev-rep-meta">2026-09-21 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-18-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-18</div>
+          <div class="ev-rep-meta">2026-09-18 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-17-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-17</div>
+          <div class="ev-rep-meta">2026-09-17 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-16-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-16</div>
+          <div class="ev-rep-meta">2026-09-16 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-15-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-15</div>
+          <div class="ev-rep-meta">2026-09-15 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-14-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-14</div>
+          <div class="ev-rep-meta">2026-09-14 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-11-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-11</div>
+          <div class="ev-rep-meta">2026-09-11 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-10-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-10</div>
+          <div class="ev-rep-meta">2026-09-10 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-09-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-09</div>
+          <div class="ev-rep-meta">2026-09-09 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-08-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-08</div>
+          <div class="ev-rep-meta">2026-09-08 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-07-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-07</div>
+          <div class="ev-rep-meta">2026-09-07 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-04-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-04</div>
+          <div class="ev-rep-meta">2026-09-04 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-03-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-03</div>
+          <div class="ev-rep-meta">2026-09-03 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-02-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-02</div>
+          <div class="ev-rep-meta">2026-09-02 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-09-01-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-09-01</div>
+          <div class="ev-rep-meta">2026-09-01 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-31-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-31</div>
+          <div class="ev-rep-meta">2026-08-31 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-25-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-25</div>
+          <div class="ev-rep-meta">2026-08-25 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-24-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-24</div>
+          <div class="ev-rep-meta">2026-08-24 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-20-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-20</div>
+          <div class="ev-rep-meta">2026-08-20 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-19-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-19</div>
+          <div class="ev-rep-meta">2026-08-19 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-18-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-18</div>
+          <div class="ev-rep-meta">2026-08-18 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-17-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-17</div>
+          <div class="ev-rep-meta">2026-08-17 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-14-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-14</div>
+          <div class="ev-rep-meta">2026-08-14 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-13-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-13</div>
+          <div class="ev-rep-meta">2026-08-13 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-12-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-12</div>
+          <div class="ev-rep-meta">2026-08-12 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-11-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-11</div>
+          <div class="ev-rep-meta">2026-08-11 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-10-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-10</div>
+          <div class="ev-rep-meta">2026-08-10 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-07-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-07</div>
+          <div class="ev-rep-meta">2026-08-07 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-06-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-06</div>
+          <div class="ev-rep-meta">2026-08-06 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-05-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-05</div>
+          <div class="ev-rep-meta">2026-08-05 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-08-03-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-08-03</div>
+          <div class="ev-rep-meta">2026-08-03 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-07-31-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-07-31</div>
+          <div class="ev-rep-meta">2026-07-31 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-07-28-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-07-28</div>
+          <div class="ev-rep-meta">2026-07-28 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-07-27-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-07-27</div>
+          <div class="ev-rep-meta">2026-07-27 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-07-24-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-07-24</div>
+          <div class="ev-rep-meta">2026-07-24 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-07-21-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-07-21</div>
+          <div class="ev-rep-meta">2026-07-21 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-07-20-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-07-20</div>
+          <div class="ev-rep-meta">2026-07-20 · Global, GCC &amp; Pakistan</div>
+        </a>
+        <a class="ev-rep-card" data-cat="daily" href="2026-07-19-Economic-Vibes-Morning-Brief.pdf" target="_blank" rel="noopener">
+          <span class="ev-rep-badge">Daily Brief</span>
+          <div class="ev-rep-title">Economic Vibes Morning Brief — 2026-07-19</div>
+          <div class="ev-rep-meta">2026-07-19 · Global, GCC &amp; Pakistan</div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function(){
+        var tabs = document.querySelectorAll(".ev-rep-tab");
+        var groups = document.querySelectorAll(".ev-rep-group");
+        tabs.forEach(function(btn){
+          btn.addEventListener("click", function(){
+            tabs.forEach(function(t){ t.classList.remove("active"); });
+            btn.classList.add("active");
+            var f = btn.getAttribute("data-filter");
+            groups.forEach(function(g){
+              g.classList.toggle("hidden", f !== "all" && g.getAttribute("data-group") !== f);
+            });
+          });
+        });
+      })();
+    </script>
+    <!-- EV-REPORTS:END -->
 
     <div class="disc"><b>Disclaimer:</b> Produced by ContexAi for information and education only — not investment advice, a solicitation, or a guarantee. Trading securities, commodities and futures carries substantial risk of loss; leveraged futures can lose more than your margin. Levels are indicative. Consider your risk tolerance and consult a licensed financial adviser before acting. You alone are responsible for your trading decisions.</div>
   </div>
